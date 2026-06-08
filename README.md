@@ -62,3 +62,39 @@ Make sure to set the environment variable:
 | `get_workitem` | Get full details of a specific work item | `organizationId`, `workitemId` |
 | `list_repositories` | Get code repositories list | `organizationId` |
 | `list_branches` | Get branches of a repository | `organizationId`, `repositoryId` |
+
+---
+
+## 📊 5. Integrated Project Progress Dashboard (项目进度与甘特图协同看板)
+
+This repository includes a built-in visual progress dashboard under the `dashboard/` directory. It visualizes organization-level deliverables, developer workloads, status distributions, and full-member schedules using an interactive Gantt chart.
+
+### Features
+1. **Requirements & Operations Dual-Row KPIs (需求与开发双排指标卡)**: Focuses separately on the business delivery (Requirements) and engineering pipeline (Tasks & Bugs).
+2. **Stacked Multi-Dimensional Charts (堆叠负载与状态图表)**: Drill down into status queues and assignee workload components (Requirements vs Tasks vs Bugs).
+3. **Interactive Gantt Chart (甘特日历排期图)**: day/week/month timeline adjustments, navigation controls, today alignment, and custom category filter tabs.
+4. **Details Modal (详情交互弹窗)**: Access specific workitem fields (creation date, planned start, planned end) dynamically with fallback safety.
+5. **Auto-Sync & Local Bridge (自动同步与静默编译)**: Periodic 5-minute background compilation using the bridge server.
+
+### Run Dashboard Locally
+
+1. **Install Dependencies**:
+   Open a terminal in the `dashboard/` directory and install the required dev tools:
+   ```bash
+   npm install
+   ```
+
+2. **Start the Static Dashboard Server**:
+   Run the local development server (powered by Vite):
+   ```bash
+   npm run dev
+   ```
+
+3. **Start the Python Bridge Server**:
+   Start the local HTTP bridge server to receive manual/auto compilation commands:
+   ```bash
+   python bridge_server.py
+   ```
+
+Now open the hosted address (e.g. `http://localhost:5173/` or your LAN address `http://<your-ip>:5173/`) in your browser to view the live synchronized DevOps progress data.
+
