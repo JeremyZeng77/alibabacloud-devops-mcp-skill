@@ -1450,3 +1450,83 @@ input:checked + .slider:before {
     display: flex;
     gap: 8px;
 }
+
+/* Gantt Vertical Release Lines Positioning */
+.gantt-release-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    border-left: 2px dashed #ff9f43; /* Neon orange/yellow */
+    z-index: 8;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.release-line-marker {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff9f43;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ff9f43;
+}
+
+.gantt-release-line:hover {
+    border-left-style: solid;
+    border-left-color: #ffdd59; /* Bright yellow highlight */
+}
+
+/* Hover Tooltip */
+.release-tooltip {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    background-color: #111625;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    pointer-events: none;
+}
+
+.gantt-release-line:hover .release-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Action Items Badge States */
+.badge-status-overdue {
+    background: rgba(244, 63, 94, 0.15) !important;
+    color: var(--color-rose) !important;
+    border: 1px solid rgba(244, 63, 94, 0.3) !important;
+    animation: flash 1.5s infinite alternate;
+}
+
+.badge-status-warn {
+    background: rgba(245, 158, 11, 0.15) !important;
+    color: var(--color-amber) !important;
+    border: 1px solid rgba(245, 158, 11, 0.3) !important;
+}
+
+@keyframes flash {
+    0% { opacity: 0.6; box-shadow: 0 0 2px rgba(244, 63, 94, 0.2); }
+    100% { opacity: 1; box-shadow: 0 0 8px rgba(244, 63, 94, 0.6); }
+}
+
+/* Trend Indicator up/down colors */
+.trend-indicator.up {
+    color: var(--color-emerald) !important;
+}
+.trend-indicator.down {
+    color: var(--color-rose) !important;
+}
+

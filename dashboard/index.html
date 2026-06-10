@@ -66,7 +66,7 @@
                 </button>
             </div>
         </header>
- 
+
         <!-- Navigation Tabs -->
         <nav class="nav-tabs">
             <button class="nav-tab active" data-view="overview">
@@ -88,6 +88,9 @@
             
             <!-- VIEW 1: Overview Dashboard -->
             <section class="view-section active" id="view-overview">
+                
+                <!-- Risk Radar Alerts -->
+                <div id="risk-radar-alerts" class="risk-radar-container"></div>
                 
                 <!-- Row 1: Requirements View -->
                 <div class="kpi-row-title">🎯 需求交付看板视角</div>
@@ -145,6 +148,17 @@
                         <div class="kpi-value" id="kpi-req-rate">0.0%</div>
                         <div class="kpi-footer">
                             <span class="trend-indicator" id="kpi-req-rate-trend">已完成/总计</span>
+                        </div>
+                    </div>
+                    <!-- KPI Card: 平均交付周期 -->
+                    <div class="kpi-card card-glow-cyan" id="kpi-lead-time-card">
+                        <div class="kpi-header">
+                            <span class="kpi-title" title="任务从进入进行中到完成的平均自然日天数">平均交付周期</span>
+                            <div class="kpi-icon icon-cyan">⏱</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-lead-time-value">0.0 天</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-lead-time-trend" title="计算逻辑：任务从进入‘进行中/开发中’到进入‘已完成/已上线’等完成状态的平均自然日天数（排除已取消、重复、废弃等无效任务）。趋势对比前30天数据。">加载中...</span>
                         </div>
                     </div>
                 </div>
@@ -348,6 +362,15 @@
                 <!-- Items Stats -->
                 <div class="table-meta">
                     <span id="filtered-count-text">共找到 0 条符合条件的需求</span>
+                    <button class="btn-export-markdown" id="btn-export-markdown" title="复制当前过滤条件下的周报 Snippet 到剪贴板">
+                        <svg class="export-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="9" x2="15" y2="9"></line>
+                            <line x1="9" y1="13" x2="15" y2="13"></line>
+                            <line x1="9" y1="17" x2="13" y2="17"></line>
+                        </svg>
+                        <span>复制周报 Snippet</span>
+                    </button>
                 </div>
 
                 <!-- Table Container -->
@@ -517,6 +540,47 @@
                     <div class="terminal-box" id="modal-item-rowtext">
                         <!-- Injected -->
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QA Mitigation Dialog Modal -->
+    <div class="modal-overlay" id="qa-mitigation-modal" style="display: none;">
+        <div class="modal-box modal-box-large">
+            <div class="modal-header">
+                <span class="modal-title">⚠️ QA 瓶颈缓解对策建议</span>
+                <button class="btn-close-modal" id="btn-close-mitigation">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="mitigation-section">
+                    <h4 class="section-subtitle" style="color: var(--color-cyan, #00d2ff); font-size: 14px; margin-bottom: 8px;">👥 团队空闲负载分配 (Underutilized Resources)</h4>
+                    <p class="section-desc" style="font-size: 12px; color: var(--color-text-muted, #94a3b8); margin-bottom: 12px;">
+                        以下为研发团队当前活跃开发负载（未提测且未完成的开发任务数量），按负载从小到大排序。建议协调负载较低的人员支援测试验证：
+                    </p>
+                    <div class="table-container" style="max-height: 250px; overflow-y: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>开发人员</th>
+                                    <th>活跃任务数</th>
+                                    <th>可用状态</th>
+                                    <th>协调操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mitigation-devs-tbody">
+                                <!-- Injected by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="mitigation-section" style="margin-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 16px;">
+                    <h4 class="section-subtitle" style="color: var(--color-cyan, #00d2ff); font-size: 14px; margin-bottom: 8px;">📋 管理规避建议</h4>
+                    <ul class="mitigation-tips-list" style="font-size: 12px; color: #cbd5e1; padding-left: 20px; line-height: 1.8;">
+                        <li style="margin-bottom: 6px;"><strong>暂停代码合并</strong>: 建议暂时暂停非关键需求的合码，以减少 QA 测试负担。</li>
+                        <li style="margin-bottom: 6px;"><strong>分级测试与支援</strong>: 建议指派负载极低 (绿标“可支援”) 的开发人员支援高优先级任务的测试验证。</li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -11,8 +11,12 @@ let state = {
     chartStatusMode: 'active', // 'active' (进行中) or 'all' (全部)
     ganttViewMode: 'day', // 'day', 'week', or 'month'
     ganttStartDate: null,
-    ganttCategory: 'Req' // 'Req', 'Task', or 'Bug'
+    ganttCategory: 'Req', // 'Req', 'Task', or 'Bug'
+    ganttExpandedAssignees: {},
+    leadTimeKPI: { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } },
+    criticalPathConfig: null
 };
+
 
 // Helper to check if an item is completed/delivered based on its category
 function isItemCompleted(item) {
@@ -52,11 +56,11 @@ function isItemCompleted(item) {
 const BRIDGE_API_BASE = `http://${window.location.hostname}:18790`;
 
 // Initialize Page
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     initGanttState();
     initEventListeners();
     initAutoSync();
-    loadDashboardData();
+    await loadDashboardData();
     
     // Auto polling every 60 seconds
     setInterval(pollDashboardData, 60000);
@@ -70,6 +74,7 @@ function initEventListeners() {
             document.querySelectorAll('.project-tab').forEach(t => t.classList.remove('active'));
             e.currentTarget.classList.add('active');
             state.currentProject = e.currentTarget.dataset.project;
+            syncStateToURL();
             
             // Re-render current view with new project data
             renderCurrentView();
@@ -82,6 +87,7 @@ function initEventListeners() {
             document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
             e.currentTarget.classList.add('active');
             state.currentView = e.currentTarget.dataset.view;
+            syncStateToURL();
             
             // Toggle view panels
             document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
@@ -109,8 +115,14 @@ function initEventListeners() {
     ['filter-search', 'filter-category', 'filter-status', 'filter-assignee', 'filter-priority', 'filter-iteration'].forEach(id => {
         const elem = document.getElementById(id);
         if (elem) {
-            elem.addEventListener('input', applyFilters);
-            elem.addEventListener('change', applyFilters);
+            elem.addEventListener('input', () => {
+                applyFilters();
+                syncStateToURL();
+            });
+            elem.addEventListener('change', () => {
+                applyFilters();
+                syncStateToURL();
+            });
         }
     });
 
@@ -165,6 +177,24 @@ function initEventListeners() {
             renderGanttChart();
         });
     });
+
+    // Close QA Mitigation Modal
+    const btnCloseMitigation = document.getElementById('btn-close-mitigation');
+    if (btnCloseMitigation) {
+        btnCloseMitigation.addEventListener('click', hideQAMitigationModal);
+    }
+    const mitigationModal = document.getElementById('qa-mitigation-modal');
+    if (mitigationModal) {
+        mitigationModal.addEventListener('click', (e) => {
+            if (e.target === mitigationModal) hideQAMitigationModal();
+        });
+    }
+
+    // Export Markdown Snippet
+    const btnExportMarkdown = document.getElementById('btn-export-markdown');
+    if (btnExportMarkdown) {
+        btnExportMarkdown.addEventListener('click', exportMarkdownSnippet);
+    }
 }
 
 // Auto Sync Manager
@@ -203,7 +233,6 @@ function startAutoSyncTimer() {
     }, 300000); // 5 minutes
 }
 
-// Stop Auto Sync
 function stopAutoSyncTimer() {
     if (state.autoSyncIntervalId) {
         clearInterval(state.autoSyncIntervalId);
@@ -226,8 +255,119 @@ async function triggerSyncCompileSilent() {
 }
 
 // Load Data from local JSON
+async function loadCriticalPathConfig() {
+    try {
+        const response = await fetch('./critical_path_config.json?t=' + new Date().getTime());
+        if (!response.ok) throw new Error('Config file not found');
+        const config = await response.json();
+        state.criticalPathConfig = {
+            keywords: Array.isArray(config.keywords) ? config.keywords : ["订单", "支付", "收银台", "消费金"],
+            ids: Array.isArray(config.ids) ? config.ids : []
+        };
+    } catch (err) {
+        console.warn('Failed to load critical path config, using defaults:', err);
+        state.criticalPathConfig = {
+            keywords: ["订单", "支付", "收银台", "消费金"],
+            ids: []
+        };
+    }
+}
+
+function isCriticalPath(item) {
+    if (!state.criticalPathConfig) {
+        state.criticalPathConfig = {
+            keywords: ["订单", "支付", "收银台", "消费金"],
+            ids: []
+        };
+    }
+    const { keywords, ids } = state.criticalPathConfig;
+    if (ids && ids.includes(item.id)) {
+        return true;
+    }
+    if (keywords && item.title) {
+        return keywords.some(kw => item.title.includes(kw));
+    }
+    return false;
+}
+
+function syncStateToURL() {
+    const params = new URLSearchParams();
+    params.set('project', state.currentProject);
+    params.set('view', state.currentView);
+    
+    if (state.currentView === 'workitems') {
+        const searchVal = document.getElementById('filter-search').value.trim();
+        const categoryVal = document.getElementById('filter-category').value;
+        const statusVal = document.getElementById('filter-status').value;
+        const assigneeVal = document.getElementById('filter-assignee').value;
+        const priorityVal = document.getElementById('filter-priority').value;
+        const iterationVal = document.getElementById('filter-iteration').value;
+        
+        if (searchVal) params.set('search', searchVal);
+        if (categoryVal !== 'Req') params.set('category', categoryVal);
+        if (statusVal !== 'all') params.set('status', statusVal);
+        if (assigneeVal !== 'all') params.set('assignee', assigneeVal);
+        if (priorityVal !== 'all') params.set('priority', priorityVal);
+        if (iterationVal !== 'all') params.set('iteration', iterationVal);
+    }
+    
+    const newURL = window.location.pathname + '?' + params.toString();
+    window.history.replaceState(null, '', newURL);
+}
+
+function loadStateFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    
+    if (params.has('project')) {
+        const proj = params.get('project');
+        if (proj === 'mftb' || proj === 'mfood') {
+            state.currentProject = proj;
+        }
+    }
+    if (params.has('view')) {
+        const view = params.get('view');
+        if (['overview', 'workitems', 'weekly'].includes(view)) {
+            state.currentView = view;
+        }
+    }
+    
+    // Sync UI elements to values
+    document.querySelectorAll('.project-tab').forEach(t => {
+        if (t.dataset.project === state.currentProject) {
+            t.classList.add('active');
+        } else {
+            t.classList.remove('active');
+        }
+    });
+    
+    document.querySelectorAll('.nav-tab').forEach(t => {
+        if (t.dataset.view === state.currentView) {
+            t.classList.add('active');
+        } else {
+            t.classList.remove('active');
+        }
+    });
+    
+    document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
+    const viewEl = document.getElementById(`view-${state.currentView}`);
+    if (viewEl) viewEl.classList.add('active');
+    
+    // Read and store parameters into temp state to be applied when filters populate
+    state.urlFilters = {
+        search: params.get('search') || null,
+        category: params.get('category') || null,
+        status: params.get('status') || null,
+        assignee: params.get('assignee') || null,
+        priority: params.get('priority') || null,
+        iteration: params.get('iteration') || null
+    };
+}
+
 async function loadDashboardData() {
     try {
+        await loadCriticalPathConfig();
+        loadStateFromURL();
+        
         const response = await fetch('./projects_data.json?t=' + new Date().getTime());
         if (!response.ok) throw new Error('Data file not found');
         const db = await response.json();
@@ -237,6 +377,7 @@ async function loadDashboardData() {
         state.latest = db.latest;
         state.history = db.history;
         state.weeklyReports = db.weeklyReports || [];
+        state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
 
         // Update timestamps
         updateTimestamps();
@@ -266,6 +407,7 @@ async function pollDashboardData() {
             state.latest = db.latest;
             state.history = db.history;
             state.weeklyReports = db.weeklyReports || [];
+            state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
             
             updateTimestamps();
             renderCurrentView();
@@ -314,8 +456,10 @@ function updateTimestamps() {
     }
 
     // Collected time (from latest item snapshot receivedAt)
+    // We can query the bridge server or fallback to the latest compiled date
     const latestItems = state.latest[state.currentProject] || [];
     if (latestItems.length > 0) {
+        // Find latest date in current items
         let latestDate = null;
         latestItems.forEach(item => {
             if (item.planStart) {
@@ -469,12 +613,20 @@ function renderOverviewDashboard() {
     document.getElementById('kpi-bug-active-trend').textContent = '未修复缺陷';
     document.getElementById('kpi-bug-active-trend').className = 'trend-indicator';
 
-    // Render Charts
+    // Render Lead Time KPI
+    const kpiLeadTime = state.leadTimeKPI[state.currentProject] || { average: 0, delta: 0 };
+    const avgVal = parseFloat(kpiLeadTime.average) || 0.0;
+    const deltaVal = parseFloat(kpiLeadTime.delta) || 0.0;
+    document.getElementById('kpi-lead-time-value').textContent = `${avgVal.toFixed(1)} 天`;
+    setTrendText('kpi-lead-time-trend', deltaVal, '天', true, false);
+
+    // Render Charts & Risk Radar
     renderHistoryChart(history);
     renderStatusChart(items);
     renderTypeChart(items);
     renderWorkloadChart(items);
     renderGanttChart();
+    renderRiskRadar(items);
 }
 
 function setTrendText(id, delta, suffix, invertColor = false, isPercent = false) {
@@ -677,7 +829,7 @@ function renderStatusChart(items) {
                         footer: (tooltipItems) => {
                             let sum = 0;
                             tooltipItems.forEach(function(tooltipItem) {
-                                  sum += tooltipItem.parsed.x;
+                                sum += tooltipItem.parsed.x;
                             });
                             return '总计: ' + sum + ' 个工作项';
                         }
@@ -881,6 +1033,19 @@ function renderWorkloadChart(items) {
 // VIEW 2: Populate dropdown filters for list view
 function populateFilters() {
     const allItems = state.latest[state.currentProject] || [];
+    
+    // Apply search and category from URL if they exist on initial load
+    if (state.urlFilters) {
+        if (state.urlFilters.search !== null) {
+            const searchEl = document.getElementById('filter-search');
+            if (searchEl) searchEl.value = state.urlFilters.search;
+        }
+        if (state.urlFilters.category !== null) {
+            const catEl = document.getElementById('filter-category');
+            if (catEl) catEl.value = state.urlFilters.category;
+        }
+    }
+    
     const categoryVal = document.getElementById('filter-category').value;
     
     // Filter items based on selected category to make dropdown options relevant
@@ -888,7 +1053,10 @@ function populateFilters() {
     
     // Status
     const statusSelect = document.getElementById('filter-status');
-    const prevStatus = statusSelect.value;
+    let prevStatus = statusSelect.value;
+    if (state.urlFilters && state.urlFilters.status !== null) {
+        prevStatus = state.urlFilters.status;
+    }
     statusSelect.innerHTML = '<option value="all">全部状态</option>';
     const statuses = [...new Set(items.map(x => x.status))].filter(Boolean);
     statuses.forEach(st => {
@@ -901,7 +1069,10 @@ function populateFilters() {
 
     // Assignee
     const assSelect = document.getElementById('filter-assignee');
-    const prevAss = assSelect.value;
+    let prevAss = assSelect.value;
+    if (state.urlFilters && state.urlFilters.assignee !== null) {
+        prevAss = state.urlFilters.assignee;
+    }
     assSelect.innerHTML = '<option value="all">全部负责人</option>';
     const assignees = [...new Set(items.map(x => x.assignee))].filter(Boolean);
     assignees.forEach(ass => {
@@ -912,9 +1083,18 @@ function populateFilters() {
     });
     assSelect.value = prevAss && assignees.includes(prevAss) ? prevAss : 'all';
 
+    // Priority
+    if (state.urlFilters && state.urlFilters.priority !== null) {
+        const prioSelect = document.getElementById('filter-priority');
+        if (prioSelect) prioSelect.value = state.urlFilters.priority;
+    }
+
     // Iteration
     const iterSelect = document.getElementById('filter-iteration');
-    const prevIter = iterSelect.value;
+    let prevIter = iterSelect.value;
+    if (state.urlFilters && state.urlFilters.iteration !== null) {
+        prevIter = state.urlFilters.iteration;
+    }
     iterSelect.innerHTML = '<option value="all">全部迭代</option>';
     const iterations = [...new Set(items.map(x => x.iteration))].filter(Boolean);
     iterations.forEach(it => {
@@ -924,6 +1104,9 @@ function populateFilters() {
         iterSelect.appendChild(opt);
     });
     iterSelect.value = prevIter && iterations.includes(prevIter) ? prevIter : 'all';
+    
+    // Clear URL filters so subsequent user actions are not locked
+    state.urlFilters = null;
 }
 
 // Apply table filters and render list
@@ -1046,7 +1229,93 @@ function renderWeeklyReport(weekVal) {
     document.getElementById('weekly-planning').innerHTML = parseNarrativeMarkdown(projReport.planning);
     document.getElementById('weekly-assessment').innerHTML = parseNarrativeMarkdown(projReport.assessment);
     document.getElementById('weekly-risks').innerHTML = parseNarrativeMarkdown(projReport.risks, true); // highlight warnings
-    document.getElementById('weekly-recommendations').innerHTML = parseNarrativeMarkdown(projReport.recommendations);
+    
+    // Render Technical Management Action Items
+    const recContent = document.getElementById('weekly-recommendations');
+    const actionItems = projReport.actionItems || [];
+    
+    if (actionItems.length > 0) {
+        // Calculate AICR (Action Item Closure Rate)
+        const completed = actionItems.filter(x => x.completed).length;
+        const total = actionItems.length;
+        const aicr = total > 0 ? (completed / total * 100) : 0;
+        
+        // Inject/Update AICR badge in the card header
+        const recHeader = document.querySelector('.card-badge-purple');
+        if (recHeader) {
+            let aicrBadge = recHeader.querySelector('.aicr-badge');
+            if (!aicrBadge) {
+                aicrBadge = document.createElement('span');
+                aicrBadge.className = 'aicr-badge';
+                recHeader.appendChild(aicrBadge);
+            }
+            aicrBadge.style.cssText = 'margin-left: auto; font-size: 13.5px; font-weight: 600; color: var(--color-primary); background: rgba(0, 242, 254, 0.1); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(0, 242, 254, 0.2);';
+            aicrBadge.textContent = `建议落实率 (AICR): ${aicr.toFixed(1)}%`;
+            
+            recHeader.style.display = 'flex';
+            recHeader.style.alignItems = 'center';
+            recHeader.style.width = '100%';
+        }
+        
+        // Build Action Items Table
+        let tableHTML = `
+            <table class="weekly-data-table" style="margin-top: 16px;">
+                <thead>
+                    <tr>
+                        <th>建议项 (Action Item)</th>
+                        <th style="width: 100px;">负责人</th>
+                        <th style="width: 120px;">截止日期</th>
+                        <th style="width: 110px;">状态/警报</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        
+        const nowTime = new Date('2026-06-08T00:00:00').getTime();
+        
+        actionItems.forEach(item => {
+            let statusBadge = '';
+            if (item.completed) {
+                statusBadge = '<span class="badge badge-status-completed">已完成</span>';
+            } else {
+                const dueTime = new Date(item.due + 'T00:00:00').getTime();
+                const diffMs = dueTime - nowTime;
+                const diffHours = diffMs / (1000 * 60 * 60);
+                
+                if (diffMs < 0) {
+                    statusBadge = '<span class="badge badge-status-overdue">已超期</span>';
+                } else if (diffHours <= 48) {
+                    statusBadge = '<span class="badge badge-status-warn">即将超期</span>';
+                } else {
+                    statusBadge = '<span class="badge badge-status-progress">进行中</span>';
+                }
+            }
+            
+            tableHTML += `
+                <tr>
+                    <td style="font-weight: 500; color: var(--text-primary);">${escapeHtml(item.desc)}</td>
+                    <td style="color: var(--text-secondary);">${escapeHtml(item.owner)}</td>
+                    <td style="color: var(--text-muted); font-family: monospace;">${item.due}</td>
+                    <td>${statusBadge}</td>
+                </tr>
+            `;
+        });
+        
+        tableHTML += `
+                </tbody>
+            </table>
+        `;
+        
+        recContent.innerHTML = tableHTML;
+    } else {
+        // Fallback: hide AICR badge and render raw recommendations text
+        const recHeader = document.querySelector('.card-badge-purple');
+        if (recHeader) {
+            const aicrBadge = recHeader.querySelector('.aicr-badge');
+            if (aicrBadge) aicrBadge.remove();
+        }
+        recContent.innerHTML = parseNarrativeMarkdown(projReport.recommendations);
+    }
 }
 
 // Simple Markdown narrative formatter with table support
@@ -1151,6 +1420,7 @@ function parseNarrativeMarkdown(text, highlightAlerts = false) {
 }
 
 function parseInlineStyles(text) {
+    // Replace **bold** with <strong>bold</strong>
     return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 }
 
@@ -1247,10 +1517,12 @@ function setGanttViewMode(mode) {
     today.setHours(0, 0, 0, 0);
     
     if (mode === 'day') {
+        // Start date is 4 days before today
         const start = new Date(today);
         start.setDate(today.getDate() - 4);
         state.ganttStartDate = start;
     } else if (mode === 'week') {
+        // Start date is 2 weeks before the current week (aligned to Monday)
         const start = new Date(today);
         const day = start.getDay();
         const diff = start.getDate() - day + (day === 0 ? -6 : 1); // Align to Monday
@@ -1258,6 +1530,7 @@ function setGanttViewMode(mode) {
         monday.setDate(monday.getDate() - 14); // 2 weeks back
         state.ganttStartDate = monday;
     } else if (mode === 'month') {
+        // Start date is 1 month before current month
         const start = new Date(today.getFullYear(), today.getMonth() - 1, 1);
         state.ganttStartDate = start;
     }
@@ -1267,10 +1540,13 @@ function setGanttViewMode(mode) {
 function shiftGanttTimeline(direction) {
     const start = new Date(state.ganttStartDate);
     if (state.ganttViewMode === 'day') {
+        // Shift by 7 days
         start.setDate(start.getDate() + direction * 7);
     } else if (state.ganttViewMode === 'week') {
+        // Shift by 4 weeks
         start.setDate(start.getDate() + direction * 28);
     } else if (state.ganttViewMode === 'month') {
+        // Shift by 2 months
         start.setMonth(start.getMonth() + direction * 2);
     }
     state.ganttStartDate = start;
@@ -1302,7 +1578,17 @@ function isCurrentMonth(d, today) {
     return d.getFullYear() === today.getFullYear() && d.getMonth() === today.getMonth();
 }
 
-// Render Gantt chart grid, assignees and bars
+const milestonesConfig = {
+    mftb: [
+        { name: "MFTB Beta Release", date: "2026-06-12" },
+        { name: "MFTB V1.0.0 Online", date: "2026-06-15" }
+    ],
+    mfood: [
+        { name: "mFood V7.2.0 Launch", date: "2026-05-29" },
+        { name: "mFood V7.2.5 Launch", date: "2026-06-15" }
+    ]
+};
+
 function renderGanttChart() {
     const container = document.getElementById('gantt-grid-container');
     if (!container) return;
@@ -1317,8 +1603,7 @@ function renderGanttChart() {
     // Filter items by current Gantt category tab
     const categoryItems = activeFiltered.filter(x => x.category === state.ganttCategory);
 
-    // Group and sort items by planStart date (earliest first for a clean diagonal visual flow)
-    // If no planStart/planEnd, fallback to createDate
+    // Map and calculate plan dates
     const ganttItems = categoryItems.map(item => {
         const planStart = item.planStart || item.createDate;
         const planEnd = item.planEnd || planStart;
@@ -1328,12 +1613,7 @@ function renderGanttChart() {
             planEnd,
             originalItem: item
         };
-    }).filter(x => x.planStart).sort((a, b) => {
-        const dateA = new Date(a.planStart + ' 00:00:00').getTime();
-        const dateB = new Date(b.planStart + ' 00:00:00').getTime();
-        if (dateA !== dateB) return dateA - dateB;
-        return a.id.localeCompare(b.id);
-    });
+    }).filter(x => x.planStart);
 
     // 1. Generate column metadata based on ganttViewMode
     const cols = [];
@@ -1448,9 +1728,39 @@ function renderGanttChart() {
         todayLine.style.left = todayLinePercent + '%';
         timelineRows.appendChild(todayLine);
     }
+
+    // Render Milestone vertical release lines
+    const milestones = milestonesConfig[state.currentProject] || [];
+    milestones.forEach(m => {
+        const tMilestone = new Date(m.date + ' 00:00:00').getTime();
+        if (tMilestone >= viewStart && tMilestone <= viewEnd) {
+            const leftPercent = ((tMilestone - viewStart) / viewDuration) * 100;
+            const releaseLine = document.createElement('div');
+            releaseLine.className = 'gantt-release-line';
+            releaseLine.style.left = leftPercent + '%';
+            releaseLine.innerHTML = `
+                <div class="release-line-marker"></div>
+                <div class="release-tooltip">
+                    <span class="milestone-name" style="font-weight: 600; color: #fff;">${escapeHtml(m.name)}</span>
+                    <span class="milestone-date" style="color: var(--color-primary);">${m.date}</span>
+                </div>
+            `;
+            timelineRows.appendChild(releaseLine);
+        }
+    });
     
-    // Render Rows (Flat list: assignee row on left, timeline row on right)
-    if (visibleGanttItems.length === 0) {
+    // Group visible items by Assignee
+    const groups = {};
+    visibleGanttItems.forEach(item => {
+        const name = item.assignee || '未指派';
+        groups[name] = groups[name] || [];
+        groups[name].push(item);
+    });
+
+    const assigneeNames = Object.keys(groups).sort();
+    
+    if (assigneeNames.length === 0) {
+        // Render a placeholder row if empty
         const emptyRowLeft = document.createElement('div');
         emptyRowLeft.className = 'gantt-assignee-row';
         emptyRowLeft.innerHTML = `<span class="gantt-assignee-name" style="color: var(--text-muted);">暂无排期</span>`;
@@ -1461,67 +1771,133 @@ function renderGanttChart() {
         emptyRowRight.innerHTML = `<div style="padding-left: 20px; font-size: 12px; color: var(--text-muted); z-index: 5;">当前时间窗口内无进行中任务计划</div>`;
         timelineRows.appendChild(emptyRowRight);
     } else {
-        visibleGanttItems.forEach(item => {
-            const assigneeName = item.assignee || '未指派';
-            const initials = assigneeName.slice(0, 2);
+        assigneeNames.forEach(name => {
+            const assigneeItems = groups[name];
             
-            // 1. Create left panel assignee cell
-            const assRow = document.createElement('div');
-            assRow.className = 'gantt-assignee-row';
-            assRow.innerHTML = `
-                <div class="gantt-avatar">${initials}</div>
-                <span class="gantt-assignee-name">${escapeHtml(assigneeName)}</span>
+            // Sort assigneeItems stably: planStart (asc) -> planEnd (asc) -> workitem_id (asc)
+            assigneeItems.sort((a, b) => {
+                const sA = new Date(a.planStart + ' 00:00:00').getTime();
+                const sB = new Date(b.planStart + ' 00:00:00').getTime();
+                if (sA !== sB) return sA - sB;
+                
+                const eA = new Date((a.planEnd || a.planStart) + ' 23:59:59').getTime();
+                const eB = new Date((b.planEnd || b.planStart) + ' 23:59:59').getTime();
+                if (eA !== eB) return eA - eB;
+                
+                return a.id.localeCompare(b.id);
+            });
+            
+            // Greedy lane allocation
+            const lanes = [];
+            const overlaps = (item1, item2) => {
+                const s1 = new Date(item1.planStart + ' 00:00:00').getTime();
+                const e1 = new Date((item1.planEnd || item1.planStart) + ' 23:59:59').getTime();
+                const s2 = new Date(item2.planStart + ' 00:00:00').getTime();
+                const e2 = new Date((item2.planEnd || item2.planStart) + ' 23:59:59').getTime();
+                return s1 <= e2 && s2 <= e1;
+            };
+            
+            assigneeItems.forEach(item => {
+                let allocated = false;
+                for (let i = 0; i < lanes.length; i++) {
+                    const lane = lanes[i];
+                    if (!lane.some(laneItem => overlaps(laneItem, item))) {
+                        lane.push(item);
+                        allocated = true;
+                        break;
+                    }
+                }
+                if (!allocated) {
+                    lanes.push([item]);
+                }
+            });
+            
+            const isExpanded = state.ganttExpandedAssignees[name] !== false;
+            
+            // Accordion Header Row
+            const headerRowLeft = document.createElement('div');
+            headerRowLeft.className = 'gantt-assignee-row';
+            headerRowLeft.style.cursor = 'pointer';
+            headerRowLeft.style.background = 'rgba(255, 255, 255, 0.02)';
+            headerRowLeft.style.borderBottom = '1px solid rgba(255, 255, 255, 0.06)';
+            headerRowLeft.innerHTML = `
+                <span style="font-size: 10px; color: var(--color-primary); margin-right: 4px;">${isExpanded ? '▼' : '▶'}</span>
+                <div class="gantt-avatar">${escapeHtml(name.slice(0, 2).toUpperCase())}</div>
+                <span class="gantt-assignee-name" style="font-weight: 600;">${escapeHtml(name)} <span style="color: var(--text-muted); font-size: 11px;">(${assigneeItems.length}项)</span></span>
             `;
-            // Trigger item modal detail on click
-            assRow.addEventListener('click', () => showItemDetail(item.originalItem));
-            assigneesList.appendChild(assRow);
+            headerRowLeft.addEventListener('click', () => {
+                state.ganttExpandedAssignees[name] = !isExpanded;
+                renderGanttChart();
+            });
+            assigneesList.appendChild(headerRowLeft);
             
-            // 2. Create right panel timeline cell
-            const timeRow = document.createElement('div');
-            timeRow.className = 'gantt-timeline-row';
+            const headerRowRight = document.createElement('div');
+            headerRowRight.className = 'gantt-timeline-row';
+            headerRowRight.style.cursor = 'pointer';
+            headerRowRight.style.background = 'rgba(255, 255, 255, 0.02)';
+            headerRowRight.style.borderBottom = '1px solid rgba(255, 255, 255, 0.06)';
+            headerRowRight.innerHTML = `<div style="padding-left: 20px; font-size: 11.5px; color: var(--text-muted); z-index: 5;">点击展开/收起排期明细</div>`;
+            headerRowRight.addEventListener('click', () => {
+                state.ganttExpandedAssignees[name] = !isExpanded;
+                renderGanttChart();
+            });
+            timelineRows.appendChild(headerRowRight);
             
-            // Parse item start/end dates
-            const itemStart = new Date(item.planStart + ' 00:00:00').getTime();
-            const itemEnd = new Date((item.planEnd || item.planStart) + ' 23:59:59').getTime();
-            
-            // Position percent math
-            let left = ((itemStart - viewStart) / viewDuration) * 100;
-            let width = ((itemEnd - itemStart) / viewDuration) * 100;
-            
-            // Clip to visible area boundaries for clean CSS layout
-            let labelTextPrefix = '';
-            if (left < 0) {
-                width = width + left;
-                left = 0;
-                labelTextPrefix = '◀ ';
+            if (isExpanded) {
+                lanes.forEach((laneItems, laneIndex) => {
+                    const laneRowLeft = document.createElement('div');
+                    laneRowLeft.className = 'gantt-assignee-row';
+                    laneRowLeft.style.borderBottom = '1px solid rgba(255, 255, 255, 0.02)';
+                    laneRowLeft.style.paddingLeft = '32px';
+                    laneRowLeft.innerHTML = `<span style="color: var(--text-muted); font-size: 11px;">└ Lane ${laneIndex + 1}</span>`;
+                    assigneesList.appendChild(laneRowLeft);
+                    
+                    const laneRowRight = document.createElement('div');
+                    laneRowRight.className = 'gantt-timeline-row';
+                    laneRowRight.style.borderBottom = '1px solid rgba(255, 255, 255, 0.02)';
+                    
+                    laneItems.forEach(item => {
+                        const itemStart = new Date(item.planStart + ' 00:00:00').getTime();
+                        const itemEnd = new Date((item.planEnd || item.planStart) + ' 23:59:59').getTime();
+                        
+                        const drawStart = Math.max(itemStart, viewStart);
+                        const drawEnd = Math.min(itemEnd, viewEnd);
+                        
+                        const left = ((drawStart - viewStart) / viewDuration) * 100;
+                        let width = ((drawEnd - drawStart) / viewDuration) * 100;
+                        if (width < 1.2) width = 1.2;
+                        
+                        const charCount = item.title.length + 25;
+                        const estimatedPxWidth = (width / 100) * 1000;
+                        const isTextOverflow = (charCount * 6.5) > estimatedPxWidth;
+                        
+                        const bar = document.createElement('div');
+                        bar.className = `gantt-bar category-${item.category}` + (isTextOverflow ? ' text-overflow' : '');
+                        bar.style.left = left + '%';
+                        bar.style.width = width + '%';
+                        
+                        let labelTextPrefix = '';
+                        if (isItemCompleted(item)) {
+                            labelTextPrefix += '✓ ';
+                        } else {
+                            labelTextPrefix += '▶ ';
+                        }
+                        
+                        const dateLabel = `${item.planStart.slice(5)}至${(item.planEnd || item.planStart).slice(5)}`;
+                        const typeLabel = item.workItemType ? `[${item.workItemType}]` : '';
+                        bar.innerHTML = `
+                            <span class="gantt-bar-text" title="${escapeHtml(item.title)} (${item.planStart} ~ ${item.planEnd})">
+                                ${labelTextPrefix}${dateLabel} ${typeLabel} ${escapeHtml(item.title)}
+                            </span>
+                        `;
+                        
+                        bar.addEventListener('click', () => showItemDetail(item.originalItem));
+                        laneRowRight.appendChild(bar);
+                    });
+                    
+                    timelineRows.appendChild(laneRowRight);
+                });
             }
-            if (left + width > 100) {
-                width = 100 - left;
-                labelTextPrefix += '▶ ';
-            }
-            if (width < 1.2) width = 1.2;
-            
-            // Check if text overflows the Gantt bar based on estimated width
-            const charCount = item.title.length + 25;
-            const estimatedPxWidth = (width / 100) * 1000;
-            const isTextOverflow = (charCount * 6.5) > estimatedPxWidth;
-            
-            const bar = document.createElement('div');
-            bar.className = `gantt-bar category-${item.category}` + (isTextOverflow ? ' text-overflow' : '');
-            bar.style.left = left + '%';
-            bar.style.width = width + '%';
-            
-            const dateLabel = `${item.planStart.slice(5)}至${(item.planEnd || item.planStart).slice(5)}`;
-            const typeLabel = item.workItemType ? `[${item.workItemType}]` : '';
-            bar.innerHTML = `
-                <span class="gantt-bar-text" title="${escapeHtml(item.title)} (${item.planStart} ~ ${item.planEnd})">
-                    ${labelTextPrefix}${dateLabel} ${typeLabel} ${escapeHtml(item.title)}
-                </span>
-            `;
-            
-            bar.addEventListener('click', () => showItemDetail(item.originalItem));
-            timeRow.appendChild(bar);
-            timelineRows.appendChild(timeRow);
         });
     }
     
@@ -1532,3 +1908,260 @@ function renderGanttChart() {
     layout.appendChild(rightPanel);
     container.appendChild(layout);
 }
+
+// ============================================================================
+// QA Bottleneck Risk Radar & Mitigation Advising
+// ============================================================================
+
+function renderRiskRadar(items) {
+    const container = document.getElementById('risk-radar-alerts');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    
+    // 1. QA Bottleneck check
+    const activeTasks = items.filter(x => x.category === 'Task');
+    const numeratorList = activeTasks.filter(x => ['提交测试', '待测试', '已提测', '发包已测试'].includes(x.status));
+    const denominatorList = activeTasks.filter(x => ['测试中'].includes(x.status));
+    const num = numeratorList.length;
+    const den = denominatorList.length;
+    
+    let qaAlertHtml = '';
+    if (den === 0) {
+        if (num > 0) {
+            qaAlertHtml = `
+                <div class="alert-text-block" style="display: flex; justify-content: space-between; align-items: center; border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1); color: var(--color-amber);">
+                    <span>⚠️ 所有测试挂起：测试队列中积压了 ${num} 个任务，但当前无在测任务！请指派测试资源。</span>
+                    <button id="btn-propose-mitigation" class="btn-sync" style="padding: 4px 12px; font-size: 11px; margin-left: 10px;">查看缓解对策</button>
+                </div>
+            `;
+        }
+    } else {
+        const ratio = num / den;
+        if (ratio > 5.0) {
+            qaAlertHtml = `
+                <div class="alert-text-block" style="display: flex; justify-content: space-between; align-items: center; border-color: rgba(244, 63, 94, 0.4); background: rgba(244, 63, 94, 0.1); color: var(--color-rose);">
+                    <span>⚠️ QA测试队列拥堵：当前提交测试与待测试任务共 ${num} 个，但在测任务仅 ${den} 个，配比为 ${ratio.toFixed(1)} 倍（警告阈值 5.0 倍）！</span>
+                    <button id="btn-propose-mitigation" class="btn-sync" style="padding: 4px 12px; font-size: 11px; margin-left: 10px;">查看缓解对策</button>
+                </div>
+            `;
+        }
+    }
+    
+    if (qaAlertHtml) {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = qaAlertHtml;
+        container.appendChild(tempDiv.firstElementChild);
+        
+        // Bind Propose Mitigation button click
+        const btn = container.querySelector('#btn-propose-mitigation');
+        if (btn) {
+            btn.addEventListener('click', showQAMitigationModal);
+        }
+    }
+    
+    // 2. Critical path delay check
+    const baseDate = new Date('2026-06-08T23:59:59');
+    const overdueCriticalItems = items.filter(x => isCriticalPath(x) && !isItemCompleted(x) && x.planEnd && new Date(x.planEnd + 'T23:59:59') < baseDate);
+    
+    overdueCriticalItems.forEach(item => {
+        const delayAlertHtml = `
+            <div class="alert-text-block" style="display: flex; align-items: center; border-color: rgba(244, 63, 94, 0.4); background: rgba(244, 63, 94, 0.08); color: var(--color-rose);">
+                <span>⚠️ 关键路径延期：[${item.id}] ${escapeHtml(item.title)} 计划完成时间为 ${item.planEnd}，已逾期未完成！</span>
+            </div>
+        `;
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = delayAlertHtml;
+        container.appendChild(tempDiv.firstElementChild);
+    });
+}
+
+function showQAMitigationModal() {
+    const modal = document.getElementById('qa-mitigation-modal');
+    if (!modal) return;
+    
+    const items = state.latest[state.currentProject] || [];
+    
+    // Active workload: Tasks/Bugs assigned to them that are not in testing/completed
+    const activeDevTasks = items.filter(x => {
+        if (x.category !== 'Task' && x.category !== 'Bug') return false;
+        if (isItemCompleted(x)) return false;
+        const testingStatuses = ['提交测试', '测试中', '待测试', '已提测', '发包已测试'];
+        if (testingStatuses.includes(x.status)) return false;
+        return true;
+    });
+    
+    const allAssignees = [...new Set(items.map(x => x.assignee).filter(Boolean))];
+    
+    const workload = {};
+    allAssignees.forEach(name => {
+        workload[name] = 0;
+    });
+    activeDevTasks.forEach(x => {
+        if (x.assignee) {
+            workload[x.assignee] = (workload[x.assignee] || 0) + 1;
+        }
+    });
+    
+    const sortedDevs = Object.entries(workload).sort((a, b) => a[1] - b[1]);
+    
+    const tbody = document.getElementById('mitigation-devs-tbody');
+    if (tbody) {
+        tbody.innerHTML = '';
+        sortedDevs.forEach(([name, count]) => {
+            const tr = document.createElement('tr');
+            
+            let badgeHtml = '';
+            if (count <= 1) {
+                badgeHtml = `<span class="badge" style="background: rgba(16, 185, 129, 0.15); color: var(--color-emerald); border: 1px solid rgba(16, 185, 129, 0.3);">可支援</span>`;
+            } else {
+                badgeHtml = `<span class="badge" style="background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); border: 1px solid var(--border-color);">繁忙</span>`;
+            }
+            
+            const pingLink = `slack://user?name=${encodeURIComponent(name)}`;
+            const pingHtml = `<a href="${pingLink}" style="color: var(--color-primary); text-decoration: none;" class="ping-link">💬 Ping on Slack</a>`;
+            
+            tr.innerHTML = `
+                <td class="cell-title">${escapeHtml(name)}</td>
+                <td>${count} 个</td>
+                <td>${badgeHtml}</td>
+                <td>${pingHtml}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
+    
+    const tipsContainer = document.querySelector('.mitigation-tips-list');
+    if (tipsContainer) {
+        const devA = sortedDevs[0] ? sortedDevs[0][0] : '无人员';
+        const devB = sortedDevs[1] ? sortedDevs[1][0] : '无人员';
+        
+        tipsContainer.innerHTML = `
+            <li style="margin-bottom: 6px;"><strong>暂停代码合并</strong>: 建议暂时暂停非关键需求的合码，以减少 QA 测试负担。</li>
+            <li style="margin-bottom: 6px;"><strong>分级测试与支援</strong>: 建议指派 <strong>${escapeHtml(devA)}</strong> 和 <strong>${escapeHtml(devB)}</strong> 支援高优先级任务的测试验证。</li>
+        `;
+    }
+    
+    modal.classList.add('active');
+    modal.style.display = 'flex';
+}
+
+function hideQAMitigationModal() {
+    const modal = document.getElementById('qa-mitigation-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+    }
+}
+
+// ============================================================================
+// Clipboard Markdown Exporter
+// ============================================================================
+
+function exportMarkdownSnippet() {
+    const projectMap = {
+        mftb: 'MFTB 集团项目',
+        mfood: 'mFood 综合版本'
+    };
+    const projectName = projectMap[state.currentProject] || state.currentProject;
+    const now = new Date();
+    
+    const pad = (n) => n.toString().padStart(2, '0');
+    const exportTime = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
+
+    const searchVal = document.getElementById('filter-search') ? document.getElementById('filter-search').value.trim() : '';
+    const categoryVal = document.getElementById('filter-category') ? document.getElementById('filter-category').value : 'all';
+    const statusVal = document.getElementById('filter-status') ? document.getElementById('filter-status').value : 'all';
+    const assVal = document.getElementById('filter-assignee') ? document.getElementById('filter-assignee').value : 'all';
+    const prioVal = document.getElementById('filter-priority') ? document.getElementById('filter-priority').value : 'all';
+    const iterVal = document.getElementById('filter-iteration') ? document.getElementById('filter-iteration').value : 'all';
+
+    const filterStrings = [];
+    if (searchVal) filterStrings.push(`搜索: "${searchVal}"`);
+    filterStrings.push(`类型: ${categoryVal === 'all' ? '全部类型' : (categoryVal === 'Req' ? '需求' : (categoryVal === 'Task' ? '任务' : '缺陷'))}`);
+    filterStrings.push(`状态: ${statusVal === 'all' ? '全部状态' : statusVal}`);
+    filterStrings.push(`负责人: ${assVal === 'all' ? '全部负责人' : assVal}`);
+    if (prioVal !== 'all' && prioVal !== null) filterStrings.push(`优先级: ${prioVal}`);
+    if (iterVal !== 'all' && iterVal !== null) filterStrings.push(`迭代: ${iterVal}`);
+    const filtersLabel = filterStrings.join(' | ');
+
+    const items = state.latest[state.currentProject] || [];
+    const filtered = items.filter(x => {
+        if (searchVal) {
+            const matchTitle = x.title.toLowerCase().includes(searchVal.toLowerCase());
+            const matchRow = (x.rowText || '').toLowerCase().includes(searchVal.toLowerCase());
+            const matchId = (x.id || '').toLowerCase().includes(searchVal.toLowerCase());
+            if (!matchTitle && !matchRow && !matchId) return false;
+        }
+        if (categoryVal !== 'all' && x.category !== categoryVal) return false;
+        if (statusVal !== 'all' && x.status !== statusVal) return false;
+        if (assVal !== 'all' && x.assignee !== assVal) return false;
+        if (prioVal !== 'all' && prioVal !== null && x.priority !== prioVal) return false;
+        if (iterVal !== 'all' && iterVal !== null && x.iteration !== iterVal) return false;
+        return true;
+    });
+
+    const total = filtered.length;
+    const completed = filtered.filter(x => isItemCompleted(x)).length;
+    const rate = total > 0 ? ((completed / total) * 100).toFixed(1) : '0.0';
+    const leadTime = (state.leadTimeKPI[state.currentProject] || { average: 0 }).average;
+
+    const riskMessages = [];
+    
+    const activeTasks = items.filter(x => x.category === 'Task');
+    const numeratorList = activeTasks.filter(x => ['提交测试', '待测试', '已提测', '发包已测试'].includes(x.status));
+    const denominatorList = activeTasks.filter(x => ['测试中'].includes(x.status));
+    const num = numeratorList.length;
+    const den = denominatorList.length;
+    
+    if (den === 0) {
+        if (num > 0) {
+            riskMessages.push(`⚠️ 所有测试挂起：测试队列中积压了 ${num} 个任务，但当前无在测任务！请指派测试资源。`);
+        }
+    } else {
+        const ratio = num / den;
+        if (ratio > 5.0) {
+            riskMessages.push(`⚠️ QA测试队列拥堵：当前提交测试与待测试任务共 ${num} 个，但在测任务仅 ${den} 个，配比为 ${ratio.toFixed(1)} 倍（警告阈值 5.0 倍）！`);
+        }
+    }
+
+    const baseDate = new Date('2026-06-08T23:59:59');
+    const overdueCriticalItems = filtered.filter(x => isCriticalPath(x) && !isItemCompleted(x) && x.planEnd && new Date(x.planEnd + 'T23:59:59') < baseDate);
+    overdueCriticalItems.forEach(item => {
+        riskMessages.push(`⚠️ 关键路径延期：[${item.id}] ${item.title} 计划完成时间为 ${item.planEnd}，已逾期未完成！`);
+    });
+
+    const riskSection = riskMessages.length > 0
+        ? riskMessages.map(m => `  - ${m}`).join('\n')
+        : '  - 暂无卡点风险提示';
+
+    let tableRows = '';
+    filtered.forEach(x => {
+        const dateLabel = x.planStart ? `${x.planStart} 至 ${x.planEnd || '-'}` : '未排期';
+        tableRows += `| ${x.id || '-'} | ${escapeHtml(x.title)} | ${escapeHtml(x.assignee)} | ${x.status || '-'} | ${x.priority || '-'} | ${dateLabel} |\n`;
+    });
+
+    const markdown = `### [${projectName}] 研发进度周报
+* **导出时间**: ${exportTime}
+* **筛选条件**: ${filtersLabel}
+* **核心数据统计**:
+  - 累计项: ${total} | 已完成/已验证: ${completed} (完成率: ${rate}%)
+  - 平均交付周期: ${leadTime.toFixed(1)} 天
+* **卡点风险提示**: 
+${riskSection}
+* **过滤明细表**:
+  | ID | 标题 | 负责人 | 状态 | 优先级 | 计划时间 |
+  | :--- | :--- | :--- | :--- | :--- | :--- |
+  ${tableRows.trim()}
+
+---
+*Generated by MFTB Collaboration Dashboard | [Give Feedback]*`;
+
+    navigator.clipboard.writeText(markdown).then(() => {
+        showToast('已复制周报 Snippet 到剪贴板！');
+    }).catch(err => {
+        console.error('Failed to copy markdown:', err);
+        showToast('复制失败，请手动选择复制。');
+    });
+}
+
