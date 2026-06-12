@@ -382,7 +382,20 @@ def reconstruct_history_timeline(conn, project_key, parsed_items):
         if is_comp:
             # Check transitions
             trans_date = item_completion_dates.get(workitem_id) or item_completion_dates.get(title)
-            if trans_date and trans_date < today_str:
+            
+            # If transition date is June 10, and item was created before June 3 (more than 7 days gap),
+            # it is likely a bulk-load artifact. Ignore it and fallback.
+            trust_trans = True
+            if trans_date == '2026-06-10':
+                try:
+                    c_dt = datetime.strptime(create_date, '%Y-%m-%d')
+                    t_dt = datetime.strptime(trans_date, '%Y-%m-%d')
+                    if (t_dt - c_dt).days > 7:
+                        trust_trans = False
+                except:
+                    pass
+            
+            if trans_date and trust_trans and trans_date < today_str:
                 comp_date = trans_date
             elif plan_end and plan_end <= today_str:
                 comp_date = plan_end

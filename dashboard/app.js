@@ -183,6 +183,14 @@ function initEventListeners() {
         });
     });
 
+    // Gantt role selector
+    const ganttRoleSelect = document.getElementById('gantt-role-select');
+    if (ganttRoleSelect) {
+        ganttRoleSelect.addEventListener('change', () => {
+            renderGanttChart();
+        });
+    }
+
     // Close QA Mitigation Modal
     const btnCloseMitigation = document.getElementById('btn-close-mitigation');
     if (btnCloseMitigation) {
@@ -1614,8 +1622,16 @@ function renderGanttChart() {
     // Filter items by current Gantt category tab
     const categoryItems = activeFiltered.filter(x => x.category === state.ganttCategory);
 
+    // Filter by selected Gantt role if set
+    const roleSelect = document.getElementById('gantt-role-select');
+    const selectedRole = roleSelect ? roleSelect.value : 'all';
+    
+    const roleFiltered = selectedRole === 'all'
+        ? categoryItems
+        : categoryItems.filter(item => inferDeveloperRole(item.assignee, items) === selectedRole);
+
     // Map and calculate plan dates
-    const ganttItems = categoryItems.map(item => {
+    const ganttItems = roleFiltered.map(item => {
         const planStart = item.planStart || item.createDate;
         const planEnd = item.planEnd || planStart;
         return {
