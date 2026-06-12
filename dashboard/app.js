@@ -1784,7 +1784,18 @@ function renderGanttChart() {
         groups[name].push(item);
     });
 
-    const assigneeNames = Object.keys(groups).sort();
+    const activeAssignees = Object.keys(groups).sort();
+    const idleAssignees = [];
+    for (const [name, role] of Object.entries(DEVELOPER_ROLES_MAP)) {
+        if (selectedRole === 'all' || role === selectedRole) {
+            if (!groups[name]) {
+                idleAssignees.push(name);
+            }
+        }
+    }
+    idleAssignees.sort();
+
+    const assigneeNames = [...activeAssignees, ...idleAssignees];
     
     if (assigneeNames.length === 0) {
         // Render a placeholder row if empty
@@ -1799,7 +1810,30 @@ function renderGanttChart() {
         timelineRows.appendChild(emptyRowRight);
     } else {
         assigneeNames.forEach(name => {
-            const assigneeItems = groups[name];
+            const assigneeItems = groups[name] || [];
+            
+            if (assigneeItems.length === 0) {
+                // Render idle member row (no lanes, no expansion)
+                const headerRowLeft = document.createElement('div');
+                headerRowLeft.className = 'gantt-assignee-row';
+                headerRowLeft.style.background = 'rgba(255, 255, 255, 0.01)';
+                headerRowLeft.style.borderBottom = '1px solid rgba(255, 255, 255, 0.04)';
+                headerRowLeft.innerHTML = `
+                    <span style="font-size: 10px; color: var(--text-muted); margin-right: 4px; visibility: hidden;">▶</span>
+                    <div class="gantt-avatar" style="opacity: 0.5; background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1); color: var(--text-muted);">${escapeHtml(name.slice(0, 2).toUpperCase())}</div>
+                    <span class="gantt-assignee-name" style="font-weight: 500; color: var(--text-muted);">${escapeHtml(name)} <span style="color: var(--text-muted); font-size: 11px;">(0项)</span></span>
+                `;
+                assigneesList.appendChild(headerRowLeft);
+                
+                const headerRowRight = document.createElement('div');
+                headerRowRight.className = 'gantt-timeline-row';
+                headerRowRight.style.background = 'rgba(255, 255, 255, 0.01)';
+                headerRowRight.style.borderBottom = '1px solid rgba(255, 255, 255, 0.04)';
+                headerRowRight.innerHTML = `<div style="padding-left: 20px; font-size: 11px; color: var(--text-muted); z-index: 5; font-style: italic;">暂无分配工作项 (闲置)</div>`;
+                timelineRows.appendChild(headerRowRight);
+                
+                return;
+            }
             
             // Sort assigneeItems stably: planStart (asc) -> planEnd (asc) -> workitem_id (asc)
             assigneeItems.sort((a, b) => {
@@ -1956,66 +1990,66 @@ const roleMeta = {
     Fullstack: { name: '全栈开发', badge: 'badge-role-fullstack' }
 };
 
+const DEVELOPER_ROLES_MAP = {
+    "曾庆超": "PM",
+    "李古悦": "PM",
+    "李政宏": "Backend",
+    "黄信杰": "Backend",
+    "刘志敏": "Backend",
+    "黎月平": "Backend",
+    "刘付益": "Backend",
+    "林泽斌": "Backend",
+    "张健伟": "Backend",
+    "唐光伟": "Backend",
+    "卓坚": "Backend",
+    "杨至成": "Backend",
+    "龚凯": "Backend",
+    "刘卫": "Backend",
+    "朱敬辉": "Backend",
+    "叶龙": "Backend",
+    "李科": "Frontend",
+    "甄荣康": "Frontend",
+    "陈文涛": "Frontend",
+    "洪喜彬": "Frontend",
+    "周忠浩": "Frontend",
+    "许强": "Frontend",
+    "陈剑": "Mobile",
+    "徐子旺": "Mobile",
+    "郑跃浩": "Mobile",
+    "卓天鸿": "Mobile",
+    "陈少丹": "Mobile",
+    "梁富城": "Mobile",
+    "陈万里": "Mobile",
+    "陈国伟": "Mobile",
+    "杨庆龙": "Tester",
+    "曹晴晴": "Tester",
+    "黄春晓": "Tester",
+    "侯黎明": "Tester",
+    "冼嘉业": "Tester",
+    "李云锋": "Tester",
+    "黄金凤": "Tester",
+    "贺志成": "Tester",
+    "朱家萱": "Tester",
+    "练俊文": "Ops",
+    "杨磊": "Ops",
+    "廖荣": "Product",
+    "覃林方": "Product",
+    "刘龙振海": "Product",
+    "冯松": "Product",
+    "温浩源": "Product",
+    "周昱强": "Product",
+    "赵嘉颖": "Product",
+    "龙颖之": "Product",
+    "胡家兴": "UI",
+    "许思浩": "UI",
+    "罗安琪": "UI",
+    "李玉玲": "UI",
+    "李鑫": "UI"
+};
+
 function inferDeveloperRole(devName, allItems) {
     if (!devName) return 'Fullstack';
     
-    const DEVELOPER_ROLES_MAP = {
-        "曾庆超": "PM",
-        "李古悦": "PM",
-        "李政宏": "Backend",
-        "黄信杰": "Backend",
-        "刘志敏": "Backend",
-        "黎月平": "Backend",
-        "刘付益": "Backend",
-        "林泽斌": "Backend",
-        "张健伟": "Backend",
-        "唐光伟": "Backend",
-        "卓坚": "Backend",
-        "杨至成": "Backend",
-        "龚凯": "Backend",
-        "刘卫": "Backend",
-        "朱敬辉": "Backend",
-        "叶龙": "Backend",
-        "李科": "Frontend",
-        "甄荣康": "Frontend",
-        "陈文涛": "Frontend",
-        "洪喜彬": "Frontend",
-        "周忠浩": "Frontend",
-        "许强": "Frontend",
-        "陈剑": "Mobile",
-        "徐子旺": "Mobile",
-        "郑跃浩": "Mobile",
-        "卓天鸿": "Mobile",
-        "陈少丹": "Mobile",
-        "梁富城": "Mobile",
-        "陈万里": "Mobile",
-        "陈国伟": "Mobile",
-        "杨庆龙": "Tester",
-        "曹晴晴": "Tester",
-        "黄春晓": "Tester",
-        "侯黎明": "Tester",
-        "冼嘉业": "Tester",
-        "李云锋": "Tester",
-        "黄金凤": "Tester",
-        "贺志成": "Tester",
-        "朱家萱": "Tester",
-        "练俊文": "Ops",
-        "杨磊": "Ops",
-        "廖荣": "Product",
-        "覃林方": "Product",
-        "刘龙振海": "Product",
-        "冯松": "Product",
-        "温浩源": "Product",
-        "周昱强": "Product",
-        "赵嘉颖": "Product",
-        "龙颖之": "Product",
-        "胡家兴": "UI",
-        "许思浩": "UI",
-        "罗安琪": "UI",
-        "李玉玲": "UI",
-        "李鑫": "UI"
-    };
-
     if (DEVELOPER_ROLES_MAP[devName]) {
         return DEVELOPER_ROLES_MAP[devName];
     }
