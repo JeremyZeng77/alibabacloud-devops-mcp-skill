@@ -51,6 +51,17 @@ class Handler(BaseHTTPRequestHandler):
                     return json_response(self, 500, {"ok": False, "error": res.stderr, "output": res.stdout})
             except Exception as e:
                 return json_response(self, 500, {"ok": False, "error": str(e)})
+        if parsed.path == "/generate_weekly":
+            try:
+                import subprocess
+                import sys
+                res = subprocess.run([sys.executable, COMPILE_SCRIPT, "--generate-weekly"], capture_output=True, text=True, encoding='utf-8')
+                if res.returncode == 0:
+                    return json_response(self, 200, {"ok": True, "message": "Weekly report generated successfully", "output": res.stdout})
+                else:
+                    return json_response(self, 500, {"ok": False, "error": res.stderr, "output": res.stdout})
+            except Exception as e:
+                return json_response(self, 500, {"ok": False, "error": str(e)})
         if parsed.path == "/latest":
             if not LATEST_FILE.exists():
                 return json_response(self, 404, {"ok": False, "error": "no-latest-capture"})

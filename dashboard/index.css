@@ -316,6 +316,32 @@ input:checked + .slider:before {
     animation: spin 1s linear infinite;
 }
 
+.btn-export-markdown, .btn-generate-weekly {
+    background: rgba(0, 242, 254, 0.08);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    color: var(--color-primary);
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: var(--transition-smooth);
+    outline: none;
+    box-sizing: border-box;
+    height: 41px;
+}
+
+.btn-export-markdown:hover, .btn-generate-weekly:hover {
+    background: rgba(0, 242, 254, 0.16);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
 /* Nav Tabs */
 .nav-tabs {
     display: flex;
@@ -643,6 +669,8 @@ input:checked + .slider:before {
 .table-meta {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 12px;
 }
 
@@ -1528,5 +1556,98 @@ input:checked + .slider:before {
 }
 .trend-indicator.down {
     color: var(--color-rose) !important;
+}
+
+/* Strategic Advice Panel Container */
+.strategic-advice-container {
+    margin-top: 10px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.strategic-advice-card {
+    background: rgba(0, 210, 255, 0.05);
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.strategic-advice-card.jam-be {
+    border-color: rgba(9, 132, 227, 0.4);
+    background: rgba(9, 132, 227, 0.06);
+}
+.strategic-advice-card.jam-fe {
+    border-color: rgba(162, 155, 254, 0.4);
+    background: rgba(162, 155, 254, 0.06);
+}
+.strategic-advice-card.jam-mobile {
+    border-color: rgba(225, 112, 85, 0.4);
+    background: rgba(225, 112, 85, 0.06);
+}
+.strategic-advice-card.jam-ui {
+    border-color: rgba(253, 121, 168, 0.4);
+    background: rgba(253, 121, 168, 0.06);
+}
+.strategic-advice-card.jam-double {
+    border-color: rgba(0, 206, 201, 0.4);
+    background: rgba(0, 206, 201, 0.06);
+}
+.strategic-advice-icon {
+    font-size: 18px;
+    line-height: 1;
+}
+.strategic-advice-text {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.strategic-advice-card.idle-be,
+.strategic-advice-card.idle-fe,
+.strategic-advice-card.idle-mobile,
+.strategic-advice-card.idle-ui {
+    border-color: rgba(245, 158, 11, 0.4);
+    background: rgba(245, 158, 11, 0.06);
+}
+
+/* Role Badges */
+.badge-role-be {
+    background: rgba(9, 132, 227, 0.15) !important;
+    color: #74b9ff !important;
+    border: 1px solid rgba(9, 132, 227, 0.3) !important;
+}
+.badge-role-fe {
+    background: rgba(162, 155, 254, 0.15) !important;
+    color: #a29bfe !important;
+    border: 1px solid rgba(162, 155, 254, 0.3) !important;
+}
+.badge-role-mobile {
+    background: rgba(225, 112, 85, 0.15) !important;
+    color: #ff7675 !important;
+    border: 1px solid rgba(225, 112, 85, 0.3) !important;
+}
+.badge-role-ui {
+    background: rgba(253, 121, 168, 0.15) !important;
+    color: #fd79a8 !important;
+    border: 1px solid rgba(253, 121, 168, 0.3) !important;
+}
+.badge-role-ops {
+    background: rgba(0, 206, 201, 0.15) !important;
+    color: #00cec9 !important;
+    border: 1px solid rgba(0, 206, 201, 0.3) !important;
+}
+.badge-role-fullstack {
+    background: rgba(253, 203, 110, 0.15) !important;
+    color: #f1c40f !important;
+    border: 1px solid rgba(253, 203, 110, 0.3) !important;
+}
+.badge-role-other {
+    background: rgba(120, 224, 143, 0.15) !important;
+    color: #78e08f !important;
+    border: 1px solid rgba(120, 224, 143, 0.3) !important;
 }
 

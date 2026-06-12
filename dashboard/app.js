@@ -22,6 +22,7 @@ let state = {
 function isItemCompleted(item) {
     const status = item.status || '';
     const cat = item.category || 'Req';
+    const workItemType = item.workItemType || '';
     
     // Statuses that represent terminal/completed states for any item
     const baseCompleted = [
@@ -38,6 +39,10 @@ function isItemCompleted(item) {
     if (cat === 'Task') {
         const testingStatuses = ['提交测试', '测试中', '待测试', '发包已测试', '已提测'];
         if (testingStatuses.includes(status)) {
+            // For tasks where workItemType is '測試', testing statuses are NOT completed
+            if (workItemType === '測試') {
+                return false;
+            }
             return true;
         }
     }
@@ -194,6 +199,12 @@ function initEventListeners() {
     const btnExportMarkdown = document.getElementById('btn-export-markdown');
     if (btnExportMarkdown) {
         btnExportMarkdown.addEventListener('click', exportMarkdownSnippet);
+    }
+
+    // Generate Weekly Report
+    const btnGenerateWeekly = document.getElementById('btn-generate-weekly');
+    if (btnGenerateWeekly) {
+        btnGenerateWeekly.addEventListener('click', handleGenerateWeekly);
     }
 }
 
@@ -1913,6 +1924,299 @@ function renderGanttChart() {
 // QA Bottleneck Risk Radar & Mitigation Advising
 // ============================================================================
 
+// ============================================================================
+// Developer Sub-role Classifier & Strategic Advising Heuristics
+// ============================================================================
+
+const roleMeta = {
+    Frontend: { name: '前端开发', badge: 'badge-role-fe' },
+    Backend: { name: '后端开发', badge: 'badge-role-be' },
+    Mobile: { name: '移动开发', badge: 'badge-role-mobile' },
+    UI: { name: 'UI设计', badge: 'badge-role-ui' },
+    Ops: { name: '运维工程师', badge: 'badge-role-ops' },
+    Product: { name: '产品经理', badge: 'badge-role-other' },
+    PM: { name: '项目经理', badge: 'badge-role-other' },
+    Tester: { name: '测试工程师', badge: 'badge-role-other' },
+    Fullstack: { name: '全栈开发', badge: 'badge-role-fullstack' }
+};
+
+function inferDeveloperRole(devName, allItems) {
+    if (!devName) return 'Fullstack';
+    
+    const DEVELOPER_ROLES_MAP = {
+        "曾庆超": "PM",
+        "李古悦": "PM",
+        "李政宏": "Backend",
+        "黄信杰": "Backend",
+        "刘志敏": "Backend",
+        "黎月平": "Backend",
+        "刘付益": "Backend",
+        "林泽斌": "Backend",
+        "张健伟": "Backend",
+        "唐光伟": "Backend",
+        "卓坚": "Backend",
+        "杨至成": "Backend",
+        "龚凯": "Backend",
+        "刘卫": "Backend",
+        "朱敬辉": "Backend",
+        "叶龙": "Backend",
+        "李科": "Frontend",
+        "甄荣康": "Frontend",
+        "陈文涛": "Frontend",
+        "洪喜彬": "Frontend",
+        "周忠浩": "Frontend",
+        "许强": "Frontend",
+        "陈剑": "Mobile",
+        "徐子旺": "Mobile",
+        "郑跃浩": "Mobile",
+        "卓天鸿": "Mobile",
+        "陈少丹": "Mobile",
+        "梁富城": "Mobile",
+        "陈万里": "Mobile",
+        "陈国伟": "Mobile",
+        "杨庆龙": "Tester",
+        "曹晴晴": "Tester",
+        "黄春晓": "Tester",
+        "侯黎明": "Tester",
+        "冼嘉业": "Tester",
+        "李云锋": "Tester",
+        "黄金凤": "Tester",
+        "贺志成": "Tester",
+        "朱家萱": "Tester",
+        "练俊文": "Ops",
+        "杨磊": "Ops",
+        "廖荣": "Product",
+        "覃林方": "Product",
+        "刘龙振海": "Product",
+        "冯松": "Product",
+        "温浩源": "Product",
+        "周昱强": "Product",
+        "赵嘉颖": "Product",
+        "龙颖之": "Product",
+        "胡家兴": "UI",
+        "许思浩": "UI",
+        "罗安琪": "UI",
+        "李玉玲": "UI",
+        "李鑫": "UI"
+    };
+
+    if (DEVELOPER_ROLES_MAP[devName]) {
+        return DEVELOPER_ROLES_MAP[devName];
+    }
+
+    const devItems = allItems.filter(x => x.assignee === devName || x.creator === devName);
+    if (devItems.length === 0) return 'Fullstack';
+    
+    let score = { Mobile: 0, Frontend: 0, Backend: 0, UI: 0, Ops: 0, Product: 0, PM: 0, Tester: 0 };
+    
+    const keywords = {
+        Mobile: /android|ios|app|flutter|uniapp|移动|原生|客户端/i,
+        Frontend: /vue|react|h5|小程序|页面|前端|css|组件|网页/i,
+        Backend: /sql|mysql|db|数据库|接口|api|后台|服务端|微服务|架构|redis|后端|服务|表结构/i,
+        UI: /ui|设计|切图|样机|交互/i,
+        Ops: /运维|上线|发布|部署|服务器|环境/i,
+        Product: /需求|产品|prd|原型|脑图|功能点/i,
+        PM: /项目管理|排期|汇报|进度|双周|周报|会议/i,
+        Tester: /用例|测试报告|测试用例|性能测试|安全测试/i
+    };
+    
+    devItems.forEach(item => {
+        const text = ((item.title || '') + ' ' + (item.rowText || '') + ' ' + (item.category || '')).toLowerCase();
+        if (keywords.Mobile.test(text)) score.Mobile++;
+        if (keywords.Frontend.test(text)) score.Frontend++;
+        if (keywords.Backend.test(text)) score.Backend++;
+        if (keywords.UI.test(text)) score.UI++;
+        if (keywords.Ops.test(text)) score.Ops++;
+        if (keywords.Product.test(text)) score.Product++;
+        if (keywords.PM.test(text)) score.PM++;
+        if (keywords.Tester.test(text)) score.Tester++;
+    });
+    
+    let maxVal = 0;
+    let maxRole = 'Fullstack';
+    let isTie = false;
+    
+    Object.entries(score).forEach(([role, val]) => {
+        if (val > maxVal) {
+            maxVal = val;
+            maxRole = role;
+            isTie = false;
+        } else if (val === maxVal && val > 0) {
+            isTie = true;
+        }
+    });
+    
+    if (isTie || maxVal === 0) {
+        return 'Fullstack';
+    }
+    return maxRole;
+}
+
+function getStrategicAdvices(items) {
+    const activeTasks = items.filter(x => x.category === 'Task');
+    const numeratorList = activeTasks.filter(x => {
+        if (!['提交测试', '待测试', '已提测', '发包已测试'].includes(x.status)) return false;
+        if (x.status === '提交测试' && x.workItemType !== '測試') return false;
+        return true;
+    });
+    const denominatorList = activeTasks.filter(x => {
+        if (!['测试中'].includes(x.status)) return false;
+        if (x.status === '测试中' && x.workItemType !== '測試') return false;
+        return true;
+    });
+    const num = numeratorList.length;
+    const den = denominatorList.length;
+    
+    let qaAlertActive = false;
+    if (den === 0) {
+        if (num > 0) qaAlertActive = true;
+    } else {
+        const ratio = num / den;
+        if (ratio > 5.0) qaAlertActive = true;
+    }
+    
+    const activeItems = items.filter(x => !isItemCompleted(x));
+    const assignees = [...new Set(items.map(x => x.assignee).filter(Boolean))];
+    const workload = {};
+    assignees.forEach(name => {
+        workload[name] = 0;
+    });
+    activeItems.forEach(x => {
+        if (x.assignee) {
+            workload[x.assignee] = (workload[x.assignee] || 0) + 1;
+        }
+    });
+    
+    let feTotalActive = 0, feCount = 0;
+    let beTotalActive = 0, beCount = 0;
+    let mobileTotalActive = 0, mobileCount = 0;
+    let uiTotalActive = 0, uiCount = 0;
+    
+    assignees.forEach(name => {
+        const role = inferDeveloperRole(name, items);
+        const count = workload[name] || 0;
+        if (role === 'Frontend') {
+            feTotalActive += count;
+            feCount++;
+        } else if (role === 'Backend') {
+            beTotalActive += count;
+            beCount++;
+        } else if (role === 'Mobile') {
+            mobileTotalActive += count;
+            mobileCount++;
+        } else if (role === 'UI') {
+            uiTotalActive += count;
+            uiCount++;
+        }
+    });
+    
+    const FE_avg = feCount > 0 ? (feTotalActive / feCount) : 0;
+    const BE_avg = beCount > 0 ? (beTotalActive / beCount) : 0;
+    const Mobile_avg = mobileCount > 0 ? (mobileTotalActive / mobileCount) : 0;
+    const UI_avg = uiCount > 0 ? (uiTotalActive / uiCount) : 0;
+    
+    // We will use UI_avg directly for density warning
+    const uiActiveTasks = activeItems.filter(x => {
+        const isUiDev = x.assignee && inferDeveloperRole(x.assignee, items) === 'UI';
+        const hasUiKeywords = /ui|设计|切图|样机|交互/i.test((x.title || '') + ' ' + (x.category || ''));
+        return isUiDev || hasUiKeywords;
+    });
+    const UI_count = uiActiveTasks.length;
+    
+    const advices = [];
+    
+    // Rule 1: Backend Jam
+    if (BE_avg > 3.0 && FE_avg < 1.5) {
+        advices.push({
+            type: 'jam-be',
+            text: `⚠️ 服务端研发拥堵：后端开发人均负荷为 ${BE_avg.toFixed(1)} 个活跃任务，前端为 ${FE_avg.toFixed(1)}。建议产品（Product）与项目经理（PM）暂停输出后端依赖型需求，并放缓新功能排期。`
+        });
+    }
+    
+    // Rule 2: Frontend Jam
+    if (FE_avg > 3.0 && BE_avg < 1.5) {
+        advices.push({
+            type: 'jam-fe',
+            text: `⚠️ 前端研发拥堵：前端开发人均负荷为 ${FE_avg.toFixed(1)} 个活跃任务，后端为 ${BE_avg.toFixed(1)}。建议后端适当放缓开发，集中资源协助前端联调、修复Bug或进行代码走查。`
+        });
+    }
+    
+    // Rule 3: Mobile Release Block
+    if (Mobile_avg > 3.0 && num > 5) {
+        advices.push({
+            type: 'jam-mobile',
+            text: `⚠️ 移动端发布拥堵：移动端人均负荷为 ${Mobile_avg.toFixed(1)} 且测试队列拥堵。建议产品放缓App版本特性发布，优先安排热修复或已有缺陷的验证上线。`
+        });
+    }
+    
+    // Rule 4: UI Design Bottleneck
+    if (UI_count > 4 && FE_avg < 1.5) {
+        advices.push({
+            type: 'jam-ui',
+            text: `⚠️ UI设计阻塞：UI设计在排任务积压达 ${UI_count} 个，导致前端开发无图可用。建议项目经理（PM）紧急协调设计资源，或让产品与后端开发优先推进非UI依赖的底层逻辑。`
+        });
+    }
+    
+    // Rule 5: QA & FE Jam, BE & Product Free
+    if (qaAlertActive && FE_avg > 2.5 && BE_avg < 1.0) {
+        advices.push({
+            type: 'jam-double',
+            text: `⚠️ 研发中下游阻塞：当前测试队列阻塞且前端负荷高，但后端及产品人员空闲。建议产品与项目经理优先将工作重心转移至“纯后端重构型”或“数据库/性能优化”需求的预研与排期。`
+        });
+    }
+    
+    // Rule 6: Backend Resource Idle
+    if (BE_avg < 1.0 && beCount > 0) {
+        advices.push({
+            type: 'idle-be',
+            text: `⚠️ 服务端资源闲置：后端开发人均负荷仅为 ${BE_avg.toFixed(1)} 个活跃任务。建议项目经理与产品人员加速后端接口与需求排期，或合理安排人员进行技术债清理、慢SQL优化与微服务架构重构。`
+        });
+    }
+    
+    // Rule 7: Frontend Resource Idle
+    if (FE_avg < 1.0 && feCount > 0) {
+        advices.push({
+            type: 'idle-fe',
+            text: `⚠️ 前端资源闲置：前端开发人均负荷仅为 ${FE_avg.toFixed(1)} 个活跃任务。建议项目经理加速UI设计图输出，或向前推进前端通用组件库整理、前端工程化升级与体验优化预研。`
+        });
+    }
+    
+    // Rule 8: Mobile Resource Idle
+    if (Mobile_avg < 1.0 && mobileCount > 0) {
+        advices.push({
+            type: 'idle-mobile',
+            text: `⚠️ 移动端资源闲置：移动端开发人均负荷仅为 ${Mobile_avg.toFixed(1)} 个活跃任务。建议安排热修复包整理、跨平台技术升级或移动端核心代码模块重构。`
+        });
+    }
+    
+    // Rule 9: UI Design Resource Idle
+    if (UI_avg < 1.0 && uiCount > 0) {
+        advices.push({
+            type: 'idle-ui',
+            text: `⚠️ UI设计资源闲置：UI设计人均负荷仅为 ${UI_avg.toFixed(1)} 个活跃任务。建议产品提前输出后续迭代的原型图并与之进行评审，以便交互与视觉设计能更早介入。`
+        });
+    }
+    
+    return advices;
+}
+
+function renderStrategicAdvices(items) {
+    const container = document.getElementById('strategic-advice-panel');
+    if (!container) return;
+    container.innerHTML = '';
+    
+    const advices = getStrategicAdvices(items);
+    advices.forEach(adv => {
+        const card = document.createElement('div');
+        card.className = `strategic-advice-card ${adv.type}`;
+        card.innerHTML = `
+            <div class="strategic-advice-icon">💡</div>
+            <div class="strategic-advice-text">${escapeHtml(adv.text)}</div>
+        `;
+        container.appendChild(card);
+    });
+}
+
 function renderRiskRadar(items) {
     const container = document.getElementById('risk-radar-alerts');
     if (!container) return;
@@ -1921,8 +2225,16 @@ function renderRiskRadar(items) {
     
     // 1. QA Bottleneck check
     const activeTasks = items.filter(x => x.category === 'Task');
-    const numeratorList = activeTasks.filter(x => ['提交测试', '待测试', '已提测', '发包已测试'].includes(x.status));
-    const denominatorList = activeTasks.filter(x => ['测试中'].includes(x.status));
+    const numeratorList = activeTasks.filter(x => {
+        if (!['提交测试', '待测试', '已提测', '发包已测试'].includes(x.status)) return false;
+        if (x.status === '提交测试' && x.workItemType !== '測試') return false;
+        return true;
+    });
+    const denominatorList = activeTasks.filter(x => {
+        if (!['测试中'].includes(x.status)) return false;
+        if (x.status === '测试中' && x.workItemType !== '測試') return false;
+        return true;
+    });
     const num = numeratorList.length;
     const den = denominatorList.length;
     
@@ -1974,6 +2286,9 @@ function renderRiskRadar(items) {
         tempDiv.innerHTML = delayAlertHtml;
         container.appendChild(tempDiv.firstElementChild);
     });
+    
+    // Render the Strategic Advice Panel
+    renderStrategicAdvices(items);
 }
 
 function showQAMitigationModal() {
@@ -1981,6 +2296,16 @@ function showQAMitigationModal() {
     if (!modal) return;
     
     const items = state.latest[state.currentProject] || [];
+    
+    // Set warning note and title description dynamically
+    const descEl = modal.querySelector('.section-desc');
+    if (descEl) {
+        descEl.innerHTML = '测试工作专业性强，优先推荐空闲的测试同仁，并建议协调产品协助功能验收测试，避免盲目指派开发人员抢占测试资源。<br><span style="color: var(--color-rose); font-weight: 500; display: block; margin-top: 8px;">*测试工作专业性强，优先推荐空闲的测试同仁，并建议协调产品协助功能验收测试，避免盲目指派开发人员抢占测试资源。</span>';
+    }
+    const thEl = modal.querySelector('.data-table th:first-child');
+    if (thEl) {
+        thEl.textContent = '团队成员';
+    }
     
     // Active workload: Tasks/Bugs assigned to them that are not in testing/completed
     const activeDevTasks = items.filter(x => {
@@ -2005,10 +2330,15 @@ function showQAMitigationModal() {
     
     const sortedDevs = Object.entries(workload).sort((a, b) => a[1] - b[1]);
     
+    // Filter and Sort: Testers first (ascending by workload), then Product members (ascending by workload)
+    const testers = sortedDevs.filter(([name]) => inferDeveloperRole(name, items) === 'Tester');
+    const productMembers = sortedDevs.filter(([name]) => inferDeveloperRole(name, items) === 'Product');
+    const recommendedPeople = [...testers, ...productMembers];
+    
     const tbody = document.getElementById('mitigation-devs-tbody');
     if (tbody) {
         tbody.innerHTML = '';
-        sortedDevs.forEach(([name, count]) => {
+        recommendedPeople.forEach(([name, count]) => {
             const tr = document.createElement('tr');
             
             let badgeHtml = '';
@@ -2018,11 +2348,16 @@ function showQAMitigationModal() {
                 badgeHtml = `<span class="badge" style="background: rgba(255, 255, 255, 0.05); color: var(--text-secondary); border: 1px solid var(--border-color);">繁忙</span>`;
             }
             
+            const role = inferDeveloperRole(name, items);
+            const meta = roleMeta[role] || { name: '未知', badge: 'badge-role-other' };
+            const roleBadgeHtml = `<span class="badge ${meta.badge}">${meta.name}</span>`;
+            
             const pingLink = `slack://user?name=${encodeURIComponent(name)}`;
             const pingHtml = `<a href="${pingLink}" style="color: var(--color-primary); text-decoration: none;" class="ping-link">💬 Ping on Slack</a>`;
             
             tr.innerHTML = `
                 <td class="cell-title">${escapeHtml(name)}</td>
+                <td>${roleBadgeHtml}</td>
                 <td>${count} 个</td>
                 <td>${badgeHtml}</td>
                 <td>${pingHtml}</td>
@@ -2033,12 +2368,19 @@ function showQAMitigationModal() {
     
     const tipsContainer = document.querySelector('.mitigation-tips-list');
     if (tipsContainer) {
-        const devA = sortedDevs[0] ? sortedDevs[0][0] : '无人员';
-        const devB = sortedDevs[1] ? sortedDevs[1][0] : '无人员';
+        const personA = recommendedPeople[0] ? recommendedPeople[0][0] : '无人员';
+        const roleA = recommendedPeople[0] ? inferDeveloperRole(personA, items) : '';
+        const roleAName = roleA ? (roleMeta[roleA] || { name: '成员' }).name : '成员';
+        
+        const personB = recommendedPeople[1] ? recommendedPeople[1][0] : '无人员';
+        const roleB = recommendedPeople[1] ? inferDeveloperRole(personB, items) : '';
+        const roleBName = roleB ? (roleMeta[roleB] || { name: '成员' }).name : '成员';
+        
+        let mitigationTip = `建议指派负载较低的 <strong>${escapeHtml(personA)}</strong> (${roleAName}) 和 <strong>${escapeHtml(personB)}</strong> (${roleBName}) 支援高优先级任务的测试验证与功能验收。`;
         
         tipsContainer.innerHTML = `
             <li style="margin-bottom: 6px;"><strong>暂停代码合并</strong>: 建议暂时暂停非关键需求的合码，以减少 QA 测试负担。</li>
-            <li style="margin-bottom: 6px;"><strong>分级测试与支援</strong>: 建议指派 <strong>${escapeHtml(devA)}</strong> 和 <strong>${escapeHtml(devB)}</strong> 支援高优先级任务的测试验证。</li>
+            <li style="margin-bottom: 6px;">${mitigationTip}</li>
         `;
     }
     
@@ -2053,6 +2395,7 @@ function hideQAMitigationModal() {
         modal.style.display = 'none';
     }
 }
+
 
 // ============================================================================
 // Clipboard Markdown Exporter
@@ -2109,8 +2452,16 @@ function exportMarkdownSnippet() {
     const riskMessages = [];
     
     const activeTasks = items.filter(x => x.category === 'Task');
-    const numeratorList = activeTasks.filter(x => ['提交测试', '待测试', '已提测', '发包已测试'].includes(x.status));
-    const denominatorList = activeTasks.filter(x => ['测试中'].includes(x.status));
+    const numeratorList = activeTasks.filter(x => {
+        if (!['提交测试', '待测试', '已提测', '发包已测试'].includes(x.status)) return false;
+        if (x.status === '提交测试' && x.workItemType !== '測試') return false;
+        return true;
+    });
+    const denominatorList = activeTasks.filter(x => {
+        if (!['测试中'].includes(x.status)) return false;
+        if (x.status === '测试中' && x.workItemType !== '測試') return false;
+        return true;
+    });
     const num = numeratorList.length;
     const den = denominatorList.length;
     
@@ -2135,6 +2486,11 @@ function exportMarkdownSnippet() {
         ? riskMessages.map(m => `  - ${m}`).join('\n')
         : '  - 暂无卡点风险提示';
 
+    const advices = getStrategicAdvices(items);
+    const adviceLines = advices.length > 0
+        ? advices.map(a => `  - ${a.text}`).join('\n')
+        : '  - 暂无研发效能卡点与流控建议。';
+
     let tableRows = '';
     filtered.forEach(x => {
         const dateLabel = x.planStart ? `${x.planStart} 至 ${x.planEnd || '-'}` : '未排期';
@@ -2146,9 +2502,13 @@ function exportMarkdownSnippet() {
 * **筛选条件**: ${filtersLabel}
 * **核心数据统计**:
   - 累计项: ${total} | 已完成/已验证: ${completed} (完成率: ${rate}%)
-  - 平均交付周期: ${leadTime.toFixed(1)} 天
+  - 需求平均交付周期: ${leadTime.toFixed(1)} 天
 * **卡点风险提示**: 
 ${riskSection}
+
+### * 研发效能与流控建议
+${adviceLines}
+
 * **过滤明细表**:
   | ID | 标题 | 负责人 | 状态 | 优先级 | 计划时间 |
   | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -2163,5 +2523,59 @@ ${riskSection}
         console.error('Failed to copy markdown:', err);
         showToast('复制失败，请手动选择复制。');
     });
+}
+
+async function handleGenerateWeekly() {
+    // 1. Check if today is Friday
+    const today = new Date();
+    if (today.getDay() !== 5) {
+        showToast('只能在每周五才能生成周报！');
+        return;
+    }
+    
+    // 2. Check if a report for this week already exists
+    const monday = new Date(today);
+    monday.setDate(today.getDate() - today.getDay() + 1);
+    const friday = new Date(monday);
+    friday.setDate(monday.getDate() + 4);
+    
+    const pad = (n) => String(n).padStart(2, '0');
+    const startStr = `${monday.getFullYear()}-${pad(monday.getMonth()+1)}-${pad(monday.getDate())}`;
+    const endStr = `${friday.getFullYear()}-${pad(friday.getMonth()+1)}-${pad(friday.getDate())}`;
+    const weekHeader = `${startStr} 至 ${endStr}`;
+    
+    const exists = state.weeklyReports && state.weeklyReports.some(r => r.week === weekHeader);
+    
+    if (exists) {
+        const confirmRegen = confirm(`已生成过本周 (${weekHeader}) 的周报，再次生成会覆盖已有内容，是否重新生成？`);
+        if (!confirmRegen) return;
+    }
+    
+    const btnGenerateWeekly = document.getElementById('btn-generate-weekly');
+    if (!btnGenerateWeekly) return;
+    
+    btnGenerateWeekly.disabled = true;
+    const btnText = btnGenerateWeekly.querySelector('span');
+    const originalText = btnText.textContent;
+    btnText.textContent = '生成中...';
+    
+    try {
+        const res = await fetch('http://localhost:18790/generate_weekly');
+        const data = await res.json();
+        if (data.ok) {
+            showToast('周报生成并编译成功！');
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
+        } else {
+            showToast('生成周报失败: ' + (data.error || '未知错误'));
+        }
+    } catch (err) {
+        showToast('连接 Bridge Server 失败，请确认服务已启动！');
+        console.error(err);
+    } finally {
+        btnGenerateWeekly.disabled = false;
+        btnText.textContent = originalText;
+    }
 }
 
