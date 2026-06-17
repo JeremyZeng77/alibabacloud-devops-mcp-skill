@@ -98,3 +98,9 @@ This repository includes a built-in visual progress dashboard under the `dashboa
 
 Now open the hosted address (e.g. `http://localhost:5173/` or your LAN address `http://<your-ip>:5173/`) in your browser to view the live synchronized DevOps progress data.
 
+
+
+---
+
+> [!TIP]
+> For optimal local testing, ensure the bridge server is running before navigating the dashboard.
