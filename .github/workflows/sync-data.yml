@@ -1,4 +1,4 @@
-name: Sync Cloud DevOps Data
+name: Sync Cloud DevOps Data and Deploy
 
 on:
   schedule:
@@ -7,13 +7,14 @@ on:
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
-  sync:
+  sync-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for committing changes and deploying pages
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
         with:
-          # Fetch all history so we can push back changes
           fetch-depth: 0
 
       - name: Set up Python
@@ -21,14 +22,10 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Set up Node.js (for MCP server CLI)
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
 
       - name: Fetch and Compile DevOps Data
         env:
@@ -37,9 +34,25 @@ jobs:
         run: |
           python dashboard/compile_projects_data.py --generate-weekly
 
-      - name: Commit and Push Changes
+      - name: Commit and Push Compiled Data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add dashboard/projects_data.json dashboard/weekly_reports.md dashboard/projects_history.db
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync DevOps progress data" && git push)
+
+      - name: Install Node Dependencies
+        run: |
+          cd dashboard
+          npm install
+
+      - name: Build Dashboard
+        run: |
+          cd dashboard
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dashboard/dist
