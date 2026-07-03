@@ -117,60 +117,76 @@ To host the dashboard online securely without exposing your credentials or maint
 4. (Optional) If you have a specific organization ID, you can add it as `YUNXIAO_ORG_ID`.
 
 ### Step 3: Create GitHub Actions Workflow File
-Create a new file named `.github/workflows/sync-data.yml` in your repository with the following configuration:
+Create a new file named `.github/workflows/sync-data.yml` in your repository with the following configuration (this is already configured and pushed in the repository!):
 
 ```yaml
-name: Sync Cloud DevOps Data
+name: Sync Cloud DevOps Data and Deploy
 
 on:
   schedule:
-    # Run every 2 hours (adjust the cron schedule as needed)
     - cron: '0 */2 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
-  sync:
+  sync-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for committing changes and deploying pages
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Set up Node.js (for MCP server CLI)
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          # Add any python dependencies here if needed (sqlite3 is built-in)
-
       - name: Fetch and Compile DevOps Data
         env:
           YUNXIAO_ACCESS_TOKEN: ${{ secrets.YUNXIAO_ACCESS_TOKEN }}
-          YUNXIAO_ORG_ID: ${{ secrets.YUNXIAO_ORG_ID }} # Fallback is used if not provided
+          YUNXIAO_ORG_ID: ${{ secrets.YUNXIAO_ORG_ID }}
         run: |
           python dashboard/compile_projects_data.py --generate-weekly
 
-      - name: Commit and Push Changes
+      - name: Commit and Push Compiled Data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add dashboard/projects_data.json dashboard/weekly_reports.md dashboard/projects_history.db
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync DevOps progress data" && git push)
+
+      - name: Install Node Dependencies
+        run: |
+          cd dashboard
+          npm install
+
+      - name: Build Dashboard
+        run: |
+          cd dashboard
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dashboard/dist
 ```
 
-### Step 4: Host the Frontend
-Since the dashboard relies entirely on the static `projects_data.json` file once compiled, you can host the `dashboard/` directory directly on **GitHub Pages**, **Vercel**, **Netlify**, or any static hosting service.
-*   **Vercel / Netlify**: Connect to your private GitHub repo, select the `dashboard` directory as root, set the build command to `npm run build`, and output directory to `dist`.
-*   **GitHub Pages**: Go to **Settings** -> **Pages**, configure it to deploy from your branch, and select custom domain if desired.
+### Step 4: Host the Frontend (GitHub Pages)
+The GitHub Actions workflow will automatically compile the data and publish the built frontend dashboard to the `gh-pages` branch. You only need to enable hosting in GitHub:
+1. In your GitHub repository, go to **Settings** -> **Pages**.
+2. Under **Build and deployment** -> **Branch**, select **`gh-pages`** and folder `/ (root)`.
+3. Click **Save**.
+4. GitHub will deploy your dashboard online! You can add your custom domain in the "Custom domain" box on that page.
 
-With this setup, the GitHub Actions cron job will automatically fetch new data, compile it, and commit it to your repository, prompting your hosting service to redeploy the site automatically. No live backend servers are exposed!
+Every 2 hours, the workflow will pull new data, commit it, rebuild the dashboard, and automatically redeploy it to GitHub Pages. No live servers are required!
 
 ---
 
