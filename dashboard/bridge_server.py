@@ -44,7 +44,11 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 import subprocess
                 import sys
-                res = subprocess.run([sys.executable, COMPILE_SCRIPT], capture_output=True, text=True, encoding='utf-8')
+                import os
+                kwargs = {"capture_output": True, "text": True, "encoding": 'utf-8'}
+                if os.name == 'nt':
+                    kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
+                res = subprocess.run([sys.executable, COMPILE_SCRIPT], **kwargs)
                 if res.returncode == 0:
                     return json_response(self, 200, {"ok": True, "message": "Compiled successfully", "output": res.stdout})
                 else:
@@ -55,7 +59,11 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 import subprocess
                 import sys
-                res = subprocess.run([sys.executable, COMPILE_SCRIPT, "--generate-weekly"], capture_output=True, text=True, encoding='utf-8')
+                import os
+                kwargs = {"capture_output": True, "text": True, "encoding": 'utf-8'}
+                if os.name == 'nt':
+                    kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
+                res = subprocess.run([sys.executable, COMPILE_SCRIPT, "--generate-weekly"], **kwargs)
                 if res.returncode == 0:
                     return json_response(self, 200, {"ok": True, "message": "Weekly report generated successfully", "output": res.stdout})
                 else:
@@ -113,7 +121,11 @@ class Handler(BaseHTTPRequestHandler):
         try:
             import subprocess
             import sys
-            subprocess.Popen([sys.executable, COMPILE_SCRIPT])
+            import os
+            kwargs = {}
+            if os.name == 'nt':
+                kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
+            subprocess.Popen([sys.executable, COMPILE_SCRIPT], **kwargs)
         except Exception:
             pass
             

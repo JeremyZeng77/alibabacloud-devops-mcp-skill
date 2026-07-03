@@ -8,7 +8,8 @@ const PROJECT_ID = process.env.YUNXIAO_PROJECT_ID || "YOUR_PROJECT_ID";
 // 2. Spawn the MCP Server process
 const child = spawn('npx', ['-y', 'alibabacloud-devops-mcp-server'], {
   env: { ...process.env, YUNXIAO_ACCESS_TOKEN: YUNXIAO_TOKEN },
-  shell: true
+  shell: true,
+  windowsHide: true
 });
 
 let stdoutData = '';

@@ -60,15 +60,138 @@ function isItemCompleted(item) {
 
 const BRIDGE_API_BASE = `http://${window.location.hostname}:18790`;
 
-// Initialize Page
-document.addEventListener('DOMContentLoaded', async () => {
+// Credentials Config
+const AUTH_CONFIG = {
+    username: 'jeremy',
+    password: 'Abcd.1234@Jeremy',
+    sessionExpiryDays: 7
+};
+
+// Check Session on Startup
+function checkSession() {
+    const token = localStorage.getItem('devops_session_token');
+    const timestamp = localStorage.getItem('devops_session_timestamp');
+    
+    if (token === 'devops-session-active' && timestamp) {
+        const elapsed = Date.now() - parseInt(timestamp, 10);
+        const expiryMs = AUTH_CONFIG.sessionExpiryDays * 24 * 60 * 60 * 1000;
+        if (elapsed < expiryMs) {
+            // Valid session, refresh sliding expiration
+            localStorage.setItem('devops_session_timestamp', Date.now());
+            return true;
+        }
+    }
+    
+    clearSession();
+    return false;
+}
+
+function clearSession() {
+    localStorage.removeItem('devops_session_token');
+    localStorage.removeItem('devops_session_timestamp');
+}
+
+function handleLoginSubmit() {
+    const userEl = document.getElementById('login-username');
+    const passEl = document.getElementById('login-password');
+    const errorEl = document.getElementById('login-error-msg');
+    const errorTextEl = document.getElementById('login-error-text');
+    const cardEl = document.querySelector('.login-card');
+    
+    const username = userEl.value.trim();
+    const password = passEl.value;
+    
+    if (username.toLowerCase() === AUTH_CONFIG.username && password === AUTH_CONFIG.password) {
+        // Success
+        localStorage.setItem('devops_session_token', 'devops-session-active');
+        localStorage.setItem('devops_session_timestamp', Date.now());
+        
+        // Fade out overlay
+        const overlay = document.getElementById('login-overlay');
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            document.getElementById('btn-logout').style.display = 'flex';
+        }, 300);
+        
+        startDashboardApp();
+    } else {
+        // Shake card and show error
+        errorTextEl.textContent = '用户名或密码不正确';
+        errorEl.style.display = 'flex';
+        
+        cardEl.style.animation = 'none';
+        cardEl.offsetHeight; // Force reflow
+        cardEl.style.animation = 'shake 0.4s ease';
+        
+        passEl.value = '';
+        passEl.focus();
+    }
+}
+
+function handleLogout() {
+    clearSession();
+    const overlay = document.getElementById('login-overlay');
+    document.getElementById('btn-logout').style.display = 'none';
+    
+    document.getElementById('login-username').value = '';
+    document.getElementById('login-password').value = '';
+    document.getElementById('login-error-msg').style.display = 'none';
+    
+    overlay.style.display = 'flex';
+    overlay.style.opacity = '1';
+    
+    // Reload page to clear all data in memory
+    window.location.reload();
+}
+
+async function startDashboardApp() {
     initGanttState();
     initEventListeners();
     initAutoSync();
     await loadDashboardData();
     
     // Auto polling every 60 seconds
-    setInterval(pollDashboardData, 60000);
+    if (!state.pollingIntervalId) {
+        state.pollingIntervalId = setInterval(pollDashboardData, 60000);
+    }
+}
+
+// Initialize Page with Login Gatekeeper
+document.addEventListener('DOMContentLoaded', async () => {
+    const overlay = document.getElementById('login-overlay');
+    const btnLogout = document.getElementById('btn-logout');
+    
+    // Bind login form submit
+    const btnSubmit = document.getElementById('btn-login-submit');
+    if (btnSubmit) {
+        btnSubmit.addEventListener('click', handleLoginSubmit);
+    }
+    
+    // Bind Enter key on inputs
+    const loginFields = [document.getElementById('login-username'), document.getElementById('login-password')];
+    loginFields.forEach(field => {
+        if (field) {
+            field.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') handleLoginSubmit();
+            });
+        }
+    });
+    
+    // Bind logout action
+    if (btnLogout) {
+        btnLogout.addEventListener('click', handleLogout);
+    }
+    
+    if (checkSession()) {
+        overlay.style.display = 'none';
+        if (btnLogout) btnLogout.style.display = 'flex';
+        await startDashboardApp();
+    } else {
+        overlay.style.display = 'flex';
+        overlay.style.opacity = '1';
+        if (btnLogout) btnLogout.style.display = 'none';
+    }
 });
 
 // Event Listeners
@@ -213,6 +336,23 @@ function initEventListeners() {
     const btnGenerateWeekly = document.getElementById('btn-generate-weekly');
     if (btnGenerateWeekly) {
         btnGenerateWeekly.addEventListener('click', handleGenerateWeekly);
+    }
+
+    // Gantt mobile landscape mode toggle
+    const btnGanttLandscape = document.getElementById('btn-gantt-landscape');
+    if (btnGanttLandscape) {
+        btnGanttLandscape.addEventListener('click', () => {
+            const ganttCard = document.querySelector('.gantt-chart-card');
+            if (ganttCard) {
+                const isLandscape = ganttCard.classList.toggle('landscape-fullscreen');
+                const spanText = btnGanttLandscape.querySelector('span');
+                if (spanText) {
+                    spanText.textContent = isLandscape ? '返回竖屏' : '横屏查看';
+                }
+                // Dispatch resize event to recalculate widths
+                window.dispatchEvent(new Event('resize'));
+            }
+        });
     }
 }
 

@@ -1651,3 +1651,535 @@ input:checked + .slider:before {
     border: 1px solid rgba(120, 224, 143, 0.3) !important;
 }
 
+/* ============================================================================
+   Login Page & Overlay Styles
+   ============================================================================ */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 8, 12, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.login-card {
+    background: rgba(22, 28, 45, 0.65);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 32px;
+    box-shadow: var(--shadow-premium), var(--shadow-glow-cyan);
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 242, 254, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.login-header {
+    text-align: center;
+    z-index: 1;
+}
+
+.login-logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.login-logo-glow {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    filter: blur(12px);
+    animation: pulse 2s infinite alternate;
+}
+
+.login-logo-text {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff 30%, var(--color-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
+
+.login-subtitle {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-label {
+    color: var(--text-secondary);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-field-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    color: var(--text-muted);
+    pointer-events: none;
+    transition: var(--transition-smooth);
+}
+
+.input-field {
+    width: 100%;
+    background: rgba(10, 13, 20, 0.6);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 12px 12px 12px 38px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 14px;
+    transition: var(--transition-smooth);
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.15);
+}
+
+.input-field:focus + .input-icon {
+    color: var(--color-primary);
+}
+
+.btn-login {
+    background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+    border: none;
+    border-radius: var(--radius-sm);
+    color: #06080c;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+    text-align: center;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 242, 254, 0.4);
+    filter: brightness(1.1);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}
+
+.login-error-msg {
+    color: var(--color-rose);
+    background: rgba(244, 63, 94, 0.1);
+    border: 1px solid rgba(244, 63, 94, 0.2);
+    padding: 10px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    display: none;
+    align-items: center;
+    gap: 8px;
+    animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+}
+
+.btn-logout {
+    background: rgba(244, 63, 94, 0.1);
+    border: 1px solid rgba(244, 63, 94, 0.2);
+    color: var(--color-rose);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-logout:hover {
+    background: rgba(244, 63, 94, 0.2);
+    box-shadow: 0 0 10px rgba(244, 63, 94, 0.2);
+}
+
+/* ============================================================================
+   Mobile & Tablet Responsiveness
+   ============================================================================ */
+@media (max-width: 1200px) {
+    .kpi-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .app-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .header-main {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header-meta {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    .overview-charts {
+        grid-template-columns: 1fr !important;
+        gap: 24px;
+    }
+    
+    .chart-card.doughnut-card {
+        grid-column: span 1 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+
+    .app-container {
+        padding: 0 16px 24px 16px;
+    }
+
+    .header-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .project-tabs {
+        width: 100%;
+    }
+
+    .project-tab {
+        flex: 1;
+        justify-content: center;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .header-meta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .sync-status {
+        flex-direction: column;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.02);
+        padding: 8px 12px;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border-color);
+    }
+    
+    .auto-sync-toggle {
+        justify-content: space-between;
+        padding: 4px 0;
+    }
+
+    .btn-sync {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    /* Scrollable Navigation Tabs on Mobile */
+    .nav-tabs {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 8px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 16px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .nav-tabs::-webkit-scrollbar {
+        display: none; /* Safari & Chrome */
+    }
+
+    .nav-tab {
+        flex: 0 0 auto;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    /* KPI Grid Mobile */
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+    }
+    
+    .kpi-card {
+        padding: 16px 12px;
+    }
+    
+    .kpi-value {
+        font-size: 20px;
+    }
+
+    .kpi-title {
+        font-size: 11px;
+    }
+
+    /* Risk radar */
+    .alert-text-block {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .alert-text-block button {
+        width: 100%;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+
+    /* Table Meta Stack */
+    .table-meta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-export-markdown {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    /* Horizontal scroll for standard tables */
+    .table-container {
+        overflow-x: auto;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border-color);
+    }
+
+    .data-table {
+        min-width: 600px;
+    }
+
+    .weekly-data-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Mobile Gantt Layout Adjustments */
+    .gantt-layout {
+        position: relative;
+    }
+
+    .gantt-assignees-list {
+        width: 90px; /* Compress assignee column */
+    }
+
+    .gantt-avatar {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .gantt-assignee-name {
+        font-size: 11px;
+    }
+
+    .gantt-bar-text {
+        font-size: 10px;
+        padding: 0 4px;
+    }
+
+    .gantt-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .gantt-control-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .gantt-category-tabs {
+        width: 100%;
+        display: flex;
+    }
+    
+    .gantt-category-tab {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .modal-box {
+        width: 95%;
+        padding: 20px 16px;
+    }
+
+    .modal-body {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================================
+   Gantt Mobile Landscape Fullscreen Mode
+   ============================================================================ */
+.gantt-landscape-toggle {
+    display: none;
+    align-items: center;
+    gap: 4px;
+    background: rgba(0, 242, 254, 0.08);
+    border: 1px solid rgba(0, 242, 254, 0.25);
+    color: var(--color-primary);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.gantt-landscape-toggle:hover {
+    background: rgba(0, 242, 254, 0.15);
+    border-color: var(--color-primary);
+}
+
+.gantt-landscape-toggle svg {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .gantt-landscape-toggle {
+        display: inline-flex; /* Show on mobile/tablet */
+    }
+}
+
+.gantt-chart-card.landscape-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 100vw !important; /* Rotate pivot origin pulls this block back to X=0 */
+    width: 100vh !important;
+    height: 100vw !important;
+    transform: rotate(90deg) !important;
+    transform-origin: top left !important;
+    z-index: 999999 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    background-color: var(--bg-surface-solid) !important;
+    box-shadow: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.gantt-chart-card.landscape-fullscreen .gantt-wrapper {
+    flex: 1 !important;
+    overflow: auto !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+.gantt-chart-card.landscape-fullscreen .gantt-container {
+    height: 100% !important;
+    min-height: 250px !important;
+}
+
+.gantt-chart-card.landscape-fullscreen .gantt-header {
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 4px !important;
+}
+
+.gantt-chart-card.landscape-fullscreen .gantt-controls {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border-top: 1px solid var(--border-color) !important;
+    padding-top: 8px !important;
+    margin-top: 4px !important;
+    gap: 8px !important;
+}
+
+.gantt-chart-card.landscape-fullscreen .gantt-controls > * {
+    width: auto !important;
+}
+
+

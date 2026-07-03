@@ -473,8 +473,9 @@ def load_history_from_db():
     return history_timeline
 
 
-# Constants for Alibaba Cloud DevOps (Yunxiao) API
-YUNXIAO_TOKEN = os.environ.get("YUNXIAO_ACCESS_TOKEN", "pt-hbuL3md0vFTHlhfm191BSaUA_16254f72-7380-45da-8f06-c53de065d0c8")
+# To run this script locally or in CI/CD, ensure YUNXIAO_ACCESS_TOKEN is set in your environment variables.
+# Do NOT hardcode your Personal Access Token here to prevent security leaks in GitHub repository commits.
+YUNXIAO_TOKEN = os.environ.get("YUNXIAO_ACCESS_TOKEN", "")
 ORG_ID = os.environ.get("YUNXIAO_ORG_ID", "5f1ac684769820a3e817ed55")
 MFTB_PROJECT_ID = "ea6df73257b27472177527f38b"
 MFOOD_PROJECT_ID = "b213ecf2c319097885faf16704"
@@ -497,15 +498,21 @@ def fetch_mcp_workitems(project_id, category="Req,Task,Bug", status_stage="1,2",
         env = os.environ.copy()
         env["YUNXIAO_ACCESS_TOKEN"] = YUNXIAO_TOKEN
         
+        kwargs = {
+            "stdin": subprocess.PIPE,
+            "stdout": subprocess.PIPE,
+            "stderr": subprocess.PIPE,
+            "text": True,
+            "encoding": 'utf-8',
+            "env": env,
+            "shell": True
+        }
+        if os.name == 'nt':
+            kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
+        
         process = subprocess.Popen(
             ["npx", "-y", "alibabacloud-devops-mcp-server"],
-            stdin=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-            encoding='utf-8',
-            env=env,
-            shell=True
+            **kwargs
         )
         
         def send_msg(msg):
@@ -1140,6 +1147,11 @@ def update_weekly_reports_file(md_path, week_header, new_report_content):
 
 def main():
     import sys
+    if not YUNXIAO_TOKEN:
+        print("ERROR: YUNXIAO_ACCESS_TOKEN environment variable is not set.", file=sys.stderr)
+        print("Please configure your Alibaba Cloud DevOps Personal Access Token as an environment variable.", file=sys.stderr)
+        sys.exit(1)
+
     generate_weekly = False
     if '--generate-weekly' in sys.argv:
         generate_weekly = True

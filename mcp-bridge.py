@@ -13,14 +13,20 @@ env = os.environ.copy()
 env["YUNXIAO_ACCESS_TOKEN"] = YUNXIAO_TOKEN
 
 # Note: shell=True is required on Windows to look up npx properly
+kwargs = {
+    "stdin": subprocess.PIPE,
+    "stdout": subprocess.PIPE,
+    "stderr": subprocess.PIPE,
+    "text": True,
+    "env": env,
+    "shell": True
+}
+if os.name == 'nt':
+    kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
+
 process = subprocess.Popen(
     ["npx", "-y", "alibabacloud-devops-mcp-server"],
-    stdin=subprocess.PIPE,
-    stdout=subprocess.PIPE,
-    stderr=subprocess.PIPE,
-    text=True,
-    env=env,
-    shell=True
+    **kwargs
 )
 
 def send_msg(msg):
