@@ -4,6 +4,8 @@ on:
   schedule:
     # Run every 2 hours
     - cron: '0 */2 * * *'
+  push:
+    branches: [ main ]
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 jobs:
