@@ -38,7 +38,8 @@ def parse_action_items(recommendations_text):
             })
     return items
 
-DB_PATH = pathlib.Path(r'z:\MFTBNewPJ\projects_history.db')
+SCRIPT_DIR = pathlib.Path(__file__).parent.resolve()
+DB_PATH = SCRIPT_DIR / "projects_history.db"
 
 def init_sqlite_db():
     conn = sqlite3.connect(str(DB_PATH))
@@ -481,8 +482,8 @@ MFTB_PROJECT_ID = "ea6df73257b27472177527f38b"
 MFOOD_PROJECT_ID = "b213ecf2c319097885faf16704"
 
 CAPTURES_PATH = pathlib.Path(r'C:\Users\DELL\.openclaw\workspace-gemma-chat\state\project-bridge\page-captures.jsonl')
-WEEKLY_REPORTS_PATH = pathlib.Path(r'z:\MFTBNewPJ\weekly_reports.md')
-OUTPUT_PATH = pathlib.Path(r'z:\MFTBNewPJ\projects_data.json')
+WEEKLY_REPORTS_PATH = SCRIPT_DIR / "weekly_reports.md"
+OUTPUT_PATH = SCRIPT_DIR / "projects_data.json"
 
 completed_status_list = [
     '已上线', '已关闭', '测试环境验证通过', '测试环境验收通过', '预发布验收通过', '生产验收通过',

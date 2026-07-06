@@ -15,3 +15,6 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# Allow tracking of the history database
+!dashboard/projects_history.db
