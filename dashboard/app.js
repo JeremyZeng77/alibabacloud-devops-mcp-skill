@@ -332,12 +332,6 @@ function initEventListeners() {
         btnExportMarkdown.addEventListener('click', exportMarkdownSnippet);
     }
 
-    // Generate Weekly Report
-    const btnGenerateWeekly = document.getElementById('btn-generate-weekly');
-    if (btnGenerateWeekly) {
-        btnGenerateWeekly.addEventListener('click', handleGenerateWeekly);
-    }
-
     // Gantt mobile landscape mode toggle
     const btnGanttLandscape = document.getElementById('btn-gantt-landscape');
     if (btnGanttLandscape) {
@@ -2715,57 +2709,5 @@ ${adviceLines}
     });
 }
 
-async function handleGenerateWeekly() {
-    // 1. Check if today is Friday
-    const today = new Date();
-    if (today.getDay() !== 5) {
-        showToast('只能在每周五才能生成周报！');
-        return;
-    }
-    
-    // 2. Check if a report for this week already exists
-    const monday = new Date(today);
-    monday.setDate(today.getDate() - today.getDay() + 1);
-    const friday = new Date(monday);
-    friday.setDate(monday.getDate() + 4);
-    
-    const pad = (n) => String(n).padStart(2, '0');
-    const startStr = `${monday.getFullYear()}-${pad(monday.getMonth()+1)}-${pad(monday.getDate())}`;
-    const endStr = `${friday.getFullYear()}-${pad(friday.getMonth()+1)}-${pad(friday.getDate())}`;
-    const weekHeader = `${startStr} 至 ${endStr}`;
-    
-    const exists = state.weeklyReports && state.weeklyReports.some(r => r.week === weekHeader);
-    
-    if (exists) {
-        const confirmRegen = confirm(`已生成过本周 (${weekHeader}) 的周报，再次生成会覆盖已有内容，是否重新生成？`);
-        if (!confirmRegen) return;
-    }
-    
-    const btnGenerateWeekly = document.getElementById('btn-generate-weekly');
-    if (!btnGenerateWeekly) return;
-    
-    btnGenerateWeekly.disabled = true;
-    const btnText = btnGenerateWeekly.querySelector('span');
-    const originalText = btnText.textContent;
-    btnText.textContent = '生成中...';
-    
-    try {
-        const res = await fetch('http://localhost:18790/generate_weekly');
-        const data = await res.json();
-        if (data.ok) {
-            showToast('周报生成并编译成功！');
-            setTimeout(() => {
-                window.location.reload();
-            }, 1000);
-        } else {
-            showToast('生成周报失败: ' + (data.error || '未知错误'));
-        }
-    } catch (err) {
-        showToast('连接 Bridge Server 失败，请确认服务已启动！');
-        console.error(err);
-    } finally {
-        btnGenerateWeekly.disabled = false;
-        btnText.textContent = originalText;
-    }
-}
+
 

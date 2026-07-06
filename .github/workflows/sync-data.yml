@@ -4,6 +4,8 @@ on:
   schedule:
     # Run every 2 hours
     - cron: '0 */2 * * *'
+    # Run specifically every Friday at 17:00 Beijing Time (09:00 UTC)
+    - cron: '0 9 * * 5'
   push:
     branches: [ main ]
   workflow_dispatch: # Allows manual trigger from GitHub UI
@@ -34,7 +36,7 @@ jobs:
           YUNXIAO_ACCESS_TOKEN: ${{ secrets.YUNXIAO_ACCESS_TOKEN }}
           YUNXIAO_ORG_ID: ${{ secrets.YUNXIAO_ORG_ID }}
         run: |
-          python dashboard/compile_projects_data.py --generate-weekly
+          python dashboard/compile_projects_data.py
 
       - name: Commit and Push Compiled Data
         run: |

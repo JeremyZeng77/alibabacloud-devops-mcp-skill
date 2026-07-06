@@ -1158,6 +1158,13 @@ def main():
     generate_weekly = False
     if '--generate-weekly' in sys.argv:
         generate_weekly = True
+        
+    # Auto-generate weekly report on Friday after 17:00 Beijing Time (UTC+8)
+    from datetime import datetime, timezone, timedelta
+    bj_time = datetime.now(timezone(timedelta(hours=8)))
+    if bj_time.weekday() == 4 and bj_time.hour >= 17:
+        print("Automatically enabling weekly report generation (Friday after 17:00 Beijing Time).")
+        generate_weekly = True
 
     print("Fetching live data from Alibaba Cloud DevOps MCP Server...")
     
