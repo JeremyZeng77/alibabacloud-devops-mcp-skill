@@ -573,19 +573,68 @@ async function pollDashboardData() {
     }
 }
 
-// Trigger recompile on bridge server
+// Trigger recompile on bridge server or GitHub Actions (if online)
 async function triggerSyncCompile() {
     const btn = document.getElementById('btn-sync-compile');
     btn.classList.add('spinning');
-    showToast('正在向本地桥接服务发送编译指令...');
 
+    // Cloud workflow dispatch if online
+    if (window.location.hostname.includes('github.io')) {
+        showToast('正在准备触发云端同步编译...');
+        let pat = localStorage.getItem('github_pat');
+        if (!pat) {
+            pat = prompt('请输入您的 GitHub 个人访问令牌 (PAT) 以便在线上直接触发同步编译（令牌仅保存在您本地浏览器的 localStorage 中，不会上传到任何第三方服务器）：');
+            if (!pat) {
+                btn.classList.remove('spinning');
+                showToast('已取消同步。');
+                return;
+            }
+            pat = pat.trim();
+            localStorage.setItem('github_pat', pat);
+        }
+
+        try {
+            const url = 'https://api.github.com/repos/JeremyZeng77/alibabacloud-devops-mcp-skill/actions/workflows/sync-data.yml/dispatches';
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `token ${pat}`,
+                    'Accept': 'application/vnd.github+json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ ref: 'main' })
+            });
+
+            if (response.status === 204) {
+                showToast('已成功在云端触发同步构建！更新大约需要 1 分钟，请稍后刷新。');
+                btn.classList.remove('spinning');
+            } else {
+                const errText = await response.text();
+                console.error('Trigger cloud sync failed:', response.status, errText);
+                if (response.status === 401 || response.status === 403) {
+                    showToast('令牌无效或权限不足，已清除保存的令牌，请重试！');
+                    localStorage.removeItem('github_pat');
+                } else {
+                    showToast(`触发云端同步失败 (${response.status})，请检查设置。`);
+                }
+                btn.classList.remove('spinning');
+            }
+        } catch (err) {
+            console.error('Cloud sync failed:', err);
+            showToast('无法连接到 GitHub API，请检查您的网络连接！');
+            btn.classList.remove('spinning');
+        }
+        return;
+    }
+
+    // Local compiler flow
+    showToast('正在向本地桥接服务发送编译指令...');
     try {
         const response = await fetch(`${BRIDGE_API_BASE}/compile`, { method: 'GET' });
         const res = await response.json();
-        
+
         if (response.ok && res.ok) {
             showToast('编译成功！正在加载最新看板数据...');
-            // Wait 500ms and reload JSON
             setTimeout(() => {
                 loadDashboardData();
                 btn.classList.remove('spinning');
