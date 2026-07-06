@@ -58,7 +58,9 @@ function isItemCompleted(item) {
     return false;
 }
 
-const BRIDGE_API_BASE = `http://${window.location.hostname}:18790`;
+const BRIDGE_API_BASE = window.location.hostname.includes('github.io')
+    ? 'http://localhost:18790'
+    : `http://${window.location.hostname}:18790`;
 
 // Credentials Config
 const AUTH_CONFIG = {

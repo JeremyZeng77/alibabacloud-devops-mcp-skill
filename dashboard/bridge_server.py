@@ -50,7 +50,21 @@ class Handler(BaseHTTPRequestHandler):
                     kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
                 res = subprocess.run([sys.executable, COMPILE_SCRIPT], **kwargs)
                 if res.returncode == 0:
-                    return json_response(self, 200, {"ok": True, "message": "Compiled successfully", "output": res.stdout})
+                    # Automatically commit and push changed data files to GitHub to trigger online Pages deployment
+                    try:
+                        # Add compiled JSON, weekly reports, and history db
+                        subprocess.run(["git", "add", "projects_data.json", "weekly_reports.md", "projects_history.db"], **kwargs)
+                        # Check if there are changes to commit
+                        diff_res = subprocess.run(["git", "diff", "--quiet"], **kwargs)
+                        diff_staged_res = subprocess.run(["git", "diff", "--staged", "--quiet"], **kwargs)
+                        if diff_res.returncode != 0 or diff_staged_res.returncode != 0:
+                            subprocess.run(["git", "commit", "-m", "chore: auto-sync DevOps progress data via local bridge"], **kwargs)
+                            subprocess.run(["git", "pull", "--rebase", "origin", "main"], **kwargs)
+                            subprocess.run(["git", "push", "origin", "main"], **kwargs)
+                    except Exception as git_err:
+                        print(f"Git push failed: {git_err}")
+                    
+                    return json_response(self, 200, {"ok": True, "message": "Compiled and pushed successfully", "output": res.stdout})
                 else:
                     return json_response(self, 500, {"ok": False, "error": res.stderr, "output": res.stdout})
             except Exception as e:
