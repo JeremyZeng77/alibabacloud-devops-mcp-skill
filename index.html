@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云效 DevOps 协同看板</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" crossorigin src="/assets/index-CwBjsM3y.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-8-Ez_nau.css">
+</head>
+<body>
+    <!-- Login Screen Overlay -->
+    <div class="login-overlay" id="login-overlay" style="display: none;">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="login-logo-area">
+                    <div class="login-logo-glow"></div>
+                    <span class="login-logo-text">云效 DevOps 协同看板</span>
+                </div>
+                <div class="login-subtitle">请使用您的团队账户凭证登录以访问数据</div>
+            </div>
+            
+            <div class="login-form">
+                <div class="input-group">
+                    <span class="input-label">用户名</span>
+                    <div class="input-field-wrapper">
+                        <input type="text" id="login-username" class="input-field" placeholder="输入用户名" autocomplete="username">
+                        <svg class="input-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <span class="input-label">密码</span>
+                    <div class="input-field-wrapper">
+                        <input type="password" id="login-password" class="input-field" placeholder="输入密码" autocomplete="current-password">
+                        <svg class="input-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="login-error-msg" id="login-error-msg">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span id="login-error-text">用户名或密码错误</span>
+                </div>
+                
+                <button type="submit" id="btn-login-submit" class="btn-login">确认登录</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Container -->
+    <div class="app-container">
+        
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-main">
+                <div class="logo-area">
+                    <div class="logo-glow"></div>
+                    <span class="logo-text">云效 DevOps 协同看板</span>
+                </div>
+                
+                <!-- Project Selector Tabs -->
+                <div class="project-tabs">
+                    <button class="project-tab active" data-project="mftb">
+                        <span class="tab-indicator"></span> MFTB 集团项目
+                    </button>
+                    <button class="project-tab" data-project="mfood">
+                        <span class="tab-indicator"></span> mFood 综合版本
+                    </button>
+                </div>
+            </div>
+            
+            <div class="header-meta">
+                <!-- Sync Status -->
+                <div class="sync-status">
+                    <div class="status-item">
+                        <span class="status-label">采集时间:</span>
+                        <span class="status-value" id="time-collected">加载中...</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">同步时间:</span>
+                        <span class="status-value" id="time-compiled">加载中...</span>
+                    </div>
+                </div>
+                
+                <!-- Auto Sync Toggle Switch -->
+                <div class="auto-sync-toggle">
+                    <span class="toggle-label">自动更新</span>
+                    <label class="switch">
+                        <input type="checkbox" id="chk-auto-sync">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <!-- Compile Action Button -->
+                <button class="btn-sync" id="btn-sync-compile" title="读取最新数据并重新编译">
+                    <svg class="sync-icon" viewBox="0 0 24 24" width="16" height="16">
+                        <path fill="currentColor" d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46A7.93 7.93 0 0 0 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74A7.93 7.93 0 0 0 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+                    </svg>
+                    <span>立即同步编译</span>
+                </button>
+
+                <!-- Logout Button -->
+                <button class="btn-logout" id="btn-logout" title="退出登录并锁定数据" style="display: none;">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>
+                    </svg>
+                    <span>退出登录</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-view="overview">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+                数据看板
+            </button>
+            <button class="nav-tab" data-view="workitems">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17h6M9 12h6M9 7h6"/></svg>
+                需求明细列表
+            </button>
+            <button class="nav-tab" data-view="weekly">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                周报与管理建议
+            </button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- VIEW 1: Overview Dashboard -->
+            <section class="view-section active" id="view-overview">
+                
+                <!-- Risk Radar Alerts -->
+                <div id="risk-radar-alerts" class="risk-radar-container"></div>
+                
+                <!-- Strategic Advice Panel -->
+                <div id="strategic-advice-panel" class="strategic-advice-container"></div>
+                
+                <!-- Row 1: Requirements View -->
+                <div class="kpi-row-title">🎯 需求交付看板视角</div>
+                <div class="kpi-grid">
+                    <!-- Req Card 1: 累计需求数 -->
+                    <div class="kpi-card card-glow-cyan">
+                        <div class="kpi-header">
+                            <span class="kpi-title">累计需求数</span>
+                            <div class="kpi-icon icon-cyan">Σ</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-req-total">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-req-total-trend">全部版本需求</span>
+                        </div>
+                    </div>
+                    <!-- Req Card 2: 已完成/已验证通过 -->
+                    <div class="kpi-card card-glow-emerald">
+                        <div class="kpi-header">
+                            <span class="kpi-title">已完成/已验证</span>
+                            <div class="kpi-icon icon-emerald">✓</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-req-completed">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-req-completed-trend">测试通过/已上线</span>
+                        </div>
+                    </div>
+                    <!-- Req Card 3: 在研/在测试活跃项 -->
+                    <div class="kpi-card card-glow-amber">
+                        <div class="kpi-header">
+                            <span class="kpi-title">在研/在测活跃需求</span>
+                            <div class="kpi-icon icon-amber">⚙</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-req-active">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-req-active-trend">开发与测试中</span>
+                        </div>
+                    </div>
+                    <!-- Req Card 4: 待处理需求数 -->
+                    <div class="kpi-card card-glow-blue">
+                        <div class="kpi-header">
+                            <span class="kpi-title">待处理需求数</span>
+                            <div class="kpi-icon icon-blue">📋</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-req-pending">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-req-pending-trend">未开始/待排期</span>
+                        </div>
+                    </div>
+                    <!-- Req Card 5: 需求交付率 -->
+                    <div class="kpi-card card-glow-purple">
+                        <div class="kpi-header">
+                            <span class="kpi-title">需求交付率</span>
+                            <div class="kpi-icon icon-purple">%</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-req-rate">0.0%</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-req-rate-trend">已完成/总计</span>
+                        </div>
+                    </div>
+                    <!-- KPI Card: 平均交付周期 -->
+                    <div class="kpi-card card-glow-cyan" id="kpi-lead-time-card">
+                        <div class="kpi-header">
+                             <span class="kpi-title" title="需求/任务从进入进行中到完成的平均自然日天数">需求平均交付周期</span>
+                            <div class="kpi-icon icon-cyan">⏱</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-lead-time-value">0.0 天</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-lead-time-trend" title="计算逻辑：任务从进入‘进行中/开发中’到进入‘已完成/已上线’等完成状态的平均自然日天数（排除已取消、重复、废弃等无效任务）。趋势对比前30天数据。">加载中...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Tasks & Bugs View -->
+                <div class="kpi-row-title">🛠️ 任务与缺陷看板视角</div>
+                <div class="kpi-grid">
+                    <!-- Task Card 1: 累计任务数 -->
+                    <div class="kpi-card card-glow-cyan">
+                        <div class="kpi-header">
+                            <span class="kpi-title">累计任务数</span>
+                            <div class="kpi-icon icon-cyan">Σ</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-task-total">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-task-total-trend">全部研发/子任务</span>
+                        </div>
+                    </div>
+                    <!-- Task Card 2: 已完成/已提测 -->
+                    <div class="kpi-card card-glow-emerald">
+                        <div class="kpi-header">
+                            <span class="kpi-title">已完成/已提测</span>
+                            <div class="kpi-icon icon-emerald">✓</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-task-completed">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-task-completed-trend">完成验证/提交测试</span>
+                        </div>
+                    </div>
+                    <!-- Task Card 3: 在研/待处理 -->
+                    <div class="kpi-card card-glow-amber">
+                        <div class="kpi-header">
+                            <span class="kpi-title">在研/待处理任务</span>
+                            <div class="kpi-icon icon-amber">⚙</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-task-active">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-task-active-trend">开发中/待开发/未开始</span>
+                        </div>
+                    </div>
+                    <!-- Task Card 4: 任务交付率 -->
+                    <div class="kpi-card card-glow-purple">
+                        <div class="kpi-header">
+                            <span class="kpi-title">任务交付率</span>
+                            <div class="kpi-icon icon-purple">%</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-task-rate">0.0%</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-task-rate-trend">已完成及提测/总计</span>
+                        </div>
+                    </div>
+                    <!-- Task Card 5: 活跃缺陷数 -->
+                    <div class="kpi-card card-glow-rose">
+                        <div class="kpi-header">
+                            <span class="kpi-title">活跃缺陷数</span>
+                            <div class="kpi-icon icon-rose">🐛</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-bug-active">0</div>
+                        <div class="kpi-footer">
+                            <span class="trend-indicator" id="kpi-bug-active-trend">未修复缺陷</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Charts Layout -->
+                <div class="charts-row-main">
+                    <!-- History Timeline Line Chart -->
+                    <div class="chart-card large-chart">
+                        <h3 class="chart-title">📈 项目交付趋势收敛图</h3>
+                        <div class="chart-container">
+                            <canvas id="chart-history"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Header with Status Mode Tabs -->
+                <div class="charts-section-header">
+                    <div class="section-title">📊 研发过程分布与效能分析</div>
+                    <div class="chart-status-tabs">
+                        <button class="chart-status-tab active" data-status-mode="active">进行中 (活跃)</button>
+                        <button class="chart-status-tab" data-status-mode="all">全部状态 (含已完成)</button>
+                    </div>
+                </div>
+
+                <!-- Secondary Charts Grid -->
+                <div class="charts-grid-secondary">
+                    <!-- Status Distribution Bar Chart -->
+                    <div class="chart-card">
+                        <h3 class="chart-title">📊 活跃状态看板分布</h3>
+                        <div class="chart-container">
+                            <canvas id="chart-status"></canvas>
+                        </div>
+                    </div>
+                    
+                    <!-- Type Distribution Doughnut Chart -->
+                    <div class="chart-card">
+                        <h3 class="chart-title">🍩 工作项类别占比</h3>
+                        <div class="chart-container">
+                            <canvas id="chart-type"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Developer Workload List/Chart -->
+                    <div class="chart-card">
+                        <h3 class="chart-title">👥 团队活跃负载分布 (负责人)</h3>
+                        <div class="chart-container">
+                            <canvas id="chart-workload"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gantt Chart Section -->
+                <div class="chart-card gantt-chart-card">
+                    <div class="gantt-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <h3 class="chart-title">📅 全员任务计划情况</h3>
+                            <!-- Mobile Landscape Toggle Button -->
+                            <button class="gantt-landscape-toggle" id="btn-gantt-landscape" title="在手机上横屏查看甘特图">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" style="transform: rotate(90deg);">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <path d="M9 3v18M15 3v18"></path>
+                                </svg>
+                                <span>横屏查看</span>
+                            </button>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+                            <div class="gantt-role-filter" style="display: flex; align-items: center;">
+                                <label for="gantt-role-select" style="font-size: 12px; color: var(--text-muted); margin-right: 8px; font-weight: 500;">角色筛选:</label>
+                                <select id="gantt-role-select" class="select-dropdown" style="padding: 4px 10px; font-size: 12px; height: 32px; box-sizing: border-box; background: rgba(22, 28, 45, 0.9); border: 1px solid var(--border-color); color: var(--text-primary); cursor: pointer; border-radius: var(--radius-sm); outline: none;">
+                                    <option value="all">全部角色</option>
+                                    <option value="Backend">服务端</option>
+                                    <option value="Frontend">前端</option>
+                                    <option value="Mobile">移动端</option>
+                                    <option value="Tester">测试</option>
+                                    <option value="Product">产品</option>
+                                    <option value="UI">UI设计</option>
+                                    <option value="PM">项目管理</option>
+                                    <option value="Ops">运维</option>
+                                </select>
+                            </div>
+                            <div class="gantt-category-tabs">
+                                <button class="gantt-category-tab active" data-gantt-cat="Req">需求</button>
+                                <button class="gantt-category-tab" data-gantt-cat="Task">任务</button>
+                                <button class="gantt-category-tab" data-gantt-cat="Bug">缺陷</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gantt-wrapper">
+                        <div class="gantt-container" id="gantt-grid-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                    <div class="gantt-controls">
+                        <button class="gantt-btn" id="gantt-btn-today">今天</button>
+                        <div class="gantt-view-selectors">
+                            <button class="gantt-view-btn active" data-view="day">日</button>
+                            <button class="gantt-view-btn" data-view="week">周</button>
+                            <button class="gantt-view-btn" data-view="month">月</button>
+                        </div>
+                        <div class="gantt-nav-buttons">
+                            <button class="gantt-btn" id="gantt-btn-prev">&lt;</button>
+                            <button class="gantt-btn" id="gantt-btn-next">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- VIEW 2: Workitems List -->
+            <section class="view-section" id="view-workitems">
+                
+                <!-- Filter Bar -->
+                <div class="filter-bar">
+                    <!-- Search input -->
+                    <div class="filter-group flex-grow">
+                        <label for="filter-search" class="filter-label">搜索</label>
+                        <input type="text" id="filter-search" placeholder="输入标题、ID或包含文本搜索..." class="input-text">
+                    </div>
+                    
+                    <!-- Category select -->
+                    <div class="filter-group">
+                        <label for="filter-category" class="filter-label">类型</label>
+                        <select id="filter-category" class="select-dropdown">
+                            <option value="Req" selected>需求</option>
+                            <option value="Task">任务</option>
+                            <option value="Bug">缺陷</option>
+                            <option value="all">全部类型</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Status select -->
+                    <div class="filter-group">
+                        <label for="filter-status" class="filter-label">状态</label>
+                        <select id="filter-status" class="select-dropdown">
+                            <option value="all">全部状态</option>
+                        </select>
+                    </div>
+
+                    <!-- Assignee select -->
+                    <div class="filter-group">
+                        <label for="filter-assignee" class="filter-label">负责人</label>
+                        <select id="filter-assignee" class="select-dropdown">
+                            <option value="all">全部负责人</option>
+                        </select>
+                    </div>
+
+                    <!-- Priority select -->
+                    <div class="filter-group">
+                        <label for="filter-priority" class="filter-label">优先级</label>
+                        <select id="filter-priority" class="select-dropdown">
+                            <option value="all">全部优先级</option>
+                            <option value="紧急">紧急</option>
+                            <option value="高">高</option>
+                            <option value="中">中</option>
+                            <option value="低">低</option>
+                        </select>
+                    </div>
+
+                    <!-- Iteration select -->
+                    <div class="filter-group">
+                        <label for="filter-iteration" class="filter-label">迭代</label>
+                        <select id="filter-iteration" class="select-dropdown">
+                            <option value="all">全部迭代</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Items Stats -->
+                <div class="table-meta">
+                    <span id="filtered-count-text">共找到 0 条符合条件的需求</span>
+                    <button class="btn-export-markdown" id="btn-export-markdown" title="复制当前过滤条件下的周报 Snippet 到剪贴板">
+                        <svg class="export-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="9" x2="15" y2="9"></line>
+                            <line x1="9" y1="13" x2="15" y2="13"></line>
+                            <line x1="9" y1="17" x2="13" y2="17"></line>
+                        </svg>
+                        <span>复制周报 Snippet</span>
+                    </button>
+                </div>
+
+                <!-- Table Container -->
+                <div class="table-container">
+                    <table class="data-table" id="table-workitems">
+                        <thead>
+                            <tr>
+                                <th style="width: 120px;">编号 / ID</th>
+                                <th>需求标题</th>
+                                <th style="width: 140px;">当前状态</th>
+                                <th style="width: 90px;">优先级</th>
+                                <th style="width: 110px;">负责人</th>
+                                <th style="width: 110px;">提报人</th>
+                                <th style="width: 130px;">版本迭代</th>
+                                <th style="width: 110px;">创建日期</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-tbody">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- VIEW 3: Weekly Narrative -->
+            <section class="view-section" id="view-weekly">
+                
+                <!-- Report Week Selector Row -->
+                <div class="weekly-selector-row">
+                    <div class="selector-container">
+                        <label for="weekly-week-select" class="selector-label">选择周报周期：</label>
+                        <select id="weekly-week-select" class="weekly-select">
+                            <!-- Injected by JS -->
+                        </select>
+                        <button class="btn-generate-weekly" id="btn-generate-weekly" title="生成/覆盖本周周报数据">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            <span>生成周报</span>
+                        </button>
+                    </div>
+                    <div class="weekly-desc">切换不同周次查看每周项目核心里程碑与交付风险提示</div>
+                </div>
+
+                <!-- Weekly Reports Layout Grid -->
+                <div class="weekly-grid">
+                    
+                    <!-- Block 0: Weekly Project Management Data (Optional) -->
+                    <div class="weekly-card span-col-2" id="weekly-metrics-card" style="display: none;">
+                        <div class="weekly-card-header card-badge-gold">
+                            <span class="weekly-card-icon">📊</span>
+                            <h3 class="weekly-card-title">本周项目管理大盘数据</h3>
+                        </div>
+                        <div class="weekly-card-content" id="weekly-metrics">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Block 1: Milestone Accomplishments -->
+                    <div class="weekly-card span-col-2">
+                        <div class="weekly-card-header card-badge-green">
+                            <span class="weekly-card-icon">🏆</span>
+                            <h3 class="weekly-card-title">本周核心进展与里程碑成果</h3>
+                        </div>
+                        <div class="weekly-card-content" id="weekly-progress">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Block 2: New Planning -->
+                    <div class="weekly-card">
+                        <div class="weekly-card-header card-badge-blue">
+                            <span class="weekly-card-icon">💡</span>
+                            <h3 class="weekly-card-title">本周新增核心规划</h3>
+                        </div>
+                        <div class="weekly-card-content" id="weekly-planning">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Block 3: Progress Assessment -->
+                    <div class="weekly-card">
+                        <div class="weekly-card-header card-badge-cyan">
+                            <span class="weekly-card-icon">📈</span>
+                            <h3 class="weekly-card-title">全局项目进度总结与主流程评估</h3>
+                        </div>
+                        <div class="weekly-card-content" id="weekly-assessment">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Block 4: Risks Warning -->
+                    <div class="weekly-card span-col-2 danger-glow">
+                        <div class="weekly-card-header card-badge-rose">
+                            <span class="weekly-card-icon">⚠️</span>
+                            <h3 class="weekly-card-title">研发资源与交付风险警告</h3>
+                        </div>
+                        <div class="weekly-card-content" id="weekly-risks">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Block 5: Technical Recommendations -->
+                    <div class="weekly-card span-col-2">
+                        <div class="weekly-card-header card-badge-purple">
+                            <span class="weekly-card-icon">⚙️</span>
+                            <h3 class="weekly-card-title">技术管理建议</h3>
+                        </div>
+                        <div class="weekly-card-content" id="weekly-recommendations">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Drill-down Details Modal -->
+    <div class="modal-overlay" id="detail-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <span class="modal-title" id="modal-item-id">需求详情</span>
+                <button class="btn-close-modal" id="btn-close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-item-title" id="modal-item-title">【大系統】商家意見反饋</h2>
+                
+                <!-- Fields Grid -->
+                <div class="modal-fields-grid">
+                    <div class="field-item">
+                        <span class="field-label">当前状态</span>
+                        <span class="field-value badge" id="modal-item-status">待处理</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">优先级</span>
+                        <span class="field-value badge" id="modal-item-priority">中</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">负责人</span>
+                        <span class="field-value" id="modal-item-assignee">未指派</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">提报人</span>
+                        <span class="field-value" id="modal-item-creator">未指派</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">版本迭代</span>
+                        <span class="field-value" id="modal-item-iteration">未规划</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">工作项类型</span>
+                        <span class="field-value" id="modal-item-type">产品类需求</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">创建时间</span>
+                        <span class="field-value" id="modal-item-created">-</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">计划开始日期</span>
+                        <span class="field-value" id="modal-item-start">-</span>
+                    </div>
+                    <div class="field-item">
+                        <span class="field-label">计划完成日期</span>
+                        <span class="field-value" id="modal-item-end">-</span>
+                    </div>
+                </div>
+
+                <!-- Raw log / RowText -->
+                <div class="modal-raw-area">
+                    <span class="field-label">云效原始采集行数据 (RowText)</span>
+                    <div class="terminal-box" id="modal-item-rowtext">
+                        <!-- Injected -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QA Mitigation Dialog Modal -->
+    <div class="modal-overlay" id="qa-mitigation-modal" style="display: none;">
+        <div class="modal-box modal-box-large">
+            <div class="modal-header">
+                <span class="modal-title">⚠️ QA 瓶颈缓解对策建议</span>
+                <button class="btn-close-modal" id="btn-close-mitigation">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="mitigation-section">
+                    <h4 class="section-subtitle" style="color: var(--color-cyan, #00d2ff); font-size: 14px; margin-bottom: 8px;">👥 团队空闲负载分配 (Underutilized Resources)</h4>
+                    <p class="section-desc" style="font-size: 12px; color: var(--color-text-muted, #94a3b8); margin-bottom: 12px;">
+                        以下为研发团队当前活跃开发负载（未提测且未完成的开发任务数量），按负载从小到大排序。建议协调负载较低的人员支援测试验证：
+                    </p>
+                    <div class="table-container" style="max-height: 250px; overflow-y: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>开发人员</th>
+                                    <th>主攻角色</th>
+                                    <th>活跃任务数</th>
+                                    <th>可用状态</th>
+                                    <th>协调操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mitigation-devs-tbody">
+                                <!-- Injected by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="mitigation-section" style="margin-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 16px;">
+                    <h4 class="section-subtitle" style="color: var(--color-cyan, #00d2ff); font-size: 14px; margin-bottom: 8px;">📋 管理规避建议</h4>
+                    <ul class="mitigation-tips-list" style="font-size: 12px; color: #cbd5e1; padding-left: 20px; line-height: 1.8;">
+                        <li style="margin-bottom: 6px;"><strong>暂停代码合并</strong>: 建议暂时暂停非关键需求的合码，以减少 QA 测试负担。</li>
+                        <li style="margin-bottom: 6px;"><strong>分级测试与支援</strong>: 建议指派负载极低 (绿标“可支援”) 的开发人员支援高优先级任务的测试验证。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sync Toast Alert -->
+    <div class="toast-alert" id="toast-alert">
+        <span class="toast-message" id="toast-message">同步中...</span>
+    </div>
+
+</body>
+</html>
