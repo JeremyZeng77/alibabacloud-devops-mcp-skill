@@ -52,6 +52,7 @@ jobs:
         run: |
           cd dashboard
           npm run build
+          cp projects_data.json dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
