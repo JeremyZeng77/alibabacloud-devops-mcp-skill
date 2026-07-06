@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-06T08:03:42.635526",
+  "compiledAt": "2026-07-06T08:35:30.629752",
   "latest": {
     "mftb": [
       {
@@ -124,7 +124,7 @@
       {
         "id": "MFTB-808",
         "title": "【眾包】騎手等級管理-新增混合送騎手管理",
-        "status": "测试环境验证通过",
+        "status": "已上线",
         "priority": "高",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -134,7 +134,7 @@
         "createDate": "2026-06-30",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=39dad58a00531efe6e98a0b62e",
-        "rowText": "【产品类需求】【眾包】騎手等級管理-新增混合送騎手管理\nID: MFTB-808 | 状态: 测试环境验证通过 | 优先级: 高\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-06-30 | 排期规划: 2026-06-30 至 2026-07-06",
+        "rowText": "【产品类需求】【眾包】騎手等級管理-新增混合送騎手管理\nID: MFTB-808 | 状态: 已上线 | 优先级: 高\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-06-30 | 排期规划: 2026-06-30 至 2026-07-06",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1582,6 +1582,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-854",
+        "title": "【服务端】【大係統】團購自定義商圈-新增商圈的介紹和標籤配置",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "未规划",
+        "planStart": "2026-07-07",
+        "planEnd": "2026-07-07",
+        "createDate": "2026-07-06",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e3b80d153fd7b2deea5aea4343",
+        "rowText": "【任务】【服务端】【大係統】團購自定義商圈-新增商圈的介紹和標籤配置\nID: MFTB-854 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-07-06 | 排期规划: 2026-07-07 至 2026-07-07",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-853",
@@ -17075,11 +17092,11 @@
       },
       {
         "date": "2026-07-06",
-        "total": 595,
+        "total": 596,
         "completed": 458,
         "statusCounts": {
           "已完成": 458,
-          "进行中": 137
+          "进行中": 138
         }
       }
     ],
