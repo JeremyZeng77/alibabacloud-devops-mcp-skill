@@ -504,11 +504,13 @@ def fetch_mcp_workitems(project_id, category="Req,Task,Bug", status_stage="1,2",
             "stderr": subprocess.PIPE,
             "text": True,
             "encoding": 'utf-8',
-            "env": env,
-            "shell": True
+            "env": env
         }
         if os.name == 'nt':
             kwargs["creationflags"] = subprocess.CREATE_NO_WINDOW
+            kwargs["shell"] = True
+        else:
+            kwargs["shell"] = False
         
         process = subprocess.Popen(
             ["npx", "-y", "alibabacloud-devops-mcp-server"],
