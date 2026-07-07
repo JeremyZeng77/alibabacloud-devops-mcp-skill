@@ -659,21 +659,11 @@ function updateTimestamps() {
         document.getElementById('time-compiled').textContent = 'N/A';
     }
 
-    // Collected time (from latest item snapshot receivedAt)
-    // We can query the bridge server or fallback to the latest compiled date
-    const latestItems = state.latest[state.currentProject] || [];
-    if (latestItems.length > 0) {
-        // Find latest date in current items
-        let latestDate = null;
-        latestItems.forEach(item => {
-            if (item.planStart) {
-                const itemDate = new Date(item.planStart);
-                if (!isNaN(itemDate) && (!latestDate || itemDate > latestDate)) {
-                    latestDate = itemDate;
-                }
-            }
-        });
-        document.getElementById('time-collected').textContent = latestDate ? latestDate.toISOString().slice(0, 10) : '最新数据';
+    // Collected time (derived from compiledAt, since data is fetched during compile)
+    if (state.compiledAt) {
+        const date = new Date(state.compiledAt);
+        const pad = (n) => n.toString().padStart(2, '0');
+        document.getElementById('time-collected').textContent = `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
     } else {
         document.getElementById('time-collected').textContent = 'N/A';
     }

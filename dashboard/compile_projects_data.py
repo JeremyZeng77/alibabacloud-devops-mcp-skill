@@ -1213,7 +1213,7 @@ def main():
     print(f"Parsed {len(weekly_reports)} weekly report entries.")
         
     db = {
-        'compiledAt': datetime.now().isoformat(),
+        'compiledAt': datetime.now(timezone.utc).isoformat(),
         'latest': parsed_latest,
         'history': history_timeline,
         'weeklyReports': weekly_reports,
