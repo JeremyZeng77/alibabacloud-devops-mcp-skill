@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-07-07T07:44:02.712192+00:00",
+  "compiledAt": "2026-07-07T11:12:59.117099+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-868",
+        "title": "商品標籤優化",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-07",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=511fbc70a1526560314ce18475",
+        "rowText": "【产品类需求】商品標籤優化\nID: MFTB-868 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: 未规划 | 创建时间: 2026-07-07 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-863",
         "title": "【大係統】-團購到店-新增退款原因配置",
@@ -56,7 +73,7 @@
       {
         "id": "MFTB-855",
         "title": "【極馬】騎手驗證碼校驗增加後台開關",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -66,7 +83,7 @@
         "createDate": "2026-07-07",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3668f75ef7d7359fa1ab7a9a59",
-        "rowText": "【产品类需求】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-855 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-855 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -107,7 +124,7 @@
       {
         "id": "MFTB-834",
         "title": "【調度】工資表-導出成本分析增加用戶小費統計",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -117,7 +134,7 @@
         "createDate": "2026-07-02",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6407e217de0d77525414e187fe",
-        "rowText": "【产品类需求】【調度】工資表-導出成本分析增加用戶小費統計\nID: MFTB-834 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-02 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【調度】工資表-導出成本分析增加用戶小費統計\nID: MFTB-834 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-02 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1652,6 +1669,91 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-874",
+        "title": "【mFood iOS】更换手机",
+        "status": "开发中",
+        "priority": "中",
+        "assignee": "陈剑",
+        "creator": "陈剑",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-08",
+        "planEnd": "2026-07-08",
+        "createDate": "2026-07-07",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ebc8333f067b10f734a62a8b77",
+        "rowText": "【任务】【mFood iOS】更换手机\nID: MFTB-874 | 状态: 开发中 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-873",
+        "title": "【mFood iOS】商家入驻",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "陈剑",
+        "creator": "陈剑",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-07",
+        "planEnd": "2026-07-07",
+        "createDate": "2026-07-07",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7c105a17f3a8c5ec64ef20b05f",
+        "rowText": "【任务】【mFood iOS】商家入驻\nID: MFTB-873 | 状态: 提交测试 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-07 | 排期规划: 2026-07-07 至 2026-07-07",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-872",
+        "title": "【安卓】【極馬】專送&眾包APP已完成訂單限制發送IM消息",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "陈国伟",
+        "creator": "陈国伟",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-07",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=05de4bb640f39d3dd52817489b",
+        "rowText": "【任务】【安卓】【極馬】專送&眾包APP已完成訂單限制發送IM消息\nID: MFTB-872 | 状态: 未开始 | 优先级: 中\n负责人: 陈国伟 | 提报人: 陈国伟\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-871",
+        "title": "【安卓】【極馬】騎手驗證碼校驗增加後台開關",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "陈国伟",
+        "creator": "陈国伟",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-07-08",
+        "planEnd": "2026-07-08",
+        "createDate": "2026-07-07",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6b5f7ccf1784924ffed97f9199",
+        "rowText": "【任务】【安卓】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-871 | 状态: 未开始 | 优先级: 中\n负责人: 陈国伟 | 提报人: 陈国伟\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-870",
+        "title": "【iOS】【極馬】騎手驗證碼校驗增加後台開關",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "陈万里",
+        "creator": "陈万里",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-07-08",
+        "planEnd": "2026-07-08",
+        "createDate": "2026-07-07",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5d5ac939a3ea73bf1b666288d6",
+        "rowText": "【任务】【iOS】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-870 | 状态: 未开始 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-867",
         "title": "【大係統】團購到店-門店裝修優化",
         "status": "未开始",
@@ -1722,34 +1824,34 @@
       {
         "id": "MFTB-861",
         "title": "【服务端】【調度】工資表-導出成本分析增加用戶小費統計",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "刘志敏",
         "iteration": "SH-v1.0.0",
-        "planStart": "2026-07-08",
-        "planEnd": "2026-07-08",
+        "planStart": "2026-07-07",
+        "planEnd": "2026-07-07",
         "createDate": "2026-07-07",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=111e692aa57e6f51c7641eb473",
-        "rowText": "【任务】【服务端】【調度】工資表-導出成本分析增加用戶小費統計\nID: MFTB-861 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
+        "rowText": "【任务】【服务端】【調度】工資表-導出成本分析增加用戶小費統計\nID: MFTB-861 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: 2026-07-07 至 2026-07-07",
         "project": "MFTB集团项目",
         "category": "Task"
       },
       {
         "id": "MFTB-860",
         "title": "【服务端】【極馬】騎手驗證碼校驗增加後台開關",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "刘志敏",
         "iteration": "SH-v1.0.0",
-        "planStart": "2026-07-08",
-        "planEnd": "2026-07-08",
+        "planStart": "2026-07-07",
+        "planEnd": "2026-07-07",
         "createDate": "2026-07-07",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ed1fa091e6d0363f0c06748a70",
-        "rowText": "【任务】【服务端】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-860 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
+        "rowText": "【任务】【服务端】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-860 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: 2026-07-07 至 2026-07-07",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -13316,6 +13418,23 @@
     ],
     "mfood": [
       {
+        "id": "MF-34594",
+        "title": "【自動接單】自動接單ios優化",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "刘龙振海",
+        "creator": "刘龙振海",
+        "iteration": "V7.3.5（7.15）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-07",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=44507d38a219556ad44df2f637",
+        "rowText": "【产品类需求】【自動接單】自動接單ios優化\nID: MF-34594 | 状态: 待处理 | 优先级: 低\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: V7.3.5（7.15） | 创建时间: 2026-07-07 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
         "id": "MF-34561",
         "title": "【服务端】【訂單報表】增加付款理由",
         "status": "待处理",
@@ -17288,28 +17407,28 @@
       {
         "date": "2026-07-05",
         "total": 590,
-        "completed": 282,
+        "completed": 283,
         "statusCounts": {
-          "已完成": 282,
-          "进行中": 308
+          "已完成": 283,
+          "进行中": 307
         }
       },
       {
         "date": "2026-07-06",
         "total": 596,
-        "completed": 460,
+        "completed": 461,
         "statusCounts": {
-          "已完成": 460,
-          "进行中": 136
+          "已完成": 461,
+          "进行中": 135
         }
       },
       {
         "date": "2026-07-07",
-        "total": 609,
-        "completed": 463,
+        "total": 615,
+        "completed": 468,
         "statusCounts": {
-          "已完成": 463,
-          "进行中": 146
+          "已完成": 468,
+          "进行中": 147
         }
       }
     ],
@@ -28764,11 +28883,11 @@
       },
       {
         "date": "2026-07-07",
-        "total": 181,
+        "total": 182,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 144
+          "进行中": 145
         }
       }
     ]
