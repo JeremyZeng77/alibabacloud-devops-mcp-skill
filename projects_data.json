@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-08T05:55:50.030159+00:00",
+  "compiledAt": "2026-07-08T06:03:57.046693+00:00",
   "latest": {
     "mftb": [
       {
@@ -152,23 +152,6 @@
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=90ecdeec9cc29163e21919c70c",
         "rowText": "【产品类需求】【大係統】基礎滿減紅包創建（含膨脹+隨機活動）\nID: MFTB-828 | 状态: 已评审（待开发） | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-01 | 排期规划: 2026-06-22 至 2026-07-10",
-        "project": "MFTB集团项目",
-        "category": "Req"
-      },
-      {
-        "id": "MFTB-825",
-        "title": "【tikbee android】【大系统】配送方案",
-        "status": "待处理",
-        "priority": "中",
-        "assignee": "卓天鸿",
-        "creator": "卓天鸿",
-        "iteration": "MFTB-v1.0.1",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-07-01",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3e07eb8457e14fe2148ccea0dd",
-        "rowText": "【产品类需求】【tikbee android】【大系统】配送方案\nID: MFTB-825 | 状态: 待处理 | 优先级: 中\n负责人: 卓天鸿 | 提报人: 卓天鸿\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2328,6 +2311,23 @@
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8efc3bd2fbd7391001d43a9579",
         "rowText": "【任务】【服务端】【大系统】增加根据经纬度返回最近收货地址\nID: MFTB-826 | 状态: 提交测试 | 优先级: 中\n负责人: 张健伟 | 提报人: 张健伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-01 | 排期规划: 2026-07-01 至 2026-07-01",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-825",
+        "title": "【tikbee android】【大系统】配送方案",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "卓天鸿",
+        "creator": "卓天鸿",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-01",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3e07eb8457e14fe2148ccea0dd",
+        "rowText": "【任务】【tikbee android】【大系统】配送方案\nID: MFTB-825 | 状态: 未开始 | 优先级: 中\n负责人: 卓天鸿 | 提报人: 卓天鸿\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
