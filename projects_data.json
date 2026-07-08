@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-07-08T10:23:10.698304+00:00",
+  "compiledAt": "2026-07-08T14:24:41.790543+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-899",
+        "title": "【眾包】急賞送",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-08",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=01b7aeb2a739b50120900a20e6",
+        "rowText": "【产品类需求】【眾包】急賞送\nID: MFTB-899 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-08 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-885",
         "title": "【眾包】APP搶單池訂單排序邏輯調整",
@@ -1977,7 +1994,7 @@
       {
         "id": "MFTB-876",
         "title": "【大係統】商家 APP_首次进入APP隐私政策处理",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "梁富城",
         "creator": "梁富城",
@@ -1987,7 +2004,7 @@
         "createDate": "2026-07-08",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e850cafe77e88f457882e4509c",
-        "rowText": "【任务】【大係統】商家 APP_首次进入APP隐私政策处理\nID: MFTB-876 | 状态: 开发中 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-08 至 2026-07-08",
+        "rowText": "【任务】【大係統】商家 APP_首次进入APP隐私政策处理\nID: MFTB-876 | 状态: 提交测试 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-08 至 2026-07-08",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -17841,10 +17858,10 @@
       },
       {
         "date": "2026-07-08",
-        "total": 636,
-        "completed": 489,
+        "total": 637,
+        "completed": 490,
         "statusCounts": {
-          "已完成": 489,
+          "已完成": 490,
           "进行中": 147
         }
       }
@@ -29529,8 +29546,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 5.4,
-      "delta": 0.4
+      "average": 4.5,
+      "delta": -0.5
     },
     "mfood": {
       "average": 0.0,
