@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-09T01:50:52.538103+00:00",
+  "compiledAt": "2026-07-09T02:09:06.704443+00:00",
   "latest": {
     "mftb": [
       {
@@ -22,7 +22,7 @@
       {
         "id": "MFTB-885",
         "title": "【眾包】APP搶單池訂單排序邏輯調整",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -32,7 +32,7 @@
         "createDate": "2026-07-08",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7a756016633a62ac04dba58c64",
-        "rowText": "【产品类需求】【眾包】APP搶單池訂單排序邏輯調整\nID: MFTB-885 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-08 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【眾包】APP搶單池訂單排序邏輯調整\nID: MFTB-885 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-08 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1720,6 +1720,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-900",
+        "title": "【服务端】【眾包】APP搶單池訂單排序邏輯調整",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-07-09",
+        "planEnd": "2026-07-09",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d01a9a79ee8fdd28bbf620ab36",
+        "rowText": "【任务】【服务端】【眾包】APP搶單池訂單排序邏輯調整\nID: MFTB-900 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-09 | 排期规划: 2026-07-09 至 2026-07-09",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-898",
         "title": "【服务端】【大系统】配送方案-门店管理-自送方案",
         "status": "未开始",
@@ -1892,7 +1909,7 @@
       {
         "id": "MFTB-887",
         "title": "【大係統】商家 APP_我的页面-切换语言（個人中心）",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "梁富城",
         "creator": "梁富城",
@@ -1902,7 +1919,7 @@
         "createDate": "2026-07-08",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=49402d4b0f172ddc878770fe90",
-        "rowText": "【任务】【大係統】商家 APP_我的页面-切换语言（個人中心）\nID: MFTB-887 | 状态: 未开始 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-09 至 2026-07-09",
+        "rowText": "【任务】【大係統】商家 APP_我的页面-切换语言（個人中心）\nID: MFTB-887 | 状态: 开发中 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-09 至 2026-07-09",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -2130,17 +2147,17 @@
       {
         "id": "MFTB-866",
         "title": "【服务端】【大係統】-團購到店-新增退款原因配置",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "未规划",
         "planStart": "2026-07-08",
-        "planEnd": "2026-07-08",
+        "planEnd": "2026-07-09",
         "createDate": "2026-07-07",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3cd5fe9343de948220e7f7dae2",
-        "rowText": "【任务】【服务端】【大係統】-團購到店-新增退款原因配置\nID: MFTB-866 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
+        "rowText": "【任务】【服务端】【大係統】-團購到店-新增退款原因配置\nID: MFTB-866 | 状态: 提交测试 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-09",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -17867,11 +17884,11 @@
       },
       {
         "date": "2026-07-09",
-        "total": 637,
-        "completed": 494,
+        "total": 638,
+        "completed": 497,
         "statusCounts": {
-          "已完成": 494,
-          "进行中": 143
+          "已完成": 497,
+          "进行中": 141
         }
       }
     ],
