@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-09T02:09:06.704443+00:00",
+  "compiledAt": "2026-07-09T02:18:00.593743+00:00",
   "latest": {
     "mftb": [
       {
@@ -16104,23 +16104,6 @@
         "category": "Task"
       },
       {
-        "id": "MF-31775",
-        "title": "团购导出销售订单明细和结算明细",
-        "status": "处理中",
-        "priority": "低",
-        "assignee": "黎月平",
-        "creator": "黎月平",
-        "iteration": "0.0.0",
-        "planStart": "2025-11-06",
-        "planEnd": "2025-11-07",
-        "createDate": "2025-09-02",
-        "workItemType": "产品",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=f3b0ce2d122c9bebaef127a36e",
-        "rowText": "【产品】团购导出销售订单明细和结算明细\nID: MF-31775 | 状态: 处理中 | 优先级: 低\n负责人: 黎月平 | 提报人: 黎月平\n迭代版本: 0.0.0 | 创建时间: 2025-09-02 | 排期规划: 2025-11-06 至 2025-11-07",
-        "project": "mFood综合版本",
-        "category": "Task"
-      },
-      {
         "id": "MF-31381",
         "title": "【测试】POS机优化",
         "status": "待处理",
@@ -26571,51 +26554,60 @@
       },
       {
         "date": "2025-09-02",
-        "total": 87,
+        "total": 86,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 75
+          "进行中": 74
         }
       },
       {
         "date": "2025-09-03",
-        "total": 87,
+        "total": 86,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 75
+          "进行中": 74
         }
       },
       {
         "date": "2025-09-04",
-        "total": 87,
+        "total": 86,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 75
+          "进行中": 74
         }
       },
       {
         "date": "2025-09-05",
-        "total": 87,
+        "total": 86,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 75
+          "进行中": 74
         }
       },
       {
         "date": "2025-09-06",
-        "total": 87,
+        "total": 86,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 75
+          "进行中": 74
         }
       },
       {
         "date": "2025-09-07",
+        "total": 86,
+        "completed": 12,
+        "statusCounts": {
+          "已完成": 12,
+          "进行中": 74
+        }
+      },
+      {
+        "date": "2025-09-08",
         "total": 87,
         "completed": 12,
         "statusCounts": {
@@ -26624,34 +26616,34 @@
         }
       },
       {
-        "date": "2025-09-08",
-        "total": 88,
-        "completed": 12,
-        "statusCounts": {
-          "已完成": 12,
-          "进行中": 76
-        }
-      },
-      {
         "date": "2025-09-09",
-        "total": 88,
+        "total": 87,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 76
+          "进行中": 75
         }
       },
       {
         "date": "2025-09-10",
-        "total": 91,
+        "total": 90,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 79
+          "进行中": 78
         }
       },
       {
         "date": "2025-09-11",
+        "total": 90,
+        "completed": 12,
+        "statusCounts": {
+          "已完成": 12,
+          "进行中": 78
+        }
+      },
+      {
+        "date": "2025-09-12",
         "total": 91,
         "completed": 12,
         "statusCounts": {
@@ -26660,88 +26652,88 @@
         }
       },
       {
-        "date": "2025-09-12",
-        "total": 92,
-        "completed": 12,
-        "statusCounts": {
-          "已完成": 12,
-          "进行中": 80
-        }
-      },
-      {
         "date": "2025-09-13",
-        "total": 92,
+        "total": 91,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 80
+          "进行中": 79
         }
       },
       {
         "date": "2025-09-14",
-        "total": 92,
+        "total": 91,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 80
+          "进行中": 79
         }
       },
       {
         "date": "2025-09-15",
-        "total": 92,
+        "total": 91,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 80
+          "进行中": 79
         }
       },
       {
         "date": "2025-09-16",
-        "total": 94,
+        "total": 93,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 82
+          "进行中": 81
         }
       },
       {
         "date": "2025-09-17",
-        "total": 96,
+        "total": 95,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 84
+          "进行中": 83
         }
       },
       {
         "date": "2025-09-18",
-        "total": 100,
+        "total": 99,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-19",
-        "total": 100,
+        "total": 99,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-20",
-        "total": 100,
+        "total": 99,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-21",
+        "total": 99,
+        "completed": 12,
+        "statusCounts": {
+          "已完成": 12,
+          "进行中": 87
+        }
+      },
+      {
+        "date": "2025-09-22",
         "total": 100,
         "completed": 12,
         "statusCounts": {
@@ -26750,169 +26742,169 @@
         }
       },
       {
-        "date": "2025-09-22",
-        "total": 101,
-        "completed": 12,
-        "statusCounts": {
-          "已完成": 12,
-          "进行中": 89
-        }
-      },
-      {
         "date": "2025-09-23",
-        "total": 101,
+        "total": 100,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 89
+          "进行中": 88
         }
       },
       {
         "date": "2025-09-24",
-        "total": 101,
+        "total": 100,
         "completed": 12,
         "statusCounts": {
           "已完成": 12,
-          "进行中": 89
+          "进行中": 88
         }
       },
       {
         "date": "2025-09-25",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-26",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-27",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-28",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-29",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-09-30",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-01",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-02",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-03",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-04",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-05",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-06",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-07",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-08",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-09",
-        "total": 101,
+        "total": 100,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 88
+          "进行中": 87
         }
       },
       {
         "date": "2025-10-10",
+        "total": 100,
+        "completed": 13,
+        "statusCounts": {
+          "已完成": 13,
+          "进行中": 87
+        }
+      },
+      {
+        "date": "2025-10-11",
         "total": 101,
         "completed": 13,
         "statusCounts": {
@@ -26921,25 +26913,25 @@
         }
       },
       {
-        "date": "2025-10-11",
-        "total": 102,
-        "completed": 13,
-        "statusCounts": {
-          "已完成": 13,
-          "进行中": 89
-        }
-      },
-      {
         "date": "2025-10-12",
-        "total": 102,
+        "total": 101,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 89
+          "进行中": 88
         }
       },
       {
         "date": "2025-10-13",
+        "total": 101,
+        "completed": 13,
+        "statusCounts": {
+          "已完成": 13,
+          "进行中": 88
+        }
+      },
+      {
+        "date": "2025-10-14",
         "total": 102,
         "completed": 13,
         "statusCounts": {
@@ -26948,70 +26940,70 @@
         }
       },
       {
-        "date": "2025-10-14",
-        "total": 103,
-        "completed": 13,
-        "statusCounts": {
-          "已完成": 13,
-          "进行中": 90
-        }
-      },
-      {
         "date": "2025-10-15",
-        "total": 103,
+        "total": 102,
         "completed": 13,
         "statusCounts": {
           "已完成": 13,
-          "进行中": 90
+          "进行中": 89
         }
       },
       {
         "date": "2025-10-16",
-        "total": 105,
+        "total": 104,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 90
+          "进行中": 89
         }
       },
       {
         "date": "2025-10-17",
-        "total": 105,
+        "total": 104,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 90
+          "进行中": 89
         }
       },
       {
         "date": "2025-10-18",
-        "total": 105,
+        "total": 104,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 90
+          "进行中": 89
         }
       },
       {
         "date": "2025-10-19",
-        "total": 105,
+        "total": 104,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 90
+          "进行中": 89
         }
       },
       {
         "date": "2025-10-20",
-        "total": 105,
+        "total": 104,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 90
+          "进行中": 89
         }
       },
       {
         "date": "2025-10-21",
+        "total": 104,
+        "completed": 15,
+        "statusCounts": {
+          "已完成": 15,
+          "进行中": 89
+        }
+      },
+      {
+        "date": "2025-10-22",
         "total": 105,
         "completed": 15,
         "statusCounts": {
@@ -27020,52 +27012,52 @@
         }
       },
       {
-        "date": "2025-10-22",
-        "total": 106,
-        "completed": 15,
-        "statusCounts": {
-          "已完成": 15,
-          "进行中": 91
-        }
-      },
-      {
         "date": "2025-10-23",
-        "total": 106,
+        "total": 105,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 91
+          "进行中": 90
         }
       },
       {
         "date": "2025-10-24",
-        "total": 108,
+        "total": 107,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 93
+          "进行中": 92
         }
       },
       {
         "date": "2025-10-25",
-        "total": 108,
+        "total": 107,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 93
+          "进行中": 92
         }
       },
       {
         "date": "2025-10-26",
-        "total": 108,
+        "total": 107,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 93
+          "进行中": 92
         }
       },
       {
         "date": "2025-10-27",
+        "total": 107,
+        "completed": 15,
+        "statusCounts": {
+          "已完成": 15,
+          "进行中": 92
+        }
+      },
+      {
+        "date": "2025-10-28",
         "total": 108,
         "completed": 15,
         "statusCounts": {
@@ -27074,7 +27066,7 @@
         }
       },
       {
-        "date": "2025-10-28",
+        "date": "2025-10-29",
         "total": 109,
         "completed": 15,
         "statusCounts": {
@@ -27083,52 +27075,52 @@
         }
       },
       {
-        "date": "2025-10-29",
-        "total": 110,
-        "completed": 15,
-        "statusCounts": {
-          "已完成": 15,
-          "进行中": 95
-        }
-      },
-      {
         "date": "2025-10-30",
-        "total": 110,
+        "total": 109,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 95
+          "进行中": 94
         }
       },
       {
         "date": "2025-10-31",
-        "total": 111,
+        "total": 110,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 96
+          "进行中": 95
         }
       },
       {
         "date": "2025-11-01",
-        "total": 111,
+        "total": 110,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 96
+          "进行中": 95
         }
       },
       {
         "date": "2025-11-02",
-        "total": 111,
+        "total": 110,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 96
+          "进行中": 95
         }
       },
       {
         "date": "2025-11-03",
+        "total": 110,
+        "completed": 15,
+        "statusCounts": {
+          "已完成": 15,
+          "进行中": 95
+        }
+      },
+      {
+        "date": "2025-11-04",
         "total": 111,
         "completed": 15,
         "statusCounts": {
@@ -27137,52 +27129,52 @@
         }
       },
       {
-        "date": "2025-11-04",
-        "total": 112,
-        "completed": 15,
-        "statusCounts": {
-          "已完成": 15,
-          "进行中": 97
-        }
-      },
-      {
         "date": "2025-11-05",
-        "total": 112,
+        "total": 111,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 97
+          "进行中": 96
         }
       },
       {
         "date": "2025-11-06",
-        "total": 112,
+        "total": 111,
         "completed": 15,
         "statusCounts": {
           "已完成": 15,
-          "进行中": 97
+          "进行中": 96
         }
       },
       {
         "date": "2025-11-07",
-        "total": 112,
+        "total": 111,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 96
+          "进行中": 95
         }
       },
       {
         "date": "2025-11-08",
-        "total": 112,
+        "total": 111,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 96
+          "进行中": 95
         }
       },
       {
         "date": "2025-11-09",
+        "total": 111,
+        "completed": 16,
+        "statusCounts": {
+          "已完成": 16,
+          "进行中": 95
+        }
+      },
+      {
+        "date": "2025-11-10",
         "total": 112,
         "completed": 16,
         "statusCounts": {
@@ -27191,25 +27183,25 @@
         }
       },
       {
-        "date": "2025-11-10",
-        "total": 113,
-        "completed": 16,
-        "statusCounts": {
-          "已完成": 16,
-          "进行中": 97
-        }
-      },
-      {
         "date": "2025-11-11",
-        "total": 116,
+        "total": 115,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 100
+          "进行中": 99
         }
       },
       {
         "date": "2025-11-12",
+        "total": 115,
+        "completed": 16,
+        "statusCounts": {
+          "已完成": 16,
+          "进行中": 99
+        }
+      },
+      {
+        "date": "2025-11-13",
         "total": 116,
         "completed": 16,
         "statusCounts": {
@@ -27218,7 +27210,7 @@
         }
       },
       {
-        "date": "2025-11-13",
+        "date": "2025-11-14",
         "total": 117,
         "completed": 16,
         "statusCounts": {
@@ -27227,43 +27219,43 @@
         }
       },
       {
-        "date": "2025-11-14",
-        "total": 118,
-        "completed": 16,
-        "statusCounts": {
-          "已完成": 16,
-          "进行中": 102
-        }
-      },
-      {
         "date": "2025-11-15",
-        "total": 120,
+        "total": 119,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 104
+          "进行中": 103
         }
       },
       {
         "date": "2025-11-16",
-        "total": 120,
+        "total": 119,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 104
+          "进行中": 103
         }
       },
       {
         "date": "2025-11-17",
-        "total": 120,
+        "total": 119,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 104
+          "进行中": 103
         }
       },
       {
         "date": "2025-11-18",
+        "total": 119,
+        "completed": 16,
+        "statusCounts": {
+          "已完成": 16,
+          "进行中": 103
+        }
+      },
+      {
+        "date": "2025-11-19",
         "total": 120,
         "completed": 16,
         "statusCounts": {
@@ -27272,43 +27264,43 @@
         }
       },
       {
-        "date": "2025-11-19",
-        "total": 121,
-        "completed": 16,
-        "statusCounts": {
-          "已完成": 16,
-          "进行中": 105
-        }
-      },
-      {
         "date": "2025-11-20",
-        "total": 121,
+        "total": 120,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 105
+          "进行中": 104
         }
       },
       {
         "date": "2025-11-21",
-        "total": 121,
+        "total": 120,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 105
+          "进行中": 104
         }
       },
       {
         "date": "2025-11-22",
-        "total": 121,
+        "total": 120,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 105
+          "进行中": 104
         }
       },
       {
         "date": "2025-11-23",
+        "total": 120,
+        "completed": 16,
+        "statusCounts": {
+          "已完成": 16,
+          "进行中": 104
+        }
+      },
+      {
+        "date": "2025-11-24",
         "total": 121,
         "completed": 16,
         "statusCounts": {
@@ -27317,25 +27309,25 @@
         }
       },
       {
-        "date": "2025-11-24",
-        "total": 122,
-        "completed": 16,
-        "statusCounts": {
-          "已完成": 16,
-          "进行中": 106
-        }
-      },
-      {
         "date": "2025-11-25",
-        "total": 122,
+        "total": 121,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 106
+          "进行中": 105
         }
       },
       {
         "date": "2025-11-26",
+        "total": 121,
+        "completed": 16,
+        "statusCounts": {
+          "已完成": 16,
+          "进行中": 105
+        }
+      },
+      {
+        "date": "2025-11-27",
         "total": 122,
         "completed": 16,
         "statusCounts": {
@@ -27344,232 +27336,232 @@
         }
       },
       {
-        "date": "2025-11-27",
-        "total": 123,
-        "completed": 16,
-        "statusCounts": {
-          "已完成": 16,
-          "进行中": 107
-        }
-      },
-      {
         "date": "2025-11-28",
-        "total": 123,
+        "total": 122,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 107
+          "进行中": 106
         }
       },
       {
         "date": "2025-11-29",
-        "total": 123,
+        "total": 122,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 107
+          "进行中": 106
         }
       },
       {
         "date": "2025-11-30",
-        "total": 123,
+        "total": 122,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 107
+          "进行中": 106
         }
       },
       {
         "date": "2025-12-01",
-        "total": 123,
+        "total": 122,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 107
+          "进行中": 106
         }
       },
       {
         "date": "2025-12-02",
-        "total": 123,
+        "total": 122,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 107
+          "进行中": 106
         }
       },
       {
         "date": "2025-12-03",
-        "total": 127,
+        "total": 126,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 111
+          "进行中": 110
         }
       },
       {
         "date": "2025-12-04",
-        "total": 129,
+        "total": 128,
         "completed": 16,
         "statusCounts": {
           "已完成": 16,
-          "进行中": 113
-        }
-      },
-      {
-        "date": "2025-12-05",
-        "total": 129,
-        "completed": 16,
-        "statusCounts": {
-          "已完成": 16,
-          "进行中": 113
-        }
-      },
-      {
-        "date": "2025-12-06",
-        "total": 129,
-        "completed": 18,
-        "statusCounts": {
-          "已完成": 18,
-          "进行中": 111
-        }
-      },
-      {
-        "date": "2025-12-07",
-        "total": 129,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 110
-        }
-      },
-      {
-        "date": "2025-12-08",
-        "total": 129,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 110
-        }
-      },
-      {
-        "date": "2025-12-09",
-        "total": 129,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 110
-        }
-      },
-      {
-        "date": "2025-12-10",
-        "total": 129,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 110
-        }
-      },
-      {
-        "date": "2025-12-11",
-        "total": 129,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 110
-        }
-      },
-      {
-        "date": "2025-12-12",
-        "total": 130,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 111
-        }
-      },
-      {
-        "date": "2025-12-13",
-        "total": 130,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 111
-        }
-      },
-      {
-        "date": "2025-12-14",
-        "total": 130,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 111
-        }
-      },
-      {
-        "date": "2025-12-15",
-        "total": 130,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
-          "进行中": 111
-        }
-      },
-      {
-        "date": "2025-12-16",
-        "total": 131,
-        "completed": 19,
-        "statusCounts": {
-          "已完成": 19,
           "进行中": 112
         }
       },
       {
-        "date": "2025-12-17",
-        "total": 133,
+        "date": "2025-12-05",
+        "total": 128,
+        "completed": 16,
+        "statusCounts": {
+          "已完成": 16,
+          "进行中": 112
+        }
+      },
+      {
+        "date": "2025-12-06",
+        "total": 128,
+        "completed": 18,
+        "statusCounts": {
+          "已完成": 18,
+          "进行中": 110
+        }
+      },
+      {
+        "date": "2025-12-07",
+        "total": 128,
         "completed": 19,
         "statusCounts": {
           "已完成": 19,
-          "进行中": 114
+          "进行中": 109
+        }
+      },
+      {
+        "date": "2025-12-08",
+        "total": 128,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 109
+        }
+      },
+      {
+        "date": "2025-12-09",
+        "total": 128,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 109
+        }
+      },
+      {
+        "date": "2025-12-10",
+        "total": 128,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 109
+        }
+      },
+      {
+        "date": "2025-12-11",
+        "total": 128,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 109
+        }
+      },
+      {
+        "date": "2025-12-12",
+        "total": 129,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 110
+        }
+      },
+      {
+        "date": "2025-12-13",
+        "total": 129,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 110
+        }
+      },
+      {
+        "date": "2025-12-14",
+        "total": 129,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 110
+        }
+      },
+      {
+        "date": "2025-12-15",
+        "total": 129,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 110
+        }
+      },
+      {
+        "date": "2025-12-16",
+        "total": 130,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 111
+        }
+      },
+      {
+        "date": "2025-12-17",
+        "total": 132,
+        "completed": 19,
+        "statusCounts": {
+          "已完成": 19,
+          "进行中": 113
         }
       },
       {
         "date": "2025-12-18",
-        "total": 133,
+        "total": 132,
         "completed": 19,
         "statusCounts": {
           "已完成": 19,
-          "进行中": 114
+          "进行中": 113
         }
       },
       {
         "date": "2025-12-19",
-        "total": 136,
+        "total": 135,
         "completed": 19,
         "statusCounts": {
           "已完成": 19,
-          "进行中": 117
+          "进行中": 116
         }
       },
       {
         "date": "2025-12-20",
-        "total": 136,
+        "total": 135,
         "completed": 19,
         "statusCounts": {
           "已完成": 19,
-          "进行中": 117
+          "进行中": 116
         }
       },
       {
         "date": "2025-12-21",
-        "total": 136,
+        "total": 135,
         "completed": 19,
         "statusCounts": {
           "已完成": 19,
-          "进行中": 117
+          "进行中": 116
         }
       },
       {
         "date": "2025-12-22",
+        "total": 135,
+        "completed": 21,
+        "statusCounts": {
+          "已完成": 21,
+          "进行中": 114
+        }
+      },
+      {
+        "date": "2025-12-23",
         "total": 136,
         "completed": 21,
         "statusCounts": {
@@ -27578,7 +27570,7 @@
         }
       },
       {
-        "date": "2025-12-23",
+        "date": "2025-12-24",
         "total": 137,
         "completed": 21,
         "statusCounts": {
@@ -27587,7 +27579,7 @@
         }
       },
       {
-        "date": "2025-12-24",
+        "date": "2025-12-25",
         "total": 138,
         "completed": 21,
         "statusCounts": {
@@ -27596,52 +27588,52 @@
         }
       },
       {
-        "date": "2025-12-25",
-        "total": 139,
-        "completed": 21,
-        "statusCounts": {
-          "已完成": 21,
-          "进行中": 118
-        }
-      },
-      {
         "date": "2025-12-26",
-        "total": 139,
+        "total": 138,
         "completed": 21,
         "statusCounts": {
           "已完成": 21,
-          "进行中": 118
+          "进行中": 117
         }
       },
       {
         "date": "2025-12-27",
-        "total": 139,
+        "total": 138,
         "completed": 21,
         "statusCounts": {
           "已完成": 21,
-          "进行中": 118
+          "进行中": 117
         }
       },
       {
         "date": "2025-12-28",
-        "total": 139,
+        "total": 138,
         "completed": 21,
         "statusCounts": {
           "已完成": 21,
-          "进行中": 118
+          "进行中": 117
         }
       },
       {
         "date": "2025-12-29",
-        "total": 139,
+        "total": 138,
         "completed": 21,
         "statusCounts": {
           "已完成": 21,
-          "进行中": 118
+          "进行中": 117
         }
       },
       {
         "date": "2025-12-30",
+        "total": 138,
+        "completed": 21,
+        "statusCounts": {
+          "已完成": 21,
+          "进行中": 117
+        }
+      },
+      {
+        "date": "2025-12-31",
         "total": 139,
         "completed": 21,
         "statusCounts": {
@@ -27650,43 +27642,43 @@
         }
       },
       {
-        "date": "2025-12-31",
-        "total": 140,
-        "completed": 21,
-        "statusCounts": {
-          "已完成": 21,
-          "进行中": 119
-        }
-      },
-      {
         "date": "2026-01-01",
-        "total": 140,
+        "total": 139,
         "completed": 21,
         "statusCounts": {
           "已完成": 21,
-          "进行中": 119
+          "进行中": 118
         }
       },
       {
         "date": "2026-01-02",
-        "total": 140,
+        "total": 139,
         "completed": 21,
         "statusCounts": {
           "已完成": 21,
-          "进行中": 119
+          "进行中": 118
         }
       },
       {
         "date": "2026-01-03",
-        "total": 140,
+        "total": 139,
         "completed": 22,
         "statusCounts": {
           "已完成": 22,
-          "进行中": 118
+          "进行中": 117
         }
       },
       {
         "date": "2026-01-04",
+        "total": 139,
+        "completed": 22,
+        "statusCounts": {
+          "已完成": 22,
+          "进行中": 117
+        }
+      },
+      {
+        "date": "2026-01-05",
         "total": 140,
         "completed": 22,
         "statusCounts": {
@@ -27695,61 +27687,61 @@
         }
       },
       {
-        "date": "2026-01-05",
-        "total": 141,
-        "completed": 22,
-        "statusCounts": {
-          "已完成": 22,
-          "进行中": 119
-        }
-      },
-      {
         "date": "2026-01-06",
-        "total": 141,
+        "total": 140,
         "completed": 22,
         "statusCounts": {
           "已完成": 22,
-          "进行中": 119
+          "进行中": 118
         }
       },
       {
         "date": "2026-01-07",
-        "total": 141,
+        "total": 140,
         "completed": 22,
         "statusCounts": {
           "已完成": 22,
-          "进行中": 119
+          "进行中": 118
         }
       },
       {
         "date": "2026-01-08",
-        "total": 141,
+        "total": 140,
         "completed": 22,
         "statusCounts": {
           "已完成": 22,
-          "进行中": 119
+          "进行中": 118
         }
       },
       {
         "date": "2026-01-09",
-        "total": 141,
+        "total": 140,
         "completed": 22,
         "statusCounts": {
           "已完成": 22,
-          "进行中": 119
+          "进行中": 118
         }
       },
       {
         "date": "2026-01-10",
-        "total": 141,
+        "total": 140,
         "completed": 22,
         "statusCounts": {
           "已完成": 22,
-          "进行中": 119
+          "进行中": 118
         }
       },
       {
         "date": "2026-01-11",
+        "total": 140,
+        "completed": 22,
+        "statusCounts": {
+          "已完成": 22,
+          "进行中": 118
+        }
+      },
+      {
+        "date": "2026-01-12",
         "total": 141,
         "completed": 22,
         "statusCounts": {
@@ -27758,7 +27750,7 @@
         }
       },
       {
-        "date": "2026-01-12",
+        "date": "2026-01-13",
         "total": 142,
         "completed": 22,
         "statusCounts": {
@@ -27767,52 +27759,52 @@
         }
       },
       {
-        "date": "2026-01-13",
-        "total": 143,
-        "completed": 22,
-        "statusCounts": {
-          "已完成": 22,
-          "进行中": 121
-        }
-      },
-      {
         "date": "2026-01-14",
-        "total": 144,
+        "total": 143,
         "completed": 23,
         "statusCounts": {
           "已完成": 23,
-          "进行中": 121
+          "进行中": 120
         }
       },
       {
         "date": "2026-01-15",
-        "total": 144,
+        "total": 143,
         "completed": 23,
         "statusCounts": {
           "已完成": 23,
-          "进行中": 121
+          "进行中": 120
         }
       },
       {
         "date": "2026-01-16",
-        "total": 144,
+        "total": 143,
         "completed": 23,
         "statusCounts": {
           "已完成": 23,
-          "进行中": 121
+          "进行中": 120
         }
       },
       {
         "date": "2026-01-17",
-        "total": 144,
+        "total": 143,
         "completed": 23,
         "statusCounts": {
           "已完成": 23,
-          "进行中": 121
+          "进行中": 120
         }
       },
       {
         "date": "2026-01-18",
+        "total": 143,
+        "completed": 23,
+        "statusCounts": {
+          "已完成": 23,
+          "进行中": 120
+        }
+      },
+      {
+        "date": "2026-01-19",
         "total": 144,
         "completed": 23,
         "statusCounts": {
@@ -27821,25 +27813,25 @@
         }
       },
       {
-        "date": "2026-01-19",
-        "total": 145,
-        "completed": 23,
-        "statusCounts": {
-          "已完成": 23,
-          "进行中": 122
-        }
-      },
-      {
         "date": "2026-01-20",
-        "total": 145,
+        "total": 144,
         "completed": 23,
         "statusCounts": {
           "已完成": 23,
-          "进行中": 122
+          "进行中": 121
         }
       },
       {
         "date": "2026-01-21",
+        "total": 144,
+        "completed": 23,
+        "statusCounts": {
+          "已完成": 23,
+          "进行中": 121
+        }
+      },
+      {
+        "date": "2026-01-22",
         "total": 145,
         "completed": 23,
         "statusCounts": {
@@ -27848,43 +27840,43 @@
         }
       },
       {
-        "date": "2026-01-22",
-        "total": 146,
-        "completed": 23,
-        "statusCounts": {
-          "已完成": 23,
-          "进行中": 123
-        }
-      },
-      {
         "date": "2026-01-23",
-        "total": 148,
+        "total": 147,
         "completed": 23,
         "statusCounts": {
           "已完成": 23,
-          "进行中": 125
+          "进行中": 124
         }
       },
       {
         "date": "2026-01-24",
-        "total": 148,
+        "total": 147,
         "completed": 23,
         "statusCounts": {
           "已完成": 23,
-          "进行中": 125
+          "进行中": 124
         }
       },
       {
         "date": "2026-01-25",
-        "total": 148,
+        "total": 147,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 124
+          "进行中": 123
         }
       },
       {
         "date": "2026-01-26",
+        "total": 147,
+        "completed": 24,
+        "statusCounts": {
+          "已完成": 24,
+          "进行中": 123
+        }
+      },
+      {
+        "date": "2026-01-27",
         "total": 148,
         "completed": 24,
         "statusCounts": {
@@ -27893,52 +27885,52 @@
         }
       },
       {
-        "date": "2026-01-27",
-        "total": 149,
-        "completed": 24,
-        "statusCounts": {
-          "已完成": 24,
-          "进行中": 125
-        }
-      },
-      {
         "date": "2026-01-28",
-        "total": 149,
+        "total": 148,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 125
+          "进行中": 124
         }
       },
       {
         "date": "2026-01-29",
-        "total": 150,
+        "total": 149,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 126
+          "进行中": 125
         }
       },
       {
         "date": "2026-01-30",
-        "total": 150,
+        "total": 149,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 126
+          "进行中": 125
         }
       },
       {
         "date": "2026-01-31",
-        "total": 150,
+        "total": 149,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 126
+          "进行中": 125
         }
       },
       {
         "date": "2026-02-01",
+        "total": 149,
+        "completed": 24,
+        "statusCounts": {
+          "已完成": 24,
+          "进行中": 125
+        }
+      },
+      {
+        "date": "2026-02-02",
         "total": 150,
         "completed": 24,
         "statusCounts": {
@@ -27947,25 +27939,25 @@
         }
       },
       {
-        "date": "2026-02-02",
-        "total": 151,
-        "completed": 24,
-        "statusCounts": {
-          "已完成": 24,
-          "进行中": 127
-        }
-      },
-      {
         "date": "2026-02-03",
-        "total": 151,
+        "total": 150,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-02-04",
+        "total": 150,
+        "completed": 24,
+        "statusCounts": {
+          "已完成": 24,
+          "进行中": 126
+        }
+      },
+      {
+        "date": "2026-02-05",
         "total": 151,
         "completed": 24,
         "statusCounts": {
@@ -27974,223 +27966,223 @@
         }
       },
       {
-        "date": "2026-02-05",
-        "total": 152,
-        "completed": 24,
-        "statusCounts": {
-          "已完成": 24,
-          "进行中": 128
-        }
-      },
-      {
         "date": "2026-02-06",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-07",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-08",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-09",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-10",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-11",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-12",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-13",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-14",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-15",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-16",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-17",
-        "total": 152,
+        "total": 151,
         "completed": 24,
         "statusCounts": {
           "已完成": 24,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-18",
-        "total": 152,
+        "total": 151,
         "completed": 25,
         "statusCounts": {
           "已完成": 25,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-02-19",
-        "total": 152,
+        "total": 151,
         "completed": 25,
         "statusCounts": {
           "已完成": 25,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-02-20",
-        "total": 152,
+        "total": 151,
         "completed": 25,
         "statusCounts": {
           "已完成": 25,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-02-21",
-        "total": 152,
+        "total": 151,
         "completed": 25,
         "statusCounts": {
           "已完成": 25,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-02-22",
-        "total": 152,
+        "total": 151,
         "completed": 25,
         "statusCounts": {
           "已完成": 25,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-02-23",
-        "total": 152,
+        "total": 151,
         "completed": 25,
         "statusCounts": {
           "已完成": 25,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-02-24",
-        "total": 154,
+        "total": 153,
         "completed": 26,
         "statusCounts": {
           "已完成": 26,
-          "进行中": 128
+          "进行中": 127
         }
       },
       {
         "date": "2026-02-25",
-        "total": 156,
+        "total": 155,
         "completed": 26,
         "statusCounts": {
           "已完成": 26,
-          "进行中": 130
-        }
-      },
-      {
-        "date": "2026-02-26",
-        "total": 156,
-        "completed": 26,
-        "statusCounts": {
-          "已完成": 26,
-          "进行中": 130
-        }
-      },
-      {
-        "date": "2026-02-27",
-        "total": 156,
-        "completed": 27,
-        "statusCounts": {
-          "已完成": 27,
           "进行中": 129
         }
       },
       {
+        "date": "2026-02-26",
+        "total": 155,
+        "completed": 26,
+        "statusCounts": {
+          "已完成": 26,
+          "进行中": 129
+        }
+      },
+      {
+        "date": "2026-02-27",
+        "total": 155,
+        "completed": 27,
+        "statusCounts": {
+          "已完成": 27,
+          "进行中": 128
+        }
+      },
+      {
         "date": "2026-02-28",
-        "total": 156,
+        "total": 155,
         "completed": 29,
         "statusCounts": {
           "已完成": 29,
-          "进行中": 127
+          "进行中": 126
         }
       },
       {
         "date": "2026-03-01",
+        "total": 155,
+        "completed": 29,
+        "statusCounts": {
+          "已完成": 29,
+          "进行中": 126
+        }
+      },
+      {
+        "date": "2026-03-02",
         "total": 156,
         "completed": 29,
         "statusCounts": {
@@ -28199,7 +28191,7 @@
         }
       },
       {
-        "date": "2026-03-02",
+        "date": "2026-03-03",
         "total": 157,
         "completed": 29,
         "statusCounts": {
@@ -28208,70 +28200,70 @@
         }
       },
       {
-        "date": "2026-03-03",
-        "total": 158,
-        "completed": 29,
-        "statusCounts": {
-          "已完成": 29,
-          "进行中": 129
-        }
-      },
-      {
         "date": "2026-03-04",
-        "total": 158,
+        "total": 157,
         "completed": 29,
         "statusCounts": {
           "已完成": 29,
-          "进行中": 129
+          "进行中": 128
         }
       },
       {
         "date": "2026-03-05",
-        "total": 159,
+        "total": 158,
         "completed": 29,
         "statusCounts": {
           "已完成": 29,
-          "进行中": 130
+          "进行中": 129
         }
       },
       {
         "date": "2026-03-06",
-        "total": 159,
+        "total": 158,
         "completed": 30,
         "statusCounts": {
           "已完成": 30,
-          "进行中": 129
+          "进行中": 128
         }
       },
       {
         "date": "2026-03-07",
-        "total": 159,
+        "total": 158,
         "completed": 30,
         "statusCounts": {
           "已完成": 30,
-          "进行中": 129
+          "进行中": 128
         }
       },
       {
         "date": "2026-03-08",
-        "total": 159,
+        "total": 158,
         "completed": 30,
         "statusCounts": {
           "已完成": 30,
-          "进行中": 129
+          "进行中": 128
         }
       },
       {
         "date": "2026-03-09",
-        "total": 162,
+        "total": 161,
         "completed": 31,
         "statusCounts": {
           "已完成": 31,
-          "进行中": 131
+          "进行中": 130
         }
       },
       {
         "date": "2026-03-10",
+        "total": 161,
+        "completed": 31,
+        "statusCounts": {
+          "已完成": 31,
+          "进行中": 130
+        }
+      },
+      {
+        "date": "2026-03-11",
         "total": 162,
         "completed": 31,
         "statusCounts": {
@@ -28280,52 +28272,52 @@
         }
       },
       {
-        "date": "2026-03-11",
-        "total": 163,
-        "completed": 31,
-        "statusCounts": {
-          "已完成": 31,
-          "进行中": 132
-        }
-      },
-      {
         "date": "2026-03-12",
-        "total": 163,
+        "total": 162,
         "completed": 31,
         "statusCounts": {
           "已完成": 31,
-          "进行中": 132
+          "进行中": 131
         }
       },
       {
         "date": "2026-03-13",
-        "total": 164,
+        "total": 163,
         "completed": 32,
         "statusCounts": {
           "已完成": 32,
-          "进行中": 132
+          "进行中": 131
         }
       },
       {
         "date": "2026-03-14",
-        "total": 164,
+        "total": 163,
         "completed": 32,
         "statusCounts": {
           "已完成": 32,
-          "进行中": 132
+          "进行中": 131
         }
       },
       {
         "date": "2026-03-15",
-        "total": 164,
+        "total": 163,
         "completed": 32,
         "statusCounts": {
           "已完成": 32,
-          "进行中": 132
+          "进行中": 131
         }
       },
       {
         "date": "2026-03-16",
+        "total": 163,
+        "completed": 32,
+        "statusCounts": {
+          "已完成": 32,
+          "进行中": 131
+        }
+      },
+      {
+        "date": "2026-03-17",
         "total": 164,
         "completed": 32,
         "statusCounts": {
@@ -28334,79 +28326,79 @@
         }
       },
       {
-        "date": "2026-03-17",
-        "total": 165,
-        "completed": 32,
-        "statusCounts": {
-          "已完成": 32,
-          "进行中": 133
-        }
-      },
-      {
         "date": "2026-03-18",
-        "total": 165,
+        "total": 164,
         "completed": 32,
         "statusCounts": {
           "已完成": 32,
-          "进行中": 133
+          "进行中": 132
         }
       },
       {
         "date": "2026-03-19",
-        "total": 166,
+        "total": 165,
         "completed": 32,
         "statusCounts": {
           "已完成": 32,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-03-20",
-        "total": 166,
+        "total": 165,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 133
+          "进行中": 132
         }
       },
       {
         "date": "2026-03-21",
-        "total": 166,
+        "total": 165,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 133
+          "进行中": 132
         }
       },
       {
         "date": "2026-03-22",
-        "total": 166,
+        "total": 165,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 133
+          "进行中": 132
         }
       },
       {
         "date": "2026-03-23",
-        "total": 166,
+        "total": 165,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 133
+          "进行中": 132
         }
       },
       {
         "date": "2026-03-24",
-        "total": 166,
+        "total": 165,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 133
+          "进行中": 132
         }
       },
       {
         "date": "2026-03-25",
+        "total": 165,
+        "completed": 33,
+        "statusCounts": {
+          "已完成": 33,
+          "进行中": 132
+        }
+      },
+      {
+        "date": "2026-03-26",
         "total": 166,
         "completed": 33,
         "statusCounts": {
@@ -28415,106 +28407,106 @@
         }
       },
       {
-        "date": "2026-03-26",
-        "total": 167,
-        "completed": 33,
-        "statusCounts": {
-          "已完成": 33,
-          "进行中": 134
-        }
-      },
-      {
         "date": "2026-03-27",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-03-28",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-03-29",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-03-30",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-03-31",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-04-01",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-04-02",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-04-03",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-04-04",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-04-05",
-        "total": 167,
+        "total": 166,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 134
+          "进行中": 133
         }
       },
       {
         "date": "2026-04-06",
+        "total": 166,
+        "completed": 33,
+        "statusCounts": {
+          "已完成": 33,
+          "进行中": 133
+        }
+      },
+      {
+        "date": "2026-04-07",
         "total": 167,
         "completed": 33,
         "statusCounts": {
@@ -28523,7 +28515,7 @@
         }
       },
       {
-        "date": "2026-04-07",
+        "date": "2026-04-08",
         "total": 168,
         "completed": 33,
         "statusCounts": {
@@ -28532,52 +28524,52 @@
         }
       },
       {
-        "date": "2026-04-08",
-        "total": 169,
-        "completed": 33,
-        "statusCounts": {
-          "已完成": 33,
-          "进行中": 136
-        }
-      },
-      {
         "date": "2026-04-09",
-        "total": 169,
+        "total": 168,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 136
+          "进行中": 135
         }
       },
       {
         "date": "2026-04-10",
-        "total": 170,
+        "total": 169,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 137
+          "进行中": 136
         }
       },
       {
         "date": "2026-04-11",
-        "total": 170,
+        "total": 169,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 137
+          "进行中": 136
         }
       },
       {
         "date": "2026-04-12",
-        "total": 170,
+        "total": 169,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 137
+          "进行中": 136
         }
       },
       {
         "date": "2026-04-13",
+        "total": 169,
+        "completed": 33,
+        "statusCounts": {
+          "已完成": 33,
+          "进行中": 136
+        }
+      },
+      {
+        "date": "2026-04-14",
         "total": 170,
         "completed": 33,
         "statusCounts": {
@@ -28586,52 +28578,52 @@
         }
       },
       {
-        "date": "2026-04-14",
-        "total": 171,
-        "completed": 33,
-        "statusCounts": {
-          "已完成": 33,
-          "进行中": 138
-        }
-      },
-      {
         "date": "2026-04-15",
-        "total": 173,
+        "total": 172,
         "completed": 34,
         "statusCounts": {
           "已完成": 34,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-16",
-        "total": 173,
+        "total": 172,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 138
+          "进行中": 137
         }
       },
       {
         "date": "2026-04-17",
-        "total": 173,
+        "total": 172,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 138
+          "进行中": 137
         }
       },
       {
         "date": "2026-04-18",
-        "total": 173,
+        "total": 172,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 138
+          "进行中": 137
         }
       },
       {
         "date": "2026-04-19",
+        "total": 172,
+        "completed": 35,
+        "statusCounts": {
+          "已完成": 35,
+          "进行中": 137
+        }
+      },
+      {
+        "date": "2026-04-20",
         "total": 173,
         "completed": 35,
         "statusCounts": {
@@ -28640,502 +28632,502 @@
         }
       },
       {
-        "date": "2026-04-20",
-        "total": 174,
-        "completed": 35,
-        "statusCounts": {
-          "已完成": 35,
-          "进行中": 139
-        }
-      },
-      {
         "date": "2026-04-21",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-22",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-23",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-24",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-25",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-26",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-27",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-28",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-29",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-04-30",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-01",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-02",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-03",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-04",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-05",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-06",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-07",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-08",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-09",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-10",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-11",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-12",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-13",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-14",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-15",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-16",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-17",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-18",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-19",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-20",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-21",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-22",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-23",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-24",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-25",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-26",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-27",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-28",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-29",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-30",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-05-31",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-01",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-02",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-03",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-04",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-05",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-06",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-07",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-08",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-09",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-10",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-11",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-12",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-13",
-        "total": 174,
+        "total": 173,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 139
+          "进行中": 138
         }
       },
       {
         "date": "2026-06-14",
+        "total": 173,
+        "completed": 35,
+        "statusCounts": {
+          "已完成": 35,
+          "进行中": 138
+        }
+      },
+      {
+        "date": "2026-06-15",
         "total": 174,
         "completed": 35,
         "statusCounts": {
@@ -29144,7 +29136,7 @@
         }
       },
       {
-        "date": "2026-06-15",
+        "date": "2026-06-16",
         "total": 175,
         "completed": 35,
         "statusCounts": {
@@ -29153,7 +29145,7 @@
         }
       },
       {
-        "date": "2026-06-16",
+        "date": "2026-06-17",
         "total": 176,
         "completed": 35,
         "statusCounts": {
@@ -29162,70 +29154,70 @@
         }
       },
       {
-        "date": "2026-06-17",
-        "total": 177,
-        "completed": 35,
-        "statusCounts": {
-          "已完成": 35,
-          "进行中": 142
-        }
-      },
-      {
         "date": "2026-06-18",
-        "total": 177,
+        "total": 176,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 142
+          "进行中": 141
         }
       },
       {
         "date": "2026-06-19",
-        "total": 177,
+        "total": 176,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 142
+          "进行中": 141
         }
       },
       {
         "date": "2026-06-20",
-        "total": 177,
+        "total": 176,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 142
+          "进行中": 141
         }
       },
       {
         "date": "2026-06-21",
-        "total": 177,
+        "total": 176,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 142
+          "进行中": 141
         }
       },
       {
         "date": "2026-06-22",
-        "total": 177,
+        "total": 176,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 142
+          "进行中": 141
         }
       },
       {
         "date": "2026-06-23",
-        "total": 177,
+        "total": 176,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 142
+          "进行中": 141
         }
       },
       {
         "date": "2026-06-24",
+        "total": 176,
+        "completed": 35,
+        "statusCounts": {
+          "已完成": 35,
+          "进行中": 141
+        }
+      },
+      {
+        "date": "2026-06-25",
         "total": 177,
         "completed": 35,
         "statusCounts": {
@@ -29234,106 +29226,106 @@
         }
       },
       {
-        "date": "2026-06-25",
-        "total": 178,
-        "completed": 35,
-        "statusCounts": {
-          "已完成": 35,
-          "进行中": 143
-        }
-      },
-      {
         "date": "2026-06-26",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-06-27",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-06-28",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-06-29",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-06-30",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-01",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-02",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-03",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-04",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-05",
-        "total": 178,
+        "total": 177,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-06",
+        "total": 178,
+        "completed": 37,
+        "statusCounts": {
+          "已完成": 37,
+          "进行中": 141
+        }
+      },
+      {
+        "date": "2026-07-07",
         "total": 179,
         "completed": 37,
         "statusCounts": {
@@ -29342,30 +29334,21 @@
         }
       },
       {
-        "date": "2026-07-07",
-        "total": 180,
-        "completed": 37,
-        "statusCounts": {
-          "已完成": 37,
-          "进行中": 143
-        }
-      },
-      {
         "date": "2026-07-08",
-        "total": 182,
+        "total": 181,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 143
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-09",
-        "total": 182,
+        "total": 181,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 143
+          "进行中": 142
         }
       }
     ]
