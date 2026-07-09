@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-09T02:56:31.640175+00:00",
+  "compiledAt": "2026-07-09T03:00:42.042171+00:00",
   "latest": {
     "mftb": [
       {
@@ -1718,6 +1718,40 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-903",
+        "title": "【mfood Android用户端】页面滑动逻辑(悬停+背景变换+tab切换）",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "徐子旺",
+        "creator": "徐子旺",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8074676db4706409b086b1149e",
+        "rowText": "【任务】【mfood Android用户端】页面滑动逻辑(悬停+背景变换+tab切换）\nID: MFTB-903 | 状态: 未开始 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: 未规划 | 创建时间: 2026-07-09 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-902",
+        "title": "【服务器】【大係統】用戶端-商家主頁相關功能頁面",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8c317318dc4c53f2318ec544f1",
+        "rowText": "【任务】【服务器】【大係統】用戶端-商家主頁相關功能頁面\nID: MFTB-902 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-07-09 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-901",
@@ -17884,11 +17918,11 @@
       },
       {
         "date": "2026-07-09",
-        "total": 639,
+        "total": 641,
         "completed": 497,
         "statusCounts": {
           "已完成": 497,
-          "进行中": 142
+          "进行中": 144
         }
       }
     ],
