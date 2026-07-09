@@ -38,26 +38,49 @@ jobs:
         run: |
           python dashboard/compile_projects_data.py
 
-      - name: Commit and Push Compiled Data
+      - name: Commit and Push Compiled Data to main
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add dashboard/projects_data.json dashboard/weekly_reports.md dashboard/projects_history.db
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync DevOps progress data" && git push origin HEAD:${{ github.ref_name }})
 
+      # --- FULL BUILD FLOW (Only runs on push to main) ---
+      - name: Set up Node.js
+        if: github.event_name == 'push'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
       - name: Install Node Dependencies
+        if: github.event_name == 'push'
         run: |
           cd dashboard
           npm install
 
       - name: Build Dashboard
+        if: github.event_name == 'push'
         run: |
           cd dashboard
           npm run build
           cp projects_data.json dist/
 
       - name: Deploy to GitHub Pages
+        if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dashboard/dist
+          keep_files: true
+
+      # --- FAST DATA-ONLY SYNC FLOW (Runs on manual dispatch or cron schedule) ---
+      - name: Sync Data Directly to gh-pages (Skip Build)
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+        run: |
+          git clone --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages-temp
+          cp dashboard/projects_data.json gh-pages-temp/
+          cd gh-pages-temp
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add projects_data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync data update (skip build)" && git push origin gh-pages)
