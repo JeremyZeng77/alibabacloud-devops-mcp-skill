@@ -584,19 +584,51 @@ async function triggerSyncCompile() {
                     window.location.hostname.startsWith('192.168.');
 
     if (!isLocal) {
-        showToast('正在准备触发云端同步编译...');
-        let pat = localStorage.getItem('github_pat');
+        let vercelUrl = localStorage.getItem('vercel_sync_url') || '';
+        let pat = localStorage.getItem('github_pat') || '';
+
+        // 1. Try to trigger via Vercel first if configured
+        if (!pat && vercelUrl) {
+            showToast('正在通过云端免密服务触发同步...');
+            try {
+                const response = await fetch(vercelUrl, { method: 'POST' });
+                const data = await response.json();
+                if (response.ok && data.ok) {
+                    showToast('已成功通过云端免密服务触发同步构建！更新大约需要 15 秒，请稍后刷新。');
+                    btn.classList.remove('spinning');
+                    return;
+                } else {
+                    console.warn('Vercel sync proxy failed:', data.error);
+                }
+            } catch (err) {
+                console.warn('Vercel sync proxy network error, falling back to PAT prompt.');
+            }
+        }
+
+        // 2. Fallback to PAT / URL prompt
         if (!pat) {
-            pat = prompt('请输入您的 GitHub 个人访问令牌 (PAT) 以便在线上直接触发同步编译（令牌仅保存在您本地浏览器的 localStorage 中，不会上传到任何第三方服务器）：');
-            if (!pat) {
+            const input = prompt('请输入您的 GitHub 个人访问令牌 (PAT) 以便在线上直接触发同步编译（若已配置 Vercel 免费中转服务，请直接粘贴您的 Vercel URL 接口以开启免密同步）：');
+            if (!input) {
                 btn.classList.remove('spinning');
                 showToast('已取消同步。');
                 return;
             }
-            pat = pat.trim();
-            localStorage.setItem('github_pat', pat);
+
+            const trimmed = input.trim();
+            if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
+                localStorage.setItem('vercel_sync_url', trimmed);
+                // Retry compilation immediately using the newly configured Vercel URL
+                btn.classList.remove('spinning');
+                triggerSyncCompile();
+                return;
+            } else {
+                pat = trimmed;
+                localStorage.setItem('github_pat', pat);
+            }
         }
 
+        // 3. Direct GitHub Actions API trigger (using PAT)
+        showToast('正在向 GitHub API 发送构建指令...');
         try {
             const url = 'https://api.github.com/repos/JeremyZeng77/alibabacloud-devops-mcp-skill/actions/workflows/sync-data.yml/dispatches';
             const response = await fetch(url, {
@@ -610,7 +642,7 @@ async function triggerSyncCompile() {
             });
 
             if (response.status === 204) {
-                showToast('已成功在云端触发同步构建！更新大约需要 1 分钟，请稍后刷新。');
+                showToast('已成功在云端触发同步构建！更新大约需要 15 秒，请稍后刷新。');
                 btn.classList.remove('spinning');
             } else {
                 const errText = await response.text();
