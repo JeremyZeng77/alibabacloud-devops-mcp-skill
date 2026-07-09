@@ -58,9 +58,9 @@ function isItemCompleted(item) {
     return false;
 }
 
-const BRIDGE_API_BASE = window.location.hostname.includes('github.io')
-    ? 'http://localhost:18790'
-    : `http://${window.location.hostname}:18790`;
+const BRIDGE_API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname.startsWith('192.168.'))
+    ? `http://${window.location.hostname}:18790`
+    : 'http://localhost:18790';
 
 // Credentials Config
 const AUTH_CONFIG = {
@@ -578,8 +578,12 @@ async function triggerSyncCompile() {
     const btn = document.getElementById('btn-sync-compile');
     btn.classList.add('spinning');
 
-    // Cloud workflow dispatch if online
-    if (window.location.hostname.includes('github.io')) {
+    // Cloud workflow dispatch if online (not local)
+    const isLocal = window.location.hostname === 'localhost' || 
+                    window.location.hostname === '127.0.0.1' || 
+                    window.location.hostname.startsWith('192.168.');
+
+    if (!isLocal) {
         showToast('正在准备触发云端同步编译...');
         let pat = localStorage.getItem('github_pat');
         if (!pat) {
