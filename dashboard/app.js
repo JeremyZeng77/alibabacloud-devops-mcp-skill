@@ -584,7 +584,7 @@ async function triggerSyncCompile() {
                     window.location.hostname.startsWith('192.168.');
 
     if (!isLocal) {
-        let vercelUrl = localStorage.getItem('vercel_sync_url') || '';
+        let vercelUrl = localStorage.getItem('vercel_sync_url') || 'https://alibabacloud-devops-mcp-skill.vercel.app/api/sync';
         let pat = localStorage.getItem('github_pat') || '';
 
         // 1. Try to trigger via Vercel first if configured

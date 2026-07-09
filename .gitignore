@@ -18,3 +18,5 @@ Thumbs.db
 
 # Allow tracking of the history database
 !dashboard/projects_history.db
+
+.vercel
