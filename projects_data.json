@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-09T03:00:42.042171+00:00",
+  "compiledAt": "2026-07-09T03:40:39.813412+00:00",
   "latest": {
     "mftb": [
       {
@@ -39,7 +39,7 @@
       {
         "id": "MFTB-881",
         "title": "【大係統】用戶端-商家主頁相關功能頁面",
-        "status": "待处理",
+        "status": "开发中",
         "priority": "中",
         "assignee": "覃林方",
         "creator": "覃林方",
@@ -49,7 +49,7 @@
         "createDate": "2026-07-08",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=76057f2c7903ac7562b23a925a",
-        "rowText": "【产品类需求】【大係統】用戶端-商家主頁相關功能頁面\nID: MFTB-881 | 状态: 待处理 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-07-08 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】用戶端-商家主頁相關功能頁面\nID: MFTB-881 | 状态: 开发中 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-07-08 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1720,8 +1720,42 @@
         "category": "Req"
       },
       {
-        "id": "MFTB-903",
-        "title": "【mfood Android用户端】页面滑动逻辑(悬停+背景变换+tab切换）",
+        "id": "MFTB-908",
+        "title": "【服务端】【眾包】急賞送",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-07-09",
+        "planEnd": "2026-07-09",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=73ef5a00c280f73cd189f7429c",
+        "rowText": "【任务】【服务端】【眾包】急賞送\nID: MFTB-908 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-09 | 排期规划: 2026-07-09 至 2026-07-09",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-907",
+        "title": "【管理后台】【大係統】红包标签",
+        "status": "开发中",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-07-08",
+        "planEnd": "2026-07-09",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bd53d4bfb65df63e0d916a63a8",
+        "rowText": "【任务】【管理后台】【大係統】红包标签\nID: MFTB-907 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-09 | 排期规划: 2026-07-08 至 2026-07-09",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-906",
+        "title": "【mfood Android用户端】品牌故事页面 + 推荐菜页面 + 相册视频 + 到点指引 等",
         "status": "未开始",
         "priority": "中",
         "assignee": "徐子旺",
@@ -1731,8 +1765,59 @@
         "planEnd": "",
         "createDate": "2026-07-09",
         "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=18a77dab733af1a9d04c815b2e",
+        "rowText": "【任务】【mfood Android用户端】品牌故事页面 + 推荐菜页面 + 相册视频 + 到点指引 等\nID: MFTB-906 | 状态: 未开始 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: 未规划 | 创建时间: 2026-07-09 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-905",
+        "title": "【mfood Android用户端】门店基础信息+收藏+分享",
+        "status": "开发中",
+        "priority": "中",
+        "assignee": "徐子旺",
+        "creator": "徐子旺",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8a617c2aa777b389cd9da71e1d",
+        "rowText": "【任务】【mfood Android用户端】门店基础信息+收藏+分享\nID: MFTB-905 | 状态: 开发中 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: 未规划 | 创建时间: 2026-07-09 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-904",
+        "title": "【mfood Android用户端】商品信息列表+评价列表",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "徐子旺",
+        "creator": "徐子旺",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ffabaa0b5c539c09e9cdbd4aae",
+        "rowText": "【任务】【mfood Android用户端】商品信息列表+评价列表\nID: MFTB-904 | 状态: 未开始 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: 未规划 | 创建时间: 2026-07-09 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-903",
+        "title": "【mfood Android用户端】页面滑动逻辑(悬停+背景变换+tab切换）",
+        "status": "开发中",
+        "priority": "中",
+        "assignee": "徐子旺",
+        "creator": "徐子旺",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-09",
+        "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8074676db4706409b086b1149e",
-        "rowText": "【任务】【mfood Android用户端】页面滑动逻辑(悬停+背景变换+tab切换）\nID: MFTB-903 | 状态: 未开始 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: 未规划 | 创建时间: 2026-07-09 | 排期规划: - 至 -",
+        "rowText": "【任务】【mfood Android用户端】页面滑动逻辑(悬停+背景变换+tab切换）\nID: MFTB-903 | 状态: 开发中 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: 未规划 | 创建时间: 2026-07-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -2656,7 +2741,7 @@
       },
       {
         "id": "MFTB-831",
-        "title": "【管理后台】【大係統】基礎滿減紅包創建（含膨脹+隨機活動）",
+        "title": "【管理后台】【大係統】红包列表",
         "status": "开发中",
         "priority": "中",
         "assignee": "甄荣康",
@@ -2667,7 +2752,7 @@
         "createDate": "2026-07-01",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7c2419fa684ac84def45e4df8d",
-        "rowText": "【任务】【管理后台】【大係統】基礎滿減紅包創建（含膨脹+隨機活動）\nID: MFTB-831 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-07-01 | 排期规划: - 至 -",
+        "rowText": "【任务】【管理后台】【大係統】红包列表\nID: MFTB-831 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-07-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -17918,11 +18003,11 @@
       },
       {
         "date": "2026-07-09",
-        "total": 641,
+        "total": 646,
         "completed": 497,
         "statusCounts": {
           "已完成": 497,
-          "进行中": 144
+          "进行中": 149
         }
       }
     ],
