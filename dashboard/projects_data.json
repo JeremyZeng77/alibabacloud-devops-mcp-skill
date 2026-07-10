@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-10T03:42:07.887418+00:00",
+  "compiledAt": "2026-07-10T04:36:23.538965+00:00",
   "latest": {
     "mftb": [
       {
@@ -14420,23 +14420,6 @@
       }
     ],
     "mfood": [
-      {
-        "id": "MF-34597",
-        "title": "【商戶後臺】訂單跟蹤優化",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "刘龙振海",
-        "creator": "刘龙振海",
-        "iteration": "V7.3.5（7.15）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-07-08",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=19bc7a118e7c5b29e68a5024a9",
-        "rowText": "【产品类需求】【商戶後臺】訂單跟蹤優化\nID: MF-34597 | 状态: 待处理 | 优先级: 低\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: V7.3.5（7.15） | 创建时间: 2026-07-08 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Req"
-      },
       {
         "id": "MF-34530",
         "title": "財務流水按业务拆分劲爆券&星选订单管理新增导出",
@@ -29888,29 +29871,29 @@
       },
       {
         "date": "2026-07-08",
-        "total": 180,
+        "total": 179,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 141
+          "进行中": 140
         }
       },
       {
         "date": "2026-07-09",
-        "total": 180,
+        "total": 179,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 141
+          "进行中": 140
         }
       },
       {
         "date": "2026-07-10",
-        "total": 180,
+        "total": 179,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 141
+          "进行中": 140
         }
       }
     ]
