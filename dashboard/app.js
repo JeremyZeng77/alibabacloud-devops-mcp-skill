@@ -857,7 +857,6 @@ function renderOverviewDashboard() {
     renderWorkloadChart(items);
     renderGanttChart();
     renderRiskRadar(items);
-    renderMessageCenter(items);
 }
 
 function setTrendText(id, delta, suffix, invertColor = false, isPercent = false) {
@@ -2553,22 +2552,34 @@ function renderRiskRadar(items) {
     renderStrategicAdvices(items);
 }
 
-// Render Message Center (Audit center)
-function renderMessageCenter(items) {
-    const container = document.getElementById('message-center-panel');
-    if (!container) return;
-    container.innerHTML = '';
-    
-    // 1. Audit missing start/end dates for active tasks and requirements
+// Global variables to store current search and role filters for audit view
+const auditFilters = {
+    search: '',
+    role: 'all'
+};
+
+// Render Audit View
+function renderAuditView() {
+    const lastUpdatedEl = document.getElementById('audit-last-updated');
+    if (lastUpdatedEl) {
+        lastUpdatedEl.textContent = state.compiledAt ? formatDate(new Date(state.compiledAt)) : 'N/A';
+    }
+
+    const items = state.latest[state.currentProject] || [];
+
+    // Get current filter values
+    const searchQuery = auditFilters.search.trim().toLowerCase();
+    const selectedRole = auditFilters.role;
+
+    // --- Part A: Date Missing Audit ---
     const missingDateItems = items.filter(x => {
         if (isItemCompleted(x)) return false;
         if (!x.assignee) return false;
-        // Check Tasks and Requirements
         if (x.category !== 'Task' && x.category !== 'Req') return false;
         return !x.planStart || !x.planEnd;
     });
 
-    // Group missing date items by assignee
+    // Group by assignee
     const missingGroups = {};
     missingDateItems.forEach(item => {
         const name = item.assignee;
@@ -2578,9 +2589,61 @@ function renderMessageCenter(items) {
         missingGroups[name].push(item);
     });
 
-    // 2. Audit idle team members (0 active tasks)
-    // Audited roles: Frontend, Backend, Mobile (iOS/Android), UI, Tester
-    // Excluding: PM, Product, Ops
+    // Filter missing groups based on search & role
+    const filteredMissingGroups = {};
+    Object.entries(missingGroups).forEach(([name, list]) => {
+        const roleKey = DEVELOPER_ROLES_MAP[name] || 'Fullstack';
+        
+        // Match Search Query
+        const matchesSearch = !searchQuery || name.toLowerCase().includes(searchQuery);
+        // Match Role Select
+        const matchesRole = selectedRole === 'all' || roleKey === selectedRole;
+
+        if (matchesSearch && matchesRole) {
+            filteredMissingGroups[name] = list;
+        }
+    });
+
+    // Render Date Missing Panel
+    const missingContainer = document.getElementById('audit-missing-dates-container');
+    if (missingContainer) {
+        missingContainer.innerHTML = '';
+        const keys = Object.keys(filteredMissingGroups);
+        if (keys.length > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'message-list';
+            keys.forEach(name => {
+                const list = filteredMissingGroups[name];
+                const roleKey = DEVELOPER_ROLES_MAP[name] || 'Fullstack';
+                const roleName = roleMeta[roleKey] ? roleMeta[roleKey].name : '开发成员';
+                
+                const taskLinks = list.map(item => `
+                    <span class="message-task-link" onclick="showItemDetailById('${item.id}')" title="点击查看详情">
+                        [${item.id}] ${escapeHtml(item.title.substring(0, 20))}${item.title.length > 20 ? '...' : ''}
+                    </span>
+                `).join(', ');
+                
+                const li = document.createElement('li');
+                li.className = 'message-item warning';
+                li.innerHTML = `
+                    <span class="message-badge badge-warning">排期缺失</span>
+                    <strong style="color: var(--color-amber);">${escapeHtml(name)} (${roleName})</strong>: 
+                    有 ${list.length} 个进行中任务缺少计划时间：${taskLinks}
+                `;
+                ul.appendChild(li);
+            });
+            missingContainer.appendChild(ul);
+        } else {
+            missingContainer.innerHTML = `
+                <div class="message-empty success">
+                    <span class="message-empty-icon">✅</span>
+                    <span>没有符合当前筛选条件的排期缺失记录。</span>
+                </div>
+            `;
+        }
+    }
+
+    // --- Part B: Idle Resources Audit ---
     const auditedRoles = ['Frontend', 'Backend', 'Mobile', 'UI', 'Tester'];
     const idleMembersByRole = {
         Frontend: [],
@@ -2603,99 +2666,50 @@ function renderMessageCenter(items) {
         if (auditedRoles.includes(role)) {
             const activeCount = activeItemCounts[name] || 0;
             if (activeCount === 0) {
-                idleMembersByRole[role].push(name);
+                // Match search and role select
+                const matchesSearch = !searchQuery || name.toLowerCase().includes(searchQuery);
+                const matchesRole = selectedRole === 'all' || role === selectedRole;
+                if (matchesSearch && matchesRole) {
+                    idleMembersByRole[role].push(name);
+                }
             }
         }
     });
 
-    // Render HTML card
-    const card = document.createElement('div');
-    card.className = 'message-center-card';
-    
-    let html = `
-        <div class="message-center-header">
-            <h3 class="message-center-title">📢 智能协作与进度审计中心</h3>
-            <span class="message-center-subtitle">自动审计项目计划排期完备性与团队负荷状态</span>
-        </div>
-        <div class="message-center-content">
-    `;
+    const idleContainer = document.getElementById('audit-idle-members-container');
+    if (idleContainer) {
+        idleContainer.innerHTML = '';
+        const totalIdleCount = Object.values(idleMembersByRole).reduce((sum, arr) => sum + arr.length, 0);
 
-    // Subsection 1: Missing Dates Alert
-    html += `
-        <div class="message-section">
-            <h4 class="message-section-title">📅 计划时间缺失审计（需通知相关人员补充计划起止日期）</h4>
-    `;
-
-    if (Object.keys(missingGroups).length > 0) {
-        html += `<ul class="message-list">`;
-        Object.entries(missingGroups).forEach(([name, list]) => {
-            const roleKey = DEVELOPER_ROLES_MAP[name] || 'Fullstack';
-            const roleName = roleMeta[roleKey] ? roleMeta[roleKey].name : '开发成员';
-            
-            // Format task list links
-            const taskLinks = list.map(item => `
-                <span class="message-task-link" onclick="showItemDetailById('${item.id}')" title="点击查看详情">
-                    [${item.id}] ${escapeHtml(item.title.substring(0, 15))}${item.title.length > 15 ? '...' : ''}
-                </span>
-            `).join(', ');
-            
-            html += `
-                <li class="message-item warning">
-                    <span class="message-badge badge-warning">排期缺失</span>
-                    <strong style="color: var(--color-amber);">${escapeHtml(name)} (${roleName})</strong>: 
-                    有 ${list.length} 个进行中任务缺少计划时间：${taskLinks}
-                </li>
-            `;
-        });
-        html += `</ul>`;
-    } else {
-        html += `
-            <div class="message-empty success">
-                <span class="message-empty-icon">✅</span>
-                <span>所有在研需求和开发任务均已合理排期，表现优秀！</span>
-            </div>
-        `;
-    }
-    html += `</div>`;
-
-    // Subsection 2: Idle Resources Alert
-    html += `
-        <div class="message-section" style="margin-top: 20px;">
-            <h4 class="message-section-title">👥 团队闲置人力审计（当前项目无活跃任务分配，建议分配工作）</h4>
-    `;
-
-    const totalIdleCount = Object.values(idleMembersByRole).reduce((sum, arr) => sum + arr.length, 0);
-
-    if (totalIdleCount > 0) {
-        html += `<ul class="message-list">`;
-        Object.entries(idleMembersByRole).forEach(([role, members]) => {
-            if (members.length > 0) {
-                const roleName = roleMeta[role].name;
-                const badgeClass = roleMeta[role].badge;
-                html += `
-                    <li class="message-item info">
+        if (totalIdleCount > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'message-list';
+            Object.entries(idleMembersByRole).forEach(([role, members]) => {
+                if (members.length > 0) {
+                    const roleName = roleMeta[role].name;
+                    const badgeClass = roleMeta[role].badge;
+                    const li = document.createElement('li');
+                    li.className = 'message-item info';
+                    li.innerHTML = `
                         <span class="message-badge ${badgeClass}">${roleName}</span>
-                        <strong>空闲同仁 (${members.length}人)</strong>: 
+                        <strong>空闲人员 (${members.length}人)</strong>: 
                         <span style="color: var(--color-text-primary); font-weight: 500;">
                             ${members.map(m => escapeHtml(m)).join(', ')}
                         </span>
-                    </li>
-                `;
-            }
-        });
-        html += `</ul>`;
-    } else {
-        html += `
-            <div class="message-empty success">
-                <span class="message-empty-icon">✅</span>
-                <span>团队全员均有活跃任务在研，开发负荷饱满！</span>
-            </div>
-        `;
+                    `;
+                    ul.appendChild(li);
+                }
+            });
+            idleContainer.appendChild(ul);
+        } else {
+            idleContainer.innerHTML = `
+                <div class="message-empty success">
+                    <span class="message-empty-icon">✅</span>
+                    <span>没有符合当前筛选条件的空闲人员记录。</span>
+                </div>
+            `;
+        }
     }
-    html += `</div></div>`;
-
-    card.innerHTML = html;
-    container.appendChild(card);
 }
 
 // Helper to show detail modal by item ID
