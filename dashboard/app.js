@@ -2644,13 +2644,16 @@ function renderAuditView() {
     }
 
     // --- Part B: Idle Resources Audit ---
-    const auditedRoles = ['Frontend', 'Backend', 'Mobile', 'UI', 'Tester'];
+    const auditedRoles = ['Frontend', 'Backend', 'Mobile', 'UI', 'Tester', 'Product', 'PM', 'Ops'];
     const idleMembersByRole = {
         Frontend: [],
         Backend: [],
         Mobile: [],
         UI: [],
-        Tester: []
+        Tester: [],
+        Product: [],
+        PM: [],
+        Ops: []
     };
 
     // Calculate active items per assignee in current project
