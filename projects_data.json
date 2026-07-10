@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-10T04:36:23.538965+00:00",
+  "compiledAt": "2026-07-10T06:36:27.579198+00:00",
   "latest": {
     "mftb": [
       {
@@ -260,7 +260,7 @@
       {
         "id": "MFTB-813",
         "title": "【大係統】運營投放管理中，各個廣告跳轉設置交互修改",
-        "status": "开发中",
+        "status": "待测试",
         "priority": "中",
         "assignee": "周昱强",
         "creator": "周昱强",
@@ -270,7 +270,7 @@
         "createDate": "2026-06-30",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=70b04e95700e68f2d9d3b147e8",
-        "rowText": "【产品类需求】【大係統】運營投放管理中，各個廣告跳轉設置交互修改\nID: MFTB-813 | 状态: 开发中 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-30 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】運營投放管理中，各個廣告跳轉設置交互修改\nID: MFTB-813 | 状态: 待测试 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-30 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1737,6 +1737,91 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-940",
+        "title": "【管理后台】【大係統】随机活动",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-07-14",
+        "planEnd": "2026-07-15",
+        "createDate": "2026-07-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9f629869f0fd3290b405ab86d0",
+        "rowText": "【任务】【管理后台】【大係統】随机活动\nID: MFTB-940 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-10 | 排期规划: 2026-07-14 至 2026-07-15",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-939",
+        "title": "【管理后台】【大係統】膨胀活动",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-07-13",
+        "planEnd": "2026-07-14",
+        "createDate": "2026-07-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4f5e9c17a02f97ecb3144b5e9a",
+        "rowText": "【任务】【管理后台】【大係統】膨胀活动\nID: MFTB-939 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-10 | 排期规划: 2026-07-13 至 2026-07-14",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-938",
+        "title": "【產品】【眾包】提現卡支持中行&綁卡增加審核",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-07-08",
+        "planEnd": "2026-07-09",
+        "createDate": "2026-07-10",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b212cd74e0895cfa4a52d117e0",
+        "rowText": "【产品】【產品】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-938 | 状态: 已完成 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-10 | 排期规划: 2026-07-08 至 2026-07-09",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-937",
+        "title": "【mfood iOS】隐私与管理权限",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "陈剑",
+        "creator": "陈剑",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-10",
+        "planEnd": "2026-07-10",
+        "createDate": "2026-07-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9afcdae6bfe1f02654805613bf",
+        "rowText": "【任务】【mfood iOS】隐私与管理权限\nID: MFTB-937 | 状态: 提交测试 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-10 | 排期规划: 2026-07-10 至 2026-07-10",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-936",
+        "title": "【mfood iOS】账户与安全页",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "陈剑",
+        "creator": "陈剑",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-09",
+        "planEnd": "2026-07-09",
+        "createDate": "2026-07-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0685e60f0c7aae24546152f2d1",
+        "rowText": "【任务】【mfood iOS】账户与安全页\nID: MFTB-936 | 状态: 提交测试 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-10 | 排期规划: 2026-07-09 至 2026-07-09",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-935",
         "title": "【服务端】【眾包】提現卡支持中行&綁卡增加審核",
         "status": "未开始",
@@ -2555,7 +2640,7 @@
       {
         "id": "MFTB-874",
         "title": "【mFood iOS】更换手机",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "陈剑",
         "creator": "陈剑",
@@ -2565,7 +2650,7 @@
         "createDate": "2026-07-07",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ebc8333f067b10f734a62a8b77",
-        "rowText": "【任务】【mFood iOS】更换手机\nID: MFTB-874 | 状态: 开发中 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
+        "rowText": "【任务】【mFood iOS】更换手机\nID: MFTB-874 | 状态: 提交测试 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-07 | 排期规划: 2026-07-08 至 2026-07-08",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -2895,7 +2980,7 @@
       {
         "id": "MFTB-847",
         "title": "【管理後臺】【大係統】運營投放管理中，各個廣告跳轉設置交互修改",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -2905,7 +2990,7 @@
         "createDate": "2026-07-03",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=771c95e4ecb796b765c49985db",
-        "rowText": "【任务】【管理後臺】【大係統】運營投放管理中，各個廣告跳轉設置交互修改\nID: MFTB-847 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-03 | 排期规划: 2026-07-07 至 2026-07-10",
+        "rowText": "【任务】【管理後臺】【大係統】運營投放管理中，各個廣告跳轉設置交互修改\nID: MFTB-847 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-03 | 排期规划: 2026-07-07 至 2026-07-10",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3116,7 +3201,7 @@
       {
         "id": "MFTB-831",
         "title": "【管理后台】【大係統】红包列表",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -3126,7 +3211,7 @@
         "createDate": "2026-07-01",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7c2419fa684ac84def45e4df8d",
-        "rowText": "【任务】【管理后台】【大係統】红包列表\nID: MFTB-831 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-07-01 | 排期规划: - 至 -",
+        "rowText": "【任务】【管理后台】【大係統】红包列表\nID: MFTB-831 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-07-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -18341,73 +18426,73 @@
       {
         "date": "2026-07-03",
         "total": 590,
-        "completed": 282,
+        "completed": 283,
         "statusCounts": {
-          "已完成": 282,
-          "进行中": 308
+          "已完成": 283,
+          "进行中": 307
         }
       },
       {
         "date": "2026-07-04",
         "total": 590,
-        "completed": 282,
+        "completed": 284,
         "statusCounts": {
-          "已完成": 282,
-          "进行中": 308
+          "已完成": 284,
+          "进行中": 306
         }
       },
       {
         "date": "2026-07-05",
         "total": 590,
-        "completed": 282,
+        "completed": 284,
         "statusCounts": {
-          "已完成": 282,
-          "进行中": 308
+          "已完成": 284,
+          "进行中": 306
         }
       },
       {
         "date": "2026-07-06",
         "total": 596,
-        "completed": 460,
+        "completed": 462,
         "statusCounts": {
-          "已完成": 460,
-          "进行中": 136
+          "已完成": 462,
+          "进行中": 134
         }
       },
       {
         "date": "2026-07-07",
         "total": 615,
-        "completed": 469,
+        "completed": 471,
         "statusCounts": {
-          "已完成": 469,
-          "进行中": 146
+          "已完成": 471,
+          "进行中": 144
         }
       },
       {
         "date": "2026-07-08",
         "total": 637,
-        "completed": 488,
+        "completed": 491,
         "statusCounts": {
-          "已完成": 488,
-          "进行中": 149
+          "已完成": 491,
+          "进行中": 146
         }
       },
       {
         "date": "2026-07-09",
         "total": 666,
-        "completed": 517,
+        "completed": 520,
         "statusCounts": {
-          "已完成": 517,
-          "进行中": 149
+          "已完成": 520,
+          "进行中": 146
         }
       },
       {
         "date": "2026-07-10",
-        "total": 668,
-        "completed": 520,
+        "total": 673,
+        "completed": 527,
         "statusCounts": {
-          "已完成": 520,
-          "进行中": 148
+          "已完成": 527,
+          "进行中": 146
         }
       }
     ],
@@ -30109,8 +30194,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 3.9,
-      "delta": 0.6
+      "average": 3.5,
+      "delta": 0.2
     },
     "mfood": {
       "average": 0.0,

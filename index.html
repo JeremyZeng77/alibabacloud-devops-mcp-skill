@@ -588,14 +588,17 @@
                         <input type="text" id="audit-search-input" placeholder="输入姓名搜索，例如：林泽斌..." class="audit-filter-input">
                     </div>
                     <div class="audit-filter-group">
-                        <label for="audit-role-select" class="audit-filter-label">⚙️ 按职位端筛选：</label>
+                        <label for="audit-role-select" class="audit-filter-label">👥 按角色筛选：</label>
                         <select id="audit-role-select" class="audit-filter-select">
-                            <option value="all">全部职位端</option>
-                            <option value="Backend">后端开发 (服务端)</option>
-                            <option value="Frontend">前端开发</option>
-                            <option value="Mobile">移动开发 (Android/iOS)</option>
+                            <option value="all">全部角色</option>
+                            <option value="Backend">服务端</option>
+                            <option value="Frontend">前端</option>
+                            <option value="Mobile">移动端</option>
+                            <option value="Tester">测试</option>
+                            <option value="Product">产品</option>
                             <option value="UI">UI设计</option>
-                            <option value="Tester">测试工程师</option>
+                            <option value="PM">项目经理</option>
+                            <option value="Ops">运维</option>
                         </select>
                     </div>
                 </div>
@@ -628,7 +631,7 @@
 
             <!-- Footer with Version -->
             <footer class="dashboard-footer" style="text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); font-size: 12px; color: var(--color-text-muted, #94a3b8);">
-                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.5.1</span>
+                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.5.2</span>
             </footer>
         </main>
     </div>
