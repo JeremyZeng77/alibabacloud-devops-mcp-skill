@@ -241,6 +241,22 @@ function initEventListeners() {
         renderWeeklyReport(e.target.value);
     });
 
+    // Audit View Filters
+    const auditSearch = document.getElementById('audit-search-input');
+    if (auditSearch) {
+        auditSearch.addEventListener('input', (e) => {
+            auditFilters.search = e.target.value;
+            renderAuditView();
+        });
+    }
+    const auditRoleSelect = document.getElementById('audit-role-select');
+    if (auditRoleSelect) {
+        auditRoleSelect.addEventListener('change', (e) => {
+            auditFilters.role = e.target.value;
+            renderAuditView();
+        });
+    }
+
     // Filters event listeners
     ['filter-search', 'filter-category', 'filter-status', 'filter-assignee', 'filter-priority', 'filter-iteration'].forEach(id => {
         const elem = document.getElementById(id);
@@ -754,6 +770,8 @@ function renderCurrentView() {
         applyFilters();
     } else if (state.currentView === 'weekly') {
         populateWeeklySelector();
+    } else if (state.currentView === 'audit') {
+        renderAuditView();
     }
 }
 
