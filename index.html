@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="./assets/index-CIt2T4S8.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BBiRYII8.css">
+  <script type="module" crossorigin src="./assets/index-D2emrzDu.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B1-8Q8So.css">
 </head>
 <body>
     <!-- Login Screen Overlay -->
@@ -138,6 +138,10 @@
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
                 周报与管理建议
             </button>
+            <button class="nav-tab" data-view="audit">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 16v-4M12 8h.01"/></svg>
+                协作与进度审计
+            </button>
         </nav>
 
         <!-- Main Content Area -->
@@ -151,9 +155,6 @@
                 
                 <!-- Strategic Advice Panel -->
                 <div id="strategic-advice-panel" class="strategic-advice-container"></div>
-
-                <!-- Message Center Panel -->
-                <div id="message-center-panel" class="message-center-container"></div>
                 
                 <!-- Row 1: Requirements View -->
                 <div class="kpi-row-title">🎯 需求交付看板视角</div>
@@ -570,9 +571,64 @@
                     </div>
             </section>
 
+            <!-- VIEW 4: Collaboration and Progress Audit -->
+            <section class="view-section" id="view-audit">
+                <!-- Audit Header Card -->
+                <div class="audit-header-card">
+                    <div class="audit-title-block">
+                        <h2 class="audit-page-title">📢 智能协作与进度审计中心</h2>
+                        <span class="audit-last-updated-text">数据源最后更新时间：<span id="audit-last-updated" style="font-weight: 600; color: #38bdf8;">-</span></span>
+                    </div>
+                </div>
+
+                <!-- Audit Filters Card -->
+                <div class="audit-filters-card">
+                    <div class="audit-filter-group">
+                        <label for="audit-search-input" class="audit-filter-label">🔍 搜索成员姓名：</label>
+                        <input type="text" id="audit-search-input" placeholder="输入姓名搜索，例如：林泽斌..." class="audit-filter-input">
+                    </div>
+                    <div class="audit-filter-group">
+                        <label for="audit-role-select" class="audit-filter-label">⚙️ 按职位端筛选：</label>
+                        <select id="audit-role-select" class="audit-filter-select">
+                            <option value="all">全部职位端</option>
+                            <option value="Backend">后端开发 (服务端)</option>
+                            <option value="Frontend">前端开发</option>
+                            <option value="Mobile">移动开发 (Android/iOS)</option>
+                            <option value="UI">UI设计</option>
+                            <option value="Tester">测试工程师</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Audit Details Panels -->
+                <div class="audit-panels-container">
+                    <!-- Section 1: Missing Dates -->
+                    <div class="audit-section-card">
+                        <div class="audit-section-header">
+                            <span class="audit-section-icon">📅</span>
+                            <h3 class="audit-section-title">计划时间缺失审计（进行中需求与任务需补充计划起止日期）</h3>
+                        </div>
+                        <div class="audit-section-content" id="audit-missing-dates-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Idle Resources -->
+                    <div class="audit-section-card">
+                        <div class="audit-section-header">
+                            <span class="audit-section-icon">👥</span>
+                            <h3 class="audit-section-title">团队闲置人力审计（当前项目无活跃任务分配）</h3>
+                        </div>
+                        <div class="audit-section-content" id="audit-idle-members-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Footer with Version -->
             <footer class="dashboard-footer" style="text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); font-size: 12px; color: var(--color-text-muted, #94a3b8);">
-                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.5.0</span>
+                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.5.1</span>
             </footer>
         </main>
     </div>
