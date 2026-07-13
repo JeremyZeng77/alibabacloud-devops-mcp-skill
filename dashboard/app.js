@@ -2741,6 +2741,7 @@ function showItemDetailById(id) {
         showItemDetail(item);
     }
 }
+window.showItemDetailById = showItemDetailById;
 
 function showQAMitigationModal() {
     const modal = document.getElementById('qa-mitigation-modal');
