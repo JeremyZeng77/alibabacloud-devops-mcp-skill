@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-07-14T10:02:44.485060+00:00",
+  "compiledAt": "2026-07-14T13:53:35.183279+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-981",
+        "title": "到家業務-門店管理-店鋪風格",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-14",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=2d14d950933822f9d5a8091ef7",
+        "rowText": "【产品类需求】到家業務-門店管理-店鋪風格\nID: MFTB-981 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: 未规划 | 创建时间: 2026-07-14 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-943",
         "title": "【大係統】用戶 app 支持針對門店，長按不感興趣/找相似",
@@ -15118,23 +15135,6 @@
     ],
     "mfood": [
       {
-        "id": "MF-34601",
-        "title": "【團購】-預約商品-訂單詳情預約模塊詳情中要正常顯示下單預約的內容（儘快處理上線）",
-        "status": "待处理",
-        "priority": "高",
-        "assignee": "覃林方",
-        "creator": "覃林方",
-        "iteration": "未规划",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-07-13",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=00998c720e74ede4ef11d99ca8",
-        "rowText": "【产品类需求】【團購】-預約商品-訂單詳情預約模塊詳情中要正常顯示下單預約的內容（儘快處理上線）\nID: MF-34601 | 状态: 待处理 | 优先级: 高\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-07-13 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Req"
-      },
-      {
         "id": "MF-34530",
         "title": "財務流水按业务拆分劲爆券&星选订单管理新增导出",
         "status": "待处理",
@@ -19085,11 +19085,11 @@
       },
       {
         "date": "2026-07-14",
-        "total": 691,
+        "total": 692,
         "completed": 553,
         "statusCounts": {
           "已完成": 553,
-          "进行中": 138
+          "进行中": 139
         }
       }
     ],
@@ -30598,20 +30598,20 @@
       },
       {
         "date": "2026-07-13",
+        "total": 174,
+        "completed": 37,
+        "statusCounts": {
+          "已完成": 37,
+          "进行中": 137
+        }
+      },
+      {
+        "date": "2026-07-14",
         "total": 175,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
           "进行中": 138
-        }
-      },
-      {
-        "date": "2026-07-14",
-        "total": 176,
-        "completed": 37,
-        "statusCounts": {
-          "已完成": 37,
-          "进行中": 139
         }
       }
     ]
