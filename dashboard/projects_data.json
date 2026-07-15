@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-07-15T15:28:35.737704+00:00",
+  "compiledAt": "2026-07-15T17:21:44.120766+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-996",
+        "title": "【大系统】特殊区域管理",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "刘龙振海",
+        "creator": "刘龙振海",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-15",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fcf141dc657b3230b39d4643f4",
+        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 待处理 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-15 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-981",
         "title": "到家業務-門店管理-店鋪風格",
@@ -19349,11 +19366,11 @@
       },
       {
         "date": "2026-07-15",
-        "total": 695,
+        "total": 696,
         "completed": 564,
         "statusCounts": {
           "已完成": 564,
-          "进行中": 131
+          "进行中": 132
         }
       }
     ],
