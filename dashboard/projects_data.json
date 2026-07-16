@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-16T10:13:24.881620+00:00",
+  "compiledAt": "2026-07-16T14:03:00.908588+00:00",
   "latest": {
     "mftb": [
       {
@@ -3065,7 +3065,7 @@
       {
         "id": "MFTB-894",
         "title": "【服务端】【大系统】配送方案-門店配送方案-设置极马方案",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "唐光伟",
         "creator": "唐光伟",
@@ -3075,7 +3075,7 @@
         "createDate": "2026-07-08",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=79a25fa4e3f58773e2c35461ca",
-        "rowText": "【任务】【服务端】【大系统】配送方案-門店配送方案-设置极马方案\nID: MFTB-894 | 状态: 未开始 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-16 至 2026-07-16",
+        "rowText": "【任务】【服务端】【大系统】配送方案-門店配送方案-设置极马方案\nID: MFTB-894 | 状态: 提交测试 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-16 至 2026-07-16",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -15719,13 +15719,13 @@
         "priority": "低",
         "assignee": "覃林方",
         "creator": "覃林方",
-        "iteration": "未规划",
+        "iteration": "V7.3.5（7.30）",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-07-16",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=d9adb89c531735eecd36238834",
-        "rowText": "【产品类需求】【團購】珠海售賣的（人民幣）商品默認不可以用平臺紅包與消費金，下單時展示在不可用列表，並且增加提示：當前商品為跨境商品，不支持使用\nID: MF-34611 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【團購】珠海售賣的（人民幣）商品默認不可以用平臺紅包與消費金，下單時展示在不可用列表，並且增加提示：當前商品為跨境商品，不支持使用\nID: MF-34611 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: V7.3.5（7.30） | 创建时间: 2026-07-16 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
       },
@@ -15753,13 +15753,13 @@
         "priority": "低",
         "assignee": "周昱强",
         "creator": "周昱强",
-        "iteration": "V7.3.5（7.15）",
+        "iteration": "V7.3.5（7.30）",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-06-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=5695843c611e42455b2e686c37",
-        "rowText": "【产品类需求】財務流水按业务拆分劲爆券&星选订单管理新增导出\nID: MF-34530 | 状态: 待处理 | 优先级: 低\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: V7.3.5（7.15） | 创建时间: 2026-06-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】財務流水按业务拆分劲爆券&星选订单管理新增导出\nID: MF-34530 | 状态: 待处理 | 优先级: 低\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: V7.3.5（7.30） | 创建时间: 2026-06-17 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
       },
@@ -17368,13 +17368,13 @@
         "priority": "低",
         "assignee": "贺志成",
         "creator": "贺志成",
-        "iteration": "未规划",
+        "iteration": "V7.3.5（7.30）",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-07-16",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=003be3f35ab4e788e0936bd276",
-        "rowText": "【測試】【测试】【團購】珠海售賣的（人民幣）商品默認不可以用平臺紅包與消費金，下單時展示在不可用列表，並且增加提示：當前商品為跨境商品，不支持使用\nID: MF-34612 | 状态: 待处理 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: 未规划 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【團購】珠海售賣的（人民幣）商品默認不可以用平臺紅包與消費金，下單時展示在不可用列表，並且增加提示：當前商品為跨境商品，不支持使用\nID: MF-34612 | 状态: 待处理 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.3.5（7.30） | 创建时间: 2026-07-16 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -17385,13 +17385,13 @@
         "priority": "低",
         "assignee": "杨庆龙",
         "creator": "杨庆龙",
-        "iteration": "V7.3.5（7.15）",
+        "iteration": "V7.3.5（7.30）",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-07-15",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=83520f93895383050867f94122",
-        "rowText": "【測試】【测试】【團購】團購商品-有效期指定日期優化\nID: MF-34606 | 状态: 待处理 | 优先级: 低\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: V7.3.5（7.15） | 创建时间: 2026-07-15 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【團購】團購商品-有效期指定日期優化\nID: MF-34606 | 状态: 待处理 | 优先级: 低\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: V7.3.5（7.30） | 创建时间: 2026-07-15 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -17402,13 +17402,13 @@
         "priority": "低",
         "assignee": "贺志成",
         "creator": "贺志成",
-        "iteration": "V7.3.5（7.15）",
+        "iteration": "V7.3.5（7.30）",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-07-06",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=2764fa263247de77ffa26d72bb",
-        "rowText": "【測試】【测试】財務流水按业务拆分劲爆券&星选订单管理新增导出\nID: MF-34593 | 状态: 待处理 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.3.5（7.15） | 创建时间: 2026-07-06 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】財務流水按业务拆分劲爆券&星选订单管理新增导出\nID: MF-34593 | 状态: 待处理 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.3.5（7.30） | 创建时间: 2026-07-06 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -19733,10 +19733,10 @@
       {
         "date": "2026-07-16",
         "total": 711,
-        "completed": 574,
+        "completed": 575,
         "statusCounts": {
-          "已完成": 574,
-          "进行中": 137
+          "已完成": 575,
+          "进行中": 136
         }
       }
     ],
