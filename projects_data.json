@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-17T22:53:55.282288+00:00",
+  "compiledAt": "2026-07-18T02:48:28.312217+00:00",
   "latest": {
     "mftb": [
       {
@@ -20172,68 +20172,77 @@
       {
         "date": "2026-07-10",
         "total": 677,
-        "completed": 530,
+        "completed": 528,
         "statusCounts": {
-          "已完成": 530,
-          "进行中": 147
+          "已完成": 528,
+          "进行中": 149
         }
       },
       {
         "date": "2026-07-11",
         "total": 677,
-        "completed": 530,
+        "completed": 528,
         "statusCounts": {
-          "已完成": 530,
-          "进行中": 147
+          "已完成": 528,
+          "进行中": 149
         }
       },
       {
         "date": "2026-07-12",
         "total": 677,
-        "completed": 530,
+        "completed": 528,
         "statusCounts": {
-          "已完成": 530,
-          "进行中": 147
+          "已完成": 528,
+          "进行中": 149
         }
       },
       {
         "date": "2026-07-13",
         "total": 684,
-        "completed": 545,
+        "completed": 543,
         "statusCounts": {
-          "已完成": 545,
-          "进行中": 139
+          "已完成": 543,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-14",
         "total": 692,
-        "completed": 552,
+        "completed": 550,
         "statusCounts": {
-          "已完成": 552,
-          "进行中": 140
+          "已完成": 550,
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-15",
         "total": 695,
-        "completed": 562,
+        "completed": 560,
         "statusCounts": {
-          "已完成": 562,
-          "进行中": 133
+          "已完成": 560,
+          "进行中": 135
         }
       },
       {
         "date": "2026-07-16",
         "total": 711,
-        "completed": 571,
+        "completed": 569,
         "statusCounts": {
-          "已完成": 571,
-          "进行中": 140
+          "已完成": 569,
+          "进行中": 142
         }
       },
       {
         "date": "2026-07-17",
+        "total": 733,
+        "completed": 579,
+        "statusCounts": {
+          "已完成": 579,
+          "进行中": 154
+        }
+      },
+      {
+        "date": "2026-07-18",
         "total": 733,
         "completed": 580,
         "statusCounts": {
@@ -31783,6 +31792,15 @@
       },
       {
         "date": "2026-07-17",
+        "total": 178,
+        "completed": 37,
+        "statusCounts": {
+          "已完成": 37,
+          "进行中": 141
+        }
+      },
+      {
+        "date": "2026-07-18",
         "total": 178,
         "completed": 37,
         "statusCounts": {
