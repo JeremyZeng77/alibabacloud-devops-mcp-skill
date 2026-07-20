@@ -1,7 +1,41 @@
 {
-  "compiledAt": "2026-07-19T22:57:16.685420+00:00",
+  "compiledAt": "2026-07-20T03:32:25.740264+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1058",
+        "title": "【專送合併】騎手工資表",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9bbc9d82508991563664a36ff6",
+        "rowText": "【产品类需求】【專送合併】騎手工資表\nID: MFTB-1058 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1056",
+        "title": "【大係統】业务入口管理后台配置项需求变更",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e18fae0a9135e1a861cf5ddf4e",
+        "rowText": "【产品类需求】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1056 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1046",
         "title": "【大係統】到家業務-評價管理模塊",
@@ -1907,6 +1941,142 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1057",
+        "title": "【產品】【大係統】业务入口管理后台配置项需求变更",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-07-17",
+        "planEnd": "2026-07-17",
+        "createDate": "2026-07-20",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b76399898a011f5965ae72da40",
+        "rowText": "【产品】【產品】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1057 | 状态: 已完成 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: 2026-07-17 至 2026-07-17",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1055",
+        "title": "【服务端】【補】到家業務_門店管理 新增門店免費標籤",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "卓坚",
+        "creator": "卓坚",
+        "iteration": "未规划",
+        "planStart": "2026-07-20",
+        "planEnd": "2026-07-20",
+        "createDate": "2026-07-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=366ce9a38e38bcfcbeb99177f4",
+        "rowText": "【任务】【服务端】【補】到家業務_門店管理 新增門店免費標籤\nID: MFTB-1055 | 状态: 未开始 | 优先级: 中\n负责人: 卓坚 | 提报人: 卓坚\n迭代版本: 未规划 | 创建时间: 2026-07-20 | 排期规划: 2026-07-20 至 2026-07-20",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1054",
+        "title": "【前端】【補】到家業務_門店管理 新增門店免費標籤",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "周忠浩",
+        "creator": "周忠浩",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=2888e6d995b0e92d4057f15d17",
+        "rowText": "【任务】【前端】【補】到家業務_門店管理 新增門店免費標籤\nID: MFTB-1054 | 状态: 未开始 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: 未规划 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1052",
+        "title": "【前端】【大系统】特殊区域管理",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f1ef2ff79759146eadcabb6b54",
+        "rowText": "【任务】【前端】【大系统】特殊区域管理\nID: MFTB-1052 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1051",
+        "title": "【前端】【大系统】虚拟号码后台",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b722536af24e4ed5c4b50f7c22",
+        "rowText": "【任务】【前端】【大系统】虚拟号码后台\nID: MFTB-1051 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1050",
+        "title": "【大係統_管理后台】美食外送_外賣到家業務_訂單流程設計",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "黎月平",
+        "creator": "黎月平",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9706f302ecb1d211c3b97a7117",
+        "rowText": "【任务】【大係統_管理后台】美食外送_外賣到家業務_訂單流程設計\nID: MFTB-1050 | 状态: 未开始 | 优先级: 中\n负责人: 黎月平 | 提报人: 黎月平\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1049",
+        "title": "【测试】【【大係統】美食外送_外賣到家業務_訂單流程設計",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "贺志成",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=2614730eddb23d76ee9c7b6b34",
+        "rowText": "【測試】【测试】【【大係統】美食外送_外賣到家業務_訂單流程設計\nID: MFTB-1049 | 状态: 待处理 | 优先级: 中\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1048",
+        "title": "【服务端_用户端】【大係統】美食外送_外賣到家業務_訂單流程設計",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "黎月平",
+        "creator": "黎月平",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8af2a1d382b7b3e09cc2ea63c0",
+        "rowText": "【任务】【服务端_用户端】【大係統】美食外送_外賣到家業務_訂單流程設計\nID: MFTB-1048 | 状态: 未开始 | 优先级: 中\n负责人: 黎月平 | 提报人: 黎月平\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1047",
         "title": "【服务端_补充功能】【大係統】商家 APP",
         "status": "未开始",
@@ -2300,7 +2470,7 @@
       {
         "id": "MFTB-1008",
         "title": "【服务端】【大系统】特殊区域管理",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "卓坚",
         "creator": "卓坚",
@@ -2310,7 +2480,7 @@
         "createDate": "2026-07-16",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=77a25e9190c30e26f245663900",
-        "rowText": "【任务】【服务端】【大系统】特殊区域管理\nID: MFTB-1008 | 状态: 未开始 | 优先级: 中\n负责人: 卓坚 | 提报人: 卓坚\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-16 至 2026-07-17",
+        "rowText": "【任务】【服务端】【大系统】特殊区域管理\nID: MFTB-1008 | 状态: 提交测试 | 优先级: 中\n负责人: 卓坚 | 提报人: 卓坚\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-16 至 2026-07-17",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3456,7 +3626,7 @@
       {
         "id": "MFTB-893",
         "title": "【服务端】【大系统】配送方案-門店配送方案-批量设置",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "唐光伟",
         "creator": "唐光伟",
@@ -3466,7 +3636,7 @@
         "createDate": "2026-07-08",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=79f7f9e6931d010e7b320a962c",
-        "rowText": "【任务】【服务端】【大系统】配送方案-門店配送方案-批量设置\nID: MFTB-893 | 状态: 开发中 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-17 至 2026-07-17",
+        "rowText": "【任务】【服务端】【大系统】配送方案-門店配送方案-批量设置\nID: MFTB-893 | 状态: 提交测试 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-17 至 2026-07-17",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -12464,6 +12634,23 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1053",
+        "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-20",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b4a113fed12eac9edc55105ef1",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填\nID: MFTB-1053 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1043",
         "title": "【到家业务-商品管理】商品列表-超市百货：导入数据，使用下载的模板，发现：导入识别的第一个sheet页，导致导入失败",
         "status": "待确认",
@@ -20235,28 +20422,37 @@
       {
         "date": "2026-07-17",
         "total": 733,
-        "completed": 579,
+        "completed": 581,
         "statusCounts": {
-          "已完成": 579,
-          "进行中": 154
+          "已完成": 581,
+          "进行中": 152
         }
       },
       {
         "date": "2026-07-18",
         "total": 733,
-        "completed": 579,
+        "completed": 581,
         "statusCounts": {
-          "已完成": 579,
-          "进行中": 154
+          "已完成": 581,
+          "进行中": 152
         }
       },
       {
         "date": "2026-07-19",
         "total": 733,
-        "completed": 580,
+        "completed": 582,
         "statusCounts": {
-          "已完成": 580,
-          "进行中": 153
+          "已完成": 582,
+          "进行中": 151
+        }
+      },
+      {
+        "date": "2026-07-20",
+        "total": 743,
+        "completed": 583,
+        "statusCounts": {
+          "已完成": 583,
+          "进行中": 160
         }
       }
     ],
@@ -31825,6 +32021,15 @@
           "已完成": 37,
           "进行中": 141
         }
+      },
+      {
+        "date": "2026-07-20",
+        "total": 178,
+        "completed": 37,
+        "statusCounts": {
+          "已完成": 37,
+          "进行中": 141
+        }
       }
     ]
   },
@@ -32121,8 +32326,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 5.5,
-      "delta": 5.5
+      "average": 5.4,
+      "delta": 5.4
     },
     "mfood": {
       "average": 0.0,
