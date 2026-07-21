@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-07-20T23:04:32.703442+00:00",
+  "compiledAt": "2026-07-21T02:58:40.415510+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1074",
+        "title": "【大係統】商家 app 外賣語音播報設置",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-21",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7d6620ab1f04739dea55954427",
+        "rowText": "【产品类需求】【大係統】商家 app 外賣語音播報設置\nID: MFTB-1074 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 未规划 | 创建时间: 2026-07-21 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1058",
         "title": "【專送合併】騎手工資表",
@@ -413,7 +430,7 @@
       {
         "id": "MFTB-855",
         "title": "【極馬】騎手驗證碼校驗增加後台開關",
-        "status": "已发(APP未过审)",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -423,7 +440,7 @@
         "createDate": "2026-07-07",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3668f75ef7d7359fa1ab7a9a59",
-        "rowText": "【产品类需求】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-855 | 状态: 已发(APP未过审) | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】騎手驗證碼校驗增加後台開關\nID: MFTB-855 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-07 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -549,7 +566,7 @@
       {
         "id": "MFTB-797",
         "title": "【極馬】專送&眾包APP已完成訂單限制發送IM消息",
-        "status": "已发(APP未过审)",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -559,7 +576,7 @@
         "createDate": "2026-06-29",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1652c60e2a04b1465b6fa37547",
-        "rowText": "【产品类需求】【極馬】專送&眾包APP已完成訂單限制發送IM消息\nID: MFTB-797 | 状态: 已发(APP未过审) | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-06-29 | 排期规划: 2026-06-30 至 2026-07-15",
+        "rowText": "【产品类需求】【極馬】專送&眾包APP已完成訂單限制發送IM消息\nID: MFTB-797 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-06-29 | 排期规划: 2026-06-30 至 2026-07-15",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -600,7 +617,7 @@
       {
         "id": "MFTB-779",
         "title": "【極馬】專送&眾包APP增加高溫喝水提示",
-        "status": "已发(APP未过审)",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -610,7 +627,7 @@
         "createDate": "2026-06-24",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=aa9dbb1cf59e3a4aafb82b9a40",
-        "rowText": "【产品类需求】【極馬】專送&眾包APP增加高溫喝水提示\nID: MFTB-779 | 状态: 已发(APP未过审) | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-06-24 | 排期规划: 2026-06-25 至 2026-07-15",
+        "rowText": "【产品类需求】【極馬】專送&眾包APP增加高溫喝水提示\nID: MFTB-779 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-06-24 | 排期规划: 2026-06-25 至 2026-07-15",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1939,6 +1956,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1075",
+        "title": "【產品】【大係統】商家 app 外賣語音播報設置",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "未规划",
+        "planStart": "2026-07-20",
+        "planEnd": "2026-07-20",
+        "createDate": "2026-07-21",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=34c8d4d6d9e61dd297e5af2672",
+        "rowText": "【产品】【產品】【大係統】商家 app 外賣語音播報設置\nID: MFTB-1075 | 状态: 已完成 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 未规划 | 创建时间: 2026-07-21 | 排期规划: 2026-07-20 至 2026-07-20",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1068",
@@ -3677,7 +3711,7 @@
       {
         "id": "MFTB-898",
         "title": "【服务端】【大系统】配送方案-门店管理-自送方案",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "唐光伟",
         "creator": "唐光伟",
@@ -3687,14 +3721,14 @@
         "createDate": "2026-07-08",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=de0d1107ed4af64e2df319d13c",
-        "rowText": "【任务】【服务端】【大系统】配送方案-门店管理-自送方案\nID: MFTB-898 | 状态: 未开始 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-21 至 2026-07-22",
+        "rowText": "【任务】【服务端】【大系统】配送方案-门店管理-自送方案\nID: MFTB-898 | 状态: 开发中 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-21 至 2026-07-22",
         "project": "MFTB集团项目",
         "category": "Task"
       },
       {
         "id": "MFTB-897",
         "title": "【服务端】【大系统】配送方案-门店管理-综合配送方案",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "唐光伟",
         "creator": "唐光伟",
@@ -3704,7 +3738,7 @@
         "createDate": "2026-07-08",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=266cdd5fd37fd0aa4d36fbe817",
-        "rowText": "【任务】【服务端】【大系统】配送方案-门店管理-综合配送方案\nID: MFTB-897 | 状态: 未开始 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-20 至 2026-07-20",
+        "rowText": "【任务】【服务端】【大系统】配送方案-门店管理-综合配送方案\nID: MFTB-897 | 状态: 提交测试 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-08 | 排期规划: 2026-07-20 至 2026-07-20",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -20614,68 +20648,86 @@
       {
         "date": "2026-07-10",
         "total": 677,
-        "completed": 528,
+        "completed": 530,
         "statusCounts": {
-          "已完成": 528,
-          "进行中": 149
+          "已完成": 530,
+          "进行中": 147
         }
       },
       {
         "date": "2026-07-11",
         "total": 677,
-        "completed": 528,
+        "completed": 530,
         "statusCounts": {
-          "已完成": 528,
-          "进行中": 149
+          "已完成": 530,
+          "进行中": 147
         }
       },
       {
         "date": "2026-07-12",
         "total": 677,
-        "completed": 528,
+        "completed": 530,
         "statusCounts": {
-          "已完成": 528,
-          "进行中": 149
+          "已完成": 530,
+          "进行中": 147
         }
       },
       {
         "date": "2026-07-13",
         "total": 684,
-        "completed": 543,
+        "completed": 546,
         "statusCounts": {
-          "已完成": 543,
-          "进行中": 141
+          "已完成": 546,
+          "进行中": 138
         }
       },
       {
         "date": "2026-07-14",
         "total": 692,
-        "completed": 550,
+        "completed": 553,
         "statusCounts": {
-          "已完成": 550,
-          "进行中": 142
+          "已完成": 553,
+          "进行中": 139
         }
       },
       {
         "date": "2026-07-15",
         "total": 695,
-        "completed": 560,
+        "completed": 563,
         "statusCounts": {
-          "已完成": 560,
-          "进行中": 135
+          "已完成": 563,
+          "进行中": 132
         }
       },
       {
         "date": "2026-07-16",
         "total": 711,
-        "completed": 570,
+        "completed": 573,
         "statusCounts": {
-          "已完成": 570,
-          "进行中": 141
+          "已完成": 573,
+          "进行中": 138
         }
       },
       {
         "date": "2026-07-17",
+        "total": 733,
+        "completed": 583,
+        "statusCounts": {
+          "已完成": 583,
+          "进行中": 150
+        }
+      },
+      {
+        "date": "2026-07-18",
+        "total": 733,
+        "completed": 584,
+        "statusCounts": {
+          "已完成": 584,
+          "进行中": 149
+        }
+      },
+      {
+        "date": "2026-07-19",
         "total": 733,
         "completed": 585,
         "statusCounts": {
@@ -20684,30 +20736,21 @@
         }
       },
       {
-        "date": "2026-07-18",
-        "total": 733,
-        "completed": 586,
-        "statusCounts": {
-          "已完成": 586,
-          "进行中": 147
-        }
-      },
-      {
-        "date": "2026-07-19",
-        "total": 733,
-        "completed": 587,
-        "statusCounts": {
-          "已完成": 587,
-          "进行中": 146
-        }
-      },
-      {
         "date": "2026-07-20",
         "total": 751,
-        "completed": 594,
+        "completed": 598,
         "statusCounts": {
-          "已完成": 594,
-          "进行中": 157
+          "已完成": 598,
+          "进行中": 153
+        }
+      },
+      {
+        "date": "2026-07-21",
+        "total": 753,
+        "completed": 599,
+        "statusCounts": {
+          "已完成": 599,
+          "进行中": 154
         }
       }
     ],
@@ -32279,6 +32322,15 @@
       },
       {
         "date": "2026-07-20",
+        "total": 178,
+        "completed": 37,
+        "statusCounts": {
+          "已完成": 37,
+          "进行中": 141
+        }
+      },
+      {
+        "date": "2026-07-21",
         "total": 178,
         "completed": 37,
         "statusCounts": {
