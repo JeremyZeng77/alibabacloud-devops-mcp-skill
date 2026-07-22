@@ -2266,6 +2266,7 @@ const DEVELOPER_ROLES_MAP = {
     "刘龙振海": "Product",
     "冯松": "Product",
     "温浩源": "Product",
+    "溫浩源": "Product",
     "周昱强": "Product",
     "赵嘉颖": "Product",
     "龙颖之": "Product",

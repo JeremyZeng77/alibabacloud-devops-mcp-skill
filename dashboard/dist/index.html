@@ -9,11 +9,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="/assets/index-CyDi4gDH.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DaKQolGt.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" crossorigin src="./assets/index-_CfoQy4r.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B1-8Q8So.css">
 </head>
 <body>
+    <!-- Login Screen Overlay -->
+    <div class="login-overlay" id="login-overlay" style="display: none;">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="login-logo-area">
+                    <div class="login-logo-glow"></div>
+                    <span class="login-logo-text">云效 DevOps 协同看板</span>
+                </div>
+                <div class="login-subtitle">请使用您的团队账户凭证登录以访问数据</div>
+            </div>
+            
+            <div class="login-form">
+                <div class="input-group">
+                    <span class="input-label">用户名</span>
+                    <div class="input-field-wrapper">
+                        <input type="text" id="login-username" class="input-field" placeholder="输入用户名" autocomplete="username">
+                        <svg class="input-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <span class="input-label">密码</span>
+                    <div class="input-field-wrapper">
+                        <input type="password" id="login-password" class="input-field" placeholder="输入密码" autocomplete="current-password">
+                        <svg class="input-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="login-error-msg" id="login-error-msg">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    <span id="login-error-text">用户名或密码错误</span>
+                </div>
+                
+                <button type="submit" id="btn-login-submit" class="btn-login">确认登录</button>
+            </div>
+        </div>
+    </div>
+
     <!-- App Container -->
     <div class="app-container">
         
@@ -65,6 +113,14 @@
                     </svg>
                     <span>立即同步编译</span>
                 </button>
+
+                <!-- Logout Button -->
+                <button class="btn-logout" id="btn-logout" title="退出登录并锁定数据" style="display: none;">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>
+                    </svg>
+                    <span>退出登录</span>
+                </button>
             </div>
         </header>
 
@@ -81,6 +137,10 @@
             <button class="nav-tab" data-view="weekly">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
                 周报与管理建议
+            </button>
+            <button class="nav-tab" data-view="audit">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 16v-4M12 8h.01"/></svg>
+                协作与进度审计
             </button>
         </nav>
 
@@ -277,7 +337,17 @@
                 <!-- Gantt Chart Section -->
                 <div class="chart-card gantt-chart-card">
                     <div class="gantt-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-                        <h3 class="chart-title">📅 全员任务计划情况</h3>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <h3 class="chart-title">📅 全员任务计划情况</h3>
+                            <!-- Mobile Landscape Toggle Button -->
+                            <button class="gantt-landscape-toggle" id="btn-gantt-landscape" title="在手机上横屏查看甘特图">
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" style="transform: rotate(90deg);">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <path d="M9 3v18M15 3v18"></path>
+                                </svg>
+                                <span>横屏查看</span>
+                            </button>
+                        </div>
                         <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
                             <div class="gantt-role-filter" style="display: flex; align-items: center;">
                                 <label for="gantt-role-select" style="font-size: 12px; color: var(--text-muted); margin-right: 8px; font-weight: 500;">角色筛选:</label>
@@ -425,16 +495,6 @@
                         <select id="weekly-week-select" class="weekly-select">
                             <!-- Injected by JS -->
                         </select>
-                        <button class="btn-generate-weekly" id="btn-generate-weekly" title="生成/覆盖本周周报数据">
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="16" y1="13" x2="8" y2="13"></line>
-                                <line x1="16" y1="17" x2="8" y2="17"></line>
-                                <polyline points="10 9 9 9 8 9"></polyline>
-                            </svg>
-                            <span>生成周报</span>
-                        </button>
                     </div>
                     <div class="weekly-desc">切换不同周次查看每周项目核心里程碑与交付风险提示</div>
                 </div>
@@ -508,9 +568,71 @@
                         </div>
                     </div>
 
+                    </div>
+            </section>
+
+            <!-- VIEW 4: Collaboration and Progress Audit -->
+            <section class="view-section" id="view-audit">
+                <!-- Audit Header Card -->
+                <div class="audit-header-card">
+                    <div class="audit-title-block">
+                        <h2 class="audit-page-title">📢 智能协作与进度审计中心</h2>
+                        <span class="audit-last-updated-text">数据源最后更新时间：<span id="audit-last-updated" style="font-weight: 600; color: #38bdf8;">-</span></span>
+                    </div>
+                </div>
+
+                <!-- Audit Filters Card -->
+                <div class="audit-filters-card">
+                    <div class="audit-filter-group">
+                        <label for="audit-search-input" class="audit-filter-label">🔍 搜索成员姓名：</label>
+                        <input type="text" id="audit-search-input" placeholder="输入姓名搜索，例如：林泽斌..." class="audit-filter-input">
+                    </div>
+                    <div class="audit-filter-group">
+                        <label for="audit-role-select" class="audit-filter-label">👥 按角色筛选：</label>
+                        <select id="audit-role-select" class="audit-filter-select">
+                            <option value="all">全部角色</option>
+                            <option value="Backend">服务端</option>
+                            <option value="Frontend">前端</option>
+                            <option value="Mobile">移动端</option>
+                            <option value="Tester">测试</option>
+                            <option value="Product">产品</option>
+                            <option value="UI">UI设计</option>
+                            <option value="PM">项目经理</option>
+                            <option value="Ops">运维</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Audit Details Panels -->
+                <div class="audit-panels-container">
+                    <!-- Section 1: Missing Dates -->
+                    <div class="audit-section-card">
+                        <div class="audit-section-header">
+                            <span class="audit-section-icon">📅</span>
+                            <h3 class="audit-section-title">计划时间缺失审计（进行中需求与任务需补充计划起止日期）</h3>
+                        </div>
+                        <div class="audit-section-content" id="audit-missing-dates-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Idle Resources -->
+                    <div class="audit-section-card">
+                        <div class="audit-section-header">
+                            <span class="audit-section-icon">👥</span>
+                            <h3 class="audit-section-title">团队闲置人力审计（当前项目无活跃任务分配）</h3>
+                        </div>
+                        <div class="audit-section-content" id="audit-idle-members-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
                 </div>
             </section>
 
+            <!-- Footer with Version -->
+            <footer class="dashboard-footer" style="text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); font-size: 12px; color: var(--color-text-muted, #94a3b8);">
+                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.6.1</span>
+            </footer>
         </main>
     </div>
 
@@ -621,6 +743,6 @@
     <div class="toast-alert" id="toast-alert">
         <span class="toast-message" id="toast-message">同步中...</span>
     </div>
-
+
 </body>
 </html>
