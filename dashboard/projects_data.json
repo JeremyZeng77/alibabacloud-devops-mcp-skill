@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-07-22T10:29:52.583842+00:00",
+  "compiledAt": "2026-07-22T14:05:34.055073+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1093",
+        "title": "【大係統】-團購到店-新增商品標籤",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-22",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=22261d6dfb6cef8807196846db",
+        "rowText": "【产品类需求】【大係統】-團購到店-新增商品標籤\nID: MFTB-1093 | 状态: 待处理 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1091",
         "title": "【大係統】用戶APP裝修_灯笼位需求变更",
@@ -21095,11 +21112,11 @@
       },
       {
         "date": "2026-07-22",
-        "total": 765,
+        "total": 766,
         "completed": 604,
         "statusCounts": {
           "已完成": 604,
-          "进行中": 161
+          "进行中": 162
         }
       }
     ],
