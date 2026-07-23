@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-07-23T03:18:22.618232+00:00",
+  "compiledAt": "2026-07-23T06:33:46.528699+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1097",
+        "title": "【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-23",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6a1ddd047987628c5f5b613e18",
+        "rowText": "【产品类需求】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示\nID: MFTB-1097 | 状态: 待处理 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1093",
         "title": "【大係統】-團購到店-新增商品標籤",
@@ -2043,6 +2060,125 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1102",
+        "title": "【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "未规划",
+        "planStart": "2026-07-24",
+        "planEnd": "2026-07-24",
+        "createDate": "2026-07-23",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bf678a40f019ebfa0e401bc53d",
+        "rowText": "【任务】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示\nID: MFTB-1102 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-07-23 | 排期规划: 2026-07-24 至 2026-07-24",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1101",
+        "title": "【服务端】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "张健伟",
+        "creator": "张健伟",
+        "iteration": "未规划",
+        "planStart": "2026-07-23",
+        "planEnd": "2026-07-23",
+        "createDate": "2026-07-23",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=098fb26bf050efe571c5a8532d",
+        "rowText": "【任务】【服务端】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示\nID: MFTB-1101 | 状态: 未开始 | 优先级: 中\n负责人: 张健伟 | 提报人: 张健伟\n迭代版本: 未规划 | 创建时间: 2026-07-23 | 排期规划: 2026-07-23 至 2026-07-23",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1100",
+        "title": "【测试】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "曹晴晴",
+        "creator": "曹晴晴",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-23",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=841e99c3eb16151690a40ab9da",
+        "rowText": "【測試】【测试】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示\nID: MFTB-1100 | 状态: 待处理 | 优先级: 中\n负责人: 曹晴晴 | 提报人: 曹晴晴\n迭代版本: 未规划 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1099",
+        "title": "【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-23",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f8cde610b2596a367686eea082",
+        "rowText": "【任务】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示\nID: MFTB-1099 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1098",
+        "title": "【大係統】團購到店-商家端-门店QR_CODE",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "梁富城",
+        "creator": "梁富城",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-27",
+        "planEnd": "2026-07-27",
+        "createDate": "2026-07-23",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=eff0449c41c46604f0b1f973ba",
+        "rowText": "【任务】【大係統】團購到店-商家端-门店QR_CODE\nID: MFTB-1098 | 状态: 未开始 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-23 | 排期规划: 2026-07-27 至 2026-07-27",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1096",
+        "title": "【大係統】團購到店-商家端-门店设施与服务",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "梁富城",
+        "creator": "梁富城",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-24",
+        "planEnd": "2026-07-24",
+        "createDate": "2026-07-23",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=92c8e5d39da688bea97f55a534",
+        "rowText": "【任务】【大係統】團購到店-商家端-门店设施与服务\nID: MFTB-1096 | 状态: 未开始 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-23 | 排期规划: 2026-07-24 至 2026-07-24",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1095",
+        "title": "【大係統】團購到店-商家端-门店公告",
+        "status": "开发中",
+        "priority": "中",
+        "assignee": "梁富城",
+        "creator": "梁富城",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-23",
+        "planEnd": "2026-07-23",
+        "createDate": "2026-07-23",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=495c6ea7f23ed7955c4e6fa61e",
+        "rowText": "【任务】【大係統】團購到店-商家端-门店公告\nID: MFTB-1095 | 状态: 开发中 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-23 | 排期规划: 2026-07-23 至 2026-07-23",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1092",
         "title": "【產品】【大係統】用戶APP裝修_灯笼位需求变更",
         "status": "已完成",
@@ -2079,7 +2215,7 @@
       {
         "id": "MFTB-1088",
         "title": "【大係統】團購到店-商家端-营业时间",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "梁富城",
         "creator": "梁富城",
@@ -2089,7 +2225,7 @@
         "createDate": "2026-07-22",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8e7d9757c6486ffadf78d29d90",
-        "rowText": "【任务】【大係統】團購到店-商家端-营业时间\nID: MFTB-1088 | 状态: 开发中 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-22 | 排期规划: 2026-07-23 至 2026-07-23",
+        "rowText": "【任务】【大係統】團購到店-商家端-营业时间\nID: MFTB-1088 | 状态: 提交测试 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-22 | 排期规划: 2026-07-23 至 2026-07-23",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -21138,11 +21274,11 @@
       },
       {
         "date": "2026-07-23",
-        "total": 766,
-        "completed": 606,
+        "total": 774,
+        "completed": 607,
         "statusCounts": {
-          "已完成": 606,
-          "进行中": 160
+          "已完成": 607,
+          "进行中": 167
         }
       }
     ],
@@ -33043,8 +33179,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 5.2,
-      "delta": 5.2
+      "average": 5.0,
+      "delta": 5.0
     },
     "mfood": {
       "average": 0.0,
