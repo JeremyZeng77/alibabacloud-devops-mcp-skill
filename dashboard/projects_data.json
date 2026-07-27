@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-27T04:25:30.027123+00:00",
+  "compiledAt": "2026-07-27T06:11:22.512913+00:00",
   "latest": {
     "mftb": [
       {
@@ -2109,6 +2109,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1136",
+        "title": "【测试】【大係統】业务入口管理后台配置项需求变更",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "曹晴晴",
+        "creator": "曹晴晴",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-27",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5041fc2000f92d90b37587decc",
+        "rowText": "【測試】【测试】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1136 | 状态: 待处理 | 优先级: 中\n负责人: 曹晴晴 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1135",
@@ -21837,11 +21854,11 @@
       },
       {
         "date": "2026-07-27",
-        "total": 797,
+        "total": 798,
         "completed": 622,
         "statusCounts": {
           "已完成": 622,
-          "进行中": 175
+          "进行中": 176
         }
       }
     ],
