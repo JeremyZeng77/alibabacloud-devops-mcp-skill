@@ -583,10 +583,77 @@ function loadStateFromURL() {
     };
 }
 
+// 动态统计各角色下的人员数量，并更新下拉框选项文本（例如：服务端 (14人)）
+function updateRoleSelectsWithCounts() {
+    const roleCounts = {
+        Backend: 0,
+        Frontend: 0,
+        Mobile: 0,
+        UI: 0,
+        Ops: 0,
+        Product: 0,
+        PM: 0,
+        Tester: 0
+    };
+    
+    Object.values(DEVELOPER_ROLES_MAP).forEach(role => {
+        if (roleCounts[role] !== undefined) {
+            roleCounts[role]++;
+        }
+    });
+    
+    const totalCount = Object.values(roleCounts).reduce((sum, val) => sum + val, 0);
+    
+    const ganttLabels = {
+        all: `全角色 (${totalCount}人)`,
+        Backend: `服务端 (${roleCounts.Backend}人)`,
+        Frontend: `前端开发 (${roleCounts.Frontend}人)`,
+        Mobile: `移动开发 (${roleCounts.Mobile}人)`,
+        Tester: `测试 (${roleCounts.Tester}人)`,
+        Product: `产品 (${roleCounts.Product}人)`,
+        UI: `UI设计 (${roleCounts.UI}人)`,
+        PM: `项目经理 (${roleCounts.PM}人)`,
+        Ops: `运维 (${roleCounts.Ops}人)`
+    };
+
+    const auditLabels = {
+        all: `全部角色 (${totalCount}人)`,
+        Backend: `服务端 (${roleCounts.Backend}人)`,
+        Frontend: `前端 (${roleCounts.Frontend}人)`,
+        Mobile: `移动端 (${roleCounts.Mobile}人)`,
+        Tester: `测试 (${roleCounts.Tester}人)`,
+        Product: `产品 (${roleCounts.Product}人)`,
+        UI: `UI设计 (${roleCounts.UI}人)`,
+        PM: `项目经理 (${roleCounts.PM}人)`,
+        Ops: `运维 (${roleCounts.Ops}人)`
+    };
+    
+    const selectGantt = document.getElementById('gantt-role-select');
+    if (selectGantt) {
+        Array.from(selectGantt.options).forEach(opt => {
+            const val = opt.value;
+            if (ganttLabels[val]) {
+                opt.textContent = ganttLabels[val];
+            }
+        });
+    }
+
+    const selectAudit = document.getElementById('audit-role-select');
+    if (selectAudit) {
+        Array.from(selectAudit.options).forEach(opt => {
+            const val = opt.value;
+            if (auditLabels[val]) {
+                opt.textContent = auditLabels[val];
+            }
+        });
+    }
+}
+
 async function loadDashboardData() {
     try {
         await loadCriticalPathConfig();
         loadStateFromURL();
+        updateRoleSelectsWithCounts(); // 初始化更新筛选下拉框人数
         
         const response = await fetch('./projects_data.json?t=' + new Date().getTime());
         if (!response.ok) throw new Error('Data file not found');
