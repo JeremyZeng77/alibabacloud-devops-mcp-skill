@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-27T10:48:45.824888+00:00",
+  "compiledAt": "2026-07-27T11:29:31.737418+00:00",
   "latest": {
     "mftb": [
       {
@@ -209,7 +209,7 @@
       {
         "id": "MFTB-1056",
         "title": "【大係統】业务入口管理后台配置项需求变更",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "周昱强",
         "creator": "周昱强",
@@ -219,7 +219,7 @@
         "createDate": "2026-07-20",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e18fae0a9135e1a861cf5ddf4e",
-        "rowText": "【产品类需求】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1056 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1056 | 状态: 待测试 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2126,6 +2126,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1157",
+        "title": "【服务端】【大係統】业务入口管理后台配置项需求变更",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "朱敬辉",
+        "creator": "朱敬辉",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-07-27",
+        "planEnd": "2026-07-27",
+        "createDate": "2026-07-27",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=acd0002d35902a7add3cb7a54a",
+        "rowText": "【任务】【服务端】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1157 | 状态: 提交测试 | 优先级: 中\n负责人: 朱敬辉 | 提报人: 朱敬辉\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-27 | 排期规划: 2026-07-27 至 2026-07-27",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1156",
@@ -22142,46 +22159,46 @@
       {
         "date": "2026-07-23",
         "total": 779,
-        "completed": 617,
+        "completed": 618,
         "statusCounts": {
-          "已完成": 617,
-          "进行中": 162
+          "已完成": 618,
+          "进行中": 161
         }
       },
       {
         "date": "2026-07-24",
         "total": 795,
-        "completed": 626,
+        "completed": 627,
         "statusCounts": {
-          "已完成": 626,
-          "进行中": 169
+          "已完成": 627,
+          "进行中": 168
         }
       },
       {
         "date": "2026-07-25",
         "total": 795,
-        "completed": 626,
+        "completed": 627,
         "statusCounts": {
-          "已完成": 626,
-          "进行中": 169
+          "已完成": 627,
+          "进行中": 168
         }
       },
       {
         "date": "2026-07-26",
         "total": 795,
-        "completed": 626,
+        "completed": 627,
         "statusCounts": {
-          "已完成": 626,
-          "进行中": 169
+          "已完成": 627,
+          "进行中": 168
         }
       },
       {
         "date": "2026-07-27",
-        "total": 802,
-        "completed": 627,
+        "total": 803,
+        "completed": 629,
         "statusCounts": {
-          "已完成": 627,
-          "进行中": 175
+          "已完成": 629,
+          "进行中": 174
         }
       }
     ],
