@@ -66,22 +66,45 @@ const BRIDGE_API_BASE = (window.location.hostname === 'localhost' || window.loca
 const AUTH_CONFIG = {
     username: 'jeremy',
     password: 'Abcd.1234@Jeremy',
-    sessionExpiryDays: 7
+    sessionExpiryDays: 7,      // 滑动超时：用户无操作达 7 天后失效
+    absoluteExpiryDays: 14     // 绝对超时：自登录起，连续登录达 14 天后强制失效
 };
 
 // Check Session on Startup
-function checkSession() {
+function checkSession(refreshSliding = true) {
     const token = localStorage.getItem('devops_session_token');
     const timestamp = localStorage.getItem('devops_session_timestamp');
+    const loginTime = localStorage.getItem('devops_session_login_time');
     
     if (token === 'devops-session-active' && timestamp) {
-        const elapsed = Date.now() - parseInt(timestamp, 10);
-        const expiryMs = AUTH_CONFIG.sessionExpiryDays * 24 * 60 * 60 * 1000;
-        if (elapsed < expiryMs) {
-            // Valid session, refresh sliding expiration
-            localStorage.setItem('devops_session_timestamp', Date.now());
-            return true;
+        const now = Date.now();
+        const elapsed = now - parseInt(timestamp, 10);
+        const slidingExpiryMs = AUTH_CONFIG.sessionExpiryDays * 24 * 60 * 60 * 1000;
+        
+        // 1. 检查滑动超时
+        if (elapsed >= slidingExpiryMs) {
+            clearSession();
+            return false;
         }
+        
+        // 2. 检查绝对超时
+        if (loginTime) {
+            const elapsedLogin = now - parseInt(loginTime, 10);
+            const absoluteExpiryMs = AUTH_CONFIG.absoluteExpiryDays * 24 * 60 * 60 * 1000;
+            if (elapsedLogin >= absoluteExpiryMs) {
+                clearSession();
+                return false;
+            }
+        } else {
+            // 为旧 Session 兼容，补记录当前 timestamp 为登录时间
+            localStorage.setItem('devops_session_login_time', timestamp);
+        }
+        
+        // 验证通过，如果需要刷新滑动过期时间，则更新
+        if (refreshSliding) {
+            localStorage.setItem('devops_session_timestamp', now.toString());
+        }
+        return true;
     }
     
     clearSession();
@@ -91,6 +114,7 @@ function checkSession() {
 function clearSession() {
     localStorage.removeItem('devops_session_token');
     localStorage.removeItem('devops_session_timestamp');
+    localStorage.removeItem('devops_session_login_time');
 }
 
 function handleLoginSubmit() {
@@ -105,8 +129,10 @@ function handleLoginSubmit() {
     
     if (username.toLowerCase() === AUTH_CONFIG.username && password === AUTH_CONFIG.password) {
         // Success
+        const nowStr = Date.now().toString();
         localStorage.setItem('devops_session_token', 'devops-session-active');
-        localStorage.setItem('devops_session_timestamp', Date.now());
+        localStorage.setItem('devops_session_timestamp', nowStr);
+        localStorage.setItem('devops_session_login_time', nowStr);
         
         // Fade out overlay
         const overlay = document.getElementById('login-overlay');
@@ -147,9 +173,32 @@ function handleLogout() {
     window.location.reload();
 }
 
+// 监听用户活跃事件以刷新滑动超时
+function initSessionActivityListener() {
+    const events = ['mousedown', 'keydown', 'scroll', 'touchstart'];
+    let lastRefresh = Date.now();
+    
+    const handler = () => {
+        const now = Date.now();
+        // 节流处理，限制 1 分钟最多刷新一次 localStorage 写入以优化性能
+        if (now - lastRefresh > 60000) {
+            const token = localStorage.getItem('devops_session_token');
+            if (token === 'devops-session-active') {
+                localStorage.setItem('devops_session_timestamp', now.toString());
+            }
+            lastRefresh = now;
+        }
+    };
+    
+    events.forEach(evt => {
+        window.addEventListener(evt, handler, { passive: true });
+    });
+}
+
 async function startDashboardApp() {
     initGanttState();
     initEventListeners();
+    initSessionActivityListener(); // 绑定活跃状态刷新滑动过期
     initAutoSync();
     await loadDashboardData();
     
@@ -567,6 +616,12 @@ async function loadDashboardData() {
 
 // Poll data silently in background
 async function pollDashboardData() {
+    // 后台静默轮询时进行只读检测，如超时则强制登出
+    if (!checkSession(false)) {
+        handleLogout();
+        return;
+    }
+    
     try {
         const response = await fetch('./projects_data.json?t=' + new Date().getTime());
         if (!response.ok) return;
