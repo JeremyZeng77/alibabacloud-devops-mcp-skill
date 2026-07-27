@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-27T06:11:22.512913+00:00",
+  "compiledAt": "2026-07-27T07:37:32.085409+00:00",
   "latest": {
     "mftb": [
       {
@@ -243,7 +243,7 @@
       {
         "id": "MFTB-1031",
         "title": "【補】到家業務_門店管理 新增門店免費標籤",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "廖荣",
         "creator": "廖荣",
@@ -253,7 +253,7 @@
         "createDate": "2026-07-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f2ccdce50cdaab1a25330de636",
-        "rowText": "【产品类需求】【補】到家業務_門店管理 新增門店免費標籤\nID: MFTB-1031 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【補】到家業務_門店管理 新增門店免費標籤\nID: MFTB-1031 | 状态: 待测试 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2912,7 +2912,7 @@
       {
         "id": "MFTB-1054",
         "title": "【前端】【補】到家業務_門店管理 新增門店免費標籤",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "周忠浩",
         "creator": "周忠浩",
@@ -2922,7 +2922,7 @@
         "createDate": "2026-07-20",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=2888e6d995b0e92d4057f15d17",
-        "rowText": "【任务】【前端】【補】到家業務_門店管理 新增門店免費標籤\nID: MFTB-1054 | 状态: 未开始 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: 未规划 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【補】到家業務_門店管理 新增門店免費標籤\nID: MFTB-1054 | 状态: 提交测试 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: 未规划 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -13569,6 +13569,74 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1140",
+        "title": "【闪蜂-iOS】APP登录后，未上传设备号到后台的用户登录日志详情中",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "杨庆龙",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-27",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c04023761fa6a181fbb10a6e86",
+        "rowText": "【缺陷】【闪蜂-iOS】APP登录后，未上传设备号到后台的用户登录日志详情中\nID: MFTB-1140 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1139",
+        "title": "【闪蜂-iOS】【我的-设置-账户与安全】apple绑定，绑定提示成功，实际上是绑定失败。",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "杨庆龙",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-27",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=65d9ecd4601b9ed02564d21014",
+        "rowText": "【缺陷】【闪蜂-iOS】【我的-设置-账户与安全】apple绑定，绑定提示成功，实际上是绑定失败。\nID: MFTB-1139 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1138",
+        "title": "【闪蜂】【我的】Android-个人信息设置，修改不了生日",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "卓天鸿",
+        "creator": "杨庆龙",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-27",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=24e100675c3c5c79891582402f",
+        "rowText": "【缺陷】【闪蜂】【我的】Android-个人信息设置，修改不了生日\nID: MFTB-1138 | 状态: 待确认 | 优先级: 中\n负责人: 卓天鸿 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1137",
+        "title": "【我的】iOS-个人信息设置，修改不了昵称",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "陈剑",
+        "creator": "杨庆龙",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-27",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=cfe1b94e34ad40d71bc663a2f5",
+        "rowText": "【缺陷】【我的】iOS-个人信息设置，修改不了昵称\nID: MFTB-1137 | 状态: 待确认 | 优先级: 中\n负责人: 陈剑 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1134",
         "title": "【红包列表】新增红包，选择指定区域限制后保存，提示请求格式错误",
         "status": "待确认",
@@ -21792,73 +21860,73 @@
       {
         "date": "2026-07-20",
         "total": 751,
-        "completed": 597,
+        "completed": 598,
         "statusCounts": {
-          "已完成": 597,
-          "进行中": 154
+          "已完成": 598,
+          "进行中": 153
         }
       },
       {
         "date": "2026-07-21",
         "total": 757,
-        "completed": 603,
+        "completed": 604,
         "statusCounts": {
-          "已完成": 603,
-          "进行中": 154
+          "已完成": 604,
+          "进行中": 153
         }
       },
       {
         "date": "2026-07-22",
         "total": 766,
-        "completed": 606,
+        "completed": 607,
         "statusCounts": {
-          "已完成": 606,
-          "进行中": 160
+          "已完成": 607,
+          "进行中": 159
         }
       },
       {
         "date": "2026-07-23",
         "total": 780,
-        "completed": 614,
+        "completed": 616,
         "statusCounts": {
-          "已完成": 614,
-          "进行中": 166
+          "已完成": 616,
+          "进行中": 164
         }
       },
       {
         "date": "2026-07-24",
         "total": 796,
-        "completed": 621,
+        "completed": 623,
         "statusCounts": {
-          "已完成": 621,
-          "进行中": 175
+          "已完成": 623,
+          "进行中": 173
         }
       },
       {
         "date": "2026-07-25",
         "total": 796,
-        "completed": 621,
+        "completed": 623,
         "statusCounts": {
-          "已完成": 621,
-          "进行中": 175
+          "已完成": 623,
+          "进行中": 173
         }
       },
       {
         "date": "2026-07-26",
         "total": 796,
-        "completed": 621,
+        "completed": 623,
         "statusCounts": {
-          "已完成": 621,
-          "进行中": 175
+          "已完成": 623,
+          "进行中": 173
         }
       },
       {
         "date": "2026-07-27",
         "total": 798,
-        "completed": 622,
+        "completed": 624,
         "statusCounts": {
-          "已完成": 622,
-          "进行中": 176
+          "已完成": 624,
+          "进行中": 174
         }
       }
     ],
