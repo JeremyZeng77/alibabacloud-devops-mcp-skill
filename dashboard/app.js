@@ -2730,9 +2730,14 @@ function renderAuditView() {
         Ops: []
     };
 
-    // Calculate active items per assignee in current project
+    // 跨项目全局统计活跃未完成任务数，确保成员在所有项目均无工作时才算闲置
+    const allProjectsItems = [
+        ...(state.latest['mftb'] || []),
+        ...(state.latest['mfood'] || [])
+    ];
+    
     const activeItemCounts = {};
-    items.forEach(x => {
+    allProjectsItems.forEach(x => {
         if (x.assignee && !isItemCompleted(x)) {
             activeItemCounts[x.assignee] = (activeItemCounts[x.assignee] || 0) + 1;
         }
