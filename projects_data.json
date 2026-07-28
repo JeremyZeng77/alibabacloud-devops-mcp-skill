@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-28T10:05:14.826733+00:00",
+  "compiledAt": "2026-07-28T10:40:04.615379+00:00",
   "latest": {
     "mftb": [
       {
@@ -14060,6 +14060,40 @@
         "rowText": "【产品】【產品】【大係統】管理後臺權限管理模塊\nID: MFTB-3 | 状态: 已完成 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: 2026-03-26 至 2026-03-31",
         "project": "MFTB集团项目",
         "category": "Task"
+      },
+      {
+        "id": "MFTB-1205",
+        "title": "【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-28",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=80d1171c2b225962503357019e",
+        "rowText": "【缺陷】【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡\nID: MFTB-1205 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1204",
+        "title": "【红包管理-膨胀活动】复制膨胀活动，报错",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "黄春晓",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-28",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=36acd560ef0a74fa87c8ee13d2",
+        "rowText": "【缺陷】【红包管理-膨胀活动】复制膨胀活动，报错\nID: MFTB-1204 | 状态: 待确认 | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
       },
       {
         "id": "MFTB-1202",
