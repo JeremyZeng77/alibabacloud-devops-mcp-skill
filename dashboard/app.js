@@ -1594,7 +1594,7 @@ function renderWeeklyReport(weekVal) {
                 <div class="pmo-advice-header">
                     <div class="pmo-advice-title-group">
                         <span class="pmo-advice-icon">💡</span>
-                        <h3 class="pmo-advice-title">PMO 项目管理总监专业建议</h3>
+                        <h3 class="pmo-advice-title">项目管理建议</h3>
                     </div>
                     <span class="pmo-advice-meta">更新时间：${advice.updatedAt || '刚刚'}</span>
                 </div>
@@ -1608,12 +1608,12 @@ function renderWeeklyReport(weekVal) {
                 <div class="pmo-advice-header">
                     <div class="pmo-advice-title-group">
                         <span class="pmo-advice-icon">💡</span>
-                        <h3 class="pmo-advice-title">PMO 项目管理总监专业建议</h3>
+                        <h3 class="pmo-advice-title">项目管理建议</h3>
                     </div>
                     <span class="pmo-advice-meta">尚未更新</span>
                 </div>
                 <div class="pmo-advice-empty">
-                    暂无今日 PMO 管理总监的项目建议。系统将在每日 11:30 和 17:30 自动生成并推送最新大盘建议。
+                    暂无今日项目管理建议。系统将在每日 11:30 和 17:30 自动生成并推送最新大盘建议。
                 </div>
             `;
         }

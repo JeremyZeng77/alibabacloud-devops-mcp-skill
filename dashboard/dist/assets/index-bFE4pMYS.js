@@ -14,7 +14,7 @@
                 <div class="pmo-advice-header">
                     <div class="pmo-advice-title-group">
                         <span class="pmo-advice-icon">💡</span>
-                        <h3 class="pmo-advice-title">PMO 项目管理总监专业建议</h3>
+                        <h3 class="pmo-advice-title">项目管理建议</h3>
                     </div>
                     <span class="pmo-advice-meta">更新时间：${i.updatedAt||"刚刚"}</span>
                 </div>
@@ -25,12 +25,12 @@
                 <div class="pmo-advice-header">
                     <div class="pmo-advice-title-group">
                         <span class="pmo-advice-icon">💡</span>
-                        <h3 class="pmo-advice-title">PMO 项目管理总监专业建议</h3>
+                        <h3 class="pmo-advice-title">项目管理建议</h3>
                     </div>
                     <span class="pmo-advice-meta">尚未更新</span>
                 </div>
                 <div class="pmo-advice-empty">
-                    暂无今日 PMO 管理总监的项目建议。系统将在每日 11:30 和 17:30 自动生成并推送最新大盘建议。
+                    暂无今日项目管理建议。系统将在每日 11:30 和 17:30 自动生成并推送最新大盘建议。
                 </div>
             `)}const o=a.weeklyReports.find(i=>i.week===e);if(!o){["weekly-progress","weekly-planning","weekly-assessment","weekly-risks","weekly-recommendations"].forEach(i=>{document.getElementById(i).innerHTML='<div style="color: var(--text-muted)">本周周期暂未编制文字周报</div>'}),document.getElementById("weekly-metrics-card").style.display="none";return}const s=o[t]||o,r=document.getElementById("weekly-metrics-card");s.metrics&&s.metrics.trim()&&s.metrics.trim()!=='<div style="color: var(--text-muted)">暂无编制</div>'?(r.style.display="block",document.getElementById("weekly-metrics").innerHTML=z(s.metrics)):r.style.display="none",document.getElementById("weekly-progress").innerHTML=z(s.progress),document.getElementById("weekly-planning").innerHTML=z(s.planning),document.getElementById("weekly-assessment").innerHTML=z(s.assessment),document.getElementById("weekly-risks").innerHTML=z(s.risks,!0);const u=document.getElementById("weekly-recommendations"),c=s.actionItems||[];if(c.length>0){const i=c.filter(E=>E.completed).length,g=c.length,m=g>0?i/g*100:0,d=document.querySelector(".card-badge-purple");if(d){let E=d.querySelector(".aicr-badge");E||(E=document.createElement("span"),E.className="aicr-badge",d.appendChild(E)),E.style.cssText="margin-left: auto; font-size: 13.5px; font-weight: 600; color: var(--color-primary); background: rgba(0, 242, 254, 0.1); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(0, 242, 254, 0.2);",E.textContent=`建议落实率 (AICR): ${m.toFixed(1)}%`,d.style.display="flex",d.style.alignItems="center",d.style.width="100%"}let l=`
             <table class="weekly-data-table" style="margin-top: 16px;">
