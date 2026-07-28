@@ -1560,7 +1560,12 @@ function applyFilters() {
 
         tr.innerHTML = `
             <td class="cell-id" style="font-family: monospace; color: var(--color-primary);">${item.id || fallbackPrefix + (index + 1)}</td>
-            <td class="cell-title">${escapeHtml(item.title)}</td>
+            <td class="cell-title">
+                ${item.category === 'Req' ? '<span class="badge-cat badge-cat-req">💡 需求</span>' : 
+                  item.category === 'Task' ? '<span class="badge-cat badge-cat-task">🔧 任务</span>' : 
+                  item.category === 'Bug' ? '<span class="badge-cat badge-cat-bug">🐛 缺陷</span>' : ''}
+                ${escapeHtml(item.title)}
+            </td>
             <td>${statusBadge}</td>
             <td>${prioBadge}</td>
             <td style="color: var(--text-secondary);">${escapeHtml(item.assignee)}</td>
@@ -1796,8 +1801,13 @@ function parseInlineStyles(text) {
 
 // Show Drill-down Modal
 function showItemDetail(item) {
-    document.getElementById('modal-item-id').textContent = item.id || '需求详情';
-    document.getElementById('modal-item-title').textContent = item.title;
+    const categoryName = item.category === 'Req' ? '需求' : (item.category === 'Task' ? '任务' : (item.category === 'Bug' ? '缺陷' : '工作项'));
+    document.getElementById('modal-item-id').textContent = `${categoryName}详情 - ${item.id}`;
+    
+    const catBadge = item.category === 'Req' ? '<span class="badge-cat badge-cat-req">💡 需求</span>' : 
+                     item.category === 'Task' ? '<span class="badge-cat badge-cat-task">🔧 任务</span>' : 
+                     item.category === 'Bug' ? '<span class="badge-cat badge-cat-bug">🐛 缺陷</span>' : '';
+    document.getElementById('modal-item-title').innerHTML = `${catBadge} ${escapeHtml(item.title)}`;
     
     document.getElementById('modal-item-status').textContent = item.status;
     document.getElementById('modal-item-status').className = 'field-value badge ' + getStatusBadgeClass(item.status);
@@ -2758,11 +2768,14 @@ function renderAuditView() {
                 const roleKey = DEVELOPER_ROLES_MAP[name] || 'Fullstack';
                 const roleName = roleMeta[roleKey] ? roleMeta[roleKey].name : '开发成员';
                 
-                const taskLinks = list.map(item => `
-                    <span class="message-task-link" onclick="showItemDetailById('${item.id}')" title="点击查看详情">
-                        [${item.id}] ${escapeHtml(item.title.substring(0, 20))}${item.title.length > 20 ? '...' : ''}
-                    </span>
-                `).join(', ');
+                const taskLinks = list.map(item => {
+                    const icon = item.category === 'Req' ? '💡' : (item.category === 'Task' ? '🔧' : (item.category === 'Bug' ? '🐛' : ''));
+                    return `
+                        <span class="message-task-link" onclick="showItemDetailById('${item.id}')" title="点击查看详情">
+                            ${icon} [${item.id}] ${escapeHtml(item.title.substring(0, 20))}${item.title.length > 20 ? '...' : ''}
+                        </span>
+                    `;
+                }).join(', ');
                 
                 const li = document.createElement('li');
                 li.className = 'message-item warning';
@@ -2915,11 +2928,14 @@ function renderAuditView() {
                     
                     members.forEach(name => {
                         const list = healthyMemberTasks[name];
-                        const taskLinks = list.map(item => `
-                            <span class="message-task-link" onclick="showItemDetailById('${item.id}')" title="点击查看详情" style="color: var(--color-emerald); border-bottom-color: rgba(16, 185, 129, 0.3);">
-                                [${item.id}] ${escapeHtml(item.title.substring(0, 20))}${item.title.length > 20 ? '...' : ''}
-                            </span>
-                        `).join(', ');
+                        const taskLinks = list.map(item => {
+                            const icon = item.category === 'Req' ? '💡' : (item.category === 'Task' ? '🔧' : (item.category === 'Bug' ? '🐛' : ''));
+                            return `
+                                <span class="message-task-link" onclick="showItemDetailById('${item.id}')" title="点击查看详情" style="color: var(--color-emerald); border-bottom-color: rgba(16, 185, 129, 0.3);">
+                                    ${icon} [${item.id}] ${escapeHtml(item.title.substring(0, 20))}${item.title.length > 20 ? '...' : ''}
+                                </span>
+                            `;
+                        }).join(', ');
 
                         const li = document.createElement('li');
                         li.className = 'message-item success';
