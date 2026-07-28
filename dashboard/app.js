@@ -2852,9 +2852,92 @@ function renderAuditView() {
             idleContainer.appendChild(ul);
         } else {
             idleContainer.innerHTML = `
-                <div class="message-empty success">
-                    <span class="message-empty-icon">✅</span>
+                <div class="message-empty info">
+                    <span class="message-empty-icon">💡</span>
                     <span>没有符合当前筛选条件的空闲人员记录。</span>
+                </div>
+            `;
+        }
+    }
+
+    // --- Part C: Healthy Resources Audit ---
+    // 统计在当前项目中：有正在开发中的活跃任务，且所有任务计划起止时间排期完整的规范开发人员
+    const healthyMembersByRole = {
+        Frontend: [],
+        Backend: [],
+        Mobile: [],
+        UI: [],
+        Tester: [],
+        Product: [],
+        PM: [],
+        Ops: []
+    };
+
+    const healthyMemberTasks = {};
+
+    Object.entries(DEVELOPER_ROLES_MAP).forEach(([name, role]) => {
+        if (auditedRoles.includes(role)) {
+            // 当前项目下的未完成活跃卡片
+            const currentProjectActiveItems = items.filter(x => x.assignee === name && !isItemCompleted(x));
+            const activeCount = currentProjectActiveItems.length;
+            
+            if (activeCount > 0) {
+                // 检查这些卡片中是否有缺失排期的（计划起止时间漏填的）
+                const hasMissingDate = currentProjectActiveItems.some(x => 
+                    (x.category === 'Task' || x.category === 'Req') && (!x.planStart || !x.planEnd)
+                );
+                
+                if (!hasMissingDate) {
+                    // 符合排期规范且正在饱和开发中的条件
+                    const matchesSearch = !searchQuery || name.toLowerCase().includes(searchQuery);
+                    const matchesRole = selectedRole === 'all' || role === selectedRole;
+                    if (matchesSearch && matchesRole) {
+                        healthyMembersByRole[role].push(name);
+                        healthyMemberTasks[name] = currentProjectActiveItems;
+                    }
+                }
+            }
+        }
+    });
+
+    const healthyContainer = document.getElementById('audit-healthy-members-container');
+    if (healthyContainer) {
+        healthyContainer.innerHTML = '';
+        const totalHealthyCount = Object.values(healthyMembersByRole).reduce((sum, arr) => sum + arr.length, 0);
+
+        if (totalHealthyCount > 0) {
+            const ul = document.createElement('ul');
+            ul.className = 'message-list';
+            Object.entries(healthyMembersByRole).forEach(([role, members]) => {
+                if (members.length > 0) {
+                    const roleName = roleMeta[role].name;
+                    const badgeClass = roleMeta[role].badge;
+                    
+                    members.forEach(name => {
+                        const list = healthyMemberTasks[name];
+                        const taskLinks = list.map(item => `
+                            <span class="message-task-link" onclick="showItemDetailById('${item.id}')" title="点击查看详情" style="color: var(--color-emerald); border-bottom-color: rgba(16, 185, 129, 0.3);">
+                                [${item.id}] ${escapeHtml(item.title.substring(0, 20))}${item.title.length > 20 ? '...' : ''}
+                            </span>
+                        `).join(', ');
+
+                        const li = document.createElement('li');
+                        li.className = 'message-item success';
+                        li.innerHTML = `
+                            <span class="message-badge ${badgeClass}" style="background: rgba(16, 185, 129, 0.15); color: var(--color-emerald); border-color: rgba(16, 185, 129, 0.3);">${roleName}</span>
+                            <strong style="color: var(--color-emerald);">${escapeHtml(name)}</strong>: 
+                            正在负责 ${list.length} 个排期规范任务：${taskLinks}
+                        `;
+                        ul.appendChild(li);
+                    });
+                }
+            });
+            healthyContainer.appendChild(ul);
+        } else {
+            healthyContainer.innerHTML = `
+                <div class="message-empty success">
+                    <span class="message-empty-icon">💡</span>
+                    <span>没有符合当前筛选条件的排期规范开发中人员。</span>
                 </div>
             `;
         }

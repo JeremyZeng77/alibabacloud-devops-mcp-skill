@@ -2270,6 +2270,12 @@ input:checked + .slider:before {
     border-left: 4px solid #0984e3;
 }
 
+.message-item.success {
+    background: rgba(16, 185, 129, 0.06);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    border-left: 4px solid #10b981;
+}
+
 .message-badge {
     padding: 2px 8px;
     border-radius: 4px;
