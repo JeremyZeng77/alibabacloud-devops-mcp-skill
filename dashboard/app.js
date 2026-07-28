@@ -14,7 +14,8 @@ let state = {
     ganttCategory: 'Req', // 'Req', 'Task', or 'Bug'
     ganttExpandedAssignees: {},
     leadTimeKPI: { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } },
-    criticalPathConfig: null
+    criticalPathConfig: null,
+    pmoAdvice: {}
 };
 
 
@@ -665,6 +666,7 @@ async function loadDashboardData() {
         state.history = db.history;
         state.weeklyReports = db.weeklyReports || [];
         state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
+        state.pmoAdvice = db.pmoAdvice || {};
 
         // Update timestamps
         updateTimestamps();
@@ -701,6 +703,7 @@ async function pollDashboardData() {
             state.history = db.history;
             state.weeklyReports = db.weeklyReports || [];
             state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
+            state.pmoAdvice = db.pmoAdvice || {};
             
             updateTimestamps();
             renderCurrentView();
@@ -1579,6 +1582,43 @@ function applyFilters() {
 
 // VIEW 3: Render Weekly Report Narratives
 function renderWeeklyReport(weekVal) {
+    const projKey = state.currentProject; // 'mftb' or 'mfood'
+
+    // 渲染 PMO 项目管理总监专业建议
+    const pmoAdviceContainer = document.getElementById('weekly-pmo-advice-container');
+    if (pmoAdviceContainer) {
+        const advice = (state.pmoAdvice && state.pmoAdvice[projKey]) ? state.pmoAdvice[projKey] : null;
+        if (advice && advice.content && advice.content.trim()) {
+            pmoAdviceContainer.style.display = 'block';
+            pmoAdviceContainer.innerHTML = `
+                <div class="pmo-advice-header">
+                    <div class="pmo-advice-title-group">
+                        <span class="pmo-advice-icon">💡</span>
+                        <h3 class="pmo-advice-title">PMO 项目管理总监专业建议</h3>
+                    </div>
+                    <span class="pmo-advice-meta">更新时间：${advice.updatedAt || '刚刚'}</span>
+                </div>
+                <div class="pmo-advice-content">
+                    ${parseNarrativeMarkdown(advice.content)}
+                </div>
+            `;
+        } else {
+            pmoAdviceContainer.style.display = 'block';
+            pmoAdviceContainer.innerHTML = `
+                <div class="pmo-advice-header">
+                    <div class="pmo-advice-title-group">
+                        <span class="pmo-advice-icon">💡</span>
+                        <h3 class="pmo-advice-title">PMO 项目管理总监专业建议</h3>
+                    </div>
+                    <span class="pmo-advice-meta">尚未更新</span>
+                </div>
+                <div class="pmo-advice-empty">
+                    暂无今日 PMO 管理总监的项目建议。系统将在每日 11:30 和 17:30 自动生成并推送最新大盘建议。
+                </div>
+            `;
+        }
+    }
+
     const report = state.weeklyReports.find(r => r.week === weekVal);
     if (!report) {
         ['weekly-progress', 'weekly-planning', 'weekly-assessment', 'weekly-risks', 'weekly-recommendations'].forEach(id => {
@@ -1588,7 +1628,6 @@ function renderWeeklyReport(weekVal) {
         return;
     }
 
-    const projKey = state.currentProject; // 'mftb' or 'mfood'
     const projReport = report[projKey] || report; // Fallback to root if not split
 
     // Render Metrics if available
