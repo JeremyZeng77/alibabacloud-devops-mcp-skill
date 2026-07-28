@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-28T03:57:19.973643+00:00",
+  "compiledAt": "2026-07-28T05:40:56.405463+00:00",
   "latest": {
     "mftb": [
       {
@@ -407,23 +407,6 @@
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00822fa40f47af3da90b428255",
         "rowText": "【产品类需求】【大系统】虚拟号码后台\nID: MFTB-999 | 状态: 待处理 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
-        "project": "MFTB集团项目",
-        "category": "Req"
-      },
-      {
-        "id": "MFTB-997",
-        "title": "【产品】【大系统】特殊区域管理",
-        "status": "已完成",
-        "priority": "中",
-        "assignee": "刘龙振海",
-        "creator": "刘龙振海",
-        "iteration": "MFTB-v1.0.1",
-        "planStart": "2026-07-16",
-        "planEnd": "2026-07-16",
-        "createDate": "2026-07-16",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c29f37d8ea5bcbe3895d19893e",
-        "rowText": "【产品类需求】【产品】【大系统】特殊区域管理\nID: MFTB-997 | 状态: 已完成 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-16 至 2026-07-16",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -838,7 +821,7 @@
       {
         "id": "MFTB-775",
         "title": "【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告",
-        "status": "待处理",
+        "status": "开发中",
         "priority": "中",
         "assignee": "周昱强",
         "creator": "周昱强",
@@ -848,7 +831,7 @@
         "createDate": "2026-06-24",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5b02b60d623f11e988b5ae8f53",
-        "rowText": "【产品类需求】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告\nID: MFTB-775 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-24 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告\nID: MFTB-775 | 状态: 开发中 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-24 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2160,6 +2143,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1171",
+        "title": "【服務端】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告",
+        "status": "开发挂起",
+        "priority": "中",
+        "assignee": "朱敬辉",
+        "creator": "朱敬辉",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-28",
+        "planEnd": "",
+        "createDate": "2026-07-28",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=25f2159ea7c996e11f1b5bd0d1",
+        "rowText": "【任务】【服務端】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告\nID: MFTB-1171 | 状态: 开发挂起 | 优先级: 中\n负责人: 朱敬辉 | 提报人: 朱敬辉\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-28 | 排期规划: 2026-07-28 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1169",
@@ -3688,6 +3688,23 @@
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=eb1a8ec6b7308d2ba3e9255938",
         "rowText": "【測試】【测试】【大係統】運營投放管理中，各個廣告跳轉設置交互修改\nID: MFTB-998 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 黄春晓 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-997",
+        "title": "【产品】【大系统】特殊区域管理",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "刘龙振海",
+        "creator": "刘龙振海",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-16",
+        "planEnd": "2026-07-16",
+        "createDate": "2026-07-16",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c29f37d8ea5bcbe3895d19893e",
+        "rowText": "【产品】【产品】【大系统】特殊区域管理\nID: MFTB-997 | 状态: 已完成 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-16 至 2026-07-16",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5309,7 +5326,7 @@
       {
         "id": "MFTB-848",
         "title": "【服務端】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告",
-        "status": "未开始",
+        "status": "开发挂起",
         "priority": "中",
         "assignee": "朱敬辉",
         "creator": "朱敬辉",
@@ -5319,7 +5336,7 @@
         "createDate": "2026-07-03",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=2b92a930414787ed849f8c5eaa",
-        "rowText": "【任务】【服務端】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告\nID: MFTB-848 | 状态: 未开始 | 优先级: 中\n负责人: 朱敬辉 | 提报人: 朱敬辉\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-03 | 排期规划: 2026-07-06 至 2026-07-08",
+        "rowText": "【任务】【服務端】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告\nID: MFTB-848 | 状态: 开发挂起 | 优先级: 中\n负责人: 朱敬辉 | 提报人: 朱敬辉\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-03 | 排期规划: 2026-07-06 至 2026-07-08",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -13771,6 +13788,23 @@
         "rowText": "【产品】【產品】【大係統】管理後臺權限管理模塊\nID: MFTB-3 | 状态: 已完成 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: 2026-03-26 至 2026-03-31",
         "project": "MFTB集团项目",
         "category": "Task"
+      },
+      {
+        "id": "MFTB-1172",
+        "title": "【大係統】【 用户端APP】语言切换是无效",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "陈剑",
+        "creator": "李云锋",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-28",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=dde9e8c5e94ccd22c2959fe0e0",
+        "rowText": "【缺陷】【大係統】【 用户端APP】语言切换是无效\nID: MFTB-1172 | 状态: 待确认 | 优先级: 中\n负责人: 陈剑 | 提报人: 李云锋\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
       },
       {
         "id": "MFTB-1168",
@@ -22424,11 +22458,11 @@
       },
       {
         "date": "2026-07-28",
-        "total": 810,
+        "total": 811,
         "completed": 631,
         "statusCounts": {
           "已完成": 631,
-          "进行中": 179
+          "进行中": 180
         }
       }
     ],
