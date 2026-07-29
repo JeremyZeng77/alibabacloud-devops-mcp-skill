@@ -306,6 +306,13 @@ function initEventListeners() {
             renderAuditView();
         });
     }
+    const auditIgnoreReqCheckbox = document.getElementById('audit-ignore-req-checkbox');
+    if (auditIgnoreReqCheckbox) {
+        auditIgnoreReqCheckbox.addEventListener('change', (e) => {
+            auditFilters.ignoreReq = e.target.checked;
+            renderAuditView();
+        });
+    }
 
     // Filters event listeners
     ['filter-search', 'filter-category', 'filter-status', 'filter-assignee', 'filter-priority', 'filter-iteration'].forEach(id => {
@@ -2745,7 +2752,8 @@ function renderRiskRadar(items) {
 // Global variables to store current search and role filters for audit view
 const auditFilters = {
     search: '',
-    role: 'all'
+    role: 'all',
+    ignoreReq: false
 };
 
 // Render Audit View
@@ -2765,7 +2773,10 @@ function renderAuditView() {
     const missingDateItems = items.filter(x => {
         if (isItemCompleted(x)) return false;
         if (!x.assignee) return false;
-        if (x.category !== 'Task' && x.category !== 'Req') return false;
+        
+        const allowedCategories = auditFilters.ignoreReq ? ['Task'] : ['Task', 'Req'];
+        if (!allowedCategories.includes(x.category)) return false;
+        
         return !x.planStart || !x.planEnd;
     });
 
@@ -2935,8 +2946,9 @@ function renderAuditView() {
             
             if (activeCount > 0) {
                 // 检查这些卡片中是否有缺失排期的（计划起止时间漏填的）
+                const allowedCategories = auditFilters.ignoreReq ? ['Task'] : ['Task', 'Req'];
                 const hasMissingDate = currentProjectActiveItems.some(x => 
-                    (x.category === 'Task' || x.category === 'Req') && (!x.planStart || !x.planEnd)
+                    allowedCategories.includes(x.category) && (!x.planStart || !x.planEnd)
                 );
                 
                 if (!hasMissingDate) {
