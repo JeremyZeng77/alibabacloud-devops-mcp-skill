@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-29T02:01:16.250916+00:00",
+  "compiledAt": "2026-07-29T02:53:16.634735+00:00",
   "latest": {
     "mftb": [
       {
@@ -243,7 +243,7 @@
       {
         "id": "MFTB-1056",
         "title": "【大係統】业务入口管理后台配置项需求变更",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "周昱强",
         "creator": "周昱强",
@@ -253,7 +253,7 @@
         "createDate": "2026-07-20",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e18fae0a9135e1a861cf5ddf4e",
-        "rowText": "【产品类需求】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1056 | 状态: 测试中 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1056 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2283,17 +2283,17 @@
       {
         "id": "MFTB-1185",
         "title": "【测试】【大係統】业务入口管理后台配置项需求变更",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "曹晴晴",
         "creator": "曹晴晴",
         "iteration": "MFTB-v1.0.2",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-07-28",
+        "planEnd": "2026-07-29",
         "createDate": "2026-07-28",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d4f546a4f582eb3630be5c7534",
-        "rowText": "【測試】【测试】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1185 | 状态: 测试中 | 优先级: 中\n负责人: 曹晴晴 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【大係統】业务入口管理后台配置项需求变更\nID: MFTB-1185 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 曹晴晴 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: 2026-07-28 至 2026-07-29",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -23063,10 +23063,10 @@
       {
         "date": "2026-07-29",
         "total": 830,
-        "completed": 644,
+        "completed": 645,
         "statusCounts": {
-          "已完成": 644,
-          "进行中": 186
+          "已完成": 645,
+          "进行中": 185
         }
       }
     ],
