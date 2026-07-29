@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-29T09:41:54.992555+00:00",
+  "compiledAt": "2026-07-29T10:43:56.172706+00:00",
   "latest": {
     "mftb": [
       {
@@ -38,7 +38,7 @@
       },
       {
         "id": "MFTB-1170",
-        "title": "【需求變更】每個自然月僅可修改1次默認提現卡",
+        "title": "【需求變更】修改默認提現卡需審核",
         "status": "待处理",
         "priority": "中",
         "assignee": "龙颖之",
@@ -49,7 +49,7 @@
         "createDate": "2026-07-28",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=68f1c21f6fedc9f32bfa661446",
-        "rowText": "【产品类需求】【需求變更】每個自然月僅可修改1次默認提現卡\nID: MFTB-1170 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【需求變更】修改默認提現卡需審核\nID: MFTB-1170 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -175,17 +175,17 @@
       {
         "id": "MFTB-1091",
         "title": "【大係統】用戶APP裝修_灯笼位需求变更",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "周昱强",
         "creator": "周昱强",
         "iteration": "MFTB-v1.0.1",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-07-29",
+        "planEnd": "2026-07-29",
         "createDate": "2026-07-22",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f1ef5d6f676f2c608aa046f6b9",
-        "rowText": "【产品类需求】【大係統】用戶APP裝修_灯笼位需求变更\nID: MFTB-1091 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】用戶APP裝修_灯笼位需求变更\nID: MFTB-1091 | 状态: 待测试 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-22 | 排期规划: 2026-07-29 至 2026-07-29",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2179,6 +2179,91 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1229",
+        "title": "【前端】【大系统】神策分群同步",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "李科",
+        "creator": "李科",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-29",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ed38b19bf1d8c4e454afa58bd6",
+        "rowText": "【任务】【前端】【大系统】神策分群同步\nID: MFTB-1229 | 状态: 未开始 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1228",
+        "title": "【前端】【需求變更】修改默認提現卡需審核",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-29",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bd760da518e3ff2d7628909adc",
+        "rowText": "【任务】【前端】【需求變更】修改默認提現卡需審核\nID: MFTB-1228 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1227",
+        "title": "【安卓】【需求變更】修改默認提現卡需審核",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "陈国伟",
+        "creator": "陈国伟",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-29",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=264ee565d14df530c6e36806dd",
+        "rowText": "【任务】【安卓】【需求變更】修改默認提現卡需審核\nID: MFTB-1227 | 状态: 未开始 | 优先级: 中\n负责人: 陈国伟 | 提报人: 陈国伟\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1226",
+        "title": "【测试】【眾包】提現卡支持中行&綁卡增加審核",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "杨庆龙",
+        "creator": "杨庆龙",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-29",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=35e2af60e7c0d5cdb83df9a7f5",
+        "rowText": "【測試】【测试】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-1226 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1225",
+        "title": "【服务端】【需求變更】修改默認提現卡需審核",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-07-29",
+        "planEnd": "2026-07-30",
+        "createDate": "2026-07-29",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fff83daa87c2647d3a05241fe2",
+        "rowText": "【任务】【服务端】【需求變更】修改默認提現卡需審核\nID: MFTB-1225 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: 2026-07-29 至 2026-07-30",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1224",
         "title": "【mFood H5】VM绑银行卡，支付管理",
         "status": "未开始",
@@ -2368,7 +2453,7 @@
       {
         "id": "MFTB-1197",
         "title": "【管理後臺】【大係統】用戶APP裝修_灯笼位需求变更",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "陈文涛",
         "creator": "陈文涛",
@@ -2378,7 +2463,7 @@
         "createDate": "2026-07-28",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=51aed90eee4ca6e39bb3d91d92",
-        "rowText": "【任务】【管理後臺】【大係統】用戶APP裝修_灯笼位需求变更\nID: MFTB-1197 | 状态: 未开始 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【任务】【管理後臺】【大係統】用戶APP裝修_灯笼位需求变更\nID: MFTB-1197 | 状态: 提交测试 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -23368,11 +23453,11 @@
       },
       {
         "date": "2026-07-29",
-        "total": 839,
-        "completed": 652,
+        "total": 844,
+        "completed": 654,
         "statusCounts": {
-          "已完成": 652,
-          "进行中": 187
+          "已完成": 654,
+          "进行中": 190
         }
       }
     ],
