@@ -67,8 +67,8 @@ const BRIDGE_API_BASE = (window.location.hostname === 'localhost' || window.loca
 const AUTH_CONFIG = {
     username: 'jeremy',
     password: 'Abcd.1234@Jeremy',
-    sessionExpiryDays: 7,      // 滑动超时：用户无操作达 7 天后失效
-    absoluteExpiryDays: 14     // 绝对超时：自登录起，连续登录达 14 天后强制失效
+    sessionExpiryHours: 4,      // 滑动超时：用户无操作达 4 小时后失效
+    absoluteExpiryHours: 24     // 绝对超时：自登录起，连续登录达 24 小时后强制失效
 };
 
 // Check Session on Startup
@@ -80,7 +80,7 @@ function checkSession(refreshSliding = true) {
     if (token === 'devops-session-active' && timestamp) {
         const now = Date.now();
         const elapsed = now - parseInt(timestamp, 10);
-        const slidingExpiryMs = AUTH_CONFIG.sessionExpiryDays * 24 * 60 * 60 * 1000;
+        const slidingExpiryMs = AUTH_CONFIG.sessionExpiryHours * 60 * 60 * 1000;
         
         // 1. 检查滑动超时
         if (elapsed >= slidingExpiryMs) {
@@ -91,7 +91,7 @@ function checkSession(refreshSliding = true) {
         // 2. 检查绝对超时
         if (loginTime) {
             const elapsedLogin = now - parseInt(loginTime, 10);
-            const absoluteExpiryMs = AUTH_CONFIG.absoluteExpiryDays * 24 * 60 * 60 * 1000;
+            const absoluteExpiryMs = AUTH_CONFIG.absoluteExpiryHours * 60 * 60 * 1000;
             if (elapsedLogin >= absoluteExpiryMs) {
                 clearSession();
                 return false;
