@@ -1212,6 +1212,15 @@ def main():
     weekly_reports = parse_weekly_reports(WEEKLY_REPORTS_PATH)
     print(f"Parsed {len(weekly_reports)} weekly report entries.")
         
+    # Preserve pmoAdvice if exists in existing projects_data.json
+    existing_pmo_advice = {}
+    if OUTPUT_PATH.exists():
+        try:
+            existing_data = json.loads(OUTPUT_PATH.read_text(encoding='utf-8'))
+            existing_pmo_advice = existing_data.get('pmoAdvice', {})
+        except Exception as e:
+            print(f"Warning: failed to load existing data for pmoAdvice preservation: {e}")
+
     db = {
         'compiledAt': datetime.now(timezone.utc).isoformat(),
         'latest': parsed_latest,
@@ -1220,7 +1229,8 @@ def main():
         'leadTimeKPI': {
             'mftb': kpi_mftb,
             'mfood': kpi_mfood
-        }
+        },
+        'pmoAdvice': existing_pmo_advice
     }
     
     OUTPUT_PATH.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding='utf-8')
