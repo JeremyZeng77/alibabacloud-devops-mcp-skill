@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-07-29T23:01:37.611113+00:00",
+  "compiledAt": "2026-07-30T02:41:21.496211+00:00",
   "latest": {
     "mftb": [
       {
@@ -124,7 +124,7 @@
       {
         "id": "MFTB-1107",
         "title": "【大係統】到家管理_商品管理_新增 自動上下架時間設置",
-        "status": "待处理",
+        "status": "开发中",
         "priority": "高",
         "assignee": "廖荣",
         "creator": "廖荣",
@@ -134,7 +134,7 @@
         "createDate": "2026-07-23",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=711707671e3a39e7cce97265d1",
-        "rowText": "【产品类需求】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1107 | 状态: 待处理 | 优先级: 高\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1107 | 状态: 开发中 | 优先级: 高\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2179,6 +2179,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1231",
+        "title": "【服务端】【大係統】團購到店-用戶端訂單逻辑补充",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f796cebc54cae920fb18e623b5",
+        "rowText": "【任务】【服务端】【大係統】團購到店-用戶端訂單逻辑补充\nID: MFTB-1231 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1229",
         "title": "【前端】【大系统】神策分群同步",
         "status": "未开始",
@@ -2385,7 +2402,7 @@
       {
         "id": "MFTB-1208",
         "title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "张健伟",
         "creator": "张健伟",
@@ -2395,7 +2412,7 @@
         "createDate": "2026-07-29",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3c0cfbc10a3f2b1ad997264a57",
-        "rowText": "【任务】【服务端】【大係統】用戶端-商家主頁门店收藏\nID: MFTB-1208 | 状态: 未开始 | 优先级: 中\n负责人: 张健伟 | 提报人: 张健伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: 2026-07-29 至 2026-07-29",
+        "rowText": "【任务】【服务端】【大係統】用戶端-商家主頁门店收藏\nID: MFTB-1208 | 状态: 提交测试 | 优先级: 中\n负责人: 张健伟 | 提报人: 张健伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: 2026-07-29 至 2026-07-29",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3048,7 +3065,7 @@
       {
         "id": "MFTB-1122",
         "title": "【后端】【大係統】到家管理_商品管理_新增 自動上下架時間設置",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "叶龙",
@@ -3058,7 +3075,7 @@
         "createDate": "2026-07-24",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=44c4a9b4a2dcf663a4363881c5",
-        "rowText": "【任务】【后端】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1122 | 状态: 未开始 | 优先级: 中\n负责人: 叶龙 | 提报人: 叶龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-24 | 排期规划: 2026-07-30 至 2026-07-31",
+        "rowText": "【任务】【后端】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1122 | 状态: 开发中 | 优先级: 中\n负责人: 叶龙 | 提报人: 叶龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-24 | 排期规划: 2026-07-30 至 2026-07-31",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4135,8 +4152,8 @@
       },
       {
         "id": "MFTB-1014",
-        "title": "【服务端】【大係統】團購到店-用戶端訂單相關功能",
-        "status": "未开始",
+        "title": "【服务端】【大係統】團購到店-用戶端訂單核心流程",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "林泽斌",
@@ -4146,7 +4163,7 @@
         "createDate": "2026-07-16",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=47bda4b925ac6f791baf7a29e3",
-        "rowText": "【任务】【服务端】【大係統】團購到店-用戶端訂單相關功能\nID: MFTB-1014 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
+        "rowText": "【任务】【服务端】【大係統】團購到店-用戶端訂單核心流程\nID: MFTB-1014 | 状态: 提交测试 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -14351,6 +14368,23 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1230",
+        "title": "【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00637482550e650a8f4339e677",
+        "rowText": "【缺陷】【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期\nID: MFTB-1230 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1223",
         "title": "【随机活动】已选红包组件，红包信息缺失",
         "status": "已修复",
@@ -14404,7 +14438,7 @@
       {
         "id": "MFTB-1219",
         "title": "【红包管理-随机活动】新增随机活动，少了门槛是否随机的字段",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "黄春晓",
@@ -14414,7 +14448,7 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=abaff8fd34972b674502b8106b",
-        "rowText": "【缺陷】【红包管理-随机活动】新增随机活动，少了门槛是否随机的字段\nID: MFTB-1219 | 状态: 已修复 | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【红包管理-随机活动】新增随机活动，少了门槛是否随机的字段\nID: MFTB-1219 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -23364,10 +23398,10 @@
       {
         "date": "2026-07-19",
         "total": 733,
-        "completed": 582,
+        "completed": 583,
         "statusCounts": {
-          "已完成": 582,
-          "进行中": 151
+          "已完成": 583,
+          "进行中": 150
         }
       },
       {
@@ -23400,64 +23434,73 @@
       {
         "date": "2026-07-23",
         "total": 779,
-        "completed": 614,
+        "completed": 613,
         "statusCounts": {
-          "已完成": 614,
-          "进行中": 165
+          "已完成": 613,
+          "进行中": 166
         }
       },
       {
         "date": "2026-07-24",
         "total": 795,
-        "completed": 622,
+        "completed": 621,
         "statusCounts": {
-          "已完成": 622,
-          "进行中": 173
+          "已完成": 621,
+          "进行中": 174
         }
       },
       {
         "date": "2026-07-25",
         "total": 795,
-        "completed": 622,
+        "completed": 621,
         "statusCounts": {
-          "已完成": 622,
-          "进行中": 173
+          "已完成": 621,
+          "进行中": 174
         }
       },
       {
         "date": "2026-07-26",
         "total": 795,
-        "completed": 622,
+        "completed": 621,
         "statusCounts": {
-          "已完成": 622,
-          "进行中": 173
+          "已完成": 621,
+          "进行中": 174
         }
       },
       {
         "date": "2026-07-27",
         "total": 802,
-        "completed": 630,
+        "completed": 628,
         "statusCounts": {
-          "已完成": 630,
-          "进行中": 172
+          "已完成": 628,
+          "进行中": 174
         }
       },
       {
         "date": "2026-07-28",
         "total": 827,
-        "completed": 647,
+        "completed": 644,
         "statusCounts": {
-          "已完成": 647,
-          "进行中": 180
+          "已完成": 644,
+          "进行中": 183
         }
       },
       {
         "date": "2026-07-29",
         "total": 844,
-        "completed": 654,
+        "completed": 655,
         "statusCounts": {
-          "已完成": 654,
-          "进行中": 190
+          "已完成": 655,
+          "进行中": 189
+        }
+      },
+      {
+        "date": "2026-07-30",
+        "total": 845,
+        "completed": 656,
+        "statusCounts": {
+          "已完成": 656,
+          "进行中": 189
         }
       }
     ],
@@ -35110,6 +35153,15 @@
       },
       {
         "date": "2026-07-29",
+        "total": 182,
+        "completed": 37,
+        "statusCounts": {
+          "已完成": 37,
+          "进行中": 145
+        }
+      },
+      {
+        "date": "2026-07-30",
         "total": 182,
         "completed": 37,
         "statusCounts": {
