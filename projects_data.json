@@ -1,7 +1,58 @@
 {
-  "compiledAt": "2026-07-30T03:37:20.235807+00:00",
+  "compiledAt": "2026-07-30T06:32:10.083756+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1241",
+        "title": "【極馬】打賞收入報表增加調度站點字段",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4d24d17e2e3d1ac9abbc7c59e3",
+        "rowText": "【产品类需求】【極馬】打賞收入報表增加調度站點字段\nID: MFTB-1241 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1238",
+        "title": "【大係統】用戶 APP 裝修_新增開屏頁&推薦列表需求變更",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=da38b0c29224ee0468a6ce732b",
+        "rowText": "【产品类需求】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表需求變更\nID: MFTB-1238 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1237",
+        "title": "【極馬】急賞送報表增加字段",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=07d86ea6705c9a0176160a4d49",
+        "rowText": "【产品类需求】【極馬】急賞送報表增加字段\nID: MFTB-1237 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1216",
         "title": "【广告系统】-盘活复苏",
@@ -2179,6 +2230,74 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1240",
+        "title": "【大係統】用戶 APP 裝修_新增開屏頁&推薦列表需求變更",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7efa2c48113a12ed7e7ab67889",
+        "rowText": "【产品】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表需求變更\nID: MFTB-1240 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1239",
+        "title": "【產品】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表需求變更",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-07-30",
+        "planEnd": "2026-07-30",
+        "createDate": "2026-07-30",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1d5c0bbbb14e60483a279e4b78",
+        "rowText": "【产品】【產品】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表需求變更\nID: MFTB-1239 | 状态: 已完成 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-30 | 排期规划: 2026-07-30 至 2026-07-30",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1236",
+        "title": "【產品】【專送合併】騎手工資表",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-06-22",
+        "planEnd": "2026-07-21",
+        "createDate": "2026-07-30",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fa827f3ca760a0a73e0b3e9cc9",
+        "rowText": "【产品】【產品】【專送合併】騎手工資表\nID: MFTB-1236 | 状态: 已完成 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: 2026-06-22 至 2026-07-21",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1235",
+        "title": "【移动端】【大係統】團購到店-商家端-到店核销",
+        "status": "开发中",
+        "priority": "中",
+        "assignee": "梁富城",
+        "creator": "梁富城",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=71ae6c08feb7ddb0a65fb0a4b9",
+        "rowText": "【任务】【移动端】【大係統】團購到店-商家端-到店核销\nID: MFTB-1235 | 状态: 开发中 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1234",
         "title": "【测试】【大係統】用戶APP裝修_灯笼位需求变更",
         "status": "待处理",
@@ -2317,7 +2436,7 @@
       {
         "id": "MFTB-1225",
         "title": "【服务端】【需求變更】修改默認提現卡需審核",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "刘志敏",
@@ -2327,7 +2446,7 @@
         "createDate": "2026-07-29",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fff83daa87c2647d3a05241fe2",
-        "rowText": "【任务】【服务端】【需求變更】修改默認提現卡需審核\nID: MFTB-1225 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: 2026-07-29 至 2026-07-30",
+        "rowText": "【任务】【服务端】【需求變更】修改默認提現卡需審核\nID: MFTB-1225 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: 2026-07-29 至 2026-07-30",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -14419,6 +14538,23 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1242",
+        "title": "【红包管理-随机活动】新增随机活动，新人无消费门槛字段应在选择门槛随机时才出现",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "黄春晓",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-30",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=23c53450f76b00a6fcf52c54d9",
+        "rowText": "【缺陷】【红包管理-随机活动】新增随机活动，新人无消费门槛字段应在选择门槛随机时才出现\nID: MFTB-1242 | 状态: 待确认 | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1230",
         "title": "【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期",
         "status": "待确认",
@@ -14540,7 +14676,7 @@
       {
         "id": "MFTB-1212",
         "title": "【红包管理-膨胀活动】复制膨胀活动时，更换了红包，保存报错，红包ID显示为空",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "黄春晓",
@@ -14550,7 +14686,7 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8a237de4e383a15599eea3e6df",
-        "rowText": "【缺陷】【红包管理-膨胀活动】复制膨胀活动时，更换了红包，保存报错，红包ID显示为空\nID: MFTB-1212 | 状态: 已修复 | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【红包管理-膨胀活动】复制膨胀活动时，更换了红包，保存报错，红包ID显示为空\nID: MFTB-1212 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -14574,7 +14710,7 @@
       {
         "id": "MFTB-1204",
         "title": "【红包管理-膨胀活动】复制膨胀活动，报错",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "黄春晓",
@@ -14584,7 +14720,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=36acd560ef0a74fa87c8ee13d2",
-        "rowText": "【缺陷】【红包管理-膨胀活动】复制膨胀活动，报错\nID: MFTB-1204 | 状态: 已修复 | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【红包管理-膨胀活动】复制膨胀活动，报错\nID: MFTB-1204 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -14625,7 +14761,7 @@
       {
         "id": "MFTB-1200",
         "title": "【红包管理-膨胀活动】删除膨胀活动时，没有传参导致报错",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "黄春晓",
@@ -14635,7 +14771,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6f5529a760769239617f5e121d",
-        "rowText": "【缺陷】【红包管理-膨胀活动】删除膨胀活动时，没有传参导致报错\nID: MFTB-1200 | 状态: 已修复 | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【红包管理-膨胀活动】删除膨胀活动时，没有传参导致报错\nID: MFTB-1200 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -14659,7 +14795,7 @@
       {
         "id": "MFTB-1198",
         "title": "【红包管理-膨胀活动】选择红包时，要校验是否与当前品牌渠道一致",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "黄春晓",
@@ -14669,7 +14805,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a7e54d0d08818df5e4b3a2fe32",
-        "rowText": "【缺陷】【红包管理-膨胀活动】选择红包时，要校验是否与当前品牌渠道一致\nID: MFTB-1198 | 状态: 已修复 | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【红包管理-膨胀活动】选择红包时，要校验是否与当前品牌渠道一致\nID: MFTB-1198 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 甄荣康 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -23547,11 +23683,11 @@
       },
       {
         "date": "2026-07-30",
-        "total": 848,
-        "completed": 659,
+        "total": 855,
+        "completed": 662,
         "statusCounts": {
-          "已完成": 659,
-          "进行中": 189
+          "已完成": 662,
+          "进行中": 193
         }
       }
     ],
