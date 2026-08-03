@@ -5,7 +5,7 @@ let state = {
     history: { mftb: [], mfood: [] },
     weeklyReports: [],
     currentProject: 'mftb', // 'mftb' or 'mfood'
-    currentView: 'overview', // 'overview', 'workitems', 'weekly'
+    currentView: 'overview', // 'overview', 'workitems', 'weekly', 'risk', 'standup', 'config', 'audit'
     charts: {}, // Store Chart.js instances
     autoSyncIntervalId: null, // Store interval ID for 5 minutes sync
     chartStatusMode: 'active', // 'active' (进行中) or 'all' (全部)
@@ -183,6 +183,7 @@ async function handleLoginSubmit() {
     }, 300);
     
     startDashboardApp();
+}
 
 function handleLogout() {
     clearSession();
@@ -580,7 +581,7 @@ function loadStateFromURL() {
     }
     if (params.has('view')) {
         const view = params.get('view');
-        if (['overview', 'workitems', 'weekly'].includes(view)) {
+        if (['overview', 'workitems', 'weekly', 'risk', 'standup', 'config', 'audit'].includes(view)) {
             state.currentView = view;
         }
     }
@@ -930,6 +931,12 @@ function renderCurrentView() {
         populateWeeklySelector();
     } else if (state.currentView === 'audit') {
         renderAuditView();
+    } else if (state.currentView === 'risk') {
+        renderRiskCenter();
+    } else if (state.currentView === 'standup') {
+        renderStandupBoard();
+    } else if (state.currentView === 'config') {
+        renderConfigCenter();
     }
 }
 
@@ -3283,3 +3290,589 @@ ${adviceLines}
 
 
 
+
+// ============================================================
+// 五维升级模块：风险预警 | 站会看板 | 配置管理 | 弹窗增强
+// ============================================================
+
+// ---------- P0: 风险预警中心 ----------
+
+function renderRiskCenter() {
+    const items = state.latest[state.currentProject] || [];
+    const history = state.history[state.currentProject] || [];
+    
+    // 风险 KPI
+    const delayedItems = findDelayedItems(items, history);
+    renderRiskKPIs(items, delayedItems);
+    renderBurndownChart(items, history);
+    renderDelayPrediction(delayedItems);
+    renderDependencyDetection(items);
+    renderEfficiencyBoard(items);
+}
+
+function findDelayedItems(items, history) {
+    const now = new Date();
+    const results = [];
+    const activeStatuses = ['开发中', '进行中', '处理中', '测试中', '待测试', '待验收'];
+    const avgCycleDays = computeAvgCycleDays(history, items);
+    
+    for (const item of items) {
+        const status = item.status || '';
+        if (!activeStatuses.some(s => status.includes(s))) continue;
+        
+        const created = item.created_at || item.created;
+        if (!created) continue;
+        const daysSinceCreated = Math.max(0, Math.floor((now - new Date(created)) / 86400000));
+        
+        let riskLevel = 'low';
+        if (daysSinceCreated > avgCycleDays * 1.5) riskLevel = 'high';
+        else if (daysSinceCreated > avgCycleDays) riskLevel = 'medium';
+        
+        results.push({ ...item, daysSinceCreated, avgCycleDays, riskLevel });
+    }
+    
+    results.sort((a, b) => {
+        const order = { high: 0, medium: 1, low: 2 };
+        return (order[a.riskLevel] || 3) - (order[b.riskLevel] || 3);
+    });
+    return results;
+}
+
+function computeAvgCycleDays(history, items) {
+    let totalDays = 0, count = 0;
+    const completedStatuses = ['已完成', '已上线', '已验证', '已关闭', '已发布'];
+    
+    for (const item of items) {
+        const status = item.status || '';
+        if (!completedStatuses.some(s => status.includes(s))) continue;
+        const created = item.created_at || item.created;
+        const updated = item.updated_at || item.updated;
+        if (created && updated) {
+            totalDays += Math.max(1, Math.floor((new Date(updated) - new Date(created)) / 86400000));
+            count++;
+        }
+    }
+    return count > 0 ? Math.round(totalDays / count) : 14;
+}
+
+function renderRiskKPIs(items, delayedItems) {
+    const container = document.getElementById('risk-kpi-area');
+    if (!container) return;
+    
+    const highCount = delayedItems.filter(d => d.riskLevel === 'high').length;
+    const medCount = delayedItems.filter(d => d.riskLevel === 'medium').length;
+    const total = items.length;
+    const completed = items.filter(i => {
+        const s = i.status || '';
+        return ['已完成', '已上线', '已验证', '已关闭', '已发布'].some(cs => s.includes(cs));
+    }).length;
+    const rate = total > 0 ? Math.round((completed / total) * 100) : 0;
+    
+    // 预测剩余天数
+    const active = items.filter(i => {
+        const s = i.status || '';
+        return ['开发中', '进行中', '处理中', '测试中', '待测试'].some(ss => s.includes(ss));
+    }).length;
+    const recentRate = computeRecentVelocity(items, history);
+    const estDays = recentRate > 0 ? Math.round(active / recentRate * 7) : '--';
+    
+    container.innerHTML = `<div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#f87171;">${highCount}</div><div class="risk-kpi-label">🔴 高风险延期</div></div>
+    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#fbbf24;">${medCount}</div><div class="risk-kpi-label">🟡 中等风险</div></div>
+    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#38bdf8;">${active}</div><div class="risk-kpi-label">⚙️ 活跃需求</div></div>
+    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#4ade80;">${estDays}天</div><div class="risk-kpi-label">📅 预计完成(按速率)</div></div>
+    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#c084fc;">${rate}%</div><div class="risk-kpi-label">📊 交付率</div></div>`;
+}
+
+function computeRecentVelocity(items, history) {
+    const now = new Date();
+    const thirtyDaysAgo = new Date(now - 30 * 86400000);
+    let completed = 0;
+    const completedStatuses = ['已完成', '已上线', '已验证', '已关闭', '已发布'];
+    for (const item of items) {
+        const status = item.status || '';
+        if (!completedStatuses.some(s => status.includes(s))) continue;
+        const updated = item.updated_at || item.updated;
+        if (updated && new Date(updated) >= thirtyDaysAgo) completed++;
+    }
+    return completed > 0 ? (completed / 30) : 0;
+}
+
+// 燃尽图
+let burndownChartInstance = null;
+function renderBurndownChart(items, history) {
+    const canvas = document.getElementById('chart-burndown');
+    if (!canvas) return;
+    if (burndownChartInstance) burndownChartInstance.destroy();
+    
+    const active = items.filter(i => {
+        const s = i.status || '';
+        return !['已完成', '已上线', '已验证', '已关闭', '已发布', '已取消', '已拒绝'].some(cs => s.includes(cs));
+    }).length;
+    const total = items.filter(i => {
+        const s = i.status || '';
+        return !['已取消', '已拒绝'].some(cs => s.includes(cs));
+    }).length;
+    
+    const dailySnapshots = history.slice(-30);
+    const labels = dailySnapshots.map(s => {
+        const d = s.date || s.snapshot_date || '';
+        return d.length >= 10 ? d.substring(5, 10) : d;
+    });
+    const ideal = labels.map((_, i) => Math.round(total - (total * i / Math.max(1, labels.length - 1))));
+    const actual = dailySnapshots.map(s => (s.completed || s.done || 0));
+    
+    burndownChartInstance = new Chart(canvas, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [
+                { label: '理想燃尽线', data: ideal, borderColor: 'rgba(148,163,184,0.4)', borderDash: [6, 4], borderWidth: 1.5, pointRadius: 0, fill: false },
+                { label: '实际完成数', data: actual, borderColor: '#38bdf8', backgroundColor: 'rgba(56,189,248,0.1)', borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#38bdf8', fill: true, tension: 0.3 }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } } },
+            scales: {
+                x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
+                y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(255,255,255,0.04)' }, beginAtZero: true }
+            }
+        }
+    });
+}
+
+// 延期预测表
+function renderDelayPrediction(delayedItems) {
+    const container = document.getElementById('risk-delay-table-container');
+    if (!container) return;
+    
+    if (delayedItems.length === 0) {
+        container.innerHTML = '<p style="color:#94a3b8;text-align:center;padding:16px;">✅ 当前没有延期风险需求</p>';
+        return;
+    }
+    
+    const rows = delayedItems.map(d => {
+        const riskClass = d.riskLevel === 'high' ? 'high' : (d.riskLevel === 'medium' ? 'medium' : 'low');
+        const riskLabel = d.riskLevel === 'high' ? '高风险' : (d.riskLevel === 'medium' ? '中风险' : '低风险');
+        const id = d.id || d.workitem_id || '-';
+        const title = (d.title || d.subject || '-').substring(0, 60);
+        const assignee = d.assignee || d.assigned_to || '-';
+        const status = d.status || '-';
+        const days = d.daysSinceCreated || 0;
+        const avg = d.avgCycleDays || 0;
+        
+        return `<tr>
+            <td><span class="dep-table clickable" data-wid="${escapeHtml(String(id))}">${escapeHtml(String(id))}</span></td>
+            <td>${escapeHtml(title)}</td>
+            <td>${escapeHtml(assignee)}</td>
+            <td>${escapeHtml(status)}</td>
+            <td>${days}天</td>
+            <td>${avg}天</td>
+            <td><span class="risk-badge ${riskClass}">${riskLabel}</span></td>
+        </tr>`;
+    }).join('');
+    
+    container.innerHTML = `<table class="dep-table"><thead><tr>
+        <th>ID</th><th>标题</th><th>负责人</th><th>状态</th><th>已耗时</th><th>历史均值</th><th>风险</th>
+    </tr></thead><tbody>${rows}</tbody></table>`;
+    
+    // 事件委托：点击行打开详情
+    container.querySelectorAll('.clickable[data-wid]').forEach(el => {
+        el.addEventListener('click', () => {
+            const wid = el.dataset.wid;
+            const item = (state.latest[state.currentProject] || []).find(i => String(i.id || i.workitem_id || '') === wid);
+            if (item && typeof showItemDetailById === 'function') showItemDetailById(item);
+        });
+    });
+}
+
+// 依赖检测
+function renderDependencyDetection(items) {
+    const container = document.getElementById('risk-dependency-container');
+    if (!container) return;
+    
+    const criticalKeywords = loadConfig('criticalKeywords', ['支付', '下单', '结算', '登录', '核心', '主流程']);
+    const dependencies = [];
+    
+    for (const item of items) {
+        const title = (item.title || item.subject || '').toLowerCase();
+        for (const kw of criticalKeywords) {
+            if (title.includes(kw.toLowerCase())) {
+                const status = item.status || '';
+                const isDone = ['已完成', '已上线', '已验证', '已关闭'].some(s => status.includes(s));
+                dependencies.push({
+                    id: item.id || item.workitem_id,
+                    title: item.title || item.subject || '-',
+                    status,
+                    isDone,
+                    keyword: kw,
+                    assignee: item.assignee || '-'
+                });
+                break;
+            }
+        }
+    }
+    
+    if (dependencies.length === 0) {
+        container.innerHTML = '<p style="color:#94a3b8;text-align:center;padding:16px;">未检测到关键路径依赖项（可在配置管理中设置关键字）</p>';
+        return;
+    }
+    
+    const undones = dependencies.filter(d => !d.isDone);
+    const dones = dependencies.filter(d => d.isDone);
+    
+    container.innerHTML = `
+    <div style="margin-bottom:12px;"><span style="color:#f87171;font-weight:600;">⚠️ 未完成 ${undones.length}</span> / 总计 ${dependencies.length} 项关键依赖</div>
+    <table class="dep-table"><thead><tr><th>ID</th><th>标题</th><th>状态</th><th>关键字</th><th>负责人</th><th>风险</th></tr></thead><tbody>
+        ${[...undones, ...dones].map(d => {
+            const riskBadge = d.isDone ? '<span class="risk-badge low">已完成</span>' : '<span class="risk-badge high">未完成</span>';
+            return `<tr>
+                <td><span class="dep-table clickable" data-wid="${escapeHtml(String(d.id))}">${escapeHtml(String(d.id))}</span></td>
+                <td>${escapeHtml((d.title || '').substring(0, 40))}</td>
+                <td>${escapeHtml(d.status)}</td>
+                <td><span style="background:rgba(245,158,11,0.15);color:#fbbf24;padding:2px 6px;border-radius:4px;font-size:11px;">${escapeHtml(d.keyword)}</span></td>
+                <td>${escapeHtml(d.assignee)}</td>
+                <td>${riskBadge}</td>
+            </tr>`;
+        }).join('')}
+    </tbody></table>`;
+    
+    container.querySelectorAll('.clickable[data-wid]').forEach(el => {
+        el.addEventListener('click', () => {
+            const wid = el.dataset.wid;
+            const item = items.find(i => String(i.id || i.workitem_id || '') === wid);
+            if (item && typeof showItemDetailById === 'function') showItemDetailById(item);
+        });
+    });
+}
+
+// 人员效能看板
+function renderEfficiencyBoard(items) {
+    const container = document.getElementById('risk-efficiency-table-container');
+    if (!container) return;
+    
+    const devMap = {};
+    for (const item of items) {
+        const assignee = item.assignee || item.assigned_to || '未指派';
+        if (!devMap[assignee]) devMap[assignee] = { name: assignee, total: 0, completed: 0, delayed: 0, active: 0 };
+        devMap[assignee].total++;
+        
+        const status = item.status || '';
+        if (['已完成', '已上线', '已验证', '已关闭', '已发布'].some(s => status.includes(s))) {
+            devMap[assignee].completed++;
+        } else if (['开发中', '进行中', '处理中', '测试中', '待测试'].some(s => status.includes(s))) {
+            devMap[assignee].active++;
+        }
+        
+        const created = item.created_at || item.created;
+        if (created && !['已完成', '已上线', '已验证', '已关闭', '已发布', '已取消'].some(s => status.includes(s))) {
+            const days = Math.floor((new Date() - new Date(created)) / 86400000);
+            if (days > 14) devMap[assignee].delayed++;
+        }
+    }
+    
+    const devs = Object.values(devMap).sort((a, b) => b.total - a.total);
+    
+    if (devs.length === 0) {
+        container.innerHTML = '<p style="color:#94a3b8;text-align:center;padding:16px;">暂无数据</p>';
+        return;
+    }
+    
+    container.innerHTML = `<table class="dep-table"><thead><tr>
+        <th>成员</th><th>总需求</th><th>已完成</th><th>活跃中</th><th>延期项</th><th>完成率</th>
+    </tr></thead><tbody>${devs.map(d => {
+        const rate = d.total > 0 ? Math.round((d.completed / d.total) * 100) : 0;
+        const delayedClass = d.delayed > 0 ? 'color:#f87171' : '';
+        return `<tr>
+            <td style="font-weight:500;">${escapeHtml(d.name)}</td>
+            <td>${d.total}</td>
+            <td style="color:#4ade80;">${d.completed}</td>
+            <td>${d.active}</td>
+            <td style="${delayedClass}">${d.delayed}</td>
+            <td>${rate}%</td>
+        </tr>`;
+    }).join('')}</tbody></table>`;
+}
+
+// ---------- P3: 站会看板 ----------
+
+function renderStandupBoard() {
+    const dateInput = document.getElementById('standup-date');
+    if (dateInput && !dateInput.value) {
+        dateInput.value = new Date().toISOString().substring(0, 10);
+    }
+    
+    const items = state.latest[state.currentProject] || [];
+    const date = dateInput ? dateInput.value : '';
+    renderStandupCards(items, date);
+    renderStandupRecords(date);
+    
+    // 事件绑定
+    const submitBtn = document.getElementById('btn-standup-submit');
+    const exportBtn = document.getElementById('btn-standup-export');
+    if (submitBtn) submitBtn.onclick = submitStandupRecord;
+    if (exportBtn) exportBtn.onclick = exportStandupMarkdown;
+    if (dateInput) dateInput.onchange = () => { renderStandupCards(items, dateInput.value); renderStandupRecords(dateInput.value); };
+}
+
+function renderStandupCards(items, date) {
+    const container = document.getElementById('standup-cards-container');
+    if (!container) return;
+    
+    const members = [...new Set(items.map(i => i.assignee || i.assigned_to || '未指派'))].filter(m => m !== '未指派');
+    const records = loadStandupRecords(date);
+    
+    container.innerHTML = members.map(name => {
+        const memberItems = items.filter(i => (i.assignee || i.assigned_to) === name);
+        const active = memberItems.filter(i => {
+            const s = i.status || '';
+            return ['开发中', '进行中', '处理中', '测试中', '待测试'].some(ss => s.includes(ss));
+        });
+        const role = (DEVELOPER_ROLES_MAP && DEVELOPER_ROLES_MAP[name]) || '-';
+        const rec = records[name] || {};
+        const hasBlocker = rec.blocker && rec.blocker.trim();
+        
+        return `<div class="standup-card ${hasBlocker ? 'has-blocker' : ''}">
+            <div class="standup-card-header">
+                <span class="standup-card-name">${escapeHtml(name)}</span>
+                <span class="standup-card-role">${escapeHtml(role)}</span>
+            </div>
+            <div class="standup-card-line"><strong>活跃任务:</strong> ${active.length} 项</div>
+            <div class="standup-card-line"><strong>昨天:</strong> ${escapeHtml(rec.yesterday || '未记录')}</div>
+            <div class="standup-card-line"><strong>今天:</strong> ${escapeHtml(rec.today || '未记录')}</div>
+            <div class="standup-card-line">${hasBlocker ? `<strong style="color:#f87171;">阻塞:</strong> <span style="color:#f87171;">${escapeHtml(rec.blocker)}</span>` : '<strong>阻塞:</strong> 无'}</div>
+        </div>`;
+    }).join('');
+}
+
+function submitStandupRecord() {
+    const date = document.getElementById('standup-date').value;
+    const yesterday = document.getElementById('standup-yesterday').value.trim();
+    const today = document.getElementById('standup-today').value.trim();
+    const blocker = document.getElementById('standup-blocker').value.trim();
+    
+    if (!date) { showToast('请选择日期'); return; }
+    
+    const records = loadAllStandupRecords();
+    if (!records[date]) records[date] = {};
+    records[date].me = { yesterday, today, blocker, time: new Date().toISOString() };
+    
+    localStorage.setItem('devops_standup_records', JSON.stringify(records));
+    renderStandupRecords(date);
+    showToast('站会记录已保存');
+}
+
+function loadStandupRecords(date) {
+    const records = loadAllStandupRecords();
+    return records[date] || {};
+}
+
+function loadAllStandupRecords() {
+    try { return JSON.parse(localStorage.getItem('devops_standup_records') || '{}'); } catch { return {}; }
+}
+
+function renderStandupRecords(date) {
+    const container = document.getElementById('standup-records-container');
+    if (!container) return;
+    
+    const records = loadStandupRecords(date);
+    if (!date) { container.innerHTML = '<p style="color:#94a3b8;">暂未选择日期</p>'; return; }
+    
+    const entries = Object.entries(records);
+    if (entries.length === 0) { container.innerHTML = `<p style="color:#94a3b8;">${date} 暂无站会记录</p>`; return; }
+    
+    container.innerHTML = entries.map(([name, rec]) => {
+        const hasBlocker = rec.blocker && rec.blocker.trim();
+        return `<div class="standup-card ${hasBlocker ? 'has-blocker' : ''}">
+            <div class="standup-card-header"><span class="standup-card-name">${escapeHtml(name)}</span></div>
+            <div class="standup-card-line"><strong>昨天:</strong> ${escapeHtml(rec.yesterday || '-')}</div>
+            <div class="standup-card-line"><strong>今天:</strong> ${escapeHtml(rec.today || '-')}</div>
+            <div class="standup-card-line">${hasBlocker ? `<strong style="color:#f87171;">阻塞:</strong> <span style="color:#f87171;">${escapeHtml(rec.blocker)}</span>` : '<strong>阻塞:</strong> 无'}</div>
+        </div>`;
+    }).join('');
+}
+
+function exportStandupMarkdown() {
+    const date = document.getElementById('standup-date').value;
+    const records = loadStandupRecords(date);
+    const entries = Object.entries(records);
+    if (entries.length === 0) { showToast('当天无站会记录'); return; }
+    
+    let md = `## 每日站会 - ${date}\n\n`;
+    for (const [name, rec] of entries) {
+        md += `### ${name}\n- **昨天**: ${rec.yesterday || '-'}\n- **今天**: ${rec.today || '-'}\n- **阻塞**: ${rec.blocker || '无'}\n\n`;
+    }
+    
+    navigator.clipboard.writeText(md).then(() => showToast('已复制站会记录')).catch(() => showToast('复制失败'));
+}
+
+// ---------- P4: 配置管理 ----------
+
+function renderConfigCenter() {
+    const roles = loadConfig('roles', {});
+    const milestones = loadConfig('milestones', {});
+    const criticalKeywords = loadConfig('criticalKeywords', []);
+    
+    document.getElementById('config-roles').value = JSON.stringify(roles, null, 2);
+    document.getElementById('config-milestones').value = JSON.stringify(milestones, null, 2);
+    document.getElementById('config-critical').value = JSON.stringify(criticalKeywords, null, 2);
+    
+    document.getElementById('btn-config-roles-save').onclick = () => {
+        try { const v = JSON.parse(document.getElementById('config-roles').value); saveConfig('roles', v); showToast('角色映射已保存'); } catch { showToast('JSON格式错误'); }
+    };
+    document.getElementById('btn-config-milestones-save').onclick = () => {
+        try { const v = JSON.parse(document.getElementById('config-milestones').value); saveConfig('milestones', v); showToast('里程碑已保存'); } catch { showToast('JSON格式错误'); }
+    };
+    document.getElementById('btn-config-critical-save').onclick = () => {
+        try { const v = JSON.parse(document.getElementById('config-critical').value); saveConfig('criticalKeywords', v); showToast('关键字已保存'); } catch { showToast('JSON格式错误'); }
+    };
+    document.getElementById('btn-config-reset').onclick = () => {
+        if (confirm('确定要重置所有配置为默认值吗？')) {
+            localStorage.removeItem('devops_config_roles');
+            localStorage.removeItem('devops_config_milestones');
+            localStorage.removeItem('devops_config_criticalKeywords');
+            renderConfigCenter();
+            showToast('配置已重置');
+        }
+    };
+}
+
+function loadConfig(key, defaultVal) {
+    try { return JSON.parse(localStorage.getItem('devops_config_' + key) || 'null') || defaultVal; } catch { return defaultVal; }
+}
+function saveConfig(key, val) {
+    localStorage.setItem('devops_config_' + key, JSON.stringify(val));
+}
+
+// ---------- 详情弹窗增强 ----------
+
+const originalShowItemDetail = typeof showItemDetail === 'function' ? showItemDetail : null;
+const originalShowItemDetailById = typeof showItemDetailById === 'function' ? showItemDetailById : null;
+
+// 劫持 showItemDetailById 来注入增强内容
+if (typeof window !== 'undefined') {
+    const _origById = window.showItemDetailById;
+    window.showItemDetailById = function(item) {
+        if (_origById) _origById(item);
+        // 增强注入在 modal 打开后
+        setTimeout(() => {
+            const itemId = item.id || item.workitem_id || '';
+            renderStatusTimeline(item);
+            renderChecklist(item);
+            renderComments(itemId);
+        }, 100);
+    };
+}
+
+function renderStatusTimeline(item) {
+    const container = document.getElementById('modal-item-timeline');
+    if (!container) return;
+    
+    const transitions = item.transitions || item.status_history || [];
+    const status = item.status || '未知';
+    
+    if (transitions.length === 0) {
+        // 构造一个基于当前状态的简单时间线
+        const created = item.created_at || item.created || '';
+        const assignee = item.assignee || item.assigned_to || '-';
+        container.innerHTML = `<div class="timeline-entry"><div class="timeline-dot"></div><span class="timeline-date">${created ? created.substring(0,10) : '-'}</span><span class="timeline-status">${escapeHtml(status)}</span><span>${escapeHtml(assignee)}</span></div>
+        <div style="font-size:11px;color:#64748b;margin-top:4px;">提示：详细流转数据需从 history DB 读取。当前显示创建时的状态。</div>`;
+        return;
+    }
+    
+    container.innerHTML = transitions.map(t => {
+        const date = t.date || t.created || t.timestamp || '';
+        const statusName = t.status || t.to_status || '';
+        const user = t.user || t.assignee || t.actor || '';
+        return `<div class="timeline-entry"><div class="timeline-dot"></div><span class="timeline-date">${date.length >= 10 ? date.substring(0,10) : date}</span><span class="timeline-status">${escapeHtml(statusName)}</span><span>${escapeHtml(user)}</span></div>`;
+    }).join('');
+}
+
+// Checklist 检查项定义
+const CHECKLIST_RULES = {
+    '待开发': [{ id: 'req-reviewed', label: '需求已评审通过' }, { id: 'design-done', label: '技术方案已完成' }],
+    '开发中': [{ id: 'branch-created', label: '开发分支已创建' }, { id: 'self-tested', label: '自测通过' }],
+    '进行中': [{ id: 'branch-created', label: '开发分支已创建' }, { id: 'self-tested', label: '自测通过' }],
+    '测试中': [{ id: 'test-case-linked', label: '测试用例已关联' }, { id: 'code-reviewed', label: '代码评审通过' }],
+    '待测试': [{ id: 'test-case-linked', label: '测试用例已关联' }, { id: 'code-reviewed', label: '代码评审通过' }],
+    '待验收': [{ id: 'acceptance-doc', label: '验收文档已准备' }, { id: 'prod-config', label: '生产配置已就绪' }],
+    '待发布': [{ id: 'release-note', label: '发布说明已编写' }, { id: 'rollback-plan', label: '回滚方案已确认' }],
+    '待上线': [{ id: 'release-note', label: '发布说明已编写' }, { id: 'rollback-plan', label: '回滚方案已确认' }],
+    '_default': [{ id: 'status-updated', label: '状态已同步更新' }]
+};
+
+function renderChecklist(item) {
+    const container = document.getElementById('modal-item-checklist');
+    if (!container) return;
+    
+    const status = item.status || '';
+    let checkItems = null;
+    
+    for (const [key, items] of Object.entries(CHECKLIST_RULES)) {
+        if (status.includes(key)) { checkItems = items; break; }
+    }
+    if (!checkItems) checkItems = CHECKLIST_RULES._default;
+    
+    const itemId = String(item.id || item.workitem_id || '');
+    const savedChecks = loadChecklistState(itemId);
+    
+    container.innerHTML = checkItems.map(ci => {
+        const checked = savedChecks[ci.id] ? 'checked' : '';
+        return `<div class="checklist-row">
+            <input type="checkbox" id="cl-${ci.id}" data-cid="${ci.id}" data-item="${escapeHtml(itemId)}" ${checked}>
+            <label for="cl-${ci.id}">${ci.label}</label>
+        </div>`;
+    }).join('');
+    
+    container.querySelectorAll('input[type=checkbox]').forEach(cb => {
+        cb.addEventListener('change', function() {
+            saveChecklistItem(itemId, this.dataset.cid, this.checked);
+        });
+    });
+}
+
+function loadChecklistState(itemId) {
+    try { return JSON.parse(localStorage.getItem('devops_checklist_' + itemId) || '{}'); } catch { return {}; }
+}
+
+function saveChecklistItem(itemId, checkId, checked) {
+    const state = loadChecklistState(itemId);
+    if (checked) state[checkId] = true;
+    else delete state[checkId];
+    localStorage.setItem('devops_checklist_' + itemId, JSON.stringify(state));
+}
+
+// 评论功能
+function renderComments(itemId) {
+    const container = document.getElementById('modal-item-comments');
+    const input = document.getElementById('modal-comment-input');
+    const btn = document.getElementById('btn-modal-comment-submit');
+    if (!container) return;
+    
+    const comments = loadComments(itemId);
+    
+    container.innerHTML = comments.length === 0
+        ? '<p style="color:#94a3b8;font-size:12px;">暂无评论，添加第一条讨论</p>'
+        : comments.map(c => `<div class="comment-item"><div class="comment-meta">${escapeHtml(c.author || '匿名')} · ${escapeHtml(c.time || '')}</div><div class="comment-text">${escapeHtml(c.text || '')}</div></div>`).join('');
+    
+    if (btn) {
+        btn.onclick = () => {
+            const text = input ? input.value.trim() : '';
+            if (!text) return;
+            saveComment(itemId, text);
+            if (input) input.value = '';
+            renderComments(itemId);
+        };
+    }
+}
+
+function loadComments(itemId) {
+    try { return JSON.parse(localStorage.getItem('devops_comments_' + itemId) || '[]'); } catch { return []; }
+}
+
+function saveComment(itemId, text) {
+    const comments = loadComments(itemId);
+    comments.push({ text, author: '我', time: new Date().toLocaleString('zh-CN') });
+    localStorage.setItem('devops_comments_' + itemId, JSON.stringify(comments));
+}
