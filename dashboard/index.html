@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Login Screen Overlay -->
-    <div class="login-overlay" id="login-overlay" style="display: none;">
+    <div class="login-overlay" id="login-overlay">
         <div class="login-card">
             <div class="login-header">
                 <div class="login-logo-area">
@@ -60,6 +60,31 @@
             </div>
         </div>
     </div>
+
+    <!-- 防闪烁：已登录用户立即隐藏遮罩，避免登录门闪现 -->
+    <script>
+    (function(){
+        var token = localStorage.getItem('devops_session_token');
+        var ts = localStorage.getItem('devops_session_timestamp');
+        var loginAt = localStorage.getItem('devops_session_login_time');
+        if (token === 'devops-session-active' && ts) {
+            var now = Date.now();
+            var slidingMax = 4 * 60 * 60 * 1000;
+            var absoluteMax = 24 * 60 * 60 * 1000;
+            var ok = true;
+            if ((now - parseInt(ts,10)) >= slidingMax) ok = false;
+            if (loginAt && (now - parseInt(loginAt,10)) >= absoluteMax) ok = false;
+            if (ok) {
+                document.getElementById('login-overlay').style.display = 'none';
+                document.getElementById('btn-logout').style.display = 'flex';
+            } else {
+                localStorage.removeItem('devops_session_token');
+                localStorage.removeItem('devops_session_timestamp');
+                localStorage.removeItem('devops_session_login_time');
+            }
+        }
+    })();
+    </script>
 
     <!-- App Container -->
     <div class="app-container">

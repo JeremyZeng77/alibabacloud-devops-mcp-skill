@@ -66,7 +66,7 @@ const BRIDGE_API_BASE = (window.location.hostname === 'localhost' || window.loca
 // Credentials Config
 const AUTH_CONFIG = {
     username: 'jeremy',
-    password: 'Abcd.1234@Jeremy',
+    passwordHash: 'cd8e5d18ed10696006a2221b8796ff12e9b35da0b386341103db8d6030b134e2', // SHA-256 digest，不存明文凭证
     sessionExpiryHours: 4,      // 滑动超时：用户无操作达 4 小时后失效
     absoluteExpiryHours: 24     // 绝对超时：自登录起，连续登录达 24 小时后强制失效
 };
@@ -118,7 +118,7 @@ function clearSession() {
     localStorage.removeItem('devops_session_login_time');
 }
 
-function handleLoginSubmit() {
+async function handleLoginSubmit() {
     const userEl = document.getElementById('login-username');
     const passEl = document.getElementById('login-password');
     const errorEl = document.getElementById('login-error-msg');
@@ -128,35 +128,61 @@ function handleLoginSubmit() {
     const username = userEl.value.trim();
     const password = passEl.value;
     
-    if (username.toLowerCase() === AUTH_CONFIG.username && password === AUTH_CONFIG.password) {
-        // Success
-        const nowStr = Date.now().toString();
-        localStorage.setItem('devops_session_token', 'devops-session-active');
-        localStorage.setItem('devops_session_timestamp', nowStr);
-        localStorage.setItem('devops_session_login_time', nowStr);
-        
-        // Fade out overlay
-        const overlay = document.getElementById('login-overlay');
-        overlay.style.opacity = '0';
-        setTimeout(() => {
-            overlay.style.display = 'none';
-            document.getElementById('btn-logout').style.display = 'flex';
-        }, 300);
-        
-        startDashboardApp();
-    } else {
-        // Shake card and show error
+    if (username.toLowerCase() !== AUTH_CONFIG.username) {
         errorTextEl.textContent = '用户名或密码不正确';
         errorEl.style.display = 'flex';
-        
         cardEl.style.animation = 'none';
-        cardEl.offsetHeight; // Force reflow
+        cardEl.offsetHeight;
         cardEl.style.animation = 'shake 0.4s ease';
-        
         passEl.value = '';
         passEl.focus();
+        return;
     }
-}
+    
+    // 使用 SHA-256 哈希校验密码，不存明文字段
+    try {
+        if (!window.crypto || !window.crypto.subtle) {
+            throw new Error('Crypto API unavailable');
+        }
+        const encoder = new TextEncoder();
+        const data = encoder.encode(password);
+        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        
+        if (hashHex !== AUTH_CONFIG.passwordHash) {
+            throw new Error('Invalid password');
+        }
+    } catch (e) {
+        if (e.message === 'Crypto API unavailable') {
+            errorTextEl.textContent = '当前环境不支持安全登录，请使用 HTTPS 访问';
+        } else {
+            errorTextEl.textContent = '用户名或密码不正确';
+        }
+        errorEl.style.display = 'flex';
+        cardEl.style.animation = 'none';
+        cardEl.offsetHeight;
+        cardEl.style.animation = 'shake 0.4s ease';
+        passEl.value = '';
+        passEl.focus();
+        return;
+    }
+    
+    // Success
+    const nowStr = Date.now().toString();
+    localStorage.setItem('devops_session_token', 'devops-session-active');
+    localStorage.setItem('devops_session_timestamp', nowStr);
+    localStorage.setItem('devops_session_login_time', nowStr);
+    
+    // Fade out overlay
+    const overlay = document.getElementById('login-overlay');
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+        overlay.style.display = 'none';
+        document.getElementById('btn-logout').style.display = 'flex';
+    }, 300);
+    
+    startDashboardApp();
 
 function handleLogout() {
     clearSession();
