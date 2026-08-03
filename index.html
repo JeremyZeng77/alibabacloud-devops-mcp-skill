@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="./assets/index-DumROeP8.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DMtDLDUq.css">
+  <script type="module" crossorigin src="./assets/index-BoAdWK7T.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DjTyLkTj.css">
 </head>
 <body>
     <!-- Login Screen Overlay -->
@@ -170,10 +170,6 @@
             <button class="nav-tab" data-view="risk">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                 风险预警中心
-            </button>
-            <button class="nav-tab" data-view="standup">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                站会看板
             </button>
             <button class="nav-tab" data-view="config">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
@@ -696,16 +692,6 @@
                 <div class="chart-card" style="margin-top:16px;"><h3 class="chart-title">👥 人员效能看板</h3><div class="table-container" id="risk-efficiency-table-container"></div></div>
             </section>
 
-            <!-- VIEW 6: 站会看板 -->
-            <section class="view-section" id="view-standup">
-                <div class="standup-header-card"><h2 style="margin:0;font-size:22px;">📋 每日站会看板</h2></div>
-                <div class="standup-controls"><label>日期：</label><input type="date" id="standup-date"><button id="btn-standup-export" class="btn-sync">导出Markdown</button></div>
-                <div class="audit-panels-container" id="standup-cards-container"><!-- JS注入 --></div>
-                <div class="chart-card" style="margin-top:16px;"><h3 class="chart-title">📝 我的站会记录</h3>
-                    <div class="standup-form"><input type="text" id="standup-yesterday" placeholder="昨天做了什么"><input type="text" id="standup-today" placeholder="今天计划做什么"><input type="text" id="standup-blocker" placeholder="有什么阻塞"><button id="btn-standup-submit" class="btn-sync">提交记录</button></div>
-                </div>
-                <div class="chart-card" style="margin-top:16px;"><h3 class="chart-title">📋 今日站会记录</h3><div id="standup-records-container"><p style="color:#94a3b8;">暂未选择日期</p></div></div>
-            </section>
 
             <!-- VIEW 7: 配置管理 -->
             <section class="view-section" id="view-config">
