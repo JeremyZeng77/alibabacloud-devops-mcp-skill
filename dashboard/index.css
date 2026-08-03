@@ -2565,19 +2565,6 @@ input:checked + .slider:before {
 .risk-kpi-value { font-size: 28px; font-weight: 700; }
 .risk-kpi-label { font-size: 11px; color: #94a3b8; margin-top: 4px; }
 
-/* 站会看板 */
-.standup-header-card { background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); border-radius: 12px; padding: 16px 20px; margin-bottom: 20px; }
-.standup-controls { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
-.standup-controls input[type=date] { background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); border-radius: 6px; padding: 6px 12px; color: #e2e8f0; font-size: 13px; }
-.standup-form { display: flex; flex-direction: column; gap: 8px; }
-.standup-form input { background: rgba(0,0,0,0.2); border: 1px solid var(--border-color); border-radius: 6px; padding: 8px 12px; color: #e2e8f0; font-size: 13px; }
-.standup-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px; margin-bottom: 12px; }
-.standup-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-.standup-card-name { font-weight: 600; font-size: 15px; color: #e2e8f0; }
-.standup-card-role { font-size: 11px; color: #94a3b8; background: rgba(255,255,255,0.05); padding: 2px 8px; border-radius: 10px; }
-.standup-card-line { margin: 4px 0; font-size: 13px; color: #cbd5e1; }
-.standup-card-line strong { color: #94a3b8; margin-right: 6px; }
-.has-blocker { border-color: rgba(239,68,68,0.4) !important; background: rgba(239,68,68,0.05) !important; }
 
 /* 配置管理 */
 .config-header-card { background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.25); border-radius: 12px; padding: 16px 20px; margin-bottom: 20px; }
@@ -2609,7 +2596,6 @@ input:checked + .slider:before {
     .nav-tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
     .nav-tab { flex-shrink: 0; white-space: nowrap; font-size: 12px; padding: 8px 12px; }
     .risk-kpi-card { min-width: 140px; }
-    .standup-controls { flex-direction: column; align-items: stretch; }
     .config-card textarea { height: 150px; }
 }
 

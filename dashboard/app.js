@@ -5,7 +5,7 @@ let state = {
     history: { mftb: [], mfood: [] },
     weeklyReports: [],
     currentProject: 'mftb', // 'mftb' or 'mfood'
-    currentView: 'overview', // 'overview', 'workitems', 'weekly', 'risk', 'standup', 'config', 'audit'
+    currentView: 'overview', // 'overview', 'workitems', 'weekly', 'risk', 'config', 'audit'
     charts: {}, // Store Chart.js instances
     autoSyncIntervalId: null, // Store interval ID for 5 minutes sync
     chartStatusMode: 'active', // 'active' (进行中) or 'all' (全部)
@@ -581,7 +581,7 @@ function loadStateFromURL() {
     }
     if (params.has('view')) {
         const view = params.get('view');
-        if (['overview', 'workitems', 'weekly', 'risk', 'standup', 'config', 'audit'].includes(view)) {
+        if (['overview', 'workitems', 'weekly', 'risk', 'config', 'audit'].includes(view)) {
             state.currentView = view;
         }
     }
@@ -933,8 +933,6 @@ function renderCurrentView() {
         renderAuditView();
     } else if (state.currentView === 'risk') {
         renderRiskCenter();
-    } else if (state.currentView === 'standup') {
-        renderStandupBoard();
     } else if (state.currentView === 'config') {
         renderConfigCenter();
     }
@@ -3593,118 +3591,6 @@ function renderEfficiencyBoard(items) {
             <td>${rate}%</td>
         </tr>`;
     }).join('')}</tbody></table>`;
-}
-
-// ---------- P3: 站会看板 ----------
-
-function renderStandupBoard() {
-    const dateInput = document.getElementById('standup-date');
-    if (dateInput && !dateInput.value) {
-        dateInput.value = new Date().toISOString().substring(0, 10);
-    }
-    
-    const items = state.latest[state.currentProject] || [];
-    const date = dateInput ? dateInput.value : '';
-    renderStandupCards(items, date);
-    renderStandupRecords(date);
-    
-    // 事件绑定
-    const submitBtn = document.getElementById('btn-standup-submit');
-    const exportBtn = document.getElementById('btn-standup-export');
-    if (submitBtn) submitBtn.onclick = submitStandupRecord;
-    if (exportBtn) exportBtn.onclick = exportStandupMarkdown;
-    if (dateInput) dateInput.onchange = () => { renderStandupCards(items, dateInput.value); renderStandupRecords(dateInput.value); };
-}
-
-function renderStandupCards(items, date) {
-    const container = document.getElementById('standup-cards-container');
-    if (!container) return;
-    
-    const members = [...new Set(items.map(i => i.assignee || i.assigned_to || '未指派'))].filter(m => m !== '未指派');
-    const records = loadStandupRecords(date);
-    
-    container.innerHTML = members.map(name => {
-        const memberItems = items.filter(i => (i.assignee || i.assigned_to) === name);
-        const active = memberItems.filter(i => {
-            const s = i.status || '';
-            return ['开发中', '进行中', '处理中', '测试中', '待测试'].some(ss => s.includes(ss));
-        });
-        const role = (DEVELOPER_ROLES_MAP && DEVELOPER_ROLES_MAP[name]) || '-';
-        const rec = records[name] || {};
-        const hasBlocker = rec.blocker && rec.blocker.trim();
-        
-        return `<div class="standup-card ${hasBlocker ? 'has-blocker' : ''}">
-            <div class="standup-card-header">
-                <span class="standup-card-name">${escapeHtml(name)}</span>
-                <span class="standup-card-role">${escapeHtml(role)}</span>
-            </div>
-            <div class="standup-card-line"><strong>活跃任务:</strong> ${active.length} 项</div>
-            <div class="standup-card-line"><strong>昨天:</strong> ${escapeHtml(rec.yesterday || '未记录')}</div>
-            <div class="standup-card-line"><strong>今天:</strong> ${escapeHtml(rec.today || '未记录')}</div>
-            <div class="standup-card-line">${hasBlocker ? `<strong style="color:#f87171;">阻塞:</strong> <span style="color:#f87171;">${escapeHtml(rec.blocker)}</span>` : '<strong>阻塞:</strong> 无'}</div>
-        </div>`;
-    }).join('');
-}
-
-function submitStandupRecord() {
-    const date = document.getElementById('standup-date').value;
-    const yesterday = document.getElementById('standup-yesterday').value.trim();
-    const today = document.getElementById('standup-today').value.trim();
-    const blocker = document.getElementById('standup-blocker').value.trim();
-    
-    if (!date) { showToast('请选择日期'); return; }
-    
-    const records = loadAllStandupRecords();
-    if (!records[date]) records[date] = {};
-    records[date].me = { yesterday, today, blocker, time: new Date().toISOString() };
-    
-    localStorage.setItem('devops_standup_records', JSON.stringify(records));
-    renderStandupRecords(date);
-    showToast('站会记录已保存');
-}
-
-function loadStandupRecords(date) {
-    const records = loadAllStandupRecords();
-    return records[date] || {};
-}
-
-function loadAllStandupRecords() {
-    try { return JSON.parse(localStorage.getItem('devops_standup_records') || '{}'); } catch { return {}; }
-}
-
-function renderStandupRecords(date) {
-    const container = document.getElementById('standup-records-container');
-    if (!container) return;
-    
-    const records = loadStandupRecords(date);
-    if (!date) { container.innerHTML = '<p style="color:#94a3b8;">暂未选择日期</p>'; return; }
-    
-    const entries = Object.entries(records);
-    if (entries.length === 0) { container.innerHTML = `<p style="color:#94a3b8;">${date} 暂无站会记录</p>`; return; }
-    
-    container.innerHTML = entries.map(([name, rec]) => {
-        const hasBlocker = rec.blocker && rec.blocker.trim();
-        return `<div class="standup-card ${hasBlocker ? 'has-blocker' : ''}">
-            <div class="standup-card-header"><span class="standup-card-name">${escapeHtml(name)}</span></div>
-            <div class="standup-card-line"><strong>昨天:</strong> ${escapeHtml(rec.yesterday || '-')}</div>
-            <div class="standup-card-line"><strong>今天:</strong> ${escapeHtml(rec.today || '-')}</div>
-            <div class="standup-card-line">${hasBlocker ? `<strong style="color:#f87171;">阻塞:</strong> <span style="color:#f87171;">${escapeHtml(rec.blocker)}</span>` : '<strong>阻塞:</strong> 无'}</div>
-        </div>`;
-    }).join('');
-}
-
-function exportStandupMarkdown() {
-    const date = document.getElementById('standup-date').value;
-    const records = loadStandupRecords(date);
-    const entries = Object.entries(records);
-    if (entries.length === 0) { showToast('当天无站会记录'); return; }
-    
-    let md = `## 每日站会 - ${date}\n\n`;
-    for (const [name, rec] of entries) {
-        md += `### ${name}\n- **昨天**: ${rec.yesterday || '-'}\n- **今天**: ${rec.today || '-'}\n- **阻塞**: ${rec.blocker || '无'}\n\n`;
-    }
-    
-    navigator.clipboard.writeText(md).then(() => showToast('已复制站会记录')).catch(() => showToast('复制失败'));
 }
 
 // ---------- P4: 配置管理 ----------
