@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-03T03:23:10.710214+00:00",
+  "compiledAt": "2026-08-03T07:32:19.890235+00:00",
   "latest": {
     "mftb": [
       {
@@ -2470,7 +2470,7 @@
       {
         "id": "MFTB-1229",
         "title": "【前端】【大系统】神策分群同步",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "李科",
         "creator": "李科",
@@ -2480,7 +2480,7 @@
         "createDate": "2026-07-29",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ed38b19bf1d8c4e454afa58bd6",
-        "rowText": "【任务】【前端】【大系统】神策分群同步\nID: MFTB-1229 | 状态: 未开始 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大系统】神策分群同步\nID: MFTB-1229 | 状态: 提交测试 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3048,7 +3048,7 @@
       {
         "id": "MFTB-1162",
         "title": "【前端】【大係統】基礎會員體系（含簽到+任務+獎品）",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "周忠浩",
         "creator": "周忠浩",
@@ -3058,7 +3058,7 @@
         "createDate": "2026-07-28",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=281e9f25a703a84ada949c71d5",
-        "rowText": "【任务】【前端】【大係統】基礎會員體系（含簽到+任務+獎品）\nID: MFTB-1162 | 状态: 开发中 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: 未规划 | 创建时间: 2026-07-28 | 排期规划: 2026-07-28 至 2026-08-04",
+        "rowText": "【任务】【前端】【大係統】基礎會員體系（含簽到+任務+獎品）\nID: MFTB-1162 | 状态: 提交测试 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: 未规划 | 创建时间: 2026-07-28 | 排期规划: 2026-07-28 至 2026-08-04",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -8216,17 +8216,17 @@
       {
         "id": "MFTB-688",
         "title": "【iOS用户端】集成苹果登录",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "陈剑",
         "creator": "陈剑",
         "iteration": "MFTB-v1.0.1",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-08-03",
+        "planEnd": "2026-08-03",
         "createDate": "2026-06-16",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b565f27dc78a0942a6fe6bd512",
-        "rowText": "【任务】【iOS用户端】集成苹果登录\nID: MFTB-688 | 状态: 未开始 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-16 | 排期规划: - 至 -",
+        "rowText": "【任务】【iOS用户端】集成苹果登录\nID: MFTB-688 | 状态: 提交测试 | 优先级: 中\n负责人: 陈剑 | 提报人: 陈剑\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-16 | 排期规划: 2026-08-03 至 2026-08-03",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -14638,6 +14638,23 @@
         "rowText": "【产品】【產品】【大係統】管理後臺權限管理模塊\nID: MFTB-3 | 状态: 已完成 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: 2026-03-26 至 2026-03-31",
         "project": "MFTB集团项目",
         "category": "Task"
+      },
+      {
+        "id": "MFTB-1252",
+        "title": "【大係統】【 商家端APP】联系电话853应该只能8位数",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "陈少丹",
+        "creator": "李云锋",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-03",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=741275e985fdbc550baa31d4dd",
+        "rowText": "【缺陷】【大係統】【 商家端APP】联系电话853应该只能8位数\nID: MFTB-1252 | 状态: 待确认 | 优先级: 中\n负责人: 陈少丹 | 提报人: 李云锋\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
       },
       {
         "id": "MFTB-1246",
@@ -23829,37 +23846,37 @@
       {
         "date": "2026-07-31",
         "total": 860,
-        "completed": 675,
+        "completed": 676,
         "statusCounts": {
-          "已完成": 675,
-          "进行中": 185
+          "已完成": 676,
+          "进行中": 184
         }
       },
       {
         "date": "2026-08-01",
         "total": 860,
-        "completed": 675,
+        "completed": 677,
         "statusCounts": {
-          "已完成": 675,
-          "进行中": 185
+          "已完成": 677,
+          "进行中": 183
         }
       },
       {
         "date": "2026-08-02",
         "total": 860,
-        "completed": 675,
+        "completed": 677,
         "statusCounts": {
-          "已完成": 675,
-          "进行中": 185
+          "已完成": 677,
+          "进行中": 183
         }
       },
       {
         "date": "2026-08-03",
         "total": 861,
-        "completed": 675,
+        "completed": 678,
         "statusCounts": {
-          "已完成": 675,
-          "进行中": 186
+          "已完成": 678,
+          "进行中": 183
         }
       }
     ],
