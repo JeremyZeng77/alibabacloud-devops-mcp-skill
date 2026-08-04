@@ -3380,12 +3380,14 @@ function renderRiskCenter() {
 function findDelayedItems(items, history) {
     const now = new Date();
     const results = [];
-    const activeStatuses = ['开发中', '进行中', '处理中', '测试中', '待测试', '待验收'];
+    const inactiveStatuses = ['已取消', '已拒绝'];
     const avgCycleDays = computeAvgCycleDays(history, items);
     
     for (const item of items) {
         const status = item.status || '';
-        if (!activeStatuses.some(s => status.includes(s))) continue;
+        // 已完成(含Task提交测试)或已取消/已拒绝的不纳入延期检测
+        if (isItemCompleted(item)) continue;
+        if (inactiveStatuses.some(s => status.includes(s))) continue;
         
         const created = item.created_at || item.created;
         if (!created) continue;
@@ -3407,11 +3409,9 @@ function findDelayedItems(items, history) {
 
 function computeAvgCycleDays(history, items) {
     let totalDays = 0, count = 0;
-    const completedStatuses = ['已完成', '已上线', '已验证', '已关闭', '已发布'];
     
     for (const item of items) {
-        const status = item.status || '';
-        if (!completedStatuses.some(s => status.includes(s))) continue;
+        if (!isItemCompleted(item)) continue;
         const created = item.created_at || item.created;
         const updated = item.updated_at || item.updated;
         if (created && updated) {
@@ -3429,17 +3429,11 @@ function renderRiskKPIs(items, delayedItems) {
     const highCount = delayedItems.filter(d => d.riskLevel === 'high').length;
     const medCount = delayedItems.filter(d => d.riskLevel === 'medium').length;
     const total = items.length;
-    const completed = items.filter(i => {
-        const s = i.status || '';
-        return ['已完成', '已上线', '已验证', '已关闭', '已发布'].some(cs => s.includes(cs));
-    }).length;
+    const completed = items.filter(i => isItemCompleted(i)).length;
     const rate = total > 0 ? Math.round((completed / total) * 100) : 0;
     
     // 预测剩余天数
-    const active = items.filter(i => {
-        const s = i.status || '';
-        return ['开发中', '进行中', '处理中', '测试中', '待测试'].some(ss => s.includes(ss));
-    }).length;
+    const active = items.filter(i => !isItemCompleted(i) && !['已取消', '已拒绝'].some(s => (i.status || '').includes(s))).length;
     const recentRate = computeRecentVelocity(items, history);
     const estDays = recentRate > 0 ? Math.round(active / recentRate * 7) : '--';
     
@@ -3454,10 +3448,8 @@ function computeRecentVelocity(items, history) {
     const now = new Date();
     const thirtyDaysAgo = new Date(now - 30 * 86400000);
     let completed = 0;
-    const completedStatuses = ['已完成', '已上线', '已验证', '已关闭', '已发布'];
     for (const item of items) {
-        const status = item.status || '';
-        if (!completedStatuses.some(s => status.includes(s))) continue;
+        if (!isItemCompleted(item)) continue;
         const updated = item.updated_at || item.updated;
         if (updated && new Date(updated) >= thirtyDaysAgo) completed++;
     }
@@ -3473,7 +3465,7 @@ function renderBurndownChart(items, history) {
     
     const active = items.filter(i => {
         const s = i.status || '';
-        return !['已完成', '已上线', '已验证', '已关闭', '已发布', '已取消', '已拒绝'].some(cs => s.includes(cs));
+        return !isItemCompleted(i) && !['已取消', '已拒绝'].some(cs => s.includes(cs));
     }).length;
     const total = items.filter(i => {
         const s = i.status || '';
@@ -3567,7 +3559,7 @@ function renderDependencyDetection(items) {
         for (const kw of criticalKeywords) {
             if (title.includes(kw.toLowerCase())) {
                 const status = item.status || '';
-                const isDone = ['已完成', '已上线', '已验证', '已关闭'].some(s => status.includes(s));
+                const isDone = isItemCompleted(item);
                 dependencies.push({
                     id: item.id || item.workitem_id,
                     title: item.title || item.subject || '-',
@@ -3626,14 +3618,14 @@ function renderEfficiencyBoard(items) {
         devMap[assignee].total++;
         
         const status = item.status || '';
-        if (['已完成', '已上线', '已验证', '已关闭', '已发布'].some(s => status.includes(s))) {
+        if (isItemCompleted(item)) {
             devMap[assignee].completed++;
-        } else if (['开发中', '进行中', '处理中', '测试中', '待测试'].some(s => status.includes(s))) {
+        } else if (!['已取消', '已拒绝'].some(s => status.includes(s))) {
             devMap[assignee].active++;
         }
         
         const created = item.created_at || item.created;
-        if (created && !['已完成', '已上线', '已验证', '已关闭', '已发布', '已取消'].some(s => status.includes(s))) {
+        if (created && !isItemCompleted(item) && !['已取消', '已拒绝'].some(s => status.includes(s))) {
             const days = Math.floor((new Date() - new Date(created)) / 86400000);
             if (days > 14) devMap[assignee].delayed++;
         }
