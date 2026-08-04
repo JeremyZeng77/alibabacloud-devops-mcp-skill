@@ -61,14 +61,15 @@ function isItemCompleted(item) {
 
 // ── Business Line Classification ──
 const DEFAULT_BUSINESS_LINE_CONFIG = {
-    daojia: ['到家业务','到家業務','外卖','外賣','mFood','mfood','闪蜂','閃蜂','極馬','極馬專送','众包','眾包','专送','專送','配送','騎手','骑手','調度','调度','跑腿','外送','外賣業務'],
+    zhongbao: ['众包','眾包','跑腿','外送','外賣業務'],
+    daojia: ['到家业务','到家業務','外卖','外賣','mFood','mfood','闪蜂','閃蜂','極馬','極馬專送','专送','專送','配送','騎手','骑手','調度','调度'],
     daodian: ['團購','团购','到店','大係統','大系統','大系统','商家APP','商家 APP','商家端','商家app','门店','門店','商户','商戶','合同','推广金','推廣金','集團','集团','商家管理','商家入駐']
 };
 
 function loadBusinessLineConfig() {
     try {
         const saved = localStorage.getItem('devops_config_businessLine');
-        if (saved) { const parsed = JSON.parse(saved); if (parsed.daojia && parsed.daodian) return parsed; }
+        if (saved) { const parsed = JSON.parse(saved); if (parsed.daojia && parsed.daodian && parsed.zhongbao) return parsed; }
     } catch {}
     return JSON.parse(JSON.stringify(DEFAULT_BUSINESS_LINE_CONFIG));
 }
@@ -80,6 +81,7 @@ function saveBusinessLineConfig(config) {
 function getBusinessLine(item) {
     const config = loadBusinessLineConfig();
     const title = ((item.title || '') + ' ' + (item.rowText || '')).toLowerCase();
+    for (const kw of config.zhongbao) { if (title.includes(kw.toLowerCase())) return 'zhongbao'; }
     for (const kw of config.daojia) { if (title.includes(kw.toLowerCase())) return 'daojia'; }
     for (const kw of config.daodian) { if (title.includes(kw.toLowerCase())) return 'daodian'; }
     return 'other';
@@ -1014,9 +1016,12 @@ function renderOverviewDashboard() {
     document.getElementById('kpi-bug-active').textContent = bugActive;
 
     // Business Line KPI
+    const bizZhongbao = items.filter(x => getBusinessLine(x) === 'zhongbao');
     const bizDaojia = items.filter(x => getBusinessLine(x) === 'daojia');
     const bizDaodian = items.filter(x => getBusinessLine(x) === 'daodian');
     const D = x => isItemCompleted(x) ? 0 : 1;
+    document.getElementById('kpi-zhongbao-total').textContent = bizZhongbao.length;
+    document.getElementById('kpi-zhongbao-active').textContent = bizZhongbao.reduce((acc, x) => acc + D(x), 0);
     document.getElementById('kpi-daojia-total').textContent = bizDaojia.length;
     document.getElementById('kpi-daojia-active').textContent = bizDaojia.reduce((acc, x) => acc + D(x), 0);
     document.getElementById('kpi-daodian-total').textContent = bizDaodian.length;
@@ -1654,7 +1659,8 @@ function applyFilters() {
 
         let bizBadge = '';
         const biz = getBusinessLine(item);
-        if (biz === 'daojia') bizBadge = '<span class="badge-biz badge-biz-daojia">🏠 到家</span>';
+        if (biz === 'zhongbao') bizBadge = '<span class="badge-biz badge-biz-zhongbao">🏍️ 众包</span>';
+        else if (biz === 'daojia') bizBadge = '<span class="badge-biz badge-biz-daojia">🏠 到家</span>';
         else if (biz === 'daodian') bizBadge = '<span class="badge-biz badge-biz-daodian">🏪 到店</span>';
 
         tr.innerHTML = `
@@ -3254,7 +3260,7 @@ function exportMarkdownSnippet() {
     filterStrings.push(`负责人: ${assVal === 'all' ? '全部负责人' : assVal}`);
     if (prioVal !== 'all' && prioVal !== null) filterStrings.push(`优先级: ${prioVal}`);
     if (iterVal !== 'all' && iterVal !== null) filterStrings.push(`迭代: ${iterVal}`);
-    if (bizLineVal !== 'all' && bizLineVal !== null) filterStrings.push(`业务线: ${bizLineVal === 'daojia' ? '到家业务' : '到店业务'}`);
+    if (bizLineVal !== 'all' && bizLineVal !== null) filterStrings.push(`业务线: ${bizLineVal === 'zhongbao' ? '众包' : bizLineVal === 'daojia' ? '到家业务' : '到店业务'}`);
     const filtersLabel = filterStrings.join(' | ');
 
     const items = state.latest[state.currentProject] || [];
@@ -3665,7 +3671,7 @@ function renderConfigCenter() {
     document.getElementById('config-roles').value = JSON.stringify(roles, null, 2);
     document.getElementById('config-milestones').value = JSON.stringify(milestones, null, 2);
     document.getElementById('config-critical').value = JSON.stringify(criticalKeywords, null, 2);
-    document.getElementById('config-bizline-daojia').value = JSON.stringify(bizLineConfig.daojia, null, 2);
+    document.getElementById('config-bizline-zhongbao').value = JSON.stringify(bizLineConfig.zhongbao, null, 2);
     document.getElementById('config-bizline-daodian').value = JSON.stringify(bizLineConfig.daodian, null, 2);
     
     document.getElementById('btn-config-roles-save').onclick = () => {
@@ -3679,10 +3685,11 @@ function renderConfigCenter() {
     };
     document.getElementById('btn-config-bizline-save').onclick = () => {
         try {
+            const zhongbao = JSON.parse(document.getElementById('config-bizline-zhongbao').value);
             const daojia = JSON.parse(document.getElementById('config-bizline-daojia').value);
             const daodian = JSON.parse(document.getElementById('config-bizline-daodian').value);
-            if (!Array.isArray(daojia) || !Array.isArray(daodian)) throw new Error('必须是数组');
-            saveBusinessLineConfig({ daojia, daodian });
+            if (!Array.isArray(zhongbao) || !Array.isArray(daojia) || !Array.isArray(daodian)) throw new Error('必须是数组');
+            saveBusinessLineConfig({ zhongbao, daojia, daodian });
             showToast('业务线关键词已保存');
         } catch (e) { showToast('JSON格式错误: ' + e.message); }
     };
