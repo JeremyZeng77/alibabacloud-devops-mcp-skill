@@ -3688,8 +3688,9 @@ function renderConfigCenter() {
             const zhongbao = JSON.parse(document.getElementById('config-bizline-zhongbao').value);
             const daojia = JSON.parse(document.getElementById('config-bizline-daojia').value);
             const daodian = JSON.parse(document.getElementById('config-bizline-daodian').value);
-            if (!Array.isArray(zhongbao) || !Array.isArray(daojia) || !Array.isArray(daodian)) throw new Error('必须是数组');
-            saveBusinessLineConfig({ zhongbao, daojia, daodian });
+            const other = JSON.parse(document.getElementById('config-bizline-other').value);
+            if (!Array.isArray(zhongbao) || !Array.isArray(daojia) || !Array.isArray(daodian) || !Array.isArray(other)) throw new Error('必须是数组');
+            saveBusinessLineConfig({ zhongbao, daojia, daodian, other });
             showToast('业务线关键词已保存');
         } catch (e) { showToast('JSON格式错误: ' + e.message); }
     };
