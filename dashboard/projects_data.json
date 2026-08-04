@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-04T02:09:56.618868+00:00",
+  "compiledAt": "2026-08-04T02:52:10.829735+00:00",
   "latest": {
     "mftb": [
       {
@@ -532,7 +532,7 @@
       {
         "id": "MFTB-999",
         "title": "【大系统】虚拟号码后台",
-        "status": "待测试",
+        "status": "测试中",
         "priority": "中",
         "assignee": "刘龙振海",
         "creator": "刘龙振海",
@@ -542,7 +542,7 @@
         "createDate": "2026-07-16",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00822fa40f47af3da90b428255",
-        "rowText": "【产品类需求】【大系统】虚拟号码后台\nID: MFTB-999 | 状态: 待测试 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-30 至 2026-07-31",
+        "rowText": "【产品类需求】【大系统】虚拟号码后台\nID: MFTB-999 | 状态: 测试中 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-30 至 2026-07-31",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2281,6 +2281,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1268",
+        "title": "【大係統】集團-未入駐商家功能",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "胡家兴",
+        "creator": "胡家兴",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-08-04",
+        "planEnd": "2026-08-04",
+        "createDate": "2026-08-04",
+        "workItemType": "设计",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8badde0b996638be5a41ec3565",
+        "rowText": "【设计】【大係統】集團-未入駐商家功能\nID: MFTB-1268 | 状态: 待处理 | 优先级: 中\n负责人: 胡家兴 | 提报人: 胡家兴\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-04 | 排期规划: 2026-08-04 至 2026-08-04",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1265",
         "title": "【大係統】商品管理_創建商品細節補充",
         "status": "未开始",
@@ -2436,7 +2453,7 @@
       {
         "id": "MFTB-1251",
         "title": "【测试】【大系统】虚拟号码后台",
-        "status": "待处理",
+        "status": "测试中",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -2446,7 +2463,7 @@
         "createDate": "2026-08-03",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0dd2226a63c8ba74b7330e5e04",
-        "rowText": "【測試】【测试】【大系统】虚拟号码后台\nID: MFTB-1251 | 状态: 待处理 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【大系统】虚拟号码后台\nID: MFTB-1251 | 状态: 测试中 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -24119,11 +24136,11 @@
       },
       {
         "date": "2026-08-04",
-        "total": 872,
+        "total": 873,
         "completed": 691,
         "statusCounts": {
           "已完成": 691,
-          "进行中": 181
+          "进行中": 182
         }
       }
     ],
