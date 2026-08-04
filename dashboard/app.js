@@ -3549,7 +3549,7 @@ function renderDelayPrediction(delayedItems) {
         el.addEventListener('click', () => {
             const wid = el.dataset.wid;
             const item = (state.latest[state.currentProject] || []).find(i => String(i.id || i.workitem_id || '') === wid);
-            if (item && typeof showItemDetailById === 'function') showItemDetailById(item);
+            if (item && typeof window.showItemDetailById === 'function') window.showItemDetailById(item);
         });
     });
 }
@@ -3609,7 +3609,7 @@ function renderDependencyDetection(items) {
         el.addEventListener('click', () => {
             const wid = el.dataset.wid;
             const item = items.find(i => String(i.id || i.workitem_id || '') === wid);
-            if (item && typeof showItemDetailById === 'function') showItemDetailById(item);
+            if (item && typeof window.showItemDetailById === 'function') window.showItemDetailById(item);
         });
     });
 }
@@ -3721,15 +3721,32 @@ const originalShowItemDetailById = typeof showItemDetailById === 'function' ? sh
 // 劫持 showItemDetailById 来注入增强内容
 if (typeof window !== 'undefined') {
     const _origById = window.showItemDetailById;
-    window.showItemDetailById = function(item) {
-        if (_origById) _origById(item);
+    window.showItemDetailById = function(itemOrId) {
+        // 兼容传对象和传字符串两种调用方式
+        let item = itemOrId, itemId;
+        if (typeof itemOrId === 'string') {
+            itemId = itemOrId;
+            const items = state.latest[state.currentProject] || [];
+            item = items.find(x => x.id === itemId);
+        } else {
+            itemId = itemOrId.id || itemOrId.workitem_id || '';
+        }
+        // 用原始函数打开详情弹窗
+        if (_origById) {
+            if (typeof _origById === 'function') {
+                typeof itemOrId === 'string' ? _origById(itemOrId) : _origById(itemId);
+            }
+        } else if (item && typeof showItemDetailById === 'function') {
+            showItemDetailById(itemId);
+        }
         // 增强注入在 modal 打开后
-        setTimeout(() => {
-            const itemId = item.id || item.workitem_id || '';
-            renderStatusTimeline(item);
-            renderChecklist(item);
-            renderComments(itemId);
-        }, 100);
+        if (item) {
+            setTimeout(() => {
+                renderStatusTimeline(item);
+                renderChecklist(item);
+                renderComments(itemId);
+            }, 150);
+        }
     };
 }
 
