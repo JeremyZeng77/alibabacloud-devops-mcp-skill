@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-04T02:00:47.923129+00:00",
+  "compiledAt": "2026-08-04T02:09:56.618868+00:00",
   "latest": {
     "mftb": [
       {
@@ -600,7 +600,7 @@
       {
         "id": "MFTB-934",
         "title": "【眾包】提現卡支持中行&綁卡增加審核",
-        "status": "待测试",
+        "status": "测试中",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -610,7 +610,7 @@
         "createDate": "2026-07-10",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=95aa5f65c8343abcab4d7f8ddf",
-        "rowText": "【产品类需求】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-934 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-10 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-934 | 状态: 测试中 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-10 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2708,7 +2708,7 @@
       {
         "id": "MFTB-1226",
         "title": "【测试】【眾包】提現卡支持中行&綁卡增加審核",
-        "status": "待处理",
+        "status": "测试中",
         "priority": "中",
         "assignee": "杨庆龙",
         "creator": "杨庆龙",
@@ -2718,7 +2718,7 @@
         "createDate": "2026-07-29",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=35e2af60e7c0d5cdb83df9a7f5",
-        "rowText": "【測試】【测试】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-1226 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-1226 | 状态: 测试中 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
