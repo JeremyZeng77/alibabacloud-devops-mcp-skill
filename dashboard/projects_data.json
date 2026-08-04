@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-04T04:00:57.715506+00:00",
+  "compiledAt": "2026-08-04T06:31:17.962244+00:00",
   "latest": {
     "mftb": [
       {
@@ -243,7 +243,7 @@
       {
         "id": "MFTB-1107",
         "title": "【大係統】到家管理_商品管理_新增 自動上下架時間設置",
-        "status": "待测试",
+        "status": "开发中",
         "priority": "高",
         "assignee": "廖荣",
         "creator": "廖荣",
@@ -253,7 +253,7 @@
         "createDate": "2026-07-23",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=711707671e3a39e7cce97265d1",
-        "rowText": "【产品类需求】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1107 | 状态: 待测试 | 优先级: 高\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1107 | 状态: 开发中 | 优先级: 高\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2298,6 +2298,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1271",
+        "title": "【服务端】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表&中通需求變更",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "朱敬辉",
+        "creator": "朱敬辉",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-08-04",
+        "planEnd": "2026-08-05",
+        "createDate": "2026-08-04",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=71dd1e215980c39a45d132b77a",
+        "rowText": "【任务】【服务端】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表&中通需求變更\nID: MFTB-1271 | 状态: 未开始 | 优先级: 中\n负责人: 朱敬辉 | 提报人: 朱敬辉\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-04 | 排期规划: 2026-08-04 至 2026-08-05",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1270",
         "title": "【mfood Android】【大係統】集團-未入駐商家功能",
         "status": "未开始",
@@ -2351,7 +2368,7 @@
       {
         "id": "MFTB-1264",
         "title": "【大係統】到家管理_商品管理_新增 自動上下架時間設置",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -2361,7 +2378,7 @@
         "createDate": "2026-08-03",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=78421eea9624409391ed22007f",
-        "rowText": "【任务】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1264 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
+        "rowText": "【任务】【大係統】到家管理_商品管理_新增 自動上下架時間設置\nID: MFTB-1264 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -24090,91 +24107,91 @@
       {
         "date": "2026-07-26",
         "total": 795,
-        "completed": 631,
+        "completed": 630,
         "statusCounts": {
-          "已完成": 631,
-          "进行中": 164
+          "已完成": 630,
+          "进行中": 165
         }
       },
       {
         "date": "2026-07-27",
         "total": 802,
-        "completed": 638,
+        "completed": 637,
         "statusCounts": {
-          "已完成": 638,
-          "进行中": 164
+          "已完成": 637,
+          "进行中": 165
         }
       },
       {
         "date": "2026-07-28",
         "total": 827,
-        "completed": 654,
+        "completed": 653,
         "statusCounts": {
-          "已完成": 654,
-          "进行中": 173
+          "已完成": 653,
+          "进行中": 174
         }
       },
       {
         "date": "2026-07-29",
         "total": 844,
-        "completed": 664,
+        "completed": 663,
         "statusCounts": {
-          "已完成": 664,
-          "进行中": 180
+          "已完成": 663,
+          "进行中": 181
         }
       },
       {
         "date": "2026-07-30",
         "total": 855,
-        "completed": 675,
+        "completed": 674,
         "statusCounts": {
-          "已完成": 675,
-          "进行中": 180
+          "已完成": 674,
+          "进行中": 181
         }
       },
       {
         "date": "2026-07-31",
         "total": 859,
-        "completed": 682,
+        "completed": 681,
         "statusCounts": {
-          "已完成": 682,
-          "进行中": 177
+          "已完成": 681,
+          "进行中": 178
         }
       },
       {
         "date": "2026-08-01",
         "total": 859,
-        "completed": 682,
+        "completed": 681,
         "statusCounts": {
-          "已完成": 682,
-          "进行中": 177
+          "已完成": 681,
+          "进行中": 178
         }
       },
       {
         "date": "2026-08-02",
         "total": 859,
-        "completed": 682,
+        "completed": 681,
         "statusCounts": {
-          "已完成": 682,
-          "进行中": 177
+          "已完成": 681,
+          "进行中": 178
         }
       },
       {
         "date": "2026-08-03",
         "total": 872,
-        "completed": 691,
+        "completed": 690,
         "statusCounts": {
-          "已完成": 691,
-          "进行中": 181
+          "已完成": 690,
+          "进行中": 182
         }
       },
       {
         "date": "2026-08-04",
-        "total": 875,
-        "completed": 692,
+        "total": 876,
+        "completed": 691,
         "statusCounts": {
-          "已完成": 692,
-          "进行中": 183
+          "已完成": 691,
+          "进行中": 185
         }
       }
     ],
