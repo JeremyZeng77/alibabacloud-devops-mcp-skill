@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="./assets/index-BoAdWK7T.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DjTyLkTj.css">
+  <script type="module" crossorigin src="./assets/index-Gb8pnWpX.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C9yo8cHv.css">
 </head>
 <body>
     <!-- Login Screen Overlay -->
@@ -320,6 +320,31 @@
                     </div>
                 </div>
 
+                <!-- Business Line KPI Row -->
+                <div class="kpi-row-title">🏪 业务线看板视角</div>
+                <div class="kpi-grid" style="margin-bottom: 24px;">
+                    <div class="kpi-card card-glow-teal">
+                        <div class="kpi-header">
+                            <span class="kpi-title">到家业务 - 总需求</span>
+                            <div class="kpi-icon icon-teal">🏠</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-daojia-total">0</div>
+                        <div class="kpi-footer">
+                            <span>活跃 <strong id="kpi-daojia-active">0</strong></span>
+                        </div>
+                    </div>
+                    <div class="kpi-card card-glow-emerald">
+                        <div class="kpi-header">
+                            <span class="kpi-title">到店业务 - 总需求</span>
+                            <div class="kpi-icon icon-emerald">🏪</div>
+                        </div>
+                        <div class="kpi-value" id="kpi-daodian-total">0</div>
+                        <div class="kpi-footer">
+                            <span>活跃 <strong id="kpi-daodian-active">0</strong></span>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Main Charts Layout -->
                 <div class="charts-row-main">
                     <!-- History Timeline Line Chart -->
@@ -394,6 +419,14 @@
                                     <option value="UI">UI设计</option>
                                     <option value="PM">项目管理</option>
                                     <option value="Ops">运维</option>
+                                </select>
+                            </div>
+                            <div class="gantt-role-filter" style="display: flex; align-items: center;">
+                                <label for="gantt-bizline-select" style="font-size: 12px; color: var(--text-muted); margin-right: 8px; font-weight: 500;">业务线:</label>
+                                <select id="gantt-bizline-select" class="select-dropdown" style="padding: 4px 10px; font-size: 12px; height: 32px; box-sizing: border-box; background: rgba(22, 28, 45, 0.9); border: 1px solid var(--border-color); color: var(--text-primary); cursor: pointer; border-radius: var(--radius-sm); outline: none;">
+                                    <option value="all">全部业务线</option>
+                                    <option value="daojia">🏠 到家业务</option>
+                                    <option value="daodian">🏪 到店业务</option>
                                 </select>
                             </div>
                             <div class="gantt-category-tabs">
@@ -478,6 +511,16 @@
                         <label for="filter-iteration" class="filter-label">迭代</label>
                         <select id="filter-iteration" class="select-dropdown">
                             <option value="all">全部迭代</option>
+                        </select>
+                    </div>
+
+                    <!-- Business Line select -->
+                    <div class="filter-group">
+                        <label for="filter-business-line" class="filter-label">业务线</label>
+                        <select id="filter-business-line" class="select-dropdown">
+                            <option value="all">全部业务线</option>
+                            <option value="daojia">🏠 到家业务</option>
+                            <option value="daodian">🏪 到店业务</option>
                         </select>
                     </div>
                 </div>
@@ -699,12 +742,15 @@
                 <div class="config-card"><h3>👥 人员角色映射</h3><textarea id="config-roles" rows="12" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><button id="btn-config-roles-save" class="btn-sync" style="margin-top:8px;">保存角色</button></div>
                 <div class="config-card" style="margin-top:16px;"><h3>📅 里程碑日期</h3><textarea id="config-milestones" rows="6" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><button id="btn-config-milestones-save" class="btn-sync" style="margin-top:8px;">保存里程碑</button></div>
                 <div class="config-card" style="margin-top:16px;"><h3>🔑 关键路径关键字</h3><textarea id="config-critical" rows="4" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><button id="btn-config-critical-save" class="btn-sync" style="margin-top:8px;">保存关键字</button></div>
+                <div class="config-card" style="margin-top:16px;"><h3>🏠 到家业务关键词</h3><textarea id="config-bizline-daojia" rows="4" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><p style="font-size:11px;color:var(--text-muted);margin-top:4px;">JSON字符串数组，匹配到这些关键词的工作项标注为"到家业务"</p></div>
+                <div class="config-card" style="margin-top:16px;"><h3>🏪 到店业务关键词</h3><textarea id="config-bizline-daodian" rows="4" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><p style="font-size:11px;color:var(--text-muted);margin-top:4px;">JSON字符串数组，匹配到这些关键词的工作项标注为"到店业务"</p></div>
+                <div class="config-card" style="margin-top:16px;"><button id="btn-config-bizline-save" class="btn-sync">保存业务线关键词</button></div>
                 <div class="config-card" style="margin-top:16px; text-align:center;"><button id="btn-config-reset" class="btn-logout">重置为默认配置</button></div>
             </section>
 
             <!-- Footer with Version -->
             <footer class="dashboard-footer" style="text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); font-size: 12px; color: var(--color-text-muted, #94a3b8);">
-                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.6.1</span>
+                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.7.0</span>
             </footer>
         </main>
     </div>
