@@ -2479,6 +2479,27 @@ input:checked + .slider:before {
     border: 1px solid rgba(244, 63, 94, 0.3);
 }
 
+/* Business Line Badges */
+.badge-biz {
+    display: inline-block;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin-left: 4px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.badge-biz-daojia {
+    background: rgba(20, 184, 166, 0.12); /* teal */
+    color: #2dd4bf;
+    border: 1px solid rgba(20, 184, 166, 0.25);
+}
+.badge-biz-daodian {
+    background: rgba(52, 211, 153, 0.12); /* emerald */
+    color: #34d399;
+    border: 1px solid rgba(52, 211, 153, 0.25);
+}
+
 .audit-section-content {
     min-height: 50px;
 }

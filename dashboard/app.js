@@ -59,6 +59,32 @@ function isItemCompleted(item) {
     return false;
 }
 
+// ── Business Line Classification ──
+const DEFAULT_BUSINESS_LINE_CONFIG = {
+    daojia: ['到家业务','到家業務','外卖','外賣','mFood','mfood','闪蜂','閃蜂','極馬','極馬專送','众包','眾包','专送','專送','配送','騎手','骑手','調度','调度','跑腿','外送','外賣業務'],
+    daodian: ['團購','团购','到店','大係統','大系統','大系统','商家APP','商家 APP','商家端','商家app','门店','門店','商户','商戶','合同','推广金','推廣金','集團','集团','商家管理','商家入駐']
+};
+
+function loadBusinessLineConfig() {
+    try {
+        const saved = localStorage.getItem('devops_config_businessLine');
+        if (saved) { const parsed = JSON.parse(saved); if (parsed.daojia && parsed.daodian) return parsed; }
+    } catch {}
+    return JSON.parse(JSON.stringify(DEFAULT_BUSINESS_LINE_CONFIG));
+}
+
+function saveBusinessLineConfig(config) {
+    localStorage.setItem('devops_config_businessLine', JSON.stringify(config));
+}
+
+function getBusinessLine(item) {
+    const config = loadBusinessLineConfig();
+    const title = ((item.title || '') + ' ' + (item.rowText || '')).toLowerCase();
+    for (const kw of config.daojia) { if (title.includes(kw.toLowerCase())) return 'daojia'; }
+    for (const kw of config.daodian) { if (title.includes(kw.toLowerCase())) return 'daodian'; }
+    return 'other';
+}
+
 const BRIDGE_API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname.startsWith('192.168.'))
     ? `http://${window.location.hostname}:18790`
     : 'http://localhost:18790';
@@ -342,7 +368,7 @@ function initEventListeners() {
     }
 
     // Filters event listeners
-    ['filter-search', 'filter-category', 'filter-status', 'filter-assignee', 'filter-priority', 'filter-iteration'].forEach(id => {
+    ['filter-search', 'filter-category', 'filter-status', 'filter-assignee', 'filter-priority', 'filter-iteration', 'filter-business-line'].forEach(id => {
         const elem = document.getElementById(id);
         if (elem) {
             elem.addEventListener('input', () => {
@@ -412,6 +438,12 @@ function initEventListeners() {
     const ganttRoleSelect = document.getElementById('gantt-role-select');
     if (ganttRoleSelect) {
         ganttRoleSelect.addEventListener('change', () => {
+            renderGanttChart();
+        });
+    }
+    const ganttBizLineSelect = document.getElementById('gantt-bizline-select');
+    if (ganttBizLineSelect) {
+        ganttBizLineSelect.addEventListener('change', () => {
             renderGanttChart();
         });
     }
@@ -564,6 +596,8 @@ function syncStateToURL() {
         if (assigneeVal !== 'all') params.set('assignee', assigneeVal);
         if (priorityVal !== 'all') params.set('priority', priorityVal);
         if (iterationVal !== 'all') params.set('iteration', iterationVal);
+        const bizVal = document.getElementById('filter-business-line').value;
+        if (bizVal !== 'all') params.set('bizline', bizVal);
     }
     
     const newURL = window.location.pathname + '?' + params.toString();
@@ -614,7 +648,8 @@ function loadStateFromURL() {
         status: params.get('status') || null,
         assignee: params.get('assignee') || null,
         priority: params.get('priority') || null,
-        iteration: params.get('iteration') || null
+        iteration: params.get('iteration') || null,
+        bizline: params.get('bizline') || null
     };
 }
 
@@ -977,6 +1012,15 @@ function renderOverviewDashboard() {
     document.getElementById('kpi-task-active').textContent = taskActive;
     document.getElementById('kpi-task-rate').textContent = `${taskRate}%`;
     document.getElementById('kpi-bug-active').textContent = bugActive;
+
+    // Business Line KPI
+    const bizDaojia = items.filter(x => getBusinessLine(x) === 'daojia');
+    const bizDaodian = items.filter(x => getBusinessLine(x) === 'daodian');
+    const D = x => isItemCompleted(x) ? 0 : 1;
+    document.getElementById('kpi-daojia-total').textContent = bizDaojia.length;
+    document.getElementById('kpi-daojia-active').textContent = bizDaojia.reduce((acc, x) => acc + D(x), 0);
+    document.getElementById('kpi-daodian-total').textContent = bizDaodian.length;
+    document.getElementById('kpi-daodian-active').textContent = bizDaodian.reduce((acc, x) => acc + D(x), 0);
 
     // Populate Task KPI Trends compared to first history day
     if (history.length > 1) {
@@ -1516,6 +1560,12 @@ function populateFilters() {
     });
     iterSelect.value = prevIter && iterations.includes(prevIter) ? prevIter : 'all';
     
+    // Restore business line from URL
+    const bizSelect = document.getElementById('filter-business-line');
+    if (bizSelect && state.urlFilters && state.urlFilters.bizline !== null) {
+        bizSelect.value = state.urlFilters.bizline;
+    }
+    
     // Clear URL filters so subsequent user actions are not locked
     state.urlFilters = null;
 }
@@ -1532,6 +1582,7 @@ function applyFilters() {
     const assVal = document.getElementById('filter-assignee').value;
     const prioVal = document.getElementById('filter-priority').value;
     const iterVal = document.getElementById('filter-iteration').value;
+    const bizVal = document.getElementById('filter-business-line') ? document.getElementById('filter-business-line').value : 'all';
 
     const filtered = items.filter(x => {
         // Search
@@ -1551,6 +1602,8 @@ function applyFilters() {
         if (prioVal !== 'all' && x.priority !== prioVal) return false;
         // Iteration
         if (iterVal !== 'all' && x.iteration !== iterVal) return false;
+        // Business Line
+        if (bizVal !== 'all' && getBusinessLine(x) !== bizVal) return false;
 
         return true;
     });
@@ -1599,12 +1652,18 @@ function applyFilters() {
         
         let statusBadge = `<span class="badge ${statusClass}">${item.status}</span>`;
 
+        let bizBadge = '';
+        const biz = getBusinessLine(item);
+        if (biz === 'daojia') bizBadge = '<span class="badge-biz badge-biz-daojia">🏠 到家</span>';
+        else if (biz === 'daodian') bizBadge = '<span class="badge-biz badge-biz-daodian">🏪 到店</span>';
+
         tr.innerHTML = `
             <td class="cell-id" style="font-family: monospace; color: var(--color-primary);">${item.id || fallbackPrefix + (index + 1)}</td>
             <td class="cell-title">
                 ${item.category === 'Req' ? '<span class="badge-cat badge-cat-req">💭 需求</span>' : 
                   item.category === 'Task' ? '<span class="badge-cat badge-cat-task">💡 任务</span>' : 
                   item.category === 'Bug' ? '<span class="badge-cat badge-cat-bug">🚨 缺陷</span>' : ''}
+                ${bizBadge}
                 ${escapeHtml(item.title)}
             </td>
             <td>${statusBadge}</td>
@@ -2068,8 +2127,15 @@ function renderGanttChart() {
         ? categoryItems
         : categoryItems.filter(item => inferDeveloperRole(item.assignee, items) === selectedRole);
 
+    // Filter by Gantt business line
+    const ganttBizSelect = document.getElementById('gantt-bizline-select');
+    const ganttBizLine = ganttBizSelect ? ganttBizSelect.value : 'all';
+    const bizFiltered = ganttBizLine === 'all'
+        ? roleFiltered
+        : roleFiltered.filter(item => getBusinessLine(item) === ganttBizLine);
+
     // Map and calculate plan dates
-    const ganttItems = roleFiltered.map(item => {
+    const ganttItems = bizFiltered.map(item => {
         const planStart = item.planStart || item.createDate;
         const planEnd = item.planEnd || planStart;
         return {
@@ -3179,6 +3245,7 @@ function exportMarkdownSnippet() {
     const assVal = document.getElementById('filter-assignee') ? document.getElementById('filter-assignee').value : 'all';
     const prioVal = document.getElementById('filter-priority') ? document.getElementById('filter-priority').value : 'all';
     const iterVal = document.getElementById('filter-iteration') ? document.getElementById('filter-iteration').value : 'all';
+    const bizLineVal = document.getElementById('filter-business-line') ? document.getElementById('filter-business-line').value : 'all';
 
     const filterStrings = [];
     if (searchVal) filterStrings.push(`搜索: "${searchVal}"`);
@@ -3187,6 +3254,7 @@ function exportMarkdownSnippet() {
     filterStrings.push(`负责人: ${assVal === 'all' ? '全部负责人' : assVal}`);
     if (prioVal !== 'all' && prioVal !== null) filterStrings.push(`优先级: ${prioVal}`);
     if (iterVal !== 'all' && iterVal !== null) filterStrings.push(`迭代: ${iterVal}`);
+    if (bizLineVal !== 'all' && bizLineVal !== null) filterStrings.push(`业务线: ${bizLineVal === 'daojia' ? '到家业务' : '到店业务'}`);
     const filtersLabel = filterStrings.join(' | ');
 
     const items = state.latest[state.currentProject] || [];
@@ -3202,6 +3270,7 @@ function exportMarkdownSnippet() {
         if (assVal !== 'all' && x.assignee !== assVal) return false;
         if (prioVal !== 'all' && prioVal !== null && x.priority !== prioVal) return false;
         if (iterVal !== 'all' && iterVal !== null && x.iteration !== iterVal) return false;
+        if (bizLineVal !== 'all' && bizLineVal !== null && getBusinessLine(x) !== bizLineVal) return false;
         return true;
     });
 
@@ -3599,10 +3668,13 @@ function renderConfigCenter() {
     const roles = loadConfig('roles', {});
     const milestones = loadConfig('milestones', {});
     const criticalKeywords = loadConfig('criticalKeywords', []);
+    const bizLineConfig = loadBusinessLineConfig();
     
     document.getElementById('config-roles').value = JSON.stringify(roles, null, 2);
     document.getElementById('config-milestones').value = JSON.stringify(milestones, null, 2);
     document.getElementById('config-critical').value = JSON.stringify(criticalKeywords, null, 2);
+    document.getElementById('config-bizline-daojia').value = JSON.stringify(bizLineConfig.daojia, null, 2);
+    document.getElementById('config-bizline-daodian').value = JSON.stringify(bizLineConfig.daodian, null, 2);
     
     document.getElementById('btn-config-roles-save').onclick = () => {
         try { const v = JSON.parse(document.getElementById('config-roles').value); saveConfig('roles', v); showToast('角色映射已保存'); } catch { showToast('JSON格式错误'); }
@@ -3613,11 +3685,21 @@ function renderConfigCenter() {
     document.getElementById('btn-config-critical-save').onclick = () => {
         try { const v = JSON.parse(document.getElementById('config-critical').value); saveConfig('criticalKeywords', v); showToast('关键字已保存'); } catch { showToast('JSON格式错误'); }
     };
+    document.getElementById('btn-config-bizline-save').onclick = () => {
+        try {
+            const daojia = JSON.parse(document.getElementById('config-bizline-daojia').value);
+            const daodian = JSON.parse(document.getElementById('config-bizline-daodian').value);
+            if (!Array.isArray(daojia) || !Array.isArray(daodian)) throw new Error('必须是数组');
+            saveBusinessLineConfig({ daojia, daodian });
+            showToast('业务线关键词已保存');
+        } catch (e) { showToast('JSON格式错误: ' + e.message); }
+    };
     document.getElementById('btn-config-reset').onclick = () => {
         if (confirm('确定要重置所有配置为默认值吗？')) {
             localStorage.removeItem('devops_config_roles');
             localStorage.removeItem('devops_config_milestones');
             localStorage.removeItem('devops_config_criticalKeywords');
+            localStorage.removeItem('devops_config_businessLine');
             renderConfigCenter();
             showToast('配置已重置');
         }
