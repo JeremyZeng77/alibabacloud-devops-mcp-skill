@@ -2629,4 +2629,167 @@ input:checked + .slider:before {
 .iteration-bar { height: 20px; background: rgba(255,255,255,0.06); border-radius: 4px; overflow: hidden; margin: 4px 0; }
 .iteration-bar-fill { height: 100%; border-radius: 4px; transition: width 0.3s; }
 
+/* ═══════════════════════════════════════════════════════════════
+   Phase 2 性能优化样式
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── 虚拟滚动样式 ── */
+/* div 容器模式：容器自身作为滚动区域 */
+.vt-scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 600px;
+    position: relative;
+}
+
+/* 表格模式：表格父容器作为滚动区域 */
+.vt-scroll-table {
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 600px;
+    position: relative;
+}
+
+/* 表格模式：thead 固定在顶部 */
+.vt-scroll-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg-surface-solid, #111625);
+}
+
+/* 虚拟滚动占位元素（不可见，仅撑高度） */
+.vt-spacer {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+/* 虚拟滚动行高度固定（避免行高不一致导致跳动） */
+.vt-scroll-table .vt-row,
+.vt-scroll-table tbody tr {
+    height: 44px;
+}
+
+/* 审计面板虚拟滚动行样式 */
+.vt-scroll .vt-row {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+/* ── Tab 更新红点徽标 ── */
+.tab-update-badge {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--color-rose, #f43f5e);
+    border-radius: 50%;
+    margin-left: 4px;
+    vertical-align: middle;
+    animation: badge-pulse 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes badge-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.2); }
+}
+
+/* ── 数据更新通知横条 ── */
+.update-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, rgba(0,242,254,0.12), rgba(0,242,254,0.04));
+    border: 1px solid rgba(0,242,254,0.2);
+    border-radius: 8px;
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.update-banner:hover {
+    background: linear-gradient(90deg, rgba(0,242,254,0.18), rgba(0,242,254,0.06));
+    border-color: rgba(0,242,254,0.35);
+}
+
+.update-banner-icon {
+    font-size: 18px;
+    animation: banner-spin 3s linear infinite;
+}
+
+@keyframes banner-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.update-banner-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary, #00f2fe);
+}
+
+.update-banner-hint {
+    font-size: 12px;
+    color: var(--text-muted, #94a3b8);
+    margin-left: auto;
+}
+
+/* ── 甘特图性能优化：content-visibility ── */
+.gantt-assignee-row {
+    content-visibility: auto;
+    contain-intrinsic-size: 40px;
+}
+
+/* ── 配置冲突弹窗样式 ── */
+#config-conflict-modal .modal-box {
+    background: var(--bg-surface-solid, #111625);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+}
+
+#config-conflict-modal .modal-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+#config-conflict-modal .modal-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-amber, #f59e0b);
+}
+
+#config-conflict-modal .btn-close-modal {
+    background: none;
+    border: none;
+    color: var(--text-muted, #94a3b8);
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+#config-conflict-modal .btn-close-modal:hover {
+    color: var(--color-text-primary, #e2e8f0);
+}
+
+.conflict-detail {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ── 审计面板容器高度限制（配合虚拟滚动） ── */
+#audit-missing-dates-container,
+#audit-idle-members-container,
+#audit-healthy-members-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
 

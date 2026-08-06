@@ -483,7 +483,7 @@ MFOOD_PROJECT_ID = "b213ecf2c319097885faf16704"
 
 CAPTURES_PATH = pathlib.Path(r'C:\Users\DELL\.openclaw\workspace-gemma-chat\state\project-bridge\page-captures.jsonl')
 WEEKLY_REPORTS_PATH = SCRIPT_DIR / "weekly_reports.md"
-OUTPUT_PATH = SCRIPT_DIR / "projects_data.json"
+OUTPUT_PATH = SCRIPT_DIR / "data" / "projects_data.json"
 
 completed_status_list = [
     '已上线', '已关闭', '测试环境验证通过', '测试环境验收通过', '预发布验收通过', '生产验收通过',
@@ -1233,6 +1233,7 @@ def main():
         'pmoAdvice': existing_pmo_advice
     }
     
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(db, ensure_ascii=False, indent=2), encoding='utf-8')
     print(f"Data compiled successfully. Saved to {OUTPUT_PATH}")
 

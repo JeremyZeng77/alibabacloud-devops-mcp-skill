@@ -1,0 +1,6 @@
+{
+  "username": "your_username",
+  "passwordHash": "generate_with_sha256(your_password)",
+  "sessionExpiryHours": 4,
+  "absoluteExpiryHours": 24
+}

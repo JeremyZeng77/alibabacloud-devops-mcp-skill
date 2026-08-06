@@ -20,3 +20,10 @@ Thumbs.db
 !dashboard/projects_history.db
 
 .vercel
+
+# 认证配置文件（含凭证，不提交）
+dashboard/auth.config.json
+dashboard/dist/auth.config.json
+
+# Vite 构建时间戳缓存
+dashboard/vite.config.js.timestamp-*.mjs
