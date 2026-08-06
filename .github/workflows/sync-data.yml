@@ -65,6 +65,12 @@ jobs:
           npm run build
           mkdir -p dist/data && cp data/projects_data.json dist/data/
 
+      - name: Inject production auth config
+        if: github.event_name == 'push'
+        run: |
+          echo "${{ secrets.AUTH_CONFIG_JSON }}" > dashboard/dist/auth.config.json
+          echo "auth.config.json written to dist/"
+
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
