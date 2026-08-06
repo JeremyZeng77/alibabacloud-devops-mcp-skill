@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="./assets/index-DNGPl4uZ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Derr67Hh.css">
+  <script type="module" crossorigin src="./assets/index-CpdQPGzl.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DC3qx-lh.css">
 </head>
 <body>
     <!-- Login Screen Overlay -->
@@ -154,28 +154,41 @@
             <button class="nav-tab active" data-view="overview">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
                 数据看板
+                <span class="tab-update-badge" style="display:none;"></span>
             </button>
             <button class="nav-tab" data-view="workitems">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 17h6M9 12h6M9 7h6"/></svg>
                 需求明细列表
+                <span class="tab-update-badge" style="display:none;"></span>
             </button>
             <button class="nav-tab" data-view="weekly">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
                 周报与管理建议
+                <span class="tab-update-badge" style="display:none;"></span>
             </button>
             <button class="nav-tab" data-view="audit">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 16v-4M12 8h.01"/></svg>
                 协作与进度审计
+                <span class="tab-update-badge" style="display:none;"></span>
             </button>
             <button class="nav-tab" data-view="risk">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                 风险预警中心
+                <span class="tab-update-badge" style="display:none;"></span>
             </button>
             <button class="nav-tab" data-view="config">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                 配置管理
+                <span class="tab-update-badge" style="display:none;"></span>
             </button>
         </nav>
+
+        <!-- 数据更新通知横条 -->
+        <div id="update-banner" class="update-banner" style="display:none;">
+            <span class="update-banner-icon">🔄</span>
+            <span class="update-banner-text">数据已更新</span>
+            <span class="update-banner-hint">点击查看最新内容</span>
+        </div>
 
         <!-- Main Content Area -->
         <main class="main-content">
@@ -751,6 +764,15 @@
             <!-- VIEW 7: 配置管理 -->
             <section class="view-section" id="view-config">
                 <div class="config-header-card"><h2 style="margin:0;font-size:22px;">⚙️ 配置管理中心</h2></div>
+                <div class="config-card" style="margin-top:16px;">
+                    <h3>📦 配置导入 / 导出</h3>
+                    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+                        <button id="btn-config-export" class="btn-sync">📥 导出配置</button>
+                        <button id="btn-config-import" class="btn-sync">📤 导入配置</button>
+                        <input type="file" id="config-import-file" accept=".json" style="display:none;">
+                    </div>
+                    <p style="font-size:11px;color:var(--text-muted);margin-top:6px;">导出当前所有配置为 JSON 文件，或从 JSON 文件导入配置（支持覆盖/合并/跳过）</p>
+                </div>
                 <div class="config-card"><h3>👥 人员角色映射</h3><textarea id="config-roles" rows="12" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><button id="btn-config-roles-save" class="btn-sync" style="margin-top:8px;">保存角色</button></div>
                 <div class="config-card" style="margin-top:16px;"><h3>📅 里程碑日期</h3><textarea id="config-milestones" rows="6" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><button id="btn-config-milestones-save" class="btn-sync" style="margin-top:8px;">保存里程碑</button></div>
                 <div class="config-card" style="margin-top:16px;"><h3>🔑 关键路径关键字</h3><textarea id="config-critical" rows="4" style="width:100%;font-family:monospace;background:rgba(0,0,0,0.2);color:#e2e8f0;border:1px solid var(--border-color);border-radius:8px;padding:12px;"></textarea><button id="btn-config-critical-save" class="btn-sync" style="margin-top:8px;">保存关键字</button></div>
@@ -764,7 +786,7 @@
 
             <!-- Footer with Version -->
             <footer class="dashboard-footer" style="text-align: center; margin-top: 40px; padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); font-size: 12px; color: var(--color-text-muted, #94a3b8);">
-                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v1.7.0</span>
+                <span>MFTB Collaboration Dashboard &copy; 2026 | Version v2.0.0</span>
             </footer>
         </main>
     </div>
@@ -897,6 +919,24 @@
     <!-- Sync Toast Alert -->
     <div class="toast-alert" id="toast-alert">
         <span class="toast-message" id="toast-message">同步中...</span>
+    </div>
+
+    <!-- 配置冲突处理弹窗 -->
+    <div class="modal-overlay" id="config-conflict-modal" style="display:none;">
+        <div class="modal-box" style="max-width:480px;">
+            <div class="modal-header">
+                <span class="modal-title">⚠️ 配置冲突</span>
+                <button class="btn-close-modal" id="btn-conflict-close">&times;</button>
+            </div>
+            <div class="modal-body" style="padding:24px;">
+                <p class="conflict-detail" style="color:#cbd5e1;font-size:14px;line-height:1.6;margin-bottom:20px;"></p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                    <button id="btn-conflict-overwrite" class="btn-logout" style="background:rgba(244,63,94,0.15);color:#f87171;border-color:rgba(244,63,94,0.3);">覆盖现有配置</button>
+                    <button id="btn-conflict-merge" class="btn-sync">合并配置</button>
+                    <button id="btn-conflict-skip" class="btn-sync" style="opacity:0.7;">跳过导入</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
