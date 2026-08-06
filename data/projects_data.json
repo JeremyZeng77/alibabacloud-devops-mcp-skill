@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-06T09:33:43.479531+00:00",
+  "compiledAt": "2026-08-06T10:43:49.166442+00:00",
   "latest": {
     "mftb": [
       {
@@ -20881,6 +20881,40 @@
     ],
     "mfood": [
       {
+        "id": "MF-34647",
+        "title": "【團購】-門店列表-新增門店推廣碼，掃碼進入商家主頁",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-06",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=ad6f6e0d01be70c676c877981e",
+        "rowText": "【产品类需求】【團購】-門店列表-新增門店推廣碼，掃碼進入商家主頁\nID: MF-34647 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
+        "id": "MF-34646",
+        "title": "【團購】小程序-珠海商戶售賣的商品，支付時支持國內微信支付；",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-06",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=0d4066668746a6eb9bf647e320",
+        "rowText": "【产品类需求】【團購】小程序-珠海商戶售賣的商品，支付時支持國內微信支付；\nID: MF-34646 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
         "id": "MF-34640",
         "title": "【訂單報表】新增對“積分抵現”的金額統計",
         "status": "已评审（待开发）",
@@ -36954,11 +36988,11 @@
       },
       {
         "date": "2026-08-06",
-        "total": 186,
+        "total": 188,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 149
+          "进行中": 151
         }
       }
     ]
