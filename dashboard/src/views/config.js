@@ -23,7 +23,7 @@ export function renderConfigCenter() {
     document.getElementById('config-bizline-zhongbao').value = JSON.stringify(bizLineConfig.zhongbao, null, 2);
     document.getElementById('config-bizline-daojia').value = JSON.stringify(bizLineConfig.daojia, null, 2);
     document.getElementById('config-bizline-daodian').value = JSON.stringify(bizLineConfig.daodian, null, 2);
-    document.getElementById('config-bizline-other').value = JSON.stringify(bizLineConfig.other, null, 2);
+    document.getElementById('config-bizline-other').value = JSON.stringify(bizLineConfig.other || [], null, 2);
 
     // 配置导出按钮
     const btnExport = document.getElementById('btn-config-export');
@@ -76,7 +76,11 @@ export function renderConfigCenter() {
             const zhongbao = JSON.parse(document.getElementById('config-bizline-zhongbao').value);
             const daojia = JSON.parse(document.getElementById('config-bizline-daojia').value);
             const daodian = JSON.parse(document.getElementById('config-bizline-daodian').value);
-            const other = JSON.parse(document.getElementById('config-bizline-other').value);
+            let other = [];
+            const otherRaw = document.getElementById('config-bizline-other').value.trim();
+            if (otherRaw) {
+                other = JSON.parse(otherRaw);
+            }
             if (!Array.isArray(zhongbao) || !Array.isArray(daojia) || !Array.isArray(daodian) || !Array.isArray(other)) throw new Error('必须是数组');
             saveBusinessLineConfig({ zhongbao, daojia, daodian, other });
             showToast('业务线关键词已保存');
