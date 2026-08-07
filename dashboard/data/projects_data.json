@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-07T02:21:59.880845+00:00",
+  "compiledAt": "2026-08-07T03:07:18.932741+00:00",
   "latest": {
     "mftb": [
       {
@@ -39,7 +39,7 @@
       {
         "id": "MFTB-1312",
         "title": "【服务端】【广告系统】-词库管理",
-        "status": "开发中",
+        "status": "后端提测",
         "priority": "中",
         "assignee": "刘卫",
         "creator": "刘卫",
@@ -49,7 +49,7 @@
         "createDate": "2026-08-06",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a84a26d434147aeccbc2dcf1d4",
-        "rowText": "【产品类需求】【服务端】【广告系统】-词库管理\nID: MFTB-1312 | 状态: 开发中 | 优先级: 中\n负责人: 刘卫 | 提报人: 刘卫\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【服务端】【广告系统】-词库管理\nID: MFTB-1312 | 状态: 后端提测 | 优先级: 中\n负责人: 刘卫 | 提报人: 刘卫\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2640,7 +2640,7 @@
       {
         "id": "MFTB-1318",
         "title": "【前端】【大係統】用戶 APP 裝修_推薦列表&中通需求變更",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "陈文涛",
         "creator": "陈文涛",
@@ -2650,14 +2650,14 @@
         "createDate": "2026-08-06",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b60d941064be63f8424405730c",
-        "rowText": "【任务】【前端】【大係統】用戶 APP 裝修_推薦列表&中通需求變更\nID: MFTB-1318 | 状态: 未开始 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: 2026-08-11 至 2026-08-12",
+        "rowText": "【任务】【前端】【大係統】用戶 APP 裝修_推薦列表&中通需求變更\nID: MFTB-1318 | 状态: 开发中 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: 2026-08-11 至 2026-08-12",
         "project": "MFTB集团项目",
         "category": "Task"
       },
       {
         "id": "MFTB-1317",
         "title": "【前端】【大係統】用戶 APP 裝修_新增開屏頁",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "陈文涛",
         "creator": "陈文涛",
@@ -2667,7 +2667,7 @@
         "createDate": "2026-08-06",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f9dab384977896eec58c9f31f2",
-        "rowText": "【任务】【前端】【大係統】用戶 APP 裝修_新增開屏頁\nID: MFTB-1317 | 状态: 未开始 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: 2026-08-07 至 2026-08-10",
+        "rowText": "【任务】【前端】【大係統】用戶 APP 裝修_新增開屏頁\nID: MFTB-1317 | 状态: 提交测试 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: 2026-08-07 至 2026-08-10",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -15798,7 +15798,7 @@
       {
         "id": "MFTB-1281",
         "title": "【專送合併--騎手考勤】假期设置-带薪病假的手动校正列表应该显示的是年份，病假按年发放记录",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "洪喜彬",
         "creator": "黄金凤",
@@ -15808,7 +15808,7 @@
         "createDate": "2026-08-05",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3a1d89b7978e366c05e76015ae",
-        "rowText": "【缺陷】【專送合併--騎手考勤】假期设置-带薪病假的手动校正列表应该显示的是年份，病假按年发放记录\nID: MFTB-1281 | 状态: 已修复 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】假期设置-带薪病假的手动校正列表应该显示的是年份，病假按年发放记录\nID: MFTB-1281 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -15934,7 +15934,7 @@
       {
         "id": "MFTB-1243",
         "title": "【專送合併--騎手考勤】考勤明细列表的骑手职位显示错了，没对应职位",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "洪喜彬",
         "creator": "黄金凤",
@@ -15944,7 +15944,7 @@
         "createDate": "2026-07-30",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a142e3693f4082b95268ce0026",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表的骑手职位显示错了，没对应职位\nID: MFTB-1243 | 状态: 已修复 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表的骑手职位显示错了，没对应职位\nID: MFTB-1243 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -22513,6 +22513,23 @@
         "category": "Req"
       },
       {
+        "id": "MF-34636",
+        "title": "pos 幾小票，新增商品總數",
+        "status": "测试环境验证通过",
+        "priority": "低",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "V7.3.5（7.30）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-06",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=aa8990b8029f848a20a365bc25",
+        "rowText": "【产品类需求】pos 幾小票，新增商品總數\nID: MF-34636 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: V7.3.5（7.30） | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
         "id": "MF-34523",
         "title": "复制-積分抵現（外賣業務）優化",
         "status": "测试环境验证通过",
@@ -25252,10 +25269,10 @@
       {
         "date": "2026-08-07",
         "total": 923,
-        "completed": 711,
+        "completed": 712,
         "statusCounts": {
-          "已完成": 711,
-          "进行中": 212
+          "已完成": 712,
+          "进行中": 211
         }
       }
     ],
@@ -36980,19 +36997,19 @@
       },
       {
         "date": "2026-08-06",
-        "total": 187,
+        "total": 188,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 150
+          "进行中": 151
         }
       },
       {
         "date": "2026-08-07",
-        "total": 187,
-        "completed": 37,
+        "total": 188,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 37,
+          "已完成": 38,
           "进行中": 150
         }
       }
