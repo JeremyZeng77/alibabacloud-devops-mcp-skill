@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-07T04:28:58.984389+00:00",
+  "compiledAt": "2026-08-07T07:22:44.203279+00:00",
   "latest": {
     "mftb": [
       {
@@ -2929,17 +2929,17 @@
       {
         "id": "MFTB-1289",
         "title": "【UI】【專送合併】騎手工資表",
-        "status": "待处理",
+        "status": "UI设计完成",
         "priority": "中",
         "assignee": "许思浩",
         "creator": "许思浩",
         "iteration": "SH-v1.0.0",
-        "planStart": "",
+        "planStart": "2026-08-05",
         "planEnd": "",
         "createDate": "2026-08-05",
         "workItemType": "设计",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7372b5513572b8d1305c88dd70",
-        "rowText": "【设计】【UI】【專送合併】騎手工資表\nID: MFTB-1289 | 状态: 待处理 | 优先级: 中\n负责人: 许思浩 | 提报人: 许思浩\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
+        "rowText": "【设计】【UI】【專送合併】騎手工資表\nID: MFTB-1289 | 状态: UI设计完成 | 优先级: 中\n负责人: 许思浩 | 提报人: 许思浩\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: 2026-08-05 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5122,7 +5122,7 @@
       {
         "id": "MFTB-1048",
         "title": "【服务端_用户端_核心逻辑处理】【大係統】美食外送_外賣到家業務_訂單流程設計",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "黎月平",
         "creator": "黎月平",
@@ -5132,7 +5132,7 @@
         "createDate": "2026-07-20",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8af2a1d382b7b3e09cc2ea63c0",
-        "rowText": "【任务】【服务端_用户端_核心逻辑处理】【大係統】美食外送_外賣到家業務_訂單流程設計\nID: MFTB-1048 | 状态: 开发中 | 优先级: 中\n负责人: 黎月平 | 提报人: 黎月平\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: 2026-07-27 至 2026-08-07",
+        "rowText": "【任务】【服务端_用户端_核心逻辑处理】【大係統】美食外送_外賣到家業務_訂單流程設計\nID: MFTB-1048 | 状态: 提交测试 | 优先级: 中\n负责人: 黎月平 | 提报人: 黎月平\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: 2026-07-27 至 2026-08-07",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -25252,10 +25252,10 @@
       {
         "date": "2026-08-07",
         "total": 923,
-        "completed": 712,
+        "completed": 713,
         "statusCounts": {
-          "已完成": 712,
-          "进行中": 211
+          "已完成": 713,
+          "进行中": 210
         }
       }
     ],
@@ -37373,8 +37373,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 7.2,
-      "delta": 2.7
+      "average": 7.4,
+      "delta": 2.9
     },
     "mfood": {
       "average": 0.0,
