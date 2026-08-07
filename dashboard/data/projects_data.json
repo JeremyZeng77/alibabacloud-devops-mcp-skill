@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-07T00:06:10.513623+00:00",
+  "compiledAt": "2026-08-07T01:37:17.016059+00:00",
   "latest": {
     "mftb": [
       {
@@ -15764,7 +15764,7 @@
       {
         "id": "MFTB-1298",
         "title": "【到家业务-商品管理】商品列表：组合商品-必选组商品，全部设置可售状态后，发现：再次编辑商品，商品的可售状态返回是null",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -15774,7 +15774,7 @@
         "createDate": "2026-08-05",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3904ef7419fa7cdcf72668ce9b",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品-必选组商品，全部设置可售状态后，发现：再次编辑商品，商品的可售状态返回是null\nID: MFTB-1298 | 状态: 待确认 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品-必选组商品，全部设置可售状态后，发现：再次编辑商品，商品的可售状态返回是null\nID: MFTB-1298 | 状态: 已修复 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16614,7 +16614,7 @@
       {
         "id": "MFTB-1147",
         "title": "【到家业务-商品管理】商品列表：批量更新图片-按规格匹配，发现：按sku的商品没有修改成功",
-        "status": "待确认",
+        "status": "暂不修复",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -16624,7 +16624,7 @@
         "createDate": "2026-07-27",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9d225b47320ddefa767fa96f0e",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：批量更新图片-按规格匹配，发现：按sku的商品没有修改成功\nID: MFTB-1147 | 状态: 待确认 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：批量更新图片-按规格匹配，发现：按sku的商品没有修改成功\nID: MFTB-1147 | 状态: 暂不修复 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -20928,23 +20928,6 @@
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=0dabc9750cd4f741db587c51f0",
         "rowText": "【产品类需求】【訂單報表】新增對“積分抵現”的金額統計\nID: MF-34640 | 状态: 已评审（待开发） | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Req"
-      },
-      {
-        "id": "MF-34627",
-        "title": "【用户 app】客服 icon 新增文字说明",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "周昱强",
-        "creator": "周昱强",
-        "iteration": "0.0.0",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-08-04",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=7c937dcc865217f40e7299fc8c",
-        "rowText": "【产品类需求】【用户 app】客服 icon 新增文字说明\nID: MF-34627 | 状态: 待处理 | 优先级: 低\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 0.0.0 | 创建时间: 2026-08-04 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
       },
@@ -36979,38 +36962,38 @@
       },
       {
         "date": "2026-08-04",
-        "total": 182,
+        "total": 181,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 145
+          "进行中": 144
         }
       },
       {
         "date": "2026-08-05",
-        "total": 182,
+        "total": 181,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 145
+          "进行中": 144
         }
       },
       {
         "date": "2026-08-06",
-        "total": 188,
+        "total": 187,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 151
+          "进行中": 150
         }
       },
       {
         "date": "2026-08-07",
-        "total": 188,
+        "total": 187,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 151
+          "进行中": 150
         }
       }
     ]
