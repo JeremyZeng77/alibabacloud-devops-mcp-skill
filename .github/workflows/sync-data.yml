@@ -67,9 +67,11 @@ jobs:
 
       - name: Inject production auth config
         if: github.event_name == 'push'
+        env:
+          AUTH_JSON: ${{ secrets.AUTH_CONFIG_JSON }}
         run: |
-          echo "${{ secrets.AUTH_CONFIG_JSON }}" > dashboard/dist/auth.config.json
-          echo "auth.config.json written to dist/"
+          node -e "const fs=require('fs');fs.writeFileSync('dashboard/dist/auth.config.json',process.env.AUTH_JSON)"
+          node -e "const c=require('./dashboard/dist/auth.config.json');console.log('username:',c.username);console.log('hash OK:',c.passwordHash.length===64)"
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push'
