@@ -1,7 +1,41 @@
 {
-  "compiledAt": "2026-08-11T05:14:03.431088+00:00",
+  "compiledAt": "2026-08-11T07:14:23.614785+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1349",
+        "title": "【大係統-用戶端】任務簽到頁（含我的成長值明細）",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "溫浩源",
+        "creator": "溫浩源",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-11",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=90340952232189a78924fd7b4d",
+        "rowText": "【产品类需求】【大係統-用戶端】任務簽到頁（含我的成長值明細）\nID: MFTB-1349 | 状态: 待处理 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1348",
+        "title": "【服务端】【广告系统】-盘活复苏",
+        "status": "后端提测",
+        "priority": "中",
+        "assignee": "刘卫",
+        "creator": "刘卫",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-11",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7fbc9a73d091e5ab5ca0616844",
+        "rowText": "【产品类需求】【服务端】【广告系统】-盘活复苏\nID: MFTB-1348 | 状态: 后端提测 | 优先级: 中\n负责人: 刘卫 | 提报人: 刘卫\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1343",
         "title": "【大係統】到家業務_商家營銷活動_買贈活動",
@@ -209,7 +243,7 @@
       {
         "id": "MFTB-1269",
         "title": "【眾包】騎手審核-個人信息增加英文名字段",
-        "status": "待测试",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -219,7 +253,7 @@
         "createDate": "2026-08-04",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0abc9281c4ab11d3406095f496",
-        "rowText": "【产品类需求】【眾包】騎手審核-個人信息增加英文名字段\nID: MFTB-1269 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-04 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【眾包】騎手審核-個人信息增加英文名字段\nID: MFTB-1269 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-04 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2485,6 +2519,74 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1352",
+        "title": "【服务端】【大係統】到家業務_門店營銷活動_滿減活動",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘付益",
+        "creator": "刘付益",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-11",
+        "planEnd": "2026-08-13",
+        "createDate": "2026-08-11",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=141527171a216659edeee77d96",
+        "rowText": "【任务】【服务端】【大係統】到家業務_門店營銷活動_滿減活動\nID: MFTB-1352 | 状态: 未开始 | 优先级: 中\n负责人: 刘付益 | 提报人: 刘付益\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 2026-08-13",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1351",
+        "title": "【前端】【大係統】到家業務_門店營銷活動_滿減活動",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-11",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=548efdf904ca0e9156318fbed4",
+        "rowText": "【任务】【前端】【大係統】到家業務_門店營銷活動_滿減活動\nID: MFTB-1351 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1350",
+        "title": "【產品】【大係統-用戶端】任務簽到頁（含我的成長值明細）",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "溫浩源",
+        "creator": "溫浩源",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-11",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8809456dced56c5a473908aac3",
+        "rowText": "【任务】【產品】【大係統-用戶端】任務簽到頁（含我的成長值明細）\nID: MFTB-1350 | 状态: 未开始 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1346",
+        "title": "【UI】【大係統】商家營銷活動入口",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "许思浩",
+        "creator": "许思浩",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-11",
+        "planEnd": "",
+        "createDate": "2026-08-11",
+        "workItemType": "设计",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=92a17d0e834e3323dfd6100e1c",
+        "rowText": "【设计】【UI】【大係統】商家營銷活動入口\nID: MFTB-1346 | 状态: 待处理 | 优先级: 中\n负责人: 许思浩 | 提报人: 许思浩\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1344",
         "title": "【大係統】到家業務_商家營銷活動_買贈活動",
         "status": "处理中",
@@ -2510,11 +2612,11 @@
         "creator": "周忠浩",
         "iteration": "MFTB-v1.0.2",
         "planStart": "2026-08-11",
-        "planEnd": "2026-08-13",
+        "planEnd": "2026-08-14",
         "createDate": "2026-08-11",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=16375d270f1c52e5f18c12036b",
-        "rowText": "【任务】【前端】【大係統】到家業務-門店管理-店鋪風格\nID: MFTB-1342 | 状态: 开发中 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 2026-08-13",
+        "rowText": "【任务】【前端】【大係統】到家業務-門店管理-店鋪風格\nID: MFTB-1342 | 状态: 开发中 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 2026-08-14",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -2691,7 +2793,7 @@
       {
         "id": "MFTB-1330",
         "title": "【测试】【眾包】騎手審核-個人信息增加英文名字段",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "黄金凤",
         "creator": "黄金凤",
@@ -2701,7 +2803,7 @@
         "createDate": "2026-08-10",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6b8a8cd3eb590ca010038f9a98",
-        "rowText": "【測試】【测试】【眾包】騎手審核-個人信息增加英文名字段\nID: MFTB-1330 | 状态: 测试中 | 优先级: 中\n负责人: 黄金凤 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-10 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【眾包】騎手審核-個人信息增加英文名字段\nID: MFTB-1330 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 黄金凤 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-10 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -15932,6 +16034,40 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1354",
+        "title": "【到家业务-商品管理】商品列表：组合商品的规格修从售罄手动修改为”销售中“，发现：商品状态仍是售罄状态，没有同步更新",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "叶龙",
+        "creator": "侯黎明",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-11",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9e3d5d61d7a3a0d68c3b4e75c3",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品的规格修从售罄手动修改为”销售中“，发现：商品状态仍是售罄状态，没有同步更新\nID: MFTB-1354 | 状态: 待确认 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1353",
+        "title": "【到家业务-商品管理】商品列表：组合商品-单规格，修改规格状态为售罄时，没有弹窗提示",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "侯黎明",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-11",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0c1e1e10a4c2cb1e4a449d26ba",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品-单规格，修改规格状态为售罄时，没有弹窗提示\nID: MFTB-1353 | 状态: 待确认 | 优先级: 中\n负责人: 甄荣康 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1334",
         "title": "【大係統】【用户端APP】iOS账号与安全问题汇总",
         "status": "待确认",
@@ -15951,7 +16087,7 @@
       {
         "id": "MFTB-1314",
         "title": "【到家业务-商品管理】商品列表：组合商品的规格修改为售罄状态并点击保存，发现：保存失败，组合商品的规格仍是正常状态",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -15961,7 +16097,7 @@
         "createDate": "2026-08-06",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e5c25af681b94d401ef768a117",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品的规格修改为售罄状态并点击保存，发现：保存失败，组合商品的规格仍是正常状态\nID: MFTB-1314 | 状态: 已修复 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品的规格修改为售罄状态并点击保存，发现：保存失败，组合商品的规格仍是正常状态\nID: MFTB-1314 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16036,7 +16172,7 @@
       {
         "id": "MFTB-1296",
         "title": "【到家业务-商品管理】商品列表：组合商品，固定组商品，不用设置可架构份数",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -16046,7 +16182,7 @@
         "createDate": "2026-08-05",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8cf0516369fe33d723103d5c64",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品，固定组商品，不用设置可架构份数\nID: MFTB-1296 | 状态: 已修复 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品，固定组商品，不用设置可架构份数\nID: MFTB-1296 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -25508,11 +25644,11 @@
       },
       {
         "date": "2026-08-11",
-        "total": 937,
-        "completed": 725,
+        "total": 943,
+        "completed": 726,
         "statusCounts": {
-          "已完成": 725,
-          "进行中": 212
+          "已完成": 726,
+          "进行中": 217
         }
       }
     ],
