@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-12T03:40:44.874330+00:00",
+  "compiledAt": "2026-08-12T05:40:45.517514+00:00",
   "latest": {
     "mftb": [
       {
@@ -2519,6 +2519,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1359",
+        "title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-12",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=155add2f29d671acf7b00fef14",
+        "rowText": "【任务】【大係統】團購到店-用戶端商品列表含积分抵扣\nID: MFTB-1359 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1358",
         "title": "【测试】【大係統】用戶端-商家主頁相關功能頁面",
         "status": "待处理",
@@ -2555,7 +2572,7 @@
       {
         "id": "MFTB-1352",
         "title": "【服务端】【大係統】到家業務_門店營銷活動_滿減活動",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "刘付益",
         "creator": "刘付益",
@@ -2565,7 +2582,7 @@
         "createDate": "2026-08-11",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=141527171a216659edeee77d96",
-        "rowText": "【任务】【服务端】【大係統】到家業務_門店營銷活動_滿減活動\nID: MFTB-1352 | 状态: 未开始 | 优先级: 中\n负责人: 刘付益 | 提报人: 刘付益\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 2026-08-13",
+        "rowText": "【任务】【服务端】【大係統】到家業務_門店營銷活動_滿減活動\nID: MFTB-1352 | 状态: 提交测试 | 优先级: 中\n负责人: 刘付益 | 提报人: 刘付益\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 2026-08-13",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4170,7 +4187,7 @@
       {
         "id": "MFTB-1206",
         "title": "【大係統】團購到店-用戶端商品收藏",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "林泽斌",
@@ -4180,7 +4197,7 @@
         "createDate": "2026-07-29",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=837aec0f4ecc2fe1ae355c0caf",
-        "rowText": "【任务】【大係統】團購到店-用戶端商品收藏\nID: MFTB-1206 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【任务】【大係統】團購到店-用戶端商品收藏\nID: MFTB-1206 | 状态: 提交测试 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -25657,109 +25674,109 @@
       {
         "date": "2026-08-01",
         "total": 855,
-        "completed": 672,
+        "completed": 673,
         "statusCounts": {
-          "已完成": 672,
-          "进行中": 183
+          "已完成": 673,
+          "进行中": 182
         }
       },
       {
         "date": "2026-08-02",
         "total": 855,
-        "completed": 672,
+        "completed": 673,
         "statusCounts": {
-          "已完成": 672,
-          "进行中": 183
+          "已完成": 673,
+          "进行中": 182
         }
       },
       {
         "date": "2026-08-03",
         "total": 868,
-        "completed": 681,
+        "completed": 682,
         "statusCounts": {
-          "已完成": 681,
-          "进行中": 187
+          "已完成": 682,
+          "进行中": 186
         }
       },
       {
         "date": "2026-08-04",
         "total": 879,
-        "completed": 693,
+        "completed": 694,
         "statusCounts": {
-          "已完成": 693,
-          "进行中": 186
+          "已完成": 694,
+          "进行中": 185
         }
       },
       {
         "date": "2026-08-05",
         "total": 896,
-        "completed": 696,
+        "completed": 697,
         "statusCounts": {
-          "已完成": 696,
-          "进行中": 200
+          "已完成": 697,
+          "进行中": 199
         }
       },
       {
         "date": "2026-08-06",
         "total": 922,
-        "completed": 709,
+        "completed": 710,
         "statusCounts": {
-          "已完成": 709,
-          "进行中": 213
+          "已完成": 710,
+          "进行中": 212
         }
       },
       {
         "date": "2026-08-07",
         "total": 922,
-        "completed": 711,
+        "completed": 712,
         "statusCounts": {
-          "已完成": 711,
-          "进行中": 211
+          "已完成": 712,
+          "进行中": 210
         }
       },
       {
         "date": "2026-08-08",
         "total": 922,
-        "completed": 711,
+        "completed": 712,
         "statusCounts": {
-          "已完成": 711,
-          "进行中": 211
+          "已完成": 712,
+          "进行中": 210
         }
       },
       {
         "date": "2026-08-09",
         "total": 922,
-        "completed": 714,
+        "completed": 715,
         "statusCounts": {
-          "已完成": 714,
-          "进行中": 208
+          "已完成": 715,
+          "进行中": 207
         }
       },
       {
         "date": "2026-08-10",
         "total": 926,
-        "completed": 724,
+        "completed": 725,
         "statusCounts": {
-          "已完成": 724,
-          "进行中": 202
+          "已完成": 725,
+          "进行中": 201
         }
       },
       {
         "date": "2026-08-11",
         "total": 942,
-        "completed": 731,
+        "completed": 732,
         "statusCounts": {
-          "已完成": 731,
-          "进行中": 211
+          "已完成": 732,
+          "进行中": 210
         }
       },
       {
         "date": "2026-08-12",
-        "total": 944,
-        "completed": 732,
+        "total": 945,
+        "completed": 734,
         "statusCounts": {
-          "已完成": 732,
-          "进行中": 212
+          "已完成": 734,
+          "进行中": 211
         }
       }
     ],
