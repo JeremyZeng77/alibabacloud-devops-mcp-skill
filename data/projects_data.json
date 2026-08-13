@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-13T09:39:15.807210+00:00",
+  "compiledAt": "2026-08-13T11:03:41.504645+00:00",
   "latest": {
     "mftb": [
       {
@@ -108,7 +108,7 @@
         "id": "MFTB-1363",
         "title": "【極馬】訂單歸屬策略支持多選訂單平台類型",
         "status": "待测试",
-        "priority": "中",
+        "priority": "高",
         "assignee": "龙颖之",
         "creator": "龙颖之",
         "iteration": "SH-v1.0.0",
@@ -117,7 +117,7 @@
         "createDate": "2026-08-12",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4282d8c8fa99adf49b0004217d",
-        "rowText": "【产品类需求】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1363 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1363 | 状态: 待测试 | 优先级: 高\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -192,7 +192,7 @@
       {
         "id": "MFTB-1310",
         "title": "【广告系统】-词库管理",
-        "status": "待测试",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "冯松",
         "creator": "冯松",
@@ -202,7 +202,7 @@
         "createDate": "2026-08-06",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=599f4a004cd5c47a82c1330a31",
-        "rowText": "【产品类需求】【广告系统】-词库管理\nID: MFTB-1310 | 状态: 待测试 | 优先级: 中\n负责人: 冯松 | 提报人: 冯松\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【广告系统】-词库管理\nID: MFTB-1310 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 冯松 | 提报人: 冯松\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -855,7 +855,7 @@
       {
         "id": "MFTB-996",
         "title": "【大系统】特殊区域管理",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "刘龙振海",
         "creator": "刘龙振海",
@@ -865,7 +865,7 @@
         "createDate": "2026-07-15",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fcf141dc657b3230b39d4643f4",
-        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试中 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-15 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-15 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2742,17 +2742,17 @@
       {
         "id": "MFTB-1377",
         "title": "【测试】【广告系统】-词库管理",
-        "status": "待处理",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "杨庆龙",
         "creator": "杨庆龙",
         "iteration": "MFTB-v1.0.2",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-08-13",
+        "planEnd": "2026-08-13",
         "createDate": "2026-08-13",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=115279436a986d3d00355e28b4",
-        "rowText": "【測試】【测试】【广告系统】-词库管理\nID: MFTB-1377 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【广告系统】-词库管理\nID: MFTB-1377 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-13 | 排期规划: 2026-08-13 至 2026-08-13",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4747,7 +4747,7 @@
       },
       {
         "id": "MFTB-1183",
-        "title": "【测试】【廣告系統】-無敵/盤活",
+        "title": "【测试】【廣告系統】-盤活",
         "status": "待处理",
         "priority": "中",
         "assignee": "杨庆龙",
@@ -4758,7 +4758,7 @@
         "createDate": "2026-07-28",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0b8f3a94e1b4a04070b1250186",
-        "rowText": "【測試】【测试】【廣告系統】-無敵/盤活\nID: MFTB-1183 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【廣告系統】-盤活\nID: MFTB-1183 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4816,7 +4816,7 @@
       {
         "id": "MFTB-1179",
         "title": "【测试】【大系统】特殊区域管理",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "杨庆龙",
         "creator": "杨庆龙",
@@ -4826,7 +4826,7 @@
         "createDate": "2026-07-28",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c17e69300d3941d11643753b7c",
-        "rowText": "【測試】【测试】【大系统】特殊区域管理\nID: MFTB-1179 | 状态: 测试中 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【大系统】特殊区域管理\nID: MFTB-1179 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -16493,6 +16493,23 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1390",
+        "title": "【專送合併-騎手工資表】专送骑手等级流水扣分没有流水号，扣分应该是-1不是+1",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-13",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=93e67e696603b9cbc779283a80",
+        "rowText": "【缺陷】【專送合併-騎手工資表】专送骑手等级流水扣分没有流水号，扣分应该是-1不是+1\nID: MFTB-1390 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1383",
         "title": "「到家業務-商品管理」超市百貨，點擊下載中心 一步導入報錯",
         "status": "待确认",
@@ -16767,7 +16784,7 @@
       {
         "id": "MFTB-1280",
         "title": "【專送合併--騎手入職離職v1.2】骑手离职后，强制性补假应该要清0",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16777,7 +16794,7 @@
         "createDate": "2026-08-05",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5b7877280fc44a8a7593f1cc45",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】骑手离职后，强制性补假应该要清0\nID: MFTB-1280 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】骑手离职后，强制性补假应该要清0\nID: MFTB-1280 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16869,7 +16886,7 @@
       {
         "id": "MFTB-1245",
         "title": "【專送合併--騎手考勤】骑手有周假，出勤明细列表没统计到周假",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16879,7 +16896,7 @@
         "createDate": "2026-07-30",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a478a24fef337f4a3396f5376f",
-        "rowText": "【缺陷】【專送合併--騎手考勤】骑手有周假，出勤明细列表没统计到周假\nID: MFTB-1245 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】骑手有周假，出勤明细列表没统计到周假\nID: MFTB-1245 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16920,7 +16937,7 @@
       {
         "id": "MFTB-1230",
         "title": "【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16930,7 +16947,7 @@
         "createDate": "2026-07-30",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00637482550e650a8f4339e677",
-        "rowText": "【缺陷】【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期\nID: MFTB-1230 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期\nID: MFTB-1230 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16954,7 +16971,7 @@
       {
         "id": "MFTB-1222",
         "title": "【專送合併--騎手考勤】iOS，申请假期，点击申请日期，会闪退",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "黄金凤",
@@ -16964,14 +16981,14 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f9cda45ec4537faf782aebb743",
-        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，申请假期，点击申请日期，会闪退\nID: MFTB-1222 | 状态: 已修复 | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，申请假期，点击申请日期，会闪退\nID: MFTB-1222 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1221",
         "title": "【專送合併--騎手考勤】骑手打卡符合下班卡时间后打卡，但是还记录了早退？",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16981,7 +16998,7 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b5e9d9fa0d6aaf867732c8a2d9",
-        "rowText": "【缺陷】【專送合併--騎手考勤】骑手打卡符合下班卡时间后打卡，但是还记录了早退？\nID: MFTB-1221 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】骑手打卡符合下班卡时间后打卡，但是还记录了早退？\nID: MFTB-1221 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17005,7 +17022,7 @@
       {
         "id": "MFTB-1218",
         "title": "【專送合併--騎手考勤】Android，上班打卡迟到，今日班次打卡显示被遮住了",
-        "status": "待确认",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17015,7 +17032,7 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=969c206aaa0b0bc82e4675af23",
-        "rowText": "【缺陷】【專送合併--騎手考勤】Android，上班打卡迟到，今日班次打卡显示被遮住了\nID: MFTB-1218 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】Android，上班打卡迟到，今日班次打卡显示被遮住了\nID: MFTB-1218 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17056,7 +17073,7 @@
       {
         "id": "MFTB-1205",
         "title": "【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17066,7 +17083,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=80d1171c2b225962503357019e",
-        "rowText": "【缺陷】【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡\nID: MFTB-1205 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡\nID: MFTB-1205 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17090,7 +17107,7 @@
       {
         "id": "MFTB-1202",
         "title": "【專送合併--騎手考勤】已撤销的假期记录，不显示在已请假的记录里",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17100,7 +17117,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=75beb1334533b909d6939802d6",
-        "rowText": "【缺陷】【專送合併--騎手考勤】已撤销的假期记录，不显示在已请假的记录里\nID: MFTB-1202 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】已撤销的假期记录，不显示在已请假的记录里\nID: MFTB-1202 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17141,7 +17158,7 @@
       {
         "id": "MFTB-1199",
         "title": "【專送合併--騎手考勤】请假时长1天覆盖完了排班时间，不应该再返回排班时间",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17151,7 +17168,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ecaf6c4f1c32eb8ee5ac55c420",
-        "rowText": "【缺陷】【專送合併--騎手考勤】请假时长1天覆盖完了排班时间，不应该再返回排班时间\nID: MFTB-1199 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】请假时长1天覆盖完了排班时间，不应该再返回排班时间\nID: MFTB-1199 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17175,7 +17192,7 @@
       {
         "id": "MFTB-1195",
         "title": "【專送合併--騎手考勤】相同日期不能重复请假",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17185,7 +17202,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=259ee869ed4a35b3d0950189e7",
-        "rowText": "【缺陷】【專送合併--騎手考勤】相同日期不能重复请假\nID: MFTB-1195 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】相同日期不能重复请假\nID: MFTB-1195 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17600,7 +17617,7 @@
       {
         "id": "MFTB-1142",
         "title": "【專送合併--騎手考勤】Android，有排班，请假通过后，排班表显示问题",
-        "status": "待确认",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17610,14 +17627,14 @@
         "createDate": "2026-07-27",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a7b0a2df304d8f05d77c0f0c6f",
-        "rowText": "【缺陷】【專送合併--騎手考勤】Android，有排班，请假通过后，排班表显示问题\nID: MFTB-1142 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】Android，有排班，请假通过后，排班表显示问题\nID: MFTB-1142 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1141",
         "title": "【專送合併--騎手考勤】iOS，有排班，请假通过后，排班表显示问题",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "黄金凤",
@@ -17627,7 +17644,7 @@
         "createDate": "2026-07-27",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ac46a4acd795da9e0562ff308e",
-        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，有排班，请假通过后，排班表显示问题\nID: MFTB-1141 | 状态: 已修复 | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，有排班，请假通过后，排班表显示问题\nID: MFTB-1141 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17719,7 +17736,7 @@
       {
         "id": "MFTB-1133",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、存在相同日期的申请请假没做校验  2、结束时间早于开始时间的假期没做校验 3、没有通过的假期，撤销不用审核，应该不用记录撤销理由",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17729,14 +17746,14 @@
         "createDate": "2026-07-24",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=07c1cdce67751dc31acca05703",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、存在相同日期的申请请假没做校验  2、结束时间早于开始时间的假期没做校验 3、没有通过的假期，撤销不用审核，应该不用记录撤销理由\nID: MFTB-1133 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、存在相同日期的申请请假没做校验  2、结束时间早于开始时间的假期没做校验 3、没有通过的假期，撤销不用审核，应该不用记录撤销理由\nID: MFTB-1133 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1130",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、全职早退没记录  2、早退后还返回出勤正常状态",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17746,7 +17763,7 @@
         "createDate": "2026-07-24",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5fc83ddac651c2af89e31b6740",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、全职早退没记录  2、早退后还返回出勤正常状态\nID: MFTB-1130 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、全职早退没记录  2、早退后还返回出勤正常状态\nID: MFTB-1130 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17770,7 +17787,7 @@
       {
         "id": "MFTB-1111",
         "title": "【專送合併--騎手考勤】iOS，自雇骑手，不应该有请假入口",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "黄金凤",
@@ -17780,14 +17797,14 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e5364699938944be781c7f49a0",
-        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，自雇骑手，不应该有请假入口\nID: MFTB-1111 | 状态: 已修复 | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，自雇骑手，不应该有请假入口\nID: MFTB-1111 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1110",
         "title": "【專送合併--騎手考勤】Android，自雇骑手，不应该有请假入口",
-        "status": "待确认",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17797,7 +17814,7 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5c1ce30c5e671c640a73873924",
-        "rowText": "【缺陷】【專送合併--騎手考勤】Android，自雇骑手，不应该有请假入口\nID: MFTB-1110 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】Android，自雇骑手，不应该有请假入口\nID: MFTB-1110 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17821,7 +17838,7 @@
       {
         "id": "MFTB-1105",
         "title": "【專送合併--騎手入職離職v1.2】专送历史订单，订单统计页面，不需要显示转单，订单收入（列表和详情都一样不需要）",
-        "status": "待确认",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17831,14 +17848,14 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d8e4e2426e52cb8d731ece78cf",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送历史订单，订单统计页面，不需要显示转单，订单收入（列表和详情都一样不需要）\nID: MFTB-1105 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送历史订单，订单统计页面，不需要显示转单，订单收入（列表和详情都一样不需要）\nID: MFTB-1105 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1104",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、导出打卡时间表异常  2、导出月度汇总表异常",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17848,14 +17865,14 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d47d96afdbb1aaa31bca0880d8",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、导出打卡时间表异常  2、导出月度汇总表异常\nID: MFTB-1104 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、导出打卡时间表异常  2、导出月度汇总表异常\nID: MFTB-1104 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1103",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、搜索骑手编号、骑手姓名搜不出来 2、骑手已注册的状态没返回",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17865,7 +17882,7 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6e7ae454484c524b7b869f9835",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、搜索骑手编号、骑手姓名搜不出来 2、骑手已注册的状态没返回\nID: MFTB-1103 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、搜索骑手编号、骑手姓名搜不出来 2、骑手已注册的状态没返回\nID: MFTB-1103 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17923,7 +17940,7 @@
       {
         "id": "MFTB-1082",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，在职履历按时间倒序排列",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17933,7 +17950,7 @@
         "createDate": "2026-07-22",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3f0eaf02817d2061add2fc8a04",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，在职履历按时间倒序排列\nID: MFTB-1082 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，在职履历按时间倒序排列\nID: MFTB-1082 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17974,7 +17991,7 @@
       {
         "id": "MFTB-1072",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，自雇骑手，保险信息需要校验必填",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17984,7 +18001,7 @@
         "createDate": "2026-07-20",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=04c7b6219f6700de3164471c32",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，自雇骑手，保险信息需要校验必填\nID: MFTB-1072 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，自雇骑手，保险信息需要校验必填\nID: MFTB-1072 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -18059,7 +18076,7 @@
       {
         "id": "MFTB-1062",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，未注册的骑手，不可以转职",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -18069,14 +18086,14 @@
         "createDate": "2026-07-20",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f61728e1fe99e638c0ae8b63bd",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，未注册的骑手，不可以转职\nID: MFTB-1062 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，未注册的骑手，不可以转职\nID: MFTB-1062 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1053",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -18086,7 +18103,7 @@
         "createDate": "2026-07-20",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b4a113fed12eac9edc55105ef1",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填\nID: MFTB-1053 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填\nID: MFTB-1053 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -26192,77 +26209,68 @@
       {
         "date": "2026-07-31",
         "total": 854,
-        "completed": 670,
+        "completed": 671,
         "statusCounts": {
-          "已完成": 670,
-          "进行中": 184
+          "已完成": 671,
+          "进行中": 183
         }
       },
       {
         "date": "2026-08-01",
         "total": 854,
-        "completed": 670,
+        "completed": 671,
         "statusCounts": {
-          "已完成": 670,
-          "进行中": 184
+          "已完成": 671,
+          "进行中": 183
         }
       },
       {
         "date": "2026-08-02",
         "total": 854,
-        "completed": 670,
+        "completed": 671,
         "statusCounts": {
-          "已完成": 670,
-          "进行中": 184
+          "已完成": 671,
+          "进行中": 183
         }
       },
       {
         "date": "2026-08-03",
         "total": 867,
-        "completed": 679,
+        "completed": 680,
         "statusCounts": {
-          "已完成": 679,
-          "进行中": 188
+          "已完成": 680,
+          "进行中": 187
         }
       },
       {
         "date": "2026-08-04",
         "total": 878,
-        "completed": 691,
+        "completed": 692,
         "statusCounts": {
-          "已完成": 691,
-          "进行中": 187
+          "已完成": 692,
+          "进行中": 186
         }
       },
       {
         "date": "2026-08-05",
         "total": 895,
-        "completed": 695,
+        "completed": 696,
         "statusCounts": {
-          "已完成": 695,
-          "进行中": 200
+          "已完成": 696,
+          "进行中": 199
         }
       },
       {
         "date": "2026-08-06",
         "total": 921,
-        "completed": 707,
+        "completed": 708,
         "statusCounts": {
-          "已完成": 707,
-          "进行中": 214
+          "已完成": 708,
+          "进行中": 213
         }
       },
       {
         "date": "2026-08-07",
-        "total": 921,
-        "completed": 710,
-        "statusCounts": {
-          "已完成": 710,
-          "进行中": 211
-        }
-      },
-      {
-        "date": "2026-08-08",
         "total": 921,
         "completed": 711,
         "statusCounts": {
@@ -26271,48 +26279,57 @@
         }
       },
       {
+        "date": "2026-08-08",
+        "total": 921,
+        "completed": 712,
+        "statusCounts": {
+          "已完成": 712,
+          "进行中": 209
+        }
+      },
+      {
         "date": "2026-08-09",
         "total": 921,
-        "completed": 713,
+        "completed": 714,
         "statusCounts": {
-          "已完成": 713,
-          "进行中": 208
+          "已完成": 714,
+          "进行中": 207
         }
       },
       {
         "date": "2026-08-10",
         "total": 925,
-        "completed": 723,
+        "completed": 724,
         "statusCounts": {
-          "已完成": 723,
-          "进行中": 202
+          "已完成": 724,
+          "进行中": 201
         }
       },
       {
         "date": "2026-08-11",
         "total": 941,
-        "completed": 730,
+        "completed": 731,
         "statusCounts": {
-          "已完成": 730,
-          "进行中": 211
+          "已完成": 731,
+          "进行中": 210
         }
       },
       {
         "date": "2026-08-12",
         "total": 945,
-        "completed": 741,
+        "completed": 742,
         "statusCounts": {
-          "已完成": 741,
-          "进行中": 204
+          "已完成": 742,
+          "进行中": 203
         }
       },
       {
         "date": "2026-08-13",
         "total": 970,
-        "completed": 746,
+        "completed": 748,
         "statusCounts": {
-          "已完成": 746,
-          "进行中": 224
+          "已完成": 748,
+          "进行中": 222
         }
       }
     ],
@@ -38525,8 +38542,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 9.0,
-      "delta": 5.5
+      "average": 8.8,
+      "delta": 5.3
     },
     "mfood": {
       "average": 0.0,
