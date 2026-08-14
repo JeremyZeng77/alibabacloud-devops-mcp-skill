@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-14T09:43:54.083950+00:00",
+  "compiledAt": "2026-08-14T09:59:59.537693+00:00",
   "latest": {
     "mftb": [
       {
@@ -23720,6 +23720,23 @@
         "category": "Req"
       },
       {
+        "id": "MF-34627",
+        "title": "【用户 app】客服 icon 新增文字说明",
+        "status": "测试环境验证通过",
+        "priority": "低",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-04",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=7c937dcc865217f40e7299fc8c",
+        "rowText": "【产品类需求】【用户 app】客服 icon 新增文字说明\nID: MF-34627 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-04 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
         "id": "MF-34624",
         "title": "【Android用户端】适配 16系统为目标平台",
         "status": "测试环境验证通过",
@@ -24753,6 +24770,23 @@
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=191bdc2b868ac2c0bf17440992",
         "rowText": "【測試】【测试】【Android用户端】适配 16系统为目标平台\nID: MF-34655 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Task"
+      },
+      {
+        "id": "MF-34652",
+        "title": "【测试】【用户 app】客服 icon 新增文字说明",
+        "status": "测试环境验证通过",
+        "priority": "低",
+        "assignee": "杨庆龙",
+        "creator": "杨庆龙",
+        "iteration": "V7.4.0（？）",
+        "planStart": "2026-08-10",
+        "planEnd": "2026-08-13",
+        "createDate": "2026-08-10",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=73f7ab0d29db10dd155b880b0d",
+        "rowText": "【測試】【测试】【用户 app】客服 icon 新增文字说明\nID: MF-34652 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-10 | 排期规划: 2026-08-10 至 2026-08-13",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -38283,100 +38317,100 @@
       },
       {
         "date": "2026-08-04",
-        "total": 179,
+        "total": 180,
         "completed": 38,
         "statusCounts": {
           "已完成": 38,
-          "进行中": 141
+          "进行中": 142
         }
       },
       {
         "date": "2026-08-05",
-        "total": 179,
+        "total": 180,
         "completed": 38,
         "statusCounts": {
           "已完成": 38,
-          "进行中": 141
+          "进行中": 142
         }
       },
       {
         "date": "2026-08-06",
-        "total": 184,
+        "total": 185,
         "completed": 38,
         "statusCounts": {
           "已完成": 38,
-          "进行中": 146
+          "进行中": 147
         }
       },
       {
         "date": "2026-08-07",
-        "total": 184,
-        "completed": 39,
+        "total": 185,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 39,
+          "已完成": 40,
           "进行中": 145
         }
       },
       {
         "date": "2026-08-08",
-        "total": 184,
-        "completed": 39,
+        "total": 185,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 39,
+          "已完成": 40,
           "进行中": 145
         }
       },
       {
         "date": "2026-08-09",
-        "total": 184,
-        "completed": 39,
+        "total": 185,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 39,
+          "已完成": 40,
           "进行中": 145
         }
       },
       {
         "date": "2026-08-10",
-        "total": 184,
-        "completed": 39,
+        "total": 186,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 40,
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-11",
-        "total": 184,
-        "completed": 39,
+        "total": 186,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 40,
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-12",
-        "total": 185,
-        "completed": 41,
+        "total": 187,
+        "completed": 42,
         "statusCounts": {
-          "已完成": 41,
-          "进行中": 144
+          "已完成": 42,
+          "进行中": 145
         }
       },
       {
         "date": "2026-08-13",
-        "total": 186,
-        "completed": 41,
+        "total": 188,
+        "completed": 43,
         "statusCounts": {
-          "已完成": 41,
+          "已完成": 43,
           "进行中": 145
         }
       },
       {
         "date": "2026-08-14",
-        "total": 188,
-        "completed": 41,
+        "total": 190,
+        "completed": 43,
         "statusCounts": {
-          "已完成": 41,
+          "已完成": 43,
           "进行中": 147
         }
       }
@@ -38408,8 +38442,8 @@
         ]
       },
       "mfood": {
-        "metrics": "- **mFood 综合版本**：\n  - 本周对 V7.2.0、V7.2.5 以及 0.0.0 迭代进行了重点推进。本周新创建了 **4** 项任务，同时有 **15** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：3 项\n    - 产品类需求 (Requirement)：1 项\n    - 缺陷 (Bug)：0 项",
-        "progress": "- **mFood 综合版本**：\n  - **【测试】【Android用户端】适配 16系统为目标平台**：工作项 `[MF-34655]` (负责人: 贺志成) 已流转至 **测试环境验证通过** 状态。\n  - **pos 幾小票，新增商品總數**：工作项 `[MF-34636]` (负责人: 周昱强) 已流转至 **测试环境验证通过** 状态。\n  - **【Android用户端】适配 16系统为目标平台**：工作项 `[MF-34624]` (负责人: 徐子旺) 已流转至 **测试环境验证通过** 状态。",
+        "metrics": "- **mFood 综合版本**：\n  - 本周对 V7.2.0、V7.2.5 以及 0.0.0 迭代进行了重点推进。本周新创建了 **5** 项任务，同时有 **17** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：4 项\n    - 产品类需求 (Requirement)：1 项\n    - 缺陷 (Bug)：0 项",
+        "progress": "- **mFood 综合版本**：\n  - **【测试】【Android用户端】适配 16系统为目标平台**：工作项 `[MF-34655]` (负责人: 贺志成) 已流转至 **测试环境验证通过** 状态。\n  - **【测试】【用户 app】客服 icon 新增文字说明**：工作项 `[MF-34652]` (负责人: 杨庆龙) 已流转至 **测试环境验证通过** 状态。\n  - **pos 幾小票，新增商品總數**：工作项 `[MF-34636]` (负责人: 周昱强) 已流转至 **测试环境验证通过** 状态。",
         "planning": "- **mFood 综合版本**：\n  - **【團購到店】新增 nfc 碰一碰+掃碼進入小程序的功能**：新进规划工作项 `[MF-34666]` (负责人: 覃林方)，当前处于 **待处理** 状态。\n  - **【测试】【團購到店】新增 nfc 碰一碰+掃碼進入小程序的功能**：新进规划工作项 `[MF-34667]` (负责人: 贺志成)，当前处于 **待处理** 状态。\n  - **【测试】超市首页，显示红包瓷片**：新进规划工作项 `[MF-34664]` (负责人: 冼嘉业)，当前处于 **待处理** 状态。",
         "assessment": "- **mFood 综合版本**：\n  - 核心功能按计划稳定推进，控制性灰度测试与通道联调正常，无明显发布延期风险。",
         "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 13 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
