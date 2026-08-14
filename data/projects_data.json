@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-14T03:35:16.265080+00:00",
+  "compiledAt": "2026-08-14T05:41:06.636198+00:00",
   "latest": {
     "mftb": [
       {
@@ -2587,6 +2587,40 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1393",
+        "title": "【產品】【極馬】訂單歸屬策略支持多選訂單平台類型",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-12",
+        "planEnd": "2026-08-12",
+        "createDate": "2026-08-14",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b89393a9f05c438320cfc7d275",
+        "rowText": "【产品】【產品】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1393 | 状态: 已完成 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-14 | 排期规划: 2026-08-12 至 2026-08-12",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1392",
+        "title": "【服务端】【大系統】配送費減免",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘付益",
+        "creator": "刘付益",
+        "iteration": "未规划",
+        "planStart": "2026-08-14",
+        "planEnd": "2026-08-19",
+        "createDate": "2026-08-14",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=59363f6423ffb7d9ab2630e732",
+        "rowText": "【任务】【服务端】【大系統】配送費減免\nID: MFTB-1392 | 状态: 未开始 | 优先级: 中\n负责人: 刘付益 | 提报人: 刘付益\n迭代版本: 未规划 | 创建时间: 2026-08-14 | 排期规划: 2026-08-14 至 2026-08-19",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1391",
         "title": "【测试】【專送合併】騎手工資表",
         "status": "待处理",
@@ -3694,17 +3728,17 @@
       {
         "id": "MFTB-1293",
         "title": "【iOS】【專送】極馬專送APP登陸頁隱藏【TE】公司",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "陈万里",
         "iteration": "SH-v1.0.0",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-08-14",
+        "planEnd": "2026-08-14",
         "createDate": "2026-08-05",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5d5186027f3d44c670802a22f8",
-        "rowText": "【任务】【iOS】【專送】極馬專送APP登陸頁隱藏【TE】公司\nID: MFTB-1293 | 状态: 未开始 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
+        "rowText": "【任务】【iOS】【專送】極馬專送APP登陸頁隱藏【TE】公司\nID: MFTB-1293 | 状态: 提交测试 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: 2026-08-14 至 2026-08-14",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -26317,10 +26351,10 @@
       },
       {
         "date": "2026-08-14",
-        "total": 971,
-        "completed": 748,
+        "total": 973,
+        "completed": 750,
         "statusCounts": {
-          "已完成": 748,
+          "已完成": 750,
           "进行中": 223
         }
       }
