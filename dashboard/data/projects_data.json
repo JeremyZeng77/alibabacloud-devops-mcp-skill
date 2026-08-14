@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-14T02:13:26.140273+00:00",
+  "compiledAt": "2026-08-13T09:31:23.820447+00:00",
   "latest": {
     "mftb": [
       {
@@ -108,7 +108,7 @@
         "id": "MFTB-1363",
         "title": "【極馬】訂單歸屬策略支持多選訂單平台類型",
         "status": "待测试",
-        "priority": "高",
+        "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
         "iteration": "SH-v1.0.0",
@@ -117,7 +117,7 @@
         "createDate": "2026-08-12",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4282d8c8fa99adf49b0004217d",
-        "rowText": "【产品类需求】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1363 | 状态: 待测试 | 优先级: 高\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1363 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -192,7 +192,7 @@
       {
         "id": "MFTB-1310",
         "title": "【广告系统】-词库管理",
-        "status": "测试环境验证通过",
+        "status": "待测试",
         "priority": "中",
         "assignee": "冯松",
         "creator": "冯松",
@@ -202,7 +202,7 @@
         "createDate": "2026-08-06",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=599f4a004cd5c47a82c1330a31",
-        "rowText": "【产品类需求】【广告系统】-词库管理\nID: MFTB-1310 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 冯松 | 提报人: 冯松\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【广告系统】-词库管理\nID: MFTB-1310 | 状态: 待测试 | 优先级: 中\n负责人: 冯松 | 提报人: 冯松\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -855,17 +855,17 @@
       {
         "id": "MFTB-996",
         "title": "【大系统】特殊区域管理",
-        "status": "测试环境验证通过",
+        "status": "测试中",
         "priority": "中",
         "assignee": "刘龙振海",
         "creator": "刘龙振海",
         "iteration": "MFTB-v1.0.1",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2026-07-15",
+        "createDate": "2026-07-16",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fcf141dc657b3230b39d4643f4",
-        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-15 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试中 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2742,17 +2742,17 @@
       {
         "id": "MFTB-1377",
         "title": "【测试】【广告系统】-词库管理",
-        "status": "测试环境验证通过",
+        "status": "待处理",
         "priority": "中",
         "assignee": "杨庆龙",
         "creator": "杨庆龙",
         "iteration": "MFTB-v1.0.2",
-        "planStart": "2026-08-13",
-        "planEnd": "2026-08-13",
+        "planStart": "",
+        "planEnd": "",
         "createDate": "2026-08-13",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=115279436a986d3d00355e28b4",
-        "rowText": "【測試】【测试】【广告系统】-词库管理\nID: MFTB-1377 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-13 | 排期规划: 2026-08-13 至 2026-08-13",
+        "rowText": "【測試】【测试】【广告系统】-词库管理\nID: MFTB-1377 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4747,7 +4747,7 @@
       },
       {
         "id": "MFTB-1183",
-        "title": "【测试】【廣告系統】-盤活",
+        "title": "【测试】【廣告系統】-無敵/盤活",
         "status": "待处理",
         "priority": "中",
         "assignee": "杨庆龙",
@@ -4758,7 +4758,7 @@
         "createDate": "2026-07-28",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0b8f3a94e1b4a04070b1250186",
-        "rowText": "【測試】【测试】【廣告系統】-盤活\nID: MFTB-1183 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【廣告系統】-無敵/盤活\nID: MFTB-1183 | 状态: 待处理 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4816,7 +4816,7 @@
       {
         "id": "MFTB-1179",
         "title": "【测试】【大系统】特殊区域管理",
-        "status": "测试环境验证通过",
+        "status": "测试中",
         "priority": "中",
         "assignee": "杨庆龙",
         "creator": "杨庆龙",
@@ -4826,7 +4826,7 @@
         "createDate": "2026-07-28",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c17e69300d3941d11643753b7c",
-        "rowText": "【測試】【测试】【大系统】特殊区域管理\nID: MFTB-1179 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【大系统】特殊区域管理\nID: MFTB-1179 | 状态: 测试中 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -12864,10 +12864,10 @@
         "iteration": "MFTB-v1.0.1",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2026-05-27",
+        "createDate": "2026-05-28",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=417617a21c5b94e05182b63d50",
-        "rowText": "【任务】【前端】【大係統】商家意見反饋\nID: MFTB-422 | 状态: 提交测试 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-05-27 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大係統】商家意見反饋\nID: MFTB-422 | 状态: 提交测试 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-05-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -16493,23 +16493,6 @@
         "category": "Task"
       },
       {
-        "id": "MFTB-1390",
-        "title": "【專送合併-騎手工資表】专送骑手等级流水扣分没有流水号，扣分应该是-1不是+1",
-        "status": "待确认",
-        "priority": "中",
-        "assignee": "刘志敏",
-        "creator": "黄金凤",
-        "iteration": "SH-v1.0.0",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-08-13",
-        "workItemType": "缺陷",
-        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=93e67e696603b9cbc779283a80",
-        "rowText": "【缺陷】【專送合併-騎手工資表】专送骑手等级流水扣分没有流水号，扣分应该是-1不是+1\nID: MFTB-1390 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
-        "project": "MFTB集团项目",
-        "category": "Bug"
-      },
-      {
         "id": "MFTB-1383",
         "title": "「到家業務-商品管理」超市百貨，點擊下載中心 一步導入報錯",
         "status": "待确认",
@@ -16784,7 +16767,7 @@
       {
         "id": "MFTB-1280",
         "title": "【專送合併--騎手入職離職v1.2】骑手离职后，强制性补假应该要清0",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16794,7 +16777,7 @@
         "createDate": "2026-08-05",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5b7877280fc44a8a7593f1cc45",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】骑手离职后，强制性补假应该要清0\nID: MFTB-1280 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】骑手离职后，强制性补假应该要清0\nID: MFTB-1280 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-05 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16886,7 +16869,7 @@
       {
         "id": "MFTB-1245",
         "title": "【專送合併--騎手考勤】骑手有周假，出勤明细列表没统计到周假",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16896,7 +16879,7 @@
         "createDate": "2026-07-30",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a478a24fef337f4a3396f5376f",
-        "rowText": "【缺陷】【專送合併--騎手考勤】骑手有周假，出勤明细列表没统计到周假\nID: MFTB-1245 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】骑手有周假，出勤明细列表没统计到周假\nID: MFTB-1245 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16937,7 +16920,7 @@
       {
         "id": "MFTB-1230",
         "title": "【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16947,7 +16930,7 @@
         "createDate": "2026-07-30",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00637482550e650a8f4339e677",
-        "rowText": "【缺陷】【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期\nID: MFTB-1230 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】骑手在三公假期上班＞4小时，没有给骑手补强制性上班假期\nID: MFTB-1230 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-30 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -16971,7 +16954,7 @@
       {
         "id": "MFTB-1222",
         "title": "【專送合併--騎手考勤】iOS，申请假期，点击申请日期，会闪退",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "黄金凤",
@@ -16981,14 +16964,14 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f9cda45ec4537faf782aebb743",
-        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，申请假期，点击申请日期，会闪退\nID: MFTB-1222 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，申请假期，点击申请日期，会闪退\nID: MFTB-1222 | 状态: 已修复 | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1221",
         "title": "【專送合併--騎手考勤】骑手打卡符合下班卡时间后打卡，但是还记录了早退？",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -16998,7 +16981,7 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b5e9d9fa0d6aaf867732c8a2d9",
-        "rowText": "【缺陷】【專送合併--騎手考勤】骑手打卡符合下班卡时间后打卡，但是还记录了早退？\nID: MFTB-1221 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】骑手打卡符合下班卡时间后打卡，但是还记录了早退？\nID: MFTB-1221 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17022,7 +17005,7 @@
       {
         "id": "MFTB-1218",
         "title": "【專送合併--騎手考勤】Android，上班打卡迟到，今日班次打卡显示被遮住了",
-        "status": "已关闭（已修复）",
+        "status": "待确认",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17032,7 +17015,7 @@
         "createDate": "2026-07-29",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=969c206aaa0b0bc82e4675af23",
-        "rowText": "【缺陷】【專送合併--騎手考勤】Android，上班打卡迟到，今日班次打卡显示被遮住了\nID: MFTB-1218 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】Android，上班打卡迟到，今日班次打卡显示被遮住了\nID: MFTB-1218 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-29 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17073,7 +17056,7 @@
       {
         "id": "MFTB-1205",
         "title": "【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17083,7 +17066,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=80d1171c2b225962503357019e",
-        "rowText": "【缺陷】【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡\nID: MFTB-1205 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】跨日班次，请假上半更，剩余下半更还未到上班时间，不应该标记缺卡\nID: MFTB-1205 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17107,7 +17090,7 @@
       {
         "id": "MFTB-1202",
         "title": "【專送合併--騎手考勤】已撤销的假期记录，不显示在已请假的记录里",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17117,7 +17100,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=75beb1334533b909d6939802d6",
-        "rowText": "【缺陷】【專送合併--騎手考勤】已撤销的假期记录，不显示在已请假的记录里\nID: MFTB-1202 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】已撤销的假期记录，不显示在已请假的记录里\nID: MFTB-1202 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17158,7 +17141,7 @@
       {
         "id": "MFTB-1199",
         "title": "【專送合併--騎手考勤】请假时长1天覆盖完了排班时间，不应该再返回排班时间",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17168,7 +17151,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ecaf6c4f1c32eb8ee5ac55c420",
-        "rowText": "【缺陷】【專送合併--騎手考勤】请假时长1天覆盖完了排班时间，不应该再返回排班时间\nID: MFTB-1199 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】请假时长1天覆盖完了排班时间，不应该再返回排班时间\nID: MFTB-1199 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17192,7 +17175,7 @@
       {
         "id": "MFTB-1195",
         "title": "【專送合併--騎手考勤】相同日期不能重复请假",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17202,7 +17185,7 @@
         "createDate": "2026-07-28",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=259ee869ed4a35b3d0950189e7",
-        "rowText": "【缺陷】【專送合併--騎手考勤】相同日期不能重复请假\nID: MFTB-1195 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】相同日期不能重复请假\nID: MFTB-1195 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17617,7 +17600,7 @@
       {
         "id": "MFTB-1142",
         "title": "【專送合併--騎手考勤】Android，有排班，请假通过后，排班表显示问题",
-        "status": "已关闭（已修复）",
+        "status": "待确认",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17627,14 +17610,14 @@
         "createDate": "2026-07-27",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a7b0a2df304d8f05d77c0f0c6f",
-        "rowText": "【缺陷】【專送合併--騎手考勤】Android，有排班，请假通过后，排班表显示问题\nID: MFTB-1142 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】Android，有排班，请假通过后，排班表显示问题\nID: MFTB-1142 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1141",
         "title": "【專送合併--騎手考勤】iOS，有排班，请假通过后，排班表显示问题",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "黄金凤",
@@ -17644,7 +17627,7 @@
         "createDate": "2026-07-27",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ac46a4acd795da9e0562ff308e",
-        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，有排班，请假通过后，排班表显示问题\nID: MFTB-1141 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，有排班，请假通过后，排班表显示问题\nID: MFTB-1141 | 状态: 已修复 | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17736,7 +17719,7 @@
       {
         "id": "MFTB-1133",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、存在相同日期的申请请假没做校验  2、结束时间早于开始时间的假期没做校验 3、没有通过的假期，撤销不用审核，应该不用记录撤销理由",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17746,14 +17729,14 @@
         "createDate": "2026-07-24",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=07c1cdce67751dc31acca05703",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、存在相同日期的申请请假没做校验  2、结束时间早于开始时间的假期没做校验 3、没有通过的假期，撤销不用审核，应该不用记录撤销理由\nID: MFTB-1133 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、存在相同日期的申请请假没做校验  2、结束时间早于开始时间的假期没做校验 3、没有通过的假期，撤销不用审核，应该不用记录撤销理由\nID: MFTB-1133 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1130",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、全职早退没记录  2、早退后还返回出勤正常状态",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17763,7 +17746,7 @@
         "createDate": "2026-07-24",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5fc83ddac651c2af89e31b6740",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、全职早退没记录  2、早退后还返回出勤正常状态\nID: MFTB-1130 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、全职早退没记录  2、早退后还返回出勤正常状态\nID: MFTB-1130 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-24 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17787,7 +17770,7 @@
       {
         "id": "MFTB-1111",
         "title": "【專送合併--騎手考勤】iOS，自雇骑手，不应该有请假入口",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "黄金凤",
@@ -17797,14 +17780,14 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e5364699938944be781c7f49a0",
-        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，自雇骑手，不应该有请假入口\nID: MFTB-1111 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】iOS，自雇骑手，不应该有请假入口\nID: MFTB-1111 | 状态: 已修复 | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1110",
         "title": "【專送合併--騎手考勤】Android，自雇骑手，不应该有请假入口",
-        "status": "已关闭（已修复）",
+        "status": "待确认",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17814,7 +17797,7 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5c1ce30c5e671c640a73873924",
-        "rowText": "【缺陷】【專送合併--騎手考勤】Android，自雇骑手，不应该有请假入口\nID: MFTB-1110 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】Android，自雇骑手，不应该有请假入口\nID: MFTB-1110 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17838,7 +17821,7 @@
       {
         "id": "MFTB-1105",
         "title": "【專送合併--騎手入職離職v1.2】专送历史订单，订单统计页面，不需要显示转单，订单收入（列表和详情都一样不需要）",
-        "status": "已关闭（已修复）",
+        "status": "待确认",
         "priority": "中",
         "assignee": "陈国伟",
         "creator": "黄金凤",
@@ -17848,14 +17831,14 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d8e4e2426e52cb8d731ece78cf",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送历史订单，订单统计页面，不需要显示转单，订单收入（列表和详情都一样不需要）\nID: MFTB-1105 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送历史订单，订单统计页面，不需要显示转单，订单收入（列表和详情都一样不需要）\nID: MFTB-1105 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1104",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、导出打卡时间表异常  2、导出月度汇总表异常",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17865,14 +17848,14 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d47d96afdbb1aaa31bca0880d8",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、导出打卡时间表异常  2、导出月度汇总表异常\nID: MFTB-1104 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、导出打卡时间表异常  2、导出月度汇总表异常\nID: MFTB-1104 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1103",
         "title": "【專送合併--騎手考勤】考勤明细列表：1、搜索骑手编号、骑手姓名搜不出来 2、骑手已注册的状态没返回",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17882,7 +17865,7 @@
         "createDate": "2026-07-23",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6e7ae454484c524b7b869f9835",
-        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、搜索骑手编号、骑手姓名搜不出来 2、骑手已注册的状态没返回\nID: MFTB-1103 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手考勤】考勤明细列表：1、搜索骑手编号、骑手姓名搜不出来 2、骑手已注册的状态没返回\nID: MFTB-1103 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-23 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17940,7 +17923,7 @@
       {
         "id": "MFTB-1082",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，在职履历按时间倒序排列",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -17950,7 +17933,7 @@
         "createDate": "2026-07-22",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3f0eaf02817d2061add2fc8a04",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，在职履历按时间倒序排列\nID: MFTB-1082 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，在职履历按时间倒序排列\nID: MFTB-1082 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -17991,7 +17974,7 @@
       {
         "id": "MFTB-1072",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，自雇骑手，保险信息需要校验必填",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -18001,7 +17984,7 @@
         "createDate": "2026-07-20",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=04c7b6219f6700de3164471c32",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，自雇骑手，保险信息需要校验必填\nID: MFTB-1072 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，自雇骑手，保险信息需要校验必填\nID: MFTB-1072 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -18076,7 +18059,7 @@
       {
         "id": "MFTB-1062",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，未注册的骑手，不可以转职",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -18086,14 +18069,14 @@
         "createDate": "2026-07-20",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f61728e1fe99e638c0ae8b63bd",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，未注册的骑手，不可以转职\nID: MFTB-1062 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，未注册的骑手，不可以转职\nID: MFTB-1062 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1053",
         "title": "【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填",
-        "status": "已关闭（已修复）",
+        "status": "已修复",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "黄金凤",
@@ -18103,7 +18086,7 @@
         "createDate": "2026-07-20",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b4a113fed12eac9edc55105ef1",
-        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填\nID: MFTB-1053 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併--騎手入職離職v1.2】专送骑手列表，注册信息，身份证照片紧急联系人、不用校验必填\nID: MFTB-1053 | 状态: 已修复 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -21867,6 +21850,23 @@
         "category": "Req"
       },
       {
+        "id": "MF-34647",
+        "title": "【團購】-門店列表-新增門店推廣碼，掃碼進入商家主頁",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-06",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=ad6f6e0d01be70c676c877981e",
+        "rowText": "【产品类需求】【團購】-門店列表-新增門店推廣碼，掃碼進入商家主頁\nID: MF-34647 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
         "id": "MF-34640",
         "title": "【訂單報表】新增對“積分抵現”的金額統計",
         "status": "已评审（待开发）",
@@ -23372,10 +23372,10 @@
         "iteration": "产品需求池",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2024-03-23",
+        "createDate": "2024-03-24",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=2673c2a10ff8f9b66b85575e07",
-        "rowText": "【产品类需求】增加超市指定營銷活動-重新二审\nID: MF-21297 | 状态: 需求暂停 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 产品需求池 | 创建时间: 2024-03-23 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】增加超市指定營銷活動-重新二审\nID: MF-21297 | 状态: 需求暂停 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 产品需求池 | 创建时间: 2024-03-24 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
       },
@@ -23631,6 +23631,40 @@
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=7fb3511564b7f8906fc71d1222",
         "rowText": "【測試】【测试】pos 幾小票，新增商品總數\nID: MF-34638 | 状态: 待处理 | 优先级: 低\n负责人: 曹晴晴 | 提报人: 曹晴晴\n迭代版本: V7.3.0（6.30） | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Task"
+      },
+      {
+        "id": "MF-34623",
+        "title": "【测试】積分抵現可用規則更改",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "冼嘉业",
+        "creator": "冼嘉业",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-03",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=d9302101274fe45f23ba4f96fe",
+        "rowText": "【測試】【测试】積分抵現可用規則更改\nID: MF-34623 | 状态: 待处理 | 优先级: 低\n负责人: 冼嘉业 | 提报人: 冼嘉业\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-03 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Task"
+      },
+      {
+        "id": "MF-34617",
+        "title": "【测试】積分抵現可用規則更改",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "冼嘉业",
+        "creator": "冼嘉业",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-07-22",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=c2e8393c7dc62d26943ce081b8",
+        "rowText": "【測試】【测试】積分抵現可用規則更改\nID: MF-34617 | 状态: 待处理 | 优先级: 低\n负责人: 冼嘉业 | 提报人: 冼嘉业\n迭代版本: V7.4.0（？） | 创建时间: 2026-07-22 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -24481,23 +24515,6 @@
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=191bdc2b868ac2c0bf17440992",
         "rowText": "【測試】【测试】【Android用户端】适配 16系统为目标平台\nID: MF-34655 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-12 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Task"
-      },
-      {
-        "id": "MF-34617",
-        "title": "【测试】積分抵現可用規則更改",
-        "status": "测试环境验证通过",
-        "priority": "低",
-        "assignee": "冼嘉业",
-        "creator": "冼嘉业",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-07-22",
-        "workItemType": "測試",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=c2e8393c7dc62d26943ce081b8",
-        "rowText": "【測試】【测试】積分抵現可用規則更改\nID: MF-34617 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 冼嘉业 | 提报人: 冼嘉业\n迭代版本: V7.4.0（？） | 创建时间: 2026-07-22 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -25589,11 +25606,11 @@
       },
       {
         "date": "2026-05-27",
-        "total": 248,
+        "total": 247,
         "completed": 202,
         "statusCounts": {
           "已完成": 202,
-          "进行中": 46
+          "进行中": 45
         }
       },
       {
@@ -25617,10 +25634,10 @@
       {
         "date": "2026-05-30",
         "total": 257,
-        "completed": 209,
+        "completed": 208,
         "statusCounts": {
-          "已完成": 209,
-          "进行中": 48
+          "已完成": 208,
+          "进行中": 49
         }
       },
       {
@@ -25716,235 +25733,235 @@
       {
         "date": "2026-06-10",
         "total": 407,
-        "completed": 272,
+        "completed": 278,
         "statusCounts": {
-          "已完成": 272,
-          "进行中": 135
+          "已完成": 278,
+          "进行中": 129
         }
       },
       {
         "date": "2026-06-11",
         "total": 429,
-        "completed": 272,
+        "completed": 285,
         "statusCounts": {
-          "已完成": 272,
-          "进行中": 157
+          "已完成": 285,
+          "进行中": 144
         }
       },
       {
         "date": "2026-06-12",
         "total": 435,
-        "completed": 274,
+        "completed": 303,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 161
+          "已完成": 303,
+          "进行中": 132
         }
       },
       {
         "date": "2026-06-13",
         "total": 435,
-        "completed": 274,
+        "completed": 303,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 161
+          "已完成": 303,
+          "进行中": 132
         }
       },
       {
         "date": "2026-06-14",
         "total": 435,
-        "completed": 274,
+        "completed": 303,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 161
+          "已完成": 303,
+          "进行中": 132
         }
       },
       {
         "date": "2026-06-15",
         "total": 439,
-        "completed": 274,
+        "completed": 311,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 165
+          "已完成": 311,
+          "进行中": 128
         }
       },
       {
         "date": "2026-06-16",
         "total": 470,
-        "completed": 274,
+        "completed": 319,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 196
+          "已完成": 319,
+          "进行中": 151
         }
       },
       {
         "date": "2026-06-17",
         "total": 490,
-        "completed": 274,
+        "completed": 330,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 216
+          "已完成": 330,
+          "进行中": 160
         }
       },
       {
         "date": "2026-06-18",
         "total": 493,
-        "completed": 274,
+        "completed": 349,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 219
+          "已完成": 349,
+          "进行中": 144
         }
       },
       {
         "date": "2026-06-19",
         "total": 493,
-        "completed": 274,
+        "completed": 349,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 219
+          "已完成": 349,
+          "进行中": 144
         }
       },
       {
         "date": "2026-06-20",
         "total": 493,
-        "completed": 275,
+        "completed": 350,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 218
+          "已完成": 350,
+          "进行中": 143
         }
       },
       {
         "date": "2026-06-21",
         "total": 493,
-        "completed": 275,
+        "completed": 350,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 218
+          "已完成": 350,
+          "进行中": 143
         }
       },
       {
         "date": "2026-06-22",
         "total": 512,
-        "completed": 275,
+        "completed": 361,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 237
+          "已完成": 361,
+          "进行中": 151
         }
       },
       {
         "date": "2026-06-23",
         "total": 515,
-        "completed": 275,
+        "completed": 372,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 240
+          "已完成": 372,
+          "进行中": 143
         }
       },
       {
         "date": "2026-06-24",
         "total": 529,
-        "completed": 275,
+        "completed": 375,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 254
+          "已完成": 375,
+          "进行中": 154
         }
       },
       {
         "date": "2026-06-25",
         "total": 539,
-        "completed": 276,
+        "completed": 376,
         "statusCounts": {
-          "已完成": 276,
-          "进行中": 263
+          "已完成": 376,
+          "进行中": 163
         }
       },
       {
         "date": "2026-06-26",
         "total": 539,
-        "completed": 276,
+        "completed": 407,
         "statusCounts": {
-          "已完成": 276,
-          "进行中": 263
+          "已完成": 407,
+          "进行中": 132
         }
       },
       {
         "date": "2026-06-27",
         "total": 539,
-        "completed": 276,
+        "completed": 408,
         "statusCounts": {
-          "已完成": 276,
-          "进行中": 263
+          "已完成": 408,
+          "进行中": 131
         }
       },
       {
         "date": "2026-06-28",
         "total": 539,
-        "completed": 277,
+        "completed": 409,
         "statusCounts": {
-          "已完成": 277,
-          "进行中": 262
+          "已完成": 409,
+          "进行中": 130
         }
       },
       {
         "date": "2026-06-29",
         "total": 541,
-        "completed": 277,
+        "completed": 412,
         "statusCounts": {
-          "已完成": 277,
-          "进行中": 264
+          "已完成": 412,
+          "进行中": 129
         }
       },
       {
         "date": "2026-06-30",
         "total": 560,
-        "completed": 277,
+        "completed": 421,
         "statusCounts": {
-          "已完成": 277,
-          "进行中": 283
+          "已完成": 421,
+          "进行中": 139
         }
       },
       {
         "date": "2026-07-01",
         "total": 571,
-        "completed": 277,
+        "completed": 426,
         "statusCounts": {
-          "已完成": 277,
-          "进行中": 294
+          "已完成": 426,
+          "进行中": 145
         }
       },
       {
         "date": "2026-07-02",
         "total": 583,
-        "completed": 277,
+        "completed": 442,
         "statusCounts": {
-          "已完成": 277,
-          "进行中": 306
+          "已完成": 442,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-03",
         "total": 585,
-        "completed": 278,
+        "completed": 453,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 307
+          "已完成": 453,
+          "进行中": 132
         }
       },
       {
         "date": "2026-07-04",
         "total": 585,
-        "completed": 278,
+        "completed": 453,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 307
+          "已完成": 453,
+          "进行中": 132
         }
       },
       {
         "date": "2026-07-05",
         "total": 585,
-        "completed": 278,
+        "completed": 453,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 307
+          "已完成": 453,
+          "进行中": 132
         }
       },
       {
@@ -25959,352 +25976,343 @@
       {
         "date": "2026-07-07",
         "total": 610,
-        "completed": 462,
+        "completed": 464,
         "statusCounts": {
-          "已完成": 462,
-          "进行中": 148
+          "已完成": 464,
+          "进行中": 146
         }
       },
       {
         "date": "2026-07-08",
         "total": 632,
-        "completed": 481,
+        "completed": 483,
         "statusCounts": {
-          "已完成": 481,
-          "进行中": 151
+          "已完成": 483,
+          "进行中": 149
         }
       },
       {
         "date": "2026-07-09",
         "total": 661,
-        "completed": 508,
+        "completed": 510,
         "statusCounts": {
-          "已完成": 508,
-          "进行中": 153
+          "已完成": 510,
+          "进行中": 151
         }
       },
       {
         "date": "2026-07-10",
         "total": 676,
-        "completed": 526,
+        "completed": 511,
         "statusCounts": {
-          "已完成": 526,
-          "进行中": 150
+          "已完成": 511,
+          "进行中": 165
         }
       },
       {
         "date": "2026-07-11",
         "total": 676,
-        "completed": 526,
+        "completed": 511,
         "statusCounts": {
-          "已完成": 526,
-          "进行中": 150
+          "已完成": 511,
+          "进行中": 165
         }
       },
       {
         "date": "2026-07-12",
         "total": 676,
-        "completed": 526,
+        "completed": 511,
         "statusCounts": {
-          "已完成": 526,
-          "进行中": 150
+          "已完成": 511,
+          "进行中": 165
         }
       },
       {
         "date": "2026-07-13",
         "total": 683,
-        "completed": 541,
+        "completed": 512,
         "statusCounts": {
-          "已完成": 541,
-          "进行中": 142
+          "已完成": 512,
+          "进行中": 171
         }
       },
       {
         "date": "2026-07-14",
         "total": 691,
-        "completed": 548,
+        "completed": 512,
         "statusCounts": {
-          "已完成": 548,
-          "进行中": 143
+          "已完成": 512,
+          "进行中": 179
         }
       },
       {
         "date": "2026-07-15",
-        "total": 694,
-        "completed": 558,
+        "total": 693,
+        "completed": 512,
         "statusCounts": {
-          "已完成": 558,
-          "进行中": 136
+          "已完成": 512,
+          "进行中": 181
         }
       },
       {
         "date": "2026-07-16",
         "total": 710,
-        "completed": 568,
+        "completed": 512,
         "statusCounts": {
-          "已完成": 568,
-          "进行中": 142
+          "已完成": 512,
+          "进行中": 198
         }
       },
       {
         "date": "2026-07-17",
         "total": 731,
-        "completed": 578,
+        "completed": 512,
         "statusCounts": {
-          "已完成": 578,
-          "进行中": 153
+          "已完成": 512,
+          "进行中": 219
         }
       },
       {
         "date": "2026-07-18",
         "total": 731,
-        "completed": 578,
+        "completed": 512,
         "statusCounts": {
-          "已完成": 578,
-          "进行中": 153
+          "已完成": 512,
+          "进行中": 219
         }
       },
       {
         "date": "2026-07-19",
         "total": 731,
-        "completed": 578,
+        "completed": 513,
         "statusCounts": {
-          "已完成": 578,
-          "进行中": 153
+          "已完成": 513,
+          "进行中": 218
         }
       },
       {
         "date": "2026-07-20",
         "total": 749,
-        "completed": 591,
+        "completed": 515,
         "statusCounts": {
-          "已完成": 591,
-          "进行中": 158
+          "已完成": 515,
+          "进行中": 234
         }
       },
       {
         "date": "2026-07-21",
         "total": 755,
-        "completed": 597,
+        "completed": 515,
         "statusCounts": {
-          "已完成": 597,
-          "进行中": 158
+          "已完成": 515,
+          "进行中": 240
         }
       },
       {
         "date": "2026-07-22",
         "total": 764,
-        "completed": 600,
+        "completed": 515,
         "statusCounts": {
-          "已完成": 600,
-          "进行中": 164
+          "已完成": 515,
+          "进行中": 249
         }
       },
       {
         "date": "2026-07-23",
         "total": 777,
-        "completed": 608,
+        "completed": 515,
         "statusCounts": {
-          "已完成": 608,
-          "进行中": 169
+          "已完成": 515,
+          "进行中": 262
         }
       },
       {
         "date": "2026-07-24",
         "total": 793,
-        "completed": 616,
+        "completed": 516,
         "statusCounts": {
-          "已完成": 616,
-          "进行中": 177
+          "已完成": 516,
+          "进行中": 277
         }
       },
       {
         "date": "2026-07-25",
         "total": 793,
-        "completed": 616,
+        "completed": 516,
         "statusCounts": {
-          "已完成": 616,
-          "进行中": 177
+          "已完成": 516,
+          "进行中": 277
         }
       },
       {
         "date": "2026-07-26",
         "total": 793,
-        "completed": 618,
+        "completed": 519,
         "statusCounts": {
-          "已完成": 618,
-          "进行中": 175
+          "已完成": 519,
+          "进行中": 274
         }
       },
       {
         "date": "2026-07-27",
         "total": 800,
-        "completed": 625,
+        "completed": 519,
         "statusCounts": {
-          "已完成": 625,
-          "进行中": 175
+          "已完成": 519,
+          "进行中": 281
         }
       },
       {
         "date": "2026-07-28",
         "total": 823,
-        "completed": 641,
+        "completed": 644,
         "statusCounts": {
-          "已完成": 641,
-          "进行中": 182
+          "已完成": 644,
+          "进行中": 179
         }
       },
       {
         "date": "2026-07-29",
         "total": 840,
-        "completed": 650,
+        "completed": 651,
         "statusCounts": {
-          "已完成": 650,
-          "进行中": 190
+          "已完成": 651,
+          "进行中": 189
         }
       },
       {
         "date": "2026-07-30",
         "total": 850,
-        "completed": 661,
+        "completed": 663,
         "statusCounts": {
-          "已完成": 661,
-          "进行中": 189
+          "已完成": 663,
+          "进行中": 187
         }
       },
       {
         "date": "2026-07-31",
         "total": 854,
-        "completed": 668,
+        "completed": 666,
         "statusCounts": {
-          "已完成": 668,
-          "进行中": 186
+          "已完成": 666,
+          "进行中": 188
         }
       },
       {
         "date": "2026-08-01",
         "total": 854,
-        "completed": 668,
+        "completed": 666,
         "statusCounts": {
-          "已完成": 668,
-          "进行中": 186
+          "已完成": 666,
+          "进行中": 188
         }
       },
       {
         "date": "2026-08-02",
         "total": 854,
-        "completed": 668,
+        "completed": 666,
         "statusCounts": {
-          "已完成": 668,
-          "进行中": 186
+          "已完成": 666,
+          "进行中": 188
         }
       },
       {
         "date": "2026-08-03",
         "total": 867,
-        "completed": 677,
+        "completed": 679,
         "statusCounts": {
-          "已完成": 677,
-          "进行中": 190
+          "已完成": 679,
+          "进行中": 188
         }
       },
       {
         "date": "2026-08-04",
         "total": 878,
-        "completed": 689,
+        "completed": 692,
         "statusCounts": {
-          "已完成": 689,
-          "进行中": 189
+          "已完成": 692,
+          "进行中": 186
         }
       },
       {
         "date": "2026-08-05",
         "total": 895,
-        "completed": 692,
+        "completed": 696,
         "statusCounts": {
-          "已完成": 692,
-          "进行中": 203
+          "已完成": 696,
+          "进行中": 199
         }
       },
       {
         "date": "2026-08-06",
         "total": 921,
-        "completed": 704,
+        "completed": 708,
         "statusCounts": {
-          "已完成": 704,
-          "进行中": 217
+          "已完成": 708,
+          "进行中": 213
         }
       },
       {
         "date": "2026-08-07",
         "total": 921,
-        "completed": 706,
+        "completed": 711,
         "statusCounts": {
-          "已完成": 706,
-          "进行中": 215
+          "已完成": 711,
+          "进行中": 210
         }
       },
       {
         "date": "2026-08-08",
         "total": 921,
-        "completed": 706,
+        "completed": 712,
         "statusCounts": {
-          "已完成": 706,
-          "进行中": 215
+          "已完成": 712,
+          "进行中": 209
         }
       },
       {
         "date": "2026-08-09",
         "total": 921,
-        "completed": 707,
+        "completed": 714,
         "statusCounts": {
-          "已完成": 707,
-          "进行中": 214
+          "已完成": 714,
+          "进行中": 207
         }
       },
       {
         "date": "2026-08-10",
         "total": 925,
-        "completed": 717,
+        "completed": 724,
         "statusCounts": {
-          "已完成": 717,
-          "进行中": 208
+          "已完成": 724,
+          "进行中": 201
         }
       },
       {
         "date": "2026-08-11",
         "total": 941,
-        "completed": 724,
+        "completed": 729,
         "statusCounts": {
-          "已完成": 724,
-          "进行中": 217
+          "已完成": 729,
+          "进行中": 212
         }
       },
       {
         "date": "2026-08-12",
         "total": 945,
-        "completed": 735,
+        "completed": 741,
         "statusCounts": {
-          "已完成": 735,
-          "进行中": 210
+          "已完成": 741,
+          "进行中": 204
         }
       },
       {
         "date": "2026-08-13",
         "total": 970,
-        "completed": 747,
+        "completed": 746,
         "statusCounts": {
-          "已完成": 747,
-          "进行中": 223
-        }
-      },
-      {
-        "date": "2026-08-14",
-        "total": 970,
-        "completed": 748,
-        "statusCounts": {
-          "已完成": 748,
-          "进行中": 222
+          "已完成": 746,
+          "进行中": 224
         }
       }
     ],
@@ -30235,11 +30243,11 @@
       },
       {
         "date": "2024-03-23",
-        "total": 4,
+        "total": 3,
         "completed": 0,
         "statusCounts": {
           "已完成": 0,
-          "进行中": 4
+          "进行中": 3
         }
       },
       {
@@ -37751,10 +37759,10 @@
       {
         "date": "2026-07-06",
         "total": 174,
-        "completed": 37,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 37,
-          "进行中": 137
+          "已完成": 35,
+          "进行中": 139
         }
       },
       {
@@ -37922,190 +37930,181 @@
       {
         "date": "2026-07-25",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-26",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-27",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-28",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-29",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-30",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-07-31",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-08-01",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-08-02",
         "total": 178,
-        "completed": 38,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 140
+          "已完成": 37,
+          "进行中": 141
         }
       },
       {
         "date": "2026-08-03",
-        "total": 179,
-        "completed": 38,
+        "total": 180,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 141
+          "已完成": 37,
+          "进行中": 143
         }
       },
       {
         "date": "2026-08-04",
-        "total": 179,
-        "completed": 38,
+        "total": 180,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 141
+          "已完成": 37,
+          "进行中": 143
         }
       },
       {
         "date": "2026-08-05",
-        "total": 179,
-        "completed": 38,
+        "total": 180,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 141
+          "已完成": 37,
+          "进行中": 143
         }
       },
       {
         "date": "2026-08-06",
-        "total": 184,
-        "completed": 38,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 38,
-          "进行中": 146
+          "已完成": 37,
+          "进行中": 149
         }
       },
       {
         "date": "2026-08-07",
-        "total": 184,
-        "completed": 39,
+        "total": 186,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 148
         }
       },
       {
         "date": "2026-08-08",
-        "total": 184,
-        "completed": 39,
+        "total": 186,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 148
         }
       },
       {
         "date": "2026-08-09",
-        "total": 184,
-        "completed": 39,
+        "total": 186,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 148
         }
       },
       {
         "date": "2026-08-10",
-        "total": 184,
-        "completed": 39,
+        "total": 186,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 148
         }
       },
       {
         "date": "2026-08-11",
-        "total": 184,
-        "completed": 39,
+        "total": 186,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 148
         }
       },
       {
         "date": "2026-08-12",
-        "total": 186,
-        "completed": 41,
+        "total": 188,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 41,
-          "进行中": 145
+          "已完成": 40,
+          "进行中": 148
         }
       },
       {
         "date": "2026-08-13",
-        "total": 188,
-        "completed": 41,
+        "total": 190,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 41,
-          "进行中": 147
-        }
-      },
-      {
-        "date": "2026-08-14",
-        "total": 188,
-        "completed": 41,
-        "statusCounts": {
-          "已完成": 41,
-          "进行中": 147
+          "已完成": 40,
+          "进行中": 150
         }
       }
     ]
@@ -38114,7 +38113,7 @@
     {
       "week": "2026-08-03 至 2026-08-07",
       "mftb": {
-        "metrics": "- **MFTB 集团项目**：\n  - 本周是 MFTB 集团项目研发交付推进周。本周新创建了 **79** 项任务，同时有 **126** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：52 项\n    - 产品类需求 (Requirement)：15 项\n    - 缺陷 (Bug)：12 项\n  - **核心迭代 MFTB-v1.0.0 最新状态分布**：\n    | 状态 | 数量 | 占比 | 状态含义与关键进展 |\n    | --- | --- | --- | --- |\n    | 提交测试 | 434 | 35.3% | 研发大面积闭环，本周有较多子任务 and 变更单进入测试队列。 |\n    | 已完成 | 115 | 9.4% | 部分产品原型与商圈品类功能已开发验收完成。 |\n    | 开发中 | 29 | 2.4% | 部分到家业务商品标签/参数联调中。 |\n    | 待处理 | 82 | 6.7% | 包含新增的后续规划中的需求。 |",
+        "metrics": "- **MFTB 集团项目**：\n  - 本周是 MFTB 集团项目研发交付推进周。本周新创建了 **79** 项任务，同时有 **130** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：52 项\n    - 产品类需求 (Requirement)：15 项\n    - 缺陷 (Bug)：12 项\n  - **核心迭代 MFTB-v1.0.0 最新状态分布**：\n    | 状态 | 数量 | 占比 | 状态含义与关键进展 |\n    | --- | --- | --- | --- |\n    | 提交测试 | 434 | 35.3% | 研发大面积闭环，本周有较多子任务 and 变更单进入测试队列。 |\n    | 已完成 | 115 | 9.4% | 部分产品原型与商圈品类功能已开发验收完成。 |\n    | 开发中 | 29 | 2.4% | 部分到家业务商品标签/参数联调中。 |\n    | 待处理 | 82 | 6.7% | 包含新增的后续规划中的需求。 |",
         "progress": "- **MFTB 集团项目**：\n  - **【前端】【大係統】用戶 APP 裝修_新增開屏頁**：工作项 `[MFTB-1317]` (负责人: 陈文涛) 已流转至 **提交测试** 状态。\n  - **【產品】【大係統】商家 APP_外卖订单，商家活动标签**：工作项 `[MFTB-1303]` (负责人: 周昱强) 已流转至 **已完成** 状态。\n  - **【安卓】【眾包】騎手審核-個人信息增加英文名字段**：工作项 `[MFTB-1294]` (负责人: 陈国伟) 已流转至 **提交测试** 状态。",
         "planning": "- **MFTB 集团项目**：\n  - **【大係統】-團購到店-預約商品每日價格設置新增批量導入價格功能**：新进规划工作项 `[MFTB-1325]` (负责人: 覃林方)，当前处于 **待处理** 状态。\n  - **【大係統】商家營銷活動入口**：新进规划工作项 `[MFTB-1316]` (负责人: 廖荣)，当前处于 **待处理** 状态。\n  - **【服务端】【广告系统】-词库管理**：新进规划工作项 `[MFTB-1312]` (负责人: 刘卫)，当前处于 **后端提测** 状态。",
         "assessment": "- **MFTB 集团项目**：\n  - 目前核心业务模块的底层架构和配置已大面积完成开发并交付测试。主要卡点仍在于订单与在线支付通道联调，需加速相应研发进度以确保闭环交易流程的贯通。",
@@ -38147,170 +38146,6 @@
             "completed": false,
             "owner": "李云锋",
             "due": "2026-08-10",
-            "desc": "跨端联调推进：项目经理协调线上申请参数并打通联调通道。"
-          }
-        ]
-      }
-    },
-    {
-      "week": "2026-07-27 至 2026-07-31",
-      "mftb": {
-        "metrics": "- **MFTB 集团项目**：\n  - 本周是 MFTB 集团项目研发交付推进周。本周新创建了 **116** 项任务，同时有 **170** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：57 项\n    - 产品类需求 (Requirement)：8 项\n    - 缺陷 (Bug)：51 项\n  - **核心迭代 MFTB-v1.0.0 最新状态分布**：\n    | 状态 | 数量 | 占比 | 状态含义与关键进展 |\n    | --- | --- | --- | --- |\n    | 提交测试 | 405 | 35.1% | 研发大面积闭环，本周有较多子任务 and 变更单进入测试队列。 |\n    | 已完成 | 111 | 9.6% | 部分产品原型与商圈品类功能已开发验收完成。 |\n    | 开发中 | 34 | 2.9% | 部分到家业务商品标签/参数联调中。 |\n    | 待处理 | 68 | 5.9% | 包含新增的后续规划中的需求。 |",
-        "progress": "- **MFTB 集团项目**：\n  - **【测试】【需求變更】修改默認提現卡需審核**：工作项 `[MFTB-1248]` (负责人: 杨庆龙) 已流转至 **测试环境验证通过** 状态。\n  - **【iOS】【需求變更】修改默認提現卡需審核**：工作项 `[MFTB-1247]` (负责人: 陈万里) 已流转至 **提交测试** 状态。\n  - **【產品】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表需求變更**：工作项 `[MFTB-1239]` (负责人: 周昱强) 已流转至 **已完成** 状态。",
-        "planning": "- **MFTB 集团项目**：\n  - **【前端】【需求變更】商戶管理_集團門店基礎信息和合同管理優化；**：新进规划工作项 `[MFTB-1250]` (负责人: 周忠浩)，当前处于 **未开始** 状态。\n  - **【测试】【補】屬性組與屬性狀態：庫存狀態、同步庫存狀態更名為“屬性狀態”、“同步屬性狀態”，售罄關聯組合商品的單品友好提示**：新进规划工作项 `[MFTB-1249]` (负责人: 侯黎明)，当前处于 **待处理** 状态。\n  - **【iOS】【需求變更】修改默認提現卡需審核**：新进规划工作项 `[MFTB-1247]` (负责人: 陈万里)，当前处于 **提交测试** 状态。",
-        "assessment": "- **MFTB 集团项目**：\n  - 目前核心业务模块的底层架构和配置已大面积完成开发并交付测试。主要卡点仍在于订单与在线支付通道联调，需加速相应研发进度以确保闭环交易流程的贯通。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 17 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **MFTB 集团项目建议**：\n  - [负责人: 廖荣][截止日期: 2026-08-04] 疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。\n  - [负责人: 覃林方][截止日期: 2026-08-07] 协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "廖荣",
-            "due": "2026-08-04",
-            "desc": "疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。"
-          },
-          {
-            "completed": false,
-            "owner": "覃林方",
-            "due": "2026-08-07",
-            "desc": "协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。"
-          }
-        ]
-      },
-      "mfood": {
-        "metrics": "- **mFood 综合版本**：\n  - 本周对 V7.2.0、V7.2.5 以及 0.0.0 迭代进行了重点推进。本周新创建了 **0** 项任务，同时有 **2** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：0 项\n    - 产品类需求 (Requirement)：0 项\n    - 缺陷 (Bug)：0 项",
-        "progress": "- **mFood 综合版本**：\n  - **【测试】積分抵現（外賣業務）優化**：工作项 `[MF-34528]` (负责人: 冼嘉业) 已流转至 **测试环境验证通过** 状态。\n  - **复制-積分抵現（外賣業務）優化**：工作项 `[MF-34523]` (负责人: 溫浩源) 已流转至 **测试环境验证通过** 状态。\n  - **【测试】APP冷启动速度优化**：工作项 `[MF-34169]` (负责人: 杨庆龙) 已流转至 **测试环境验证通过** 状态。",
-        "planning": "- **mFood 综合版本**：\n  - **積分抵現可用規則更改**：新进规划工作项 `[MF-34613]` (负责人: 溫浩源)，当前处于 **已评审（待开发）** 状态。\n  - **【测试】積分抵現可用規則更改**：新进规划工作项 `[MF-34617]` (负责人: 冼嘉业)，当前处于 **待处理** 状态。\n  - **【產品】積分抵現可用規則更改**：新进规划工作项 `[MF-34614]` (负责人: 溫浩源)，当前处于 **待处理** 状态。",
-        "assessment": "- **mFood 综合版本**：\n  - 核心功能按计划稳定推进，控制性灰度测试与通道联调正常，无明显发布延期风险。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 17 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **mFood 综合版本建议**：\n  - [负责人: 李云锋][截止日期: 2026-08-03] 跨端联调推进：项目经理协调线上申请参数并打通联调通道。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "李云锋",
-            "due": "2026-08-03",
-            "desc": "跨端联调推进：项目经理协调线上申请参数并打通联调通道。"
-          }
-        ]
-      }
-    },
-    {
-      "week": "2026-07-20 至 2026-07-24",
-      "mftb": {
-        "metrics": "- **MFTB 集团项目**：\n  - 本周是 MFTB 集团项目研发交付推进周。本周新创建了 **85** 项任务，同时有 **124** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：51 项\n    - 产品类需求 (Requirement)：12 项\n    - 缺陷 (Bug)：22 项\n  - **核心迭代 MFTB-v1.0.0 最新状态分布**：\n    | 状态 | 数量 | 占比 | 状态含义与关键进展 |\n    | --- | --- | --- | --- |\n    | 提交测试 | 373 | 35.9% | 研发大面积闭环，本周有较多子任务 and 变更单进入测试队列。 |\n    | 已完成 | 106 | 10.2% | 部分产品原型与商圈品类功能已开发验收完成。 |\n    | 开发中 | 21 | 2.0% | 部分到家业务商品标签/参数联调中。 |\n    | 待处理 | 66 | 6.4% | 包含新增的后续规划中的需求。 |",
-        "progress": "- **MFTB 集团项目**：\n  - **【产品】【大系统】支付渠道**：工作项 `[MFTB-1132]` (负责人: 刘龙振海) 已流转至 **已完成** 状态。\n  - **【需求變更】商品管理優化內容 V1.1**：工作项 `[MFTB-1121]` (负责人: 叶龙) 已流转至 **提交测试** 状态。\n  - **【mfood iOS】团购首页-中通banner**：工作项 `[MFTB-1114]` (负责人: 陈剑) 已流转至 **提交测试** 状态。",
-        "planning": "- **MFTB 集团项目**：\n  - **【大系统】支付渠道**：新进规划工作项 `[MFTB-1131]` (负责人: 刘龙振海)，当前处于 **待处理** 状态。\n  - **【后端】【補】子商品類型單品，被組合商品已關聯時，售罄/刪除的提示；**：新进规划工作项 `[MFTB-1129]` (负责人: 叶龙)，当前处于 **未开始** 状态。\n  - **【服务端】【大係統】到家業務-門店管理-折扣分类**：新进规划工作项 `[MFTB-1127]` (负责人: 卓坚)，当前处于 **未开始** 状态。",
-        "assessment": "- **MFTB 集团项目**：\n  - 目前核心业务模块的底层架构和配置已大面积完成开发并交付测试。主要卡点仍在于订单与在线支付通道联调，需加速相应研发进度以确保闭环交易流程的贯通。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 14 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **MFTB 集团项目建议**：\n  - [负责人: 廖荣][截止日期: 2026-07-28] 疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。\n  - [负责人: 覃林方][截止日期: 2026-07-31] 协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "廖荣",
-            "due": "2026-07-28",
-            "desc": "疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。"
-          },
-          {
-            "completed": false,
-            "owner": "覃林方",
-            "due": "2026-07-31",
-            "desc": "协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。"
-          }
-        ]
-      },
-      "mfood": {
-        "metrics": "- **mFood 综合版本**：\n  - 本周对 V7.2.0、V7.2.5 以及 0.0.0 迭代进行了重点推进。本周新创建了 **3** 项任务，同时有 **5** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：2 项\n    - 产品类需求 (Requirement)：1 项\n    - 缺陷 (Bug)：0 项",
-        "progress": "- **mFood 综合版本**：\n  - **【测试】積分抵現（外賣業務）優化**：工作项 `[MF-34528]` (负责人: 冼嘉业) 已流转至 **测试环境验证通过** 状态。\n  - **复制-積分抵現（外賣業務）優化**：工作项 `[MF-34523]` (负责人: 溫浩源) 已流转至 **测试环境验证通过** 状态。\n  - **【测试】APP冷启动速度优化**：工作项 `[MF-34169]` (负责人: 杨庆龙) 已流转至 **测试环境验证通过** 状态。",
-        "planning": "- **mFood 综合版本**：\n  - **積分抵現可用規則更改**：新进规划工作项 `[MF-34613]` (负责人: 溫浩源)，当前处于 **已评审（待开发）** 状态。\n  - **【测试】積分抵現可用規則更改**：新进规划工作项 `[MF-34617]` (负责人: 冼嘉业)，当前处于 **待处理** 状态。\n  - **【產品】積分抵現可用規則更改**：新进规划工作项 `[MF-34614]` (负责人: 溫浩源)，当前处于 **待处理** 状态。",
-        "assessment": "- **mFood 综合版本**：\n  - 核心功能按计划稳定推进，控制性灰度测试与通道联调正常，无明显发布延期风险。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 14 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **mFood 综合版本建议**：\n  - [负责人: 李云锋][截止日期: 2026-07-27] 跨端联调推进：项目经理协调线上申请参数并打通联调通道。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "李云锋",
-            "due": "2026-07-27",
-            "desc": "跨端联调推进：项目经理协调线上申请参数并打通联调通道。"
-          }
-        ]
-      }
-    },
-    {
-      "week": "2026-07-13 至 2026-07-17",
-      "mftb": {
-        "metrics": "- **MFTB 集团项目**：\n  - 本周是 MFTB 集团项目研发交付推进周。本周新创建了 **86** 项任务，同时有 **154** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：44 项\n    - 产品类需求 (Requirement)：12 项\n    - 缺陷 (Bug)：30 项\n  - **核心迭代 MFTB-v1.0.0 最新状态分布**：\n    | 状态 | 数量 | 占比 | 状态含义与关键进展 |\n    | --- | --- | --- | --- |\n    | 提交测试 | 350 | 36.7% | 研发大面积闭环，本周有较多子任务 and 变更单进入测试队列。 |\n    | 已完成 | 97 | 10.2% | 部分产品原型与商圈品类功能已开发验收完成。 |\n    | 开发中 | 17 | 1.8% | 部分到家业务商品标签/参数联调中。 |\n    | 待处理 | 60 | 6.3% | 包含新增的后续规划中的需求。 |",
-        "progress": "- **MFTB 集团项目**：\n  - **【服务端】【大係統】禁止彈窗設置**：工作项 `[MFTB-1041]` (负责人: 张健伟) 已流转至 **提交测试** 状态。\n  - **【產品】【大係統】禁止彈窗設置**：工作项 `[MFTB-1038]` (负责人: 刘龙振海) 已流转至 **已完成** 状态。\n  - **【變更】用戶沒有gps，就顯示定位失敗**：工作项 `[MFTB-1032]` (负责人: 刘龙振海) 已流转至 **已完成** 状态。",
-        "planning": "- **MFTB 集团项目**：\n  - **【大係統】到家業務-評價管理模塊**：新进规划工作项 `[MFTB-1046]` (负责人: 廖荣)，当前处于 **待处理** 状态。\n  - **【大係統】禁止彈窗設置**：新进规划工作项 `[MFTB-1037]` (负责人: 刘龙振海)，当前处于 **待处理** 状态。\n  - **【補】到家業務_門店管理 新增門店免費標籤**：新进规划工作项 `[MFTB-1031]` (负责人: 廖荣)，当前处于 **待处理** 状态。",
-        "assessment": "- **MFTB 集团项目**：\n  - 目前核心业务模块的底层架构和配置已大面积完成开发并交付测试。主要卡点仍在于订单与在线支付通道联调，需加速相应研发进度以确保闭环交易流程的贯通。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 13 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **MFTB 集团项目建议**：\n  - [负责人: 廖荣][截止日期: 2026-07-21] 疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。\n  - [负责人: 覃林方][截止日期: 2026-07-24] 协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "廖荣",
-            "due": "2026-07-21",
-            "desc": "疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。"
-          },
-          {
-            "completed": false,
-            "owner": "覃林方",
-            "due": "2026-07-24",
-            "desc": "协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。"
-          }
-        ]
-      },
-      "mfood": {
-        "metrics": "- **mFood 综合版本**：\n  - 本周对 V7.2.0、V7.2.5 以及 0.0.0 迭代进行了重点推进。本周新创建了 **4** 项任务，同时有 **7** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：2 项\n    - 产品类需求 (Requirement)：2 项\n    - 缺陷 (Bug)：0 项",
-        "progress": "- **mFood 综合版本**：\n  - **【测试】積分抵現（外賣業務）優化**：工作项 `[MF-34528]` (负责人: 冼嘉业) 已流转至 **测试环境验证通过** 状态。\n  - **复制-積分抵現（外賣業務）優化**：工作项 `[MF-34523]` (负责人: 溫浩源) 已流转至 **测试环境验证通过** 状态。\n  - **【测试】APP冷启动速度优化**：工作项 `[MF-34169]` (负责人: 杨庆龙) 已流转至 **测试环境验证通过** 状态。",
-        "planning": "- **mFood 综合版本**：\n  - **【團購】珠海售賣的（人民幣）商品默認不可以用平臺紅包與消費金，下單時展示在不可用列表，並且增加提示：當前商品為跨境商品，不支持使用**：新进规划工作项 `[MF-34611]` (负责人: 覃林方)，当前处于 **待处理** 状态。\n  - **【测试】【團購】珠海售賣的（人民幣）商品默認不可以用平臺紅包與消費金，下單時展示在不可用列表，並且增加提示：當前商品為跨境商品，不支持使用**：新进规划工作项 `[MF-34612]` (负责人: 贺志成)，当前处于 **待处理** 状态。\n  - **《【一户通積分】banner 按钮文案修改》**：新进规划工作项 `[MF-34609]` (负责人: 周昱强)，当前处于 **待处理** 状态。",
-        "assessment": "- **mFood 综合版本**：\n  - 核心功能按计划稳定推进，控制性灰度测试与通道联调正常，无明显发布延期风险。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 13 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **mFood 综合版本建议**：\n  - [负责人: 李云锋][截止日期: 2026-07-20] 跨端联调推进：项目经理协调线上申请参数并打通联调通道。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "李云锋",
-            "due": "2026-07-20",
-            "desc": "跨端联调推进：项目经理协调线上申请参数并打通联调通道。"
-          }
-        ]
-      }
-    },
-    {
-      "week": "2026-07-06 至 2026-07-10",
-      "mftb": {
-        "metrics": "- **MFTB 集团项目**：\n  - 本周是 MFTB 集团项目研发交付推进周。本周新创建了 **107** 项任务，同时有 **386** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：79 项\n    - 产品类需求 (Requirement)：12 项\n    - 缺陷 (Bug)：16 项\n  - **核心迭代 MFTB-v1.0.0 最新状态分布**：\n    | 状态 | 数量 | 占比 | 状态含义与关键进展 |\n    | --- | --- | --- | --- |\n    | 提交测试 | 325 | 37.4% | 研发大面积闭环，本周有较多子任务 and 变更单进入测试队列。 |\n    | 已完成 | 91 | 10.5% | 部分产品原型与商圈品类功能已开发验收完成。 |\n    | 开发中 | 13 | 1.5% | 部分到家业务商品标签/参数联调中。 |\n    | 待处理 | 57 | 6.6% | 包含新增的后续规划中的需求。 |",
-        "progress": "- **MFTB 集团项目**：\n  - **【產品】【極馬】專送&眾包APP已完成訂單限制發送IM消息**：工作项 `[MFTB-954]` (负责人: 龙颖之) 已流转至 **已完成** 状态。\n  - **【產品】【極馬】專送&眾包APP增加高溫喝水提示**：工作项 `[MFTB-949]` (负责人: 龙颖之) 已流转至 **已完成** 状态。\n  - **【测试】【大係統】團購到店-自定義商圈功能**：工作项 `[MFTB-947]` (负责人: 曹晴晴) 已流转至 **测试环境验证通过** 状态。",
-        "planning": "- **MFTB 集团项目**：\n  - **【大係統】用戶 app 支持針對門店，長按不感興趣/找相似**：新进规划工作项 `[MFTB-943]` (负责人: 周昱强)，当前处于 **待处理** 状态。\n  - **【眾包】提現卡支持中行&綁卡增加審核**：新进规划工作项 `[MFTB-934]` (负责人: 龙颖之)，当前处于 **待处理** 状态。\n  - **【產品】【極馬】眾包騎手APP限制修改提現銀行卡信息**：新进规划工作项 `[MFTB-953]` (负责人: 龙颖之)，当前处于 **待处理** 状态。",
-        "assessment": "- **MFTB 集团项目**：\n  - 目前核心业务模块的底层架构和配置已大面积完成开发并交付测试。主要卡点仍在于订单与在线支付通道联调，需加速相应研发进度以确保闭环交易流程的贯通。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 11 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **MFTB 集团项目建议**：\n  - [负责人: 廖荣][截止日期: 2026-07-14] 疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。\n  - [负责人: 覃林方][截止日期: 2026-07-17] 协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "廖荣",
-            "due": "2026-07-14",
-            "desc": "疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。"
-          },
-          {
-            "completed": false,
-            "owner": "覃林方",
-            "due": "2026-07-17",
-            "desc": "协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。"
-          }
-        ]
-      },
-      "mfood": {
-        "metrics": "- **mFood 综合版本**：\n  - 本周对 V7.2.0、V7.2.5 以及 0.0.0 迭代进行了重点推进。本周新创建了 **3** 项任务，同时有 **15** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：2 项\n    - 产品类需求 (Requirement)：1 项\n    - 缺陷 (Bug)：0 项",
-        "progress": "- **mFood 综合版本**：\n  - **【测试】【自動接單】自動接單ios優化**：工作项 `[MF-34599]` (负责人: 杨庆龙) 已流转至 **测试环境验证通过** 状态。\n  - **【自動接單】自動接單ios優化**：工作项 `[MF-34594]` (负责人: 刘龙振海) 已流转至 **测试环境验证通过** 状态。\n  - **【测试】積分抵現（外賣業務）優化**：工作项 `[MF-34528]` (负责人: 冼嘉业) 已流转至 **测试环境验证通过** 状态。",
-        "planning": "- **mFood 综合版本**：\n  - **【测试】財務流水按业务拆分劲爆券&星选订单管理新增导出**：新进规划工作项 `[MF-34593]` (负责人: 贺志成)，当前处于 **待处理** 状态。\n  - **財務流水按业务拆分劲爆券&星选订单管理新增导出**：新进规划工作项 `[MF-34530]` (负责人: 周昱强)，当前处于 **待处理** 状态。\n  - **【测试】外賣/团购/超市紅包列表報表導出，新增平臺&商家分攤金額字段**：新进规划工作项 `[MF-34212]` (负责人: 冼嘉业)，当前处于 **待处理** 状态。",
-        "assessment": "- **mFood 综合版本**：\n  - 核心功能按计划稳定推进，控制性灰度测试与通道联调正常，无明显发布延期风险。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 11 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **mFood 综合版本建议**：\n  - [负责人: 李云锋][截止日期: 2026-07-13] 跨端联调推进：项目经理协调线上申请参数并打通联调通道。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "李云锋",
-            "due": "2026-07-13",
             "desc": "跨端联调推进：项目经理协调线上申请参数并打通联调通道。"
           }
         ]
@@ -38526,8 +38361,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 8.8,
-      "delta": 5.3
+      "average": 13.6,
+      "delta": 9.3
     },
     "mfood": {
       "average": 0.0,
@@ -38536,12 +38371,12 @@
   },
   "pmoAdvice": {
     "mftb": {
-      "content": "1. **周四临近封板，强推超期尾货清零**：大盘逾期未交付卡片仍维持在 **20 项**。特别是历史遗留老大难 `[MFTB-278]` (陈剑, iOS端拖期超2个月) 和 `[MFTB-81]` (廖荣, 系统模块拖期超2个月) 仍未消退。PM 需于今日下午明确负责人具体的消卡时间表，力争明天下班前实现全面压降。\n2. **强制推动核心订单前端组件启动**：关键路径前端卡片 `[MFTB-554]` (负责人: 周忠浩, 前端核心订单组件开发) 仍然处于【未开始】。周忠浩个人活跃负荷高达 **21 项**。技术经理需在今日下午第一优先协助其拆解分流非核心任务，强制推动订单组件开工。\n3. **紧急削峰多名开发严重超载**：`陈剑` (23项)、`周忠浩` (21项)、`许强` (21项) 均处于高危过载区。PM 应严格控制向上述 3 位核心人员分发新任务，并对其名下任务池进行强制削峰分流。",
-      "updatedAt": "2026-08-13 17:32:08"
+      "content": "1. **测试堰塞湖：490 项卡在测试管道，占活跃项 62.6%**：当前 783 项活跃中，454 项「提交测试」、22 项「测试中」、14 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期127天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期127天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期126天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期126天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 58 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 33 项（MFTB-1380, MFTB-1378, MFTB-1376, MFTB-1368, MFTB-1366, MFTB-1364），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待处理；`[MFTB-1224]` 支付渠道（甄荣康）提交测试；`[MFTB-1182]` 支付渠道（杨庆龙）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1209]` 订单流程（黎月平）未开始；`[MFTB-1105]` 订单流程（陈国伟）待确认；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`刘志敏` 50 项活跃中 30 项超期（60%）；`陈剑` 46 项活跃中 24 项超期（52%）；`张健伟` 43 项活跃中 41 项超期（95%）；`林泽斌` 37 项活跃中 28 项超期（76%）；`唐光伟` 37 项活跃中 33 项超期（89%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **373 项超期 + 408 项无排期（52.1%）+ 137 项闲置 = 排期纪律需加强**：783 项活跃中 408 项（52.1%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
+      "updatedAt": "2026-08-14 11:25:21"
     },
     "mfood": {
-      "content": "1. **加快积压需求的产品拆包与评审**：当前活跃需求高居 **94 项**，而具体的开发任务仅 **55 项**。产品经理（覃林方、冯松）需在明日下午前完成集中需求拆包与排期，避免研发下游出现任务断档。\n2. **严守排期合规红线**：针对本周新释放的开发任务，进度审计团队需要加强计划时间填报的规范度抽查，严守“任务上线，排期先行”的开发合规红线。\n3. **技术债务治理与慢 SQL 优化**：建议继续组织目前无活跃分配任务的闲置研发力量，开展系统慢查询治理与通用公共库重构，为接下来的性能压测提供安全边际。",
-      "updatedAt": "2026-08-13 17:32:08"
+      "content": "1. **需求池积压严重**：152 项活跃中，98 项待处理（64.5%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（11 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`冼嘉业`（8 项）、`杨庆龙`（6 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 40 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期654天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期644天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期392天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **131/152 项无排期（86.2%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 13.8%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **36 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34624]`（徐子旺, 【Android用户端】适配 16系统为目标平台）、`[MF-34523]`（溫浩源, 复制-積分抵現（外賣業務）優化）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
+      "updatedAt": "2026-08-14 11:25:21"
     }
   }
 }
