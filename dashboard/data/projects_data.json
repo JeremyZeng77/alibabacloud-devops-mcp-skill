@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-14T05:41:06.636198+00:00",
+  "compiledAt": "2026-08-14T07:38:40.919007+00:00",
   "latest": {
     "mftb": [
       {
@@ -107,7 +107,7 @@
       {
         "id": "MFTB-1363",
         "title": "【極馬】訂單歸屬策略支持多選訂單平台類型",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "高",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -117,7 +117,7 @@
         "createDate": "2026-08-12",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4282d8c8fa99adf49b0004217d",
-        "rowText": "【产品类需求】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1363 | 状态: 测试中 | 优先级: 高\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1363 | 状态: 测试环境验证通过 | 优先级: 高\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2587,6 +2587,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1395",
+        "title": "【iOS】【專送】APP 部分頁面優化",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "陈万里",
+        "creator": "陈万里",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-14",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bf1a9506a0dc61c7e7933349d3",
+        "rowText": "【任务】【iOS】【專送】APP 部分頁面優化\nID: MFTB-1395 | 状态: 未开始 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-14 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1393",
         "title": "【產品】【極馬】訂單歸屬策略支持多選訂單平台類型",
         "status": "已完成",
@@ -2640,7 +2657,7 @@
       {
         "id": "MFTB-1389",
         "title": "【测试】【極馬】訂單歸屬策略支持多選訂單平台類型",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "黄金凤",
         "creator": "黄金凤",
@@ -2650,7 +2667,7 @@
         "createDate": "2026-08-13",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5d3b80f03c4e64da270f245661",
-        "rowText": "【測試】【测试】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1389 | 状态: 测试中 | 优先级: 中\n负责人: 黄金凤 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【極馬】訂單歸屬策略支持多選訂單平台類型\nID: MFTB-1389 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 黄金凤 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5649,17 +5666,17 @@
       {
         "id": "MFTB-1081",
         "title": "【iOS】【專送合併】騎手工資表",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "陈万里",
         "iteration": "SH-v1.0.0",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-08-06",
+        "planEnd": "2026-08-14",
         "createDate": "2026-07-22",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=389a72ad5a24798ad04969bfc8",
-        "rowText": "【任务】【iOS】【專送合併】騎手工資表\nID: MFTB-1081 | 状态: 未开始 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
+        "rowText": "【任务】【iOS】【專送合併】騎手工資表\nID: MFTB-1081 | 状态: 提交测试 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-22 | 排期规划: 2026-08-06 至 2026-08-14",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -6215,12 +6232,12 @@
         "assignee": "陈万里",
         "creator": "陈万里",
         "iteration": "SH-v1.0.0",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-07-20",
+        "planEnd": "2026-08-03",
         "createDate": "2026-07-17",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=513e0df39ec9832d32b5cbd55c",
-        "rowText": "【任务】【iOS】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-1026 | 状态: 提交测试 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-17 | 排期规划: - 至 -",
+        "rowText": "【任务】【iOS】【眾包】提現卡支持中行&綁卡增加審核\nID: MFTB-1026 | 状态: 提交测试 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-07-17 | 排期规划: 2026-07-20 至 2026-08-03",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -26351,11 +26368,11 @@
       },
       {
         "date": "2026-08-14",
-        "total": 973,
-        "completed": 750,
+        "total": 974,
+        "completed": 752,
         "statusCounts": {
-          "已完成": 750,
-          "进行中": 223
+          "已完成": 752,
+          "进行中": 222
         }
       }
     ],
