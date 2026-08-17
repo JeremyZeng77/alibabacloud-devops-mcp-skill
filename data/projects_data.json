@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-17T01:28:24.309620+00:00",
+  "compiledAt": "2026-08-17T03:04:09.585655+00:00",
   "latest": {
     "mftb": [
       {
@@ -2670,6 +2670,74 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1415",
+        "title": "【前端】【極馬】打賞報表增加字段",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-17",
+        "planEnd": "2026-08-17",
+        "createDate": "2026-08-17",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a1193fd5d4fc70e77592ab09bd",
+        "rowText": "【任务】【前端】【極馬】打賞報表增加字段\nID: MFTB-1415 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: 2026-08-17 至 2026-08-17",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1414",
+        "title": "【服务端】【極馬】打賞報表增加字段",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-17",
+        "planEnd": "2026-08-17",
+        "createDate": "2026-08-17",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e220f9cc1bbda571c3b6a34680",
+        "rowText": "【任务】【服务端】【極馬】打賞報表增加字段\nID: MFTB-1414 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: 2026-08-17 至 2026-08-17",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1413",
+        "title": "【测试】【大係統-用戶端】任務簽到頁（含我的成長值明細）",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "黄春晓",
+        "creator": "黄春晓",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-17",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=cbb626467f00d53b3f33641596",
+        "rowText": "【測試】【测试】【大係統-用戶端】任務簽到頁（含我的成長值明細）\nID: MFTB-1413 | 状态: 待处理 | 优先级: 中\n负责人: 黄春晓 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1412",
+        "title": "【测试】【大係統】基礎會員體系（含簽到+任務+獎品）",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "黄春晓",
+        "creator": "黄春晓",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-17",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0581eda044de13bfd773282659",
+        "rowText": "【測試】【测试】【大係統】基礎會員體系（含簽到+任務+獎品）\nID: MFTB-1412 | 状态: 待处理 | 优先级: 中\n负责人: 黄春晓 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1411",
@@ -6159,7 +6227,7 @@
       {
         "id": "MFTB-1050",
         "title": "【大係統_管理后台】美食外送_外賣到家業務_訂單流程設計",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "黎月平",
         "creator": "黎月平",
@@ -6169,7 +6237,7 @@
         "createDate": "2026-07-20",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9706f302ecb1d211c3b97a7117",
-        "rowText": "【任务】【大係統_管理后台】美食外送_外賣到家業務_訂單流程設計\nID: MFTB-1050 | 状态: 开发中 | 优先级: 中\n负责人: 黎月平 | 提报人: 黎月平\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: 2026-07-27 至 2026-08-07",
+        "rowText": "【任务】【大係統_管理后台】美食外送_外賣到家業務_訂單流程設計\nID: MFTB-1050 | 状态: 提交测试 | 优先级: 中\n负责人: 黎月平 | 提报人: 黎月平\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-07-20 | 排期规划: 2026-07-27 至 2026-08-07",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -26561,23 +26629,14 @@
       {
         "date": "2026-08-07",
         "total": 921,
-        "completed": 706,
+        "completed": 707,
         "statusCounts": {
-          "已完成": 706,
-          "进行中": 215
+          "已完成": 707,
+          "进行中": 214
         }
       },
       {
         "date": "2026-08-08",
-        "total": 921,
-        "completed": 706,
-        "statusCounts": {
-          "已完成": 706,
-          "进行中": 215
-        }
-      },
-      {
-        "date": "2026-08-09",
         "total": 921,
         "completed": 707,
         "statusCounts": {
@@ -26586,75 +26645,84 @@
         }
       },
       {
+        "date": "2026-08-09",
+        "total": 921,
+        "completed": 708,
+        "statusCounts": {
+          "已完成": 708,
+          "进行中": 213
+        }
+      },
+      {
         "date": "2026-08-10",
         "total": 925,
-        "completed": 717,
+        "completed": 718,
         "statusCounts": {
-          "已完成": 717,
-          "进行中": 208
+          "已完成": 718,
+          "进行中": 207
         }
       },
       {
         "date": "2026-08-11",
         "total": 941,
-        "completed": 724,
+        "completed": 725,
         "statusCounts": {
-          "已完成": 724,
-          "进行中": 217
+          "已完成": 725,
+          "进行中": 216
         }
       },
       {
         "date": "2026-08-12",
         "total": 945,
-        "completed": 735,
+        "completed": 736,
         "statusCounts": {
-          "已完成": 735,
-          "进行中": 210
+          "已完成": 736,
+          "进行中": 209
         }
       },
       {
         "date": "2026-08-13",
         "total": 970,
-        "completed": 747,
+        "completed": 748,
         "statusCounts": {
-          "已完成": 747,
-          "进行中": 223
+          "已完成": 748,
+          "进行中": 222
         }
       },
       {
         "date": "2026-08-14",
         "total": 986,
-        "completed": 753,
+        "completed": 754,
         "statusCounts": {
-          "已完成": 753,
-          "进行中": 233
+          "已完成": 754,
+          "进行中": 232
         }
       },
       {
         "date": "2026-08-15",
         "total": 986,
-        "completed": 753,
+        "completed": 754,
         "statusCounts": {
-          "已完成": 753,
-          "进行中": 233
+          "已完成": 754,
+          "进行中": 232
         }
       },
       {
         "date": "2026-08-16",
         "total": 986,
-        "completed": 753,
+        "completed": 754,
         "statusCounts": {
-          "已完成": 753,
-          "进行中": 233
+          "已完成": 754,
+          "进行中": 232
         }
       },
       {
         "date": "2026-08-17",
-        "total": 986,
-        "completed": 753,
+        "total": 990,
+        "completed": 755,
         "statusCounts": {
-          "已完成": 753,
-          "进行中": 233
+          "已完成": 755,
+          "进行中": 235
         }
       }
     ],
@@ -38944,8 +39012,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 8.4,
-      "delta": 2.9
+      "average": 9.0,
+      "delta": 3.5
     },
     "mfood": {
       "average": 0.0,
