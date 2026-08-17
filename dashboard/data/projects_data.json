@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-08-17T08:48:59.798713+00:00",
+  "compiledAt": "2026-08-17T10:35:58.510536+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1437",
+        "title": "【大係統】商品自動上下架_提供手動上下架操作",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-17",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f8cd9dd85c246e54d9559ac374",
+        "rowText": "【产品类需求】【大係統】商品自動上下架_提供手動上下架操作\nID: MFTB-1437 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1426",
         "title": "【極馬】專送騎手列表、專送騎手統計增加導出",
@@ -243,7 +260,7 @@
       {
         "id": "MFTB-1360",
         "title": "【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-        "status": "待测试",
+        "status": "测试中",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -253,7 +270,7 @@
         "createDate": "2026-08-12",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7c6c7c4d9aa35a64517f54b233",
-        "rowText": "【产品类需求】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态\nID: MFTB-1360 | 状态: 待测试 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态\nID: MFTB-1360 | 状态: 测试中 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2723,6 +2740,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1436",
+        "title": "【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+        "status": "测试中",
+        "priority": "中",
+        "assignee": "侯黎明",
+        "creator": "侯黎明",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-17",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8a57acb554410e615f95e614f1",
+        "rowText": "【測試】【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态\nID: MFTB-1436 | 状态: 测试中 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1435",
         "title": "【需求变更】【大系统】配送方案",
         "status": "未开始",
@@ -2929,7 +2963,7 @@
       {
         "id": "MFTB-1421",
         "title": "【需求变更】【大系统】配送方案",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "唐光伟",
         "creator": "唐光伟",
@@ -2939,7 +2973,7 @@
         "createDate": "2026-08-17",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=dc3c75426f96b154fc8739ef98",
-        "rowText": "【任务】【需求变更】【大系统】配送方案\nID: MFTB-1421 | 状态: 未开始 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-17 | 排期规划: 2026-08-17 至 2026-08-17",
+        "rowText": "【任务】【需求变更】【大系统】配送方案\nID: MFTB-1421 | 状态: 提交测试 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-17 | 排期规划: 2026-08-17 至 2026-08-17",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -17209,7 +17243,7 @@
       {
         "id": "MFTB-1362",
         "title": "【到家业务-商品管理】商品列表：组合商品设置自动上下架后，应该不可以手动操作上下架",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -17219,14 +17253,14 @@
         "createDate": "2026-08-12",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7128127b27b44e6358125059eb",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品设置自动上下架后，应该不可以手动操作上下架\nID: MFTB-1362 | 状态: 已修复 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品设置自动上下架后，应该不可以手动操作上下架\nID: MFTB-1362 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1361",
         "title": "【到家业务-商品管理】商品列表：组合商品设置自动上下架时间后，发现：商品上下架状态没有同步更新",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -17236,7 +17270,7 @@
         "createDate": "2026-08-12",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=101170a5ec1f09cf36747134c8",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品设置自动上下架时间后，发现：商品上下架状态没有同步更新\nID: MFTB-1361 | 状态: 已修复 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品设置自动上下架时间后，发现：商品上下架状态没有同步更新\nID: MFTB-1361 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -27007,11 +27041,11 @@
       },
       {
         "date": "2026-08-17",
-        "total": 1008,
-        "completed": 761,
+        "total": 1010,
+        "completed": 762,
         "statusCounts": {
-          "已完成": 761,
-          "进行中": 247
+          "已完成": 762,
+          "进行中": 248
         }
       }
     ],
