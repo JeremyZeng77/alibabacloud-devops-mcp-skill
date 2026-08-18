@@ -1,11 +1,11 @@
 {
-  "compiledAt": "2026-08-18T08:41:35.095578+00:00",
+  "compiledAt": "2026-08-18T10:32:59.139975+00:00",
   "latest": {
     "mftb": [
       {
         "id": "MFTB-1464",
         "title": "【極馬】專送騎手統計增加隱形單",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -15,7 +15,7 @@
         "createDate": "2026-08-18",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00702da1162499a7a07a6477b6",
-        "rowText": "【产品类需求】【極馬】專送騎手統計增加隱形單\nID: MFTB-1464 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送騎手統計增加隱形單\nID: MFTB-1464 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1008,7 +1008,7 @@
       {
         "id": "MFTB-1037",
         "title": "【大係統】禁止彈窗設置",
-        "status": "待处理",
+        "status": "开发中",
         "priority": "中",
         "assignee": "刘龙振海",
         "creator": "刘龙振海",
@@ -1018,7 +1018,7 @@
         "createDate": "2026-07-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e067ff4f26591e5b56f1a4fc64",
-        "rowText": "【产品类需求】【大係統】禁止彈窗設置\nID: MFTB-1037 | 状态: 待处理 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】禁止彈窗設置\nID: MFTB-1037 | 状态: 开发中 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2842,6 +2842,40 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1466",
+        "title": "【服务端】【極馬】專送騎手統計增加隱形單",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-18",
+        "planEnd": "2026-08-18",
+        "createDate": "2026-08-18",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ecc7fe227e57f98b5d447f2865",
+        "rowText": "【任务】【服务端】【極馬】專送騎手統計增加隱形單\nID: MFTB-1466 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: 2026-08-18 至 2026-08-18",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1465",
+        "title": "【前端】【大系统】支付渠道",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b2e6cedac3fff2972d93e243a8",
+        "rowText": "【任务】【前端】【大系统】支付渠道\nID: MFTB-1465 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1463",
         "title": "【大係統】到家業務商家收藏有禮",
         "status": "已完成",
@@ -2912,7 +2946,7 @@
       {
         "id": "MFTB-1454",
         "title": "【服务端】【大係統】禁止彈窗設置——批量处理功能",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "张健伟",
         "creator": "张健伟",
@@ -2922,7 +2956,7 @@
         "createDate": "2026-08-18",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=243c0368fb52611ee81d6622a4",
-        "rowText": "【任务】【服务端】【大係統】禁止彈窗設置——批量处理功能\nID: MFTB-1454 | 状态: 未开始 | 优先级: 中\n负责人: 张健伟 | 提报人: 张健伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-18 | 排期规划: 2026-08-18 至 2026-08-18",
+        "rowText": "【任务】【服务端】【大係統】禁止彈窗設置——批量处理功能\nID: MFTB-1454 | 状态: 提交测试 | 优先级: 中\n负责人: 张健伟 | 提报人: 张健伟\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-18 | 排期规划: 2026-08-18 至 2026-08-18",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3507,17 +3541,17 @@
       {
         "id": "MFTB-1397",
         "title": "【后台】【大係統】禁止彈窗設置",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "周忠浩",
         "creator": "李科",
         "iteration": "MFTB-v1.0.1",
-        "planStart": "2026-08-17",
-        "planEnd": "2026-08-18",
+        "planStart": "2026-08-18",
+        "planEnd": "2026-08-19",
         "createDate": "2026-08-14",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9781eb1e21bc2284bbe283bd74",
-        "rowText": "【任务】【后台】【大係統】禁止彈窗設置\nID: MFTB-1397 | 状态: 未开始 | 优先级: 中\n负责人: 周忠浩 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-17 至 2026-08-18",
+        "rowText": "【任务】【后台】【大係統】禁止彈窗設置\nID: MFTB-1397 | 状态: 开发中 | 优先级: 中\n负责人: 周忠浩 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-18 至 2026-08-19",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3762,7 +3796,7 @@
       {
         "id": "MFTB-1375",
         "title": "【前端】【广告系统】人气商家-销售定价",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -3772,7 +3806,7 @@
         "createDate": "2026-08-13",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8cbabc4ecbff3da8b8a63dec68",
-        "rowText": "【任务】【前端】【广告系统】人气商家-销售定价\nID: MFTB-1375 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-13 | 排期规划: 2026-08-14 至 2026-08-18",
+        "rowText": "【任务】【前端】【广告系统】人气商家-销售定价\nID: MFTB-1375 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-13 | 排期规划: 2026-08-14 至 2026-08-18",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4068,7 +4102,7 @@
       {
         "id": "MFTB-1342",
         "title": "【前端】【大係統】到家業務-門店管理-店鋪風格",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "周忠浩",
         "creator": "周忠浩",
@@ -4078,7 +4112,7 @@
         "createDate": "2026-08-11",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=16375d270f1c52e5f18c12036b",
-        "rowText": "【任务】【前端】【大係統】到家業務-門店管理-店鋪風格\nID: MFTB-1342 | 状态: 开发中 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 2026-08-14",
+        "rowText": "【任务】【前端】【大係統】到家業務-門店管理-店鋪風格\nID: MFTB-1342 | 状态: 提交测试 | 优先级: 中\n负责人: 周忠浩 | 提报人: 周忠浩\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-11 | 排期规划: 2026-08-11 至 2026-08-14",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -17479,8 +17513,76 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1470",
+        "title": "【到家业务-商品管理】商品列表：组合商品审核不通过，自动上下架时间没清空",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "叶龙",
+        "creator": "侯黎明",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a3b390ad5cb0aa36d63386450c",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品审核不通过，自动上下架时间没清空\nID: MFTB-1470 | 状态: 待确认 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1469",
+        "title": "【專送合併-騎手工資表】不要默认记录上次筛选项",
+        "status": "已修复",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b0524917d22941f3164561213c",
+        "rowText": "【缺陷】【專送合併-騎手工資表】不要默认记录上次筛选项\nID: MFTB-1469 | 状态: 已修复 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1468",
+        "title": "【到家业务-商品管理】商品列表：商品审核失败，要显示“查看审核、重新提交审核”按钮",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "侯黎明",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fcfd569c092318e837a0dac245",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：商品审核失败，要显示“查看审核、重新提交审核”按钮\nID: MFTB-1468 | 状态: 待确认 | 优先级: 中\n负责人: 甄荣康 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1467",
+        "title": "【到家业务-商品管理】商品列表：组合商品审核不通过，商品应该锁定下架状态，发现：现在仍是上架状态",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "叶龙",
+        "creator": "侯黎明",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b5b9fa8037d11a9d3077a1bf01",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品审核不通过，商品应该锁定下架状态，发现：现在仍是上架状态\nID: MFTB-1467 | 状态: 待确认 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1461",
-        "title": "【專送合併-騎手工資表】强制性补贴计算结果不对",
+        "title": "【專送合併-騎手工資表】基本薪金的计算结果不对",
         "status": "待确认",
         "priority": "中",
         "assignee": "刘志敏",
@@ -17491,7 +17593,7 @@
         "createDate": "2026-08-18",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1b4592f031a371106792fff28f",
-        "rowText": "【缺陷】【專送合併-騎手工資表】强制性补贴计算结果不对\nID: MFTB-1461 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併-騎手工資表】基本薪金的计算结果不对\nID: MFTB-1461 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -27457,15 +27559,6 @@
       {
         "date": "2026-08-14",
         "total": 983,
-        "completed": 757,
-        "statusCounts": {
-          "已完成": 757,
-          "进行中": 226
-        }
-      },
-      {
-        "date": "2026-08-15",
-        "total": 983,
         "completed": 758,
         "statusCounts": {
           "已完成": 758,
@@ -27473,7 +27566,7 @@
         }
       },
       {
-        "date": "2026-08-16",
+        "date": "2026-08-15",
         "total": 983,
         "completed": 759,
         "statusCounts": {
@@ -27482,21 +27575,30 @@
         }
       },
       {
+        "date": "2026-08-16",
+        "total": 983,
+        "completed": 760,
+        "statusCounts": {
+          "已完成": 760,
+          "进行中": 223
+        }
+      },
+      {
         "date": "2026-08-17",
         "total": 1008,
-        "completed": 765,
+        "completed": 766,
         "statusCounts": {
-          "已完成": 765,
-          "进行中": 243
+          "已完成": 766,
+          "进行中": 242
         }
       },
       {
         "date": "2026-08-18",
-        "total": 1028,
-        "completed": 774,
+        "total": 1030,
+        "completed": 779,
         "statusCounts": {
-          "已完成": 774,
-          "进行中": 254
+          "已完成": 779,
+          "进行中": 251
         }
       }
     ],
@@ -39795,8 +39897,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 9.0,
-      "delta": 3.5
+      "average": 8.9,
+      "delta": 3.4
     },
     "mfood": {
       "average": 0.0,
