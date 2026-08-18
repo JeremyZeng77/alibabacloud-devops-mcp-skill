@@ -1,7 +1,41 @@
 {
-  "compiledAt": "2026-08-18T06:50:31.629922+00:00",
+  "compiledAt": "2026-08-18T08:41:35.095578+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1464",
+        "title": "【極馬】專送騎手統計增加隱形單",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00702da1162499a7a07a6477b6",
+        "rowText": "【产品类需求】【極馬】專送騎手統計增加隱形單\nID: MFTB-1464 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1462",
+        "title": "【大係統】到家業務商家收藏有禮",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "刘龙振海",
+        "creator": "刘龙振海",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d11d1a7d8d8c09e5fdfe174330",
+        "rowText": "【产品类需求】【大係統】到家業務商家收藏有禮\nID: MFTB-1462 | 状态: 待处理 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 未规划 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1447",
         "title": "【大係統】團購到店-門店打卡活動（待出方案）",
@@ -124,7 +158,7 @@
       {
         "id": "MFTB-1426",
         "title": "【極馬】專送騎手列表、專送騎手統計增加導出",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -134,7 +168,7 @@
         "createDate": "2026-08-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6b2aa7c1fb37a51d7c23c080a1",
-        "rowText": "【产品类需求】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1426 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1426 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -362,7 +396,7 @@
       {
         "id": "MFTB-1360",
         "title": "【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -372,7 +406,7 @@
         "createDate": "2026-08-12",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7c6c7c4d9aa35a64517f54b233",
-        "rowText": "【产品类需求】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态\nID: MFTB-1360 | 状态: 测试中 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态\nID: MFTB-1360 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-12 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2808,9 +2842,60 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1463",
+        "title": "【大係統】到家業務商家收藏有禮",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "刘龙振海",
+        "creator": "刘龙振海",
+        "iteration": "未规划",
+        "planStart": "2026-08-17",
+        "planEnd": "2026-08-19",
+        "createDate": "2026-08-18",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=75fb9ed6a3d6d90062e5e4b636",
+        "rowText": "【产品】【大係統】到家業務商家收藏有禮\nID: MFTB-1463 | 状态: 已完成 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 未规划 | 创建时间: 2026-08-18 | 排期规划: 2026-08-17 至 2026-08-19",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1459",
+        "title": "【前端】【極馬】專送合併迭代-部分頁面優化",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-20",
+        "planEnd": "2026-08-20",
+        "createDate": "2026-08-18",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5141624c3b2941f2116c9e5fcf",
+        "rowText": "【任务】【前端】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1459 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: 2026-08-20 至 2026-08-20",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1458",
+        "title": "【前端】【極馬】專送騎手列表、專送騎手統計增加導出",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-19",
+        "planEnd": "2026-08-19",
+        "createDate": "2026-08-18",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=dfe176a7c13b1a859e00d90b9e",
+        "rowText": "【任务】【前端】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1458 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: 2026-08-19 至 2026-08-19",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1456",
         "title": "【服务端】【極馬】專送騎手列表、專送騎手統計增加導出",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "刘志敏",
@@ -2820,7 +2905,7 @@
         "createDate": "2026-08-18",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=27ff70c852be748d817a9a2bb3",
-        "rowText": "【任务】【服务端】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1456 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: 2026-08-19 至 2026-08-19",
+        "rowText": "【任务】【服务端】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1456 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: 2026-08-19 至 2026-08-19",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -2963,7 +3048,7 @@
       {
         "id": "MFTB-1436",
         "title": "【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-        "status": "测试中",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -2973,7 +3058,7 @@
         "createDate": "2026-08-17",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8a57acb554410e615f95e614f1",
-        "rowText": "【測試】【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态\nID: MFTB-1436 | 状态: 测试中 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态\nID: MFTB-1436 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -17394,6 +17479,40 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1461",
+        "title": "【專送合併-騎手工資表】强制性补贴计算结果不对",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1b4592f031a371106792fff28f",
+        "rowText": "【缺陷】【專送合併-騎手工資表】强制性补贴计算结果不对\nID: MFTB-1461 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1460",
+        "title": "【專送合併-騎手工資表】添加计薪骑手弹窗，没有同步骑手的注册信息和站点",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-18",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=79eece1a5cac3818ae4d907893",
+        "rowText": "【缺陷】【專送合併-騎手工資表】添加计薪骑手弹窗，没有同步骑手的注册信息和站点\nID: MFTB-1460 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1457",
         "title": "【大系统】【闪蜂用户端】iOS：意见反馈若干个问题，见描述",
         "status": "待确认",
@@ -17634,7 +17753,7 @@
       {
         "id": "MFTB-1353",
         "title": "【到家业务-商品管理】商品列表：组合商品-单规格，修改规格状态为售罄时，没有弹窗提示",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "侯黎明",
@@ -17644,7 +17763,7 @@
         "createDate": "2026-08-11",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0c1e1e10a4c2cb1e4a449d26ba",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品-单规格，修改规格状态为售罄时，没有弹窗提示\nID: MFTB-1353 | 状态: 已修复 | 优先级: 中\n负责人: 甄荣康 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：组合商品-单规格，修改规格状态为售罄时，没有弹窗提示\nID: MFTB-1353 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 甄荣康 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-11 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -27373,11 +27492,11 @@
       },
       {
         "date": "2026-08-18",
-        "total": 1023,
-        "completed": 770,
+        "total": 1028,
+        "completed": 774,
         "statusCounts": {
-          "已完成": 770,
-          "进行中": 253
+          "已完成": 774,
+          "进行中": 254
         }
       }
     ],
