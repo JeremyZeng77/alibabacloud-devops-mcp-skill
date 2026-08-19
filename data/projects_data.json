@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-19T06:51:00.915287+00:00",
+  "compiledAt": "2026-08-19T08:42:07.401130+00:00",
   "latest": {
     "mftb": [
       {
@@ -2874,6 +2874,57 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1488",
+        "title": "【前端】【廣告系統】-無敵星星-销售",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-19",
+        "planEnd": "2026-08-21",
+        "createDate": "2026-08-19",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=753d97ba18219adefe7d42d105",
+        "rowText": "【任务】【前端】【廣告系統】-無敵星星-销售\nID: MFTB-1488 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-19 | 排期规划: 2026-08-19 至 2026-08-21",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1487",
+        "title": "【前端】【廣告系統】-無敵星星-定价",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-19",
+        "planEnd": "2026-08-21",
+        "createDate": "2026-08-19",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=db71f44464f4e3e71cbf630070",
+        "rowText": "【任务】【前端】【廣告系統】-無敵星星-定价\nID: MFTB-1487 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-19 | 排期规划: 2026-08-19 至 2026-08-21",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1486",
+        "title": "【前端】【廣告系統】-無敵星星-算法库",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-19",
+        "planEnd": "2026-08-21",
+        "createDate": "2026-08-19",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7ea3115355c18db7bdb27172e0",
+        "rowText": "【任务】【前端】【廣告系統】-無敵星星-算法库\nID: MFTB-1486 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-19 | 排期规划: 2026-08-19 至 2026-08-21",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1483",
@@ -27875,11 +27926,11 @@
       },
       {
         "date": "2026-08-19",
-        "total": 1043,
+        "total": 1046,
         "completed": 795,
         "statusCounts": {
           "已完成": 795,
-          "进行中": 248
+          "进行中": 251
         }
       }
     ],
