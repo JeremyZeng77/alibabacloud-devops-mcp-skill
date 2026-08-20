@@ -1,11 +1,11 @@
 {
-  "compiledAt": "2026-08-20T08:43:29.523569+00:00",
+  "compiledAt": "2026-08-20T10:35:32.078949+00:00",
   "latest": {
     "mftb": [
       {
         "id": "MFTB-1506",
         "title": "【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
-        "status": "待处理",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -15,7 +15,7 @@
         "createDate": "2026-08-20",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e5330c33dcdeba9ee51ecbd17e",
-        "rowText": "【产品类需求】【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本\nID: MFTB-1506 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-20 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本\nID: MFTB-1506 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-20 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2910,6 +2910,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1508",
+        "title": "【前端】【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d991dc132e2ea3bb424f4cf589",
+        "rowText": "【任务】【前端】【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本\nID: MFTB-1508 | 状态: 提交测试 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1507",
         "title": "【前端】【極馬】專送騎手統計增加隱形單",
         "status": "提交测试",
@@ -4102,7 +4119,7 @@
       {
         "id": "MFTB-1397",
         "title": "【后台】【大係統】禁止彈窗設置",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "周忠浩",
         "creator": "李科",
@@ -4112,7 +4129,7 @@
         "createDate": "2026-08-14",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9781eb1e21bc2284bbe283bd74",
-        "rowText": "【任务】【后台】【大係統】禁止彈窗設置\nID: MFTB-1397 | 状态: 开发中 | 优先级: 中\n负责人: 周忠浩 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-18 至 2026-08-19",
+        "rowText": "【任务】【后台】【大係統】禁止彈窗設置\nID: MFTB-1397 | 状态: 提交测试 | 优先级: 中\n负责人: 周忠浩 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-18 至 2026-08-19",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -28148,19 +28165,19 @@
       {
         "date": "2026-08-19",
         "total": 1057,
-        "completed": 797,
+        "completed": 798,
         "statusCounts": {
-          "已完成": 797,
-          "进行中": 260
+          "已完成": 798,
+          "进行中": 259
         }
       },
       {
         "date": "2026-08-20",
-        "total": 1063,
-        "completed": 803,
+        "total": 1064,
+        "completed": 806,
         "statusCounts": {
-          "已完成": 803,
-          "进行中": 260
+          "已完成": 806,
+          "进行中": 258
         }
       }
     ],
@@ -40477,8 +40494,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 12.9,
-      "delta": 7.5
+      "average": 12.5,
+      "delta": 7.1
     },
     "mfood": {
       "average": 0.0,
