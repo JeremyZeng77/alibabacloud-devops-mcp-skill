@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-08-20T06:53:14.865464+00:00",
+  "compiledAt": "2026-08-20T08:43:29.523569+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1506",
+        "title": "【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-20",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e5330c33dcdeba9ee51ecbd17e",
+        "rowText": "【产品类需求】【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本\nID: MFTB-1506 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1491",
         "title": "【大系统】自取单折扣",
@@ -226,7 +243,7 @@
       {
         "id": "MFTB-1425",
         "title": "【極馬】專送合併迭代-部分頁面優化",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -236,7 +253,7 @@
         "createDate": "2026-08-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f020f67228f37481d934810887",
-        "rowText": "【产品类需求】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1425 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1425 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2893,6 +2910,40 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1507",
+        "title": "【前端】【極馬】專送騎手統計增加隱形單",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-20",
+        "planEnd": "2026-08-20",
+        "createDate": "2026-08-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=0a7099ef0065b107e9fefabeab",
+        "rowText": "【任务】【前端】【極馬】專送騎手統計增加隱形單\nID: MFTB-1507 | 状态: 提交测试 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-20 | 排期规划: 2026-08-20 至 2026-08-20",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1505",
+        "title": "【商家app】到家業務商家收藏有禮",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "陈少丹",
+        "creator": "陈少丹",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=325bc95054fde35d146fdf9317",
+        "rowText": "【任务】【商家app】到家業務商家收藏有禮\nID: MFTB-1505 | 状态: 未开始 | 优先级: 中\n负责人: 陈少丹 | 提报人: 陈少丹\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-20 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1504",
         "title": "【前端】【大係統】到家業務_門店營銷活動_商品折扣",
         "status": "未开始",
@@ -3405,7 +3456,7 @@
       {
         "id": "MFTB-1459",
         "title": "【前端】【極馬】專送合併迭代-部分頁面優化",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "洪喜彬",
         "creator": "洪喜彬",
@@ -3415,7 +3466,7 @@
         "createDate": "2026-08-18",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5141624c3b2941f2116c9e5fcf",
-        "rowText": "【任务】【前端】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1459 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: 2026-08-20 至 2026-08-20",
+        "rowText": "【任务】【前端】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1459 | 状态: 提交测试 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: 2026-08-20 至 2026-08-20",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -19708,7 +19759,7 @@
       {
         "id": "MFTB-1087",
         "title": "【到家业务-商品管理】商品列表：导入数据-更新导入，发现：没有没有覆盖更新，当前是直接新增了规格",
-        "status": "待确认",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "侯黎明",
@@ -19718,7 +19769,7 @@
         "createDate": "2026-07-22",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4cfb0d11a428ff72fcddecdcc0",
-        "rowText": "【缺陷】【到家业务-商品管理】商品列表：导入数据-更新导入，发现：没有没有覆盖更新，当前是直接新增了规格\nID: MFTB-1087 | 状态: 待确认 | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【到家业务-商品管理】商品列表：导入数据-更新导入，发现：没有没有覆盖更新，当前是直接新增了规格\nID: MFTB-1087 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 叶龙 | 提报人: 侯黎明\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-22 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -28105,10 +28156,10 @@
       },
       {
         "date": "2026-08-20",
-        "total": 1060,
-        "completed": 800,
+        "total": 1063,
+        "completed": 803,
         "statusCounts": {
-          "已完成": 800,
+          "已完成": 803,
           "进行中": 260
         }
       }
