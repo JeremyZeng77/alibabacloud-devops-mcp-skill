@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-20T03:26:47.438553+00:00",
+  "compiledAt": "2026-08-20T04:41:21.920752+00:00",
   "latest": {
     "mftb": [
       {
@@ -2891,6 +2891,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1502",
+        "title": "【服務隊】【大係統】團購到店-用戶端商品異常處理",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-08-20",
+        "planEnd": "2026-08-21",
+        "createDate": "2026-08-20",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=deda8068d2fe8d9c0a52c570ff",
+        "rowText": "【任务】【服務隊】【大係統】團購到店-用戶端商品異常處理\nID: MFTB-1502 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-20 | 排期规划: 2026-08-20 至 2026-08-21",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1501",
@@ -28054,11 +28071,11 @@
       },
       {
         "date": "2026-08-20",
-        "total": 1057,
+        "total": 1058,
         "completed": 800,
         "statusCounts": {
           "已完成": 800,
-          "进行中": 257
+          "进行中": 258
         }
       }
     ],
