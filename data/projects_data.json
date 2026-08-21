@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-21T03:26:37.304443+00:00",
+  "compiledAt": "2026-08-21T04:42:42.275264+00:00",
   "latest": {
     "mftb": [
       {
@@ -2925,6 +2925,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1511",
+        "title": "【服务端】【大系统】支付渠道",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "刘付益",
+        "creator": "刘付益",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-08-21",
+        "planEnd": "2026-08-21",
+        "createDate": "2026-08-21",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3a80a820035d7962966c5e32fa",
+        "rowText": "【任务】【服务端】【大系统】支付渠道\nID: MFTB-1511 | 状态: 提交测试 | 优先级: 中\n负责人: 刘付益 | 提报人: 刘付益\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-21 | 排期规划: 2026-08-21 至 2026-08-21",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1510",
@@ -28216,10 +28233,10 @@
       },
       {
         "date": "2026-08-21",
-        "total": 1066,
-        "completed": 807,
+        "total": 1067,
+        "completed": 808,
         "statusCounts": {
-          "已完成": 807,
+          "已完成": 808,
           "进行中": 259
         }
       }
