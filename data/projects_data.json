@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-20T22:31:46.995015+00:00",
+  "compiledAt": "2026-08-21T01:36:06.535253+00:00",
   "latest": {
     "mftb": [
       {
@@ -3694,7 +3694,7 @@
       {
         "id": "MFTB-1434",
         "title": "【後端_評價管理_用戶端】美食外送__訂單履約與評價管理",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "叶龙",
         "creator": "叶龙",
@@ -3704,7 +3704,7 @@
         "createDate": "2026-08-17",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a52d3836df79ad176fe4386216",
-        "rowText": "【任务】【後端_評價管理_用戶端】美食外送__訂單履約與評價管理\nID: MFTB-1434 | 状态: 未开始 | 优先级: 中\n负责人: 叶龙 | 提报人: 叶龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: 2026-08-17 至 2026-08-20",
+        "rowText": "【任务】【後端_評價管理_用戶端】美食外送__訂單履約與評價管理\nID: MFTB-1434 | 状态: 提交测试 | 优先级: 中\n负责人: 叶龙 | 提报人: 叶龙\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-17 | 排期规划: 2026-08-17 至 2026-08-20",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4090,12 +4090,12 @@
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "MFTB-v1.0.1",
-        "planStart": "2026-08-20",
-        "planEnd": "2026-08-24",
+        "planStart": "2026-08-24",
+        "planEnd": "2026-08-26",
         "createDate": "2026-08-14",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=17bb68104affa20c1db2b3aa92",
-        "rowText": "【任务】【服务端】【大係統】管理后台訂單相關\nID: MFTB-1401 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-20 至 2026-08-24",
+        "rowText": "【任务】【服务端】【大係統】管理后台訂單相關\nID: MFTB-1401 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-24 至 2026-08-26",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4430,12 +4430,12 @@
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "MFTB-v1.0.1",
-        "planStart": "2026-08-25",
-        "planEnd": "2026-08-25",
+        "planStart": "2026-08-27",
+        "planEnd": "2026-08-27",
         "createDate": "2026-08-13",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ef4534e5bd34d2661f105ea207",
-        "rowText": "【任务】【大係統】團購到店-用戶端商品规格按金额或者积分排序\nID: MFTB-1372 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-13 | 排期规划: 2026-08-25 至 2026-08-25",
+        "rowText": "【任务】【大係統】團購到店-用戶端商品规格按金额或者积分排序\nID: MFTB-1372 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-13 | 排期规划: 2026-08-27 至 2026-08-27",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4532,12 +4532,12 @@
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "MFTB-v1.0.1",
-        "planStart": "2026-08-27",
+        "planStart": "2026-08-28",
         "planEnd": "2026-08-28",
         "createDate": "2026-08-12",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=155add2f29d671acf7b00fef14",
-        "rowText": "【任务】【大係統】團購到店-用戶端商品列表含积分抵扣\nID: MFTB-1359 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-12 | 排期规划: 2026-08-27 至 2026-08-28",
+        "rowText": "【任务】【大係統】團購到店-用戶端商品列表含积分抵扣\nID: MFTB-1359 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-12 | 排期规划: 2026-08-28 至 2026-08-28",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4923,12 +4923,12 @@
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "未规划",
-        "planStart": "2026-09-01",
-        "planEnd": "2026-09-02",
+        "planStart": "2026-08-31",
+        "planEnd": "2026-09-01",
         "createDate": "2026-08-06",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e6b4475798ef490bf15e4051ac",
-        "rowText": "【任务】【服务端】【大係統】-團購到店-預約商品每日價格設置新增批量導入價格功能\nID: MFTB-1327 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: 2026-09-01 至 2026-09-02",
+        "rowText": "【任务】【服务端】【大係統】-團購到店-預約商品每日價格設置新增批量導入價格功能\nID: MFTB-1327 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: 2026-08-31 至 2026-09-01",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -28165,10 +28165,10 @@
       {
         "date": "2026-08-19",
         "total": 1057,
-        "completed": 798,
+        "completed": 797,
         "statusCounts": {
-          "已完成": 798,
-          "进行中": 259
+          "已完成": 797,
+          "进行中": 260
         }
       },
       {
@@ -28178,6 +28178,15 @@
         "statusCounts": {
           "已完成": 806,
           "进行中": 258
+        }
+      },
+      {
+        "date": "2026-08-21",
+        "total": 1064,
+        "completed": 807,
+        "statusCounts": {
+          "已完成": 807,
+          "进行中": 257
         }
       }
     ],
@@ -40028,6 +40037,15 @@
       },
       {
         "date": "2026-08-20",
+        "total": 185,
+        "completed": 41,
+        "statusCounts": {
+          "已完成": 41,
+          "进行中": 144
+        }
+      },
+      {
+        "date": "2026-08-21",
         "total": 185,
         "completed": 41,
         "statusCounts": {
