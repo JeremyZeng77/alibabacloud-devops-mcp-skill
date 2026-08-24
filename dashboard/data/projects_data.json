@@ -1,7 +1,41 @@
 {
-  "compiledAt": "2026-08-24T04:50:37.587237+00:00",
+  "compiledAt": "2026-08-24T07:05:40.731205+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1516",
+        "title": "【大係統】到家營銷活動_商家營銷_進店領券",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-24",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5b8a871592a001b56c4ae82088",
+        "rowText": "【产品类需求】【大係統】到家營銷活動_商家營銷_進店領券\nID: MFTB-1516 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: 未规划 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1514",
+        "title": "【大係統】到家營銷活動_商家營銷_買贈活動新增活動類型",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-24",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3dbfeb7cc7507688df13a3fc40",
+        "rowText": "【产品类需求】【大係統】到家營銷活動_商家營銷_買贈活動新增活動類型\nID: MFTB-1514 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1512",
         "title": "【大係統】紅包管理新增“指定商品分類”“指定商品”",
@@ -2942,6 +2976,40 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1517",
+        "title": "【大係統】到家營銷活動_商家營銷_進店領券",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "未规划",
+        "planStart": "2026-08-31",
+        "planEnd": "2026-09-03",
+        "createDate": "2026-08-24",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c75b23a814aa3e7efe3dc405e4",
+        "rowText": "【产品】【大係統】到家營銷活動_商家營銷_進店領券\nID: MFTB-1517 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: 未规划 | 创建时间: 2026-08-24 | 排期规划: 2026-08-31 至 2026-09-03",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1515",
+        "title": "【大係統】到家營銷活動_商家營銷_買贈活動新增活動類型",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-24",
+        "planEnd": "2026-08-28",
+        "createDate": "2026-08-24",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5227eed9099e242d5730052ea2",
+        "rowText": "【产品】【大係統】到家營銷活動_商家營銷_買贈活動新增活動類型\nID: MFTB-1515 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-24 | 排期规划: 2026-08-24 至 2026-08-28",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1513",
@@ -28311,11 +28379,11 @@
       },
       {
         "date": "2026-08-24",
-        "total": 1069,
+        "total": 1073,
         "completed": 808,
         "statusCounts": {
           "已完成": 808,
-          "进行中": 261
+          "进行中": 265
         }
       }
     ],
