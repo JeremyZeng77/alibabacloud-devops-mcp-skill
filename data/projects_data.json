@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-08-24T08:53:09.143292+00:00",
+  "compiledAt": "2026-08-24T10:40:48.456243+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1529",
+        "title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "黄信杰",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-24",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7a7b773c883a7a4abcf388d450",
+        "rowText": "【产品类需求】【用户端APP】用户端訂單詳情支持標記雨天標記\nID: MFTB-1529 | 状态: 待处理 | 优先级: 中\n负责人: 黄信杰 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1519",
         "title": "【大係統】外卖订单详情补充营销活动&退款说明",
@@ -18363,6 +18380,74 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1528",
+        "title": "【專送合併-騎手工資表】iOS，1、专送骑手异常流水样式问题，2、积分流水样式问题 3、扣分应该是-号，参考UI图",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "陈万里",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-24",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=70a719b3b8bfd36d620c1121a3",
+        "rowText": "【缺陷】【專送合併-騎手工資表】iOS，1、专送骑手异常流水样式问题，2、积分流水样式问题 3、扣分应该是-号，参考UI图\nID: MFTB-1528 | 状态: 待确认 | 优先级: 中\n负责人: 陈万里 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1527",
+        "title": "【專送合併-騎手工資表】Android，专送骑手异常流水可申诉，异常列表申诉按钮却置灰不可点击？",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "陈国伟",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-24",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a73f618126d624fe3c14b6f455",
+        "rowText": "【缺陷】【專送合併-騎手工資表】Android，专送骑手异常流水可申诉，异常列表申诉按钮却置灰不可点击？\nID: MFTB-1527 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1526",
+        "title": "【專送合併-騎手工資表】骑手等级流水申诉退回记录，应该是+号加分",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-24",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b762fde8605936352e18f35dd2",
+        "rowText": "【缺陷】【專送合併-騎手工資表】骑手等级流水申诉退回记录，应该是+号加分\nID: MFTB-1526 | 状态: 待确认 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1525",
+        "title": "【專送合併-騎手工資表】等级流水扣分与异常流水扣分对不上",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-24",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b1771c8e7dd381545cfc35d80e",
+        "rowText": "【缺陷】【專送合併-騎手工資表】等级流水扣分与异常流水扣分对不上\nID: MFTB-1525 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1490",
         "title": "【到家业务-商品管理】商品列表：导入数据，选择自动上下架，导入失败，提示：自动上架时间格式无效",
         "status": "已关闭（已修复）",
@@ -28532,11 +28617,11 @@
       },
       {
         "date": "2026-08-24",
-        "total": 1080,
+        "total": 1081,
         "completed": 810,
         "statusCounts": {
           "已完成": 810,
-          "进行中": 270
+          "进行中": 271
         }
       }
     ],
