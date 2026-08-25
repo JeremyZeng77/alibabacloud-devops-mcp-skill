@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-25T08:36:38.070954+00:00",
+  "compiledAt": "2026-08-25T08:48:47.187359+00:00",
   "latest": {
     "mftb": [
       {
@@ -39,7 +39,7 @@
       {
         "id": "MFTB-1539",
         "title": "【極馬】專送APP可上傳APP日誌",
-        "status": "测试环境验证通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -49,7 +49,7 @@
         "createDate": "2026-08-25",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=afeb2a5833601ebe9cf564d914",
-        "rowText": "【产品类需求】【極馬】專送APP可上傳APP日誌\nID: MFTB-1539 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送APP可上傳APP日誌\nID: MFTB-1539 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3112,6 +3112,23 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1550",
+        "title": "【iOS】【極馬】專送APP可上傳APP日誌",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "陈万里",
+        "creator": "陈万里",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-25",
+        "planEnd": "2026-08-25",
+        "createDate": "2026-08-25",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d836c8a5f6d858dad3c916c3dd",
+        "rowText": "【任务】【iOS】【極馬】專送APP可上傳APP日誌\nID: MFTB-1550 | 状态: 提交测试 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: 2026-08-25 至 2026-08-25",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1549",
@@ -28932,10 +28949,10 @@
       },
       {
         "date": "2026-08-25",
-        "total": 1095,
-        "completed": 819,
+        "total": 1096,
+        "completed": 820,
         "statusCounts": {
-          "已完成": 819,
+          "已完成": 820,
           "进行中": 276
         }
       }
