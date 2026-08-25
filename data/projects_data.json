@@ -1,7 +1,41 @@
 {
-  "compiledAt": "2026-08-25T04:42:50.820144+00:00",
+  "compiledAt": "2026-08-25T06:55:01.762285+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1539",
+        "title": "【極馬】專送APP可上傳APP日誌",
+        "status": "测试环境验证通过",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-25",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=afeb2a5833601ebe9cf564d914",
+        "rowText": "【产品类需求】【極馬】專送APP可上傳APP日誌\nID: MFTB-1539 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1538",
+        "title": "【需求變更】專送騎手統計增加在線時長、時效統計、區分訂單平台",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-25",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9d98bb78f96a29ac6b1d9b784e",
+        "rowText": "【产品类需求】【需求變更】專送騎手統計增加在線時長、時效統計、區分訂單平台\nID: MFTB-1538 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1535",
         "title": "【用戶端APP】到家營銷活動_用戶端APP設計（含到家12種活動）",
@@ -16,23 +50,6 @@
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bc3843db21c4709ca86d8b77ae",
         "rowText": "【产品类需求】【用戶端APP】到家營銷活動_用戶端APP設計（含到家12種活動）\nID: MFTB-1535 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
-        "project": "MFTB集团项目",
-        "category": "Req"
-      },
-      {
-        "id": "MFTB-1530",
-        "title": "【極馬】專送騎手統計增加人效",
-        "status": "待处理",
-        "priority": "中",
-        "assignee": "龙颖之",
-        "creator": "龙颖之",
-        "iteration": "SH-v1.0.0",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-08-25",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8c0646c1522feba60a2148cc6a",
-        "rowText": "【产品类需求】【極馬】專送騎手統計增加人效\nID: MFTB-1530 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -225,7 +242,7 @@
       },
       {
         "id": "MFTB-1464",
-        "title": "【極馬】專送騎手統計增加隱形單",
+        "title": "【極馬】專送騎手統計增加隱形單、在線時長、時效統計",
         "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
@@ -236,7 +253,7 @@
         "createDate": "2026-08-18",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00702da1162499a7a07a6477b6",
-        "rowText": "【产品类需求】【極馬】專送騎手統計增加隱形單\nID: MFTB-1464 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送騎手統計增加隱形單、在線時長、時效統計\nID: MFTB-1464 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -396,7 +413,7 @@
       {
         "id": "MFTB-1425",
         "title": "【極馬】專送合併迭代-部分頁面優化",
-        "status": "待测试",
+        "status": "测试环境验证通过",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -406,7 +423,7 @@
         "createDate": "2026-08-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f020f67228f37481d934810887",
-        "rowText": "【产品类需求】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1425 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1425 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3061,6 +3078,74 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1542",
+        "title": "【產品】【極馬】專送騎手列表、專送騎手統計增加導出",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-17",
+        "planEnd": "2026-08-17",
+        "createDate": "2026-08-25",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f3b3789ea0ab14dbd6bb0a135a",
+        "rowText": "【产品】【產品】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1542 | 状态: 已完成 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: 2026-08-17 至 2026-08-17",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1541",
+        "title": "【服务端】【極馬】專送APP可上傳APP日誌",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-25",
+        "planEnd": "2026-08-25",
+        "createDate": "2026-08-25",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=aa96e0e5d94e2bb1362a4061f6",
+        "rowText": "【任务】【服务端】【極馬】專送APP可上傳APP日誌\nID: MFTB-1541 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: 2026-08-25 至 2026-08-25",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1540",
+        "title": "【產品】【極馬】專送合併迭代-部分頁面優化",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-08-17",
+        "planEnd": "2026-08-17",
+        "createDate": "2026-08-25",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=07b89ef16e1106ab27f690aea1",
+        "rowText": "【产品】【產品】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1540 | 状态: 已完成 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: 2026-08-17 至 2026-08-17",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1537",
+        "title": "【需求變更】專送騎手統計增加時效、在線時長統計、拆分訂單平台",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-25",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b50d892e94370f77842f21fe5e",
+        "rowText": "【产品】【需求變更】專送騎手統計增加時效、在線時長統計、拆分訂單平台\nID: MFTB-1537 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1536",
@@ -28728,11 +28813,11 @@
       },
       {
         "date": "2026-08-25",
-        "total": 1086,
-        "completed": 812,
+        "total": 1091,
+        "completed": 816,
         "statusCounts": {
-          "已完成": 812,
-          "进行中": 274
+          "已完成": 816,
+          "进行中": 275
         }
       }
     ],
