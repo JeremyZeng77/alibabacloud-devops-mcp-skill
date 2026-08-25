@@ -5,7 +5,7 @@ let state = {
     history: { mftb: [], mfood: [] },
     weeklyReports: [],
     currentProject: 'mftb', // 'mftb' or 'mfood'
-    currentView: 'overview', // 'overview', 'workitems', 'weekly', 'risk', 'config', 'audit'
+    currentView: 'overview', // 'overview', 'workitems', 'weekly'
     charts: {}, // Store Chart.js instances
     autoSyncIntervalId: null, // Store interval ID for 5 minutes sync
     chartStatusMode: 'active', // 'active' (进行中) or 'all' (全部)
@@ -57,34 +57,6 @@ function isItemCompleted(item) {
     }
     
     return false;
-}
-
-// ── Business Line Classification ──
-const DEFAULT_BUSINESS_LINE_CONFIG = {
-    zhongbao: ['众包','眾包','跑腿','外送','外賣業務'],
-    daojia: ['到家业务','到家業務','外卖','外賣','mFood','mfood','闪蜂','閃蜂','極馬','極馬專送','专送','專送','配送','騎手','骑手','調度','调度'],
-    daodian: ['團購','团购','到店','大係統','大系統','大系统','商家APP','商家 APP','商家端','商家app','门店','門店','商户','商戶','合同','推广金','推廣金','集團','集团','商家管理','商家入駐']
-};
-
-function loadBusinessLineConfig() {
-    try {
-        const saved = localStorage.getItem('devops_config_businessLine');
-        if (saved) { const parsed = JSON.parse(saved); if (parsed.daojia && parsed.daodian && parsed.zhongbao) return parsed; }
-    } catch {}
-    return JSON.parse(JSON.stringify(DEFAULT_BUSINESS_LINE_CONFIG));
-}
-
-function saveBusinessLineConfig(config) {
-    localStorage.setItem('devops_config_businessLine', JSON.stringify(config));
-}
-
-function getBusinessLine(item) {
-    const config = loadBusinessLineConfig();
-    const title = ((item.title || '') + ' ' + (item.rowText || '')).toLowerCase();
-    for (const kw of config.zhongbao) { if (title.includes(kw.toLowerCase())) return 'zhongbao'; }
-    for (const kw of config.daojia) { if (title.includes(kw.toLowerCase())) return 'daojia'; }
-    for (const kw of config.daodian) { if (title.includes(kw.toLowerCase())) return 'daodian'; }
-    return 'other';
 }
 
 const BRIDGE_API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname.startsWith('192.168.'))
@@ -152,65 +124,56 @@ async function handleLoginSubmit() {
     const errorEl = document.getElementById('login-error-msg');
     const errorTextEl = document.getElementById('login-error-text');
     const cardEl = document.querySelector('.login-card');
-    
+
     const username = userEl.value.trim();
     const password = passEl.value;
-    
-    if (username.toLowerCase() !== AUTH_CONFIG.username) {
+
+    // SHA-256 校验密码，避免明文比对泄露凭证
+    const usernameOk = username.toLowerCase() === AUTH_CONFIG.username;
+    let passwordOk = false;
+    if (usernameOk) {
+        try {
+            const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password));
+            const inputHash = Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+            passwordOk = inputHash === AUTH_CONFIG.passwordHash;
+        } catch (e) {
+            // crypto.subtle 仅在安全上下文(HTTPS / localhost)可用
+            errorTextEl.textContent = '当前环境不支持安全登录，请通过 HTTPS 访问';
+            errorEl.style.display = 'flex';
+            passEl.value = '';
+            passEl.focus();
+            return;
+        }
+    }
+
+    if (usernameOk && passwordOk) {
+        // Success
+        const nowStr = Date.now().toString();
+        localStorage.setItem('devops_session_token', 'devops-session-active');
+        localStorage.setItem('devops_session_timestamp', nowStr);
+        localStorage.setItem('devops_session_login_time', nowStr);
+
+        // Fade out overlay
+        const overlay = document.getElementById('login-overlay');
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+            overlay.style.display = 'none';
+            document.getElementById('btn-logout').style.display = 'flex';
+        }, 300);
+
+        startDashboardApp();
+    } else {
+        // Shake card and show error
         errorTextEl.textContent = '用户名或密码不正确';
         errorEl.style.display = 'flex';
+
         cardEl.style.animation = 'none';
-        cardEl.offsetHeight;
+        cardEl.offsetHeight; // Force reflow
         cardEl.style.animation = 'shake 0.4s ease';
+
         passEl.value = '';
         passEl.focus();
-        return;
     }
-    
-    // 使用 SHA-256 哈希校验密码，不存明文字段
-    try {
-        if (!window.crypto || !window.crypto.subtle) {
-            throw new Error('Crypto API unavailable');
-        }
-        const encoder = new TextEncoder();
-        const data = encoder.encode(password);
-        const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-        const hashArray = Array.from(new Uint8Array(hashBuffer));
-        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-        
-        if (hashHex !== AUTH_CONFIG.passwordHash) {
-            throw new Error('Invalid password');
-        }
-    } catch (e) {
-        if (e.message === 'Crypto API unavailable') {
-            errorTextEl.textContent = '当前环境不支持安全登录，请使用 HTTPS 访问';
-        } else {
-            errorTextEl.textContent = '用户名或密码不正确';
-        }
-        errorEl.style.display = 'flex';
-        cardEl.style.animation = 'none';
-        cardEl.offsetHeight;
-        cardEl.style.animation = 'shake 0.4s ease';
-        passEl.value = '';
-        passEl.focus();
-        return;
-    }
-    
-    // Success
-    const nowStr = Date.now().toString();
-    localStorage.setItem('devops_session_token', 'devops-session-active');
-    localStorage.setItem('devops_session_timestamp', nowStr);
-    localStorage.setItem('devops_session_login_time', nowStr);
-    
-    // Fade out overlay
-    const overlay = document.getElementById('login-overlay');
-    overlay.style.opacity = '0';
-    setTimeout(() => {
-        overlay.style.display = 'none';
-        document.getElementById('btn-logout').style.display = 'flex';
-    }, 300);
-    
-    startDashboardApp();
 }
 
 function handleLogout() {
@@ -370,7 +333,7 @@ function initEventListeners() {
     }
 
     // Filters event listeners
-    ['filter-search', 'filter-category', 'filter-status', 'filter-assignee', 'filter-priority', 'filter-iteration', 'filter-business-line'].forEach(id => {
+    ['filter-search', 'filter-category', 'filter-status', 'filter-assignee', 'filter-priority', 'filter-iteration'].forEach(id => {
         const elem = document.getElementById(id);
         if (elem) {
             elem.addEventListener('input', () => {
@@ -440,12 +403,6 @@ function initEventListeners() {
     const ganttRoleSelect = document.getElementById('gantt-role-select');
     if (ganttRoleSelect) {
         ganttRoleSelect.addEventListener('change', () => {
-            renderGanttChart();
-        });
-    }
-    const ganttBizLineSelect = document.getElementById('gantt-bizline-select');
-    if (ganttBizLineSelect) {
-        ganttBizLineSelect.addEventListener('change', () => {
             renderGanttChart();
         });
     }
@@ -598,8 +555,6 @@ function syncStateToURL() {
         if (assigneeVal !== 'all') params.set('assignee', assigneeVal);
         if (priorityVal !== 'all') params.set('priority', priorityVal);
         if (iterationVal !== 'all') params.set('iteration', iterationVal);
-        const bizVal = document.getElementById('filter-business-line').value;
-        if (bizVal !== 'all') params.set('bizline', bizVal);
     }
     
     const newURL = window.location.pathname + '?' + params.toString();
@@ -617,7 +572,7 @@ function loadStateFromURL() {
     }
     if (params.has('view')) {
         const view = params.get('view');
-        if (['overview', 'workitems', 'weekly', 'risk', 'config', 'audit'].includes(view)) {
+        if (['overview', 'workitems', 'weekly'].includes(view)) {
             state.currentView = view;
         }
     }
@@ -650,8 +605,7 @@ function loadStateFromURL() {
         status: params.get('status') || null,
         assignee: params.get('assignee') || null,
         priority: params.get('priority') || null,
-        iteration: params.get('iteration') || null,
-        bizline: params.get('bizline') || null
+        iteration: params.get('iteration') || null
     };
 }
 
@@ -738,6 +692,7 @@ async function loadDashboardData() {
         state.weeklyReports = db.weeklyReports || [];
         state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
         state.pmoAdvice = db.pmoAdvice || {};
+        state.reconciliationReport = db.reconciliationReport || null;
 
         // Update timestamps
         updateTimestamps();
@@ -775,6 +730,7 @@ async function pollDashboardData() {
             state.weeklyReports = db.weeklyReports || [];
             state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
             state.pmoAdvice = db.pmoAdvice || {};
+            state.reconciliationReport = db.reconciliationReport || null;
             
             updateTimestamps();
             renderCurrentView();
@@ -968,10 +924,162 @@ function renderCurrentView() {
         populateWeeklySelector();
     } else if (state.currentView === 'audit') {
         renderAuditView();
-    } else if (state.currentView === 'risk') {
-        renderRiskCenter();
-    } else if (state.currentView === 'config') {
-        renderConfigCenter();
+    } else if (state.currentView === 'reconciliation') {
+        renderReconciliationView();
+    }
+}
+
+// VIEW 5: Render Reconciliation Page
+function renderReconciliationView() {
+    const report = state.reconciliationReport;
+    
+    // Update last updated timestamp
+    const timeEl = document.getElementById('reconciliation-last-updated');
+    if (timeEl) {
+        if (report && report.compiledAt) {
+            const dt = new Date(report.compiledAt);
+            timeEl.textContent = dt.toLocaleString('zh-CN', { hour12: false });
+        } else {
+            timeEl.textContent = '暂无数据';
+        }
+    }
+    
+    // Summary metrics
+    const summary = report ? report.summary : { verifiedCount: 0, incompleteCount: 0, shadowCount: 0, delayCount: 0 };
+    document.getElementById('reconciler-verified-count').textContent = summary.verifiedCount;
+    document.getElementById('reconciler-incomplete-count').textContent = summary.incompleteCount;
+    document.getElementById('reconciler-shadow-count').textContent = summary.shadowCount;
+    document.getElementById('reconciler-delay-count').textContent = summary.delayCount;
+    
+    const details = report ? report.details : { verified: [], incomplete: [], shadow: [], delay: [] };
+    
+    // 1. Incomplete/Failed Smoke Tests
+    const incompleteContainer = document.getElementById('reconciler-incomplete-container');
+    if (incompleteContainer) {
+        incompleteContainer.innerHTML = '';
+        if (!details.incomplete || details.incomplete.length === 0) {
+            incompleteContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无异常部署数据</div>';
+        } else {
+            details.incomplete.forEach(item => {
+                const row = document.createElement('div');
+                row.className = 'audit-item';
+                row.style.borderLeft = '3px solid #fb923c';
+                row.style.background = 'rgba(251, 146, 60, 0.05)';
+                row.style.padding = '10px 14px';
+                row.style.marginBottom = '8px';
+                row.style.borderRadius = 'var(--radius-sm)';
+                
+                const errors = item.error_logs && item.error_logs.length > 0
+                    ? `<div style="font-size: 11px; color: #fb7185; margin-top: 4px; font-family: monospace; background: rgba(0,0,0,0.2); padding: 4px 8px; border-radius: 2px;">${escapeHtml(item.error_logs.join('\n'))}</div>`
+                    : '';
+                
+                row.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <span class="badge" style="background: rgba(251, 146, 60, 0.1); color: #fb923c; margin-right: 8px;">${escapeHtml(item.feature_type)}</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name)}</span>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">匹配云效单据: [${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)} (${escapeHtml(item.workitem_status)})</div>
+                        </div>
+                        <span class="badge badge-role-other" style="background: rgba(239, 68, 68, 0.1); color: #f87171;">测试不通过</span>
+                    </div>
+                    ${errors}
+                `;
+                incompleteContainer.appendChild(row);
+            });
+        }
+    }
+    
+    // 2. Shadow Work
+    const shadowContainer = document.getElementById('reconciler-shadow-container');
+    if (shadowContainer) {
+        shadowContainer.innerHTML = '';
+        if (!details.shadow || details.shadow.length === 0) {
+            shadowContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无影子开发数据</div>';
+        } else {
+            details.shadow.forEach(item => {
+                const row = document.createElement('div');
+                row.className = 'audit-item';
+                row.style.borderLeft = '3px solid #f472b6';
+                row.style.background = 'rgba(244, 114, 182, 0.05)';
+                row.style.padding = '10px 14px';
+                row.style.marginBottom = '8px';
+                row.style.borderRadius = 'var(--radius-sm)';
+                
+                row.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <span class="badge" style="background: rgba(244, 114, 182, 0.1); color: #f472b6; margin-right: 8px;">${escapeHtml(item.feature_type)}</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name)}</span>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">实际路由/接口路径: ${escapeHtml(item.feature_path)}</div>
+                        </div>
+                        <span class="badge badge-role-other" style="background: rgba(244, 114, 182, 0.1); color: #f472b6;">未在云效登记</span>
+                    </div>
+                `;
+                shadowContainer.appendChild(row);
+            });
+        }
+    }
+    
+    // 3. Delivery Delay
+    const delayContainer = document.getElementById('reconciler-delay-container');
+    if (delayContainer) {
+        delayContainer.innerHTML = '';
+        if (!details.delay || details.delay.length === 0) {
+            delayContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无滞后交付数据</div>';
+        } else {
+            details.delay.forEach(item => {
+                const row = document.createElement('div');
+                row.className = 'audit-item';
+                row.style.borderLeft = '3px solid #f87171';
+                row.style.background = 'rgba(248, 113, 113, 0.05)';
+                row.style.padding = '10px 14px';
+                row.style.marginBottom = '8px';
+                row.style.borderRadius = 'var(--radius-sm)';
+                
+                row.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <span class="badge" style="background: rgba(248, 113, 113, 0.1); color: #f87171; margin-right: 8px;">${escapeHtml(item.project.toUpperCase())}</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)}</span>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status)} | 负责人: ${escapeHtml(item.assignee)}</div>
+                        </div>
+                        <span class="badge badge-role-other" style="background: rgba(239, 68, 68, 0.1); color: #f87171;">未在后台部署</span>
+                    </div>
+                `;
+                delayContainer.appendChild(row);
+            });
+        }
+    }
+    
+    // 4. Verified Deployed
+    const verifiedContainer = document.getElementById('reconciler-verified-container');
+    if (verifiedContainer) {
+        verifiedContainer.innerHTML = '';
+        if (!details.verified || details.verified.length === 0) {
+            verifiedContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无已验证部署数据</div>';
+        } else {
+            details.verified.forEach(item => {
+                const row = document.createElement('div');
+                row.className = 'audit-item';
+                row.style.borderLeft = '3px solid #4ade80';
+                row.style.background = 'rgba(74, 222, 128, 0.03)';
+                row.style.padding = '10px 14px';
+                row.style.marginBottom = '8px';
+                row.style.borderRadius = 'var(--radius-sm)';
+                
+                row.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <span class="badge" style="background: rgba(74, 222, 128, 0.1); color: #4ade80; margin-right: 8px;">${escapeHtml(item.feature_type)}</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name)}</span>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效关联单据: [${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)} (${escapeHtml(item.workitem_status)})</div>
+                        </div>
+                        <span class="badge badge-role-other" style="background: rgba(74, 222, 128, 0.1); color: #4ade80;">部署成功</span>
+                    </div>
+                `;
+                verifiedContainer.appendChild(row);
+            });
+        }
     }
 }
 
@@ -1014,18 +1122,6 @@ function renderOverviewDashboard() {
     document.getElementById('kpi-task-active').textContent = taskActive;
     document.getElementById('kpi-task-rate').textContent = `${taskRate}%`;
     document.getElementById('kpi-bug-active').textContent = bugActive;
-
-    // Business Line KPI
-    const bizZhongbao = items.filter(x => getBusinessLine(x) === 'zhongbao');
-    const bizDaojia = items.filter(x => getBusinessLine(x) === 'daojia');
-    const bizDaodian = items.filter(x => getBusinessLine(x) === 'daodian');
-    const D = x => isItemCompleted(x) ? 0 : 1;
-    document.getElementById('kpi-zhongbao-total').textContent = bizZhongbao.length;
-    document.getElementById('kpi-zhongbao-active').textContent = bizZhongbao.reduce((acc, x) => acc + D(x), 0);
-    document.getElementById('kpi-daojia-total').textContent = bizDaojia.length;
-    document.getElementById('kpi-daojia-active').textContent = bizDaojia.reduce((acc, x) => acc + D(x), 0);
-    document.getElementById('kpi-daodian-total').textContent = bizDaodian.length;
-    document.getElementById('kpi-daodian-active').textContent = bizDaodian.reduce((acc, x) => acc + D(x), 0);
 
     // Populate Task KPI Trends compared to first history day
     if (history.length > 1) {
@@ -1565,12 +1661,6 @@ function populateFilters() {
     });
     iterSelect.value = prevIter && iterations.includes(prevIter) ? prevIter : 'all';
     
-    // Restore business line from URL
-    const bizSelect = document.getElementById('filter-business-line');
-    if (bizSelect && state.urlFilters && state.urlFilters.bizline !== null) {
-        bizSelect.value = state.urlFilters.bizline;
-    }
-    
     // Clear URL filters so subsequent user actions are not locked
     state.urlFilters = null;
 }
@@ -1587,7 +1677,6 @@ function applyFilters() {
     const assVal = document.getElementById('filter-assignee').value;
     const prioVal = document.getElementById('filter-priority').value;
     const iterVal = document.getElementById('filter-iteration').value;
-    const bizVal = document.getElementById('filter-business-line') ? document.getElementById('filter-business-line').value : 'all';
 
     const filtered = items.filter(x => {
         // Search
@@ -1607,8 +1696,6 @@ function applyFilters() {
         if (prioVal !== 'all' && x.priority !== prioVal) return false;
         // Iteration
         if (iterVal !== 'all' && x.iteration !== iterVal) return false;
-        // Business Line
-        if (bizVal !== 'all' && getBusinessLine(x) !== bizVal) return false;
 
         return true;
     });
@@ -1657,19 +1744,12 @@ function applyFilters() {
         
         let statusBadge = `<span class="badge ${statusClass}">${item.status}</span>`;
 
-        let bizBadge = '';
-        const biz = getBusinessLine(item);
-        if (biz === 'zhongbao') bizBadge = '<span class="badge-biz badge-biz-zhongbao">🏍️ 众包</span>';
-        else if (biz === 'daojia') bizBadge = '<span class="badge-biz badge-biz-daojia">🏠 到家</span>';
-        else if (biz === 'daodian') bizBadge = '<span class="badge-biz badge-biz-daodian">🏪 到店</span>';
-
         tr.innerHTML = `
             <td class="cell-id" style="font-family: monospace; color: var(--color-primary);">${item.id || fallbackPrefix + (index + 1)}</td>
             <td class="cell-title">
                 ${item.category === 'Req' ? '<span class="badge-cat badge-cat-req">💭 需求</span>' : 
                   item.category === 'Task' ? '<span class="badge-cat badge-cat-task">💡 任务</span>' : 
                   item.category === 'Bug' ? '<span class="badge-cat badge-cat-bug">🚨 缺陷</span>' : ''}
-                ${bizBadge}
                 ${escapeHtml(item.title)}
             </td>
             <td>${statusBadge}</td>
@@ -2133,15 +2213,8 @@ function renderGanttChart() {
         ? categoryItems
         : categoryItems.filter(item => inferDeveloperRole(item.assignee, items) === selectedRole);
 
-    // Filter by Gantt business line
-    const ganttBizSelect = document.getElementById('gantt-bizline-select');
-    const ganttBizLine = ganttBizSelect ? ganttBizSelect.value : 'all';
-    const bizFiltered = ganttBizLine === 'all'
-        ? roleFiltered
-        : roleFiltered.filter(item => getBusinessLine(item) === ganttBizLine);
-
     // Map and calculate plan dates
-    const ganttItems = bizFiltered.map(item => {
+    const ganttItems = roleFiltered.map(item => {
         const planStart = item.planStart || item.createDate;
         const planEnd = item.planEnd || planStart;
         return {
@@ -3251,7 +3324,6 @@ function exportMarkdownSnippet() {
     const assVal = document.getElementById('filter-assignee') ? document.getElementById('filter-assignee').value : 'all';
     const prioVal = document.getElementById('filter-priority') ? document.getElementById('filter-priority').value : 'all';
     const iterVal = document.getElementById('filter-iteration') ? document.getElementById('filter-iteration').value : 'all';
-    const bizLineVal = document.getElementById('filter-business-line') ? document.getElementById('filter-business-line').value : 'all';
 
     const filterStrings = [];
     if (searchVal) filterStrings.push(`搜索: "${searchVal}"`);
@@ -3260,7 +3332,6 @@ function exportMarkdownSnippet() {
     filterStrings.push(`负责人: ${assVal === 'all' ? '全部负责人' : assVal}`);
     if (prioVal !== 'all' && prioVal !== null) filterStrings.push(`优先级: ${prioVal}`);
     if (iterVal !== 'all' && iterVal !== null) filterStrings.push(`迭代: ${iterVal}`);
-    if (bizLineVal !== 'all' && bizLineVal !== null) filterStrings.push(`业务线: ${bizLineVal === 'zhongbao' ? '众包' : bizLineVal === 'daojia' ? '到家业务' : '到店业务'}`);
     const filtersLabel = filterStrings.join(' | ');
 
     const items = state.latest[state.currentProject] || [];
@@ -3276,7 +3347,6 @@ function exportMarkdownSnippet() {
         if (assVal !== 'all' && x.assignee !== assVal) return false;
         if (prioVal !== 'all' && prioVal !== null && x.priority !== prioVal) return false;
         if (iterVal !== 'all' && iterVal !== null && x.iteration !== iterVal) return false;
-        if (bizLineVal !== 'all' && bizLineVal !== null && getBusinessLine(x) !== bizLineVal) return false;
         return true;
     });
 
@@ -3363,501 +3433,3 @@ ${adviceLines}
 
 
 
-
-// ============================================================
-// 五维升级模块：风险预警 | 站会看板 | 配置管理 | 弹窗增强
-// ============================================================
-
-// ---------- P0: 风险预警中心 ----------
-
-function renderRiskCenter() {
-    const items = state.latest[state.currentProject] || [];
-    const history = state.history[state.currentProject] || [];
-    
-    // 风险 KPI
-    const delayedItems = findDelayedItems(items, history);
-    renderRiskKPIs(items, delayedItems);
-    renderBurndownChart(items, history);
-    renderDelayPrediction(delayedItems);
-    renderDependencyDetection(items);
-    renderEfficiencyBoard(items);
-}
-
-function findDelayedItems(items, history) {
-    const now = new Date();
-    const results = [];
-    const inactiveStatuses = ['已取消', '已拒绝'];
-    const avgCycleDays = computeAvgCycleDays(history, items);
-    
-    for (const item of items) {
-        const status = item.status || '';
-        // 已完成(含Task提交测试)或已取消/已拒绝的不纳入延期检测
-        if (isItemCompleted(item)) continue;
-        if (inactiveStatuses.some(s => status.includes(s))) continue;
-        
-        const created = item.created_at || item.created;
-        if (!created) continue;
-        const daysSinceCreated = Math.max(0, Math.floor((now - new Date(created)) / 86400000));
-        
-        let riskLevel = 'low';
-        if (daysSinceCreated > avgCycleDays * 1.5) riskLevel = 'high';
-        else if (daysSinceCreated > avgCycleDays) riskLevel = 'medium';
-        
-        results.push({ ...item, daysSinceCreated, avgCycleDays, riskLevel });
-    }
-    
-    results.sort((a, b) => {
-        const order = { high: 0, medium: 1, low: 2 };
-        return (order[a.riskLevel] || 3) - (order[b.riskLevel] || 3);
-    });
-    return results;
-}
-
-function computeAvgCycleDays(history, items) {
-    let totalDays = 0, count = 0;
-    
-    for (const item of items) {
-        if (!isItemCompleted(item)) continue;
-        const created = item.created_at || item.created;
-        const updated = item.updated_at || item.updated;
-        if (created && updated) {
-            totalDays += Math.max(1, Math.floor((new Date(updated) - new Date(created)) / 86400000));
-            count++;
-        }
-    }
-    return count > 0 ? Math.round(totalDays / count) : 14;
-}
-
-function renderRiskKPIs(items, delayedItems) {
-    const container = document.getElementById('risk-kpi-area');
-    if (!container) return;
-    
-    const highCount = delayedItems.filter(d => d.riskLevel === 'high').length;
-    const medCount = delayedItems.filter(d => d.riskLevel === 'medium').length;
-    const total = items.length;
-    const completed = items.filter(i => isItemCompleted(i)).length;
-    const rate = total > 0 ? Math.round((completed / total) * 100) : 0;
-    
-    // 预测剩余天数
-    const active = items.filter(i => !isItemCompleted(i) && !['已取消', '已拒绝'].some(s => (i.status || '').includes(s))).length;
-    const recentRate = computeRecentVelocity(items, history);
-    const estDays = recentRate > 0 ? Math.round(active / recentRate * 7) : '--';
-    
-    container.innerHTML = `<div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#f87171;">${highCount}</div><div class="risk-kpi-label">🔴 高风险延期</div></div>
-    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#fbbf24;">${medCount}</div><div class="risk-kpi-label">🟡 中等风险</div></div>
-    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#38bdf8;">${active}</div><div class="risk-kpi-label">⚙️ 活跃需求</div></div>
-    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#4ade80;">${estDays}天</div><div class="risk-kpi-label">📅 预计完成(按速率)</div></div>
-    <div class="risk-kpi-card"><div class="risk-kpi-value" style="color:#c084fc;">${rate}%</div><div class="risk-kpi-label">📊 交付率</div></div>`;
-}
-
-function computeRecentVelocity(items, history) {
-    const now = new Date();
-    const thirtyDaysAgo = new Date(now - 30 * 86400000);
-    let completed = 0;
-    for (const item of items) {
-        if (!isItemCompleted(item)) continue;
-        const updated = item.updated_at || item.updated;
-        if (updated && new Date(updated) >= thirtyDaysAgo) completed++;
-    }
-    return completed > 0 ? (completed / 30) : 0;
-}
-
-// 燃尽图
-let burndownChartInstance = null;
-function renderBurndownChart(items, history) {
-    const canvas = document.getElementById('chart-burndown');
-    if (!canvas) return;
-    if (burndownChartInstance) burndownChartInstance.destroy();
-    
-    const active = items.filter(i => {
-        const s = i.status || '';
-        return !isItemCompleted(i) && !['已取消', '已拒绝'].some(cs => s.includes(cs));
-    }).length;
-    const total = items.filter(i => {
-        const s = i.status || '';
-        return !['已取消', '已拒绝'].some(cs => s.includes(cs));
-    }).length;
-    
-    const dailySnapshots = history.slice(-30);
-    const labels = dailySnapshots.map(s => {
-        const d = s.date || s.snapshot_date || '';
-        return d.length >= 10 ? d.substring(5, 10) : d;
-    });
-    const ideal = labels.map((_, i) => Math.round(total - (total * i / Math.max(1, labels.length - 1))));
-    const actual = dailySnapshots.map(s => (s.completed || s.done || 0));
-    
-    burndownChartInstance = new Chart(canvas, {
-        type: 'line',
-        data: {
-            labels,
-            datasets: [
-                { label: '理想燃尽线', data: ideal, borderColor: 'rgba(148,163,184,0.4)', borderDash: [6, 4], borderWidth: 1.5, pointRadius: 0, fill: false },
-                { label: '实际完成数', data: actual, borderColor: '#38bdf8', backgroundColor: 'rgba(56,189,248,0.1)', borderWidth: 2, pointRadius: 3, pointBackgroundColor: '#38bdf8', fill: true, tension: 0.3 }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } } },
-            scales: {
-                x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.04)' } },
-                y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(255,255,255,0.04)' }, beginAtZero: true }
-            }
-        }
-    });
-}
-
-// 延期预测表
-function renderDelayPrediction(delayedItems) {
-    const container = document.getElementById('risk-delay-table-container');
-    if (!container) return;
-    
-    if (delayedItems.length === 0) {
-        container.innerHTML = '<p style="color:#94a3b8;text-align:center;padding:16px;">✅ 当前没有延期风险需求</p>';
-        return;
-    }
-    
-    const rows = delayedItems.map(d => {
-        const riskClass = d.riskLevel === 'high' ? 'high' : (d.riskLevel === 'medium' ? 'medium' : 'low');
-        const riskLabel = d.riskLevel === 'high' ? '高风险' : (d.riskLevel === 'medium' ? '中风险' : '低风险');
-        const id = d.id || d.workitem_id || '-';
-        const title = (d.title || d.subject || '-').substring(0, 60);
-        const assignee = d.assignee || d.assigned_to || '-';
-        const status = d.status || '-';
-        const days = d.daysSinceCreated || 0;
-        const avg = d.avgCycleDays || 0;
-        
-        return `<tr>
-            <td><span class="dep-table clickable" data-wid="${escapeHtml(String(id))}">${escapeHtml(String(id))}</span></td>
-            <td>${escapeHtml(title)}</td>
-            <td>${escapeHtml(assignee)}</td>
-            <td>${escapeHtml(status)}</td>
-            <td>${days}天</td>
-            <td>${avg}天</td>
-            <td><span class="risk-badge ${riskClass}">${riskLabel}</span></td>
-        </tr>`;
-    }).join('');
-    
-    container.innerHTML = `<table class="dep-table"><thead><tr>
-        <th>ID</th><th>标题</th><th>负责人</th><th>状态</th><th>已耗时</th><th>历史均值</th><th>风险</th>
-    </tr></thead><tbody>${rows}</tbody></table>`;
-    
-    // 事件委托：点击行打开详情
-    container.querySelectorAll('.clickable[data-wid]').forEach(el => {
-        el.addEventListener('click', () => {
-            const wid = el.dataset.wid;
-            const item = (state.latest[state.currentProject] || []).find(i => String(i.id || i.workitem_id || '') === wid);
-            if (item && typeof window.showItemDetailById === 'function') window.showItemDetailById(item);
-        });
-    });
-}
-
-// 依赖检测
-function renderDependencyDetection(items) {
-    const container = document.getElementById('risk-dependency-container');
-    if (!container) return;
-    
-    const criticalKeywords = loadConfig('criticalKeywords', ['支付', '下单', '结算', '登录', '核心', '主流程']);
-    const dependencies = [];
-    
-    for (const item of items) {
-        const title = (item.title || item.subject || '').toLowerCase();
-        for (const kw of criticalKeywords) {
-            if (title.includes(kw.toLowerCase())) {
-                const status = item.status || '';
-                const isDone = isItemCompleted(item);
-                dependencies.push({
-                    id: item.id || item.workitem_id,
-                    title: item.title || item.subject || '-',
-                    status,
-                    isDone,
-                    keyword: kw,
-                    assignee: item.assignee || '-'
-                });
-                break;
-            }
-        }
-    }
-    
-    if (dependencies.length === 0) {
-        container.innerHTML = '<p style="color:#94a3b8;text-align:center;padding:16px;">未检测到关键路径依赖项（可在配置管理中设置关键字）</p>';
-        return;
-    }
-    
-    const undones = dependencies.filter(d => !d.isDone);
-    const dones = dependencies.filter(d => d.isDone);
-    
-    container.innerHTML = `
-    <div style="margin-bottom:12px;"><span style="color:#f87171;font-weight:600;">⚠️ 未完成 ${undones.length}</span> / 总计 ${dependencies.length} 项关键依赖</div>
-    <table class="dep-table"><thead><tr><th>ID</th><th>标题</th><th>状态</th><th>关键字</th><th>负责人</th><th>风险</th></tr></thead><tbody>
-        ${[...undones, ...dones].map(d => {
-            const riskBadge = d.isDone ? '<span class="risk-badge low">已完成</span>' : '<span class="risk-badge high">未完成</span>';
-            return `<tr>
-                <td><span class="dep-table clickable" data-wid="${escapeHtml(String(d.id))}">${escapeHtml(String(d.id))}</span></td>
-                <td>${escapeHtml((d.title || '').substring(0, 40))}</td>
-                <td>${escapeHtml(d.status)}</td>
-                <td><span style="background:rgba(245,158,11,0.15);color:#fbbf24;padding:2px 6px;border-radius:4px;font-size:11px;">${escapeHtml(d.keyword)}</span></td>
-                <td>${escapeHtml(d.assignee)}</td>
-                <td>${riskBadge}</td>
-            </tr>`;
-        }).join('')}
-    </tbody></table>`;
-    
-    container.querySelectorAll('.clickable[data-wid]').forEach(el => {
-        el.addEventListener('click', () => {
-            const wid = el.dataset.wid;
-            const item = items.find(i => String(i.id || i.workitem_id || '') === wid);
-            if (item && typeof window.showItemDetailById === 'function') window.showItemDetailById(item);
-        });
-    });
-}
-
-// 人员效能看板
-function renderEfficiencyBoard(items) {
-    const container = document.getElementById('risk-efficiency-table-container');
-    if (!container) return;
-    
-    const devMap = {};
-    for (const item of items) {
-        const assignee = item.assignee || item.assigned_to || '未指派';
-        if (!devMap[assignee]) devMap[assignee] = { name: assignee, total: 0, completed: 0, delayed: 0, active: 0 };
-        devMap[assignee].total++;
-        
-        const status = item.status || '';
-        if (isItemCompleted(item)) {
-            devMap[assignee].completed++;
-        } else if (!['已取消', '已拒绝'].some(s => status.includes(s))) {
-            devMap[assignee].active++;
-        }
-        
-        const created = item.created_at || item.created;
-        if (created && !isItemCompleted(item) && !['已取消', '已拒绝'].some(s => status.includes(s))) {
-            const days = Math.floor((new Date() - new Date(created)) / 86400000);
-            if (days > 14) devMap[assignee].delayed++;
-        }
-    }
-    
-    const devs = Object.values(devMap).sort((a, b) => b.total - a.total);
-    
-    if (devs.length === 0) {
-        container.innerHTML = '<p style="color:#94a3b8;text-align:center;padding:16px;">暂无数据</p>';
-        return;
-    }
-    
-    container.innerHTML = `<table class="dep-table"><thead><tr>
-        <th>成员</th><th>总需求</th><th>已完成</th><th>活跃中</th><th>延期项</th><th>完成率</th>
-    </tr></thead><tbody>${devs.map(d => {
-        const rate = d.total > 0 ? Math.round((d.completed / d.total) * 100) : 0;
-        const delayedClass = d.delayed > 0 ? 'color:#f87171' : '';
-        return `<tr>
-            <td style="font-weight:500;">${escapeHtml(d.name)}</td>
-            <td>${d.total}</td>
-            <td style="color:#4ade80;">${d.completed}</td>
-            <td>${d.active}</td>
-            <td style="${delayedClass}">${d.delayed}</td>
-            <td>${rate}%</td>
-        </tr>`;
-    }).join('')}</tbody></table>`;
-}
-
-// ---------- P4: 配置管理 ----------
-
-function renderConfigCenter() {
-    const roles = loadConfig('roles', {});
-    const milestones = loadConfig('milestones', {});
-    const criticalKeywords = loadConfig('criticalKeywords', []);
-    const bizLineConfig = loadBusinessLineConfig();
-    
-    document.getElementById('config-roles').value = JSON.stringify(roles, null, 2);
-    document.getElementById('config-milestones').value = JSON.stringify(milestones, null, 2);
-    document.getElementById('config-critical').value = JSON.stringify(criticalKeywords, null, 2);
-    document.getElementById('config-bizline-zhongbao').value = JSON.stringify(bizLineConfig.zhongbao, null, 2);
-    document.getElementById('config-bizline-daodian').value = JSON.stringify(bizLineConfig.daodian, null, 2);
-    
-    document.getElementById('btn-config-roles-save').onclick = () => {
-        try { const v = JSON.parse(document.getElementById('config-roles').value); saveConfig('roles', v); showToast('角色映射已保存'); } catch { showToast('JSON格式错误'); }
-    };
-    document.getElementById('btn-config-milestones-save').onclick = () => {
-        try { const v = JSON.parse(document.getElementById('config-milestones').value); saveConfig('milestones', v); showToast('里程碑已保存'); } catch { showToast('JSON格式错误'); }
-    };
-    document.getElementById('btn-config-critical-save').onclick = () => {
-        try { const v = JSON.parse(document.getElementById('config-critical').value); saveConfig('criticalKeywords', v); showToast('关键字已保存'); } catch { showToast('JSON格式错误'); }
-    };
-    document.getElementById('btn-config-bizline-save').onclick = () => {
-        try {
-            const zhongbao = JSON.parse(document.getElementById('config-bizline-zhongbao').value);
-            const daojia = JSON.parse(document.getElementById('config-bizline-daojia').value);
-            const daodian = JSON.parse(document.getElementById('config-bizline-daodian').value);
-            const other = JSON.parse(document.getElementById('config-bizline-other').value);
-            if (!Array.isArray(zhongbao) || !Array.isArray(daojia) || !Array.isArray(daodian) || !Array.isArray(other)) throw new Error('必须是数组');
-            saveBusinessLineConfig({ zhongbao, daojia, daodian, other });
-            showToast('业务线关键词已保存');
-        } catch (e) { showToast('JSON格式错误: ' + e.message); }
-    };
-    document.getElementById('btn-config-reset').onclick = () => {
-        if (confirm('确定要重置所有配置为默认值吗？')) {
-            localStorage.removeItem('devops_config_roles');
-            localStorage.removeItem('devops_config_milestones');
-            localStorage.removeItem('devops_config_criticalKeywords');
-            localStorage.removeItem('devops_config_businessLine');
-            renderConfigCenter();
-            showToast('配置已重置');
-        }
-    };
-}
-
-function loadConfig(key, defaultVal) {
-    try { return JSON.parse(localStorage.getItem('devops_config_' + key) || 'null') || defaultVal; } catch { return defaultVal; }
-}
-function saveConfig(key, val) {
-    localStorage.setItem('devops_config_' + key, JSON.stringify(val));
-}
-
-// ---------- 详情弹窗增强 ----------
-
-const originalShowItemDetail = typeof showItemDetail === 'function' ? showItemDetail : null;
-const originalShowItemDetailById = typeof showItemDetailById === 'function' ? showItemDetailById : null;
-
-// 劫持 showItemDetailById 来注入增强内容
-if (typeof window !== 'undefined') {
-    const _origById = window.showItemDetailById;
-    window.showItemDetailById = function(itemOrId) {
-        // 兼容传对象和传字符串两种调用方式
-        let item = itemOrId, itemId;
-        if (typeof itemOrId === 'string') {
-            itemId = itemOrId;
-            const items = state.latest[state.currentProject] || [];
-            item = items.find(x => x.id === itemId);
-        } else {
-            itemId = itemOrId.id || itemOrId.workitem_id || '';
-        }
-        // 用原始函数打开详情弹窗
-        if (_origById) {
-            if (typeof _origById === 'function') {
-                typeof itemOrId === 'string' ? _origById(itemOrId) : _origById(itemId);
-            }
-        } else if (item && typeof showItemDetailById === 'function') {
-            showItemDetailById(itemId);
-        }
-        // 增强注入在 modal 打开后
-        if (item) {
-            setTimeout(() => {
-                renderStatusTimeline(item);
-                renderChecklist(item);
-                renderComments(itemId);
-            }, 150);
-        }
-    };
-}
-
-function renderStatusTimeline(item) {
-    const container = document.getElementById('modal-item-timeline');
-    if (!container) return;
-    
-    const transitions = item.transitions || item.status_history || [];
-    const status = item.status || '未知';
-    
-    if (transitions.length === 0) {
-        // 构造一个基于当前状态的简单时间线
-        const created = item.created_at || item.created || '';
-        const assignee = item.assignee || item.assigned_to || '-';
-        container.innerHTML = `<div class="timeline-entry"><div class="timeline-dot"></div><span class="timeline-date">${created ? created.substring(0,10) : '-'}</span><span class="timeline-status">${escapeHtml(status)}</span><span>${escapeHtml(assignee)}</span></div>
-        <div style="font-size:11px;color:#64748b;margin-top:4px;">提示：详细流转数据需从 history DB 读取。当前显示创建时的状态。</div>`;
-        return;
-    }
-    
-    container.innerHTML = transitions.map(t => {
-        const date = t.date || t.created || t.timestamp || '';
-        const statusName = t.status || t.to_status || '';
-        const user = t.user || t.assignee || t.actor || '';
-        return `<div class="timeline-entry"><div class="timeline-dot"></div><span class="timeline-date">${date.length >= 10 ? date.substring(0,10) : date}</span><span class="timeline-status">${escapeHtml(statusName)}</span><span>${escapeHtml(user)}</span></div>`;
-    }).join('');
-}
-
-// Checklist 检查项定义
-const CHECKLIST_RULES = {
-    '待开发': [{ id: 'req-reviewed', label: '需求已评审通过' }, { id: 'design-done', label: '技术方案已完成' }],
-    '开发中': [{ id: 'branch-created', label: '开发分支已创建' }, { id: 'self-tested', label: '自测通过' }],
-    '进行中': [{ id: 'branch-created', label: '开发分支已创建' }, { id: 'self-tested', label: '自测通过' }],
-    '测试中': [{ id: 'test-case-linked', label: '测试用例已关联' }, { id: 'code-reviewed', label: '代码评审通过' }],
-    '待测试': [{ id: 'test-case-linked', label: '测试用例已关联' }, { id: 'code-reviewed', label: '代码评审通过' }],
-    '待验收': [{ id: 'acceptance-doc', label: '验收文档已准备' }, { id: 'prod-config', label: '生产配置已就绪' }],
-    '待发布': [{ id: 'release-note', label: '发布说明已编写' }, { id: 'rollback-plan', label: '回滚方案已确认' }],
-    '待上线': [{ id: 'release-note', label: '发布说明已编写' }, { id: 'rollback-plan', label: '回滚方案已确认' }],
-    '_default': [{ id: 'status-updated', label: '状态已同步更新' }]
-};
-
-function renderChecklist(item) {
-    const container = document.getElementById('modal-item-checklist');
-    if (!container) return;
-    
-    const status = item.status || '';
-    let checkItems = null;
-    
-    for (const [key, items] of Object.entries(CHECKLIST_RULES)) {
-        if (status.includes(key)) { checkItems = items; break; }
-    }
-    if (!checkItems) checkItems = CHECKLIST_RULES._default;
-    
-    const itemId = String(item.id || item.workitem_id || '');
-    const savedChecks = loadChecklistState(itemId);
-    
-    container.innerHTML = checkItems.map(ci => {
-        const checked = savedChecks[ci.id] ? 'checked' : '';
-        return `<div class="checklist-row">
-            <input type="checkbox" id="cl-${ci.id}" data-cid="${ci.id}" data-item="${escapeHtml(itemId)}" ${checked}>
-            <label for="cl-${ci.id}">${ci.label}</label>
-        </div>`;
-    }).join('');
-    
-    container.querySelectorAll('input[type=checkbox]').forEach(cb => {
-        cb.addEventListener('change', function() {
-            saveChecklistItem(itemId, this.dataset.cid, this.checked);
-        });
-    });
-}
-
-function loadChecklistState(itemId) {
-    try { return JSON.parse(localStorage.getItem('devops_checklist_' + itemId) || '{}'); } catch { return {}; }
-}
-
-function saveChecklistItem(itemId, checkId, checked) {
-    const state = loadChecklistState(itemId);
-    if (checked) state[checkId] = true;
-    else delete state[checkId];
-    localStorage.setItem('devops_checklist_' + itemId, JSON.stringify(state));
-}
-
-// 评论功能
-function renderComments(itemId) {
-    const container = document.getElementById('modal-item-comments');
-    const input = document.getElementById('modal-comment-input');
-    const btn = document.getElementById('btn-modal-comment-submit');
-    if (!container) return;
-    
-    const comments = loadComments(itemId);
-    
-    container.innerHTML = comments.length === 0
-        ? '<p style="color:#94a3b8;font-size:12px;">暂无评论，添加第一条讨论</p>'
-        : comments.map(c => `<div class="comment-item"><div class="comment-meta">${escapeHtml(c.author || '匿名')} · ${escapeHtml(c.time || '')}</div><div class="comment-text">${escapeHtml(c.text || '')}</div></div>`).join('');
-    
-    if (btn) {
-        btn.onclick = () => {
-            const text = input ? input.value.trim() : '';
-            if (!text) return;
-            saveComment(itemId, text);
-            if (input) input.value = '';
-            renderComments(itemId);
-        };
-    }
-}
-
-function loadComments(itemId) {
-    try { return JSON.parse(localStorage.getItem('devops_comments_' + itemId) || '[]'); } catch { return []; }
-}
-
-function saveComment(itemId, text) {
-    const comments = loadComments(itemId);
-    comments.push({ text, author: '我', time: new Date().toLocaleString('zh-CN') });
-    localStorage.setItem('devops_comments_' + itemId, JSON.stringify(comments));
-}
