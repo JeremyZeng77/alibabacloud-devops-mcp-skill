@@ -693,6 +693,7 @@ async function loadDashboardData() {
         state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
         state.pmoAdvice = db.pmoAdvice || {};
         state.reconciliationReport = db.reconciliationReport || null;
+        state.reconciliationHistory = db.reconciliationHistory || [];
 
         // Update timestamps
         updateTimestamps();
@@ -731,6 +732,7 @@ async function pollDashboardData() {
             state.leadTimeKPI = db.leadTimeKPI || { mftb: { average: 0, delta: 0 }, mfood: { average: 0, delta: 0 } };
             state.pmoAdvice = db.pmoAdvice || {};
             state.reconciliationReport = db.reconciliationReport || null;
+            state.reconciliationHistory = db.reconciliationHistory || [];
             
             updateTimestamps();
             renderCurrentView();
@@ -932,29 +934,116 @@ function renderCurrentView() {
 // VIEW 5: Render Reconciliation Page
 function renderReconciliationView() {
     const report = state.reconciliationReport;
+    const historyList = state.reconciliationHistory || [];
     
-    // Update last updated timestamp
-    const timeEl = document.getElementById('reconciliation-last-updated');
-    if (timeEl) {
-        if (report && report.compiledAt) {
-            const dt = new Date(report.compiledAt);
-            timeEl.textContent = dt.toLocaleString('zh-CN', { hour12: false });
+    // 1. Populate History Selector Dropdown
+    const historySelect = document.getElementById('reconciliation-history-select');
+    if (historySelect) {
+        historySelect.innerHTML = '';
+        if (historyList.length === 0) {
+            const opt = document.createElement('option');
+            opt.value = '';
+            opt.textContent = '暂无历史报告';
+            historySelect.appendChild(opt);
         } else {
-            timeEl.textContent = '暂无数据';
+            historyList.forEach((h, index) => {
+                const opt = document.createElement('option');
+                opt.value = index;
+                // Add tag for latest active report
+                const label = index === 0 ? `最新：${h.scan_date || '当前周期'}` : `${h.scan_date}`;
+                opt.textContent = label;
+                historySelect.appendChild(opt);
+            });
         }
+        
+        // Register change handler once
+        if (!historySelect.dataset.listenerAdded) {
+            historySelect.addEventListener('change', (e) => {
+                const idx = e.target.value;
+                if (idx !== '') {
+                    const h = historyList[idx];
+                    const isLatest = parseInt(idx) === 0;
+                    renderSelectedReconciliationReport(h, isLatest);
+                }
+            });
+            historySelect.dataset.listenerAdded = 'true';
+        }
+        
+        // Reset selector to select index 0 (latest)
+        historySelect.value = '0';
     }
     
-    // Summary metrics
-    const summary = report ? report.summary : { verifiedCount: 0, incompleteCount: 0, shadowCount: 0, delayCount: 0 };
+    // 2. Render initial report (latest active run)
+    if (report) {
+        // Map reconciliationReport format to match history structure for helper
+        const latestHistoryItem = {
+            scan_date: report.compiledAt ? new Date(report.compiledAt).toLocaleDateString('zh-CN') : '当前周期',
+            summary: report.summary,
+            advice: report.advice
+        };
+        renderSelectedReconciliationReport(latestHistoryItem, true);
+    } else {
+        renderSelectedReconciliationReport(null, false);
+    }
+}
+
+// Helper to render selected report
+function renderSelectedReconciliationReport(hItem, isLatest) {
+    if (!hItem) {
+        // Reset to zeros
+        document.getElementById('reconciler-verified-count').textContent = '0';
+        document.getElementById('reconciler-incomplete-count').textContent = '0';
+        document.getElementById('reconciler-shadow-count').textContent = '0';
+        document.getElementById('reconciler-delay-count').textContent = '0';
+        document.getElementById('reconciliation-advice-container').innerHTML = '<div style="color: var(--text-muted);">暂无纠偏管理报告</div>';
+        return;
+    }
+    
+    // Render last updated timestamp
+    const timeEl = document.getElementById('reconciliation-last-updated');
+    if (timeEl) {
+        timeEl.textContent = hItem.scan_date;
+    }
+    
+    // Render summary metrics
+    const summary = hItem.summary || { verifiedCount: 0, incompleteCount: 0, shadowCount: 0, delayCount: 0 };
     document.getElementById('reconciler-verified-count').textContent = summary.verifiedCount;
     document.getElementById('reconciler-incomplete-count').textContent = summary.incompleteCount;
     document.getElementById('reconciler-shadow-count').textContent = summary.shadowCount;
     document.getElementById('reconciler-delay-count').textContent = summary.delayCount;
     
-    const details = report ? report.details : { verified: [], incomplete: [], shadow: [], delay: [] };
+    // Render PMO advice (Markdown converted)
+    const adviceContainer = document.getElementById('reconciliation-advice-container');
+    if (adviceContainer) {
+        if (hItem.advice) {
+            adviceContainer.innerHTML = parseNarrativeMarkdown(hItem.advice);
+        } else {
+            adviceContainer.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 20px;">本周期暂无编制纠偏建议</div>';
+        }
+    }
     
-    // 1. Incomplete/Failed Smoke Tests
+    // Render details lists (Only show items if it is the latest active run, since history table doesn't record details list)
     const incompleteContainer = document.getElementById('reconciler-incomplete-container');
+    const shadowContainer = document.getElementById('reconciler-shadow-container');
+    const delayContainer = document.getElementById('reconciler-delay-container');
+    const verifiedContainer = document.getElementById('reconciler-verified-container');
+    
+    if (!isLatest) {
+        // Render historical placeholder for details lists
+        const historyPlaceholder = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 16px; font-style: italic; text-align: center; width: 100%;">详情列表仅在选择最新核对周期时展示（历史核对仅保留数据统计与纠偏管理报告）</div>';
+        if (incompleteContainer) incompleteContainer.innerHTML = historyPlaceholder;
+        if (shadowContainer) shadowContainer.innerHTML = historyPlaceholder;
+        if (delayContainer) delayContainer.innerHTML = historyPlaceholder;
+        if (verifiedContainer) verifiedContainer.innerHTML = historyPlaceholder;
+        return;
+    }
+    
+    // Otherwise render full details of the latest active run
+    const details = (state.reconciliationReport && state.reconciliationReport.details) 
+        ? state.reconciliationReport.details 
+        : { verified: [], incomplete: [], shadow: [], delay: [] };
+        
+    // 1. Incomplete/Failed Smoke Tests
     if (incompleteContainer) {
         incompleteContainer.innerHTML = '';
         if (!details.incomplete || details.incomplete.length === 0) {
@@ -990,7 +1079,6 @@ function renderReconciliationView() {
     }
     
     // 2. Shadow Work
-    const shadowContainer = document.getElementById('reconciler-shadow-container');
     if (shadowContainer) {
         shadowContainer.innerHTML = '';
         if (!details.shadow || details.shadow.length === 0) {
@@ -1021,7 +1109,6 @@ function renderReconciliationView() {
     }
     
     // 3. Delivery Delay
-    const delayContainer = document.getElementById('reconciler-delay-container');
     if (delayContainer) {
         delayContainer.innerHTML = '';
         if (!details.delay || details.delay.length === 0) {
@@ -1052,7 +1139,6 @@ function renderReconciliationView() {
     }
     
     // 4. Verified Deployed
-    const verifiedContainer = document.getElementById('reconciler-verified-container');
     if (verifiedContainer) {
         verifiedContainer.innerHTML = '';
         if (!details.verified || details.verified.length === 0) {

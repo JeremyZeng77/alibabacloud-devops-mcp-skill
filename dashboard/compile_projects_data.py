@@ -1212,14 +1212,16 @@ def main():
     weekly_reports = parse_weekly_reports(WEEKLY_REPORTS_PATH)
     print(f"Parsed {len(weekly_reports)} weekly report entries.")
         
-    # Preserve pmoAdvice and reconciliationReport if exists in existing projects_data.json
+    # Preserve pmoAdvice, reconciliationReport, and reconciliationHistory if exists in existing projects_data.json
     existing_pmo_advice = {}
     existing_reconciliation_report = None
+    existing_reconciliation_history = []
     if OUTPUT_PATH.exists():
         try:
             existing_data = json.loads(OUTPUT_PATH.read_text(encoding='utf-8'))
             existing_pmo_advice = existing_data.get('pmoAdvice', {})
             existing_reconciliation_report = existing_data.get('reconciliationReport', None)
+            existing_reconciliation_history = existing_data.get('reconciliationHistory', [])
         except Exception as e:
             print(f"Warning: failed to load existing data for preservation: {e}")
 
@@ -1233,7 +1235,8 @@ def main():
             'mfood': kpi_mfood
         },
         'pmoAdvice': existing_pmo_advice,
-        'reconciliationReport': existing_reconciliation_report
+        'reconciliationReport': existing_reconciliation_report,
+        'reconciliationHistory': existing_reconciliation_history
     }
     
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
