@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-08-25T03:28:17.837400+00:00",
+  "compiledAt": "2026-08-25T04:05:54.880342+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1535",
+        "title": "【用戶端APP】到家營銷活動_用戶端APP設計（含到家12種活動）",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-25",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bc3843db21c4709ca86d8b77ae",
+        "rowText": "【产品类需求】【用戶端APP】到家營銷活動_用戶端APP設計（含到家12種活動）\nID: MFTB-1535 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1530",
         "title": "【極馬】專送騎手統計增加人效",
@@ -3044,6 +3061,40 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1536",
+        "title": "【用戶端APP】到家營銷活動_用戶端APP設計（含到家12種活動）",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-25",
+        "planEnd": "2026-08-31",
+        "createDate": "2026-08-25",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f8445d85e7856f162eab2c3ae0",
+        "rowText": "【产品】【用戶端APP】到家營銷活動_用戶端APP設計（含到家12種活動）\nID: MFTB-1536 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-25 | 排期规划: 2026-08-25 至 2026-08-31",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1532",
+        "title": "【服务端】【大係統】評價功能（含管理後臺、商家 App、用戶端）",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "卓坚",
+        "creator": "卓坚",
+        "iteration": "未规划",
+        "planStart": "2026-08-26",
+        "planEnd": "2026-08-28",
+        "createDate": "2026-08-25",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5aaa8ec38af6107d605199bebb",
+        "rowText": "【任务】【服务端】【大係統】評價功能（含管理後臺、商家 App、用戶端）\nID: MFTB-1532 | 状态: 未开始 | 优先级: 中\n负责人: 卓坚 | 提报人: 卓坚\n迭代版本: 未规划 | 创建时间: 2026-08-25 | 排期规划: 2026-08-26 至 2026-08-28",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1531",
@@ -18414,6 +18465,40 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1534",
+        "title": "【專送合併-騎手工資表】Android，异常申诉那里，点申诉上传图片没反应",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "陈国伟",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-25",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=61b5f6ae0c168c6e042f640f8e",
+        "rowText": "【缺陷】【專送合併-騎手工資表】Android，异常申诉那里，点申诉上传图片没反应\nID: MFTB-1534 | 状态: 待确认 | 优先级: 中\n负责人: 陈国伟 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1533",
+        "title": "【專送合併-騎手工資表】骑手app等级分汇总与里面的等级分流水对不上，没有算到扣分的",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-25",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=097e21f215b115bb72c7624697",
+        "rowText": "【缺陷】【專送合併-騎手工資表】骑手app等级分汇总与里面的等级分流水对不上，没有算到扣分的\nID: MFTB-1533 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1528",
         "title": "【專送合併-騎手工資表】iOS，1、专送骑手异常流水样式问题，2、积分流水样式问题 3、扣分应该是-号，参考UI图",
         "status": "待确认",
@@ -28643,11 +28728,11 @@
       },
       {
         "date": "2026-08-25",
-        "total": 1083,
+        "total": 1086,
         "completed": 812,
         "statusCounts": {
           "已完成": 812,
-          "进行中": 271
+          "进行中": 274
         }
       }
     ],
@@ -41067,5 +41152,6 @@
       "content": "1. **需求池积压严重**：149 项活跃中，95 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（12 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`杨庆龙`（6 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 41 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期665天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期655天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期403天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **128/149 项无排期（85.9%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 14.1%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **37 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34647]`（覃林方, 【團購】-門店列表-新增門店推廣碼，掃碼進入商家主）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34627]`（周昱强, 【用户 app】客服 icon 新增文字说明）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
       "updatedAt": "2026-08-25 11:26:56"
     }
-  }
+  },
+  "reconciliationReport": null
 }
