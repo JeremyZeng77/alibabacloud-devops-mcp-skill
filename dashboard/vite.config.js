@@ -35,10 +35,11 @@ export default defineConfig({
                 const distData = join(root, 'dist', 'data');
                 mkdirSync(distData, { recursive: true });
 
-                // 复制数据文件到 dist/data/
+                // 复制数据文件到 dist/data/ 和 dist/ 根目录
                 const dataFile = join(root, 'data', 'projects_data.json');
                 if (existsSync(dataFile)) {
                     cpSync(dataFile, join(distData, 'projects_data.json'));
+                    cpSync(dataFile, join(root, 'dist', 'projects_data.json'));
                 }
 
                 // 复制认证配置文件和关键路径配置到 dist/
