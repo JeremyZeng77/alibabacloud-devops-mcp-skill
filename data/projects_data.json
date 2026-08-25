@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-25T08:48:47.187359+00:00",
+  "compiledAt": "2026-08-25T09:49:55.265445+00:00",
   "latest": {
     "mftb": [
       {
@@ -243,7 +243,7 @@
       {
         "id": "MFTB-1484",
         "title": "【極馬】騎手調度設置可搶（推單到眾包）更新調度站點",
-        "status": "待处理",
+        "status": "待测试",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -253,7 +253,7 @@
         "createDate": "2026-08-19",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4a8dcf695cfe7ab230b8157e99",
-        "rowText": "【产品类需求】【極馬】騎手調度設置可搶（推單到眾包）更新調度站點\nID: MFTB-1484 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】騎手調度設置可搶（推單到眾包）更新調度站點\nID: MFTB-1484 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3114,6 +3114,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1551",
+        "title": "【前端】【大系统】自取单折扣",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-25",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=72e1b7677916cfeeadec017bdb",
+        "rowText": "【任务】【前端】【大系统】自取单折扣\nID: MFTB-1551 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1550",
         "title": "【iOS】【極馬】專送APP可上傳APP日誌",
         "status": "提交测试",
@@ -3269,7 +3286,7 @@
       {
         "id": "MFTB-1531",
         "title": "【服务端】【極馬】騎手調度設置可搶（推單到眾包）更新調度站點",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "刘志敏",
         "creator": "刘志敏",
@@ -3279,7 +3296,7 @@
         "createDate": "2026-08-25",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=504235783d2f2660b93907955e",
-        "rowText": "【任务】【服务端】【極馬】騎手調度設置可搶（推單到眾包）更新調度站點\nID: MFTB-1531 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: 2026-08-25 至 2026-08-25",
+        "rowText": "【任务】【服务端】【極馬】騎手調度設置可搶（推單到眾包）更新調度站點\nID: MFTB-1531 | 状态: 提交测试 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: 2026-08-25 至 2026-08-25",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4680,17 +4697,17 @@
       {
         "id": "MFTB-1395",
         "title": "【iOS】【專送】APP 部分頁面優化",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "陈万里",
         "creator": "陈万里",
         "iteration": "SH-v1.0.0",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-08-21",
+        "planEnd": "2026-08-25",
         "createDate": "2026-08-14",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bf1a9506a0dc61c7e7933349d3",
-        "rowText": "【任务】【iOS】【專送】APP 部分頁面優化\nID: MFTB-1395 | 状态: 未开始 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-14 | 排期规划: - 至 -",
+        "rowText": "【任务】【iOS】【專送】APP 部分頁面優化\nID: MFTB-1395 | 状态: 提交测试 | 优先级: 中\n负责人: 陈万里 | 提报人: 陈万里\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-14 | 排期规划: 2026-08-21 至 2026-08-25",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -25998,19 +26015,19 @@
         "category": "Req"
       },
       {
-        "id": "MF-34647",
-        "title": "【團購】-門店列表-新增門店推廣碼，掃碼進入商家主頁",
+        "id": "MF-34659",
+        "title": "超市首页，显示红包瓷片",
         "status": "测试环境验证通过",
         "priority": "低",
-        "assignee": "覃林方",
-        "creator": "覃林方",
-        "iteration": "V7.4.0（？）",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "0.0.0",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2026-08-06",
+        "createDate": "2026-08-13",
         "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=ad6f6e0d01be70c676c877981e",
-        "rowText": "【产品类需求】【團購】-門店列表-新增門店推廣碼，掃碼進入商家主頁\nID: MF-34647 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=56283bc1ae07328e3f2c8d25ec",
+        "rowText": "【产品类需求】超市首页，显示红包瓷片\nID: MF-34659 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 0.0.0 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
       },
@@ -26132,23 +26149,6 @@
         "rowText": "【产品类需求】【POS机】新POS机兼容测试\nID: MF-24798 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: 未规划 | 创建时间: 2024-08-27 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
-      },
-      {
-        "id": "MF-34673",
-        "title": "【测试】【舊係統】團購到店-半年售顯示數據調整",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "冼嘉业",
-        "creator": "冼嘉业",
-        "iteration": "未规划",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-08-24",
-        "workItemType": "測試",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=f9843dd1b0427fac379bed1dd6",
-        "rowText": "【測試】【测试】【舊係統】團購到店-半年售顯示數據調整\nID: MF-34673 | 状态: 待处理 | 优先级: 低\n负责人: 冼嘉业 | 提报人: 冼嘉业\n迭代版本: 未规划 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Task"
       },
       {
         "id": "MF-34667",
@@ -28923,15 +28923,6 @@
       {
         "date": "2026-08-22",
         "total": 1069,
-        "completed": 810,
-        "statusCounts": {
-          "已完成": 810,
-          "进行中": 259
-        }
-      },
-      {
-        "date": "2026-08-23",
-        "total": 1069,
         "completed": 811,
         "statusCounts": {
           "已完成": 811,
@@ -28939,21 +28930,30 @@
         }
       },
       {
+        "date": "2026-08-23",
+        "total": 1069,
+        "completed": 812,
+        "statusCounts": {
+          "已完成": 812,
+          "进行中": 257
+        }
+      },
+      {
         "date": "2026-08-24",
         "total": 1081,
-        "completed": 813,
+        "completed": 814,
         "statusCounts": {
-          "已完成": 813,
-          "进行中": 268
+          "已完成": 814,
+          "进行中": 267
         }
       },
       {
         "date": "2026-08-25",
-        "total": 1096,
-        "completed": 820,
+        "total": 1097,
+        "completed": 823,
         "statusCounts": {
-          "已完成": 820,
-          "进行中": 276
+          "已完成": 823,
+          "进行中": 274
         }
       }
     ],
@@ -40678,33 +40678,42 @@
       },
       {
         "date": "2026-08-06",
-        "total": 181,
+        "total": 180,
         "completed": 33,
         "statusCounts": {
           "已完成": 33,
-          "进行中": 148
+          "进行中": 147
         }
       },
       {
         "date": "2026-08-07",
-        "total": 181,
+        "total": 180,
         "completed": 34,
         "statusCounts": {
           "已完成": 34,
-          "进行中": 147
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-08",
-        "total": 181,
+        "total": 180,
         "completed": 34,
         "statusCounts": {
           "已完成": 34,
-          "进行中": 147
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-09",
+        "total": 180,
+        "completed": 34,
+        "statusCounts": {
+          "已完成": 34,
+          "进行中": 146
+        }
+      },
+      {
+        "date": "2026-08-10",
         "total": 181,
         "completed": 34,
         "statusCounts": {
@@ -40713,30 +40722,21 @@
         }
       },
       {
-        "date": "2026-08-10",
-        "total": 182,
-        "completed": 34,
-        "statusCounts": {
-          "已完成": 34,
-          "进行中": 148
-        }
-      },
-      {
         "date": "2026-08-11",
-        "total": 182,
+        "total": 181,
         "completed": 34,
         "statusCounts": {
           "已完成": 34,
-          "进行中": 148
+          "进行中": 147
         }
       },
       {
         "date": "2026-08-12",
-        "total": 183,
+        "total": 182,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 147
+          "进行中": 146
         }
       },
       {
@@ -40769,10 +40769,10 @@
       {
         "date": "2026-08-16",
         "total": 185,
-        "completed": 39,
+        "completed": 40,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 146
+          "已完成": 40,
+          "进行中": 145
         }
       },
       {
@@ -40840,20 +40840,20 @@
       },
       {
         "date": "2026-08-24",
-        "total": 187,
+        "total": 186,
         "completed": 41,
         "statusCounts": {
           "已完成": 41,
-          "进行中": 146
+          "进行中": 145
         }
       },
       {
         "date": "2026-08-25",
-        "total": 187,
+        "total": 186,
         "completed": 41,
         "statusCounts": {
           "已完成": 41,
-          "进行中": 146
+          "进行中": 145
         }
       }
     ]
@@ -41367,35 +41367,24 @@
   "pmoAdvice": {
     "mftb": {
       "content": "1. **测试堰塞湖：531 项卡在测试管道，占活跃项 61.6%**：当前 862 项活跃中，494 项「提交测试」、22 项「测试中」、15 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期138天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期138天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期137天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期137天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 86 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 16 项（MFTB-1529, MFTB-1519, MFTB-1518, MFTB-1516, MFTB-1514, MFTB-1524），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待处理；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1478]` 支付渠道（徐子旺）开发中；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`陈剑` 50 项活跃中 32 项超期（64%）；`刘志敏` 45 项活跃中 36 项超期（80%）；`张健伟` 45 项活跃中 42 项超期（93%）；`甄荣康` 42 项活跃中 34 项超期（81%）；`唐光伟` 41 项活跃中 35 项超期（85%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **412 项超期 + 437 项无排期（50.7%）+ 152 项闲置 = 排期纪律需加强**：862 项活跃中 437 项（50.7%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-08-25 16:35:14"
+      "updatedAt": "2026-08-25 17:48:20"
     },
     "mfood": {
       "content": "1. **需求池积压严重**：149 项活跃中，95 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（12 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`杨庆龙`（6 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 41 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期665天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期655天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期403天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **128/149 项无排期（85.9%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 14.1%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **37 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34647]`（覃林方, 【團購】-門店列表-新增門店推廣碼，掃碼進入商家主）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34627]`（周昱强, 【用户 app】客服 icon 新增文字说明）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-08-25 16:35:14"
+      "updatedAt": "2026-08-25 17:48:20"
     }
   },
   "reconciliationReport": {
-    "compiledAt": "2026-08-25T16:35:14.309755",
+    "compiledAt": "2026-08-25T17:48:19.921183",
     "summary": {
-      "verifiedCount": 150604,
-      "incompleteCount": 711,
-      "shadowCount": 526,
-      "delayCount": 211
+      "verifiedCount": 150501,
+      "incompleteCount": 0,
+      "shadowCount": 513,
+      "delayCount": 210
     },
-    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.0%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **冒烟失败 (Incomplete) = 711 项**：页面已上线但抛出 JS 异常或 API 接口请求失败。这通常说明前端与服务端接口契约不一致，或新功能测试不充分。\n- **影子开发 (Shadow) = 526 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 211 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 1 (质量治理)**：督促研发查看核对面板下方的报错详情，定位 JS 报错堆栈，并在今日内修复使其通过冒烟测试。\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
+    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.5%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 513 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 210 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
     "details": {
       "verified": [
-        {
-          "workitem_id": "MFTB-1529",
-          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
         {
           "workitem_id": "MFTB-1529",
           "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
@@ -41469,7 +41458,7 @@
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "驗證碼生成器",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -41479,8 +41468,8 @@
           "workitem_status": "待处理",
           "project": "mftb",
           "feature_type": "UI_Menu",
-          "feature_name": "神策分群",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
+          "feature_name": "虛擬號碼管理",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -41934,400 +41923,20 @@
           "feature_path": "/sys/black-white-user/add",
           "smoke_status": "Passed",
           "error_logs": []
-        }
-      ],
-      "incomplete": [
-        {
-          "workitem_id": "MFTB-1529",
-          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "减配送费活动",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d530e3d6e60457fde2f8a6c2d55c1}"
-          ]
         },
         {
           "workitem_id": "MFTB-1529",
           "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
           "workitem_status": "待处理",
           "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1360",
-          "workitem_title": "【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1360",
-          "workitem_title": "【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1011",
-          "workitem_title": "【大係統】團購到店-用戶端自定義商圈相關功能（待出 UI）",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "自定義商圈",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-863",
-          "workitem_title": "【大係統】-團購到店-新增退款原因配置",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "退款原因",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-852",
-          "workitem_title": "【大係統】團購自定義商圈-新增商圈的介紹和標籤配置",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "自定義商圈",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-828",
-          "workitem_title": "【大係統】基礎滿減紅包創建（含膨脹+隨機活動）",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "隨機活動",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/delivery-list",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-699",
-          "workitem_title": "團購的門店列表-店鋪設置中新增合同信息與費率查詢（參考外賣）",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "門店列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-515",
-          "workitem_title": "【大係統】團購到店-自定義商圈功能",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "自定義商圈",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1436",
-          "workitem_title": "【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1436",
-          "workitem_title": "【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1433",
-          "workitem_title": "【後端】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1433",
-          "workitem_title": "【後端】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1359",
-          "workitem_title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1359",
-          "workitem_title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1326",
-          "workitem_title": "【mfood iOS 用户端】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表&中通需求變更",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "减配送费活动",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d530e3d6e60457fde2f8a6c2d55c1}"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1326",
-          "workitem_title": "【mfood iOS 用户端】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表&中通需求變更",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1324",
-          "workitem_title": "【mfood iOS 用户端】【大係統】用戶APP裝修_灯笼位需求变更",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "减配送费活动",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d530e3d6e60457fde2f8a6c2d55c1}"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1324",
-          "workitem_title": "【mfood iOS 用户端】【大係統】用戶APP裝修_灯笼位需求变更",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1323",
-          "workitem_title": "【mfood iOS用户端】【大係統】用戶 APP——修改活動推薦模塊",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "减配送费活动",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d530e3d6e60457fde2f8a6c2d55c1}"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1323",
-          "workitem_title": "【mfood iOS用户端】【大係統】用戶 APP——修改活動推薦模塊",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1322",
-          "workitem_title": "【mfood iOS 用户端】【大係統】用戶 APP——中通廣告",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "减配送费活动",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d530e3d6e60457fde2f8a6c2d55c1}"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1322",
-          "workitem_title": "【mfood iOS 用户端】【大係統】用戶 APP——中通廣告",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1321",
-          "workitem_title": "【mfood iOS用户端】【大係統】用戶 APP—-banner",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "减配送费活动",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d530e3d6e60457fde2f8a6c2d55c1}"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1321",
-          "workitem_title": "【mfood iOS用户端】【大係統】用戶 APP—-banner",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1288",
-          "workitem_title": "【测试】【大係統】團購到店-用戶端自定義商圈相關功能（待出 UI）",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "自定義商圈",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1208",
-          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "會員等級",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1208",
-          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "交易渠道管理",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/service-facilities",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "workitem_id": "MFTB-1208",
-          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "审批中心",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/service-facilities",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
+          "feature_type": "API_Endpoint",
+          "feature_name": "修改用户头像",
+          "feature_path": "/sys/user/update-avatar",
+          "smoke_status": "Passed",
+          "error_logs": []
         }
       ],
+      "incomplete": [],
       "shadow": [
         {
           "feature_type": "UI_Menu",
@@ -42353,72 +41962,9 @@
         {
           "feature_type": "UI_Menu",
           "feature_name": "退款理由",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/home-business/business-category",
           "smoke_status": "Passed",
           "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "門店營業品類",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "團購門店列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "积分抵扣模板",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "門店分類(主管級設置)",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "門店服務設施",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "推廣贈送",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "消費明細",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
         },
         {
           "feature_type": "UI_Menu",
@@ -42485,24 +42031,31 @@
         },
         {
           "feature_type": "UI_Menu",
-          "feature_name": "全局配置",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/home-business/business-category",
+          "feature_name": "减配送费活动",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
           "smoke_status": "Failed",
           "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
+            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d63ef45044efa1d6251b1b00a01bd}"
           ]
         },
         {
           "feature_type": "UI_Menu",
           "feature_name": "全局配置",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/home-business/business-category",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
           "smoke_status": "Passed",
           "error_logs": []
         },
         {
           "feature_type": "UI_Menu",
           "feature_name": "獎品列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/delivery-fee-reduction-activity",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/delivery-list",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -42530,7 +42083,7 @@
         {
           "feature_type": "UI_Menu",
           "feature_name": "推廣贈送",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/sift-list",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -42543,21 +42096,59 @@
         },
         {
           "feature_type": "UI_Menu",
-          "feature_name": "任務列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/delivery-list",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
+          "feature_name": "篩選管理",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
+          "smoke_status": "Passed",
+          "error_logs": []
         },
         {
           "feature_type": "UI_Menu",
-          "feature_name": "减配送费活动",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
-          "smoke_status": "Failed",
-          "error_logs": [
-            "VisitException: ElementHandle.scroll_into_view_if_needed: Timeout 30000ms exceeded.\nCall log:\n  - attempting scroll into view action\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n    - waiting 20ms\n    2 × waiting for element to be stable\n      - element is not visible\n    - retrying scroll into view action\n      - waiting 100ms\n    57 × waiting for element to be stable\n       - element is not visible\n     - retrying scroll into view action\n       - waiting 500ms\n"
-          ]
+          "feature_name": "頁面投放廣告",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/delivery-fee-reduction-activity",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "極馬地圖配置",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/task-management/task-page/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "[商圈区域有效等级]同步",
+          "feature_path": "/delivery/region/valid/level/_sync",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "批量调整支付渠道排序",
+          "feature_path": "/payment/channel-config/sort",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "新增/更新App版本",
+          "feature_path": "/activity/app-version/save",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "提交退款",
+          "feature_path": "/marketingTool/search/hot-revive/sales-order/submitRefundOrder",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "商户使用明细导出",
+          "feature_path": "/merchant/balance/mch-usage-export",
+          "smoke_status": "Passed",
+          "error_logs": []
         }
       ],
       "delay": [
@@ -42918,12 +42509,12 @@
     {
       "scan_date": "2026-08-25",
       "summary": {
-        "verifiedCount": 150604,
-        "incompleteCount": 711,
-        "shadowCount": 526,
-        "delayCount": 211
+        "verifiedCount": 150501,
+        "incompleteCount": 0,
+        "shadowCount": 513,
+        "delayCount": 210
       },
-      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.0%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **冒烟失败 (Incomplete) = 711 项**：页面已上线但抛出 JS 异常或 API 接口请求失败。这通常说明前端与服务端接口契约不一致，或新功能测试不充分。\n- **影子开发 (Shadow) = 526 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 211 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 1 (质量治理)**：督促研发查看核对面板下方的报错详情，定位 JS 报错堆栈，并在今日内修复使其通过冒烟测试。\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
+      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.5%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 513 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 210 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
     }
   ]
 }
