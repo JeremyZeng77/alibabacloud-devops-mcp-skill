@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-25T04:05:54.880342+00:00",
+  "compiledAt": "2026-08-25T04:11:28.546656+00:00",
   "latest": {
     "mftb": [
       {
@@ -41146,12 +41146,1548 @@
   "pmoAdvice": {
     "mftb": {
       "content": "1. **测试堰塞湖：531 项卡在测试管道，占活跃项 61.6%**：当前 862 项活跃中，494 项「提交测试」、22 项「测试中」、15 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期138天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期138天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期137天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期137天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 86 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 16 项（MFTB-1529, MFTB-1519, MFTB-1518, MFTB-1516, MFTB-1514, MFTB-1524），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待处理；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1478]` 支付渠道（徐子旺）开发中；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`陈剑` 50 项活跃中 32 项超期（64%）；`刘志敏` 45 项活跃中 36 项超期（80%）；`张健伟` 45 项活跃中 42 项超期（93%）；`甄荣康` 42 项活跃中 34 项超期（81%）；`唐光伟` 41 项活跃中 35 项超期（85%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **412 项超期 + 437 项无排期（50.7%）+ 152 项闲置 = 排期纪律需加强**：862 项活跃中 437 项（50.7%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-08-25 11:26:56"
+      "updatedAt": "2026-08-25 12:10:09"
     },
     "mfood": {
       "content": "1. **需求池积压严重**：149 项活跃中，95 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（12 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`杨庆龙`（6 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 41 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期665天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期655天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期403天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **128/149 项无排期（85.9%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 14.1%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **37 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34647]`（覃林方, 【團購】-門店列表-新增門店推廣碼，掃碼進入商家主）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34627]`（周昱强, 【用户 app】客服 icon 新增文字说明）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-08-25 11:26:56"
+      "updatedAt": "2026-08-25 12:10:09"
     }
   },
-  "reconciliationReport": null
+  "reconciliationReport": {
+    "compiledAt": "2026-08-25T12:10:09.750312",
+    "summary": {
+      "verifiedCount": 150082,
+      "incompleteCount": 630,
+      "shadowCount": 528,
+      "delayCount": 211
+    },
+    "details": {
+      "verified": [
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "管理后台登录日志",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/system/permission/admin-user",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "用戶意见反馈",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/list",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "用戶收貨地圖特殊收录",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/device-freeze",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "用户冻结列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/default-avatar",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "用户列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/verification-code",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "设备号冻结列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/freeze",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "驗證碼生成器",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "神策分群",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/member/level",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑用户",
+          "feature_path": "/sys-user/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户不感兴趣门店管理]撤销",
+          "feature_path": "/user/dislike/revoke",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑用户",
+          "feature_path": "/sys/user/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑用户",
+          "feature_path": "/merchant-user/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "异步同步指定神策用户分群",
+          "feature_path": "/sys/sensorsdata-user-group/sync",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户黑&白名单管理]解除白名单",
+          "feature_path": "/sys/black-white-user/revoke",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "新增短信登录验证码",
+          "feature_path": "/user/sms-login/add",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "修改密码",
+          "feature_path": "/user/change-password",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑用户",
+          "feature_path": "/merchant/user/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "登录日志列表分页",
+          "feature_path": "/sys-user-login-log/page",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑默认头像",
+          "feature_path": "/user/sys-avatar/edit",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "登录日志列表分页",
+          "feature_path": "/sys/user-login-log/page",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "用户解冻",
+          "feature_path": "/user/unfreeze",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "解除",
+          "feature_path": "/user/device-limit/revoked",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户不感兴趣门店管理]撤销",
+          "feature_path": "/user/store-dislike/revoke",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "重置短信发送次数",
+          "feature_path": "/user/reset-sms",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户不感兴趣门店管理]分页列表",
+          "feature_path": "/user/dislike/page",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户黑&白名单管理]解除白名单",
+          "feature_path": "/sys/black-white-user/revoke",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "修改个人信息",
+          "feature_path": "/sys/user/update-self-info",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "用户解冻",
+          "feature_path": "/user/unfreeze",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑默认头像",
+          "feature_path": "/user/sys-avatar/edit",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户不感兴趣门店管理]撤销",
+          "feature_path": "/user/store-dislike/revoke",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "新增短信登录验证码",
+          "feature_path": "/user/sms-login/add",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "解除",
+          "feature_path": "/user/device-limit/revoked",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "异步同步全部神策用户分群",
+          "feature_path": "/sys/sensorsdata-user-group/sync-all",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户黑&白名单管理]新增",
+          "feature_path": "/sys/black-white-user/add",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑用户",
+          "feature_path": "/merchant/user/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "登录日志列表分页",
+          "feature_path": "/sys/user-login-log/page",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "短信验证码分页列表",
+          "feature_path": "/user/sms-login/page",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "查询用户权限",
+          "feature_path": "/user/list-user-permissions",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "获取系统用户的授权门店列表（分页，支持按集团过滤和搜索）",
+          "feature_path": "/store/store-select/sys-user-stores",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑用户",
+          "feature_path": "/sys/user/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "解冻用户登录（手动）",
+          "feature_path": "/merchant/user/unfreeze",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "设置集团主账号角色",
+          "feature_path": "/merchant-user/set-merchant-role",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "修改个人信息",
+          "feature_path": "/sys-user/update-self-info",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "批量删除默认头像",
+          "feature_path": "/user/sys-avatar/del-batch",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "冻结",
+          "feature_path": "/user/device-limit/freeze",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户不感兴趣门店管理]分页列表",
+          "feature_path": "/user/store-dislike/page",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "修改用户头像",
+          "feature_path": "/sys-user/update-avatar",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户不感兴趣门店管理]操作日志列表",
+          "feature_path": "/user/dislike/log-list",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "[用户黑&白名单管理]新增",
+          "feature_path": "/sys/black-white-user/add",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "修改用户头像",
+          "feature_path": "/sys/user/update-avatar",
+          "smoke_status": "Passed",
+          "error_logs": []
+        }
+      ],
+      "incomplete": [
+        {
+          "workitem_id": "MFTB-1529",
+          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1360",
+          "workitem_title": "【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1360",
+          "workitem_title": "【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1011",
+          "workitem_title": "【大係統】團購到店-用戶端自定義商圈相關功能（待出 UI）",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "自定義商圈",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-863",
+          "workitem_title": "【大係統】-團購到店-新增退款原因配置",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "退款原因",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-852",
+          "workitem_title": "【大係統】團購自定義商圈-新增商圈的介紹和標籤配置",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "自定義商圈",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-828",
+          "workitem_title": "【大係統】基礎滿減紅包創建（含膨脹+隨機活動）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "隨機活動",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/delivery-list",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-699",
+          "workitem_title": "團購的門店列表-店鋪設置中新增合同信息與費率查詢（參考外賣）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "門店列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-515",
+          "workitem_title": "【大係統】團購到店-自定義商圈功能",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "自定義商圈",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1436",
+          "workitem_title": "【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1436",
+          "workitem_title": "【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1433",
+          "workitem_title": "【後端】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1433",
+          "workitem_title": "【後端】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1359",
+          "workitem_title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1359",
+          "workitem_title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1326",
+          "workitem_title": "【mfood iOS 用户端】【大係統】用戶 APP 裝修_新增開屏頁&推薦列表&中通需求變更",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1324",
+          "workitem_title": "【mfood iOS 用户端】【大係統】用戶APP裝修_灯笼位需求变更",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1323",
+          "workitem_title": "【mfood iOS用户端】【大係統】用戶 APP——修改活動推薦模塊",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1322",
+          "workitem_title": "【mfood iOS 用户端】【大係統】用戶 APP——中通廣告",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1321",
+          "workitem_title": "【mfood iOS用户端】【大係統】用戶 APP—-banner",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1288",
+          "workitem_title": "【测试】【大係統】團購到店-用戶端自定義商圈相關功能（待出 UI）",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "自定義商圈",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/user/store-whitelist",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "交易渠道管理",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "审批中心",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "對賬結果核對",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "批次查询",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "明细查询",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "欠款对账",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "消费对账",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "workitem_id": "MFTB-1208",
+          "workitem_title": "【服务端】【大係統】用戶端-商家主頁门店收藏",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "账户余额",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/store-business/points-deduction-template",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        }
+      ],
+      "shadow": [
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "交易渠道管理",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/finance/merchant-reconciliation/debt-reconciliation",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "對賬結果核對",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "任務列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/signin-management/signin/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "退款理由",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "門店營業品類",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "團購門店列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "积分抵扣模板",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "門店分類(主管級設置)",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "門店服務設施",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "推廣贈送",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "消費明細",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "詞庫管理",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/promotion-tools/ad-sales",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "銷售定價",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/promotion-tools/waterfall-strategy",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "商家意见",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "未入驻商家",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "门店基础信息管理",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/role-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "集团列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "集团權限(運營主管)",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/group-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "集團門店品牌库管理",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/contract-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "門店分類(主管級設置)",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "减配送费活动",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/sift-list",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8d14bc1a89805418c890276d6a123b}"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "全局配置",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/home-business/business-category",
+          "smoke_status": "Failed",
+          "error_logs": [
+            "VisitException: ElementHandle.click: Element is not visible\nCall log:\n  - attempting click action\n    - scrolling into view if needed\n"
+          ]
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "全局配置",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/home-business/business-category",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "會員等級",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/system/test-whitelist",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "獎品列表",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/delivery-fee-reduction-activity",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "用戶收貨地圖黑名單",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/system/basic-settings/map-collection",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "白名单(內外測試人員)",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/system/basic-settings/map-black-name",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "每日簽到",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/award-management/award-page/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "推廣贈送",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/promotion-tools/search-dict",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "消費明細",
+          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/promotion-tools/gift-management/gift",
+          "smoke_status": "Passed",
+          "error_logs": []
+        }
+      ],
+      "delay": [
+        {
+          "workitem_id": "MFTB-1506",
+          "workitem_title": "【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1363",
+          "workitem_title": "【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1310",
+          "workitem_title": "【广告系统】-词库管理",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "冯松"
+        },
+        {
+          "workitem_id": "MFTB-1269",
+          "workitem_title": "【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1237",
+          "workitem_title": "【極馬】打賞報表增加字段",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1056",
+          "workitem_title": "【大係統】业务入口管理后台配置项需求变更",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-999",
+          "workitem_title": "【大系统】虚拟号码后台",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-996",
+          "workitem_title": "【大系统】特殊区域管理",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-934",
+          "workitem_title": "【眾包】提現卡支持中行&綁卡增加審核",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-899",
+          "workitem_title": "【眾包】急賞送",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-879",
+          "workitem_title": "【極馬】掛起並結算按鈕優化",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-862",
+          "workitem_title": "【大係統】團購到店-門店裝修優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "覃林方"
+        },
+        {
+          "workitem_id": "MFTB-855",
+          "workitem_title": "【極馬】騎手驗證碼校驗增加後台開關",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-839",
+          "workitem_title": "【需求變更】有效訂單統計邏輯調整",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-834",
+          "workitem_title": "【調度】工資表-導出成本分析增加用戶小費統計",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-797",
+          "workitem_title": "【極馬】專送&眾包APP已完成訂單限制發送IM消息",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-779",
+          "workitem_title": "【極馬】專送&眾包APP增加高溫喝水提示",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-773",
+          "workitem_title": "【調度】增加額外距離配送時長上限",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-709",
+          "workitem_title": "【眾包】轉單流水增加結算時間",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-700",
+          "workitem_title": "【大係統】 用戶 APP 裝修——底部導航欄&跳轉設置跳轉",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-652",
+          "workitem_title": "【需求變更】騎手取餐前隱藏客戶電話信息",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-644",
+          "workitem_title": "【眾包】極馬後台權限增加管理員標識",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-638",
+          "workitem_title": "【大系统】小程序登录/微信/mpay/BOC授权",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-609",
+          "workitem_title": "【專送合併】騎手入職離職v1.2",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-577",
+          "workitem_title": "【眾包】騎手單筆提現金額限額",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-541",
+          "workitem_title": "【眾包】調度流量監控-在線騎手統計邏輯調整",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-540",
+          "workitem_title": "【眾包】極馬APP已取餐-退款訂單，返餐按鈕優化",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-538",
+          "workitem_title": "【專送&眾包】極馬APP-騎手取餐增加驗證碼校驗",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-537",
+          "workitem_title": "【眾包】部分菜單增加導出功能",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-530",
+          "workitem_title": "【大係統】團購-積分抵扣",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "覃林方"
+        },
+        {
+          "workitem_id": "MFTB-520",
+          "workitem_title": "【眾包】 先鋒隊騎手區分訂單平台",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-517",
+          "workitem_title": "【專送合併】已取餐有效單掛起/退款-結算流程優化",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-510",
+          "workitem_title": "【需求變更】針對「平臺佣金模板」中，價格收費和距離收費設置優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-507",
+          "workitem_title": "【大係統】團購-門店相關的內容改動（20260603）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "覃林方"
+        },
+        {
+          "workitem_id": "MFTB-404",
+          "workitem_title": "【大係統】商家意見反饋",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-427",
+          "workitem_title": "【眾包】調度流量監控",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-326",
+          "workitem_title": "【專送合併】騎手考勤",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-311",
+          "workitem_title": "【極馬專送】APP應用市場預覽圖",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-309",
+          "workitem_title": "【大係統】MFTB-品牌管理功能",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "覃林方"
+        },
+        {
+          "workitem_id": "MFTB-539",
+          "workitem_title": "【眾包】極馬APP增加網絡延遲校驗提示",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-232",
+          "workitem_title": "【大係統】集團角色，做集團數據隔離",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-85",
+          "workitem_title": "【大係統】MFTB -團購-業務門店功能",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "覃林方"
+        },
+        {
+          "workitem_id": "MFTB-75",
+          "workitem_title": "【大係統】商户通推广金",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "李古悦"
+        },
+        {
+          "workitem_id": "MFTB-58",
+          "workitem_title": "【大係統】管理後臺賬號登錄部分",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-30",
+          "workitem_title": "【大係統】MFTB 商圈管理",
+          "workitem_status": "产品验收通过",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-29",
+          "workitem_title": "【大係統】 MFTB 到家品類管理",
+          "workitem_status": "产品验收通过",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-26",
+          "workitem_title": "【大係統】MFTB 公司門店管理",
+          "workitem_status": "产品验收通过",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-25",
+          "workitem_title": "【大係統】MFTB 集團管理",
+          "workitem_status": "产品验收通过",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-10",
+          "workitem_title": "【大係統】C 端用戶中心合併管理 _v1.0.0",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "赵嘉颖"
+        },
+        {
+          "workitem_id": "MFTB-9",
+          "workitem_title": "【專送合併】騎手統計報表",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        }
+      ]
+    }
+  }
 }
