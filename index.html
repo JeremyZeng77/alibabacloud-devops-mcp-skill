@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="./assets/index-95lkCVmd.js"></script>
+  <script type="module" crossorigin src="./assets/index-BOxUz61C.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-DC3qx-lh.css">
 </head>
 <body>
@@ -682,71 +682,105 @@
                     </div>
                 </div>
 
-                <!-- Summary Cards -->
-                <div class="weekly-grid" style="margin-bottom: 24px;">
-                    <div class="weekly-card" style="padding: 16px;">
-                        <div class="metric-num" id="reconciler-verified-count" style="color: #4ade80; font-size: 28px; font-weight: 700;">0</div>
-                        <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">已部署且冒烟通过 (Verified)</div>
-                    </div>
-                    <div class="weekly-card" style="padding: 16px;">
-                        <div class="metric-num" id="reconciler-incomplete-count" style="color: #fb923c; font-size: 28px; font-weight: 700;">0</div>
-                        <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">部署不完整 / 冒烟失败 (Incomplete)</div>
-                    </div>
-                    <div class="weekly-card" style="padding: 16px;">
-                        <div class="metric-num" id="reconciler-shadow-count" style="color: #f472b6; font-size: 28px; font-weight: 700;">0</div>
-                        <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">影子开发 (未登记需求) (Shadow)</div>
-                    </div>
-                    <div class="weekly-card" style="padding: 16px;">
-                        <div class="metric-num" id="reconciler-delay-count" style="color: #f87171; font-size: 28px; font-weight: 700;">0</div>
-                        <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">交付滞后 (云效完成但未部署) (Delay)</div>
-                    </div>
-                </div>
+                <!-- Split Layout Container -->
+                <div class="reconciliation-flex-container" style="display: flex; gap: 24px; align-items: start; flex-wrap: wrap; width: 100%;">
+                    
+                    <!-- Left Side: Summary Cards and Details Panels -->
+                    <div class="reconciliation-left" style="flex: 2; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+                        
+                        <!-- Summary Cards -->
+                        <div class="weekly-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px;">
+                            <div class="weekly-card" style="padding: 16px;">
+                                <div class="metric-num" id="reconciler-verified-count" style="color: #4ade80; font-size: 28px; font-weight: 700;">0</div>
+                                <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">已部署且冒烟通过 (Verified)</div>
+                            </div>
+                            <div class="weekly-card" style="padding: 16px;">
+                                <div class="metric-num" id="reconciler-incomplete-count" style="color: #fb923c; font-size: 28px; font-weight: 700;">0</div>
+                                <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">部署不完整 / 冒烟失败 (Incomplete)</div>
+                            </div>
+                            <div class="weekly-card" style="padding: 16px;">
+                                <div class="metric-num" id="reconciler-shadow-count" style="color: #f472b6; font-size: 28px; font-weight: 700;">0</div>
+                                <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">影子开发 (未登记需求) (Shadow)</div>
+                            </div>
+                            <div class="weekly-card" style="padding: 16px;">
+                                <div class="metric-num" id="reconciler-delay-count" style="color: #f87171; font-size: 28px; font-weight: 700;">0</div>
+                                <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">交付滞后 (云效完成但未部署) (Delay)</div>
+                            </div>
+                        </div>
 
-                <!-- Details Panels -->
-                <div class="audit-panels-container">
-                    <!-- Section 1: Incomplete & Failed Smoke Tests -->
-                    <div class="audit-section-card">
-                        <div class="audit-section-header" style="border-left-color: #fb923c;">
-                            <span class="audit-section-icon" style="color: #fb923c;">⚠️</span>
-                            <h3 class="audit-section-title">部署不完整 / 冒烟测试失败列表</h3>
-                        </div>
-                        <div class="audit-section-content" id="reconciler-incomplete-container">
-                            <div class="empty-placeholder">暂无异常部署数据</div>
+                        <!-- Details Panels -->
+                        <div class="audit-panels-container" style="display: flex; flex-direction: column; gap: 20px;">
+                            <!-- Section 1: Incomplete & Failed Smoke Tests -->
+                            <div class="audit-section-card">
+                                <div class="audit-section-header" style="border-left-color: #fb923c;">
+                                    <span class="audit-section-icon" style="color: #fb923c;">⚠️</span>
+                                    <h3 class="audit-section-title">部署不完整 / 冒烟测试失败列表</h3>
+                                </div>
+                                <div class="audit-section-content" id="reconciler-incomplete-container">
+                                    <div class="empty-placeholder">暂无异常部署数据</div>
+                                </div>
+                            </div>
+
+                            <!-- Section 2: Shadow Work (Features deployed but no Yunxiao ticket) -->
+                            <div class="audit-section-card">
+                                <div class="audit-section-header" style="border-left-color: #f472b6;">
+                                    <span class="audit-section-icon" style="color: #f472b6;">🕵️‍♂️</span>
+                                    <h3 class="audit-section-title">影子开发审计（管理后台/API中存在，但云效无登记）</h3>
+                                </div>
+                                <div class="audit-section-content" id="reconciler-shadow-container">
+                                    <div class="empty-placeholder">暂无影子开发数据</div>
+                                </div>
+                            </div>
+
+                            <!-- Section 3: Delivery Delay (Yunxiao complete but no feature on server) -->
+                            <div class="audit-section-card">
+                                <div class="audit-section-header" style="border-left-color: #f87171;">
+                                    <span class="audit-section-icon" style="color: #f87171;">⏳</span>
+                                    <h3 class="audit-section-title">交付滞后审计（云效中已标记完成，但实际未检测到部署）</h3>
+                                </div>
+                                <div class="audit-section-content" id="reconciler-delay-container">
+                                    <div class="empty-placeholder">暂无滞后交付数据</div>
+                                </div>
+                            </div>
+
+                            <!-- Section 4: Verified Deployed -->
+                            <div class="audit-section-card">
+                                <div class="audit-section-header" style="border-left-color: #4ade80;">
+                                    <span class="audit-section-icon" style="color: #4ade80;">✅</span>
+                                    <h3 class="audit-section-title">已部署且冒烟通过列表</h3>
+                                </div>
+                                <div class="audit-section-content" id="reconciler-verified-container">
+                                    <div class="empty-placeholder">暂无已验证部署数据</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Section 2: Shadow Work (Features deployed but no Yunxiao ticket) -->
-                    <div class="audit-section-card">
-                        <div class="audit-section-header" style="border-left-color: #f472b6;">
-                            <span class="audit-section-icon" style="color: #f472b6;">🕵️‍♂️</span>
-                            <h3 class="audit-section-title">影子开发审计（管理后台/API中存在，但云效无登记）</h3>
+                    <!-- Right Side: PMO Advice & History Selector -->
+                    <div class="reconciliation-right" style="flex: 1; min-width: 320px; display: flex; flex-direction: column; gap: 20px;">
+                        
+                        <!-- History Selector -->
+                        <div class="weekly-card" style="padding: 16px; background: var(--bg-surface);">
+                            <h3 style="font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                                📅 <span>选择核对周期历史</span>
+                            </h3>
+                            <select id="reconciliation-history-select" class="weekly-select" style="width: 100%; height: 38px; background: rgba(0, 0, 0, 0.3); border: 1px solid var(--border-color); border-radius: var(--radius-sm); color: var(--text-primary); padding: 0 10px; cursor: pointer; outline: none;">
+                                <!-- Dynamically loaded -->
+                            </select>
                         </div>
-                        <div class="audit-section-content" id="reconciler-shadow-container">
-                            <div class="empty-placeholder">暂无影子开发数据</div>
+
+                        <!-- PMO Advice Panel -->
+                        <div class="weekly-card" style="background: var(--bg-surface); overflow: hidden; display: flex; flex-direction: column;">
+                            <div class="weekly-card-header card-badge-gold" style="padding: 12px 16px;">
+                                <span class="weekly-card-icon">💡</span>
+                                <h3 class="weekly-card-title">部署纠偏与管理报告</h3>
+                            </div>
+                            <div class="weekly-card-content" id="reconciliation-advice-container" style="padding: 16px; font-size: 13.5px; line-height: 1.6; color: var(--text-secondary); max-height: 550px; overflow-y: auto;">
+                                <!-- Injected by JS -->
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Section 3: Delivery Delay (Yunxiao complete but no feature on server) -->
-                    <div class="audit-section-card">
-                        <div class="audit-section-header" style="border-left-color: #f87171;">
-                            <span class="audit-section-icon" style="color: #f87171;">⏳</span>
-                            <h3 class="audit-section-title">交付滞后审计（云效中已标记完成，但实际未检测到部署）</h3>
-                        </div>
-                        <div class="audit-section-content" id="reconciler-delay-container">
-                            <div class="empty-placeholder">暂无滞后交付数据</div>
-                        </div>
-                    </div>
-
-                    <!-- Section 4: Verified Deployed -->
-                    <div class="audit-section-card">
-                        <div class="audit-section-header" style="border-left-color: #4ade80;">
-                            <span class="audit-section-icon" style="color: #4ade80;">✅</span>
-                            <h3 class="audit-section-title">已部署且冒烟通过列表</h3>
-                        </div>
-                        <div class="audit-section-content" id="reconciler-verified-container">
-                            <div class="empty-placeholder">暂无已验证部署数据</div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
