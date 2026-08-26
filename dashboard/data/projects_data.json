@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-26T03:39:23.368061+00:00",
+  "compiledAt": "2026-08-26T03:49:11.665355+00:00",
   "latest": {
     "mftb": [
       {
@@ -1406,10 +1406,10 @@
         "iteration": "MFTB-v1.0.1",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2026-07-16",
+        "createDate": "2026-07-15",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fcf141dc657b3230b39d4643f4",
-        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-15 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -15074,10 +15074,10 @@
         "iteration": "MFTB-v1.0.1",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2026-05-28",
+        "createDate": "2026-05-27",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=417617a21c5b94e05182b63d50",
-        "rowText": "【任务】【前端】【大係統】商家意見反饋\nID: MFTB-422 | 状态: 提交测试 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-05-28 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大係統】商家意見反饋\nID: MFTB-422 | 状态: 提交测试 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-05-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -26007,10 +26007,10 @@
         "iteration": "产品需求池",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2024-03-24",
+        "createDate": "2024-03-23",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=2673c2a10ff8f9b66b85575e07",
-        "rowText": "【产品类需求】增加超市指定營銷活動-重新二审\nID: MF-21297 | 状态: 需求暂停 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 产品需求池 | 创建时间: 2024-03-24 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】增加超市指定營銷活動-重新二审\nID: MF-21297 | 状态: 需求暂停 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 产品需求池 | 创建时间: 2024-03-23 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
       },
@@ -28156,11 +28156,11 @@
       },
       {
         "date": "2026-05-27",
-        "total": 247,
+        "total": 248,
         "completed": 202,
         "statusCounts": {
           "已完成": 202,
-          "进行中": 45
+          "进行中": 46
         }
       },
       {
@@ -28184,10 +28184,10 @@
       {
         "date": "2026-05-30",
         "total": 257,
-        "completed": 208,
+        "completed": 209,
         "statusCounts": {
-          "已完成": 208,
-          "进行中": 49
+          "已完成": 209,
+          "进行中": 48
         }
       },
       {
@@ -28597,11 +28597,11 @@
       },
       {
         "date": "2026-07-15",
-        "total": 692,
+        "total": 693,
         "completed": 558,
         "statusCounts": {
           "已完成": 558,
-          "进行中": 134
+          "进行中": 135
         }
       },
       {
@@ -32910,11 +32910,11 @@
       },
       {
         "date": "2024-03-23",
-        "total": 3,
+        "total": 4,
         "completed": 0,
         "statusCounts": {
           "已完成": 0,
-          "进行中": 3
+          "进行中": 4
         }
       },
       {
