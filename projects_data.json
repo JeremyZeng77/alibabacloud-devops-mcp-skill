@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-25T16:08:39.468290+00:00",
+  "compiledAt": "2026-08-26T01:24:33.741660+00:00",
   "latest": {
     "mftb": [
       {
@@ -28871,14 +28871,23 @@
       {
         "date": "2026-08-20",
         "total": 1064,
-        "completed": 804,
+        "completed": 803,
         "statusCounts": {
-          "已完成": 804,
-          "进行中": 260
+          "已完成": 803,
+          "进行中": 261
         }
       },
       {
         "date": "2026-08-21",
+        "total": 1069,
+        "completed": 809,
+        "statusCounts": {
+          "已完成": 809,
+          "进行中": 260
+        }
+      },
+      {
+        "date": "2026-08-22",
         "total": 1069,
         "completed": 810,
         "statusCounts": {
@@ -28887,34 +28896,34 @@
         }
       },
       {
-        "date": "2026-08-22",
-        "total": 1069,
-        "completed": 811,
-        "statusCounts": {
-          "已完成": 811,
-          "进行中": 258
-        }
-      },
-      {
         "date": "2026-08-23",
         "total": 1069,
-        "completed": 812,
+        "completed": 810,
         "statusCounts": {
-          "已完成": 812,
-          "进行中": 257
+          "已完成": 810,
+          "进行中": 259
         }
       },
       {
         "date": "2026-08-24",
         "total": 1081,
-        "completed": 814,
+        "completed": 812,
         "statusCounts": {
-          "已完成": 814,
-          "进行中": 267
+          "已完成": 812,
+          "进行中": 269
         }
       },
       {
         "date": "2026-08-25",
+        "total": 1097,
+        "completed": 823,
+        "statusCounts": {
+          "已完成": 823,
+          "进行中": 274
+        }
+      },
+      {
+        "date": "2026-08-26",
         "total": 1097,
         "completed": 823,
         "statusCounts": {
@@ -40735,77 +40744,86 @@
       {
         "date": "2026-08-16",
         "total": 183,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 144
+          "已完成": 38,
+          "进行中": 145
         }
       },
       {
         "date": "2026-08-17",
         "total": 183,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 144
+          "已完成": 38,
+          "进行中": 145
         }
       },
       {
         "date": "2026-08-18",
         "total": 183,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 144
+          "已完成": 38,
+          "进行中": 145
         }
       },
       {
         "date": "2026-08-19",
         "total": 183,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 144
+          "已完成": 38,
+          "进行中": 145
         }
       },
       {
         "date": "2026-08-20",
         "total": 183,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 144
+          "已完成": 38,
+          "进行中": 145
         }
       },
       {
         "date": "2026-08-21",
         "total": 184,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-22",
         "total": 184,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-23",
         "total": 184,
-        "completed": 39,
+        "completed": 38,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 145
+          "已完成": 38,
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-24",
+        "total": 184,
+        "completed": 38,
+        "statusCounts": {
+          "已完成": 38,
+          "进行中": 146
+        }
+      },
+      {
+        "date": "2026-08-25",
         "total": 184,
         "completed": 39,
         "statusCounts": {
@@ -40814,7 +40832,7 @@
         }
       },
       {
-        "date": "2026-08-25",
+        "date": "2026-08-26",
         "total": 184,
         "completed": 39,
         "statusCounts": {
@@ -41322,8 +41340,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 12.6,
-      "delta": 7.6
+      "average": 12.8,
+      "delta": 7.8
     },
     "mfood": {
       "average": 0.0,
@@ -41333,22 +41351,22 @@
   "pmoAdvice": {
     "mftb": {
       "content": "1. **测试堰塞湖：531 项卡在测试管道，占活跃项 61.6%**：当前 862 项活跃中，494 项「提交测试」、22 项「测试中」、15 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期139天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期139天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期138天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期138天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 88 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 16 项（MFTB-1529, MFTB-1519, MFTB-1518, MFTB-1516, MFTB-1514, MFTB-1524），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待处理；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1478]` 支付渠道（徐子旺）开发中；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`陈剑` 50 项活跃中 32 项超期（64%）；`刘志敏` 45 项活跃中 36 项超期（80%）；`张健伟` 45 项活跃中 42 项超期（93%）；`甄荣康` 42 项活跃中 35 项超期（83%）；`唐光伟` 41 项活跃中 36 项超期（88%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **417 项超期 + 437 项无排期（50.7%）+ 152 项闲置 = 排期纪律需加强**：862 项活跃中 437 项（50.7%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-08-26 00:07:24"
+      "updatedAt": "2026-08-26 09:23:17"
     },
     "mfood": {
       "content": "1. **需求池积压严重**：149 项活跃中，95 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（12 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`杨庆龙`（6 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 41 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期666天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期656天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期404天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **128/149 项无排期（85.9%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 14.1%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **37 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34647]`（覃林方, 【團購】-門店列表-新增門店推廣碼，掃碼進入商家主）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34627]`（周昱强, 【用户 app】客服 icon 新增文字说明）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-08-26 00:07:24"
+      "updatedAt": "2026-08-26 09:23:17"
     }
   },
   "reconciliationReport": {
-    "compiledAt": "2026-08-26T00:07:24.294009",
+    "compiledAt": "2026-08-26T09:23:16.788417",
     "summary": {
-      "verifiedCount": 150095,
+      "verifiedCount": 297133,
       "incompleteCount": 0,
-      "shadowCount": 513,
-      "delayCount": 210
+      "shadowCount": 496,
+      "delayCount": 133
     },
-    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.5%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 513 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 210 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
+    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 496 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 133 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
     "details": {
       "verified": [
         {
@@ -41934,43 +41952,8 @@
         },
         {
           "feature_type": "UI_Menu",
-          "feature_name": "詞庫管理",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/promotion-tools/ad-sales",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "銷售定價",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/promotion-tools/waterfall-strategy",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "商家意见",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "未入驻商家",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
           "feature_name": "门店基础信息管理",
           "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/role-management",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "集团列表",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -41990,18 +41973,11 @@
         },
         {
           "feature_type": "UI_Menu",
-          "feature_name": "門店分類(主管級設置)",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/search-management/search-config/global-config",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
           "feature_name": "减配送费活动",
           "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
           "smoke_status": "Failed",
           "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8dbcc6d98ce93e14dabb7a606c62bc}"
+            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8e3eceeee6d9c9c1ffe5ef57b854d6}"
           ]
         },
         {
@@ -42076,7 +42052,7 @@
         },
         {
           "feature_type": "UI_Menu",
-          "feature_name": "極馬地圖配置",
+          "feature_name": "門店加价管理",
           "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/task-management/task-page/index",
           "smoke_status": "Passed",
           "error_logs": []
@@ -42115,6 +42091,48 @@
           "feature_path": "/merchant/balance/mch-usage-export",
           "smoke_status": "Passed",
           "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑角色",
+          "feature_path": "/sys-role/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "新增或编辑人气商家销售定价",
+          "feature_path": "/marketingTool/search/sales-pricing/popular-merchant/save",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "新增/编辑菜单",
+          "feature_path": "/sys-menu/save",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "提交人气商家广告订单",
+          "feature_path": "/marketingTool/search/sales-order/popular-merchant/submit",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "人工补跑指定日期的支付财务日汇总",
+          "feature_path": "/payment/reconcile-summary/generate",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "编辑商家APP角色",
+          "feature_path": "/sys-manager-merchant-role/update",
+          "smoke_status": "Passed",
+          "error_logs": []
         }
       ],
       "delay": [
@@ -42131,13 +42149,6 @@
           "workitem_status": "已上线",
           "project": "mftb",
           "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-1310",
-          "workitem_title": "【广告系统】-词库管理",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "冯松"
         },
         {
           "workitem_id": "MFTB-1269",
@@ -42168,13 +42179,6 @@
           "assignee": "刘龙振海"
         },
         {
-          "workitem_id": "MFTB-996",
-          "workitem_title": "【大系统】特殊区域管理",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "刘龙振海"
-        },
-        {
           "workitem_id": "MFTB-934",
           "workitem_title": "【眾包】提現卡支持中行&綁卡增加審核",
           "workitem_status": "测试环境验证通过",
@@ -42196,13 +42200,6 @@
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-862",
-          "workitem_title": "【大係統】團購到店-門店裝修優化",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "覃林方"
-        },
-        {
           "workitem_id": "MFTB-855",
           "workitem_title": "【極馬】騎手驗證碼校驗增加後台開關",
           "workitem_status": "已上线",
@@ -42212,20 +42209,6 @@
         {
           "workitem_id": "MFTB-839",
           "workitem_title": "【需求變更】有效訂單統計邏輯調整",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-834",
-          "workitem_title": "【調度】工資表-導出成本分析增加用戶小費統計",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-797",
-          "workitem_title": "【極馬】專送&眾包APP已完成訂單限制發送IM消息",
           "workitem_status": "已上线",
           "project": "mftb",
           "assignee": "龙颖之"
@@ -42252,13 +42235,6 @@
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-700",
-          "workitem_title": "【大係統】 用戶 APP 裝修——底部導航欄&跳轉設置跳轉",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
           "workitem_id": "MFTB-652",
           "workitem_title": "【需求變更】騎手取餐前隱藏客戶電話信息",
           "workitem_status": "已完成",
@@ -42278,13 +42254,6 @@
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "刘龙振海"
-        },
-        {
-          "workitem_id": "MFTB-609",
-          "workitem_title": "【專送合併】騎手入職離職v1.2",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-577",
@@ -42315,13 +42284,6 @@
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-537",
-          "workitem_title": "【眾包】部分菜單增加導出功能",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-530",
           "workitem_title": "【大係統】團購-積分抵扣",
           "workitem_status": "测试环境验证通过",
@@ -42336,13 +42298,6 @@
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-517",
-          "workitem_title": "【專送合併】已取餐有效單掛起/退款-結算流程優化",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-510",
           "workitem_title": "【需求變更】針對「平臺佣金模板」中，價格收費和距離收費設置優化",
           "workitem_status": "测试环境验证通过",
@@ -42350,29 +42305,8 @@
           "assignee": "廖荣"
         },
         {
-          "workitem_id": "MFTB-507",
-          "workitem_title": "【大係統】團購-門店相關的內容改動（20260603）",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "覃林方"
-        },
-        {
-          "workitem_id": "MFTB-404",
-          "workitem_title": "【大係統】商家意見反饋",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "刘龙振海"
-        },
-        {
           "workitem_id": "MFTB-427",
           "workitem_title": "【眾包】調度流量監控",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-326",
-          "workitem_title": "【專送合併】騎手考勤",
           "workitem_status": "已上线",
           "project": "mftb",
           "assignee": "龙颖之"
@@ -42406,13 +42340,6 @@
           "assignee": "周昱强"
         },
         {
-          "workitem_id": "MFTB-85",
-          "workitem_title": "【大係統】MFTB -團購-業務門店功能",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "覃林方"
-        },
-        {
           "workitem_id": "MFTB-75",
           "workitem_title": "【大係統】商户通推广金",
           "workitem_status": "测试环境验证通过",
@@ -42441,13 +42368,6 @@
           "assignee": "廖荣"
         },
         {
-          "workitem_id": "MFTB-26",
-          "workitem_title": "【大係統】MFTB 公司門店管理",
-          "workitem_status": "产品验收通过",
-          "project": "mftb",
-          "assignee": "廖荣"
-        },
-        {
           "workitem_id": "MFTB-25",
           "workitem_title": "【大係統】MFTB 集團管理",
           "workitem_status": "产品验收通过",
@@ -42455,16 +42375,114 @@
           "assignee": "廖荣"
         },
         {
-          "workitem_id": "MFTB-10",
-          "workitem_title": "【大係統】C 端用戶中心合併管理 _v1.0.0",
+          "workitem_id": "MFTB-1",
+          "workitem_title": "【大係統】管理後臺權限管理模塊",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
-          "assignee": "赵嘉颖"
+          "assignee": "周昱强"
         },
         {
-          "workitem_id": "MFTB-9",
-          "workitem_title": "【專送合併】騎手統計報表",
-          "workitem_status": "已上线",
+          "workitem_id": "MFTB-1492",
+          "workitem_title": "【大系统】自取单折扣",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-1481",
+          "workitem_title": "【產品】【MFTB】商家 app 框架",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1463",
+          "workitem_title": "【大係統】到家業務商家收藏有禮",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-1409",
+          "workitem_title": "【產品】【極馬】打賞報表增加字段",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1393",
+          "workitem_title": "【產品】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1389",
+          "workitem_title": "【测试】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "黄金凤"
+        },
+        {
+          "workitem_id": "MFTB-1379",
+          "workitem_title": "【大系統】配送費減免",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-1346",
+          "workitem_title": "【UI】【大係統】商家營銷活動入口",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "许思浩"
+        },
+        {
+          "workitem_id": "MFTB-1330",
+          "workitem_title": "【测试】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "黄金凤"
+        },
+        {
+          "workitem_id": "MFTB-1303",
+          "workitem_title": "【產品】【大係統】商家 APP_外卖订单，商家活动标签",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1251",
+          "workitem_title": "【测试】【大系统】虚拟号码后台",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
+          "workitem_id": "MFTB-1226",
+          "workitem_title": "【测试】【眾包】提現卡支持中行&綁卡增加審核",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MFTB-1185",
+          "workitem_title": "【测试】【大係統】业务入口管理后台配置项需求变更",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "曹晴晴"
+        },
+        {
+          "workitem_id": "MFTB-1159",
+          "workitem_title": "【產品】【大係統】商家等级",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1132",
+          "workitem_title": "【产品】【大系统】支付渠道",
+          "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "刘龙振海"
         }
@@ -42475,12 +42493,12 @@
     {
       "scan_date": "2026-08-26",
       "summary": {
-        "verifiedCount": 150095,
+        "verifiedCount": 297133,
         "incompleteCount": 0,
-        "shadowCount": 513,
-        "delayCount": 210
+        "shadowCount": 496,
+        "delayCount": 133
       },
-      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.5%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 513 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 210 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
+      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 496 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 133 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
     },
     {
       "scan_date": "2026-08-25",
