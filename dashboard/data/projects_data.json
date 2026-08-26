@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-08-26T04:44:31.954236+00:00",
+  "compiledAt": "2026-08-26T06:56:00.400323+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1557",
+        "title": "【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b82ce1f64f119e04257b06f710",
+        "rowText": "【产品类需求】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；\nID: MFTB-1557 | 状态: 待处理 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1548",
         "title": "【商家 App】新客首單減",
@@ -21,7 +38,7 @@
       },
       {
         "id": "MFTB-1546",
-        "title": "【商家 app】 集點發券",
+        "title": "【商家 app】 集點返券",
         "status": "待处理",
         "priority": "中",
         "assignee": "周昱强",
@@ -32,7 +49,7 @@
         "createDate": "2026-08-25",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5aa09df00026dcb2570fc748c9",
-        "rowText": "【产品类需求】【商家 app】 集點發券\nID: MFTB-1546 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 未规划 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【商家 app】 集點返券\nID: MFTB-1546 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 未规划 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -175,7 +192,7 @@
       {
         "id": "MFTB-1512",
         "title": "【大係統】紅包管理新增“指定商品分類”“指定商品”",
-        "status": "已评审（待开发）",
+        "status": "开发中",
         "priority": "中",
         "assignee": "溫浩源",
         "creator": "溫浩源",
@@ -185,7 +202,7 @@
         "createDate": "2026-08-21",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7f95299487a4d5b29e332e8baf",
-        "rowText": "【产品类需求】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1512 | 状态: 已评审（待开发） | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-21 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1512 | 状态: 开发中 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-21 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1388,11 +1405,11 @@
         "creator": "刘龙振海",
         "iteration": "MFTB-v1.0.1",
         "planStart": "2026-07-30",
-        "planEnd": "2026-07-31",
+        "planEnd": "",
         "createDate": "2026-07-16",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00822fa40f47af3da90b428255",
-        "rowText": "【产品类需求】【大系统】虚拟号码后台（虛擬號碼管理）\nID: MFTB-999 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-30 至 2026-07-31",
+        "rowText": "【产品类需求】【大系统】虚拟号码后台（虛擬號碼管理）\nID: MFTB-999 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: 2026-07-30 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3114,6 +3131,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1558",
+        "title": "【服务端】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f3895ef06cc371d60791bbf7b4",
+        "rowText": "【任务】【服务端】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示\nID: MFTB-1558 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1554",
         "title": "【前端】【大系统】支付渠道-财务部分",
         "status": "未开始",
@@ -3150,17 +3184,17 @@
       {
         "id": "MFTB-1552",
         "title": "【前端】【大係統】紅包管理新增“指定商品分類”“指定商品”",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
         "iteration": "未规划",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-08-26",
+        "planEnd": "2026-08-28",
         "createDate": "2026-08-26",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1ce48e0a9274235288a0ce6871",
-        "rowText": "【任务】【前端】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1552 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1552 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: 2026-08-26 至 2026-08-28",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4697,7 +4731,7 @@
       {
         "id": "MFTB-1401",
         "title": "【服务端】【大係統】管理后台訂單相關",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "林泽斌",
@@ -4707,7 +4741,7 @@
         "createDate": "2026-08-14",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=17bb68104affa20c1db2b3aa92",
-        "rowText": "【任务】【服务端】【大係統】管理后台訂單相關\nID: MFTB-1401 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-24 至 2026-08-26",
+        "rowText": "【任务】【服务端】【大係統】管理后台訂單相關\nID: MFTB-1401 | 状态: 提交测试 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-14 | 排期规划: 2026-08-24 至 2026-08-26",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -18703,6 +18737,40 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1556",
+        "title": "【專送合併-騎手工資表】删除计薪骑手列表，骑手编号返回错了骑手id",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=17f52bbe04c75f7d900f3efa30",
+        "rowText": "【缺陷】【專送合併-騎手工資表】删除计薪骑手列表，骑手编号返回错了骑手id\nID: MFTB-1556 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1555",
+        "title": "【專送合併-騎手工資表】添加计薪骑手列表，筛选骑手职位、注册状态，没有筛选对数据",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "黄金凤",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c8d9bf5821ba75b89e986f88e3",
+        "rowText": "【缺陷】【專送合併-騎手工資表】添加计薪骑手列表，筛选骑手职位、注册状态，没有筛选对数据\nID: MFTB-1555 | 状态: 待确认 | 优先级: 中\n负责人: 刘志敏 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1545",
         "title": "【專送合併-騎手工資表】骑手等级流水，退回和扣分的运单号没显示出来",
         "status": "已修复",
@@ -24485,6 +24553,23 @@
     ],
     "mfood": [
       {
+        "id": "MF-34676",
+        "title": "【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=07ca0c37a4a42fba8ceb01fba2",
+        "rowText": "【产品类需求】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；\nID: MF-34676 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
         "id": "MF-34671",
         "title": "无忧行优化",
         "status": "待处理",
@@ -26183,6 +26268,23 @@
         "rowText": "【产品类需求】【POS机】新POS机兼容测试\nID: MF-24798 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: 未规划 | 创建时间: 2024-08-27 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
+      },
+      {
+        "id": "MF-34677",
+        "title": "【测试】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "贺志成",
+        "creator": "贺志成",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=d8be2a749c4f04507ba61806be",
+        "rowText": "【測試】【测试】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；\nID: MF-34677 | 状态: 待处理 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Task"
       },
       {
         "id": "MF-34667",
@@ -28975,11 +29077,11 @@
       },
       {
         "date": "2026-08-26",
-        "total": 1100,
-        "completed": 823,
+        "total": 1102,
+        "completed": 824,
         "statusCounts": {
-          "已完成": 823,
-          "进行中": 277
+          "已完成": 824,
+          "进行中": 278
         }
       }
     ],
@@ -40884,11 +40986,11 @@
       },
       {
         "date": "2026-08-26",
-        "total": 184,
+        "total": 186,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 145
+          "进行中": 147
         }
       }
     ]
