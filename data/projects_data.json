@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-26T01:37:02.847567+00:00",
+  "compiledAt": "2026-08-26T02:50:31.181140+00:00",
   "latest": {
     "mftb": [
       {
@@ -447,7 +447,7 @@
       {
         "id": "MFTB-1425",
         "title": "【極馬】專送合併迭代-部分頁面優化",
-        "status": "测试环境验证通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -457,7 +457,7 @@
         "createDate": "2026-08-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f020f67228f37481d934810887",
-        "rowText": "【产品类需求】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1425 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送合併迭代-部分頁面優化\nID: MFTB-1425 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3112,6 +3112,57 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1554",
+        "title": "【前端】【大系统】支付渠道-统计部分",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e41c3560e35366f93f3b592c91",
+        "rowText": "【任务】【前端】【大系统】支付渠道-统计部分\nID: MFTB-1554 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1553",
+        "title": "【服务端】【大系统】自取单折扣",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘付益",
+        "creator": "刘付益",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e422fb7916ef74c8b477b482f7",
+        "rowText": "【任务】【服务端】【大系统】自取单折扣\nID: MFTB-1553 | 状态: 未开始 | 优先级: 中\n负责人: 刘付益 | 提报人: 刘付益\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1552",
+        "title": "【前端】【大係統】紅包管理新增“指定商品分類”“指定商品”",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "未规划",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-26",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1ce48e0a9274235288a0ce6871",
+        "rowText": "【任务】【前端】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1552 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1551",
@@ -18654,7 +18705,7 @@
       {
         "id": "MFTB-1545",
         "title": "【專送合併-騎手工資表】骑手等级流水，退回和扣分的运单号没显示出来",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "洪喜彬",
         "creator": "黄金凤",
@@ -18664,7 +18715,7 @@
         "createDate": "2026-08-25",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c983b3f70dbe9a5bc03cb4baef",
-        "rowText": "【缺陷】【專送合併-騎手工資表】骑手等级流水，退回和扣分的运单号没显示出来\nID: MFTB-1545 | 状态: 待确认 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併-騎手工資表】骑手等级流水，退回和扣分的运单号没显示出来\nID: MFTB-1545 | 状态: 已修复 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -18773,7 +18824,7 @@
       {
         "id": "MFTB-1526",
         "title": "【專送合併-騎手工資表】骑手等级流水申诉退回记录，应该是+号加分",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "洪喜彬",
         "creator": "黄金凤",
@@ -18783,7 +18834,7 @@
         "createDate": "2026-08-24",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b762fde8605936352e18f35dd2",
-        "rowText": "【缺陷】【專送合併-騎手工資表】骑手等级流水申诉退回记录，应该是+号加分\nID: MFTB-1526 | 状态: 待确认 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【專送合併-騎手工資表】骑手等级流水申诉退回记录，应该是+号加分\nID: MFTB-1526 | 状态: 已修复 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 黄金凤\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-24 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -28924,11 +28975,11 @@
       },
       {
         "date": "2026-08-26",
-        "total": 1097,
+        "total": 1100,
         "completed": 823,
         "statusCounts": {
           "已完成": 823,
-          "进行中": 274
+          "进行中": 277
         }
       }
     ],
@@ -41351,22 +41402,24 @@
   "pmoAdvice": {
     "mftb": {
       "content": "1. **测试堰塞湖：531 项卡在测试管道，占活跃项 61.6%**：当前 862 项活跃中，494 项「提交测试」、22 项「测试中」、15 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期139天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期139天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期138天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期138天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 88 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 16 项（MFTB-1529, MFTB-1519, MFTB-1518, MFTB-1516, MFTB-1514, MFTB-1524），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待处理；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1478]` 支付渠道（徐子旺）开发中；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`陈剑` 50 项活跃中 32 项超期（64%）；`刘志敏` 45 项活跃中 36 项超期（80%）；`张健伟` 45 项活跃中 42 项超期（93%）；`甄荣康` 42 项活跃中 35 项超期（83%）；`唐光伟` 41 项活跃中 36 项超期（88%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **417 项超期 + 437 项无排期（50.7%）+ 152 项闲置 = 排期纪律需加强**：862 项活跃中 437 项（50.7%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-08-26 09:23:17"
+      "updatedAt": "2026-08-26 10:49:09"
     },
     "mfood": {
       "content": "1. **需求池积压严重**：149 项活跃中，95 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（12 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`杨庆龙`（6 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 41 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期666天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期656天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期404天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **128/149 项无排期（85.9%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 14.1%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **37 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34647]`（覃林方, 【團購】-門店列表-新增門店推廣碼，掃碼進入商家主）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34627]`（周昱强, 【用户 app】客服 icon 新增文字说明）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-08-26 09:23:17"
+      "updatedAt": "2026-08-26 10:49:09"
     }
   },
   "reconciliationReport": {
-    "compiledAt": "2026-08-26T09:23:16.788417",
+    "compiledAt": "2026-08-26T10:49:09.432124",
     "summary": {
-      "verifiedCount": 297133,
+      "verifiedCount": 297303,
       "incompleteCount": 0,
-      "shadowCount": 496,
-      "delayCount": 133
+      "shadowCount": 495,
+      "delayCount": 118,
+      "mobileCount": 3,
+      "processCount": 12
     },
-    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 496 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 133 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
+    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务，以及 **12** 项产品方案/UI设计等过程节点工单进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 495 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 118 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
     "details": {
       "verified": [
         {
@@ -41977,7 +42030,7 @@
           "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
           "smoke_status": "Failed",
           "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8e3eceeee6d9c9c1ffe5ef57b854d6}"
+            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8e52e2f9317c7f213cbddc0a9bc1fa}"
           ]
         },
         {
@@ -42047,13 +42100,6 @@
           "feature_type": "UI_Menu",
           "feature_name": "頁面投放廣告",
           "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/delivery-fee-reduction-activity",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "門店加价管理",
-          "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/task-management/task-page/index",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -42131,6 +42177,13 @@
           "feature_type": "API_Endpoint",
           "feature_name": "编辑商家APP角色",
           "feature_path": "/sys-manager-merchant-role/update",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "API_Endpoint",
+          "feature_name": "翻译中译英",
+          "feature_path": "/support/llm/translate",
           "smoke_status": "Passed",
           "error_logs": []
         }
@@ -42247,13 +42300,6 @@
           "workitem_status": "已上线",
           "project": "mftb",
           "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-638",
-          "workitem_title": "【大系统】小程序登录/微信/mpay/BOC授权",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "刘龙振海"
         },
         {
           "workitem_id": "MFTB-577",
@@ -42431,13 +42477,6 @@
           "assignee": "刘龙振海"
         },
         {
-          "workitem_id": "MFTB-1346",
-          "workitem_title": "【UI】【大係統】商家營銷活動入口",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "许思浩"
-        },
-        {
           "workitem_id": "MFTB-1330",
           "workitem_title": "【测试】【眾包】騎手審核-個人信息增加英文名字段",
           "workitem_status": "测试环境验证通过",
@@ -42480,11 +42519,134 @@
           "assignee": "周昱强"
         },
         {
+          "workitem_id": "MFTB-1075",
+          "workitem_title": "【產品】【大係統】商家 app 外賣語音播報設置",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1057",
+          "workitem_title": "【產品】【大係統】业务入口管理后台配置项需求变更",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1038",
+          "workitem_title": "【產品】【大係統】禁止彈窗設置",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        }
+      ],
+      "mobile": [
+        {
+          "workitem_id": "MFTB-638",
+          "workitem_title": "【大系统】小程序登录/微信/mpay/BOC授权",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-807",
+          "workitem_title": "【测试】【大系统】小程序登录/微信/mpay/BOC授权",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-32535",
+          "workitem_title": "【测试】【無敵星星】無敵星星訂單及佔位優化（H5和小程序）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        }
+      ],
+      "process": [
+        {
+          "workitem_id": "MFTB-1346",
+          "workitem_title": "【UI】【大係統】商家營銷活動入口",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "许思浩"
+        },
+        {
           "workitem_id": "MFTB-1132",
           "workitem_title": "【产品】【大系统】支付渠道",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-1090",
+          "workitem_title": "【产品】【大系统】七鱼客服系统",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-675",
+          "workitem_title": "【UI】【大係統】app消息中心",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "胡家兴"
+        },
+        {
+          "workitem_id": "MFTB-674",
+          "workitem_title": "【UI】【大係統】APP登錄",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "胡家兴"
+        },
+        {
+          "workitem_id": "MFTB-653",
+          "workitem_title": "【UI】【需求變更】騎手取餐前隱藏客戶電話信息",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "许思浩"
+        },
+        {
+          "workitem_id": "MFTB-602",
+          "workitem_title": "【UI】【大係統】商家 APP_賬號登錄 商家賬號密碼登錄",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "李鑫"
+        },
+        {
+          "workitem_id": "MFTB-585",
+          "workitem_title": "【UI】【眾包】極馬APP已取餐-退款訂單，返餐按鈕優化",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "许思浩"
+        },
+        {
+          "workitem_id": "MFTB-560",
+          "workitem_title": "【UI】【眾包】極馬APP-騎手取餐增加驗證碼校驗",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "许思浩"
+        },
+        {
+          "workitem_id": "MFTB-313",
+          "workitem_title": "【UI】【極馬專送】APP應用市場預覽圖",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "罗安琪"
+        },
+        {
+          "workitem_id": "MFTB-254",
+          "workitem_title": "【UI】小休申请/骑手工作证",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "罗安琪"
+        },
+        {
+          "workitem_id": "MFTB-51",
+          "workitem_title": "【产品】 MFTB 到家品類管理",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
         }
       ]
     }
@@ -42493,12 +42655,14 @@
     {
       "scan_date": "2026-08-26",
       "summary": {
-        "verifiedCount": 297133,
+        "verifiedCount": 297303,
         "incompleteCount": 0,
-        "shadowCount": 496,
-        "delayCount": 133
+        "shadowCount": 495,
+        "delayCount": 118,
+        "mobileCount": 3,
+        "processCount": 12
       },
-      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 496 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 133 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
+      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务，以及 **12** 项产品方案/UI设计等过程节点工单进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 495 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 118 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
     },
     {
       "scan_date": "2026-08-25",
