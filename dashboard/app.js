@@ -999,6 +999,8 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
         if (mBadge) mBadge.textContent = '0';
         const pBadge = document.getElementById('reconciler-process-badge');
         if (pBadge) pBadge.textContent = '0';
+        const oBadge = document.getElementById('reconciler-other-badge');
+        if (oBadge) oBadge.textContent = '0';
         document.getElementById('reconciliation-advice-container').innerHTML = '<div style="color: var(--text-muted);">暂无纠偏管理报告</div>';
         return;
     }
@@ -1010,7 +1012,7 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
     }
     
     // Render summary metrics
-    const summary = hItem.summary || { verifiedCount: 0, incompleteCount: 0, shadowCount: 0, delayCount: 0, mobileCount: 0, processCount: 0 };
+    const summary = hItem.summary || { verifiedCount: 0, incompleteCount: 0, shadowCount: 0, delayCount: 0, mobileCount: 0, processCount: 0, otherCount: 0 };
     document.getElementById('reconciler-verified-count').textContent = summary.verifiedCount;
     document.getElementById('reconciler-incomplete-count').textContent = summary.incompleteCount;
     document.getElementById('reconciler-shadow-count').textContent = summary.shadowCount;
@@ -1020,6 +1022,8 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
     if (mBadge) mBadge.textContent = summary.mobileCount || 0;
     const pBadge = document.getElementById('reconciler-process-badge');
     if (pBadge) pBadge.textContent = summary.processCount || 0;
+    const oBadge = document.getElementById('reconciler-other-badge');
+    if (oBadge) oBadge.textContent = summary.otherCount || 0;
     
     // Render PMO advice (Markdown converted)
     const adviceContainer = document.getElementById('reconciliation-advice-container');
@@ -1038,6 +1042,7 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
     const verifiedContainer = document.getElementById('reconciler-verified-container');
     const mobileContainer = document.getElementById('reconciler-mobile-container');
     const processContainer = document.getElementById('reconciler-process-container');
+    const otherContainer = document.getElementById('reconciler-other-container');
     
     if (!isLatest) {
         // Render historical placeholder for details lists
@@ -1048,13 +1053,14 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
         if (verifiedContainer) verifiedContainer.innerHTML = historyPlaceholder;
         if (mobileContainer) mobileContainer.innerHTML = historyPlaceholder;
         if (processContainer) processContainer.innerHTML = historyPlaceholder;
+        if (otherContainer) otherContainer.innerHTML = historyPlaceholder;
         return;
     }
     
     // Otherwise render full details of the latest active run
     const details = (state.reconciliationReport && state.reconciliationReport.details) 
         ? state.reconciliationReport.details 
-        : { verified: [], incomplete: [], shadow: [], delay: [], mobile: [], process: [] };
+        : { verified: [], incomplete: [], shadow: [], delay: [], mobile: [], process: [], other: [] };
         
     // 1. Incomplete/Failed Smoke Tests
     if (incompleteContainer) {
@@ -1207,6 +1213,36 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
                     </div>
                 `;
                 processContainer.appendChild(row);
+            });
+        }
+    }
+    
+    // 3.3. Other Projects (Crowdsourcing/Jima)
+    if (otherContainer) {
+        otherContainer.innerHTML = '';
+        if (!details.other || details.other.length === 0) {
+            otherContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无其他项目数据</div>';
+        } else {
+            details.other.forEach(item => {
+                const row = document.createElement('div');
+                row.className = 'audit-item';
+                row.style.borderLeft = '3px solid #94a3b8';
+                row.style.background = 'rgba(148, 163, 184, 0.05)';
+                row.style.padding = '10px 14px';
+                row.style.marginBottom = '8px';
+                row.style.borderRadius = 'var(--radius-sm)';
+                
+                row.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <div>
+                            <span class="badge" style="background: rgba(148, 163, 184, 0.1); color: #94a3b8; margin-right: 8px;">${escapeHtml(item.project.toUpperCase())}</span>
+                            <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)}</span>
+                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status)} | 负责人: ${escapeHtml(item.assignee)}</div>
+                        </div>
+                        <span class="badge badge-role-other" style="background: rgba(148, 163, 184, 0.1); color: #94a3b8;">其他项目</span>
+                    </div>
+                `;
+                otherContainer.appendChild(row);
             });
         }
     }
