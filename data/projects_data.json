@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-27T04:10:27.949040+00:00",
+  "compiledAt": "2026-08-27T06:53:56.947837+00:00",
   "latest": {
     "mftb": [
       {
@@ -3114,19 +3114,53 @@
         "category": "Req"
       },
       {
-        "id": "MFTB-1568",
-        "title": "【前端】【广告系统】-盘活复苏-算法库",
+        "id": "MFTB-1570",
+        "title": "【服务端】【大係統】訂單用户信息脱敏團，包括訂單列表、預約單管理、核銷碼列表；電話和用戶昵稱都脫敏；導出時直接去掉這兩列字段",
         "status": "未开始",
         "priority": "中",
-        "assignee": "甄荣康",
-        "creator": "甄荣康",
-        "iteration": "MFTB-v1.0.2",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "MFTB-v1.0.1",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-08-27",
         "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=cbaeb69df9386a6e356f2cfaec",
+        "rowText": "【任务】【服务端】【大係統】訂單用户信息脱敏團，包括訂單列表、預約單管理、核銷碼列表；電話和用戶昵稱都脫敏；導出時直接去掉這兩列字段\nID: MFTB-1570 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-27 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1569",
+        "title": "【產品】【大系统】下单返卷",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "刘龙振海",
+        "creator": "刘龙振海",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "2026-08-26",
+        "planEnd": "2026-08-27",
+        "createDate": "2026-08-27",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8db7c3eada36d6a67ec6e7a5e1",
+        "rowText": "【产品】【產品】【大系统】下单返卷\nID: MFTB-1569 | 状态: 已完成 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-27 | 排期规划: 2026-08-26 至 2026-08-27",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1568",
+        "title": "【前端】【广告系统】-盘活复苏-算法库",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-08-27",
+        "planEnd": "2026-08-27",
+        "createDate": "2026-08-27",
+        "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1f86d38d83bd1ffe57e2695990",
-        "rowText": "【任务】【前端】【广告系统】-盘活复苏-算法库\nID: MFTB-1568 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-27 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【广告系统】-盘活复苏-算法库\nID: MFTB-1568 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-27 | 排期规划: 2026-08-27 至 2026-08-27",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3257,12 +3291,12 @@
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "未规划",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-08-27",
+        "planEnd": "2026-08-27",
         "createDate": "2026-08-26",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f3895ef06cc371d60791bbf7b4",
-        "rowText": "【任务】【服务端】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示\nID: MFTB-1558 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "rowText": "【任务】【服务端】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示\nID: MFTB-1558 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: 2026-08-27 至 2026-08-27",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3983,7 +4017,7 @@
       {
         "id": "MFTB-1486",
         "title": "【前端】【廣告系統】-無敵星星-算法库",
-        "status": "开发挂起",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -3993,7 +4027,7 @@
         "createDate": "2026-08-19",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7ea3115355c18db7bdb27172e0",
-        "rowText": "【任务】【前端】【廣告系統】-無敵星星-算法库\nID: MFTB-1486 | 状态: 开发挂起 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-19 | 排期规划: 2026-08-26 至 2026-08-27",
+        "rowText": "【任务】【前端】【廣告系統】-無敵星星-算法库\nID: MFTB-1486 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-19 | 排期规划: 2026-08-26 至 2026-08-27",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4396,12 +4430,12 @@
         "assignee": "甄荣康",
         "creator": "甄荣康",
         "iteration": "MFTB-v1.0.2",
-        "planStart": "2026-08-31",
-        "planEnd": "2026-08-31",
+        "planStart": "2026-08-27",
+        "planEnd": "2026-08-28",
         "createDate": "2026-08-18",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8f3f315cec77ae6843e0fdb2d6",
-        "rowText": "【任务】【前端】【大係統】商品自動上下架_提供手動上下架操作\nID: MFTB-1440 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-18 | 排期规划: 2026-08-31 至 2026-08-31",
+        "rowText": "【任务】【前端】【大係統】商品自動上下架_提供手動上下架操作\nID: MFTB-1440 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-18 | 排期规划: 2026-08-27 至 2026-08-28",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5195,12 +5229,12 @@
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "MFTB-v1.0.1",
-        "planStart": "2026-08-27",
-        "planEnd": "2026-08-27",
+        "planStart": "2026-08-31",
+        "planEnd": "2026-08-31",
         "createDate": "2026-08-13",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=ef4534e5bd34d2661f105ea207",
-        "rowText": "【任务】【大係統】團購到店-用戶端商品规格按金额或者积分排序\nID: MFTB-1372 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-13 | 排期规划: 2026-08-27 至 2026-08-27",
+        "rowText": "【任务】【大係統】團購到店-用戶端商品规格按金额或者积分排序\nID: MFTB-1372 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-13 | 排期规划: 2026-08-31 至 2026-08-31",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5688,12 +5722,12 @@
         "assignee": "林泽斌",
         "creator": "林泽斌",
         "iteration": "未规划",
-        "planStart": "2026-08-31",
-        "planEnd": "2026-09-01",
+        "planStart": "2026-09-01",
+        "planEnd": "2026-09-02",
         "createDate": "2026-08-06",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e6b4475798ef490bf15e4051ac",
-        "rowText": "【任务】【服务端】【大係統】-團購到店-預約商品每日價格設置新增批量導入價格功能\nID: MFTB-1327 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: 2026-08-31 至 2026-09-01",
+        "rowText": "【任务】【服务端】【大係統】-團購到店-預約商品每日價格設置新增批量導入價格功能\nID: MFTB-1327 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: 未规划 | 创建时间: 2026-08-06 | 排期规划: 2026-09-01 至 2026-09-02",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -26389,23 +26423,6 @@
         "category": "Req"
       },
       {
-        "id": "MF-34684",
-        "title": "【積分抵現】優化",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "胡家兴",
-        "creator": "胡家兴",
-        "iteration": "未规划",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-08-27",
-        "workItemType": "设计",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=a9c230e9c4ba46cd97e4f44069",
-        "rowText": "【设计】【積分抵現】優化\nID: MF-34684 | 状态: 待处理 | 优先级: 低\n负责人: 胡家兴 | 提报人: 胡家兴\n迭代版本: 未规划 | 创建时间: 2026-08-27 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Task"
-      },
-      {
         "id": "MF-34683",
         "title": "【產品】【積分抵現】優化",
         "status": "待处理",
@@ -29222,11 +29239,11 @@
       },
       {
         "date": "2026-08-27",
-        "total": 1109,
-        "completed": 828,
+        "total": 1111,
+        "completed": 831,
         "statusCounts": {
-          "已完成": 828,
-          "进行中": 281
+          "已完成": 831,
+          "进行中": 280
         }
       }
     ],
@@ -41140,11 +41157,11 @@
       },
       {
         "date": "2026-08-27",
-        "total": 186,
+        "total": 185,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 149
+          "进行中": 148
         }
       }
     ]
@@ -41658,24 +41675,25 @@
   "pmoAdvice": {
     "mftb": {
       "content": "1. **测试堰塞湖：531 项卡在测试管道，占活跃项 61.6%**：当前 862 项活跃中，494 项「提交测试」、22 项「测试中」、15 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期140天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期140天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期139天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期139天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 92 张陈年卡的验收，本周内将测试队列压缩。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待处理；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1478]` 支付渠道（徐子旺）开发中；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`陈剑` 50 项活跃中 32 项超期（64%）；`刘志敏` 45 项活跃中 36 项超期（80%）；`张健伟` 45 项活跃中 42 项超期（93%）；`甄荣康` 42 项活跃中 37 项超期（88%）；`唐光伟` 41 项活跃中 36 项超期（88%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **420 项超期 + 437 项无排期（50.7%）+ 152 项闲置 = 排期纪律需加强**：862 项活跃中 437 项（50.7%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-08-27 12:09:01"
+      "updatedAt": "2026-08-27 14:52:32"
     },
     "mfood": {
       "content": "1. **需求池积压严重**：149 项活跃中，95 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（12 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`杨庆龙`（6 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 41 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期667天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期657天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期405天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **128/149 项无排期（85.9%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 14.1%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **37 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34647]`（覃林方, 【團購】-門店列表-新增門店推廣碼，掃碼進入商家主）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34627]`（周昱强, 【用户 app】客服 icon 新增文字说明）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-08-27 12:09:01"
+      "updatedAt": "2026-08-27 14:52:32"
     }
   },
   "reconciliationReport": {
-    "compiledAt": "2026-08-27T12:09:00.999581",
+    "compiledAt": "2026-08-27T14:52:32.015502",
     "summary": {
-      "verifiedCount": 296627,
+      "verifiedCount": 293982,
       "incompleteCount": 0,
       "shadowCount": 520,
-      "delayCount": 78,
+      "delayCount": 48,
       "mobileCount": 3,
-      "processCount": 50
+      "processCount": 34,
+      "otherCount": 143
     },
-    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务，以及 **50** 项产品方案/UI设计等过程节点工单进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 520 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 78 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
+    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**34** 项产品方案/UI设计等过程节点工单、**143** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 520 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 48 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
     "details": {
       "verified": [
         {
@@ -42244,8 +42262,8 @@
           "feature_path": "http://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/check-results",
           "smoke_status": "Failed",
           "error_logs": [
-            "Console error: 獲取對賬結果失敗: {code: 400, message: 汇总日期不能为空, data: null, traceId: 6a8fb7ebea5516f796238d0c385ddce8}",
-            "Console error: 獲取對賬結果失敗: {code: 400, message: 汇总日期不能为空, data: null, traceId: 6a8fb7eb50f2be52c84850397feaf969}"
+            "Console error: 獲取對賬結果失敗: {code: 400, message: 汇总日期不能为空, data: null, traceId: 6a8fde449952afeda3c220075af64887}",
+            "Console error: 獲取對賬結果失敗: {code: 400, message: 汇总日期不能为空, data: null, traceId: 6a8fde446ab676f6aef57edae3368778}"
           ]
         },
         {
@@ -42282,7 +42300,7 @@
           "feature_path": "http://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/delivery-fee-reduction-activity",
           "smoke_status": "Failed",
           "error_logs": [
-            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8fb741e1a56470a05863bea9734acc}"
+            "Console error: 獲取列表失敗: {code: 500, message: Cannot invoke \"java.lang.Integer.equals(Object)\" b…atform.PlatformActivityPageRes.getType()\" is null, data: null, traceId: 6a8fdd94c963f538e942a2828b5c7bee}"
           ]
         },
         {
@@ -42449,34 +42467,6 @@
       ],
       "delay": [
         {
-          "workitem_id": "MFTB-1506",
-          "workitem_title": "【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-1363",
-          "workitem_title": "【極馬】訂單歸屬策略支持多選訂單平台類型",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-1269",
-          "workitem_title": "【眾包】騎手審核-個人信息增加英文名字段",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-1237",
-          "workitem_title": "【極馬】打賞報表增加字段",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-1056",
           "workitem_title": "【大係統】业务入口管理后台配置项需求变更",
           "workitem_status": "测试环境验证通过",
@@ -42491,43 +42481,8 @@
           "assignee": "刘龙振海"
         },
         {
-          "workitem_id": "MFTB-934",
-          "workitem_title": "【眾包】提現卡支持中行&綁卡增加審核",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-899",
-          "workitem_title": "【眾包】急賞送",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-879",
-          "workitem_title": "【極馬】掛起並結算按鈕優化",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-855",
-          "workitem_title": "【極馬】騎手驗證碼校驗增加後台開關",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-839",
           "workitem_title": "【需求變更】有效訂單統計邏輯調整",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-779",
-          "workitem_title": "【極馬】專送&眾包APP增加高溫喝水提示",
           "workitem_status": "已上线",
           "project": "mftb",
           "assignee": "龙颖之"
@@ -42540,44 +42495,9 @@
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-709",
-          "workitem_title": "【眾包】轉單流水增加結算時間",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-652",
           "workitem_title": "【需求變更】騎手取餐前隱藏客戶電話信息",
           "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-644",
-          "workitem_title": "【眾包】極馬後台權限增加管理員標識",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-577",
-          "workitem_title": "【眾包】騎手單筆提現金額限額",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-541",
-          "workitem_title": "【眾包】調度流量監控-在線騎手統計邏輯調整",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-540",
-          "workitem_title": "【眾包】極馬APP已取餐-退款訂單，返餐按鈕優化",
-          "workitem_status": "已上线",
           "project": "mftb",
           "assignee": "龙颖之"
         },
@@ -42596,25 +42516,11 @@
           "assignee": "覃林方"
         },
         {
-          "workitem_id": "MFTB-520",
-          "workitem_title": "【眾包】 先鋒隊騎手區分訂單平台",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-510",
           "workitem_title": "【需求變更】針對「平臺佣金模板」中，價格收費和距離收費設置優化",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "廖荣"
-        },
-        {
-          "workitem_id": "MFTB-427",
-          "workitem_title": "【眾包】調度流量監控",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-311",
@@ -42629,13 +42535,6 @@
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "覃林方"
-        },
-        {
-          "workitem_id": "MFTB-539",
-          "workitem_title": "【眾包】極馬APP增加網絡延遲校驗提示",
-          "workitem_status": "已上线",
-          "project": "mftb",
-          "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-232",
@@ -42680,20 +42579,6 @@
           "assignee": "周昱强"
         },
         {
-          "workitem_id": "MFTB-1389",
-          "workitem_title": "【测试】【極馬】訂單歸屬策略支持多選訂單平台類型",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
-        },
-        {
-          "workitem_id": "MFTB-1330",
-          "workitem_title": "【测试】【眾包】騎手審核-個人信息增加英文名字段",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
-        },
-        {
           "workitem_id": "MFTB-1251",
           "workitem_title": "【测试】【大系统】虚拟号码后台",
           "workitem_status": "测试环境验证通过",
@@ -42701,39 +42586,11 @@
           "assignee": "侯黎明"
         },
         {
-          "workitem_id": "MFTB-1226",
-          "workitem_title": "【测试】【眾包】提現卡支持中行&綁卡增加審核",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "杨庆龙"
-        },
-        {
           "workitem_id": "MFTB-1185",
           "workitem_title": "【测试】【大係統】业务入口管理后台配置项需求变更",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "曹晴晴"
-        },
-        {
-          "workitem_id": "MFTB-915",
-          "workitem_title": "【测试】【極馬】騎手驗證碼校驗增加後台開關",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
-        },
-        {
-          "workitem_id": "MFTB-914",
-          "workitem_title": "【测试】【眾包】急賞送",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
-        },
-        {
-          "workitem_id": "MFTB-911",
-          "workitem_title": "【测试】【極馬】掛起並結算按鈕優化",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
         },
         {
           "workitem_id": "MFTB-842",
@@ -42757,13 +42614,6 @@
           "assignee": "贺志成"
         },
         {
-          "workitem_id": "MFTB-783",
-          "workitem_title": "【测试】【極馬】專送&眾包APP增加高溫喝水提示",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
-        },
-        {
           "workitem_id": "MFTB-782",
           "workitem_title": "【测试】【調度】增加額外距離配送時長上限",
           "workitem_status": "测试环境验证通过",
@@ -42771,32 +42621,186 @@
           "assignee": "黄金凤"
         },
         {
-          "workitem_id": "MFTB-762",
-          "workitem_title": "【测试】【眾包】極馬APP增加網絡延遲校驗提示",
+          "workitem_id": "MFTB-599",
+          "workitem_title": "【测试】【大係統】商家 APP_賬號登錄",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MFTB-578",
+          "workitem_title": "【测试】【大係統】MFTB-品牌管理功能",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "冼嘉业"
+        },
+        {
+          "workitem_id": "MFTB-245",
+          "workitem_title": "【测试】【大係統】商户通推广金",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "朱家萱"
+        },
+        {
+          "workitem_id": "MFTB-213",
+          "workitem_title": "【需求變更】【测试】【大係統】MFTB 商圈管理需求变更",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "黄春晓"
+        },
+        {
+          "workitem_id": "MFTB-162",
+          "workitem_title": "【测试】【大係統】商户通推广金",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
+          "workitem_id": "MFTB-64",
+          "workitem_title": "【测试】【大係統】管理後臺賬號登錄部分",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "李云锋"
+        },
+        {
+          "workitem_id": "MFTB-56",
+          "workitem_title": "【测试】【大係統】MFTB 商圈管理",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "黄春晓"
+        },
+        {
+          "workitem_id": "MFTB-55",
+          "workitem_title": "【测试】【大係統】 MFTB 到家品類管理",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "黄春晓"
+        },
+        {
+          "workitem_id": "MFTB-52",
+          "workitem_title": "【测试】【大係統】MFTB 集團管理",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "冼嘉业"
+        },
+        {
+          "workitem_id": "MFTB-6",
+          "workitem_title": "【测试】【大係統】管理後臺權限管理模塊",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MFTB-4",
+          "workitem_title": "【测试】【大係統】管理後臺權限管理模塊",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "李云锋"
+        },
+        {
+          "workitem_id": "MF-34613",
+          "workitem_title": "積分抵現可用規則更改",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "溫浩源"
+        },
+        {
+          "workitem_id": "MF-24798",
+          "workitem_title": "【POS机】新POS机兼容测试",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-34617",
+          "workitem_title": "【测试】積分抵現可用規則更改",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "冼嘉业"
+        },
+        {
+          "workitem_id": "MF-34169",
+          "workitem_title": "【测试】APP冷启动速度优化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-33699",
+          "workitem_title": "【测试】【內部】快閃活動升級",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-33633",
+          "workitem_title": "【测试】【內部】快閃活動升級",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "冼嘉业"
+        },
+        {
+          "workitem_id": "MF-33417",
+          "workitem_title": "【测试】【內部】快閃活動升級",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "曹晴晴"
+        },
+        {
+          "workitem_id": "MF-33182",
+          "workitem_title": "【测试】【團購】CGT 對接",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "贺志成"
+        },
+        {
+          "workitem_id": "MF-33106",
+          "workitem_title": "【测试】可选择性根据应用市场发布app更新",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-30945",
+          "workitem_title": "[iOS]读取剪切板优化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-30861",
+          "workitem_title": "【测试】【等保】app增加浏览模式",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-30804",
+          "workitem_title": "【测试】【等保】增加 我的反馈记录",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "杨庆龙"
+        },
+        {
+          "workitem_id": "MF-30630",
+          "workitem_title": "【测试】外卖折扣菜不在可售时间也需要展示，但是不可购买",
+          "workitem_status": "预发布验收通过",
+          "project": "mfood",
+          "assignee": "贺志成"
+        },
+        {
+          "workitem_id": "MF-27825",
+          "workitem_title": "【测试】[眾包系統]眾包注册登陆与审核功能",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
           "assignee": "黄金凤"
         },
         {
-          "workitem_id": "MFTB-715",
-          "workitem_title": "【测试】【眾包】轉單流水增加結算時間",
+          "workitem_id": "MF-26228",
+          "workitem_title": "【测试】【TE】测试云效状态自动变更。",
           "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
-        },
-        {
-          "workitem_id": "MFTB-667",
-          "workitem_title": "【测试】【眾包】極馬APP已取餐-退款訂單，返餐按鈕優化",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
-        },
-        {
-          "workitem_id": "MFTB-628",
-          "workitem_title": "【测试】【眾包】極馬APP-騎手取餐增加驗證碼校驗",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄金凤"
+          "project": "mfood",
+          "assignee": "杨庆龙"
         }
       ],
       "mobile": [
@@ -42843,20 +42847,6 @@
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "刘龙振海"
-        },
-        {
-          "workitem_id": "MFTB-1409",
-          "workitem_title": "【產品】【極馬】打賞報表增加字段",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-1393",
-          "workitem_title": "【產品】【極馬】訂單歸屬策略支持多選訂單平台類型",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-1379",
@@ -42922,48 +42912,6 @@
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-949",
-          "workitem_title": "【產品】【極馬】專送&眾包APP增加高溫喝水提示",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-938",
-          "workitem_title": "【產品】【眾包】提現卡支持中行&綁卡增加審核",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-926",
-          "workitem_title": "【產品】【眾包】轉單流水增加結算時間",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-924",
-          "workitem_title": "【產品】【極馬】騎手驗證碼校驗增加後台開關",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-923",
-          "workitem_title": "【產品】【眾包】急賞送",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-921",
-          "workitem_title": "【產品】【極馬】掛起並結算按鈕優化",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-760",
           "workitem_title": "【團購】商家端（先出 UI）",
           "workitem_status": "已完成",
@@ -42999,13 +42947,6 @@
           "assignee": "许思浩"
         },
         {
-          "workitem_id": "MFTB-646",
-          "workitem_title": "【產品】【眾包】極馬後台權限增加管理員標識",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-643",
           "workitem_title": "【產品】【大係統】商家 APP_個人中心",
           "workitem_status": "已完成",
@@ -43013,43 +42954,8 @@
           "assignee": "周昱强"
         },
         {
-          "workitem_id": "MFTB-624",
-          "workitem_title": "【產品】【眾包】極馬APP增加網絡延遲校驗提示",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
           "workitem_id": "MFTB-623",
           "workitem_title": "【產品】【極馬專送】APP應用市場預覽圖",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-619",
-          "workitem_title": "【產品】【眾包】 先鋒隊騎手區分訂單平台",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-617",
-          "workitem_title": "【產品】【眾包】極馬APP-騎手取餐增加驗證碼校驗",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-616",
-          "workitem_title": "【產品】【眾包】調度流量監控-在線騎手統計邏輯調整",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-615",
-          "workitem_title": "【產品】【眾包】騎手單筆提現金額限額",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "龙颖之"
@@ -43060,20 +42966,6 @@
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "李鑫"
-        },
-        {
-          "workitem_id": "MFTB-585",
-          "workitem_title": "【UI】【眾包】極馬APP已取餐-退款訂單，返餐按鈕優化",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "许思浩"
-        },
-        {
-          "workitem_id": "MFTB-560",
-          "workitem_title": "【UI】【眾包】極馬APP-騎手取餐增加驗證碼校驗",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "许思浩"
         },
         {
           "workitem_id": "MFTB-523",
@@ -43173,6 +43065,358 @@
           "project": "mftb",
           "assignee": "周昱强"
         }
+      ],
+      "other": [
+        {
+          "workitem_id": "MFTB-1506",
+          "workitem_title": "【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1484",
+          "workitem_title": "【極馬】騎手調度設置可搶（推單到眾包）更新調度站點",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1464",
+          "workitem_title": "【極馬】專送騎手統計增加隱形單",
+          "workitem_status": "待测试",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1426",
+          "workitem_title": "【極馬】專送騎手列表、專送騎手統計增加導出",
+          "workitem_status": "待测试",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1425",
+          "workitem_title": "【極馬】專送合併迭代-部分頁面優化",
+          "workitem_status": "待测试",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1376",
+          "workitem_title": "【眾包】指派單x秒不接自動拒單",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1363",
+          "workitem_title": "【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1269",
+          "workitem_title": "【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1237",
+          "workitem_title": "【極馬】打賞報表增加字段",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-934",
+          "workitem_title": "【眾包】提現卡支持中行&綁卡增加審核",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-899",
+          "workitem_title": "【眾包】急賞送",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-885",
+          "workitem_title": "【眾包】APP搶單池訂單排序邏輯調整",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-879",
+          "workitem_title": "【極馬】掛起並結算按鈕優化",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-859",
+          "workitem_title": "【眾包】騎手所屬站點邏輯優化",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-855",
+          "workitem_title": "【極馬】騎手驗證碼校驗增加後台開關",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-808",
+          "workitem_title": "【眾包】騎手等級管理-新增混合送騎手管理",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-797",
+          "workitem_title": "【極馬】專送&眾包APP已完成訂單限制發送IM消息",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-788",
+          "workitem_title": "【極馬】眾包騎手APP限制修改提現銀行卡信息",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-779",
+          "workitem_title": "【極馬】專送&眾包APP增加高溫喝水提示",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-716",
+          "workitem_title": "【極馬】騎手調度菜單-騎手列表拆分按鈕權限",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-709",
+          "workitem_title": "【眾包】轉單流水增加結算時間",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-644",
+          "workitem_title": "【眾包】極馬後台權限增加管理員標識",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-577",
+          "workitem_title": "【眾包】騎手單筆提現金額限額",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-541",
+          "workitem_title": "【眾包】調度流量監控-在線騎手統計邏輯調整",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-540",
+          "workitem_title": "【眾包】極馬APP已取餐-退款訂單，返餐按鈕優化",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-537",
+          "workitem_title": "【眾包】部分菜單增加導出功能",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-520",
+          "workitem_title": "【眾包】 先鋒隊騎手區分訂單平台",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-427",
+          "workitem_title": "【眾包】調度流量監控",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-539",
+          "workitem_title": "【眾包】極馬APP增加網絡延遲校驗提示",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-76",
+          "workitem_title": "【眾包】眾包騎手列表-站點設置",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1508",
+          "workitem_title": "【前端】【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬"
+        },
+        {
+          "workitem_id": "MFTB-1507",
+          "workitem_title": "【前端】【極馬】專送騎手統計增加隱形單",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬"
+        },
+        {
+          "workitem_id": "MFTB-1466",
+          "workitem_title": "【服务端】【極馬】專送騎手統計增加隱形單",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "刘志敏"
+        },
+        {
+          "workitem_id": "MFTB-1459",
+          "workitem_title": "【前端】【極馬】專送合併迭代-部分頁面優化",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬"
+        },
+        {
+          "workitem_id": "MFTB-1458",
+          "workitem_title": "【前端】【極馬】專送騎手列表、專送騎手統計增加導出",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬"
+        },
+        {
+          "workitem_id": "MFTB-1456",
+          "workitem_title": "【服务端】【極馬】專送騎手列表、專送騎手統計增加導出",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "刘志敏"
+        },
+        {
+          "workitem_id": "MFTB-1451",
+          "workitem_title": "【安卓】【眾包】指派單x秒不接自動拒單",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈国伟"
+        },
+        {
+          "workitem_id": "MFTB-1430",
+          "workitem_title": "【服务端】【極馬】專送合併迭代-部分頁面優化",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "刘志敏"
+        },
+        {
+          "workitem_id": "MFTB-1417",
+          "workitem_title": "【iOS】【眾包】指派單x秒不接自動拒單",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈万里"
+        },
+        {
+          "workitem_id": "MFTB-1415",
+          "workitem_title": "【前端】【極馬】打賞報表增加字段",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬"
+        },
+        {
+          "workitem_id": "MFTB-1414",
+          "workitem_title": "【服务端】【極馬】打賞報表增加字段",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "刘志敏"
+        },
+        {
+          "workitem_id": "MFTB-1409",
+          "workitem_title": "【產品】【極馬】打賞報表增加字段",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1393",
+          "workitem_title": "【產品】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1389",
+          "workitem_title": "【测试】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "黄金凤"
+        },
+        {
+          "workitem_id": "MFTB-1384",
+          "workitem_title": "【前端】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬"
+        },
+        {
+          "workitem_id": "MFTB-1374",
+          "workitem_title": "【服务端】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "刘志敏"
+        },
+        {
+          "workitem_id": "MFTB-1331",
+          "workitem_title": "【前端】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬"
+        },
+        {
+          "workitem_id": "MFTB-1330",
+          "workitem_title": "【测试】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "黄金凤"
+        },
+        {
+          "workitem_id": "MFTB-1294",
+          "workitem_title": "【安卓】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "陈国伟"
+        },
+        {
+          "workitem_id": "MFTB-1292",
+          "workitem_title": "【iOS】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "陈万里"
+        }
       ]
     }
   },
@@ -43180,14 +43424,15 @@
     {
       "scan_date": "2026-08-27",
       "summary": {
-        "verifiedCount": 296627,
+        "verifiedCount": 293982,
         "incompleteCount": 0,
         "shadowCount": 520,
-        "delayCount": 78,
+        "delayCount": 48,
         "mobileCount": 3,
-        "processCount": 50
+        "processCount": 34,
+        "otherCount": 143
       },
-      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务，以及 **50** 项产品方案/UI设计等过程节点工单进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 520 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 78 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
+      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**34** 项产品方案/UI设计等过程节点工单、**143** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 520 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 48 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
     },
     {
       "scan_date": "2026-08-26",
