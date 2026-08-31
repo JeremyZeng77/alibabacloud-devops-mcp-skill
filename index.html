@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" crossorigin src="./assets/index-Cl7D4Vyh.js"></script>
+  <script type="module" crossorigin src="./assets/index-C3bZ7nE-.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-DC3qx-lh.css">
 </head>
 <body>
@@ -710,6 +710,40 @@
 
                         <!-- Details Panels -->
                         <div class="audit-panels-container" style="display: flex; flex-direction: column; gap: 20px;">
+                            <!-- Section 0: Three-way Linkage & Blockpoint Analysis -->
+                            <div class="audit-section-card" id="threeway-reconciliation-card">
+                                <div class="audit-section-header" style="border-left-color: #38bdf8; display: flex; flex-direction: column; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 10px;">
+                                        <div style="display: flex; align-items: center; gap: 8px;">
+                                            <span class="audit-section-icon" style="color: #38bdf8;">🔗</span>
+                                            <h3 class="audit-section-title" style="margin: 0; font-size: 15px; font-weight: 600; color: var(--text-primary);">工单 - 接口 - 页面 (三向链路与卡点核对)</h3>
+                                        </div>
+                                        
+                                        <!-- Search input -->
+                                        <div style="position: relative; width: 240px;">
+                                            <input type="text" id="threeway-search-input" placeholder="搜索工单ID/标题/负责人..." style="width: 100%; height: 32px; background: rgba(0, 0, 0, 0.3); border: 1px solid var(--border-color); border-radius: var(--radius-sm); color: var(--text-primary); padding: 0 10px 0 28px; font-size: 12px; outline: none; border-color: rgba(255,255,255,0.1);">
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" style="position: absolute; left: 10px; top: 10px; color: var(--text-muted);">
+                                                <circle cx="11" cy="11" r="8"></circle>
+                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Filter tabs -->
+                                    <div style="display: flex; gap: 6px; flex-wrap: wrap; font-size: 11px;">
+                                        <button class="threeway-filter-btn active" data-filter="all" style="padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.15); color: #38bdf8; cursor: pointer; outline: none; font-size: 11px; transition: all 0.2s;">全部 (<span id="threeway-count-all">0</span>)</button>
+                                        <button class="threeway-filter-btn" data-filter="frontend_missing" style="padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(251, 146, 60, 0.2); background: rgba(251, 146, 60, 0.03); color: #fb923c; cursor: pointer; outline: none; font-size: 11px; transition: all 0.2s;">卡在前端 (<span id="threeway-count-frontend-missing">0</span>)</button>
+                                        <button class="threeway-filter-btn" data-filter="backend_missing" style="padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(167, 139, 250, 0.2); background: rgba(167, 139, 250, 0.03); color: #a78bfa; cursor: pointer; outline: none; font-size: 11px; transition: all 0.2s;">卡在后端 (<span id="threeway-count-backend-missing">0</span>)</button>
+                                        <button class="threeway-filter-btn" data-filter="smoke_failed" style="padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(239, 68, 68, 0.2); background: rgba(239, 68, 68, 0.03); color: #f87171; cursor: pointer; outline: none; font-size: 11px; transition: all 0.2s;">冒烟失败 (<span id="threeway-count-smoke-failed">0</span>)</button>
+                                        <button class="threeway-filter-btn" data-filter="neither_ready" style="padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(244, 114, 182, 0.2); background: rgba(244, 114, 182, 0.03); color: #f472b6; cursor: pointer; outline: none; font-size: 11px; transition: all 0.2s;">均未开发 (<span id="threeway-count-neither-ready">0</span>)</button>
+                                        <button class="threeway-filter-btn" data-filter="both_ready" style="padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(74, 222, 128, 0.2); background: rgba(74, 222, 128, 0.03); color: #4ade80; cursor: pointer; outline: none; font-size: 11px; transition: all 0.2s;">已就绪 (<span id="threeway-count-both-ready">0</span>)</button>
+                                    </div>
+                                </div>
+                                <div class="audit-section-content" id="reconciler-threeway-container" style="max-height: 480px; overflow-y: auto; padding: 12px 0 0 0;">
+                                    <div class="empty-placeholder">加载中...</div>
+                                </div>
+                            </div>
+
                             <!-- Section 1: Incomplete & Failed Smoke Tests -->
                             <div class="audit-section-card">
                                 <div class="audit-section-header" style="border-left-color: #fb923c;">

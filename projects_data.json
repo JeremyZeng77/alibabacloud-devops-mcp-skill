@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-08-30T16:08:33.709046+00:00",
+  "compiledAt": "2026-08-31T01:08:32.184190+00:00",
   "latest": {
     "mftb": [
       {
@@ -29709,6 +29709,15 @@
       {
         "date": "2026-08-30",
         "total": 1130,
+        "completed": 851,
+        "statusCounts": {
+          "已完成": 851,
+          "进行中": 279
+        }
+      },
+      {
+        "date": "2026-08-31",
+        "total": 1130,
         "completed": 852,
         "statusCounts": {
           "已完成": 852,
@@ -41653,6 +41662,15 @@
       },
       {
         "date": "2026-08-30",
+        "total": 186,
+        "completed": 39,
+        "statusCounts": {
+          "已完成": 39,
+          "进行中": 147
+        }
+      },
+      {
+        "date": "2026-08-31",
         "total": 186,
         "completed": 39,
         "statusCounts": {
