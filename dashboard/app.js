@@ -21,6 +21,8 @@ let state = {
 // Global variables for Three-Way Reconciliation
 let threewayCurrentFilter = 'all';
 let threewaySearchQuery = '';
+let threewayCurrentPage = 1;
+const THREEWAY_PAGE_SIZE = 25;
 
 
 // Helper to check if an item is completed/delivered based on its category
@@ -326,64 +328,76 @@ function initEventListeners() {
     const threewaySearch = document.getElementById('threeway-search-input');
     if (threewaySearch) {
         threewaySearch.addEventListener('input', (e) => {
-            threewaySearchQuery = e.target.value;
-            renderThreewayReconciliation();
+            try {
+                threewaySearchQuery = e.target.value || '';
+                threewayCurrentPage = 1;
+                renderThreewayReconciliation();
+            } catch (err) {
+                console.error('Error in three-way search listener:', err);
+            }
         });
     }
     
     document.querySelectorAll('.threeway-filter-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
-            document.querySelectorAll('.threeway-filter-btn').forEach(b => {
-                b.classList.remove('active');
-                b.style.background = 'rgba(255, 255, 255, 0.03)';
-                b.style.color = 'var(--text-secondary)';
+            try {
+                document.querySelectorAll('.threeway-filter-btn').forEach(b => {
+                    b.classList.remove('active');
+                    b.style.background = 'rgba(255, 255, 255, 0.03)';
+                    b.style.color = 'var(--text-secondary)';
+                    
+                    const filter = b.dataset.filter;
+                    let borderColor = 'var(--border-color)';
+                    if (filter === 'frontend_missing') borderColor = 'rgba(251, 146, 60, 0.2)';
+                    else if (filter === 'backend_missing') borderColor = 'rgba(167, 139, 250, 0.2)';
+                    else if (filter === 'smoke_failed') borderColor = 'rgba(239, 68, 68, 0.2)';
+                    else if (filter === 'neither_ready') borderColor = 'rgba(244, 114, 182, 0.2)';
+                    else if (filter === 'both_ready') borderColor = 'rgba(74, 222, 128, 0.2)';
+                    b.style.borderColor = borderColor;
+                });
                 
-                const filter = b.dataset.filter;
-                let borderColor = 'var(--border-color)';
-                if (filter === 'frontend_missing') borderColor = 'rgba(251, 146, 60, 0.2)';
-                else if (filter === 'backend_missing') borderColor = 'rgba(167, 139, 250, 0.2)';
-                else if (filter === 'smoke_failed') borderColor = 'rgba(239, 68, 68, 0.2)';
-                else if (filter === 'neither_ready') borderColor = 'rgba(244, 114, 182, 0.2)';
-                else if (filter === 'both_ready') borderColor = 'rgba(74, 222, 128, 0.2)';
-                b.style.borderColor = borderColor;
-            });
-            
-            e.currentTarget.classList.add('active');
-            threewayCurrentFilter = e.currentTarget.dataset.filter;
-            
-            let activeBg = 'rgba(255, 255, 255, 0.1)';
-            let activeText = 'var(--text-primary)';
-            let activeBorder = 'var(--border-color)';
-            if (threewayCurrentFilter === 'all') {
-                activeBg = 'rgba(56, 189, 248, 0.15)';
-                activeText = '#38bdf8';
-                activeBorder = 'rgba(56, 189, 248, 0.3)';
-            } else if (threewayCurrentFilter === 'frontend_missing') {
-                activeBg = 'rgba(251, 146, 60, 0.15)';
-                activeText = '#fb923c';
-                activeBorder = 'rgba(251, 146, 60, 0.4)';
-            } else if (threewayCurrentFilter === 'backend_missing') {
-                activeBg = 'rgba(167, 139, 250, 0.15)';
-                activeText = '#a78bfa';
-                activeBorder = 'rgba(167, 139, 250, 0.4)';
-            } else if (threewayCurrentFilter === 'smoke_failed') {
-                activeBg = 'rgba(239, 68, 68, 0.15)';
-                activeText = '#f87171';
-                activeBorder = 'rgba(239, 68, 68, 0.4)';
-            } else if (threewayCurrentFilter === 'neither_ready') {
-                activeBg = 'rgba(244, 114, 182, 0.15)';
-                activeText = '#f472b6';
-                activeBorder = 'rgba(244, 114, 182, 0.4)';
-            } else if (threewayCurrentFilter === 'both_ready') {
-                activeBg = 'rgba(74, 222, 128, 0.15)';
-                activeText = '#4ade80';
-                activeBorder = 'rgba(74, 222, 128, 0.4)';
+                if (e.currentTarget) {
+                    e.currentTarget.classList.add('active');
+                    threewayCurrentFilter = e.currentTarget.dataset.filter || 'all';
+                    threewayCurrentPage = 1;
+                    
+                    let activeBg = 'rgba(255, 255, 255, 0.1)';
+                    let activeText = 'var(--text-primary)';
+                    let activeBorder = 'var(--border-color)';
+                    if (threewayCurrentFilter === 'all') {
+                        activeBg = 'rgba(56, 189, 248, 0.15)';
+                        activeText = '#38bdf8';
+                        activeBorder = 'rgba(56, 189, 248, 0.3)';
+                    } else if (threewayCurrentFilter === 'frontend_missing') {
+                        activeBg = 'rgba(251, 146, 60, 0.15)';
+                        activeText = '#fb923c';
+                        activeBorder = 'rgba(251, 146, 60, 0.4)';
+                    } else if (threewayCurrentFilter === 'backend_missing') {
+                        activeBg = 'rgba(167, 139, 250, 0.15)';
+                        activeText = '#a78bfa';
+                        activeBorder = 'rgba(167, 139, 250, 0.4)';
+                    } else if (threewayCurrentFilter === 'smoke_failed') {
+                        activeBg = 'rgba(239, 68, 68, 0.15)';
+                        activeText = '#f87171';
+                        activeBorder = 'rgba(239, 68, 68, 0.4)';
+                    } else if (threewayCurrentFilter === 'neither_ready') {
+                        activeBg = 'rgba(244, 114, 182, 0.15)';
+                        activeText = '#f472b6';
+                        activeBorder = 'rgba(244, 114, 182, 0.4)';
+                    } else if (threewayCurrentFilter === 'both_ready') {
+                        activeBg = 'rgba(74, 222, 128, 0.15)';
+                        activeText = '#4ade80';
+                        activeBorder = 'rgba(74, 222, 128, 0.4)';
+                    }
+                    e.currentTarget.style.background = activeBg;
+                    e.currentTarget.style.color = activeText;
+                    e.currentTarget.style.borderColor = activeBorder;
+                }
+                
+                renderThreewayReconciliation();
+            } catch (clickErr) {
+                console.error('Error handling filter button click:', clickErr);
             }
-            e.currentTarget.style.background = activeBg;
-            e.currentTarget.style.color = activeText;
-            e.currentTarget.style.borderColor = activeBorder;
-            
-            renderThreewayReconciliation();
         });
     });
     const auditRoleSelect = document.getElementById('audit-role-select');
@@ -1140,30 +1154,35 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
             incompleteContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无异常部署数据</div>';
         } else {
             details.incomplete.forEach(item => {
-                const row = document.createElement('div');
-                row.className = 'audit-item';
-                row.style.borderLeft = '3px solid #fb923c';
-                row.style.background = 'rgba(251, 146, 60, 0.05)';
-                row.style.padding = '10px 14px';
-                row.style.marginBottom = '8px';
-                row.style.borderRadius = 'var(--radius-sm)';
-                
-                const errors = item.error_logs && item.error_logs.length > 0
-                    ? `<div style="font-size: 11px; color: #fb7185; margin-top: 4px; font-family: monospace; background: rgba(0,0,0,0.2); padding: 4px 8px; border-radius: 2px;">${escapeHtml(item.error_logs.join('\n'))}</div>`
-                    : '';
-                
-                row.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div>
-                            <span class="badge" style="background: rgba(251, 146, 60, 0.1); color: #fb923c; margin-right: 8px;">${escapeHtml(item.feature_type)}</span>
-                            <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name)}</span>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">匹配云效单据: [${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)} (${escapeHtml(item.workitem_status)})</div>
+                if (!item) return;
+                try {
+                    const row = document.createElement('div');
+                    row.className = 'audit-item';
+                    row.style.borderLeft = '3px solid #fb923c';
+                    row.style.background = 'rgba(251, 146, 60, 0.05)';
+                    row.style.padding = '10px 14px';
+                    row.style.marginBottom = '8px';
+                    row.style.borderRadius = 'var(--radius-sm)';
+                    
+                    const errors = item.error_logs && item.error_logs.length > 0
+                        ? `<div style="font-size: 11px; color: #fb7185; margin-top: 4px; font-family: monospace; background: rgba(0,0,0,0.2); padding: 4px 8px; border-radius: 2px;">${escapeHtml(item.error_logs.join('\n'))}</div>`
+                        : '';
+                    
+                    row.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div>
+                                <span class="badge" style="background: rgba(251, 146, 60, 0.1); color: #fb923c; margin-right: 8px;">${escapeHtml(item.feature_type || '功能')}</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name || '')}</span>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">匹配云效单据: [${escapeHtml(item.workitem_id || '')}] ${escapeHtml(item.workitem_title || '')} (${escapeHtml(item.workitem_status || '')})</div>
+                            </div>
+                            <span class="badge badge-role-other" style="background: rgba(239, 68, 68, 0.1); color: #f87171;">测试不通过</span>
                         </div>
-                        <span class="badge badge-role-other" style="background: rgba(239, 68, 68, 0.1); color: #f87171;">测试不通过</span>
-                    </div>
-                    ${errors}
-                `;
-                incompleteContainer.appendChild(row);
+                        ${errors}
+                    `;
+                    incompleteContainer.appendChild(row);
+                } catch (e) {
+                    console.error('Failed to render incomplete item:', item, e);
+                }
             });
         }
     }
@@ -1175,25 +1194,30 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
             shadowContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无影子开发数据</div>';
         } else {
             details.shadow.forEach(item => {
-                const row = document.createElement('div');
-                row.className = 'audit-item';
-                row.style.borderLeft = '3px solid #f472b6';
-                row.style.background = 'rgba(244, 114, 182, 0.05)';
-                row.style.padding = '10px 14px';
-                row.style.marginBottom = '8px';
-                row.style.borderRadius = 'var(--radius-sm)';
-                
-                row.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div>
-                            <span class="badge" style="background: rgba(244, 114, 182, 0.1); color: #f472b6; margin-right: 8px;">${escapeHtml(item.feature_type)}</span>
-                            <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name)}</span>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">实际路由/接口路径: ${escapeHtml(item.feature_path)}</div>
+                if (!item) return;
+                try {
+                    const row = document.createElement('div');
+                    row.className = 'audit-item';
+                    row.style.borderLeft = '3px solid #f472b6';
+                    row.style.background = 'rgba(244, 114, 182, 0.05)';
+                    row.style.padding = '10px 14px';
+                    row.style.marginBottom = '8px';
+                    row.style.borderRadius = 'var(--radius-sm)';
+                    
+                    row.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div>
+                                <span class="badge" style="background: rgba(244, 114, 182, 0.1); color: #f472b6; margin-right: 8px;">${escapeHtml(item.feature_type || '功能')}</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name || '')}</span>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">实际路由/接口路径: ${escapeHtml(item.feature_path || '')}</div>
+                            </div>
+                            <span class="badge badge-role-other" style="background: rgba(244, 114, 182, 0.1); color: #f472b6;">未在云效登记</span>
                         </div>
-                        <span class="badge badge-role-other" style="background: rgba(244, 114, 182, 0.1); color: #f472b6;">未在云效登记</span>
-                    </div>
-                `;
-                shadowContainer.appendChild(row);
+                    `;
+                    shadowContainer.appendChild(row);
+                } catch (e) {
+                    console.error('Failed to render shadow item:', item, e);
+                }
             });
         }
     }
@@ -1205,25 +1229,30 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
             delayContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无滞后交付数据</div>';
         } else {
             details.delay.forEach(item => {
-                const row = document.createElement('div');
-                row.className = 'audit-item';
-                row.style.borderLeft = '3px solid #f87171';
-                row.style.background = 'rgba(248, 113, 113, 0.05)';
-                row.style.padding = '10px 14px';
-                row.style.marginBottom = '8px';
-                row.style.borderRadius = 'var(--radius-sm)';
-                
-                row.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div>
-                            <span class="badge" style="background: rgba(248, 113, 113, 0.1); color: #f87171; margin-right: 8px;">${escapeHtml(item.project.toUpperCase())}</span>
-                            <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)}</span>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status)} | 负责人: ${escapeHtml(item.assignee)}</div>
+                if (!item) return;
+                try {
+                    const row = document.createElement('div');
+                    row.className = 'audit-item';
+                    row.style.borderLeft = '3px solid #f87171';
+                    row.style.background = 'rgba(248, 113, 113, 0.05)';
+                    row.style.padding = '10px 14px';
+                    row.style.marginBottom = '8px';
+                    row.style.borderRadius = 'var(--radius-sm)';
+                    
+                    row.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div>
+                                <span class="badge" style="background: rgba(248, 113, 113, 0.1); color: #f87171; margin-right: 8px;">${escapeHtml(String(item.project || '').toUpperCase())}</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id || '')}] ${escapeHtml(item.workitem_title || '')}</span>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status || '')} | 负责人: ${escapeHtml(item.assignee || '')}</div>
+                            </div>
+                            <span class="badge badge-role-other" style="background: rgba(239, 68, 68, 0.1); color: #f87171;">未在后台部署</span>
                         </div>
-                        <span class="badge badge-role-other" style="background: rgba(239, 68, 68, 0.1); color: #f87171;">未在后台部署</span>
-                    </div>
-                `;
-                delayContainer.appendChild(row);
+                    `;
+                    delayContainer.appendChild(row);
+                } catch (e) {
+                    console.error('Failed to render delay item:', item, e);
+                }
             });
         }
     }
@@ -1235,25 +1264,30 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
             mobileContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无移动端待验证数据</div>';
         } else {
             details.mobile.forEach(item => {
-                const row = document.createElement('div');
-                row.className = 'audit-item';
-                row.style.borderLeft = '3px solid #38bdf8';
-                row.style.background = 'rgba(56, 189, 248, 0.05)';
-                row.style.padding = '10px 14px';
-                row.style.marginBottom = '8px';
-                row.style.borderRadius = 'var(--radius-sm)';
-                
-                row.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div>
-                            <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; margin-right: 8px;">${escapeHtml(item.project.toUpperCase())}</span>
-                            <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)}</span>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status)} | 负责人: ${escapeHtml(item.assignee)}</div>
+                if (!item) return;
+                try {
+                    const row = document.createElement('div');
+                    row.className = 'audit-item';
+                    row.style.borderLeft = '3px solid #38bdf8';
+                    row.style.background = 'rgba(56, 189, 248, 0.05)';
+                    row.style.padding = '10px 14px';
+                    row.style.marginBottom = '8px';
+                    row.style.borderRadius = 'var(--radius-sm)';
+                    
+                    row.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div>
+                                <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8; margin-right: 8px;">${escapeHtml(String(item.project || '').toUpperCase())}</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id || '')}] ${escapeHtml(item.workitem_title || '')}</span>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status || '')} | 负责人: ${escapeHtml(item.assignee || '')}</div>
+                            </div>
+                            <span class="badge badge-role-other" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8;">客户端待验证</span>
                         </div>
-                        <span class="badge badge-role-other" style="background: rgba(56, 189, 248, 0.1); color: #38bdf8;">客户端待验证</span>
-                    </div>
-                `;
-                mobileContainer.appendChild(row);
+                    `;
+                    mobileContainer.appendChild(row);
+                } catch (e) {
+                    console.error('Failed to render mobile item:', item, e);
+                }
             });
         }
     }
@@ -1265,25 +1299,30 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
             processContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无过程节点数据</div>';
         } else {
             details.process.forEach(item => {
-                const row = document.createElement('div');
-                row.className = 'audit-item';
-                row.style.borderLeft = '3px solid #a78bfa';
-                row.style.background = 'rgba(167, 139, 250, 0.05)';
-                row.style.padding = '10px 14px';
-                row.style.marginBottom = '8px';
-                row.style.borderRadius = 'var(--radius-sm)';
-                
-                row.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div>
-                            <span class="badge" style="background: rgba(167, 139, 250, 0.1); color: #a78bfa; margin-right: 8px;">${escapeHtml(item.project.toUpperCase())}</span>
-                            <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)}</span>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status)} | 负责人: ${escapeHtml(item.assignee)}</div>
+                if (!item) return;
+                try {
+                    const row = document.createElement('div');
+                    row.className = 'audit-item';
+                    row.style.borderLeft = '3px solid #a78bfa';
+                    row.style.background = 'rgba(167, 139, 250, 0.05)';
+                    row.style.padding = '10px 14px';
+                    row.style.marginBottom = '8px';
+                    row.style.borderRadius = 'var(--radius-sm)';
+                    
+                    row.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div>
+                                <span class="badge" style="background: rgba(167, 139, 250, 0.1); color: #a78bfa; margin-right: 8px;">${escapeHtml(String(item.project || '').toUpperCase())}</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id || '')}] ${escapeHtml(item.workitem_title || '')}</span>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status || '')} | 负责人: ${escapeHtml(item.assignee || '')}</div>
+                            </div>
+                            <span class="badge badge-role-other" style="background: rgba(167, 139, 250, 0.1); color: #a78bfa;">设计/产品节点</span>
                         </div>
-                        <span class="badge badge-role-other" style="background: rgba(167, 139, 250, 0.1); color: #a78bfa;">设计/产品节点</span>
-                    </div>
-                `;
-                processContainer.appendChild(row);
+                    `;
+                    processContainer.appendChild(row);
+                } catch (e) {
+                    console.error('Failed to render process item:', item, e);
+                }
             });
         }
     }
@@ -1295,25 +1334,30 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
             otherContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无其他项目数据</div>';
         } else {
             details.other.forEach(item => {
-                const row = document.createElement('div');
-                row.className = 'audit-item';
-                row.style.borderLeft = '3px solid #94a3b8';
-                row.style.background = 'rgba(148, 163, 184, 0.05)';
-                row.style.padding = '10px 14px';
-                row.style.marginBottom = '8px';
-                row.style.borderRadius = 'var(--radius-sm)';
-                
-                row.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div>
-                            <span class="badge" style="background: rgba(148, 163, 184, 0.1); color: #94a3b8; margin-right: 8px;">${escapeHtml(item.project.toUpperCase())}</span>
-                            <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)}</span>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status)} | 负责人: ${escapeHtml(item.assignee)}</div>
+                if (!item) return;
+                try {
+                    const row = document.createElement('div');
+                    row.className = 'audit-item';
+                    row.style.borderLeft = '3px solid #94a3b8';
+                    row.style.background = 'rgba(148, 163, 184, 0.05)';
+                    row.style.padding = '10px 14px';
+                    row.style.marginBottom = '8px';
+                    row.style.borderRadius = 'var(--radius-sm)';
+                    
+                    row.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div>
+                                <span class="badge" style="background: rgba(148, 163, 184, 0.1); color: #94a3b8; margin-right: 8px;">${escapeHtml(String(item.project || '').toUpperCase())}</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">[${escapeHtml(item.workitem_id || '')}] ${escapeHtml(item.workitem_title || '')}</span>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效状态: ${escapeHtml(item.workitem_status || '')} | 负责人: ${escapeHtml(item.assignee || '')}</div>
+                            </div>
+                            <span class="badge badge-role-other" style="background: rgba(148, 163, 184, 0.1); color: #94a3b8;">其他项目</span>
                         </div>
-                        <span class="badge badge-role-other" style="background: rgba(148, 163, 184, 0.1); color: #94a3b8;">其他项目</span>
-                    </div>
-                `;
-                otherContainer.appendChild(row);
+                    `;
+                    otherContainer.appendChild(row);
+                } catch (e) {
+                    console.error('Failed to render other item:', item, e);
+                }
             });
         }
     }
@@ -1325,25 +1369,30 @@ function renderSelectedReconciliationReport(hItem, isLatest) {
             verifiedContainer.innerHTML = '<div class="empty-placeholder" style="color: var(--text-muted); padding: 12px; font-style: italic;">暂无已验证部署数据</div>';
         } else {
             details.verified.forEach(item => {
-                const row = document.createElement('div');
-                row.className = 'audit-item';
-                row.style.borderLeft = '3px solid #4ade80';
-                row.style.background = 'rgba(74, 222, 128, 0.03)';
-                row.style.padding = '10px 14px';
-                row.style.marginBottom = '8px';
-                row.style.borderRadius = 'var(--radius-sm)';
-                
-                row.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: start;">
-                        <div>
-                            <span class="badge" style="background: rgba(74, 222, 128, 0.1); color: #4ade80; margin-right: 8px;">${escapeHtml(item.feature_type)}</span>
-                            <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name)}</span>
-                            <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效关联单据: [${escapeHtml(item.workitem_id)}] ${escapeHtml(item.workitem_title)} (${escapeHtml(item.workitem_status)})</div>
+                if (!item) return;
+                try {
+                    const row = document.createElement('div');
+                    row.className = 'audit-item';
+                    row.style.borderLeft = '3px solid #4ade80';
+                    row.style.background = 'rgba(74, 222, 128, 0.03)';
+                    row.style.padding = '10px 14px';
+                    row.style.marginBottom = '8px';
+                    row.style.borderRadius = 'var(--radius-sm)';
+                    
+                    row.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                            <div>
+                                <span class="badge" style="background: rgba(74, 222, 128, 0.1); color: #4ade80; margin-right: 8px;">${escapeHtml(item.feature_type || '功能')}</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">${escapeHtml(item.feature_name || '')}</span>
+                                <div style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">云效关联单据: [${escapeHtml(item.workitem_id || '')}] ${escapeHtml(item.workitem_title || '')} (${escapeHtml(item.workitem_status || '')})</div>
+                            </div>
+                            <span class="badge badge-role-other" style="background: rgba(74, 222, 128, 0.1); color: #4ade80;">部署成功</span>
                         </div>
-                        <span class="badge badge-role-other" style="background: rgba(74, 222, 128, 0.1); color: #4ade80;">部署成功</span>
-                    </div>
-                `;
-                verifiedContainer.appendChild(row);
+                    `;
+                    verifiedContainer.appendChild(row);
+                } catch (e) {
+                    console.error('Failed to render verified item:', item, e);
+                }
             });
         }
     }
@@ -1363,14 +1412,14 @@ function renderThreewayReconciliation() {
         
     const items = details.threeway || [];
     
-    // Calculate counts for each filter category
+    // Calculate counts for each filter category safely
     const counts = {
         all: items.length,
-        frontend_missing: items.filter(x => x.status === 'frontend_missing').length,
-        backend_missing: items.filter(x => x.status === 'backend_missing').length,
-        smoke_failed: items.filter(x => x.status === 'smoke_failed').length,
-        neither_ready: items.filter(x => x.status === 'neither_ready').length,
-        both_ready: items.filter(x => x.status === 'both_ready').length
+        frontend_missing: items.filter(x => x && x.status === 'frontend_missing').length,
+        backend_missing: items.filter(x => x && x.status === 'backend_missing').length,
+        smoke_failed: items.filter(x => x && x.status === 'smoke_failed').length,
+        neither_ready: items.filter(x => x && x.status === 'neither_ready').length,
+        both_ready: items.filter(x => x && x.status === 'both_ready').length
     };
     
     // Update badge counts in the DOM if they exist
@@ -1388,18 +1437,19 @@ function renderThreewayReconciliation() {
     if (bBR) bBR.textContent = counts.both_ready;
     
     // Filter items based on current category and search query
-    let filtered = items;
+    let filtered = items.filter(x => x !== null && x !== undefined);
     if (threewayCurrentFilter !== 'all') {
         filtered = filtered.filter(x => x.status === threewayCurrentFilter);
     }
     
-    if (threewaySearchQuery.trim()) {
+    if (threewaySearchQuery && threewaySearchQuery.trim()) {
         const query = threewaySearchQuery.toLowerCase().trim();
-        filtered = filtered.filter(x => 
-            x.workitem_id.toLowerCase().includes(query) || 
-            x.workitem_title.toLowerCase().includes(query) || 
-            (x.assignee && x.assignee.toLowerCase().includes(query))
-        );
+        filtered = filtered.filter(x => {
+            const wId = x.workitem_id ? String(x.workitem_id).toLowerCase() : '';
+            const wTitle = x.workitem_title ? String(x.workitem_title).toLowerCase() : '';
+            const wAssignee = x.assignee ? String(x.assignee).toLowerCase() : '';
+            return wId.includes(query) || wTitle.includes(query) || wAssignee.includes(query);
+        });
     }
     
     // Render list
@@ -1409,125 +1459,200 @@ function renderThreewayReconciliation() {
         return;
     }
     
-    filtered.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'threeway-item';
-        card.style.border = '1px solid rgba(255,255,255,0.06)';
-        card.style.borderRadius = 'var(--radius-md)';
-        card.style.background = 'rgba(255,255,255,0.01)';
-        card.style.padding = '12px 14px';
-        card.style.marginBottom = '10px';
-        card.style.transition = 'all 0.2s';
-        
-        let statusBadgeColor = '';
-        let statusBadgeText = '';
-        let blockerText = '';
-        let borderLeftColor = '';
-        
-        switch (item.status) {
-            case 'both_ready':
-                statusBadgeColor = 'background: rgba(74, 222, 128, 0.1); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.2);';
-                statusBadgeText = '全链路已就绪';
-                blockerText = '🟢 功能开发并部署完成，冒烟测试已通过';
-                borderLeftColor = '3px solid #4ade80';
-                card.style.background = 'rgba(74, 222, 128, 0.02)';
-                break;
-            case 'smoke_failed':
-                statusBadgeColor = 'background: rgba(239, 68, 68, 0.1); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.2);';
-                statusBadgeText = '冒烟不通过';
-                blockerText = '🔴 测试环境页面或接口存在 JS 异常/请求失败，需研发跟进修复';
-                borderLeftColor = '3px solid #f87171';
-                card.style.background = 'rgba(239, 68, 68, 0.03)';
-                break;
-            case 'frontend_missing':
-                statusBadgeColor = 'background: rgba(251, 146, 60, 0.1); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.2);';
-                statusBadgeText = '卡在前端';
-                blockerText = '⚠️ 后端 API 接口已就绪/登记，但测试环境未检测到对应前端菜单，请前端开发部署';
-                borderLeftColor = '3px solid #fb923c';
-                card.style.background = 'rgba(251, 146, 60, 0.02)';
-                break;
-            case 'backend_missing':
-                statusBadgeColor = 'background: rgba(167, 139, 250, 0.1); color: #a78bfa; border: 1px solid rgba(167, 139, 250, 0.2);';
-                statusBadgeText = '卡在后端';
-                blockerText = '⚠️ 前端页面菜单已部署，但 Apifox 中未找到关联 API 接口，请后端开发登记/核对';
-                borderLeftColor = '3px solid #a78bfa';
-                card.style.background = 'rgba(167, 139, 250, 0.02)';
-                break;
-            case 'neither_ready':
-                statusBadgeColor = 'background: rgba(244, 114, 182, 0.1); color: #f472b6; border: 1px solid rgba(244, 114, 182, 0.2);';
-                statusBadgeText = '均未开发';
-                blockerText = '❌ 既未检测到后端接口，也未部署前端菜单';
-                borderLeftColor = '3px solid #f472b6';
-                break;
-        }
-        
-        card.style.borderLeft = borderLeftColor;
-        
-        // Format APIs
-        let apisHtml = '<span style="color: var(--text-muted); font-style: italic;">❌ 未检测到匹配接口</span>';
-        if (item.apis && item.apis.length > 0) {
-            apisHtml = item.apis.map(a => `
-                <div style="margin-top: 4px; display: flex; align-items: center; gap: 6px;">
-                    <span class="badge" style="background: rgba(167, 139, 250, 0.15); color: #c084fc; font-size: 10px; padding: 2px 4px; font-family: monospace;">${escapeHtml(a.method)}</span>
-                    <span style="font-family: monospace; color: #e9d5ff; word-break: break-all;">${escapeHtml(a.path)}</span>
-                    <span style="color: var(--text-muted); font-size: 11px;">(${escapeHtml(a.name)})</span>
-                </div>
-            `).join('');
-        }
-        
-        // Format UIs
-        let uisHtml = '<span style="color: var(--text-muted); font-style: italic;">❌ 未部署对应页面菜单</span>';
-        if (item.uis && item.uis.length > 0) {
-            uisHtml = item.uis.map(u => {
-                const smokeColor = u.smoke_status === 'Passed' ? '#4ade80' : '#f87171';
-                return `
-                    <div style="margin-top: 4px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
-                        <span style="color: #cbd5e1; font-weight: 500;">${escapeHtml(u.name)}</span>
-                        <span style="color: var(--text-muted); font-size: 11px;">(${escapeHtml(u.submenu.split(' -> ').slice(-1)[0])})</span>
-                        <span class="badge" style="background: rgba(0,0,0,0.2); color: ${smokeColor}; font-size: 10px; padding: 1px 4px;">冒烟:${u.smoke_status === 'Passed' ? '通过' : '失败'}</span>
-                    </div>
-                `;
-            }).join('');
-        }
-        
-        card.innerHTML = `
-            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px; gap: 10px; flex-wrap: wrap;">
-                <div>
-                    <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-secondary); margin-right: 6px; font-weight: 600;">${escapeHtml(item.workitem_id)}</span>
-                    <span style="font-weight: 600; color: var(--text-primary); font-size: 13px;">${escapeHtml(item.workitem_title)}</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 6px; font-size: 11px;">
-                    <span class="badge" style="background: rgba(255,255,255,0.04); color: var(--text-muted); font-size: 10px; padding: 2px 6px;">${escapeHtml(item.assignee || '未指派')}</span>
-                    <span class="badge" style="background: rgba(255,255,255,0.04); color: var(--text-muted); font-size: 10px; padding: 2px 6px;">${escapeHtml(item.workitem_status)}</span>
-                </div>
-            </div>
+    // Pagination calculation
+    const totalItems = filtered.length;
+    const totalPages = Math.max(1, Math.ceil(totalItems / THREEWAY_PAGE_SIZE));
+    if (threewayCurrentPage > totalPages) threewayCurrentPage = totalPages;
+    if (threewayCurrentPage < 1) threewayCurrentPage = 1;
+    
+    const startIndex = (threewayCurrentPage - 1) * THREEWAY_PAGE_SIZE;
+    const endIndex = Math.min(startIndex + THREEWAY_PAGE_SIZE, totalItems);
+    const pagedItems = filtered.slice(startIndex, endIndex);
+    
+    pagedItems.forEach(item => {
+        if (!item) return;
+        try {
+            const card = document.createElement('div');
+            card.className = 'threeway-item';
+            card.style.border = '1px solid rgba(255,255,255,0.06)';
+            card.style.borderRadius = 'var(--radius-md)';
+            card.style.background = 'rgba(255,255,255,0.01)';
+            card.style.padding = '12px 14px';
+            card.style.marginBottom = '10px';
+            card.style.transition = 'all 0.2s';
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; background: rgba(0,0,0,0.18); padding: 8px 12px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.01); margin-bottom: 8px; font-size: 11.5px;">
-                <div>
-                    <div style="color: var(--text-muted); font-weight: 500; font-size: 11px; display: flex; align-items: center; gap: 4px;">
-                        <span>⚙️ API 接口 (Apifox)</span>
-                    </div>
-                    ${apisHtml}
-                </div>
-                <div>
-                    <div style="color: var(--text-muted); font-weight: 500; font-size: 11px; display: flex; align-items: center; gap: 4px;">
-                        <span>🖥️ 菜单页面 (管理后台)</span>
-                    </div>
-                    ${uisHtml}
-                </div>
-            </div>
+            let statusBadgeColor = '';
+            let statusBadgeText = '';
+            let blockerText = '';
+            let borderLeftColor = '';
             
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; gap: 8px; flex-wrap: wrap;">
-                <div style="color: var(--text-secondary); display: flex; align-items: center; gap: 6px;">
-                    <span style="font-weight: 600; color: var(--text-muted);">状态建议:</span>
-                    <span>${blockerText}</span>
+            switch (item.status) {
+                case 'both_ready':
+                    statusBadgeColor = 'background: rgba(74, 222, 128, 0.1); color: #4ade80; border: 1px solid rgba(74, 222, 128, 0.2);';
+                    statusBadgeText = '全链路已就绪';
+                    blockerText = '🟢 功能开发并部署完成，冒烟测试已通过';
+                    borderLeftColor = '3px solid #4ade80';
+                    card.style.background = 'rgba(74, 222, 128, 0.02)';
+                    break;
+                case 'smoke_failed':
+                    statusBadgeColor = 'background: rgba(239, 68, 68, 0.1); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.2);';
+                    statusBadgeText = '冒烟不通过';
+                    blockerText = '🔴 测试环境页面或接口存在 JS 异常/请求失败，需研发跟进修复';
+                    borderLeftColor = '3px solid #f87171';
+                    card.style.background = 'rgba(239, 68, 68, 0.03)';
+                    break;
+                case 'frontend_missing':
+                    statusBadgeColor = 'background: rgba(251, 146, 60, 0.1); color: #fb923c; border: 1px solid rgba(251, 146, 60, 0.2);';
+                    statusBadgeText = '卡在前端';
+                    blockerText = '⚠️ 后端 API 接口已就绪/登记，但测试环境未检测到对应前端菜单，请前端开发部署';
+                    borderLeftColor = '3px solid #fb923c';
+                    card.style.background = 'rgba(251, 146, 60, 0.02)';
+                    break;
+                case 'backend_missing':
+                    statusBadgeColor = 'background: rgba(167, 139, 250, 0.1); color: #a78bfa; border: 1px solid rgba(167, 139, 250, 0.2);';
+                    statusBadgeText = '卡在后端';
+                    blockerText = '⚠️ 前端页面菜单已部署，但 Apifox 中未找到关联 API 接口，请后端开发登记/核对';
+                    borderLeftColor = '3px solid #a78bfa';
+                    card.style.background = 'rgba(167, 139, 250, 0.02)';
+                    break;
+                case 'neither_ready':
+                    statusBadgeColor = 'background: rgba(244, 114, 182, 0.1); color: #f472b6; border: 1px solid rgba(244, 114, 182, 0.2);';
+                    statusBadgeText = '均未开发';
+                    blockerText = '❌ 既未检测到后端接口，也未部署前端菜单';
+                    borderLeftColor = '3px solid #f472b6';
+                    break;
+                default:
+                    statusBadgeColor = 'background: rgba(255, 255, 255, 0.1); color: var(--text-secondary);';
+                    statusBadgeText = String(item.status || '未知状态');
+                    blockerText = '无法判定链路状态';
+                    borderLeftColor = '3px solid var(--border-color)';
+            }
+            
+            card.style.borderLeft = borderLeftColor;
+            
+            // Format APIs safely
+            let apisHtml = '<span style="color: var(--text-muted); font-style: italic;">❌ 未检测到匹配接口</span>';
+            if (item.apis && item.apis.length > 0) {
+                apisHtml = item.apis.map(a => {
+                    if (!a) return '';
+                    return `
+                        <div style="margin-top: 4px; display: flex; align-items: center; gap: 6px;">
+                            <span class="badge" style="background: rgba(167, 139, 250, 0.15); color: #c084fc; font-size: 10px; padding: 2px 4px; font-family: monospace;">${escapeHtml(a.method || 'API')}</span>
+                            <span style="font-family: monospace; color: #e9d5ff; word-break: break-all;">${escapeHtml(a.path || '')}</span>
+                            <span style="color: var(--text-muted); font-size: 11px;">(${escapeHtml(a.name || '未命名')})</span>
+                        </div>
+                    `;
+                }).join('');
+                if (item.api_count && item.api_count > item.apis.length) {
+                    apisHtml += `<div style="margin-top: 4px; color: var(--text-muted); font-size: 11px; font-style: italic;">... 另有 ${item.api_count - item.apis.length} 个匹配接口</div>`;
+                }
+            }
+            
+            // Format UIs safely
+            let uisHtml = '<span style="color: var(--text-muted); font-style: italic;">❌ 未部署对应页面菜单</span>';
+            if (item.uis && item.uis.length > 0) {
+                uisHtml = item.uis.map(u => {
+                    if (!u) return '';
+                    const smokeColor = u.smoke_status === 'Passed' ? '#4ade80' : '#f87171';
+                    const submenuLabel = u.submenu ? u.submenu.split(' -> ').slice(-1)[0] : '顶级菜单';
+                    return `
+                        <div style="margin-top: 4px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                            <span style="color: #cbd5e1; font-weight: 500;">${escapeHtml(u.name || '')}</span>
+                            <span style="color: var(--text-muted); font-size: 11px;">(${escapeHtml(submenuLabel)})</span>
+                            <span class="badge" style="background: rgba(0,0,0,0.2); color: ${smokeColor}; font-size: 10px; padding: 1px 4px;">冒烟:${u.smoke_status === 'Passed' ? '通过' : '失败'}</span>
+                        </div>
+                    `;
+                }).join('');
+                if (item.ui_count && item.ui_count > item.uis.length) {
+                    uisHtml += `<div style="margin-top: 4px; color: var(--text-muted); font-size: 11px; font-style: italic;">... 另有 ${item.ui_count - item.uis.length} 个页面已部署</div>`;
+                }
+            }
+            
+            card.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 8px; gap: 10px; flex-wrap: wrap;">
+                    <div>
+                        <span class="badge" style="background: rgba(255,255,255,0.06); color: var(--text-secondary); margin-right: 6px; font-weight: 600;">${escapeHtml(String(item.workitem_id || ''))}</span>
+                        <span style="font-weight: 600; color: var(--text-primary); font-size: 13px;">${escapeHtml(item.workitem_title || '')}</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 6px; font-size: 11px;">
+                        <span class="badge" style="background: rgba(255,255,255,0.04); color: var(--text-muted); font-size: 10px; padding: 2px 6px;">${escapeHtml(item.assignee || '未指派')}</span>
+                        <span class="badge" style="background: rgba(255,255,255,0.04); color: var(--text-muted); font-size: 10px; padding: 2px 6px;">${escapeHtml(item.workitem_status || '')}</span>
+                    </div>
                 </div>
-                <span class="badge" style="padding: 2px 8px; font-size: 10px; font-weight: 600; ${statusBadgeColor}">${statusBadgeText}</span>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; background: rgba(0,0,0,0.18); padding: 8px 12px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.01); margin-bottom: 8px; font-size: 11.5px;">
+                    <div>
+                        <div style="color: var(--text-muted); font-weight: 500; font-size: 11px; display: flex; align-items: center; gap: 4px;">
+                            <span>⚙️ API 接口 (Apifox)</span>
+                        </div>
+                        ${apisHtml}
+                    </div>
+                    <div>
+                        <div style="color: var(--text-muted); font-weight: 500; font-size: 11px; display: flex; align-items: center; gap: 4px;">
+                            <span>🖥️ 菜单页面 (管理后台)</span>
+                        </div>
+                        ${uisHtml}
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; gap: 8px; flex-wrap: wrap;">
+                    <div style="color: var(--text-secondary); display: flex; align-items: center; gap: 6px;">
+                        <span style="font-weight: 600; color: var(--text-muted);">状态建议:</span>
+                        <span>${blockerText}</span>
+                    </div>
+                    <span class="badge" style="padding: 2px 8px; font-size: 10px; font-weight: 600; ${statusBadgeColor}">${statusBadgeText}</span>
+                </div>
+            `;
+            
+            container.appendChild(card);
+        } catch (err) {
+            console.error('Failed to render threeway item card:', item, err);
+        }
+    });
+    
+    // If total items > page size, render pagination bar
+    if (totalPages > 1) {
+        const paginator = document.createElement('div');
+        paginator.style.display = 'flex';
+        paginator.style.justifyContent = 'space-between';
+        paginator.style.alignItems = 'center';
+        paginator.style.padding = '12px 6px';
+        paginator.style.marginTop = '8px';
+        paginator.style.borderTop = '1px solid rgba(255,255,255,0.06)';
+        paginator.style.fontSize = '12px';
+        paginator.style.color = 'var(--text-muted)';
+        paginator.style.flexWrap = 'wrap';
+        paginator.style.gap = '8px';
+        
+        paginator.innerHTML = `
+            <div>
+                显示第 <span style="color: var(--text-primary); font-weight: 600;">${startIndex + 1} - ${endIndex}</span> 项，共 <span style="color: var(--text-primary); font-weight: 600;">${totalItems}</span> 项 (第 ${threewayCurrentPage} / ${totalPages} 页)
+            </div>
+            <div style="display: flex; gap: 6px;">
+                <button id="threeway-page-prev" ${threewayCurrentPage === 1 ? 'disabled' : ''} style="padding: 4px 10px; background: ${threewayCurrentPage === 1 ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.08)'}; color: ${threewayCurrentPage === 1 ? 'var(--text-muted)' : 'var(--text-primary)'}; border: 1px solid var(--border-color); border-radius: var(--radius-sm); cursor: ${threewayCurrentPage === 1 ? 'not-allowed' : 'pointer'}; outline: none; font-size: 11px;">上一页</button>
+                <button id="threeway-page-next" ${threewayCurrentPage === totalPages ? 'disabled' : ''} style="padding: 4px 10px; background: ${threewayCurrentPage === totalPages ? 'rgba(255,255,255,0.02)' : 'rgba(255,255,255,0.08)'}; color: ${threewayCurrentPage === totalPages ? 'var(--text-muted)' : 'var(--text-primary)'}; border: 1px solid var(--border-color); border-radius: var(--radius-sm); cursor: ${threewayCurrentPage === totalPages ? 'not-allowed' : 'pointer'}; outline: none; font-size: 11px;">下一页</button>
             </div>
         `;
         
-        container.appendChild(card);
-    });
+        container.appendChild(paginator);
+        
+        const btnPrev = document.getElementById('threeway-page-prev');
+        if (btnPrev && threewayCurrentPage > 1) {
+            btnPrev.addEventListener('click', () => {
+                threewayCurrentPage--;
+                renderThreewayReconciliation();
+                container.scrollTop = 0;
+            });
+        }
+        const btnNext = document.getElementById('threeway-page-next');
+        if (btnNext && threewayCurrentPage < totalPages) {
+            btnNext.addEventListener('click', () => {
+                threewayCurrentPage++;
+                renderThreewayReconciliation();
+                container.scrollTop = 0;
+            });
+        }
+    }
 }
 
 // VIEW 1: Render Overview Dashboard
@@ -2540,8 +2665,8 @@ function showToast(message) {
 
 // HTML Escaper helper
 function escapeHtml(str) {
-    if (!str) return '';
-    return str.replace(/&/g, '&amp;')
+    if (str === null || str === undefined) return '';
+    return String(str).replace(/&/g, '&amp;')
               .replace(/</g, '&lt;')
               .replace(/>/g, '&gt;')
               .replace(/"/g, '&quot;')
