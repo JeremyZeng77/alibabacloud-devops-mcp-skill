@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-03T08:59:02.378886+00:00",
+  "compiledAt": "2026-09-03T14:16:34.963636+00:00",
   "latest": {
     "mftb": [
       {
@@ -328,7 +328,7 @@
       {
         "id": "MFTB-1577",
         "title": "【極馬】專送迭代-騎手調度頁面優化",
-        "status": "待测试",
+        "status": "测试中",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -338,7 +338,7 @@
         "createDate": "2026-08-27",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=10ca2ce782c4c77bda9d8dfc60",
-        "rowText": "【产品类需求】【極馬】專送迭代-騎手調度頁面優化\nID: MFTB-1577 | 状态: 待测试 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-27 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送迭代-騎手調度頁面優化\nID: MFTB-1577 | 状态: 测试中 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3435,6 +3435,40 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1671",
+        "title": "【產品】【眾包】騎手所屬站點邏輯優化",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-09-02",
+        "planEnd": "2026-09-02",
+        "createDate": "2026-09-03",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=412a4ddf4649483acdaa7d41db",
+        "rowText": "【产品】【產品】【眾包】騎手所屬站點邏輯優化\nID: MFTB-1671 | 状态: 已完成 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-03 | 排期规划: 2026-09-02 至 2026-09-02",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1670",
+        "title": "【测试】【極馬】專送迭代-騎手調度頁面優化",
+        "status": "测试中",
+        "priority": "中",
+        "assignee": "侯黎明",
+        "creator": "侯黎明",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-03",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4642ff9f018b9260e8a0ed7bd3",
+        "rowText": "【測試】【测试】【極馬】專送迭代-騎手調度頁面優化\nID: MFTB-1670 | 状态: 测试中 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-03 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1667",
@@ -26338,23 +26372,6 @@
     ],
     "mfood": [
       {
-        "id": "MF-34715",
-        "title": "【舊係統】商戶後臺-門店相冊，圖片新增刪除操作",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "覃林方",
-        "creator": "覃林方",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-09-03",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=85a12f620988ffb7ba3016a331",
-        "rowText": "【产品类需求】【舊係統】商戶後臺-門店相冊，圖片新增刪除操作\nID: MF-34715 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: V7.4.0（？） | 创建时间: 2026-09-03 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Req"
-      },
-      {
         "id": "MF-34707",
         "title": "未報名勁爆券商家，取消「門店首頁標籤」",
         "status": "待处理",
@@ -31036,11 +31053,11 @@
       },
       {
         "date": "2026-09-03",
-        "total": 1186,
-        "completed": 905,
+        "total": 1188,
+        "completed": 906,
         "statusCounts": {
-          "已完成": 905,
-          "进行中": 281
+          "已完成": 906,
+          "进行中": 282
         }
       }
     ],
@@ -43017,11 +43034,11 @@
       },
       {
         "date": "2026-09-03",
-        "total": 192,
+        "total": 191,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 155
+          "进行中": 154
         }
       }
     ]
