@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-05T04:11:53.114717+00:00",
+  "compiledAt": "2026-09-05T08:13:07.494882+00:00",
   "latest": {
     "mftb": [
       {
@@ -21289,7 +21289,7 @@
       {
         "id": "MFTB-1307",
         "title": "【大係統】【用户端APP】安卓账号与安全问题汇总",
-        "status": "处理中",
+        "status": "已修复",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "曹晴晴",
@@ -21299,7 +21299,7 @@
         "createDate": "2026-08-06",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=72cc4a65b13bdbd31ba7987d9e",
-        "rowText": "【缺陷】【大係統】【用户端APP】安卓账号与安全问题汇总\nID: MFTB-1307 | 状态: 处理中 | 优先级: 中\n负责人: 徐子旺 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【大係統】【用户端APP】安卓账号与安全问题汇总\nID: MFTB-1307 | 状态: 已修复 | 优先级: 中\n负责人: 徐子旺 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-06 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -21425,7 +21425,7 @@
       {
         "id": "MFTB-1256",
         "title": "【大係統】【用户端APP】安卓细节问题汇总",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "曹晴晴",
@@ -21435,7 +21435,7 @@
         "createDate": "2026-08-03",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=378cb5cc10922f98d06e12e6b2",
-        "rowText": "【缺陷】【大係統】【用户端APP】安卓细节问题汇总\nID: MFTB-1256 | 状态: 待确认 | 优先级: 中\n负责人: 徐子旺 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【大係統】【用户端APP】安卓细节问题汇总\nID: MFTB-1256 | 状态: 已修复 | 优先级: 中\n负责人: 徐子旺 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
