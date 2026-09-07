@@ -131,11 +131,13 @@ def main():
     conn.close()
     
     # 3. Read compiled projects data (Yunxiao workitems)
+    # 优先读取 dashboard/data（编译输出 + 最新 pmoAdvice），避免用本地根目录 projects_data.json
+    # 中的陈旧 pmoAdvice 覆盖已生成的建议。
     paths_to_read = [
-        'projects_data.json',
-        'alibabacloud-devops-mcp-skill/dashboard/projects_data.json',
         'alibabacloud-devops-mcp-skill/dashboard/data/projects_data.json',
-        'repo-temp/dashboard/projects_data.json'
+        'alibabacloud-devops-mcp-skill/dashboard/projects_data.json',
+        'repo-temp/dashboard/projects_data.json',
+        'projects_data.json'
     ]
     
     projects_data = None
