@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-06T23:38:07.335058+00:00",
+  "compiledAt": "2026-09-07T03:45:40.082045+00:00",
   "latest": {
     "mftb": [
       {
@@ -600,7 +600,7 @@
       {
         "id": "MFTB-1464",
         "title": "【極馬】專送騎手統計增加隱形單",
-        "status": "测试环境验证通过",
+        "status": "预发布验收通过",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -610,7 +610,7 @@
         "createDate": "2026-08-18",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=00702da1162499a7a07a6477b6",
-        "rowText": "【产品类需求】【極馬】專送騎手統計增加隱形單\nID: MFTB-1464 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送騎手統計增加隱形單\nID: MFTB-1464 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-18 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -719,7 +719,7 @@
       {
         "id": "MFTB-1426",
         "title": "【極馬】專送騎手列表、專送騎手統計增加導出",
-        "status": "测试环境验证通过",
+        "status": "预发布验收通过",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -729,7 +729,7 @@
         "createDate": "2026-08-17",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=6b2aa7c1fb37a51d7c23c080a1",
-        "rowText": "【产品类需求】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1426 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1426 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3403,6 +3403,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1679",
+        "title": "【mfood.Android用户端】【大係統】app消息中心",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "陈国伟",
+        "creator": "徐子旺",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-07",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=cb6f743b4cb31aeed8a5f72f3f",
+        "rowText": "【任务】【mfood.Android用户端】【大係統】app消息中心\nID: MFTB-1679 | 状态: 未开始 | 优先级: 中\n负责人: 陈国伟 | 提报人: 徐子旺\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-07 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1678",
         "title": "【大系統】配送費減免",
         "status": "提交测试",
@@ -3444,12 +3461,12 @@
         "assignee": "甄荣康",
         "creator": "甄荣康",
         "iteration": "未规划",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-09-07",
+        "planEnd": "2026-09-08",
         "createDate": "2026-09-04",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9b419e944a7dbd59d1989d1696",
-        "rowText": "【任务】【前端】【大係統-會員中心】券包概念\nID: MFTB-1673 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-09-04 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大係統-會員中心】券包概念\nID: MFTB-1673 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-09-04 | 排期规划: 2026-09-07 至 2026-09-08",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3745,7 +3762,7 @@
       {
         "id": "MFTB-1643",
         "title": "【测试】【極馬】專送騎手列表、專送騎手統計增加導出",
-        "status": "测试环境验证通过",
+        "status": "预发布验收通过",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -3755,7 +3772,7 @@
         "createDate": "2026-09-02",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c3070d1c02fcc6be946cb8dc4e",
-        "rowText": "【測試】【测试】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1643 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-02 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【極馬】專送騎手列表、專送騎手統計增加導出\nID: MFTB-1643 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-02 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -28174,23 +28191,6 @@
         "category": "Req"
       },
       {
-        "id": "MF-34714",
-        "title": "【测试】【外卖/团购】红包列表，特殊分摊支持为 0",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "贺志成",
-        "creator": "贺志成",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-09-02",
-        "workItemType": "測試",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=b84ac36cba4b68ab973330845b",
-        "rowText": "【測試】【测试】【外卖/团购】红包列表，特殊分摊支持为 0\nID: MF-34714 | 状态: 待处理 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.4.0（？） | 创建时间: 2026-09-02 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Task"
-      },
-      {
         "id": "MF-34708",
         "title": "【测试】未報名勁爆券商家，取消「門店首頁標籤」",
         "status": "待处理",
@@ -31170,6 +31170,15 @@
         "statusCounts": {
           "已完成": 921,
           "进行中": 268
+        }
+      },
+      {
+        "date": "2026-09-07",
+        "total": 1190,
+        "completed": 921,
+        "statusCounts": {
+          "已完成": 921,
+          "进行中": 269
         }
       }
     ],
@@ -43137,47 +43146,56 @@
       },
       {
         "date": "2026-09-02",
-        "total": 190,
+        "total": 189,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 153
+          "进行中": 152
         }
       },
       {
         "date": "2026-09-03",
-        "total": 192,
+        "total": 191,
         "completed": 37,
         "statusCounts": {
           "已完成": 37,
-          "进行中": 155
+          "进行中": 154
         }
       },
       {
         "date": "2026-09-04",
-        "total": 192,
+        "total": 191,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 153
+          "进行中": 152
         }
       },
       {
         "date": "2026-09-05",
-        "total": 192,
+        "total": 191,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 153
+          "进行中": 152
         }
       },
       {
         "date": "2026-09-06",
-        "total": 192,
+        "total": 191,
         "completed": 39,
         "statusCounts": {
           "已完成": 39,
-          "进行中": 153
+          "进行中": 152
+        }
+      },
+      {
+        "date": "2026-09-07",
+        "total": 191,
+        "completed": 39,
+        "statusCounts": {
+          "已完成": 39,
+          "进行中": 152
         }
       }
     ]
@@ -43722,7 +43740,7 @@
   "leadTimeKPI": {
     "mftb": {
       "average": 14.4,
-      "delta": 7.0
+      "delta": 6.6
     },
     "mfood": {
       "average": 0.0,
