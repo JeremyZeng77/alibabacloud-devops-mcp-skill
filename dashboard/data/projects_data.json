@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-09-07T09:08:25.888221+00:00",
+  "compiledAt": "2026-09-07T15:38:28.249135+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1685",
+        "title": "【極馬】專送迭代-二次補送",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-07",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a766f4e1933981b5284c4f3807",
+        "rowText": "【产品类需求】【極馬】專送迭代-二次補送\nID: MFTB-1685 | 状态: 待处理 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-07 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1653",
         "title": "【大係統】商家端打印小票",
@@ -196,13 +213,13 @@
         "priority": "中",
         "assignee": "溫浩源",
         "creator": "溫浩源",
-        "iteration": "未规划",
+        "iteration": "MFTB-v1.0.2",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-08-31",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b764859f67fd8f837eb6353a6f",
-        "rowText": "【产品类需求】【大係統-會員中心】券包概念和慳錢包\nID: MFTB-1604 | 状态: 已内审 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-31 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統-會員中心】券包概念和慳錢包\nID: MFTB-1604 | 状态: 已内审 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-31 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -502,13 +519,13 @@
         "priority": "中",
         "assignee": "溫浩源",
         "creator": "溫浩源",
-        "iteration": "未规划",
+        "iteration": "MFTB-v1.0.2",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-08-21",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7f95299487a4d5b29e332e8baf",
-        "rowText": "【产品类需求】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1512 | 状态: 提交测试 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-21 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1512 | 状态: 提交测试 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-21 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -519,13 +536,13 @@
         "priority": "中",
         "assignee": "溫浩源",
         "creator": "溫浩源",
-        "iteration": "未规划",
+        "iteration": "MFTB-v1.0.2",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-08-21",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1049906513fe935dcb3d65e9f5",
-        "rowText": "【产品类需求】【大係統-商家端App】商家報名平臺活動（外賣管理）\nID: MFTB-1509 | 状态: 已内审 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: 未规划 | 创建时间: 2026-08-21 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統-商家端App】商家報名平臺活動（外賣管理）\nID: MFTB-1509 | 状态: 已内审 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-21 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3403,6 +3420,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1686",
+        "title": "【前端】【大係統-會員中心】会员券包",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-07",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a50578364948b1b1bf5990e9b2",
+        "rowText": "【任务】【前端】【大係統-會員中心】会员券包\nID: MFTB-1686 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-07 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1680",
         "title": "【變更】【商家app】配送費減免",
         "status": "未开始",
@@ -3473,7 +3507,7 @@
       {
         "id": "MFTB-1673",
         "title": "【前端】【大係統-會員中心】券包概念",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -3483,7 +3517,7 @@
         "createDate": "2026-09-04",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9b419e944a7dbd59d1989d1696",
-        "rowText": "【任务】【前端】【大係統-會員中心】券包概念\nID: MFTB-1673 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-09-04 | 排期规划: 2026-09-07 至 2026-09-08",
+        "rowText": "【任务】【前端】【大係統-會員中心】券包概念\nID: MFTB-1673 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-09-04 | 排期规划: 2026-09-07 至 2026-09-08",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -31259,11 +31293,11 @@
       },
       {
         "date": "2026-09-07",
-        "total": 1191,
-        "completed": 923,
+        "total": 1193,
+        "completed": 924,
         "statusCounts": {
-          "已完成": 923,
-          "进行中": 268
+          "已完成": 924,
+          "进行中": 269
         }
       }
     ],
