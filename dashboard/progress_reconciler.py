@@ -8,15 +8,23 @@ from datetime import datetime
 # Ensure UTF-8 output
 sys.stdout.reconfigure(encoding='utf-8')
 
+# Module-level zhconv fallback: avoid repeated failed import attempts in hot loops
+# If zhconv is not installed, matching still works on original text.
+try:
+    from zhconv import convert as _zhconv_convert
+except Exception:
+    _zhconv_convert = lambda text, _: text
+
+
+def log_progress(msg):
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] {msg}", flush=True)
+
+
 DB_PATH = 'projects_history.db'
 OUTPUT_PATH = 'projects_data.json'
 
 def get_keywords(text):
-    try:
-        import zhconv
-        text = zhconv.convert(text, 'zh-hans')
-    except:
-        pass
+    text = _zhconv_convert(text, 'zh-hans')
     # Split text into keywords, ignoring punctuation and common stop words
     cleaned = re.sub(r'[^\w\s\u4e00-\u9fff]', ' ', text)
     words = cleaned.split()
@@ -30,14 +38,10 @@ def get_keywords(text):
     return {w.lower() for w in words if len(w) > 1 and w not in stop_words}
 
 def match_items(workitem_id, workitem_title, target_name, target_path=""):
-    try:
-        import zhconv
-        workitem_title = zhconv.convert(workitem_title, 'zh-hans')
-        target_name = zhconv.convert(target_name, 'zh-hans')
-        if target_path:
-            target_path = zhconv.convert(target_path, 'zh-hans')
-    except:
-        pass
+    workitem_title = _zhconv_convert(workitem_title, 'zh-hans')
+    target_name = _zhconv_convert(target_name, 'zh-hans')
+    if target_path:
+        target_path = _zhconv_convert(target_path, 'zh-hans')
 
     # Manual Override Mappings
     manual_mappings = [
@@ -79,7 +83,7 @@ def match_items(workitem_id, workitem_title, target_name, target_path=""):
 
 def main():
     today_str = datetime.now().strftime('%Y-%m-%d')
-    print(f"[{datetime.now().strftime('%H:%M:%S')}] Starting Progress Reconciliation...")
+    log_progress("Starting Progress Reconciliation...")
     
     # 1. Fetch Admin UI scan results
     conn = sqlite3.connect(DB_PATH)
@@ -177,9 +181,13 @@ def main():
     
     matched_features = set()
     matched_workitems = set()
+    total_items = len(latest_items)
     
     # Map workitems to features
-    for it in latest_items:
+    log_progress(f"开始匹配 workitems 与 features（共 {total_items} 项）...")
+    for idx, it in enumerate(latest_items, 1):
+        if idx % 200 == 0:
+            log_progress(f"  进度: {idx}/{total_items} workitems 已匹配...")
         title_lower = it['title'].lower()
         
         # Check if it belongs to other projects (众包/极马)
@@ -283,7 +291,10 @@ def main():
                 
     # 4.5. Generate Three-way Linkage Reconciliation (Task <-> API <-> UI Menu)
     three_way_reconciliation = []
-    for it in latest_items:
+    log_progress(f"开始生成三方联动核对（共 {total_items} 项）...")
+    for idx, it in enumerate(latest_items, 1):
+        if idx % 200 == 0:
+            log_progress(f"  进度: {idx}/{total_items} 三方联动核对...")
         title_lower = it['title'].lower()
         project_lower = it['project'].lower()
         
@@ -530,8 +541,8 @@ def main():
         except Exception as write_err:
             pass
             
-    print(f"Progress Reconciliation completed! Report updated in {updated_count} location(s).")
-    print(f"Summary: Verified: {len(verified_deployed)} | Incomplete: {len(deployment_incomplete)} | Shadow: {len(shadow_development)} | Delay: {len(delivery_delay)}")
+    print(f"Progress Reconciliation completed! Report updated in {updated_count} location(s).", flush=True)
+    print(f"Summary: Verified: {len(verified_deployed)} | Incomplete: {len(deployment_incomplete)} | Shadow: {len(shadow_development)} | Delay: {len(delivery_delay)}", flush=True)
 
 if __name__ == '__main__':
     main()
