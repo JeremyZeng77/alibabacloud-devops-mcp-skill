@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-07T04:35:09.036188+00:00",
+  "compiledAt": "2026-09-07T04:35:08.305631+00:00",
   "latest": {
     "mftb": [
       {
@@ -1695,10 +1695,10 @@
         "iteration": "MFTB-v1.0.1",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2026-07-15",
+        "createDate": "2026-07-16",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fcf141dc657b3230b39d4643f4",
-        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-15 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大系统】特殊区域管理\nID: MFTB-996 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-16 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -16604,10 +16604,10 @@
         "iteration": "MFTB-v1.0.1",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2026-05-27",
+        "createDate": "2026-05-28",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=417617a21c5b94e05182b63d50",
-        "rowText": "【任务】【前端】【大係統】商家意見反饋\nID: MFTB-422 | 状态: 提交测试 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-05-27 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大係統】商家意見反饋\nID: MFTB-422 | 状态: 提交测试 | 优先级: 中\n负责人: 李科 | 提报人: 李科\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-05-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -28013,10 +28013,10 @@
         "iteration": "产品需求池",
         "planStart": "",
         "planEnd": "",
-        "createDate": "2024-03-23",
+        "createDate": "2024-03-24",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=2673c2a10ff8f9b66b85575e07",
-        "rowText": "【产品类需求】增加超市指定營銷活動-重新二审\nID: MF-21297 | 状态: 需求暂停 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 产品需求池 | 创建时间: 2024-03-23 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】增加超市指定營銷活動-重新二审\nID: MF-21297 | 状态: 需求暂停 | 优先级: 中\n负责人: 刘龙振海 | 提报人: 刘龙振海\n迭代版本: 产品需求池 | 创建时间: 2024-03-24 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
       },
@@ -30247,11 +30247,11 @@
       },
       {
         "date": "2026-05-27",
-        "total": 248,
+        "total": 247,
         "completed": 202,
         "statusCounts": {
           "已完成": 202,
-          "进行中": 46
+          "进行中": 45
         }
       },
       {
@@ -30275,10 +30275,10 @@
       {
         "date": "2026-05-30",
         "total": 257,
-        "completed": 209,
+        "completed": 208,
         "statusCounts": {
-          "已完成": 209,
-          "进行中": 48
+          "已完成": 208,
+          "进行中": 49
         }
       },
       {
@@ -30688,11 +30688,11 @@
       },
       {
         "date": "2026-07-15",
-        "total": 693,
+        "total": 692,
         "completed": 556,
         "statusCounts": {
           "已完成": 556,
-          "进行中": 137
+          "进行中": 136
         }
       },
       {
@@ -31076,19 +31076,19 @@
       {
         "date": "2026-08-27",
         "total": 1115,
-        "completed": 840,
+        "completed": 834,
         "statusCounts": {
-          "已完成": 840,
-          "进行中": 275
+          "已完成": 834,
+          "进行中": 281
         }
       },
       {
         "date": "2026-08-28",
         "total": 1130,
-        "completed": 852,
+        "completed": 848,
         "statusCounts": {
-          "已完成": 852,
-          "进行中": 278
+          "已完成": 848,
+          "进行中": 282
         }
       },
       {
@@ -31112,46 +31112,46 @@
       {
         "date": "2026-08-31",
         "total": 1136,
-        "completed": 864,
+        "completed": 861,
         "statusCounts": {
-          "已完成": 864,
-          "进行中": 272
+          "已完成": 861,
+          "进行中": 275
         }
       },
       {
         "date": "2026-09-01",
         "total": 1145,
-        "completed": 873,
+        "completed": 867,
         "statusCounts": {
-          "已完成": 873,
-          "进行中": 272
+          "已完成": 867,
+          "进行中": 278
         }
       },
       {
         "date": "2026-09-02",
         "total": 1170,
-        "completed": 889,
+        "completed": 882,
         "statusCounts": {
-          "已完成": 889,
-          "进行中": 281
+          "已完成": 882,
+          "进行中": 288
         }
       },
       {
         "date": "2026-09-03",
         "total": 1186,
-        "completed": 905,
+        "completed": 897,
         "statusCounts": {
-          "已完成": 905,
-          "进行中": 281
+          "已完成": 897,
+          "进行中": 289
         }
       },
       {
         "date": "2026-09-04",
         "total": 1189,
-        "completed": 920,
+        "completed": 909,
         "statusCounts": {
-          "已完成": 920,
-          "进行中": 269
+          "已完成": 909,
+          "进行中": 280
         }
       },
       {
@@ -35109,11 +35109,11 @@
       },
       {
         "date": "2024-03-23",
-        "total": 4,
+        "total": 3,
         "completed": 0,
         "statusCounts": {
           "已完成": 0,
-          "进行中": 4
+          "进行中": 3
         }
       },
       {
@@ -43147,10 +43147,10 @@
       {
         "date": "2026-09-02",
         "total": 189,
-        "completed": 37,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 37,
-          "进行中": 152
+          "已完成": 35,
+          "进行中": 154
         }
       },
       {
@@ -43165,10 +43165,10 @@
       {
         "date": "2026-09-04",
         "total": 191,
-        "completed": 39,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 39,
-          "进行中": 152
+          "已完成": 37,
+          "进行中": 154
         }
       },
       {
@@ -43201,47 +43201,6 @@
     ]
   },
   "weeklyReports": [
-    {
-      "week": "2026-08-31 至 2026-09-04",
-      "mftb": {
-        "metrics": "- **MFTB 集团项目**：\n  - 本周是 MFTB 集团项目研发交付推进周。本周新创建了 **76** 项任务，同时有 **150** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：46 项\n    - 产品类需求 (Requirement)：13 项\n    - 缺陷 (Bug)：17 项\n  - **核心迭代 MFTB-v1.0.0 最新状态分布**：\n    | 状态 | 数量 | 占比 | 状态含义与关键进展 |\n    | --- | --- | --- | --- |\n    | 提交测试 | 544 | 35.0% | 研发大面积闭环，本周有较多子任务 and 变更单进入测试队列。 |\n    | 已完成 | 153 | 9.8% | 部分产品原型与商圈品类功能已开发验收完成。 |\n    | 开发中 | 28 | 1.8% | 部分到家业务商品标签/参数联调中。 |\n    | 待处理 | 121 | 7.8% | 包含新增的后续规划中的需求。 |",
-        "progress": "- **MFTB 集团项目**：\n  - **【大系統】配送費減免**：工作项 `[MFTB-1678]` (负责人: 龚凯) 已流转至 **提交测试** 状态。\n  - **【變更】【大系統】配送費減免**：工作项 `[MFTB-1677]` (负责人: 刘龙振海) 已流转至 **已完成** 状态。\n  - **【大係統】商家端打印小票**：工作项 `[MFTB-1653]` (负责人: 覃林方) 已流转至 **待测试** 状态。",
-        "planning": "- **MFTB 集团项目**：\n  - **【大系統】配送費減免**：新进规划工作项 `[MFTB-1678]` (负责人: 龚凯)，当前处于 **提交测试** 状态。\n  - **【前端】【大係統-會員中心】券包概念**：新进规划工作项 `[MFTB-1673]` (负责人: 甄荣康)，当前处于 **未开始** 状态。\n  - **【大係統】【闪蜂iOS用户端】设置+账号与安全问题汇总**：新进规划工作项 `[MFTB-1675]` (负责人: 郑跃浩)，当前处于 **待确认** 状态。",
-        "assessment": "- **MFTB 集团项目**：\n  - 目前核心业务模块的底层架构和配置已大面积完成开发并交付测试。主要卡点仍在于订单与在线支付通道联调，需加速相应研发进度以确保闭环交易流程的贯通。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 16 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **MFTB 集团项目建议**：\n  - [负责人: 廖荣][截止日期: 2026-09-08] 疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。\n  - [负责人: 覃林方][截止日期: 2026-09-11] 协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "廖荣",
-            "due": "2026-09-08",
-            "desc": "疏通：紧急启动并优先排期“订单与支付”专项，将核心任务优先级提到最高 (P0)。"
-          },
-          {
-            "completed": false,
-            "owner": "覃林方",
-            "due": "2026-09-11",
-            "desc": "协调：如果“提交测试”队列过长，协调产品协助功能验收测试，合理分配测试资源。"
-          }
-        ]
-      },
-      "mfood": {
-        "metrics": "- **mFood 综合版本**：\n  - 本周对 V7.2.0、V7.2.5 以及 0.0.0 迭代进行了重点推进。本周新创建了 **9** 项任务，同时有 **15** 项存量任务得到了研发或测试的流转更新。\n  - **新创建任务分类统计**：\n    - 开发子任务 (Task)：6 项\n    - 产品类需求 (Requirement)：3 项\n    - 缺陷 (Bug)：0 项",
-        "progress": "- **mFood 综合版本**：\n  - **【舊係統】商戶後臺-門店相冊，圖片新增刪除操作**：工作项 `[MF-34715]` (负责人: 覃林方) 已流转至 **测试环境验证通过** 状态。\n  - **【测试】【舊係統】商戶後臺-門店相冊，圖片新增刪除操作**：工作项 `[MF-34716]` (负责人: 贺志成) 已流转至 **测试环境验证通过** 状态。\n  - **【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；**：工作项 `[MF-34676]` (负责人: 覃林方) 已流转至 **测试环境验证通过** 状态。",
-        "planning": "- **mFood 综合版本**：\n  - **未報名勁爆券商家，取消「門店首頁標籤」**：新进规划工作项 `[MF-34707]` (负责人: 周昱强)，当前处于 **待处理** 状态。\n  - **【测试】【外卖/团购】红包列表，特殊分摊支持为 0**：新进规划工作项 `[MF-34714]` (负责人: 贺志成)，当前处于 **待处理** 状态。\n  - **【测试】未報名勁爆券商家，取消「門店首頁標籤」**：新进规划工作项 `[MF-34708]` (负责人: 贺志成)，当前处于 **待处理** 状态。",
-        "assessment": "- **mFood 综合版本**：\n  - 核心功能按计划稳定推进，控制性灰度测试与通道联调正常，无明显发布延期风险。",
-        "risks": "- **[WARNING] 云效 DevOps 协同看板测试资源严重“塞车” (QA Bottleneck)**：当前处于测试中或待测试状态的项达 16 项。测试资源分配存在倾斜风险，需协调产品经理与业务线协助验收。",
-        "recommendations": "- **mFood 综合版本建议**：\n  - [负责人: 李云锋][截止日期: 2026-09-07] 跨端联调推进：项目经理协调线上申请参数并打通联调通道。",
-        "actionItems": [
-          {
-            "completed": false,
-            "owner": "李云锋",
-            "due": "2026-09-07",
-            "desc": "跨端联调推进：项目经理协调线上申请参数并打通联调通道。"
-          }
-        ]
-      }
-    },
     {
       "week": "2026-08-17 至 2026-08-21",
       "mftb": {
@@ -43739,8 +43698,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 14.4,
-      "delta": 6.6
+      "average": 14.9,
+      "delta": 7.1
     },
     "mfood": {
       "average": 0.0,
@@ -43749,28 +43708,39 @@
   },
   "pmoAdvice": {
     "mftb": {
-      "content": "1. **测试堰塞湖：531 项卡在测试管道，占活跃项 61.6%**：当前 862 项活跃中，494 项「提交测试」、22 项「测试中」、15 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期151天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期151天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期150天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期150天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 116 张陈年卡的验收，本周内将测试队列压缩。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待处理；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1478]` 支付渠道（徐子旺）开发中；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`陈剑` 50 项活跃中 32 项超期（64%）；`刘志敏` 45 项活跃中 36 项超期（80%）；`张健伟` 45 项活跃中 42 项超期（93%）；`甄荣康` 42 项活跃中 37 项超期（88%）；`唐光伟` 41 项活跃中 36 项超期（88%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **425 项超期 + 437 项无排期（50.7%）+ 152 项闲置 = 排期纪律需加强**：862 项活跃中 437 项（50.7%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-09-07 12:33:41"
+      "content": "1. **测试堰塞湖：587 项卡在测试管道，占活跃项 62.4%**：当前 941 项活跃中，544 项「提交测试」、27 项「测试中」、16 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期151天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期151天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期150天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期150天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 116 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 1 项（MFTB-1679），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待测试；`[MFTB-1554]` 支付渠道（洪喜彬）提交测试；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`刘志敏` 56 项活跃中 43 项超期（77%）；`陈剑` 53 项活跃中 32 项超期（60%）；`甄荣康` 49 项活跃中 41 项超期（84%）；`张健伟` 46 项活跃中 43 项超期（93%）；`唐光伟` 44 项活跃中 39 项超期（89%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **447 项超期 + 492 项无排期（52.3%）+ 169 项闲置 = 排期纪律需加强**：941 项活跃中 492 项（52.3%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
+      "updatedAt": "2026-09-07 12:36:23"
     },
     "mfood": {
-      "content": "1. **需求池积压严重**：149 项活跃中，95 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（12 项）、`刘龙振海`（9 项）、`贺志成`（8 项）、`杨庆龙`（6 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 41 项，交付管道需激活**：mFood 超期 21 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期678天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期668天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期416天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **128/149 项无排期（85.9%）= 排期管理缺位**：活跃项中仅 21 项有 planEnd，排期覆盖率仅 14.1%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **37 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34647]`（覃林方, 【團購】-門店列表-新增門店推廣碼，掃碼進入商家主）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-34627]`（周昱强, 【用户 app】客服 icon 新增文字说明）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-09-07 12:33:41"
+      "content": "1. **需求池积压严重**：154 项活跃中，99 项待处理（64.3%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（11 项）、`贺志成`（10 项）、`刘龙振海`（9 项）、`杨庆龙`（7 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 39 项，交付管道需激活**：mFood 超期 22 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期678天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期668天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期416天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **132/154 项无排期（85.7%）= 排期管理缺位**：活跃项中仅 22 项有 planEnd，排期覆盖率仅 14.3%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **35 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34715]`（覃林方, 【舊係統】商戶後臺-門店相冊，圖片新增刪除操作）、`[MF-34676]`（覃林方, 【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色）、`[MF-34659]`（周昱强, 超市首页，显示红包瓷片）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
+      "updatedAt": "2026-09-07 12:36:23"
     }
   },
   "reconciliationReport": {
-    "compiledAt": "2026-09-07T12:28:29.380894",
+    "compiledAt": "2026-09-07T12:36:22.700059",
     "summary": {
-      "verifiedCount": 307,
+      "verifiedCount": 322,
       "incompleteCount": 0,
-      "shadowCount": 1214,
-      "delayCount": 130,
+      "shadowCount": 1212,
+      "delayCount": 136,
       "mobileCount": 3,
-      "processCount": 87,
-      "otherCount": 143
+      "processCount": 106,
+      "otherCount": 178
     },
-    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **18.6%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**87** 项产品方案/UI设计等过程节点工单、**143** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1214 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 130 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
+    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **19.3%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**106** 项产品方案/UI设计等过程节点工单、**178** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1212 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 136 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
     "details": {
       "verified": [
+        {
+          "workitem_id": "MFTB-1588",
+          "workitem_title": "【大係統】商品詳情或訂單詳情-適用門店模塊增加模糊搜索門店功能；",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "商品詳情",
+          "feature_path": "/product/detail",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
         {
           "workitem_id": "MFTB-1519",
           "workitem_title": "【大係統】外卖订单详情补充营销活动&退款说明",
@@ -43796,7 +43766,7 @@
         {
           "workitem_id": "MFTB-1418",
           "workitem_title": "【大係統】合同管理_新增年費套餐字段",
-          "workitem_status": "已评审（待开发）",
+          "workitem_status": "待处理",
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "合同管理",
@@ -43829,7 +43799,7 @@
         {
           "workitem_id": "MFTB-1131",
           "workitem_title": "【大系统】支付渠道",
-          "workitem_status": "待处理",
+          "workitem_status": "待测试",
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "交易渠道管理",
@@ -43856,6 +43826,17 @@
           "feature_type": "UI_Menu",
           "feature_name": "自定義商圈",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/custom-business-district-management/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-999",
+          "workitem_title": "【大系统】虚拟号码后台（虛擬號碼管理）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "虛擬號碼管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -43906,7 +43887,7 @@
         {
           "workitem_id": "MFTB-759",
           "workitem_title": "【大係統】團購到店-商家端",
-          "workitem_status": "待测试",
+          "workitem_status": "测试中",
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "欠款对账",
@@ -44015,12 +43996,34 @@
         },
         {
           "workitem_id": "MFTB-75",
-          "workitem_title": "【大係統】商户通推广金",
+          "workitem_title": "【大係統】商户通推广金（推广金管理）",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "欠款对账",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/merchant-reconciliation/debt-reconciliation",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-30",
+          "workitem_title": "【大係統】MFTB 商圈管理（底層行政區域管理）",
+          "workitem_status": "产品验收通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "底層行政區域管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system-management/business-district-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-29",
+          "workitem_title": "【大係統】 MFTB 到家品類管理（門店營業品類）",
+          "workitem_status": "产品验收通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "門店營業品類",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/home-business/business-category",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44036,9 +44039,42 @@
           "error_logs": []
         },
         {
+          "workitem_id": "MFTB-1592",
+          "workitem_title": "【服务端】【大係統】團購到店-用戶端商品分享",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "商品分享",
+          "feature_path": "/product/share",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1568",
+          "workitem_title": "【前端】【广告系统】-盘活复苏-算法库",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "算法库",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/algorithm-library",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1554",
+          "workitem_title": "【前端】【大系统】支付渠道-财务部分",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "交易渠道管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
           "workitem_id": "MFTB-1522",
           "workitem_title": "【用戶端APP】用戶端APP_提交訂單頁重設計",
-          "workitem_status": "待处理",
+          "workitem_status": "已完成",
           "project": "mftb",
           "feature_type": "API_Endpoint",
           "feature_name": "提交訂單",
@@ -44082,7 +44118,7 @@
         {
           "workitem_id": "MFTB-1486",
           "workitem_title": "【前端】【廣告系統】-無敵星星-算法库",
-          "workitem_status": "开发挂起",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "算法库",
@@ -44093,7 +44129,7 @@
         {
           "workitem_id": "MFTB-1465",
           "workitem_title": "【前端】【大系统】支付渠道",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "交易渠道管理",
@@ -44126,7 +44162,7 @@
         {
           "workitem_id": "MFTB-1359",
           "workitem_title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "feature_type": "UI_Menu",
           "feature_name": "商品列表",
@@ -44175,6 +44211,17 @@
           "feature_type": "UI_Menu",
           "feature_name": "瀑布流策略",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/waterfall-strategy",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1251",
+          "workitem_title": "【测试】【大系统】虚拟号码后台（虛擬號碼管理）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "虛擬號碼管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44230,94 +44277,6 @@
           "feature_type": "UI_Menu",
           "feature_name": "神策分群",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1182",
-          "workitem_title": "【测试】【大系统】支付渠道",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "交易渠道管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1181",
-          "workitem_title": "【服务端】【廣告系統】瀑布流策略",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "瀑布流策略",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/waterfall-strategy",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1132",
-          "workitem_title": "【产品】【大系统】支付渠道",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "交易渠道管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1068",
-          "workitem_title": "【mfood iOS】综合首页-中通广告",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "中通广告",
-          "feature_path": "/activity/global/app/decor/zto-list",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1042",
-          "workitem_title": "【服务端】【大係統】團購到店-用戶端退款核心流程",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "退款理由",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1023",
-          "workitem_title": "【测试】【大係統】基礎滿減紅包創建（含膨脹+隨機活動）",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "隨機活動",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1013",
-          "workitem_title": "【服务端】【大係統】團購到店-用戶端-商品详情、每日价格列表",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "每日价格列表",
-          "feature_path": "/group/product/price-daily/list",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-990",
-          "workitem_title": "【测试】【大係統】基礎滿減紅包創建（含膨脹+隨機活動）",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "隨機活動",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
           "smoke_status": "Passed",
           "error_logs": []
         }
@@ -44537,11 +44496,25 @@
       ],
       "delay": [
         {
+          "workitem_id": "MFTB-1380",
+          "workitem_title": "【專送】APP 部分頁面優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
           "workitem_id": "MFTB-1310",
           "workitem_title": "【广告系统】-词库管理",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "冯松"
+        },
+        {
+          "workitem_id": "MFTB-1266",
+          "workitem_title": "【專送】極馬專送APP登陸頁隱藏【TE】公司",
+          "workitem_status": "预发布验收通过",
+          "project": "mftb",
+          "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-1170",
@@ -44584,13 +44557,6 @@
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "廖荣"
-        },
-        {
-          "workitem_id": "MFTB-999",
-          "workitem_title": "【大系统】虚拟号码后台",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "刘龙振海"
         },
         {
           "workitem_id": "MFTB-996",
@@ -44670,6 +44636,13 @@
           "assignee": "覃林方"
         },
         {
+          "workitem_id": "MFTB-558",
+          "workitem_title": "【大係統】APP登錄",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
           "workitem_id": "MFTB-538",
           "workitem_title": "【專送&眾包】極馬APP-騎手取餐增加驗證碼校驗",
           "workitem_status": "已上线",
@@ -44705,6 +44678,13 @@
           "assignee": "龙颖之"
         },
         {
+          "workitem_id": "MFTB-468",
+          "workitem_title": "【大係統】商家 APP_賬號登錄",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
           "workitem_id": "MFTB-404",
           "workitem_title": "【大係統】商家意見反饋",
           "workitem_status": "测试环境验证通过",
@@ -44727,7 +44707,7 @@
         },
         {
           "workitem_id": "MFTB-309",
-          "workitem_title": "【大係統】MFTB-品牌管理功能",
+          "workitem_title": "【大係統】MFTB-品牌管理功能（集團門店品牌庫管理）",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "覃林方"
@@ -44752,6 +44732,13 @@
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-113",
+          "workitem_title": "【大係統】C 端用戶中心合併管理 - 新增凍結设備号",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "赵嘉颖"
         },
         {
           "workitem_id": "MFTB-100",
@@ -44782,20 +44769,6 @@
           "assignee": "周昱强"
         },
         {
-          "workitem_id": "MFTB-30",
-          "workitem_title": "【大係統】MFTB 商圈管理",
-          "workitem_status": "产品验收通过",
-          "project": "mftb",
-          "assignee": "廖荣"
-        },
-        {
-          "workitem_id": "MFTB-29",
-          "workitem_title": "【大係統】 MFTB 到家品類管理",
-          "workitem_status": "产品验收通过",
-          "project": "mftb",
-          "assignee": "廖荣"
-        },
-        {
           "workitem_id": "MFTB-26",
           "workitem_title": "【大係統】MFTB 公司門店管理",
           "workitem_status": "产品验收通过",
@@ -44804,7 +44777,7 @@
         },
         {
           "workitem_id": "MFTB-25",
-          "workitem_title": "【大係統】MFTB 集團管理",
+          "workitem_title": "【大係統】MFTB 集團管理（集團列表）",
           "workitem_status": "产品验收通过",
           "project": "mftb",
           "assignee": "廖荣"
@@ -44845,6 +44818,20 @@
           "assignee": "周昱强"
         },
         {
+          "workitem_id": "MFTB-1618",
+          "workitem_title": "【测试】【專送】APP 部分頁面優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
+          "workitem_id": "MFTB-1613",
+          "workitem_title": "【测试】【專送】極馬專送APP登陸頁隱藏【TE】公司",
+          "workitem_status": "预发布验收通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
           "workitem_id": "MFTB-1494",
           "workitem_title": "【测试】【大係統】商品管理_創建商品細節補充",
           "workitem_status": "测试环境验证通过",
@@ -44852,39 +44839,11 @@
           "assignee": "贺志成"
         },
         {
-          "workitem_id": "MFTB-1377",
-          "workitem_title": "【测试】【广告系统】-词库管理",
+          "workitem_id": "MFTB-1391",
+          "workitem_title": "【测试】【專送合併】騎手工資表",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
-          "assignee": "杨庆龙"
-        },
-        {
-          "workitem_id": "MFTB-1285",
-          "workitem_title": "【测试】【大係統】商品管理_創建商品細節補充",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "侯黎明"
-        },
-        {
-          "workitem_id": "MFTB-1284",
-          "workitem_title": "【测试】【大係統】到家管理_商品管理_新增 自動上下架時間設置",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "侯黎明"
-        },
-        {
-          "workitem_id": "MFTB-1251",
-          "workitem_title": "【测试】【大系统】虚拟号码后台",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "侯黎明"
-        },
-        {
-          "workitem_id": "MFTB-1248",
-          "workitem_title": "【测试】【需求變更】修改默認提現卡需審核",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "杨庆龙"
+          "assignee": "黄金凤"
         }
       ],
       "mobile": [
@@ -44912,6 +44871,104 @@
       ],
       "process": [
         {
+          "workitem_id": "MFTB-1677",
+          "workitem_title": "【變更】【大系統】配送費減免",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-1636",
+          "workitem_title": "【商家APP】到家營銷活動_第二份半價",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1634",
+          "workitem_title": "【商家APP】到家營銷活動_滿贈活動",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1632",
+          "workitem_title": "【商家APP】到家營銷活動_組合價促銷",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1630",
+          "workitem_title": "【商家APP】到家營銷活動_超值換購（加價購）",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1628",
+          "workitem_title": "【商家APP】到家營銷活動_買贈互動",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1625",
+          "workitem_title": "【商家端APP】到家營銷活動_商品折扣",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1623",
+          "workitem_title": "【商家端APP】到家營銷活動_商品折扣",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1616",
+          "workitem_title": "【˝產品】【大系统】用户 APP_外卖口味收藏",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1598",
+          "workitem_title": "【產品】【大係統】外賣門店，大額訂單延長出餐時長",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1569",
+          "workitem_title": "【產品】【大系统】下单返卷",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-1549",
+          "workitem_title": "【產品】【商家 App】新客首單減",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1547",
+          "workitem_title": "【產品】【商家 app】 集點發券",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1515",
+          "workitem_title": "【大係統】到家營銷活動_商家營銷_買贈活動新增活動類型",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
           "workitem_id": "MFTB-1492",
           "workitem_title": "【大系统】自取单折扣",
           "workitem_status": "已完成",
@@ -44933,6 +44990,27 @@
           "assignee": "刘龙振海"
         },
         {
+          "workitem_id": "MFTB-1443",
+          "workitem_title": "【商家APP】門店管理_店鋪活動_滿減優惠",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1442",
+          "workitem_title": "【商家APP】門店管理_店鋪活動_滿減優惠",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1439",
+          "workitem_title": "【商家APP】門店管理_店鋪活動_折扣商品",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
           "workitem_id": "MFTB-1379",
           "workitem_title": "【大系統】配送費減免",
           "workitem_status": "已完成",
@@ -44947,11 +45025,25 @@
           "assignee": "许思浩"
         },
         {
+          "workitem_id": "MFTB-1344",
+          "workitem_title": "【大係統】到家業務_商家營銷活動_買贈活動",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
           "workitem_id": "MFTB-1303",
           "workitem_title": "【產品】【大係統】商家 APP_外卖订单，商家活动标签",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1276",
+          "workitem_title": "【大係統】到家業務_門店營銷活動_滿減活動",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
         },
         {
           "workitem_id": "MFTB-1262",
@@ -45127,142 +45219,51 @@
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "刘龙振海"
-        },
-        {
-          "workitem_id": "MFTB-701",
-          "workitem_title": "【產品】【大係統】 用戶 APP 裝修——底部導航欄&跳轉設置跳轉",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-675",
-          "workitem_title": "【UI】【大係統】app消息中心",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "胡家兴"
-        },
-        {
-          "workitem_id": "MFTB-674",
-          "workitem_title": "【UI】【大係統】APP登錄",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "胡家兴"
-        },
-        {
-          "workitem_id": "MFTB-660",
-          "workitem_title": "【需求變更】到家業務_商品管理",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "廖荣"
-        },
-        {
-          "workitem_id": "MFTB-656",
-          "workitem_title": "【產品】【大係統】用戶APP裝修_新增瓷片區模塊、新增我的頁面",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-653",
-          "workitem_title": "【UI】【需求變更】騎手取餐前隱藏客戶電話信息",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "许思浩"
-        },
-        {
-          "workitem_id": "MFTB-651",
-          "workitem_title": "【新增】【产品】【大係統】银行卡",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "刘龙振海"
-        },
-        {
-          "workitem_id": "MFTB-643",
-          "workitem_title": "【產品】【大係統】商家 APP_個人中心",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-623",
-          "workitem_title": "【產品】【極馬專送】APP應用市場預覽圖",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-622",
-          "workitem_title": "【產品】【專送合併】騎手考勤",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-621",
-          "workitem_title": "【產品】【調度】用戶小費菜單新增字段",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-614",
-          "workitem_title": "【產品】【專送合併】騎手入職離職v1.2",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-613",
-          "workitem_title": "【產品】【專送合併】騎手統計報表",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
-        },
-        {
-          "workitem_id": "MFTB-602",
-          "workitem_title": "【UI】【大係統】商家 APP_賬號登錄 商家賬號密碼登錄",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "李鑫"
-        },
-        {
-          "workitem_id": "MFTB-584",
-          "workitem_title": "【產品】美食外送_外賣到家業務_用戶端設計（包含單品，組合商品【默認風格】、【KEC 風格】、【麥當勞風格】）",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "廖荣"
-        },
-        {
-          "workitem_id": "MFTB-528",
-          "workitem_title": "【大係統】商家主頁裝修-新增banner廣告",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "覃林方"
-        },
-        {
-          "workitem_id": "MFTB-523",
-          "workitem_title": "【產品】【大係統】商家 APP_接单_原型部分（不含邏輯）",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-492",
-          "workitem_title": "【產品需求變更】【大係統】部分文案修改",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-470",
-          "workitem_title": "【產品】【大係統】商家 APP_賬號登錄",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
         }
       ],
       "other": [
+        {
+          "workitem_id": "MFTB-1650",
+          "workitem_title": "【極馬】專送迭代",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1612",
+          "workitem_title": "【極馬】所有頁面導出限制最多可選66天",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1586",
+          "workitem_title": "【極馬】專送、眾包APP -聯繫客戶優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1580",
+          "workitem_title": "【極馬】專送騎手統計增加在線時長、人效、區分訂單平台",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1577",
+          "workitem_title": "【極馬】專送迭代-騎手調度頁面優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1539",
+          "workitem_title": "【極馬】專送APP可上傳APP日誌",
+          "workitem_status": "已上线",
+          "project": "mftb",
+          "assignee": "龙颖之"
+        },
         {
           "workitem_id": "MFTB-1506",
           "workitem_title": "【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
@@ -45273,28 +45274,28 @@
         {
           "workitem_id": "MFTB-1484",
           "workitem_title": "【極馬】騎手調度設置可搶（推單到眾包）更新調度站點",
-          "workitem_status": "待处理",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-1464",
           "workitem_title": "【極馬】專送騎手統計增加隱形單",
-          "workitem_status": "待测试",
+          "workitem_status": "预发布验收通过",
           "project": "mftb",
           "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-1426",
           "workitem_title": "【極馬】專送騎手列表、專送騎手統計增加導出",
-          "workitem_status": "待测试",
+          "workitem_status": "预发布验收通过",
           "project": "mftb",
           "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-1425",
           "workitem_title": "【極馬】專送合併迭代-部分頁面優化",
-          "workitem_status": "待测试",
+          "workitem_status": "已上线",
           "project": "mftb",
           "assignee": "龙颖之"
         },
@@ -45474,147 +45475,352 @@
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-1508",
-          "workitem_title": "【前端】【眾包】騎手銀行卡審核查看視頻-增加騎手朗讀文本",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "洪喜彬"
-        },
-        {
-          "workitem_id": "MFTB-1507",
-          "workitem_title": "【前端】【極馬】專送騎手統計增加隱形單",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "洪喜彬"
-        },
-        {
-          "workitem_id": "MFTB-1466",
-          "workitem_title": "【服务端】【極馬】專送騎手統計增加隱形單",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "刘志敏"
-        },
-        {
-          "workitem_id": "MFTB-1459",
-          "workitem_title": "【前端】【極馬】專送合併迭代-部分頁面優化",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "洪喜彬"
-        },
-        {
-          "workitem_id": "MFTB-1458",
-          "workitem_title": "【前端】【極馬】專送騎手列表、專送騎手統計增加導出",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "洪喜彬"
-        },
-        {
-          "workitem_id": "MFTB-1456",
-          "workitem_title": "【服务端】【極馬】專送騎手列表、專送騎手統計增加導出",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "刘志敏"
-        },
-        {
-          "workitem_id": "MFTB-1451",
-          "workitem_title": "【安卓】【眾包】指派單x秒不接自動拒單",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "assignee": "陈国伟"
-        },
-        {
-          "workitem_id": "MFTB-1430",
-          "workitem_title": "【服务端】【極馬】專送合併迭代-部分頁面優化",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "刘志敏"
-        },
-        {
-          "workitem_id": "MFTB-1417",
-          "workitem_title": "【iOS】【眾包】指派單x秒不接自動拒單",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "assignee": "陈万里"
-        },
-        {
-          "workitem_id": "MFTB-1415",
-          "workitem_title": "【前端】【極馬】打賞報表增加字段",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "洪喜彬"
-        },
-        {
-          "workitem_id": "MFTB-1414",
-          "workitem_title": "【服务端】【極馬】打賞報表增加字段",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "刘志敏"
-        },
-        {
-          "workitem_id": "MFTB-1409",
-          "workitem_title": "【產品】【極馬】打賞報表增加字段",
+          "workitem_id": "MFTB-1671",
+          "workitem_title": "【產品】【眾包】騎手所屬站點邏輯優化",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-1393",
-          "workitem_title": "【產品】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_id": "MFTB-1670",
+          "workitem_title": "【测试】【極馬】專送迭代-騎手調度頁面優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
+          "workitem_id": "MFTB-1665",
+          "workitem_title": "【產品】【極馬】所有頁面導出限制最多可選66天",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "龙颖之"
         },
         {
-          "workitem_id": "MFTB-1389",
-          "workitem_title": "【测试】【極馬】訂單歸屬策略支持多選訂單平台類型",
+          "workitem_id": "MFTB-1664",
+          "workitem_title": "【测试】【極馬】專送騎手統計增加在線時長、人效、區分訂單平台",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
-          "assignee": "黄金凤"
+          "assignee": "侯黎明"
         },
         {
-          "workitem_id": "MFTB-1384",
-          "workitem_title": "【前端】【極馬】訂單歸屬策略支持多選訂單平台類型",
-          "workitem_status": "提交测试",
+          "workitem_id": "MFTB-1663",
+          "workitem_title": "【测试】【極馬】騎手調度設置可搶（推單到眾包）更新調度站點",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
+          "workitem_id": "MFTB-1655",
+          "workitem_title": "【测试】【極馬】專送騎手統計增加隱形單",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
+          "workitem_id": "MFTB-1643",
+          "workitem_title": "【测试】【極馬】專送騎手列表、專送騎手統計增加導出",
+          "workitem_status": "预发布验收通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
+        },
+        {
+          "workitem_id": "MFTB-1642",
+          "workitem_title": "【前端】【眾包】騎手所屬站點邏輯優化",
+          "workitem_status": "未开始",
           "project": "mftb",
           "assignee": "洪喜彬"
         },
         {
-          "workitem_id": "MFTB-1374",
-          "workitem_title": "【服务端】【極馬】訂單歸屬策略支持多選訂單平台類型",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "刘志敏"
-        },
-        {
-          "workitem_id": "MFTB-1331",
-          "workitem_title": "【前端】【眾包】騎手審核-個人信息增加英文名字段",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "assignee": "洪喜彬"
-        },
-        {
-          "workitem_id": "MFTB-1330",
-          "workitem_title": "【测试】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_id": "MFTB-1641",
+          "workitem_title": "【测试】【極馬】所有頁面導出限制最多可選66天",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
-          "assignee": "黄金凤"
+          "assignee": "侯黎明"
         },
         {
-          "workitem_id": "MFTB-1294",
-          "workitem_title": "【安卓】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_id": "MFTB-1640",
+          "workitem_title": "【UI】【眾包】指派單x秒不接自動拒單",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "许思浩"
+        },
+        {
+          "workitem_id": "MFTB-1639",
+          "workitem_title": "【安卓】【極馬】專送、眾包APP -聯繫客戶優化",
           "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "陈国伟"
         },
         {
-          "workitem_id": "MFTB-1292",
-          "workitem_title": "【iOS】【眾包】騎手審核-個人信息增加英文名字段",
+          "workitem_id": "MFTB-1638",
+          "workitem_title": "【服务端】【眾包】騎手所屬站點邏輯優化",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "刘志敏"
+        },
+        {
+          "workitem_id": "MFTB-1637",
+          "workitem_title": "【iOS】【極馬】專送、眾包APP -聯繫客戶優化",
           "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "陈万里"
+        },
+        {
+          "workitem_id": "MFTB-1621",
+          "workitem_title": "【测试】【極馬】專送、眾包APP -聯繫客戶優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明"
         }
       ],
       "threeway": [
+        {
+          "workitem_id": "MFTB-1653",
+          "workitem_title": "【大係統】商家端打印小票",
+          "workitem_status": "待测试",
+          "project": "mftb",
+          "assignee": "覃林方",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1635",
+          "workitem_title": "【商家APP】到家營銷活動_第二份半價",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1633",
+          "workitem_title": "【商家APP】到家營銷活動_滿贈活動",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1631",
+          "workitem_title": "【商家APP】到家營銷活動_組合價促銷",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1629",
+          "workitem_title": "【商家APP】到家營銷活動_超值換購（加價購）",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1627",
+          "workitem_title": "【商家APP】到家營銷活動_買贈互動",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1624",
+          "workitem_title": "【商家端APP】到家營銷活動_商品折扣",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1622",
+          "workitem_title": "【商家端APP】到家營銷活動_滿減活動",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1615",
+          "workitem_title": "【大系统】用户 APP_外卖口味收藏",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "周昱强",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1604",
+          "workitem_title": "【大係統-會員中心】券包概念和慳錢包",
+          "workitem_status": "已内审",
+          "project": "mftb",
+          "assignee": "溫浩源",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1602",
+          "workitem_title": "【大係統】優享送",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1597",
+          "workitem_title": "【大係統】外賣門店，大額訂單延長出餐時長",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "周昱强",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1588",
+          "workitem_title": "【大係統】商品詳情或訂單詳情-適用門店模塊增加模糊搜索門店功能；",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "覃林方",
+          "completed": false,
+          "api_count": 2,
+          "ui_count": 0,
+          "apis": [
+            {
+              "name": "商品詳情",
+              "path": "/product/detail",
+              "method": "get",
+              "status": "released"
+            },
+            {
+              "name": "商品詳情",
+              "path": "/product/detail",
+              "method": "get",
+              "status": "released"
+            }
+          ],
+          "uis": [],
+          "status": "frontend_missing"
+        },
+        {
+          "workitem_id": "MFTB-1566",
+          "workitem_title": "【大系统】下单返券",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "刘龙振海",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1557",
+          "workitem_title": "【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "覃林方",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1548",
+          "workitem_title": "【商家 App】新客首單減",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "周昱强",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1546",
+          "workitem_title": "【MFTB】 集點返券",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "周昱强",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1535",
+          "workitem_title": "【用戶端APP】到家營銷活動_用戶端APP設計（含到家12種活動）",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
         {
           "workitem_id": "MFTB-1529",
           "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
@@ -45734,7 +45940,7 @@
         {
           "workitem_id": "MFTB-1512",
           "workitem_title": "【大係統】紅包管理新增“指定商品分類”“指定商品”",
-          "workitem_status": "已评审（待开发）",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
@@ -45773,7 +45979,7 @@
         {
           "workitem_id": "MFTB-1480",
           "workitem_title": "【MFTB】商家 app 框架",
-          "workitem_status": "待处理",
+          "workitem_status": "开发中",
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
@@ -45837,8 +46043,8 @@
         },
         {
           "workitem_id": "MFTB-1444",
-          "workitem_title": "【大係統】評價功能（含管理後臺、商家 App、用戶端）（待出方案）",
-          "workitem_status": "待处理",
+          "workitem_title": "【大係統】評價功能（含管理後臺、商家 App、用戶端）",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "覃林方",
           "completed": false,
@@ -45849,35 +46055,9 @@
           "status": "neither_ready"
         },
         {
-          "workitem_id": "MFTB-1441",
-          "workitem_title": "【商家APP】門店管理_店鋪活動_滿減優惠",
-          "workitem_status": "已评审（待开发）",
-          "project": "mftb",
-          "assignee": "廖荣",
-          "completed": false,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MFTB-1438",
-          "workitem_title": "【商家APP】門店管理_店鋪活動_折扣商品",
-          "workitem_status": "已评审（待开发）",
-          "project": "mftb",
-          "assignee": "廖荣",
-          "completed": false,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
-        },
-        {
           "workitem_id": "MFTB-1437",
           "workitem_title": "【大係統】商品自動上下架_提供手動上下架操作",
-          "workitem_status": "提交测试",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -45890,7 +46070,7 @@
         {
           "workitem_id": "MFTB-1418",
           "workitem_title": "【大係統】合同管理_新增年費套餐字段",
-          "workitem_status": "已评审（待开发）",
+          "workitem_status": "待处理",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -45941,7 +46121,7 @@
         {
           "workitem_id": "MFTB-1402",
           "workitem_title": "【大係統】到家業務_商家營銷_滿贈活動",
-          "workitem_status": "待处理",
+          "workitem_status": "已评审（待开发）",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -45954,7 +46134,7 @@
         {
           "workitem_id": "MFTB-1400",
           "workitem_title": "【大係統】到家業務_商家營銷_第二份半價",
-          "workitem_status": "待处理",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -45967,7 +46147,7 @@
         {
           "workitem_id": "MFTB-1399",
           "workitem_title": "【大係統】到家營銷_商家營銷_組合價活動",
-          "workitem_status": "待处理",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -45980,7 +46160,7 @@
         {
           "workitem_id": "MFTB-1396",
           "workitem_title": "【大係統】到家業務_商家營銷_超值換購",
-          "workitem_status": "已评审（待开发）",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -45993,10 +46173,10 @@
         {
           "workitem_id": "MFTB-1380",
           "workitem_title": "【專送】APP 部分頁面優化",
-          "workitem_status": "待处理",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "龙颖之",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -46006,7 +46186,7 @@
         {
           "workitem_id": "MFTB-1378",
           "workitem_title": "【大系統】配送費減免",
-          "workitem_status": "测试中",
+          "workitem_status": "开发中",
           "project": "mftb",
           "assignee": "刘龙振海",
           "completed": false,
@@ -46110,7 +46290,7 @@
         {
           "workitem_id": "MFTB-1343",
           "workitem_title": "【大係統】到家業務_商家營銷活動_買贈活動",
-          "workitem_status": "待处理",
+          "workitem_status": "已评审（待开发）",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -46123,7 +46303,7 @@
         {
           "workitem_id": "MFTB-1325",
           "workitem_title": "【大係統】-團購到店-預約商品每日價格設置新增批量導入價格功能",
-          "workitem_status": "待处理",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "覃林方",
           "completed": false,
@@ -46162,7 +46342,7 @@
         {
           "workitem_id": "MFTB-1308",
           "workitem_title": "【广告系统】人气商家",
-          "workitem_status": "开发中",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "冯松",
           "completed": false,
@@ -46227,7 +46407,7 @@
         {
           "workitem_id": "MFTB-1277",
           "workitem_title": "【大係統】到家業務_門店營銷活動_商品折扣",
-          "workitem_status": "已评审（待开发）",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -46240,7 +46420,7 @@
         {
           "workitem_id": "MFTB-1275",
           "workitem_title": "【大係統】到家業務_門店營銷活動_滿減活動",
-          "workitem_status": "已评审（待开发）",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -46253,10 +46433,10 @@
         {
           "workitem_id": "MFTB-1266",
           "workitem_title": "【專送】極馬專送APP登陸頁隱藏【TE】公司",
-          "workitem_status": "待测试",
+          "workitem_status": "预发布验收通过",
           "project": "mftb",
           "assignee": "龙颖之",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -46377,7 +46557,7 @@
         {
           "workitem_id": "MFTB-1131",
           "workitem_title": "【大系统】支付渠道",
-          "workitem_status": "待处理",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "刘龙振海",
           "completed": false,
@@ -46462,7 +46642,7 @@
         {
           "workitem_id": "MFTB-1091",
           "workitem_title": "【大係統】用戶APP裝修_灯笼位需求变更",
-          "workitem_status": "待测试",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
@@ -46514,7 +46694,7 @@
         {
           "workitem_id": "MFTB-1074",
           "workitem_title": "【大係統】商家 app 外賣語音播報設置",
-          "workitem_status": "待测试",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
@@ -46637,16 +46817,23 @@
         },
         {
           "workitem_id": "MFTB-999",
-          "workitem_title": "【大系统】虚拟号码后台",
+          "workitem_title": "【大系统】虚拟号码后台（虛擬號碼管理）",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "刘龙振海",
           "completed": true,
           "api_count": 0,
-          "ui_count": 0,
+          "ui_count": 1,
           "apis": [],
-          "uis": [],
-          "status": "neither_ready"
+          "uis": [
+            {
+              "name": "虛擬號碼管理",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
+              "submenu": "系统设置",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-996",
@@ -46980,7 +47167,7 @@
         {
           "workitem_id": "MFTB-759",
           "workitem_title": "【大係統】團購到店-商家端",
-          "workitem_status": "待测试",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "覃林方",
           "completed": false,
@@ -47000,7 +47187,7 @@
         {
           "workitem_id": "MFTB-730",
           "workitem_title": "【大係統】商家 APP——商家入駐申請",
-          "workitem_status": "待测试",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
@@ -47238,7 +47425,7 @@
         {
           "workitem_id": "MFTB-581",
           "workitem_title": "【需求變更】商品管理優化內容 V1.1",
-          "workitem_status": "开发中",
+          "workitem_status": "待测试",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
@@ -47264,10 +47451,10 @@
         {
           "workitem_id": "MFTB-558",
           "workitem_title": "【大係統】APP登錄",
-          "workitem_status": "测试中",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "刘龙振海",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -47604,10 +47791,10 @@
         {
           "workitem_id": "MFTB-468",
           "workitem_title": "【大係統】商家 APP_賬號登錄",
-          "workitem_status": "待测试",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "周昱强",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -47719,7 +47906,7 @@
         },
         {
           "workitem_id": "MFTB-309",
-          "workitem_title": "【大係統】MFTB-品牌管理功能",
+          "workitem_title": "【大係統】MFTB-品牌管理功能（集團門店品牌庫管理）",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "覃林方",
@@ -47869,10 +48056,10 @@
         {
           "workitem_id": "MFTB-113",
           "workitem_title": "【大係統】C 端用戶中心合併管理 - 新增凍結设備号",
-          "workitem_status": "待测试",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "赵嘉颖",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -47920,7 +48107,7 @@
         },
         {
           "workitem_id": "MFTB-75",
-          "workitem_title": "【大係統】商户通推广金",
+          "workitem_title": "【大係統】商户通推广金（推广金管理）",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "李古悦",
@@ -47966,29 +48153,43 @@
         },
         {
           "workitem_id": "MFTB-30",
-          "workitem_title": "【大係統】MFTB 商圈管理",
+          "workitem_title": "【大係統】MFTB 商圈管理（底層行政區域管理）",
           "workitem_status": "产品验收通过",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": true,
           "api_count": 0,
-          "ui_count": 0,
+          "ui_count": 1,
           "apis": [],
-          "uis": [],
-          "status": "neither_ready"
+          "uis": [
+            {
+              "name": "底層行政區域管理",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/system-management/business-district-management",
+              "submenu": "基础设置",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-29",
-          "workitem_title": "【大係統】 MFTB 到家品類管理",
+          "workitem_title": "【大係統】 MFTB 到家品類管理（門店營業品類）",
           "workitem_status": "产品验收通过",
           "project": "mftb",
           "assignee": "廖荣",
           "completed": true,
           "api_count": 0,
-          "ui_count": 0,
+          "ui_count": 1,
           "apis": [],
-          "uis": [],
-          "status": "neither_ready"
+          "uis": [
+            {
+              "name": "門店營業品類",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/business-category",
+              "submenu": "门店管理",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-27",
@@ -48056,7 +48257,7 @@
         },
         {
           "workitem_id": "MFTB-25",
-          "workitem_title": "【大係統】MFTB 集團管理",
+          "workitem_title": "【大係統】MFTB 集團管理（集團列表）",
           "workitem_status": "产品验收通过",
           "project": "mftb",
           "assignee": "廖荣",
@@ -48133,6 +48334,560 @@
           "status": "neither_ready"
         },
         {
+          "workitem_id": "MFTB-1679",
+          "workitem_title": "【mfood.Android用户端】【大係統】app消息中心",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈国伟",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1678",
+          "workitem_title": "【大系統】配送費減免",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "龚凯",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1673",
+          "workitem_title": "【前端】【大係統-會員中心】券包概念",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "甄荣康",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1667",
+          "workitem_title": "【测试】【大係統】團購到店-用戶端訂單相關功能",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "黄春晓",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1666",
+          "workitem_title": "【测试】【大係統】團購到店-用戶端商品相關功能",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "黄春晓",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1662",
+          "workitem_title": "【测试】【MFTB】 集點返券",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "杨庆龙",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1661",
+          "workitem_title": "【测试】【商家 App】新客首單減",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "杨庆龙",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1660",
+          "workitem_title": "【服务端】【商家 App】新客首單減",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "刘付益",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1659",
+          "workitem_title": "【服务端】【MFTB】 集點返券",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "刘付益",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1658",
+          "workitem_title": "【商家端APP】到家營銷活動_滿減活動",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈少丹",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1657",
+          "workitem_title": "【商家端APP】到家營銷活動_商品折扣",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈少丹",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1656",
+          "workitem_title": "【服务端】【大係統】商家端打印小票",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "张健伟",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1645",
+          "workitem_title": "【商家端APP】【服务端】到家營銷活動_商品折扣",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "唐光伟",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1644",
+          "workitem_title": "【服务端】【大系统】下单返券",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "刘付益",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1626",
+          "workitem_title": "【测试】【商家端APP】到家營銷活動_滿減活動",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "贺志成",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1620",
+          "workitem_title": "【前端】【MFTB】 集點返券",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "甄荣康",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1619",
+          "workitem_title": "【商家APP】 集點返券",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈少丹",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1618",
+          "workitem_title": "【测试】【專送】APP 部分頁面優化",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "侯黎明",
+          "completed": true,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1614",
+          "workitem_title": "【测试】【專送合併】騎手工資表",
+          "workitem_status": "测试中",
+          "project": "mftb",
+          "assignee": "杨庆龙",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1613",
+          "workitem_title": "【测试】【專送】極馬專送APP登陸頁隱藏【TE】公司",
+          "workitem_status": "预发布验收通过",
+          "project": "mftb",
+          "assignee": "侯黎明",
+          "completed": true,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1609",
+          "workitem_title": "【服务端】【大係統-會員中心】券包",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "卓坚",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1605",
+          "workitem_title": "【產品】【大係統-會員中心】券包概念和慳錢包",
+          "workitem_status": "需产品梳理/确认",
+          "project": "mftb",
+          "assignee": "溫浩源",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1592",
+          "workitem_title": "【服务端】【大係統】團購到店-用戶端商品分享",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "林泽斌",
+          "completed": false,
+          "api_count": 1,
+          "ui_count": 0,
+          "apis": [
+            {
+              "name": "商品分享",
+              "path": "/product/share",
+              "method": "get",
+              "status": "released"
+            }
+          ],
+          "uis": [],
+          "status": "frontend_missing"
+        },
+        {
+          "workitem_id": "MFTB-1576",
+          "workitem_title": "【测试】【MFTB】 集點返券",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "杨庆龙",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1575",
+          "workitem_title": "【测试】【大系统】下单返卷",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "杨庆龙",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1574",
+          "workitem_title": "【前端】【大系统】下单返券",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "甄荣康",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1573",
+          "workitem_title": "【商家app】下单返券",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈少丹",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1570",
+          "workitem_title": "【服务端】【大係統】訂單用户信息脱敏團，包括訂單列表、預約單管理、核銷碼列表；電話和用戶昵稱都脫敏；導出時直接去掉這兩列字段",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "林泽斌",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1568",
+          "workitem_title": "【前端】【广告系统】-盘活复苏-算法库",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "甄荣康",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 1,
+          "apis": [],
+          "uis": [
+            {
+              "name": "算法库",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/algorithm-library",
+              "submenu": "商家推广工具",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
+        },
+        {
+          "workitem_id": "MFTB-1567",
+          "workitem_title": "【后台】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "李科",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1565",
+          "workitem_title": "【服务端】【大系统】配送方案，優化门店显示",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "唐光伟",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1564",
+          "workitem_title": "【大係統】【服务端】到家業務_商家營銷活動_買贈活動",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "唐光伟",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1563",
+          "workitem_title": "【测试】【大係統】商家 app 外賣語音播報設置",
+          "workitem_status": "测试中",
+          "project": "mftb",
+          "assignee": "李云锋",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1562",
+          "workitem_title": "【管理後臺】【大系统】配送方案，優化门店显示",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "陈文涛",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1560",
+          "workitem_title": "【商家 App】新客首單減",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "陈少丹",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1558",
+          "workitem_title": "【服务端】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "林泽斌",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1554",
+          "workitem_title": "【前端】【大系统】支付渠道-财务部分",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "洪喜彬",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 1,
+          "apis": [],
+          "uis": [
+            {
+              "name": "交易渠道管理",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
+              "submenu": "交易渠道管理",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
+        },
+        {
+          "workitem_id": "MFTB-1553",
+          "workitem_title": "【服务端】【大系统】自取单折扣",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "刘付益",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1552",
+          "workitem_title": "【前端】【大係統】紅包管理新增“指定商品分類”“指定商品”",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "甄荣康",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1551",
+          "workitem_title": "【前端】【大系统】自取单折扣",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "assignee": "甄荣康",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1532",
+          "workitem_title": "【服务端】【大係統】評價功能（含管理後臺、商家 App、用戶端）",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "assignee": "卓坚",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
           "workitem_id": "MFTB-1524",
           "workitem_title": "【商家APP】自取单折扣",
           "workitem_status": "未开始",
@@ -48147,7 +48902,7 @@
         },
         {
           "workitem_id": "MFTB-1523",
-          "workitem_title": "【服务端】【大係統】團購到店-用戶端预约商品价格显示",
+          "workitem_title": "【服务端】【大係統】團購到店-用戶端预约商品价格显示(取可预约的最低)",
           "workitem_status": "未开始",
           "project": "mftb",
           "assignee": "林泽斌",
@@ -48161,7 +48916,7 @@
         {
           "workitem_id": "MFTB-1521",
           "workitem_title": "【前端】【大係統】到家業務_商家營銷_第二份半價",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -48233,7 +48988,7 @@
         {
           "workitem_id": "MFTB-1504",
           "workitem_title": "【前端】【大係統】到家業務_門店營銷活動_商品折扣",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -48272,7 +49027,7 @@
         {
           "workitem_id": "MFTB-1501",
           "workitem_title": "【商家 app 】外送管理框架",
-          "workitem_status": "未开始",
+          "workitem_status": "开发中",
           "project": "mftb",
           "assignee": "陈少丹",
           "completed": false,
@@ -48440,7 +49195,7 @@
         {
           "workitem_id": "MFTB-1487",
           "workitem_title": "【前端】【廣告系統】-無敵星星-定价",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -48453,7 +49208,7 @@
         {
           "workitem_id": "MFTB-1486",
           "workitem_title": "【前端】【廣告系統】-無敵星星-算法库",
-          "workitem_status": "开发挂起",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -48486,7 +49241,7 @@
         {
           "workitem_id": "MFTB-1478",
           "workitem_title": "【mfood Android】团购支付订单",
-          "workitem_status": "开发中",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "徐子旺",
           "completed": false,
@@ -48499,7 +49254,7 @@
         {
           "workitem_id": "MFTB-1477",
           "workitem_title": "【mfood Android】团购生成订单",
-          "workitem_status": "开发中",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "徐子旺",
           "completed": false,
@@ -48590,7 +49345,7 @@
         {
           "workitem_id": "MFTB-1465",
           "workitem_title": "【前端】【大系统】支付渠道",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "洪喜彬",
           "completed": false,
@@ -48636,7 +49391,7 @@
         {
           "workitem_id": "MFTB-1440",
           "workitem_title": "【前端】【大係統】商品自動上下架_提供手動上下架操作",
-          "workitem_status": "开发中",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -48792,7 +49547,7 @@
         {
           "workitem_id": "MFTB-1427",
           "workitem_title": "【前端】【大係統】到家業務_商家營銷_超值換購",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "周忠浩",
           "completed": false,
@@ -48818,7 +49573,7 @@
         {
           "workitem_id": "MFTB-1423",
           "workitem_title": "【大係統】【服务端】到家業務_商家營銷_超值換購",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "唐光伟",
           "completed": false,
@@ -48831,7 +49586,7 @@
         {
           "workitem_id": "MFTB-1422",
           "workitem_title": "【服务端】【大係統】到家業務_門店營銷活動_新客首單減",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "刘付益",
           "completed": false,
@@ -48909,7 +49664,7 @@
         {
           "workitem_id": "MFTB-1407",
           "workitem_title": "【大係統】【服务端】到家業務_商家營銷_第二份半價",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "唐光伟",
           "completed": false,
@@ -48922,7 +49677,7 @@
         {
           "workitem_id": "MFTB-1406",
           "workitem_title": "【大係統】【服务端】到家營銷_商家營銷_組合價活動",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "唐光伟",
           "completed": false,
@@ -48935,7 +49690,7 @@
         {
           "workitem_id": "MFTB-1401",
           "workitem_title": "【服务端】【大係統】管理后台訂單相關",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
@@ -48961,7 +49716,7 @@
         {
           "workitem_id": "MFTB-1392",
           "workitem_title": "【服务端】【大系統】配送費減免",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "刘付益",
           "completed": false,
@@ -48974,10 +49729,10 @@
         {
           "workitem_id": "MFTB-1391",
           "workitem_title": "【测试】【專送合併】騎手工資表",
-          "workitem_status": "测试中",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "黄金凤",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -49091,7 +49846,7 @@
         {
           "workitem_id": "MFTB-1373",
           "workitem_title": "【前端】【广告系统】人气商家-广告销售",
-          "workitem_status": "开发挂起",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -49104,7 +49859,7 @@
         {
           "workitem_id": "MFTB-1372",
           "workitem_title": "【大係統】團購到店-用戶端商品规格按金额或者积分排序",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
@@ -49117,9 +49872,9 @@
         {
           "workitem_id": "MFTB-1371",
           "workitem_title": "【测试】【大係統】到家業務_門店營銷活動_滿減活動",
-          "workitem_status": "待处理",
+          "workitem_status": "测试中",
           "project": "mftb",
-          "assignee": "侯黎明",
+          "assignee": "贺志成",
           "completed": false,
           "api_count": 0,
           "ui_count": 0,
@@ -49143,7 +49898,7 @@
         {
           "workitem_id": "MFTB-1359",
           "workitem_title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
@@ -49221,7 +49976,7 @@
         {
           "workitem_id": "MFTB-1351",
           "workitem_title": "【前端】【大係統】到家業務_門店營銷活動_滿減活動",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -49416,7 +50171,7 @@
         {
           "workitem_id": "MFTB-1327",
           "workitem_title": "【服务端】【大係統】-團購到店-預約商品每日價格設置新增批量導入價格功能",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
@@ -49616,7 +50371,7 @@
         {
           "workitem_id": "MFTB-1304",
           "workitem_title": "【大係統】【服务端】到家業務_門店營銷活動_商品折扣-报表",
-          "workitem_status": "未开始",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "唐光伟",
           "completed": false,
@@ -49766,7 +50521,7 @@
         {
           "workitem_id": "MFTB-1283",
           "workitem_title": "【需求變更】商品管理優化內容 V1.1",
-          "workitem_status": "开发中",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
@@ -49941,16 +50696,23 @@
         },
         {
           "workitem_id": "MFTB-1251",
-          "workitem_title": "【测试】【大系统】虚拟号码后台",
+          "workitem_title": "【测试】【大系统】虚拟号码后台（虛擬號碼管理）",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "侯黎明",
           "completed": true,
           "api_count": 0,
-          "ui_count": 0,
+          "ui_count": 1,
           "apis": [],
-          "uis": [],
-          "status": "neither_ready"
+          "uis": [
+            {
+              "name": "虛擬號碼管理",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
+              "submenu": "系统设置",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-1250",
@@ -50006,10 +50768,10 @@
         {
           "workitem_id": "MFTB-1249",
           "workitem_title": "【测试】【補】屬性組與屬性狀態：庫存狀態、同步庫存狀態更名為“屬性狀態”、“同步屬性狀態”，售罄關聯組合商品的單品友好提示",
-          "workitem_status": "测试中",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "侯黎明",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -50248,7 +51010,7 @@
         {
           "workitem_id": "MFTB-1207",
           "workitem_title": "【mfood Android】团购菜品详情",
-          "workitem_status": "开发中",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "徐子旺",
           "completed": false,
@@ -50287,7 +51049,7 @@
         {
           "workitem_id": "MFTB-1196",
           "workitem_title": "【测试】【大係統】商家 APP——商家入駐申請",
-          "workitem_status": "待处理",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "李云锋",
           "completed": false,
@@ -51087,16 +51849,23 @@
         },
         {
           "workitem_id": "MFTB-1051",
-          "workitem_title": "【前端】【大系统】虚拟号码后台",
+          "workitem_title": "【前端】【大系统】虚拟号码后台（虛擬號碼管理）",
           "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "洪喜彬",
           "completed": false,
           "api_count": 0,
-          "ui_count": 0,
+          "ui_count": 1,
           "apis": [],
-          "uis": [],
-          "status": "neither_ready"
+          "uis": [
+            {
+              "name": "虛擬號碼管理",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
+              "submenu": "系统设置",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-1050",
@@ -51314,7 +52083,7 @@
         {
           "workitem_id": "MFTB-1027",
           "workitem_title": "【测试】【大係統】團購到店-商家端",
-          "workitem_status": "待处理",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "黄春晓",
           "completed": false,
@@ -51494,16 +52263,23 @@
         },
         {
           "workitem_id": "MFTB-1002",
-          "workitem_title": "【服务端】【大系统】虚拟号码后台",
+          "workitem_title": "【服务端】【大系统】虚拟号码后台（虛擬號碼管理）",
           "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "杨至成",
           "completed": false,
           "api_count": 0,
-          "ui_count": 0,
+          "ui_count": 1,
           "apis": [],
-          "uis": [],
-          "status": "neither_ready"
+          "uis": [
+            {
+              "name": "虛擬號碼管理",
+              "path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
+              "submenu": "系统设置",
+              "smoke_status": "Passed"
+            }
+          ],
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-1000",
@@ -51637,7 +52413,7 @@
         {
           "workitem_id": "MFTB-975",
           "workitem_title": "【大係統】商家 APP_外卖接单",
-          "workitem_status": "开发中",
+          "workitem_status": "提交测试",
           "project": "mftb",
           "assignee": "陈少丹",
           "completed": false,
@@ -51689,10 +52465,10 @@
         {
           "workitem_id": "MFTB-966",
           "workitem_title": "【测试】【大係統】C 端用戶中心合併管理 - 新增凍結设備号",
-          "workitem_status": "待处理",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "李云锋",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -52890,10 +53666,10 @@
         {
           "workitem_id": "MFTB-835",
           "workitem_title": "【测试】【大係統】APP登錄",
-          "workitem_status": "测试中",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "李云锋",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -52994,7 +53770,7 @@
         {
           "workitem_id": "MFTB-827",
           "workitem_title": "【测试】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告",
-          "workitem_status": "待处理",
+          "workitem_status": "测试中",
           "project": "mftb",
           "assignee": "冼嘉业",
           "completed": false,
@@ -54613,10 +55389,10 @@
         {
           "workitem_id": "MFTB-605",
           "workitem_title": "【测试】【大係統】商家 APP_賬號登錄",
-          "workitem_status": "测试中",
+          "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "李云锋",
-          "completed": false,
+          "completed": true,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -58754,11 +59530,11 @@
           "status": "neither_ready"
         },
         {
-          "workitem_id": "MF-34672",
-          "workitem_title": "【舊係統】團購到店-半年售顯示數據調整",
+          "workitem_id": "MF-34707",
+          "workitem_title": "未報名勁爆券商家，取消「門店首頁標籤」",
           "workitem_status": "待处理",
           "project": "mfood",
-          "assignee": "覃林方",
+          "assignee": "周昱强",
           "completed": false,
           "api_count": 0,
           "ui_count": 0,
@@ -58767,11 +59543,24 @@
           "status": "neither_ready"
         },
         {
-          "workitem_id": "MF-34671",
-          "workitem_title": "无忧行优化",
+          "workitem_id": "MF-34705",
+          "workitem_title": "【市場部】北區夜市活動",
           "workitem_status": "待处理",
           "project": "mfood",
-          "assignee": "周昱强",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MF-34682",
+          "workitem_title": "【積分抵現】優化",
+          "workitem_status": "已评审（待开发）",
+          "project": "mfood",
+          "assignee": "溫浩源",
           "completed": false,
           "api_count": 0,
           "ui_count": 0,
@@ -59975,24 +60764,74 @@
           "status": "neither_ready"
         },
         {
-          "workitem_id": "MF-34647",
-          "workitem_title": "【團購】-門店列表-新增門店推廣碼，掃碼進入商家主頁",
+          "workitem_id": "MF-34715",
+          "workitem_title": "【舊係統】商戶後臺-門店相冊，圖片新增刪除操作",
           "workitem_status": "测试环境验证通过",
           "project": "mfood",
           "assignee": "覃林方",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MF-34676",
+          "workitem_title": "【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "覃林方",
+          "completed": true,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MF-34659",
+          "workitem_title": "超市首页，显示红包瓷片",
+          "workitem_status": "测试环境验证通过",
+          "project": "mfood",
+          "assignee": "周昱强",
+          "completed": true,
+          "api_count": 25,
+          "ui_count": 0,
+          "apis": [
             {
-              "name": "門店列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/store-management",
-              "submenu": "门店管理",
-              "smoke_status": "Passed"
+              "name": "删除未发放的所有券码",
+              "path": "/group/product/coupon/deleteUnSendByProductId",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "删除未发放的所有券码",
+              "path": "/group/product/coupon/deleteUnSendByProductId",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "导出商品券码",
+              "path": "/group/product/exportCoupon",
+              "method": "get",
+              "status": "released"
+            },
+            {
+              "name": "删除多个",
+              "path": "/group/product/coupon/deleteBatch",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "删除未发放的所有券码",
+              "path": "/group/product/coupon/deleteUnSendByProductId",
+              "method": "post",
+              "status": "released"
             }
           ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "frontend_missing"
         },
         {
           "workitem_id": "MF-34636",
@@ -60019,45 +60858,6 @@
           ],
           "uis": [],
           "status": "frontend_missing"
-        },
-        {
-          "workitem_id": "MF-34627",
-          "workitem_title": "【用户 app】客服 icon 新增文字说明",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "周昱强",
-          "completed": true,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MF-34624",
-          "workitem_title": "【Android用户端】适配 16系统为目标平台",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "徐子旺",
-          "completed": true,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MF-34613",
-          "workitem_title": "積分抵現可用規則更改",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "溫浩源",
-          "completed": true,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-33652",
@@ -60112,11 +60912,50 @@
           "status": "frontend_missing"
         },
         {
-          "workitem_id": "MF-34673",
-          "workitem_title": "【测试】【舊係統】團購到店-半年售顯示數據調整",
+          "workitem_id": "MF-34708",
+          "workitem_title": "【测试】未報名勁爆券商家，取消「門店首頁標籤」",
           "workitem_status": "待处理",
           "project": "mfood",
-          "assignee": "冼嘉业",
+          "assignee": "贺志成",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MF-34706",
+          "workitem_title": "【市場部】北區夜市活動",
+          "workitem_status": "待处理",
+          "project": "mfood",
+          "assignee": "廖荣",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MF-34700",
+          "workitem_title": "【测试】无忧行优化",
+          "workitem_status": "待处理",
+          "project": "mfood",
+          "assignee": "杨庆龙",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MF-34694",
+          "workitem_title": "【测试】《【一户通積分】弹窗文案修改》",
+          "workitem_status": "待处理",
+          "project": "mfood",
+          "assignee": "贺志成",
           "completed": false,
           "api_count": 0,
           "ui_count": 0,
@@ -60470,8 +61309,8 @@
           "status": "neither_ready"
         },
         {
-          "workitem_id": "MF-34655",
-          "workitem_title": "【测试】【Android用户端】适配 16系统为目标平台",
+          "workitem_id": "MF-34716",
+          "workitem_title": "【测试】【舊係統】商戶後臺-門店相冊，圖片新增刪除操作",
           "workitem_status": "测试环境验证通过",
           "project": "mfood",
           "assignee": "贺志成",
@@ -60483,24 +61322,11 @@
           "status": "neither_ready"
         },
         {
-          "workitem_id": "MF-34652",
-          "workitem_title": "【测试】【用户 app】客服 icon 新增文字说明",
+          "workitem_id": "MF-34677",
+          "workitem_title": "【测试】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
           "workitem_status": "测试环境验证通过",
           "project": "mfood",
-          "assignee": "杨庆龙",
-          "completed": true,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MF-34617",
-          "workitem_title": "【测试】積分抵現可用規則更改",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "冼嘉业",
+          "assignee": "贺志成",
           "completed": true,
           "api_count": 0,
           "ui_count": 0,
@@ -60954,15 +61780,15 @@
     {
       "scan_date": "2026-09-07",
       "summary": {
-        "verifiedCount": 307,
+        "verifiedCount": 322,
         "incompleteCount": 0,
-        "shadowCount": 1214,
-        "delayCount": 130,
+        "shadowCount": 1212,
+        "delayCount": 136,
         "mobileCount": 3,
-        "processCount": 87,
-        "otherCount": 143
+        "processCount": 106,
+        "otherCount": 178
       },
-      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **18.6%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**87** 项产品方案/UI设计等过程节点工单、**143** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1214 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 130 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
+      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **19.3%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**106** 项产品方案/UI设计等过程节点工单、**178** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1212 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 136 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
     },
     {
       "scan_date": "2026-09-06",
