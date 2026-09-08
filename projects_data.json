@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-07T16:09:52.509230+00:00",
+  "compiledAt": "2026-09-08T03:34:43.668479+00:00",
   "latest": {
     "mftb": [
       {
@@ -294,7 +294,7 @@
       {
         "id": "MFTB-1580",
         "title": "【極馬】專送騎手統計增加在線時長、人效、區分訂單平台",
-        "status": "测试环境验证通过",
+        "status": "预发布验收通过",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -304,14 +304,14 @@
         "createDate": "2026-08-28",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=bf04004c7130658447652ca01d",
-        "rowText": "【产品类需求】【極馬】專送騎手統計增加在線時長、人效、區分訂單平台\nID: MFTB-1580 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-28 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送騎手統計增加在線時長、人效、區分訂單平台\nID: MFTB-1580 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
       {
         "id": "MFTB-1577",
         "title": "【極馬】專送迭代-騎手調度頁面優化",
-        "status": "测试环境验证通过",
+        "status": "预发布验收通过",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -321,7 +321,7 @@
         "createDate": "2026-08-27",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=10ca2ce782c4c77bda9d8dfc60",
-        "rowText": "【产品类需求】【極馬】專送迭代-騎手調度頁面優化\nID: MFTB-1577 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-27 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送迭代-騎手調度頁面優化\nID: MFTB-1577 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3420,6 +3420,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1687",
+        "title": "【测试】【大係統】紅包管理新增“指定商品分類”“指定商品”",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "黄春晓",
+        "creator": "黄春晓",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-08",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=301d3bc7e34dd015083c02b29d",
+        "rowText": "【測試】【测试】【大係統】紅包管理新增“指定商品分類”“指定商品”\nID: MFTB-1687 | 状态: 待处理 | 优先级: 中\n负责人: 黄春晓 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-08 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1686",
         "title": "【前端】【大係統-會員中心】会员券包",
         "status": "未开始",
@@ -3541,7 +3558,7 @@
       {
         "id": "MFTB-1670",
         "title": "【测试】【極馬】專送迭代-騎手調度頁面優化",
-        "status": "测试环境验证通过",
+        "status": "预发布验收通过",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -3551,7 +3568,7 @@
         "createDate": "2026-09-03",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4642ff9f018b9260e8a0ed7bd3",
-        "rowText": "【測試】【测试】【極馬】專送迭代-騎手調度頁面優化\nID: MFTB-1670 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-03 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【極馬】專送迭代-騎手調度頁面優化\nID: MFTB-1670 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-03 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3609,7 +3626,7 @@
       {
         "id": "MFTB-1664",
         "title": "【测试】【極馬】專送騎手統計增加在線時長、人效、區分訂單平台",
-        "status": "测试环境验证通过",
+        "status": "预发布验收通过",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -3619,7 +3636,7 @@
         "createDate": "2026-09-03",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7cb67b751be168f49716edb6dd",
-        "rowText": "【測試】【测试】【極馬】專送騎手統計增加在線時長、人效、區分訂單平台\nID: MFTB-1664 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-03 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【極馬】專送騎手統計增加在線時長、人效、區分訂單平台\nID: MFTB-1664 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-03 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5428,7 +5445,7 @@
       {
         "id": "MFTB-1483",
         "title": "【管理后台】【大系統】配送費減免",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "陈文涛",
         "creator": "陈文涛",
@@ -5438,7 +5455,7 @@
         "createDate": "2026-08-19",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=1d65cde9502e35de61e998c4f0",
-        "rowText": "【任务】【管理后台】【大系統】配送費減免\nID: MFTB-1483 | 状态: 未开始 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
+        "rowText": "【任务】【管理后台】【大系統】配送費減免\nID: MFTB-1483 | 状态: 开发中 | 优先级: 中\n负责人: 陈文涛 | 提报人: 陈文涛\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -20371,7 +20388,7 @@
       {
         "id": "MFTB-1674",
         "title": "【mfood用户端】【团购】Android： 套餐商品下单时，提交订单页中无需带套餐内容",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "黄春晓",
@@ -20381,7 +20398,7 @@
         "createDate": "2026-09-04",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d5036cec81ece445d0dca8964d",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android： 套餐商品下单时，提交订单页中无需带套餐内容\nID: MFTB-1674 | 状态: 已修复 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-04 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android： 套餐商品下单时，提交订单页中无需带套餐内容\nID: MFTB-1674 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-04 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -28191,40 +28208,6 @@
         "category": "Req"
       },
       {
-        "id": "MF-34715",
-        "title": "【舊係統】商戶後臺-門店相冊，圖片新增刪除操作",
-        "status": "测试环境验证通过",
-        "priority": "低",
-        "assignee": "覃林方",
-        "creator": "覃林方",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-09-03",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=85a12f620988ffb7ba3016a331",
-        "rowText": "【产品类需求】【舊係統】商戶後臺-門店相冊，圖片新增刪除操作\nID: MF-34715 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: V7.4.0（？） | 创建时间: 2026-09-03 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Req"
-      },
-      {
-        "id": "MF-34676",
-        "title": "【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
-        "status": "测试环境验证通过",
-        "priority": "低",
-        "assignee": "覃林方",
-        "creator": "覃林方",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-08-26",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=07ca0c37a4a42fba8ceb01fba2",
-        "rowText": "【产品类需求】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；\nID: MF-34676 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-26 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Req"
-      },
-      {
         "id": "MF-34659",
         "title": "超市首页，显示红包瓷片",
         "status": "测试环境验证通过",
@@ -28308,6 +28291,23 @@
         "rowText": "【产品类需求】【POS机】新POS机兼容测试\nID: MF-24798 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: 未规划 | 创建时间: 2024-08-27 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
+      },
+      {
+        "id": "MF-34719",
+        "title": "【测试】针对活动id:202310241756051567319，勁爆券報名活動，將默認開啟膨脹券，改成商家自主選擇",
+        "status": "待处理",
+        "priority": "低",
+        "assignee": "贺志成",
+        "creator": "贺志成",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-08",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=8b354faf5dfdc131a3ac4f6320",
+        "rowText": "【測試】【测试】针对活动id:202310241756051567319，勁爆券報名活動，將默認開啟膨脹券，改成商家自主選擇\nID: MF-34719 | 状态: 待处理 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.4.0（？） | 创建时间: 2026-09-08 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Task"
       },
       {
         "id": "MF-34708",
@@ -29275,40 +29275,6 @@
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=30097f1fa2a9e9d9eb09d51d21",
         "rowText": "【測試】【测试】定向發放消費金\nID: MF-25878 | 状态: 待处理 | 优先级: 低\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: 未规划 | 创建时间: 2024-10-17 | 排期规划: 2024-10-28 至 2024-10-29",
-        "project": "mFood综合版本",
-        "category": "Task"
-      },
-      {
-        "id": "MF-34716",
-        "title": "【测试】【舊係統】商戶後臺-門店相冊，圖片新增刪除操作",
-        "status": "测试环境验证通过",
-        "priority": "低",
-        "assignee": "贺志成",
-        "creator": "贺志成",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-09-03",
-        "workItemType": "測試",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=df997d2a8c8cb7d192ada3b76d",
-        "rowText": "【測試】【测试】【舊係統】商戶後臺-門店相冊，圖片新增刪除操作\nID: MF-34716 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.4.0（？） | 创建时间: 2026-09-03 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Task"
-      },
-      {
-        "id": "MF-34677",
-        "title": "【测试】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
-        "status": "测试环境验证通过",
-        "priority": "低",
-        "assignee": "贺志成",
-        "creator": "贺志成",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-08-26",
-        "workItemType": "測試",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=d8be2a749c4f04507ba61806be",
-        "rowText": "【測試】【测试】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；\nID: MF-34677 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 贺志成 | 提报人: 贺志成\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-26 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -31267,28 +31233,28 @@
       {
         "date": "2026-09-04",
         "total": 1189,
-        "completed": 922,
+        "completed": 921,
         "statusCounts": {
-          "已完成": 922,
-          "进行中": 267
+          "已完成": 921,
+          "进行中": 268
         }
       },
       {
         "date": "2026-09-05",
         "total": 1189,
-        "completed": 922,
+        "completed": 921,
         "statusCounts": {
-          "已完成": 922,
-          "进行中": 267
+          "已完成": 921,
+          "进行中": 268
         }
       },
       {
         "date": "2026-09-06",
         "total": 1189,
-        "completed": 923,
+        "completed": 922,
         "statusCounts": {
-          "已完成": 923,
-          "进行中": 266
+          "已完成": 922,
+          "进行中": 267
         }
       },
       {
@@ -31298,6 +31264,15 @@
         "statusCounts": {
           "已完成": 924,
           "进行中": 269
+        }
+      },
+      {
+        "date": "2026-09-08",
+        "total": 1194,
+        "completed": 924,
+        "statusCounts": {
+          "已完成": 924,
+          "进行中": 270
         }
       }
     ],
@@ -43202,6 +43177,15 @@
       },
       {
         "date": "2026-08-26",
+        "total": 179,
+        "completed": 35,
+        "statusCounts": {
+          "已完成": 35,
+          "进行中": 144
+        }
+      },
+      {
+        "date": "2026-08-27",
         "total": 181,
         "completed": 35,
         "statusCounts": {
@@ -43210,52 +43194,52 @@
         }
       },
       {
-        "date": "2026-08-27",
-        "total": 183,
-        "completed": 35,
-        "statusCounts": {
-          "已完成": 35,
-          "进行中": 148
-        }
-      },
-      {
         "date": "2026-08-28",
-        "total": 183,
+        "total": 181,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 148
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-29",
-        "total": 183,
+        "total": 181,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 148
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-30",
-        "total": 183,
+        "total": 181,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 148
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-31",
-        "total": 184,
+        "total": 182,
         "completed": 35,
         "statusCounts": {
           "已完成": 35,
-          "进行中": 149
+          "进行中": 147
         }
       },
       {
         "date": "2026-09-01",
+        "total": 185,
+        "completed": 35,
+        "statusCounts": {
+          "已完成": 35,
+          "进行中": 150
+        }
+      },
+      {
+        "date": "2026-09-02",
         "total": 187,
         "completed": 35,
         "statusCounts": {
@@ -43264,57 +43248,57 @@
         }
       },
       {
-        "date": "2026-09-02",
-        "total": 189,
-        "completed": 37,
+        "date": "2026-09-03",
+        "total": 187,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 37,
+          "已完成": 35,
           "进行中": 152
         }
       },
       {
-        "date": "2026-09-03",
-        "total": 191,
-        "completed": 37,
-        "statusCounts": {
-          "已完成": 37,
-          "进行中": 154
-        }
-      },
-      {
         "date": "2026-09-04",
-        "total": 191,
-        "completed": 39,
+        "total": 187,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 39,
+          "已完成": 35,
           "进行中": 152
         }
       },
       {
         "date": "2026-09-05",
-        "total": 191,
-        "completed": 39,
+        "total": 187,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 39,
+          "已完成": 35,
           "进行中": 152
         }
       },
       {
         "date": "2026-09-06",
-        "total": 191,
-        "completed": 39,
+        "total": 187,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 39,
+          "已完成": 35,
           "进行中": 152
         }
       },
       {
         "date": "2026-09-07",
-        "total": 191,
-        "completed": 39,
+        "total": 187,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 39,
+          "已完成": 35,
           "进行中": 152
+        }
+      },
+      {
+        "date": "2026-09-08",
+        "total": 188,
+        "completed": 35,
+        "statusCounts": {
+          "已完成": 35,
+          "进行中": 153
         }
       }
     ]
@@ -43859,7 +43843,7 @@
   "leadTimeKPI": {
     "mftb": {
       "average": 14.4,
-      "delta": 6.6
+      "delta": 5.6
     },
     "mfood": {
       "average": 0.0,
@@ -43868,26 +43852,26 @@
   },
   "pmoAdvice": {
     "mftb": {
-      "content": "1. **测试堰塞湖：590 项卡在测试管道，占活跃项 62.2%**：当前 948 项活跃中，546 项「提交测试」、27 项「测试中」、17 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期152天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期152天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期151天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期151天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 116 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 8 项（MFTB-1685, MFTB-1686, MFTB-1680, MFTB-1679, MFTB-1684, MFTB-1683），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待测试；`[MFTB-1554]` 支付渠道（洪喜彬）提交测试；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`刘志敏` 56 项活跃中 43 项超期（77%）；`陈剑` 53 项活跃中 32 项超期（60%）；`甄荣康` 50 项活跃中 43 项超期（86%）；`张健伟` 46 项活跃中 43 项超期（93%）；`唐光伟` 44 项活跃中 40 项超期（91%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **450 项超期 + 497 项无排期（52.4%）+ 168 项闲置 = 排期纪律需加强**：948 项活跃中 497 项（52.4%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-09-08 00:08:30"
+      "content": "1. **测试堰塞湖：590 项卡在测试管道，占活跃项 62.2%**：当前 948 项活跃中，546 项「提交测试」、27 项「测试中」、17 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期152天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期152天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期151天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期151天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 116 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 9 项（MFTB-1685, MFTB-1687, MFTB-1686, MFTB-1680, MFTB-1679, MFTB-1684），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待测试；`[MFTB-1554]` 支付渠道（洪喜彬）提交测试；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`刘志敏` 56 项活跃中 43 项超期（77%）；`陈剑` 53 项活跃中 32 项超期（60%）；`甄荣康` 50 项活跃中 43 项超期（86%）；`张健伟` 46 项活跃中 43 项超期（93%）；`唐光伟` 44 项活跃中 40 项超期（91%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **450 项超期 + 497 项无排期（52.4%）+ 168 项闲置 = 排期纪律需加强**：948 项活跃中 497 项（52.4%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
+      "updatedAt": "2026-09-08 11:33:17"
     },
     "mfood": {
-      "content": "1. **需求池积压严重**：154 项活跃中，99 项待处理（64.3%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（11 项）、`贺志成`（10 项）、`刘龙振海`（9 项）、`杨庆龙`（7 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 39 项，交付管道需激活**：mFood 超期 22 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期679天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期669天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期417天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **132/154 项无排期（85.7%）= 排期管理缺位**：活跃项中仅 22 项有 planEnd，排期覆盖率仅 14.3%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **35 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34715]`（覃林方, 【舊係統】商戶後臺-門店相冊，圖片新增刪除操作）、`[MF-34676]`（覃林方, 【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色）、`[MF-34659]`（周昱强, 超市首页，显示红包瓷片）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-09-08 00:08:30"
+      "content": "1. **需求池积压严重**：155 项活跃中，100 项待处理（64.5%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（11 项）、`贺志成`（11 项）、`刘龙振海`（9 项）、`杨庆龙`（7 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 35 项，交付管道需激活**：mFood 超期 22 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期679天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期669天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期417天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **133/155 项无排期（85.8%）= 排期管理缺位**：活跃项中仅 22 项有 planEnd，排期覆盖率仅 14.2%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **31 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34659]`（周昱强, 超市首页，显示红包瓷片）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-24809]`（覃林方, 门店评分仅保留一位小数点）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
+      "updatedAt": "2026-09-08 11:33:17"
     }
   },
   "reconciliationReport": {
-    "compiledAt": "2026-09-08T00:08:29.786361",
+    "compiledAt": "2026-09-08T11:33:17.384323",
     "summary": {
-      "verifiedCount": 443,
+      "verifiedCount": 324,
       "incompleteCount": 0,
-      "shadowCount": 1150,
-      "delayCount": 118,
+      "shadowCount": 1199,
+      "delayCount": 132,
       "mobileCount": 3,
-      "processCount": 93,
+      "processCount": 106,
       "otherCount": 179
     },
-    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **25.9%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**93** 项产品方案/UI设计等过程节点工单、**179** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1150 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 118 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
+    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **19.6%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**106** 项产品方案/UI设计等过程节点工单、**179** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1199 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 132 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
     "details": {
       "verified": [
         {
@@ -43896,30 +43880,8 @@
           "workitem_status": "待处理",
           "project": "mftb",
           "feature_type": "API_Endpoint",
-          "feature_name": "订单详情",
-          "feature_path": "/group/order/get",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1557",
-          "workitem_title": "【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "订单详情",
-          "feature_path": "/group/order/get",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1529",
-          "workitem_title": "【用户端APP】用户端訂單詳情支持標記雨天標記",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "订单详情",
-          "feature_path": "/group/order/get",
+          "feature_name": "商品詳情",
+          "feature_path": "/product/detail",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -43946,39 +43908,6 @@
           "error_logs": []
         },
         {
-          "workitem_id": "MFTB-1514",
-          "workitem_title": "【大係統】到家營銷活動_商家營銷_買贈活動新增活動類型",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "新增活动",
-          "feature_path": "/takeout/product-combo-price/add-activity",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1512",
-          "workitem_title": "【大係統】紅包管理新增“指定商品分類”“指定商品”",
-          "workitem_status": "提交测试",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "删除未发放的所有券码",
-          "feature_path": "/group/product/coupon/deleteUnSendByProductId",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1509",
-          "workitem_title": "【大係統-商家端App】商家報名平臺活動（外賣管理）",
-          "workitem_status": "已内审",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "报名平台活动",
-          "feature_path": "/platform/apply/apply",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
           "workitem_id": "MFTB-1418",
           "workitem_title": "【大係統】合同管理_新增年費套餐字段",
           "workitem_status": "待处理",
@@ -43997,39 +43926,6 @@
           "feature_type": "UI_Menu",
           "feature_name": "商品列表",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/product-management/product-list",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1310",
-          "workitem_title": "【广告系统】-词库管理",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "詞庫管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/search-dict",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1282",
-          "workitem_title": "【大係統】-團購到店-新增門店【新店】標籤和商品【新品】標籤",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "新增门店",
-          "feature_path": "/store/add",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1253",
-          "workitem_title": "【大係統】集團-未入駐商家功能",
-          "workitem_status": "待处理",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "未入驻商家",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44067,28 +43963,6 @@
           "error_logs": []
         },
         {
-          "workitem_id": "MFTB-1078",
-          "workitem_title": "【大係統】商家報名活動（紅包活動）",
-          "workitem_status": "已一审",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "红包活动",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/red-envelope-activity",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-1031",
-          "workitem_title": "【補】到家業務_門店管理 新增門店免費標籤",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "新增门店",
-          "feature_path": "/store/add",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
           "workitem_id": "MFTB-1011",
           "workitem_title": "【大係統】團購到店-用戶端自定義商圈相關功能（待出 UI）",
           "workitem_status": "待处理",
@@ -44107,17 +43981,6 @@
           "feature_type": "UI_Menu",
           "feature_name": "虛擬號碼管理",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-996",
-          "workitem_title": "【大系统】特殊区域管理",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "特殊區域管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/special-area",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44166,17 +44029,6 @@
           "error_logs": []
         },
         {
-          "workitem_id": "MFTB-775",
-          "workitem_title": "【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告",
-          "workitem_status": "测试中",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "修改活动",
-          "feature_path": "/takeout/product-combo-price/edit-activity",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
           "workitem_id": "MFTB-759",
           "workitem_title": "【大係統】團購到店-商家端",
           "workitem_status": "测试中",
@@ -44184,17 +44036,6 @@
           "feature_type": "UI_Menu",
           "feature_name": "欠款对账",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/merchant-reconciliation/debt-reconciliation",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-730",
-          "workitem_title": "【大係統】商家 APP——商家入駐申請",
-          "workitem_status": "测试中",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商家入驻",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44217,17 +44058,6 @@
           "feature_type": "UI_Menu",
           "feature_name": "合同管理",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/contract-management",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-527",
-          "workitem_title": "【大係統】商家主頁裝修-新增banner廣告",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "banner广告",
-          "feature_path": "/activity/global/app/decor/banner-list",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44287,17 +44117,6 @@
           "error_logs": []
         },
         {
-          "workitem_id": "MFTB-404",
-          "workitem_title": "【大係統】商家意見反饋",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "商家意见",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
           "workitem_id": "MFTB-393",
           "workitem_title": "【需求變更】合同管理與業務門店需求變更需求內容V1.3",
           "workitem_status": "测试环境验证通过",
@@ -44305,39 +44124,6 @@
           "feature_type": "UI_Menu",
           "feature_name": "合同管理",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/contract-management",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-309",
-          "workitem_title": "【大係統】MFTB-品牌管理功能（集團門店品牌庫管理）",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "集團門店品牌库管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-240",
-          "workitem_title": "【大係統】C 端用戶中心合併管理 - 新增門店白名單",
-          "workitem_status": "待测试",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "新增门店",
-          "feature_path": "/store/add",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "workitem_id": "MFTB-236",
-          "workitem_title": "【大係統】C 端用戶中心合併管理 - 新增用戶凍結列表操作日誌",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "用户冻结列表",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/user/freeze",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44397,17 +44183,6 @@
           "error_logs": []
         },
         {
-          "workitem_id": "MFTB-25",
-          "workitem_title": "【大係統】MFTB 集團管理（集團列表）",
-          "workitem_status": "产品验收通过",
-          "project": "mftb",
-          "feature_type": "UI_Menu",
-          "feature_name": "集团列表",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/group-management",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
           "workitem_id": "MFTB-1592",
           "workitem_title": "【服务端】【大係統】團購到店-用戶端商品分享",
           "workitem_status": "提交测试",
@@ -44419,17 +44194,6 @@
           "error_logs": []
         },
         {
-          "workitem_id": "MFTB-1570",
-          "workitem_title": "【服务端】【大係統】訂單用户信息脱敏團，包括訂單列表、預約單管理、核銷碼列表；電話和用戶昵稱都脫敏；導出時直接去掉這兩列字段",
-          "workitem_status": "未开始",
-          "project": "mftb",
-          "feature_type": "API_Endpoint",
-          "feature_name": "订单列表",
-          "feature_path": "/group/order/page",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
           "workitem_id": "MFTB-1568",
           "workitem_title": "【前端】【广告系统】-盘活复苏-算法库",
           "workitem_status": "提交测试",
@@ -44437,6 +44201,226 @@
           "feature_type": "UI_Menu",
           "feature_name": "算法库",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/algorithm-library",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1554",
+          "workitem_title": "【前端】【大系统】支付渠道-财务部分",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "交易渠道管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1522",
+          "workitem_title": "【用戶端APP】用戶端APP_提交訂單頁重設計",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "提交訂單",
+          "feature_path": "/marketingTool/search/hot-revive/sales-order/submitOrder",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1520",
+          "workitem_title": "【产品】外卖订单详情补充营销活动&退款说明",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "退款理由",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1511",
+          "workitem_title": "【服务端】【大系统】支付渠道",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "交易渠道管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1499",
+          "workitem_title": "【测试】【大係統】 合同管理佣金折扣活动，折扣费率新增枚举值",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "合同管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/contract-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1486",
+          "workitem_title": "【前端】【廣告系統】-無敵星星-算法库",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "算法库",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/algorithm-library",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1465",
+          "workitem_title": "【前端】【大系统】支付渠道",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "交易渠道管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/finance/payment-manager/payment-setting",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1436",
+          "workitem_title": "【测试】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/product-management/product-list",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1433",
+          "workitem_title": "【後端】【到家业务-商品管理】商品列表：组合商品的子商品售罄后，发现：组合商品中的子商品没有同步到售罄状态",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/product-management/product-list",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1359",
+          "workitem_title": "【大係統】團購到店-用戶端商品列表含积分抵扣",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "商品列表",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/product-management/product-list",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1315",
+          "workitem_title": "【大係統】團購到店-用戶端退款逻辑补充",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "退款理由",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1288",
+          "workitem_title": "【测试】【大係統】團購到店-用戶端自定義商圈相關功能（待出 UI）",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "自定義商圈",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/custom-business-district-management/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1287",
+          "workitem_title": "【测试】【大係統】-團購到店-新增商品自定義標籤",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "API_Endpoint",
+          "feature_name": "新增商品",
+          "feature_path": "/group/product/add",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1263",
+          "workitem_title": "【广告系统】-瀑布流策略；",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "瀑布流策略",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/waterfall-strategy",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1251",
+          "workitem_title": "【测试】【大系统】虚拟号码后台（虛擬號碼管理）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "虛擬號碼管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/virtual-number",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1250",
+          "workitem_title": "【前端】【需求變更】商戶管理_集團門店基礎信息和合同管理優化；",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "合同管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/contract-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1229",
+          "workitem_title": "【前端】【大系统】神策分群同步",
+          "workitem_status": "提交测试",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "神策分群",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1215",
+          "workitem_title": "【测试】【大系统】神策分群同步",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "神策分群",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1214",
+          "workitem_title": "【大系统】神策分群同步",
+          "workitem_status": "未开始",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "神策分群",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "workitem_id": "MFTB-1211",
+          "workitem_title": "【产品】【大系统】神策分群同步",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "feature_type": "UI_Menu",
+          "feature_name": "神策分群",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/shence-segment/index",
           "smoke_status": "Passed",
           "error_logs": []
         }
@@ -44480,8 +44464,43 @@
         },
         {
           "feature_type": "UI_Menu",
+          "feature_name": "詞庫管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/search-dict",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "銷售定價",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/sales-pricing",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "商家意见",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "未入驻商家",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
           "feature_name": "门店基础信息管理",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/store-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "集团列表",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/group-management",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44494,8 +44513,22 @@
         },
         {
           "feature_type": "UI_Menu",
+          "feature_name": "集團門店品牌库管理",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
           "feature_name": "團購門店列表",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/store-management/store-list",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "門店分類(主管級設置)",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/store-business/store-management/store-category",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44510,6 +44543,13 @@
           "feature_type": "UI_Menu",
           "feature_name": "减配送费活动",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/delivery-fee-reduction-activity",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "红包活动",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/red-envelope-activity",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44536,6 +44576,13 @@
         },
         {
           "feature_type": "UI_Menu",
+          "feature_name": "用戶意见反馈",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/feedback",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
           "feature_name": "用戶收貨地圖特殊收录",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/map-collection",
           "smoke_status": "Passed",
@@ -44545,6 +44592,13 @@
           "feature_type": "UI_Menu",
           "feature_name": "用戶收貨地圖黑名單",
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/map-black-name",
+          "smoke_status": "Passed",
+          "error_logs": []
+        },
+        {
+          "feature_type": "UI_Menu",
+          "feature_name": "用户冻结列表",
+          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/user/freeze",
           "smoke_status": "Passed",
           "error_logs": []
         },
@@ -44582,76 +44636,6 @@
           "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-package/index",
           "smoke_status": "Passed",
           "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "推廣贈送",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/gift-management/gift",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "消費明細",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/gift-management/gift-consume-detail",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "篩選管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/sift-list",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "頁面投放廣告",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation/delivery-list",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "區域加價管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/delivery-management/regional-markup-management",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "UI_Menu",
-          "feature_name": "門店加价管理",
-          "feature_path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/delivery-management/store-markup-management",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "API_Endpoint",
-          "feature_name": "获得店铺列表下拉",
-          "feature_path": "/common/select-store",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "API_Endpoint",
-          "feature_name": "导入门店",
-          "feature_path": "/group/store/business-district/import-stores",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "API_Endpoint",
-          "feature_name": "编辑分组",
-          "feature_path": "/group/store/decor-photo/group-edit",
-          "smoke_status": "Passed",
-          "error_logs": []
-        },
-        {
-          "feature_type": "API_Endpoint",
-          "feature_name": "门店状态变更",
-          "feature_path": "/group/store/toggle-status",
-          "smoke_status": "Passed",
-          "error_logs": []
         }
       ],
       "delay": [
@@ -44661,6 +44645,13 @@
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "龙颖之"
+        },
+        {
+          "workitem_id": "MFTB-1310",
+          "workitem_title": "【广告系统】-词库管理",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "冯松"
         },
         {
           "workitem_id": "MFTB-1266",
@@ -44703,6 +44694,20 @@
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1031",
+          "workitem_title": "【補】到家業務_門店管理 新增門店免費標籤",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-996",
+          "workitem_title": "【大系统】特殊区域管理",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
         },
         {
           "workitem_id": "MFTB-868",
@@ -44796,6 +44801,13 @@
           "assignee": "覃林方"
         },
         {
+          "workitem_id": "MFTB-527",
+          "workitem_title": "【大係統】商家主頁裝修-新增banner廣告",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "覃林方"
+        },
+        {
           "workitem_id": "MFTB-507",
           "workitem_title": "【大係統】團購-門店相關的內容改動（20260603）",
           "workitem_status": "测试环境验证通过",
@@ -44817,6 +44829,13 @@
           "assignee": "周昱强"
         },
         {
+          "workitem_id": "MFTB-404",
+          "workitem_title": "【大係統】商家意見反饋",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
           "workitem_id": "MFTB-326",
           "workitem_title": "【專送合併】騎手考勤",
           "workitem_status": "已上线",
@@ -44831,8 +44850,22 @@
           "assignee": "龙颖之"
         },
         {
+          "workitem_id": "MFTB-309",
+          "workitem_title": "【大係統】MFTB-品牌管理功能（集團門店品牌庫管理）",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "覃林方"
+        },
+        {
           "workitem_id": "MFTB-238",
           "workitem_title": "【大係統】C 端用戶中心合併管理 - 新增測試人員白名單",
+          "workitem_status": "测试环境验证通过",
+          "project": "mftb",
+          "assignee": "赵嘉颖"
+        },
+        {
+          "workitem_id": "MFTB-236",
+          "workitem_title": "【大係統】C 端用戶中心合併管理 - 新增用戶凍結列表操作日誌",
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "赵嘉颖"
@@ -44882,6 +44915,13 @@
         {
           "workitem_id": "MFTB-26",
           "workitem_title": "【大係統】MFTB 公司門店管理",
+          "workitem_status": "产品验收通过",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-25",
+          "workitem_title": "【大係統】MFTB 集團管理（集團列表）",
           "workitem_status": "产品验收通过",
           "project": "mftb",
           "assignee": "廖荣"
@@ -44948,62 +44988,6 @@
           "workitem_status": "测试环境验证通过",
           "project": "mftb",
           "assignee": "黄金凤"
-        },
-        {
-          "workitem_id": "MFTB-1285",
-          "workitem_title": "【测试】【大係統】商品管理_創建商品細節補充",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "侯黎明"
-        },
-        {
-          "workitem_id": "MFTB-1284",
-          "workitem_title": "【测试】【大係統】到家管理_商品管理_新增 自動上下架時間設置",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "侯黎明"
-        },
-        {
-          "workitem_id": "MFTB-1249",
-          "workitem_title": "【测试】【補】屬性組與屬性狀態：庫存狀態、同步庫存狀態更名為“屬性狀態”、“同步屬性狀態”，售罄關聯組合商品的單品友好提示",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "侯黎明"
-        },
-        {
-          "workitem_id": "MFTB-1248",
-          "workitem_title": "【测试】【需求變更】修改默認提現卡需審核",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "杨庆龙"
-        },
-        {
-          "workitem_id": "MFTB-1234",
-          "workitem_title": "【测试】【大係統】用戶APP裝修_灯笼位需求变更",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "黄春晓"
-        },
-        {
-          "workitem_id": "MFTB-1185",
-          "workitem_title": "【测试】【大係統】业务入口管理后台配置项需求变更",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "曹晴晴"
-        },
-        {
-          "workitem_id": "MFTB-1135",
-          "workitem_title": "【测试】【大係統】MFTB_業務門店管理（含門店操作台）-外卖",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "贺志成"
-        },
-        {
-          "workitem_id": "MFTB-1100",
-          "workitem_title": "【测试】【大係統】-團購到店-管理後臺店鋪設置與商家 APP 門店設置新增字段：收藏門店送 xx 字段文本框輸入信息，用戶端需要展示",
-          "workitem_status": "测试环境验证通过",
-          "project": "mftb",
-          "assignee": "曹晴晴"
         }
       ],
       "mobile": [
@@ -45122,6 +45106,13 @@
           "assignee": "周昱强"
         },
         {
+          "workitem_id": "MFTB-1515",
+          "workitem_title": "【大係統】到家營銷活動_商家營銷_買贈活動新增活動類型",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
           "workitem_id": "MFTB-1492",
           "workitem_title": "【大系统】自取单折扣",
           "workitem_status": "已完成",
@@ -45141,6 +45132,20 @@
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "刘龙振海"
+        },
+        {
+          "workitem_id": "MFTB-1443",
+          "workitem_title": "【商家APP】門店管理_店鋪活動_滿減優惠",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-1442",
+          "workitem_title": "【商家APP】門店管理_店鋪活動_滿減優惠",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
         },
         {
           "workitem_id": "MFTB-1439",
@@ -45187,6 +45192,13 @@
         {
           "workitem_id": "MFTB-1262",
           "workitem_title": "【產品】【大係統】用戶 APP 裝修_新增首頁篩選功能配置",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-1260",
+          "workitem_title": "【產品】中通廣告需求變更",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "周昱强"
@@ -45262,6 +45274,20 @@
           "assignee": "刘龙振海"
         },
         {
+          "workitem_id": "MFTB-1007",
+          "workitem_title": "美食外送_外賣到家業務_訂單詳情重設計",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "廖荣"
+        },
+        {
+          "workitem_id": "MFTB-997",
+          "workitem_title": "【产品】【大系统】特殊区域管理",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "刘龙振海"
+        },
+        {
           "workitem_id": "MFTB-952",
           "workitem_title": "【產品】【調度】增加額外距離配送時長上限",
           "workitem_status": "已完成",
@@ -45290,8 +45316,22 @@
           "assignee": "胡家兴"
         },
         {
+          "workitem_id": "MFTB-820",
+          "workitem_title": "【大係統】商家 APP——商家入駐申請",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "李鑫"
+        },
+        {
           "workitem_id": "MFTB-814",
           "workitem_title": "【產品需求變更】【大係統】運營投放管理中，各個廣告跳轉設置交互修改",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
+          "workitem_id": "MFTB-776",
+          "workitem_title": "【產品需求變更】【大係統】用戶 APP——修改活動推薦模塊&banner 廣告&中通廣告",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "周昱强"
@@ -45311,74 +45351,18 @@
           "assignee": "刘龙振海"
         },
         {
+          "workitem_id": "MFTB-731",
+          "workitem_title": "【產品】【大係統】商家 APP——商家入駐申請",
+          "workitem_status": "已完成",
+          "project": "mftb",
+          "assignee": "周昱强"
+        },
+        {
           "workitem_id": "MFTB-706",
           "workitem_title": "【產品】【大係統】【小程序】綜合首頁",
           "workitem_status": "已完成",
           "project": "mftb",
           "assignee": "刘龙振海"
-        },
-        {
-          "workitem_id": "MFTB-701",
-          "workitem_title": "【產品】【大係統】 用戶 APP 裝修——底部導航欄&跳轉設置跳轉",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-675",
-          "workitem_title": "【UI】【大係統】app消息中心",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "胡家兴"
-        },
-        {
-          "workitem_id": "MFTB-674",
-          "workitem_title": "【UI】【大係統】APP登錄",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "胡家兴"
-        },
-        {
-          "workitem_id": "MFTB-660",
-          "workitem_title": "【需求變更】到家業務_商品管理",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "廖荣"
-        },
-        {
-          "workitem_id": "MFTB-656",
-          "workitem_title": "【產品】【大係統】用戶APP裝修_新增瓷片區模塊、新增我的頁面",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-653",
-          "workitem_title": "【UI】【需求變更】騎手取餐前隱藏客戶電話信息",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "许思浩"
-        },
-        {
-          "workitem_id": "MFTB-651",
-          "workitem_title": "【新增】【产品】【大係統】银行卡",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "刘龙振海"
-        },
-        {
-          "workitem_id": "MFTB-643",
-          "workitem_title": "【產品】【大係統】商家 APP_個人中心",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "周昱强"
-        },
-        {
-          "workitem_id": "MFTB-623",
-          "workitem_title": "【產品】【極馬專送】APP應用市場預覽圖",
-          "workitem_status": "已完成",
-          "project": "mftb",
-          "assignee": "龙颖之"
         }
       ],
       "other": [
@@ -45413,14 +45397,14 @@
         {
           "workitem_id": "MFTB-1580",
           "workitem_title": "【極馬】專送騎手統計增加在線時長、人效、區分訂單平台",
-          "workitem_status": "测试环境验证通过",
+          "workitem_status": "预发布验收通过",
           "project": "mftb",
           "assignee": "龙颖之"
         },
         {
           "workitem_id": "MFTB-1577",
           "workitem_title": "【極馬】專送迭代-騎手調度頁面優化",
-          "workitem_status": "测试环境验证通过",
+          "workitem_status": "预发布验收通过",
           "project": "mftb",
           "assignee": "龙颖之"
         },
@@ -45651,7 +45635,7 @@
         {
           "workitem_id": "MFTB-1670",
           "workitem_title": "【测试】【極馬】專送迭代-騎手調度頁面優化",
-          "workitem_status": "测试环境验证通过",
+          "workitem_status": "预发布验收通过",
           "project": "mftb",
           "assignee": "侯黎明"
         },
@@ -45665,7 +45649,7 @@
         {
           "workitem_id": "MFTB-1664",
           "workitem_title": "【测试】【極馬】專送騎手統計增加在線時長、人效、區分訂單平台",
-          "workitem_status": "测试环境验证通过",
+          "workitem_status": "预发布验收通过",
           "project": "mftb",
           "assignee": "侯黎明"
         },
@@ -45897,36 +45881,18 @@
           "project": "mftb",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 10,
+          "api_count": 2,
           "ui_count": 0,
           "apis": [
             {
-              "name": "订单详情",
-              "path": "/group/order/get",
+              "name": "商品詳情",
+              "path": "/product/detail",
               "method": "get",
               "status": "released"
             },
             {
-              "name": "商品详情",
-              "path": "/group/product/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "商品详情",
-              "path": "/group/product/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "商品详情",
-              "path": "/product/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "商品详情",
-              "path": "/product/get",
+              "name": "商品詳情",
+              "path": "/product/detail",
               "method": "get",
               "status": "released"
             }
@@ -45954,36 +45920,11 @@
           "project": "mftb",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 4,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1548",
@@ -46031,42 +45972,11 @@
           "project": "mftb",
           "assignee": "黄信杰",
           "completed": false,
-          "api_count": 6,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "用户端订单详情",
-              "path": "/order/detail",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "用户端订单详情",
-              "path": "/order/detail",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1519",
@@ -46075,7 +45985,7 @@
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
-          "api_count": 59,
+          "api_count": 61,
           "ui_count": 2,
           "apis": [
             {
@@ -46165,18 +46075,11 @@
           "project": "mftb",
           "assignee": "廖荣",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增活动",
-              "path": "/takeout/product-combo-price/add-activity",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1512",
@@ -46185,42 +46088,11 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1509",
@@ -46229,24 +46101,11 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "报名平台活动",
-              "path": "/platform/apply/apply",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "报名平台活动",
-              "path": "/platform/apply/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1491",
@@ -46619,17 +46478,10 @@
           "assignee": "冯松",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "詞庫管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/search-dict",
-              "submenu": "商家推广工具",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1308",
@@ -46677,24 +46529,11 @@
           "project": "mftb",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1278",
@@ -46769,17 +46608,10 @@
           "assignee": "覃林方",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1238",
@@ -46984,49 +46816,11 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
-          "api_count": 25,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "红包活动",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/red-envelope-activity",
-              "submenu": "平台活动",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1076",
@@ -47100,24 +46894,11 @@
           "project": "mftb",
           "assignee": "廖荣",
           "completed": true,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1030",
@@ -47206,17 +46987,10 @@
           "assignee": "刘龙振海",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "特殊區域管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/special-area",
-              "submenu": "基础设置",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-981",
@@ -47277,7 +47051,7 @@
           "project": "mftb",
           "assignee": "覃林方",
           "completed": true,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -47418,40 +47192,9 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": true,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "隨機活動",
@@ -47460,7 +47203,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-819",
@@ -47546,24 +47289,11 @@
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动",
-              "path": "/takeout/product-combo-price/edit-activity",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "中通广告",
-              "path": "/activity/global/app/decor/zto-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-773",
@@ -47605,43 +47335,11 @@
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
-          "api_count": 4,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "商家入驻",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-700",
@@ -47663,7 +47361,7 @@
           "project": "mftb",
           "assignee": "覃林方",
           "completed": true,
-          "api_count": 50,
+          "api_count": 48,
           "ui_count": 2,
           "apis": [
             {
@@ -47966,18 +47664,11 @@
           "project": "mftb",
           "assignee": "覃林方",
           "completed": true,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "banner广告",
-              "path": "/activity/global/app/decor/banner-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-522",
@@ -47999,8 +47690,8 @@
           "project": "mftb",
           "assignee": "龙颖之",
           "completed": true,
-          "api_count": 59,
-          "ui_count": 4,
+          "api_count": 57,
+          "ui_count": 2,
           "apis": [
             {
               "name": "提交退款",
@@ -48021,14 +47712,14 @@
               "status": "released"
             },
             {
-              "name": "编辑未入驻门店",
-              "path": "/store/unsettle/edit",
+              "name": "编辑退款原因",
+              "path": "/group/store/refund-reason/edit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "申请人气商家订单退款",
+              "path": "/marketingTool/search/sales-order/popular-merchant/refund",
               "method": "post",
               "status": "released"
             }
@@ -48038,18 +47729,6 @@
               "name": "退款理由",
               "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
               "submenu": "到家業務(外賣)",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "商家入驻",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
               "smoke_status": "Passed"
             },
             {
@@ -48287,17 +47966,10 @@
           "assignee": "刘龙振海",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "商家意见",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-393",
@@ -48384,17 +48056,10 @@
           "assignee": "覃林方",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "集團門店品牌库管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/brand-management",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-302",
@@ -48429,24 +48094,11 @@
           "project": "mftb",
           "assignee": "赵嘉颖",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-238",
@@ -48468,49 +48120,11 @@
           "project": "mftb",
           "assignee": "赵嘉颖",
           "completed": true,
-          "api_count": 6,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "新增用户",
-              "path": "/merchant-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "用户冻结列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/user/freeze",
-              "submenu": "用户管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-232",
@@ -48793,17 +48407,10 @@
           "assignee": "廖荣",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "集团列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/group-management",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-10",
@@ -48864,6 +48471,19 @@
           "project": "mftb",
           "assignee": "周昱强",
           "completed": true,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
+          "workitem_id": "MFTB-1687",
+          "workitem_title": "【测试】【大係統】紅包管理新增“指定商品分類”“指定商品”",
+          "workitem_status": "待处理",
+          "project": "mftb",
+          "assignee": "黄春晓",
+          "completed": false,
           "api_count": 0,
           "ui_count": 0,
           "apis": [],
@@ -49261,24 +48881,11 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单列表",
-              "path": "/group/order/page",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单列表",
-              "path": "/order/list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1568",
@@ -49307,36 +48914,11 @@
           "project": "mftb",
           "assignee": "李科",
           "completed": false,
-          "api_count": 4,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1565",
@@ -49410,36 +48992,11 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 4,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1554",
@@ -49481,42 +49038,11 @@
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1551",
@@ -49590,42 +49116,11 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1511",
@@ -49654,24 +49149,11 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "报名平台活动",
-              "path": "/platform/apply/apply",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "报名平台活动",
-              "path": "/platform/apply/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1505",
@@ -49929,7 +49411,7 @@
         {
           "workitem_id": "MFTB-1483",
           "workitem_title": "【管理后台】【大系統】配送費減免",
-          "workitem_status": "未开始",
+          "workitem_status": "开发中",
           "project": "mftb",
           "assignee": "陈文涛",
           "completed": false,
@@ -50037,18 +49519,11 @@
           "project": "mftb",
           "assignee": "陈剑",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "提交訂單",
-              "path": "/marketingTool/search/hot-revive/sales-order/submitOrder",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1465",
@@ -50533,17 +50008,10 @@
           "assignee": "杨庆龙",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "詞庫管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/search-dict",
-              "submenu": "商家推广工具",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1375",
@@ -50553,17 +50021,10 @@
           "assignee": "甄荣康",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "銷售定價",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/sales-pricing",
-              "submenu": "商家推广工具",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1373",
@@ -50573,17 +50034,10 @@
           "assignee": "甄荣康",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "廣告銷售",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/ad-sales",
-              "submenu": "商家推广工具",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1372",
@@ -50943,18 +50397,11 @@
           "project": "mftb",
           "assignee": "陈剑",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动",
-              "path": "/takeout/product-combo-price/edit-activity",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1322",
@@ -50963,18 +50410,11 @@
           "project": "mftb",
           "assignee": "陈剑",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "中通广告",
-              "path": "/activity/global/app/decor/zto-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1321",
@@ -50997,17 +50437,10 @@
           "assignee": "甄荣康",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "詞庫管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/search-dict",
-              "submenu": "商家推广工具",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1319",
@@ -51055,7 +50488,7 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -51113,17 +50546,10 @@
           "assignee": "刘卫",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "詞庫管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/promotion-tools/search-dict",
-              "submenu": "商家推广工具",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1304",
@@ -51171,24 +50597,11 @@
           "project": "mftb",
           "assignee": "朱敬辉",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动",
-              "path": "/takeout/product-combo-price/edit-activity",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "中通广告",
-              "path": "/activity/global/app/decor/zto-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1291",
@@ -51256,24 +50669,11 @@
           "project": "mftb",
           "assignee": "黄春晓",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1285",
@@ -51387,17 +50787,10 @@
           "assignee": "徐子旺",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1265",
@@ -51453,17 +50846,10 @@
           "assignee": "卓坚",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1255",
@@ -51473,17 +50859,10 @@
           "assignee": "杨庆龙",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1254",
@@ -51493,17 +50872,10 @@
           "assignee": "甄荣康",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1251",
@@ -51864,43 +51236,11 @@
           "project": "mftb",
           "assignee": "李云锋",
           "completed": false,
-          "api_count": 4,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "商家入驻",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1194",
@@ -52028,17 +51368,10 @@
           "assignee": "杨庆龙",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "特殊區域管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/special-area",
-              "submenu": "基础设置",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1178",
@@ -52073,24 +51406,11 @@
           "project": "mftb",
           "assignee": "杨庆龙",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1174",
@@ -52099,24 +51419,11 @@
           "project": "mftb",
           "assignee": "贺志成",
           "completed": true,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1169",
@@ -52567,49 +51874,11 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
-          "api_count": 25,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "红包活动",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/operation/platform-activities/red-envelope-activity",
-              "submenu": "平台活动",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1077",
@@ -52729,24 +51998,11 @@
           "project": "mftb",
           "assignee": "卓坚",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1054",
@@ -52755,24 +52011,11 @@
           "project": "mftb",
           "assignee": "周忠浩",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1052",
@@ -52782,17 +52025,10 @@
           "assignee": "洪喜彬",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "特殊區域管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/special-area",
-              "submenu": "基础设置",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1051",
@@ -52899,7 +52135,7 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -53047,40 +52283,9 @@
           "project": "mftb",
           "assignee": "黄春晓",
           "completed": true,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "隨機活動",
@@ -53089,7 +52294,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-1020",
@@ -53098,42 +52303,11 @@
           "project": "mftb",
           "assignee": "陈剑",
           "completed": false,
-          "api_count": 6,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "用户端订单详情",
-              "path": "/order/detail",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "用户端订单详情",
-              "path": "/order/detail",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1019",
@@ -53220,7 +52394,7 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 10,
+          "api_count": 8,
           "ui_count": 0,
           "apis": [
             {
@@ -53265,17 +52439,10 @@
           "assignee": "卓坚",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "特殊區域管理",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/special-area",
-              "submenu": "基础设置",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-1002",
@@ -53304,18 +52471,11 @@
           "project": "mftb",
           "assignee": "黄春晓",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动",
-              "path": "/takeout/product-combo-price/edit-activity",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-998",
@@ -53337,40 +52497,9 @@
           "project": "mftb",
           "assignee": "冼嘉业",
           "completed": true,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "隨機活動",
@@ -53379,7 +52508,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-987",
@@ -53388,7 +52517,7 @@
           "project": "mftb",
           "assignee": "黄春晓",
           "completed": true,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -53660,17 +52789,10 @@
           "assignee": "甄荣康",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "隨機活動",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/redpacket-management/redpacket-random/index",
-              "submenu": "红包管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-939",
@@ -53725,18 +52847,11 @@
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "banner广告",
-              "path": "/activity/global/app/decor/banner-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-932",
@@ -54098,40 +53213,9 @@
           "project": "mftb",
           "assignee": "唐光伟",
           "completed": false,
-          "api_count": 18,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "[门店配送方案]门店配送方案-保存",
-              "path": "/delivery/store-plan/update",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[眾包業務分區]门店配送方案-保存",
-              "path": "/delivery/store-plan/update",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[门店配送方案]门店配送方案-新增保存",
-              "path": "/delivery/store-plan/save",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[眾包業務分區]门店配送方案-新增保存",
-              "path": "/delivery/store-plan/save",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[眾包業務分區]门店配送方案-门店列表",
-              "path": "/delivery/region/store-region-page",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "門店配送方案",
@@ -54140,7 +53224,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-893",
@@ -54149,40 +53233,9 @@
           "project": "mftb",
           "assignee": "唐光伟",
           "completed": false,
-          "api_count": 18,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "[门店配送方案]门店配送方案-保存",
-              "path": "/delivery/store-plan/update",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[眾包業務分區]门店配送方案-保存",
-              "path": "/delivery/store-plan/update",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[门店配送方案]门店配送方案-新增保存",
-              "path": "/delivery/store-plan/save",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[眾包業務分區]门店配送方案-新增保存",
-              "path": "/delivery/store-plan/save",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "[眾包業務分區]门店配送方案-门店列表",
-              "path": "/delivery/region/store-region-page",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "門店配送方案",
@@ -54191,7 +53244,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-892",
@@ -54201,17 +53254,10 @@
           "assignee": "唐光伟",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "極馬地圖配置",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/delivery-management/map-template-setting",
-              "submenu": "配送管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-891",
@@ -54221,17 +53267,10 @@
           "assignee": "唐光伟",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "極馬地圖配置",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/delivery-management/map-template-setting",
-              "submenu": "配送管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-890",
@@ -54241,17 +53280,10 @@
           "assignee": "唐光伟",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "極馬地圖配置",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/operation-platform-tools/delivery-management/map-template-setting",
-              "submenu": "配送管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-889",
@@ -54384,7 +53416,7 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -54441,7 +53473,7 @@
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -54834,40 +53866,9 @@
           "project": "mftb",
           "assignee": "龚凯",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "隨機活動",
@@ -54876,7 +53877,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-832",
@@ -54885,40 +53886,9 @@
           "project": "mftb",
           "assignee": "溫浩源",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "隨機活動",
@@ -54927,7 +53897,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-831",
@@ -54987,24 +53957,11 @@
           "project": "mftb",
           "assignee": "冼嘉业",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动",
-              "path": "/takeout/product-combo-price/edit-activity",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "中通广告",
-              "path": "/activity/global/app/decor/zto-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-826",
@@ -55791,43 +54748,11 @@
           "project": "mftb",
           "assignee": "陈少丹",
           "completed": false,
-          "api_count": 4,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "商家入驻申请",
-              "path": "/store/merchant-enter/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "商家入驻",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-732",
@@ -56048,7 +54973,7 @@
           "project": "mftb",
           "assignee": "曹晴晴",
           "completed": true,
-          "api_count": 50,
+          "api_count": 48,
           "ui_count": 2,
           "apis": [
             {
@@ -56105,7 +55030,7 @@
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
-          "api_count": 50,
+          "api_count": 48,
           "ui_count": 2,
           "apis": [
             {
@@ -56729,18 +55654,11 @@
           "project": "mftb",
           "assignee": "张健伟",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "门店修改记录",
-              "path": "/store/modify-record",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-578",
@@ -56970,18 +55888,11 @@
           "project": "mftb",
           "assignee": "冼嘉业",
           "completed": true,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "banner广告",
-              "path": "/activity/global/app/decor/banner-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-535",
@@ -57003,8 +55914,8 @@
           "project": "mftb",
           "assignee": "黄金凤",
           "completed": true,
-          "api_count": 59,
-          "ui_count": 4,
+          "api_count": 57,
+          "ui_count": 2,
           "apis": [
             {
               "name": "提交退款",
@@ -57025,14 +55936,14 @@
               "status": "released"
             },
             {
-              "name": "编辑未入驻门店",
-              "path": "/store/unsettle/edit",
+              "name": "编辑退款原因",
+              "path": "/group/store/refund-reason/edit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "申请人气商家订单退款",
+              "path": "/marketingTool/search/sales-order/popular-merchant/refund",
               "method": "post",
               "status": "released"
             }
@@ -57042,18 +55953,6 @@
               "name": "退款理由",
               "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
               "submenu": "到家業務(外賣)",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "商家入驻",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
               "smoke_status": "Passed"
             },
             {
@@ -57072,8 +55971,8 @@
           "project": "mftb",
           "assignee": "洪喜彬",
           "completed": false,
-          "api_count": 59,
-          "ui_count": 4,
+          "api_count": 57,
+          "ui_count": 2,
           "apis": [
             {
               "name": "提交退款",
@@ -57094,14 +55993,14 @@
               "status": "released"
             },
             {
-              "name": "编辑未入驻门店",
-              "path": "/store/unsettle/edit",
+              "name": "编辑退款原因",
+              "path": "/group/store/refund-reason/edit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "申请人气商家订单退款",
+              "path": "/marketingTool/search/sales-order/popular-merchant/refund",
               "method": "post",
               "status": "released"
             }
@@ -57111,18 +56010,6 @@
               "name": "退款理由",
               "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
               "submenu": "到家業務(外賣)",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "商家入驻",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
               "smoke_status": "Passed"
             },
             {
@@ -57141,8 +56028,8 @@
           "project": "mftb",
           "assignee": "刘志敏",
           "completed": false,
-          "api_count": 59,
-          "ui_count": 4,
+          "api_count": 57,
+          "ui_count": 2,
           "apis": [
             {
               "name": "提交退款",
@@ -57163,14 +56050,14 @@
               "status": "released"
             },
             {
-              "name": "编辑未入驻门店",
-              "path": "/store/unsettle/edit",
+              "name": "编辑退款原因",
+              "path": "/group/store/refund-reason/edit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "申请人气商家订单退款",
+              "path": "/marketingTool/search/sales-order/popular-merchant/refund",
               "method": "post",
               "status": "released"
             }
@@ -57180,18 +56067,6 @@
               "name": "退款理由",
               "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/refund-reason",
               "submenu": "到家業務(外賣)",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "商家入驻",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/system/basic-settings/merchant-settlement",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            },
-            {
-              "name": "未入驻商家",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-unsettle",
-              "submenu": "商戶集團管理",
               "smoke_status": "Passed"
             },
             {
@@ -57210,18 +56085,11 @@
           "project": "mftb",
           "assignee": "张健伟",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "banner广告",
-              "path": "/activity/global/app/decor/banner-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-521",
@@ -57642,17 +56510,10 @@
           "assignee": "叶龙",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "商品参数",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/product-param",
-              "submenu": "商品管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-488",
@@ -57675,17 +56536,10 @@
           "assignee": "叶龙",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "商品平台分类",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/product-platform-category",
-              "submenu": "商品管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-484",
@@ -57943,17 +56797,10 @@
           "assignee": "李科",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "商家意见",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-415",
@@ -57963,17 +56810,10 @@
           "assignee": "唐光伟",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "商家意见",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-411",
@@ -57983,17 +56823,10 @@
           "assignee": "杨庆龙",
           "completed": true,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "商家意见",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/merchant-feedback",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-403",
@@ -58758,17 +57591,10 @@
           "assignee": "林泽斌",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "集团列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/merchant-management/group-management",
-              "submenu": "商戶集團管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-288",
@@ -58790,49 +57616,11 @@
           "project": "mftb",
           "assignee": "李科",
           "completed": false,
-          "api_count": 6,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "新增用户",
-              "path": "/merchant-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "用户冻结列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/user/freeze",
-              "submenu": "用户管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-284",
@@ -58893,24 +57681,11 @@
           "project": "mftb",
           "assignee": "李科",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-272",
@@ -58971,49 +57746,11 @@
           "project": "mftb",
           "assignee": "杨庆龙",
           "completed": true,
-          "api_count": 6,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "新增用户",
-              "path": "/merchant-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "用户冻结列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/user/freeze",
-              "submenu": "用户管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-258",
@@ -59035,24 +57772,11 @@
           "project": "mftb",
           "assignee": "杨庆龙",
           "completed": true,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-255",
@@ -59106,24 +57830,11 @@
           "project": "mftb",
           "assignee": "张健伟",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-251",
@@ -59132,49 +57843,11 @@
           "project": "mftb",
           "assignee": "张健伟",
           "completed": false,
-          "api_count": 6,
-          "ui_count": 1,
-          "apis": [
-            {
-              "name": "新增用户",
-              "path": "/merchant-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys-user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/sys/user/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增用户",
-              "path": "/merchant/user/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
-          "uis": [
-            {
-              "name": "用户冻结列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/user/freeze",
-              "submenu": "用户管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-250",
@@ -59585,7 +58258,7 @@
           "assignee": "周忠浩",
           "completed": false,
           "api_count": 4,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [
             {
               "name": "[眾包業務分區]门店配送方案-门店列表",
@@ -59612,15 +58285,8 @@
               "status": "released"
             }
           ],
-          "uis": [
-            {
-              "name": "門店列表",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/home-business/store-management",
-              "submenu": "门店管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "both_ready"
+          "uis": [],
+          "status": "frontend_missing"
         },
         {
           "workitem_id": "MFTB-196",
@@ -59655,7 +58321,7 @@
           "project": "mftb",
           "assignee": "刘付益",
           "completed": false,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -60063,17 +58729,10 @@
           "assignee": "甄荣康",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "門店分類(主管級設置)",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/store-business/store-management/store-category",
-              "submenu": "團購門店管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-134",
@@ -60082,22 +58741,9 @@
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "门店列表",
-              "path": "/group/store/business-district/store-list",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "门店列表",
-              "path": "/group/store/business-district/store-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "門店列表",
@@ -60106,7 +58752,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MFTB-133",
@@ -60446,17 +59092,10 @@
           "assignee": "李科",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "明细查询",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/finance/promotion-fund/detail-query",
-              "submenu": "推广金管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-78",
@@ -60466,17 +59105,10 @@
           "assignee": "李科",
           "completed": false,
           "api_count": 0,
-          "ui_count": 1,
+          "ui_count": 0,
           "apis": [],
-          "uis": [
-            {
-              "name": "批次查询",
-              "path": "https://test-mfood-manager.mfoodapp.com/#/finance/promotion-fund/batch-query",
-              "submenu": "推广金管理",
-              "smoke_status": "Passed"
-            }
-          ],
-          "status": "backend_missing"
+          "uis": [],
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MFTB-77",
@@ -61139,42 +59771,11 @@
           "project": "mfood",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-34156",
@@ -61209,42 +59810,11 @@
           "project": "mfood",
           "assignee": "周昱强",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-33735",
@@ -61323,42 +59893,11 @@
           "project": "mfood",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 26,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动商品",
-              "path": "/takeout/product-discount/edit",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "修改折扣基础配置",
-              "path": "/takeout/product-discount/edit-discount-setting",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增活动商品",
-              "path": "/takeout/product-discount/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "活动商品分页",
-              "path": "/takeout/product-discount/page",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "获取折扣基础配置",
-              "path": "/takeout/product-discount/get-discount-setting",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-33430",
@@ -61575,7 +60114,7 @@
           "project": "mfood",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 55,
+          "api_count": 57,
           "ui_count": 2,
           "apis": [
             {
@@ -61879,42 +60418,11 @@
           "project": "mfood",
           "assignee": "周昱强",
           "completed": false,
-          "api_count": 26,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动商品",
-              "path": "/takeout/product-discount/edit",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "修改折扣基础配置",
-              "path": "/takeout/product-discount/edit-discount-setting",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增活动商品",
-              "path": "/takeout/product-discount/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "活动商品分页",
-              "path": "/takeout/product-discount/page",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "获取折扣基础配置",
-              "path": "/takeout/product-discount/get-discount-setting",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-28408",
@@ -62041,24 +60549,11 @@
           "project": "mfood",
           "assignee": "刘龙振海",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "再来一单",
-              "path": "/cart/again-order",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "再来一单",
-              "path": "/cart/again-order",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-25796",
@@ -62067,30 +60562,12 @@
           "project": "mfood",
           "assignee": "刘龙振海",
           "completed": false,
-          "api_count": 6,
+          "api_count": 2,
           "ui_count": 0,
           "apis": [
             {
-              "name": "商品详情",
-              "path": "/group/product/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "商品详情",
-              "path": "/group/product/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "商品详情",
-              "path": "/product/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "商品详情",
-              "path": "/product/get",
+              "name": "商品詳情",
+              "path": "/product/detail",
               "method": "get",
               "status": "released"
             },
@@ -62144,42 +60621,11 @@
           "project": "mfood",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-25513",
@@ -62227,22 +60673,9 @@
           "project": "mfood",
           "assignee": "康乃凡",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "门店列表",
-              "path": "/group/store/business-district/store-list",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "门店列表",
-              "path": "/group/store/business-district/store-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "門店列表",
@@ -62251,7 +60684,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MF-23413",
@@ -62286,42 +60719,11 @@
           "project": "mfood",
           "assignee": "刘龙振海",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-22952",
@@ -62343,42 +60745,11 @@
           "project": "mfood",
           "assignee": "刘龙振海",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-22704",
@@ -62491,18 +60862,11 @@
           "project": "mfood",
           "assignee": "刘龙振海",
           "completed": false,
-          "api_count": 1,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "数据统计",
-              "path": "/takeout/product-buy-gift/report",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-21494",
@@ -62550,36 +60914,11 @@
           "project": "mfood",
           "assignee": "康乃凡",
           "completed": false,
-          "api_count": 4,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-20315",
@@ -62606,57 +60945,6 @@
           "apis": [],
           "uis": [],
           "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MF-34715",
-          "workitem_title": "【舊係統】商戶後臺-門店相冊，圖片新增刪除操作",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "覃林方",
-          "completed": true,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MF-34676",
-          "workitem_title": "【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "覃林方",
-          "completed": true,
-          "api_count": 4,
-          "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            }
-          ],
-          "uis": [],
-          "status": "frontend_missing"
         },
         {
           "workitem_id": "MF-34659",
@@ -62775,6 +61063,19 @@
           "status": "frontend_missing"
         },
         {
+          "workitem_id": "MF-34719",
+          "workitem_title": "【测试】针对活动id:202310241756051567319，勁爆券報名活動，將默認開啟膨脹券，改成商家自主選擇",
+          "workitem_status": "待处理",
+          "project": "mfood",
+          "assignee": "贺志成",
+          "completed": false,
+          "api_count": 0,
+          "ui_count": 0,
+          "apis": [],
+          "uis": [],
+          "status": "neither_ready"
+        },
+        {
           "workitem_id": "MF-34708",
           "workitem_title": "【测试】未報名勁爆券商家，取消「門店首頁標籤」",
           "workitem_status": "待处理",
@@ -62872,42 +61173,11 @@
           "project": "mfood",
           "assignee": "贺志成",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-33966",
@@ -62916,42 +61186,11 @@
           "project": "mfood",
           "assignee": "冼嘉业",
           "completed": false,
-          "api_count": 25,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "导出商品券码",
-              "path": "/group/product/exportCoupon",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "删除多个",
-              "path": "/group/product/coupon/deleteBatch",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "删除未发放的所有券码",
-              "path": "/group/product/coupon/deleteUnSendByProductId",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-33765",
@@ -63038,42 +61277,11 @@
           "project": "mfood",
           "assignee": "曹晴晴",
           "completed": false,
-          "api_count": 26,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动商品",
-              "path": "/takeout/product-discount/edit",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "修改折扣基础配置",
-              "path": "/takeout/product-discount/edit-discount-setting",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增活动商品",
-              "path": "/takeout/product-discount/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "活动商品分页",
-              "path": "/takeout/product-discount/page",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "获取折扣基础配置",
-              "path": "/takeout/product-discount/get-discount-setting",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-31920",
@@ -63199,42 +61407,11 @@
           "project": "mfood",
           "assignee": "侯黎明",
           "completed": false,
-          "api_count": 26,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "修改活动商品",
-              "path": "/takeout/product-discount/edit",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "修改折扣基础配置",
-              "path": "/takeout/product-discount/edit-discount-setting",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增活动商品",
-              "path": "/takeout/product-discount/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "活动商品分页",
-              "path": "/takeout/product-discount/page",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "获取折扣基础配置",
-              "path": "/takeout/product-discount/get-discount-setting",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-26682",
@@ -63243,22 +61420,9 @@
           "project": "mfood",
           "assignee": "曹晴晴",
           "completed": false,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 1,
-          "apis": [
-            {
-              "name": "门店列表",
-              "path": "/group/store/business-district/store-list",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "门店列表",
-              "path": "/group/store/business-district/store-list",
-              "method": "get",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [
             {
               "name": "門店列表",
@@ -63267,7 +61431,7 @@
               "smoke_status": "Passed"
             }
           ],
-          "status": "both_ready"
+          "status": "backend_missing"
         },
         {
           "workitem_id": "MF-26203",
@@ -63307,57 +61471,6 @@
           "apis": [],
           "uis": [],
           "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MF-34716",
-          "workitem_title": "【测试】【舊係統】商戶後臺-門店相冊，圖片新增刪除操作",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "贺志成",
-          "completed": true,
-          "api_count": 0,
-          "ui_count": 0,
-          "apis": [],
-          "uis": [],
-          "status": "neither_ready"
-        },
-        {
-          "workitem_id": "MF-34677",
-          "workitem_title": "【测试】【舊係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；",
-          "workitem_status": "测试环境验证通过",
-          "project": "mfood",
-          "assignee": "贺志成",
-          "completed": true,
-          "api_count": 4,
-          "ui_count": 0,
-          "apis": [
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            }
-          ],
-          "uis": [],
-          "status": "frontend_missing"
         },
         {
           "workitem_id": "MF-34169",
@@ -63597,24 +61710,11 @@
           "project": "mfood",
           "assignee": "杨庆龙",
           "completed": true,
-          "api_count": 2,
+          "api_count": 0,
           "ui_count": 0,
-          "apis": [
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "新增门店",
-              "path": "/store/add",
-              "method": "post",
-              "status": "released"
-            }
-          ],
+          "apis": [],
           "uis": [],
-          "status": "frontend_missing"
+          "status": "neither_ready"
         },
         {
           "workitem_id": "MF-32912",
@@ -63818,15 +61918,15 @@
     {
       "scan_date": "2026-09-08",
       "summary": {
-        "verifiedCount": 443,
+        "verifiedCount": 324,
         "incompleteCount": 0,
-        "shadowCount": 1150,
-        "delayCount": 118,
+        "shadowCount": 1199,
+        "delayCount": 132,
         "mobileCount": 3,
-        "processCount": 93,
+        "processCount": 106,
         "otherCount": 179
       },
-      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **25.9%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**93** 项产品方案/UI设计等过程节点工单、**179** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1150 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 118 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
+      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **19.6%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**106** 项产品方案/UI设计等过程节点工单、**179** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1199 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 132 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
     },
     {
       "scan_date": "2026-09-07",
