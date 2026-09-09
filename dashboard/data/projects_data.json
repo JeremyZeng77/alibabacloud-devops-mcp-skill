@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-09T03:34:15.290016+00:00",
+  "compiledAt": "2026-09-09T03:54:54.451922+00:00",
   "latest": {
     "mftb": [
       {
@@ -3614,12 +3614,12 @@
         "assignee": "甄荣康",
         "creator": "甄荣康",
         "iteration": "MFTB-v1.0.2",
-        "planStart": "2026-09-10",
-        "planEnd": "2026-09-11",
+        "planStart": "2026-09-09",
+        "planEnd": "2026-09-10",
         "createDate": "2026-09-08",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f15c3e75fcff148687e173ee27",
-        "rowText": "【任务】【前端】【大係統-會員中心】會員券包促銷\nID: MFTB-1688 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-08 | 排期规划: 2026-09-10 至 2026-09-11",
+        "rowText": "【任务】【前端】【大係統-會員中心】會員券包促銷\nID: MFTB-1688 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-08 | 排期规划: 2026-09-09 至 2026-09-10",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -20507,7 +20507,7 @@
       {
         "id": "MFTB-1706",
         "title": "【mfood用户端】【团购】Android：商品tab名称以及tab价格显示问题",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "黄春晓",
@@ -20517,7 +20517,7 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4bcb12e003c6a731391cde0587",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android：商品tab名称以及tab价格显示问题\nID: MFTB-1706 | 状态: 待确认 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android：商品tab名称以及tab价格显示问题\nID: MFTB-1706 | 状态: 已修复 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
