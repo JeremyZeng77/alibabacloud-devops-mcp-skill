@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-10T02:47:08.169097+00:00",
+  "compiledAt": "2026-09-10T03:54:26.469554+00:00",
   "latest": {
     "mftb": [
       {
@@ -20660,7 +20660,7 @@
       {
         "id": "MFTB-1723",
         "title": "【mfood用户端】【团购】Android：实物商品当前规格每日库存为0时，应该置灰显示，用户端显示可售卖的最低价格的规格",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "黄春晓",
@@ -20670,14 +20670,14 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3d899455f600685b6150f5e00a",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android：实物商品当前规格每日库存为0时，应该置灰显示，用户端显示可售卖的最低价格的规格\nID: MFTB-1723 | 状态: 待确认 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android：实物商品当前规格每日库存为0时，应该置灰显示，用户端显示可售卖的最低价格的规格\nID: MFTB-1723 | 状态: 已修复 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1719",
         "title": "【mfood用户端】【团购】Android：核销方式选择了二维码+条形码，订单详情没显示条形码样式",
-        "status": "待确认",
+        "status": "处理中",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "黄春晓",
@@ -20687,7 +20687,7 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=73fbd4ad48d614de0af7135a20",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android：核销方式选择了二维码+条形码，订单详情没显示条形码样式\nID: MFTB-1719 | 状态: 待确认 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android：核销方式选择了二维码+条形码，订单详情没显示条形码样式\nID: MFTB-1719 | 状态: 处理中 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -20728,7 +20728,7 @@
       {
         "id": "MFTB-1714",
         "title": "【闪蜂小程序】【团购】支付成功两种样式未改",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "李科",
         "creator": "黄春晓",
@@ -20738,7 +20738,7 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7f4aede91923dc6fb5c0550742",
-        "rowText": "【缺陷】【闪蜂小程序】【团购】支付成功两种样式未改\nID: MFTB-1714 | 状态: 已修复 | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【闪蜂小程序】【团购】支付成功两种样式未改\nID: MFTB-1714 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -20762,7 +20762,7 @@
       {
         "id": "MFTB-1712",
         "title": "【闪蜂小程序】【团购】提交订单页： 加购了多份套餐后到提交订单页，未点击“去支付”时，返回商品详情页时无需出现此提示",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "李科",
         "creator": "黄春晓",
@@ -20772,7 +20772,7 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=3d2c4596f028b0ac9af3ef2853",
-        "rowText": "【缺陷】【闪蜂小程序】【团购】提交订单页： 加购了多份套餐后到提交订单页，未点击“去支付”时，返回商品详情页时无需出现此提示\nID: MFTB-1712 | 状态: 已修复 | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【闪蜂小程序】【团购】提交订单页： 加购了多份套餐后到提交订单页，未点击“去支付”时，返回商品详情页时无需出现此提示\nID: MFTB-1712 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -20813,7 +20813,7 @@
       {
         "id": "MFTB-1709",
         "title": "【闪蜂小程序】【团购】提交订单页： 套餐商品下单时，提交订单页中无需带套餐内容，退款标签符号错误",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "李科",
         "creator": "黄春晓",
@@ -20823,14 +20823,14 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d7c85ee95e6a937a3da7610d8d",
-        "rowText": "【缺陷】【闪蜂小程序】【团购】提交订单页： 套餐商品下单时，提交订单页中无需带套餐内容，退款标签符号错误\nID: MFTB-1709 | 状态: 已修复 | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【闪蜂小程序】【团购】提交订单页： 套餐商品下单时，提交订单页中无需带套餐内容，退款标签符号错误\nID: MFTB-1709 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1708",
         "title": "【闪蜂小程序】【团购】商品tab名称以及tab价格显示问题",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "李科",
         "creator": "黄春晓",
@@ -20840,7 +20840,7 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=117a859ad4159873327002a679",
-        "rowText": "【缺陷】【闪蜂小程序】【团购】商品tab名称以及tab价格显示问题\nID: MFTB-1708 | 状态: 已修复 | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【闪蜂小程序】【团购】商品tab名称以及tab价格显示问题\nID: MFTB-1708 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 李科 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -20881,7 +20881,7 @@
       {
         "id": "MFTB-1701",
         "title": "【mfood用户端】【团购】Android： 已设置套餐商品不在商家主页展示，重新进入商家主页还会显示。商品：伯牙绝铉9.9超划算！(⊙_⊙)?",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "黄春晓",
@@ -20891,7 +20891,7 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5a747be8cd1da07ba405cb0565",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android： 已设置套餐商品不在商家主页展示，重新进入商家主页还会显示。商品：伯牙绝铉9.9超划算！(⊙_⊙)?\nID: MFTB-1701 | 状态: 已修复 | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android： 已设置套餐商品不在商家主页展示，重新进入商家主页还会显示。商品：伯牙绝铉9.9超划算！(⊙_⊙)?\nID: MFTB-1701 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -21289,7 +21289,7 @@
       {
         "id": "MFTB-1601",
         "title": "【mfood用户端】【团购】Android： 团餐商品没有设置商品每日限购数量，用户端显示限购数量  商品：伯牙绝铉9.9超划算",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "黄春晓",
@@ -21299,14 +21299,14 @@
         "createDate": "2026-08-31",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9425ab0b844d5dff1b57e96cc3",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android： 团餐商品没有设置商品每日限购数量，用户端显示限购数量  商品：伯牙绝铉9.9超划算\nID: MFTB-1601 | 状态: 已修复 | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-31 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android： 团餐商品没有设置商品每日限购数量，用户端显示限购数量  商品：伯牙绝铉9.9超划算\nID: MFTB-1601 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-31 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1600",
         "title": "【mfood用户端】【团购】Android：团餐商品购买成功后显示的有效期时间不对",
-        "status": "已修复",
+        "status": "已关闭（已修复）",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "黄春晓",
@@ -21316,7 +21316,7 @@
         "createDate": "2026-08-31",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=339c2c0a96c081247a8e61f534",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android：团餐商品购买成功后显示的有效期时间不对\nID: MFTB-1600 | 状态: 已修复 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-31 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android：团餐商品购买成功后显示的有效期时间不对\nID: MFTB-1600 | 状态: 已关闭（已修复） | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-31 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -44473,8 +44473,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 14.2,
-      "delta": 6.0
+      "average": 14.0,
+      "delta": 5.8
     },
     "mfood": {
       "average": 0.0,
