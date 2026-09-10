@@ -1,7 +1,41 @@
 {
-  "compiledAt": "2026-09-10T05:06:33.351694+00:00",
+  "compiledAt": "2026-09-10T08:50:13.863562+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1737",
+        "title": "【大係統】團購到店-高頻詞功能（參考舊係統）",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "覃林方",
+        "creator": "覃林方",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=025f73c2982dc266f9fb72f03d",
+        "rowText": "【产品类需求】【大係統】團購到店-高頻詞功能（參考舊係統）\nID: MFTB-1737 | 状态: 待处理 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
+      {
+        "id": "MFTB-1730",
+        "title": "【大系统】到家業務_門店管理_新增“近7天客單價”",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4596b7fde1af5b128b71ae5795",
+        "rowText": "【产品类需求】【大系统】到家業務_門店管理_新增“近7天客單價”\nID: MFTB-1730 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1720",
         "title": "【大係統】準時寶",
@@ -43,13 +77,13 @@
         "priority": "中",
         "assignee": "覃林方",
         "creator": "覃林方",
-        "iteration": "未规划",
+        "iteration": "MFTB-v1.0.2",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-09-09",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=02dff2f272c7ed741718afba17",
-        "rowText": "【产品类需求】【大係統】公司門店與業務門店新增門店分組\nID: MFTB-1702 | 状态: 待测试 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】公司門店與業務門店新增門店分組\nID: MFTB-1702 | 状态: 待测试 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -213,13 +247,13 @@
         "priority": "中",
         "assignee": "廖荣",
         "creator": "廖荣",
-        "iteration": "未规划",
+        "iteration": "MFTB-v1.0.2",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-09-02",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=8860363c8c80b58fa273370aa9",
-        "rowText": "【产品类需求】【商家端APP】到家營銷活動_商品折扣\nID: MFTB-1624 | 状态: 开发中 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: 未规划 | 创建时间: 2026-09-02 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【商家端APP】到家營銷活動_商品折扣\nID: MFTB-1624 | 状态: 开发中 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-02 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -345,7 +379,7 @@
       {
         "id": "MFTB-1586",
         "title": "【極馬】專送、眾包APP -聯繫客戶優化",
-        "status": "预发布验收通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -355,7 +389,7 @@
         "createDate": "2026-08-28",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d4c2f91710f3eecac459e70a0e",
-        "rowText": "【产品类需求】【極馬】專送、眾包APP -聯繫客戶優化\nID: MFTB-1586 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-28 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【極馬】專送、眾包APP -聯繫客戶優化\nID: MFTB-1586 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-28 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -417,13 +451,13 @@
         "priority": "中",
         "assignee": "覃林方",
         "creator": "覃林方",
-        "iteration": "未规划",
+        "iteration": "MFTB-v1.0.2",
         "planStart": "",
         "planEnd": "",
         "createDate": "2026-08-26",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b82ce1f64f119e04257b06f710",
-        "rowText": "【产品类需求】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；\nID: MFTB-1557 | 状态: 待处理 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】團購到店-商品管理編輯配置增加核銷碼顏色選擇，默認為黑色，可以切換為紅、綠、藍色；訂單詳情對應展示；\nID: MFTB-1557 | 状态: 待处理 | 优先级: 中\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-08-26 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -923,7 +957,7 @@
       {
         "id": "MFTB-1380",
         "title": "【專送】APP 部分頁面優化",
-        "status": "预发布验收通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -933,7 +967,7 @@
         "createDate": "2026-08-13",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9cd737559b5f661969e2227817",
-        "rowText": "【产品类需求】【專送】APP 部分頁面優化\nID: MFTB-1380 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【專送】APP 部分頁面優化\nID: MFTB-1380 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-13 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -1280,7 +1314,7 @@
       {
         "id": "MFTB-1266",
         "title": "【專送】極馬專送APP登陸頁隱藏【TE】公司",
-        "status": "预发布验收通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "龙颖之",
         "creator": "龙颖之",
@@ -1290,7 +1324,7 @@
         "createDate": "2026-08-03",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=b3307ad607cafecc44f69d46f2",
-        "rowText": "【产品类需求】【專送】極馬專送APP登陸頁隱藏【TE】公司\nID: MFTB-1266 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【專送】極馬專送APP登陸頁隱藏【TE】公司\nID: MFTB-1266 | 状态: 已上线 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-08-03 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -2419,7 +2453,7 @@
       {
         "id": "MFTB-642",
         "title": "【大係統】商家 APP_我的页面（個人中心）",
-        "status": "开发中",
+        "status": "测试中",
         "priority": "中",
         "assignee": "周昱强",
         "creator": "周昱强",
@@ -2429,7 +2463,7 @@
         "createDate": "2026-06-10",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a260387d0d226bc5c20f6a316c",
-        "rowText": "【产品类需求】【大係統】商家 APP_我的页面（個人中心）\nID: MFTB-642 | 状态: 开发中 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-10 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【大係統】商家 APP_我的页面（個人中心）\nID: MFTB-642 | 状态: 测试中 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-06-10 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3488,6 +3522,176 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1739",
+        "title": "【服务端】【大係統】订单操作日志重构",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c02a840c6810d58641eb31ff43",
+        "rowText": "【任务】【服务端】【大係統】订单操作日志重构\nID: MFTB-1739 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1736",
+        "title": "【服务端】【極馬】專送迭代-新增專送配送時限",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-09-14",
+        "planEnd": "2026-09-14",
+        "createDate": "2026-09-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9118f4261501d33dd278dc0055",
+        "rowText": "【任务】【服务端】【極馬】專送迭代-新增專送配送時限\nID: MFTB-1736 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-10 | 排期规划: 2026-09-14 至 2026-09-14",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1735",
+        "title": "【服务端】【極馬】專送迭代-二次補送",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-09-10",
+        "planEnd": "2026-09-11",
+        "createDate": "2026-09-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=79c5ec9b90cd6236bc70ccd2f6",
+        "rowText": "【任务】【服务端】【極馬】專送迭代-二次補送\nID: MFTB-1735 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-10 | 排期规划: 2026-09-10 至 2026-09-11",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1734",
+        "title": "【服务端】【大係統】團購到店-用戶端訂單加減購提示",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "林泽斌",
+        "creator": "林泽斌",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=2669651554049674dc83cddff9",
+        "rowText": "【任务】【服务端】【大係統】團購到店-用戶端訂單加減購提示\nID: MFTB-1734 | 状态: 未开始 | 优先级: 中\n负责人: 林泽斌 | 提报人: 林泽斌\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1733",
+        "title": "【商家APP】【服务端】到家營銷活動_買贈互動",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "唐光伟",
+        "creator": "唐光伟",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=aa0d62ac198b9e4ada444ad52b",
+        "rowText": "【任务】【商家APP】【服务端】到家營銷活動_買贈互動\nID: MFTB-1733 | 状态: 未开始 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1732",
+        "title": "【商家APP】【服务端】到家營銷活動_超值換購（加價購）",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "唐光伟",
+        "creator": "唐光伟",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=42a976194d1768039c99582acc",
+        "rowText": "【任务】【商家APP】【服务端】到家營銷活動_超值換購（加價購）\nID: MFTB-1732 | 状态: 未开始 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1731",
+        "title": "【大系统】到家業務_門店管理_新增“近30天客單價”",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "廖荣",
+        "creator": "廖荣",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=40c371cdb56627126e410bbe45",
+        "rowText": "【产品】【大系统】到家業務_門店管理_新增“近30天客單價”\nID: MFTB-1731 | 状态: 待处理 | 优先级: 中\n负责人: 廖荣 | 提报人: 廖荣\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1729",
+        "title": "【测试】【極馬】專送迭代-二次補送",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "冼嘉业",
+        "creator": "冼嘉业",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=93f91d3e8e9cfbaea8e8d6677c",
+        "rowText": "【測試】【测试】【極馬】專送迭代-二次補送\nID: MFTB-1729 | 状态: 待处理 | 优先级: 中\n负责人: 冼嘉业 | 提报人: 冼嘉业\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1728",
+        "title": "【测试】【極馬】專送迭代-新增專送配送時限",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "冼嘉业",
+        "creator": "冼嘉业",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c22f7e8b77d19f1e8fd12a3729",
+        "rowText": "【測試】【测试】【極馬】專送迭代-新增專送配送時限\nID: MFTB-1728 | 状态: 待处理 | 优先级: 中\n负责人: 冼嘉业 | 提报人: 冼嘉业\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1727",
+        "title": "【前端】【極馬】專送迭代-新增專送配送時限",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=19141270c0a4e9232f472f752e",
+        "rowText": "【任务】【前端】【極馬】專送迭代-新增專送配送時限\nID: MFTB-1727 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1725",
         "title": "【前端】【新系統】會員中心-權益中心-權益詳情配置",
         "status": "未开始",
@@ -4408,7 +4612,7 @@
       {
         "id": "MFTB-1621",
         "title": "【测试】【極馬】專送、眾包APP -聯繫客戶優化",
-        "status": "测试环境验证通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -4418,7 +4622,7 @@
         "createDate": "2026-09-01",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=155db12907e7c17f9579ddf2f6",
-        "rowText": "【測試】【测试】【極馬】專送、眾包APP -聯繫客戶優化\nID: MFTB-1621 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-01 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【極馬】專送、眾包APP -聯繫客戶優化\nID: MFTB-1621 | 状态: 已上线 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4459,7 +4663,7 @@
       {
         "id": "MFTB-1618",
         "title": "【测试】【專送】APP 部分頁面優化",
-        "status": "测试环境验证通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -4469,7 +4673,7 @@
         "createDate": "2026-09-01",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=305485c0455bb46cce993ca948",
-        "rowText": "【測試】【测试】【專送】APP 部分頁面優化\nID: MFTB-1618 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-01 | 排期规划: 2026-09-01 至 2026-09-01",
+        "rowText": "【測試】【测试】【專送】APP 部分頁面優化\nID: MFTB-1618 | 状态: 已上线 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-01 | 排期规划: 2026-09-01 至 2026-09-01",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4527,7 +4731,7 @@
       {
         "id": "MFTB-1613",
         "title": "【测试】【專送】極馬專送APP登陸頁隱藏【TE】公司",
-        "status": "预发布验收通过",
+        "status": "已上线",
         "priority": "中",
         "assignee": "侯黎明",
         "creator": "侯黎明",
@@ -4537,7 +4741,7 @@
         "createDate": "2026-09-01",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=968545422b1a740683373ead69",
-        "rowText": "【測試】【测试】【專送】極馬專送APP登陸頁隱藏【TE】公司\nID: MFTB-1613 | 状态: 预发布验收通过 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-01 | 排期规划: - 至 -",
+        "rowText": "【測試】【测试】【專送】極馬專送APP登陸頁隱藏【TE】公司\nID: MFTB-1613 | 状态: 已上线 | 优先级: 中\n负责人: 侯黎明 | 提报人: 侯黎明\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5853,7 +6057,7 @@
       {
         "id": "MFTB-1476",
         "title": "【mfood Android】【大係統】訂單相關（含到店訂單、核銷碼管理、預約訂單管理）",
-        "status": "开发中",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "徐子旺",
         "creator": "徐子旺",
@@ -5863,7 +6067,7 @@
         "createDate": "2026-08-19",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=cdd093e04b3b78901bb9fb00fe",
-        "rowText": "【任务】【mfood Android】【大係統】訂單相關（含到店訂單、核銷碼管理、預約訂單管理）\nID: MFTB-1476 | 状态: 开发中 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
+        "rowText": "【任务】【mfood Android】【大係統】訂單相關（含到店訂單、核銷碼管理、預約訂單管理）\nID: MFTB-1476 | 状态: 提交测试 | 优先级: 中\n负责人: 徐子旺 | 提报人: 徐子旺\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -13588,7 +13792,7 @@
       {
         "id": "MFTB-732",
         "title": "【測試】【大係統】商家 APP_我的页面（個人中心）",
-        "status": "待处理",
+        "status": "测试中",
         "priority": "中",
         "assignee": "李云锋",
         "creator": "李云锋",
@@ -13598,7 +13802,7 @@
         "createDate": "2026-06-17",
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=a4f903cdbf9cb0efcc278ed2f1",
-        "rowText": "【測試】【測試】【大係統】商家 APP_我的页面（個人中心）\nID: MFTB-732 | 状态: 待处理 | 优先级: 中\n负责人: 李云锋 | 提报人: 李云锋\n迭代版本: 未规划 | 创建时间: 2026-06-17 | 排期规划: - 至 -",
+        "rowText": "【測試】【測試】【大係統】商家 APP_我的页面（個人中心）\nID: MFTB-732 | 状态: 测试中 | 优先级: 中\n负责人: 李云锋 | 提报人: 李云锋\n迭代版本: 未规划 | 创建时间: 2026-06-17 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -20624,6 +20828,23 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1738",
+        "title": "【mfood用户端】【团购】Android：后台勾选商品tab不显示价格，用户端还会显示价格",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "徐子旺",
+        "creator": "黄春晓",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-10",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=2ea6c9d5a1b9eddb729d0c74c3",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android：后台勾选商品tab不显示价格，用户端还会显示价格\nID: MFTB-1738 | 状态: 待确认 | 优先级: 中\n负责人: 徐子旺 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1726",
         "title": "【闪蜂小程序】【团购】订单详情页：实物商品要显示已选规格，属性内容；一键评分样式不对",
         "status": "待确认",
@@ -20694,7 +20915,7 @@
       {
         "id": "MFTB-1716",
         "title": "【大係統】【闪蜂iOS用户端】收货地址问题汇总",
-        "status": "待确认",
+        "status": "已关闭（未修复）",
         "priority": "中",
         "assignee": "郑跃浩",
         "creator": "曹晴晴",
@@ -20704,7 +20925,7 @@
         "createDate": "2026-09-09",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=39e3206e413a2d21bdeaa9cf34",
-        "rowText": "【缺陷】【大係統】【闪蜂iOS用户端】收货地址问题汇总\nID: MFTB-1716 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 曹晴晴\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【大係統】【闪蜂iOS用户端】收货地址问题汇总\nID: MFTB-1716 | 状态: 已关闭（未修复） | 优先级: 中\n负责人: 郑跃浩 | 提报人: 曹晴晴\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -21034,7 +21255,7 @@
       {
         "id": "MFTB-1675",
         "title": "【大係統】【闪蜂iOS用户端】设置+账号与安全问题汇总",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "郑跃浩",
         "creator": "曹晴晴",
@@ -21044,7 +21265,7 @@
         "createDate": "2026-09-04",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f13c00da2d9af69eb3403e24fc",
-        "rowText": "【缺陷】【大係統】【闪蜂iOS用户端】设置+账号与安全问题汇总\nID: MFTB-1675 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 曹晴晴\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-04 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【大係統】【闪蜂iOS用户端】设置+账号与安全问题汇总\nID: MFTB-1675 | 状态: 已修复 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 曹晴晴\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-04 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -21663,7 +21884,7 @@
       {
         "id": "MFTB-1485",
         "title": "【大系统】【闪蜂用户端】iOS：灯笼区图片格式为gif时，显示效果不对",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "郑跃浩",
         "creator": "黄春晓",
@@ -21673,7 +21894,7 @@
         "createDate": "2026-08-19",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c9858514fe1430f25873c355b5",
-        "rowText": "【缺陷】【大系统】【闪蜂用户端】iOS：灯笼区图片格式为gif时，显示效果不对\nID: MFTB-1485 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【大系统】【闪蜂用户端】iOS：灯笼区图片格式为gif时，显示效果不对\nID: MFTB-1485 | 状态: 已修复 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-08-19 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -23057,7 +23278,7 @@
       {
         "id": "MFTB-1140",
         "title": "【闪蜂-iOS】APP登录后，未上传设备号到后台的用户登录日志详情中",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "郑跃浩",
         "creator": "杨庆龙",
@@ -23067,14 +23288,14 @@
         "createDate": "2026-07-27",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c04023761fa6a181fbb10a6e86",
-        "rowText": "【缺陷】【闪蜂-iOS】APP登录后，未上传设备号到后台的用户登录日志详情中\nID: MFTB-1140 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【闪蜂-iOS】APP登录后，未上传设备号到后台的用户登录日志详情中\nID: MFTB-1140 | 状态: 已修复 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
       {
         "id": "MFTB-1139",
         "title": "【闪蜂-iOS】【我的-设置-账户与安全】apple绑定，绑定提示成功，实际上是绑定失败。",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "郑跃浩",
         "creator": "杨庆龙",
@@ -23084,7 +23305,7 @@
         "createDate": "2026-07-27",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=65d9ecd4601b9ed02564d21014",
-        "rowText": "【缺陷】【闪蜂-iOS】【我的-设置-账户与安全】apple绑定，绑定提示成功，实际上是绑定失败。\nID: MFTB-1139 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【闪蜂-iOS】【我的-设置-账户与安全】apple绑定，绑定提示成功，实际上是绑定失败。\nID: MFTB-1139 | 状态: 已修复 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 杨庆龙\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-07-27 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -28854,6 +29075,23 @@
         "category": "Req"
       },
       {
+        "id": "MF-34671",
+        "title": "无忧行优化",
+        "status": "测试环境验证通过",
+        "priority": "低",
+        "assignee": "周昱强",
+        "creator": "周昱强",
+        "iteration": "V7.4.0（？）",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-08-21",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=14b4f21d2e0c117d52cc2c9de8",
+        "rowText": "【产品类需求】无忧行优化\nID: MF-34671 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: V7.4.0（？） | 创建时间: 2026-08-21 | 排期规划: - 至 -",
+        "project": "mFood综合版本",
+        "category": "Req"
+      },
+      {
         "id": "MF-34659",
         "title": "超市首页，显示红包瓷片",
         "status": "测试环境验证通过",
@@ -29870,6 +30108,23 @@
         "workItemType": "測試",
         "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=30097f1fa2a9e9d9eb09d51d21",
         "rowText": "【測試】【测试】定向發放消費金\nID: MF-25878 | 状态: 待处理 | 优先级: 低\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: 未规划 | 创建时间: 2024-10-17 | 排期规划: 2024-10-28 至 2024-10-29",
+        "project": "mFood综合版本",
+        "category": "Task"
+      },
+      {
+        "id": "MF-34700",
+        "title": "【测试】无忧行优化",
+        "status": "测试环境验证通过",
+        "priority": "低",
+        "assignee": "杨庆龙",
+        "creator": "杨庆龙",
+        "iteration": "V7.4.0（？）",
+        "planStart": "2026-09-10",
+        "planEnd": "",
+        "createDate": "2026-09-01",
+        "workItemType": "測試",
+        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=55ed613192641f18a597b93855",
+        "rowText": "【測試】【测试】无忧行优化\nID: MF-34700 | 状态: 测试环境验证通过 | 优先级: 低\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: V7.4.0（？） | 创建时间: 2026-09-01 | 排期规划: 2026-09-10 至 -",
         "project": "mFood综合版本",
         "category": "Task"
       },
@@ -31081,581 +31336,563 @@
       {
         "date": "2026-06-13",
         "total": 434,
-        "completed": 274,
+        "completed": 275,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 160
+          "已完成": 275,
+          "进行中": 159
         }
       },
       {
         "date": "2026-06-14",
         "total": 434,
-        "completed": 274,
+        "completed": 275,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 160
+          "已完成": 275,
+          "进行中": 159
         }
       },
       {
         "date": "2026-06-15",
         "total": 438,
-        "completed": 274,
+        "completed": 275,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 164
+          "已完成": 275,
+          "进行中": 163
         }
       },
       {
         "date": "2026-06-16",
         "total": 469,
-        "completed": 274,
+        "completed": 275,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 195
+          "已完成": 275,
+          "进行中": 194
         }
       },
       {
         "date": "2026-06-17",
         "total": 489,
-        "completed": 274,
+        "completed": 275,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 215
+          "已完成": 275,
+          "进行中": 214
         }
       },
       {
         "date": "2026-06-18",
         "total": 492,
-        "completed": 274,
+        "completed": 275,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 218
+          "已完成": 275,
+          "进行中": 217
         }
       },
       {
         "date": "2026-06-19",
         "total": 492,
-        "completed": 274,
+        "completed": 275,
         "statusCounts": {
-          "已完成": 274,
-          "进行中": 218
+          "已完成": 275,
+          "进行中": 217
         }
       },
       {
         "date": "2026-06-20",
         "total": 492,
-        "completed": 275,
+        "completed": 276,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 217
+          "已完成": 276,
+          "进行中": 216
         }
       },
       {
         "date": "2026-06-21",
         "total": 492,
-        "completed": 275,
+        "completed": 276,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 217
+          "已完成": 276,
+          "进行中": 216
         }
       },
       {
         "date": "2026-06-22",
         "total": 511,
-        "completed": 275,
+        "completed": 276,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 236
+          "已完成": 276,
+          "进行中": 235
         }
       },
       {
         "date": "2026-06-23",
         "total": 514,
-        "completed": 275,
+        "completed": 276,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 239
+          "已完成": 276,
+          "进行中": 238
         }
       },
       {
         "date": "2026-06-24",
         "total": 528,
-        "completed": 275,
+        "completed": 276,
         "statusCounts": {
-          "已完成": 275,
-          "进行中": 253
+          "已完成": 276,
+          "进行中": 252
         }
       },
       {
         "date": "2026-06-25",
         "total": 538,
-        "completed": 277,
+        "completed": 278,
         "statusCounts": {
-          "已完成": 277,
-          "进行中": 261
+          "已完成": 278,
+          "进行中": 260
         }
       },
       {
         "date": "2026-06-26",
         "total": 538,
-        "completed": 277,
+        "completed": 278,
         "statusCounts": {
-          "已完成": 277,
-          "进行中": 261
+          "已完成": 278,
+          "进行中": 260
         }
       },
       {
         "date": "2026-06-27",
         "total": 538,
-        "completed": 278,
+        "completed": 279,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 260
+          "已完成": 279,
+          "进行中": 259
         }
       },
       {
         "date": "2026-06-28",
         "total": 538,
-        "completed": 278,
+        "completed": 279,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 260
+          "已完成": 279,
+          "进行中": 259
         }
       },
       {
         "date": "2026-06-29",
         "total": 540,
-        "completed": 278,
+        "completed": 279,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 262
+          "已完成": 279,
+          "进行中": 261
         }
       },
       {
         "date": "2026-06-30",
         "total": 559,
-        "completed": 278,
+        "completed": 279,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 281
+          "已完成": 279,
+          "进行中": 280
         }
       },
       {
         "date": "2026-07-01",
         "total": 570,
-        "completed": 278,
+        "completed": 279,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 292
+          "已完成": 279,
+          "进行中": 291
         }
       },
       {
         "date": "2026-07-02",
         "total": 582,
-        "completed": 278,
+        "completed": 279,
         "statusCounts": {
-          "已完成": 278,
-          "进行中": 304
+          "已完成": 279,
+          "进行中": 303
         }
       },
       {
         "date": "2026-07-03",
         "total": 584,
-        "completed": 279,
+        "completed": 280,
         "statusCounts": {
-          "已完成": 279,
-          "进行中": 305
+          "已完成": 280,
+          "进行中": 304
         }
       },
       {
         "date": "2026-07-04",
         "total": 584,
-        "completed": 279,
+        "completed": 280,
         "statusCounts": {
-          "已完成": 279,
-          "进行中": 305
+          "已完成": 280,
+          "进行中": 304
         }
       },
       {
         "date": "2026-07-05",
         "total": 584,
-        "completed": 279,
+        "completed": 280,
         "statusCounts": {
-          "已完成": 279,
-          "进行中": 305
+          "已完成": 280,
+          "进行中": 304
         }
       },
       {
         "date": "2026-07-06",
         "total": 590,
-        "completed": 454,
+        "completed": 455,
         "statusCounts": {
-          "已完成": 454,
-          "进行中": 136
+          "已完成": 455,
+          "进行中": 135
         }
       },
       {
         "date": "2026-07-07",
         "total": 609,
-        "completed": 463,
+        "completed": 464,
         "statusCounts": {
-          "已完成": 463,
-          "进行中": 146
+          "已完成": 464,
+          "进行中": 145
         }
       },
       {
         "date": "2026-07-08",
         "total": 631,
-        "completed": 482,
+        "completed": 483,
         "statusCounts": {
-          "已完成": 482,
-          "进行中": 149
+          "已完成": 483,
+          "进行中": 148
         }
       },
       {
         "date": "2026-07-09",
         "total": 660,
-        "completed": 509,
+        "completed": 510,
         "statusCounts": {
-          "已完成": 509,
-          "进行中": 151
+          "已完成": 510,
+          "进行中": 150
         }
       },
       {
         "date": "2026-07-10",
         "total": 675,
-        "completed": 528,
+        "completed": 529,
         "statusCounts": {
-          "已完成": 528,
-          "进行中": 147
+          "已完成": 529,
+          "进行中": 146
         }
       },
       {
         "date": "2026-07-11",
         "total": 675,
-        "completed": 528,
+        "completed": 529,
         "statusCounts": {
-          "已完成": 528,
-          "进行中": 147
+          "已完成": 529,
+          "进行中": 146
         }
       },
       {
         "date": "2026-07-12",
         "total": 675,
-        "completed": 528,
+        "completed": 529,
         "statusCounts": {
-          "已完成": 528,
-          "进行中": 147
+          "已完成": 529,
+          "进行中": 146
         }
       },
       {
         "date": "2026-07-13",
         "total": 682,
-        "completed": 542,
+        "completed": 543,
         "statusCounts": {
-          "已完成": 542,
-          "进行中": 140
+          "已完成": 543,
+          "进行中": 139
         }
       },
       {
         "date": "2026-07-14",
         "total": 690,
-        "completed": 549,
+        "completed": 550,
         "statusCounts": {
-          "已完成": 549,
-          "进行中": 141
+          "已完成": 550,
+          "进行中": 140
         }
       },
       {
         "date": "2026-07-15",
         "total": 693,
-        "completed": 559,
+        "completed": 560,
         "statusCounts": {
-          "已完成": 559,
-          "进行中": 134
+          "已完成": 560,
+          "进行中": 133
         }
       },
       {
         "date": "2026-07-16",
         "total": 708,
-        "completed": 569,
+        "completed": 570,
         "statusCounts": {
-          "已完成": 569,
-          "进行中": 139
+          "已完成": 570,
+          "进行中": 138
         }
       },
       {
         "date": "2026-07-17",
         "total": 729,
-        "completed": 579,
+        "completed": 580,
         "statusCounts": {
-          "已完成": 579,
-          "进行中": 150
+          "已完成": 580,
+          "进行中": 149
         }
       },
       {
         "date": "2026-07-18",
         "total": 729,
-        "completed": 579,
+        "completed": 580,
         "statusCounts": {
-          "已完成": 579,
-          "进行中": 150
+          "已完成": 580,
+          "进行中": 149
         }
       },
       {
         "date": "2026-07-19",
         "total": 729,
-        "completed": 579,
+        "completed": 580,
         "statusCounts": {
-          "已完成": 579,
-          "进行中": 150
+          "已完成": 580,
+          "进行中": 149
         }
       },
       {
         "date": "2026-07-20",
         "total": 747,
-        "completed": 592,
+        "completed": 593,
         "statusCounts": {
-          "已完成": 592,
-          "进行中": 155
+          "已完成": 593,
+          "进行中": 154
         }
       },
       {
         "date": "2026-07-21",
         "total": 753,
-        "completed": 598,
+        "completed": 599,
         "statusCounts": {
-          "已完成": 598,
-          "进行中": 155
+          "已完成": 599,
+          "进行中": 154
         }
       },
       {
         "date": "2026-07-22",
         "total": 762,
-        "completed": 601,
+        "completed": 602,
         "statusCounts": {
-          "已完成": 601,
-          "进行中": 161
+          "已完成": 602,
+          "进行中": 160
         }
       },
       {
         "date": "2026-07-23",
         "total": 775,
-        "completed": 609,
+        "completed": 610,
         "statusCounts": {
-          "已完成": 609,
-          "进行中": 166
+          "已完成": 610,
+          "进行中": 165
         }
       },
       {
         "date": "2026-07-24",
         "total": 791,
-        "completed": 617,
+        "completed": 618,
         "statusCounts": {
-          "已完成": 617,
-          "进行中": 174
+          "已完成": 618,
+          "进行中": 173
         }
       },
       {
         "date": "2026-07-25",
         "total": 791,
-        "completed": 617,
+        "completed": 618,
         "statusCounts": {
-          "已完成": 617,
-          "进行中": 174
+          "已完成": 618,
+          "进行中": 173
         }
       },
       {
         "date": "2026-07-26",
         "total": 791,
-        "completed": 617,
+        "completed": 618,
         "statusCounts": {
-          "已完成": 617,
-          "进行中": 174
+          "已完成": 618,
+          "进行中": 173
         }
       },
       {
         "date": "2026-07-27",
         "total": 798,
-        "completed": 625,
+        "completed": 626,
         "statusCounts": {
-          "已完成": 625,
-          "进行中": 173
+          "已完成": 626,
+          "进行中": 172
         }
       },
       {
         "date": "2026-07-28",
         "total": 820,
-        "completed": 641,
+        "completed": 642,
         "statusCounts": {
-          "已完成": 641,
-          "进行中": 179
+          "已完成": 642,
+          "进行中": 178
         }
       },
       {
         "date": "2026-07-29",
         "total": 837,
-        "completed": 650,
+        "completed": 651,
         "statusCounts": {
-          "已完成": 650,
-          "进行中": 187
+          "已完成": 651,
+          "进行中": 186
         }
       },
       {
         "date": "2026-07-30",
         "total": 847,
-        "completed": 661,
+        "completed": 662,
         "statusCounts": {
-          "已完成": 661,
-          "进行中": 186
+          "已完成": 662,
+          "进行中": 185
         }
       },
       {
         "date": "2026-07-31",
         "total": 851,
-        "completed": 668,
+        "completed": 669,
         "statusCounts": {
-          "已完成": 668,
-          "进行中": 183
+          "已完成": 669,
+          "进行中": 182
         }
       },
       {
         "date": "2026-08-01",
         "total": 851,
-        "completed": 668,
+        "completed": 669,
         "statusCounts": {
-          "已完成": 668,
-          "进行中": 183
+          "已完成": 669,
+          "进行中": 182
         }
       },
       {
         "date": "2026-08-02",
         "total": 851,
-        "completed": 668,
+        "completed": 669,
         "statusCounts": {
-          "已完成": 668,
-          "进行中": 183
+          "已完成": 669,
+          "进行中": 182
         }
       },
       {
         "date": "2026-08-03",
         "total": 864,
-        "completed": 677,
+        "completed": 678,
         "statusCounts": {
-          "已完成": 677,
-          "进行中": 187
+          "已完成": 678,
+          "进行中": 186
         }
       },
       {
         "date": "2026-08-04",
         "total": 875,
-        "completed": 689,
+        "completed": 690,
         "statusCounts": {
-          "已完成": 689,
-          "进行中": 186
+          "已完成": 690,
+          "进行中": 185
         }
       },
       {
         "date": "2026-08-05",
         "total": 892,
-        "completed": 692,
+        "completed": 693,
         "statusCounts": {
-          "已完成": 692,
-          "进行中": 200
+          "已完成": 693,
+          "进行中": 199
         }
       },
       {
         "date": "2026-08-06",
         "total": 918,
-        "completed": 704,
+        "completed": 705,
         "statusCounts": {
-          "已完成": 704,
-          "进行中": 214
+          "已完成": 705,
+          "进行中": 213
         }
       },
       {
         "date": "2026-08-07",
         "total": 918,
-        "completed": 709,
+        "completed": 710,
         "statusCounts": {
-          "已完成": 709,
-          "进行中": 209
+          "已完成": 710,
+          "进行中": 208
         }
       },
       {
         "date": "2026-08-08",
         "total": 918,
-        "completed": 709,
+        "completed": 710,
         "statusCounts": {
-          "已完成": 709,
-          "进行中": 209
+          "已完成": 710,
+          "进行中": 208
         }
       },
       {
         "date": "2026-08-09",
         "total": 918,
-        "completed": 712,
+        "completed": 713,
         "statusCounts": {
-          "已完成": 712,
-          "进行中": 206
+          "已完成": 713,
+          "进行中": 205
         }
       },
       {
         "date": "2026-08-10",
         "total": 922,
-        "completed": 722,
+        "completed": 723,
         "statusCounts": {
-          "已完成": 722,
-          "进行中": 200
+          "已完成": 723,
+          "进行中": 199
         }
       },
       {
         "date": "2026-08-11",
         "total": 938,
-        "completed": 729,
+        "completed": 730,
         "statusCounts": {
-          "已完成": 729,
-          "进行中": 209
+          "已完成": 730,
+          "进行中": 208
         }
       },
       {
         "date": "2026-08-12",
         "total": 943,
-        "completed": 740,
+        "completed": 741,
         "statusCounts": {
-          "已完成": 740,
-          "进行中": 203
+          "已完成": 741,
+          "进行中": 202
         }
       },
       {
         "date": "2026-08-13",
         "total": 968,
-        "completed": 752,
+        "completed": 753,
         "statusCounts": {
-          "已完成": 752,
-          "进行中": 216
+          "已完成": 753,
+          "进行中": 215
         }
       },
       {
         "date": "2026-08-14",
-        "total": 983,
-        "completed": 759,
-        "statusCounts": {
-          "已完成": 759,
-          "进行中": 224
-        }
-      },
-      {
-        "date": "2026-08-15",
-        "total": 983,
-        "completed": 759,
-        "statusCounts": {
-          "已完成": 759,
-          "进行中": 224
-        }
-      },
-      {
-        "date": "2026-08-16",
         "total": 983,
         "completed": 760,
         "statusCounts": {
@@ -31664,228 +31901,246 @@
         }
       },
       {
+        "date": "2026-08-15",
+        "total": 983,
+        "completed": 760,
+        "statusCounts": {
+          "已完成": 760,
+          "进行中": 223
+        }
+      },
+      {
+        "date": "2026-08-16",
+        "total": 983,
+        "completed": 761,
+        "statusCounts": {
+          "已完成": 761,
+          "进行中": 222
+        }
+      },
+      {
         "date": "2026-08-17",
         "total": 1008,
-        "completed": 769,
+        "completed": 770,
         "statusCounts": {
-          "已完成": 769,
-          "进行中": 239
+          "已完成": 770,
+          "进行中": 238
         }
       },
       {
         "date": "2026-08-18",
         "total": 1028,
-        "completed": 783,
+        "completed": 784,
         "statusCounts": {
-          "已完成": 783,
-          "进行中": 245
+          "已完成": 784,
+          "进行中": 244
         }
       },
       {
         "date": "2026-08-19",
         "total": 1055,
-        "completed": 805,
+        "completed": 806,
         "statusCounts": {
-          "已完成": 805,
-          "进行中": 250
+          "已完成": 806,
+          "进行中": 249
         }
       },
       {
         "date": "2026-08-20",
         "total": 1062,
-        "completed": 812,
+        "completed": 813,
         "statusCounts": {
-          "已完成": 812,
-          "进行中": 250
+          "已完成": 813,
+          "进行中": 249
         }
       },
       {
         "date": "2026-08-21",
         "total": 1067,
-        "completed": 818,
+        "completed": 819,
         "statusCounts": {
-          "已完成": 818,
-          "进行中": 249
+          "已完成": 819,
+          "进行中": 248
         }
       },
       {
         "date": "2026-08-22",
         "total": 1067,
-        "completed": 818,
+        "completed": 819,
         "statusCounts": {
-          "已完成": 818,
-          "进行中": 249
+          "已完成": 819,
+          "进行中": 248
         }
       },
       {
         "date": "2026-08-23",
         "total": 1067,
-        "completed": 818,
+        "completed": 819,
         "statusCounts": {
-          "已完成": 818,
-          "进行中": 249
+          "已完成": 819,
+          "进行中": 248
         }
       },
       {
         "date": "2026-08-24",
         "total": 1079,
-        "completed": 820,
+        "completed": 821,
         "statusCounts": {
-          "已完成": 820,
-          "进行中": 259
+          "已完成": 821,
+          "进行中": 258
         }
       },
       {
         "date": "2026-08-25",
         "total": 1094,
-        "completed": 831,
+        "completed": 832,
         "statusCounts": {
-          "已完成": 831,
-          "进行中": 263
+          "已完成": 832,
+          "进行中": 262
         }
       },
       {
         "date": "2026-08-26",
         "total": 1105,
-        "completed": 831,
+        "completed": 832,
         "statusCounts": {
-          "已完成": 831,
-          "进行中": 274
+          "已完成": 832,
+          "进行中": 273
         }
       },
       {
         "date": "2026-08-27",
         "total": 1115,
-        "completed": 847,
+        "completed": 848,
         "statusCounts": {
-          "已完成": 847,
-          "进行中": 268
+          "已完成": 848,
+          "进行中": 267
         }
       },
       {
         "date": "2026-08-28",
         "total": 1130,
-        "completed": 859,
+        "completed": 860,
         "statusCounts": {
-          "已完成": 859,
-          "进行中": 271
+          "已完成": 860,
+          "进行中": 270
         }
       },
       {
         "date": "2026-08-29",
         "total": 1130,
-        "completed": 859,
+        "completed": 860,
         "statusCounts": {
-          "已完成": 859,
-          "进行中": 271
+          "已完成": 860,
+          "进行中": 270
         }
       },
       {
         "date": "2026-08-30",
         "total": 1130,
-        "completed": 859,
+        "completed": 860,
         "statusCounts": {
-          "已完成": 859,
-          "进行中": 271
+          "已完成": 860,
+          "进行中": 270
         }
       },
       {
         "date": "2026-08-31",
         "total": 1136,
-        "completed": 871,
+        "completed": 872,
         "statusCounts": {
-          "已完成": 871,
-          "进行中": 265
+          "已完成": 872,
+          "进行中": 264
         }
       },
       {
         "date": "2026-09-01",
         "total": 1145,
-        "completed": 880,
+        "completed": 881,
         "statusCounts": {
-          "已完成": 880,
-          "进行中": 265
+          "已完成": 881,
+          "进行中": 264
         }
       },
       {
         "date": "2026-09-02",
         "total": 1170,
-        "completed": 896,
+        "completed": 897,
         "statusCounts": {
-          "已完成": 896,
-          "进行中": 274
+          "已完成": 897,
+          "进行中": 273
         }
       },
       {
         "date": "2026-09-03",
         "total": 1186,
-        "completed": 912,
+        "completed": 913,
         "statusCounts": {
-          "已完成": 912,
-          "进行中": 274
+          "已完成": 913,
+          "进行中": 273
         }
       },
       {
         "date": "2026-09-04",
         "total": 1189,
-        "completed": 927,
+        "completed": 929,
         "statusCounts": {
-          "已完成": 927,
-          "进行中": 262
+          "已完成": 929,
+          "进行中": 260
         }
       },
       {
         "date": "2026-09-05",
         "total": 1189,
-        "completed": 927,
+        "completed": 929,
         "statusCounts": {
-          "已完成": 927,
-          "进行中": 262
+          "已完成": 929,
+          "进行中": 260
         }
       },
       {
         "date": "2026-09-06",
         "total": 1189,
-        "completed": 928,
+        "completed": 930,
         "statusCounts": {
-          "已完成": 928,
-          "进行中": 261
+          "已完成": 930,
+          "进行中": 259
         }
       },
       {
         "date": "2026-09-07",
         "total": 1193,
-        "completed": 930,
+        "completed": 932,
         "statusCounts": {
-          "已完成": 930,
-          "进行中": 263
+          "已完成": 932,
+          "进行中": 261
         }
       },
       {
         "date": "2026-09-08",
         "total": 1202,
-        "completed": 935,
+        "completed": 937,
         "statusCounts": {
-          "已完成": 935,
-          "进行中": 267
+          "已完成": 937,
+          "进行中": 265
         }
       },
       {
         "date": "2026-09-09",
         "total": 1213,
-        "completed": 942,
-        "statusCounts": {
-          "已完成": 942,
-          "进行中": 271
-        }
-      },
-      {
-        "date": "2026-09-10",
-        "total": 1213,
         "completed": 944,
         "statusCounts": {
           "已完成": 944,
           "进行中": 269
+        }
+      },
+      {
+        "date": "2026-09-10",
+        "total": 1225,
+        "completed": 946,
+        "statusCounts": {
+          "已完成": 946,
+          "进行中": 279
         }
       }
     ],
@@ -43745,190 +44000,190 @@
       },
       {
         "date": "2026-08-21",
-        "total": 179,
+        "total": 180,
         "completed": 34,
         "statusCounts": {
           "已完成": 34,
-          "进行中": 145
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-22",
-        "total": 179,
+        "total": 180,
         "completed": 34,
         "statusCounts": {
           "已完成": 34,
-          "进行中": 145
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-23",
-        "total": 179,
+        "total": 180,
         "completed": 34,
         "statusCounts": {
           "已完成": 34,
-          "进行中": 145
+          "进行中": 146
         }
       },
       {
         "date": "2026-08-24",
-        "total": 179,
-        "completed": 34,
+        "total": 180,
+        "completed": 35,
         "statusCounts": {
-          "已完成": 34,
+          "已完成": 35,
           "进行中": 145
         }
       },
       {
         "date": "2026-08-25",
-        "total": 179,
-        "completed": 35,
+        "total": 180,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 36,
           "进行中": 144
         }
       },
       {
         "date": "2026-08-26",
-        "total": 179,
-        "completed": 35,
+        "total": 180,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 36,
           "进行中": 144
         }
       },
       {
         "date": "2026-08-27",
-        "total": 181,
-        "completed": 35,
+        "total": 182,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 36,
           "进行中": 146
         }
       },
       {
         "date": "2026-08-28",
-        "total": 181,
-        "completed": 35,
+        "total": 182,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 36,
           "进行中": 146
         }
       },
       {
         "date": "2026-08-29",
-        "total": 181,
-        "completed": 35,
+        "total": 182,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 36,
           "进行中": 146
         }
       },
       {
         "date": "2026-08-30",
-        "total": 181,
-        "completed": 35,
+        "total": 182,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 36,
           "进行中": 146
         }
       },
       {
         "date": "2026-08-31",
-        "total": 182,
-        "completed": 35,
+        "total": 183,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 36,
           "进行中": 147
         }
       },
       {
         "date": "2026-09-01",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
-          "进行中": 149
+          "已完成": 36,
+          "进行中": 150
         }
       },
       {
         "date": "2026-09-02",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
-          "进行中": 149
+          "已完成": 36,
+          "进行中": 150
         }
       },
       {
         "date": "2026-09-03",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 36,
         "statusCounts": {
-          "已完成": 35,
-          "进行中": 149
+          "已完成": 36,
+          "进行中": 150
         }
       },
       {
         "date": "2026-09-04",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 37,
           "进行中": 149
         }
       },
       {
         "date": "2026-09-05",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 37,
           "进行中": 149
         }
       },
       {
         "date": "2026-09-06",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 37,
           "进行中": 149
         }
       },
       {
         "date": "2026-09-07",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 37,
           "进行中": 149
         }
       },
       {
         "date": "2026-09-08",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 37,
           "进行中": 149
         }
       },
       {
         "date": "2026-09-09",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 37,
           "进行中": 149
         }
       },
       {
         "date": "2026-09-10",
-        "total": 184,
-        "completed": 35,
+        "total": 186,
+        "completed": 37,
         "statusCounts": {
-          "已完成": 35,
+          "已完成": 37,
           "进行中": 149
         }
       }
