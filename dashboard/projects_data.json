@@ -44101,26 +44101,26 @@
   },
   "pmoAdvice": {
     "mftb": {
-      "content": "1. **测试堰塞湖：602 项卡在测试管道，占活跃项 62.3%**：当前 967 项活跃中，554 项「提交测试」、29 项「测试中」、19 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期155天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期155天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期154天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期154天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 126 张陈年卡的验收，本周内将测试队列压缩。\n最近 2 日新增 7 项（MFTB-1702, MFTB-1705, MFTB-1704, MFTB-1700, MFTB-1706, MFTB-1703），大部分无排期直接入池。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待测试；`[MFTB-1554]` 支付渠道（洪喜彬）提交测试；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`刘志敏` 56 项活跃中 43 项超期（77%）；`甄荣康` 53 项活跃中 46 项超期（87%）；`陈剑` 53 项活跃中 32 项超期（60%）；`张健伟` 47 项活跃中 43 项超期（91%）；`林泽斌` 45 项活跃中 34 项超期（76%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **458 项超期 + 506 项无排期（52.3%）+ 166 项闲置 = 排期纪律需加强**：967 项活跃中 506 项（52.3%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
-      "updatedAt": "2026-09-11 11:34:06"
+      "content": "1. **测试堰塞湖：602 项卡在测试管道，占活跃项 62.3%**：当前 967 项活跃中，554 项「提交测试」、29 项「测试中」、19 项「待测试」。\n核心超期卡片：`[MFTB-35]`（林泽斌, 【服务端】【大係統】MFTB 集團管理, 超期156天）、`[MFTB-23]`（朱敬辉, 【服务端】【大係統】管理後臺權限管理模塊, 超期156天）、`[MFTB-66]`（李政宏, 【服务端】管理後臺賬號登錄部分, 超期155天）、`[MFTB-32]`（唐光伟, 【服务端】 MFTB 到家品類管理, 超期155天）。\n建议 PM 今日立即启动测试清零 Sprint：优先安排超期 100 天以上 131 张陈年卡的验收，本周内将测试队列压缩。\n\n2. **关键路径状态**：`[MFTB-1131]` 支付渠道（刘龙振海）待测试；`[MFTB-1554]` 支付渠道（洪喜彬）提交测试；`[MFTB-1511]` 支付渠道（刘付益）提交测试；`[MFTB-1519]` 订单流程（周昱强）待处理；`[MFTB-1302]` 订单流程（周昱强）待处理；`[MFTB-1498]` 订单流程（贺志成）待处理；`[MFTB-979]` 登录（陈少丹）提交测试；`[MFTB-774]` 登录（张健伟）提交测试；`[MFTB-765]` 登录（张健伟）提交测试。支付+订单+登录三线需持续关注，PM 今日确认关键路径阻塞点并推进解除。\n\n3. **研发负载告警**：`刘志敏` 56 项活跃中 43 项超期（77%）；`甄荣康` 53 项活跃中 46 项超期（87%）；`陈剑` 53 项活跃中 32 项超期（60%）；`张健伟` 47 项活跃中 43 项超期（91%）；`林泽斌` 45 项活跃中 34 项超期（76%）。建议 PM 今日强制执行负载再平衡，将高负载人员名下非紧急项重新分配或排期。\n\n4. **458 项超期 + 506 项无排期（52.3%）+ 166 项闲置 = 排期纪律需加强**：967 项活跃中 506 项（52.3%）完全没有 planEnd，排期覆盖率不足。建议 PM 今日执行强制排期令：所有活跃项必须填写 planEnd，超期 60 天以上无进展的启动处置流程。",
+      "updatedAt": "2026-09-12 11:33:55"
     },
     "mfood": {
-      "content": "1. **需求池积压严重**：152 项活跃中，97 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（11 项）、`刘龙振海`（9 项）、`贺志成`（9 项）、`杨庆龙`（7 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 35 项，交付管道需激活**：mFood 超期 22 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期682天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期672天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期420天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **130/152 项无排期（85.5%）= 排期管理缺位**：活跃项中仅 22 项有 planEnd，排期覆盖率仅 14.5%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **31 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34659]`（周昱强, 超市首页，显示红包瓷片）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-24809]`（覃林方, 门店评分仅保留一位小数点）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
-      "updatedAt": "2026-09-11 11:34:06"
+      "content": "1. **需求池积压严重**：152 项活跃中，97 项待处理（63.8%），仅 4 项在开发中，从需求到开发的转化率偏低。\n核心接口人积压：`覃林方`（11 项）、`刘龙振海`（9 项）、`贺志成`（9 项）、`杨庆龙`（7 项）、`朱俊宇`（5 项），需今日召集需求评审会，按 P0/P1/P2 拆解。\n\n2. **近 30 天交付 35 项，交付管道需激活**：mFood 超期 22 项，\n长期积压（>300天）：`[MF-25878]`（杨庆龙, 【测试】定向發放消費金, 超期683天）、`[MF-26203]`（曹晴晴, 【测试】兌換碼活動綜合優化V2.1, 超期673天）、`[MF-30907]`（李政宏, 【服务端】阿里云推动SDK升级和重构, 超期421天）。\nPM 须今日对超期项逐项给出处置结论——关闭、转派或启动。\n\n3. **130/152 项无排期（85.5%）= 排期管理缺位**：活跃项中仅 22 项有 planEnd，排期覆盖率仅 14.5%。建议 PM 今日强制推行排期制度：所有待处理项评审后 3 天内填写排期。\n\n4. **31 项验证通过未上线 + 0 项在测 = 交付末端需打通**：\n验证通过卡片：`[MF-34659]`（周昱强, 超市首页，显示红包瓷片）、`[MF-34636]`（周昱强, pos 幾小票，新增商品總數）、`[MF-24809]`（覃林方, 门店评分仅保留一位小数点）。\n建议今日安排集中发布窗口，推送预发布验收并安排上线，打通交付末端断点。",
+      "updatedAt": "2026-09-12 11:33:55"
     }
   },
   "reconciliationReport": {
-    "compiledAt": "2026-09-11T11:34:06.288185",
+    "compiledAt": "2026-09-12T11:33:54.758621",
     "summary": {
-      "verifiedCount": 328,
+      "verifiedCount": 329,
       "incompleteCount": 0,
-      "shadowCount": 1283,
+      "shadowCount": 1304,
       "delayCount": 132,
       "mobileCount": 3,
       "processCount": 106,
       "otherCount": 180
     },
-    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **18.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**106** 项产品方案/UI设计等过程节点工单、**180** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1283 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 132 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
+    "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **18.6%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**106** 项产品方案/UI设计等过程节点工单、**180** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1304 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 132 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。",
     "details": {
       "verified": [
         {
@@ -46260,7 +46260,7 @@
           "project": "mftb",
           "assignee": "周昱强",
           "completed": false,
-          "api_count": 75,
+          "api_count": 81,
           "ui_count": 2,
           "apis": [
             {
@@ -46276,20 +46276,20 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "订单详情",
-              "path": "/group/order/get",
-              "method": "get",
-              "status": "released"
-            },
-            {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             }
@@ -47326,7 +47326,7 @@
           "project": "mftb",
           "assignee": "覃林方",
           "completed": true,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -47342,21 +47342,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -47965,7 +47965,7 @@
           "project": "mftb",
           "assignee": "龙颖之",
           "completed": true,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -47981,21 +47981,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -50893,7 +50893,7 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -50909,21 +50909,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -52547,7 +52547,7 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -52563,21 +52563,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -52929,7 +52929,7 @@
           "project": "mftb",
           "assignee": "黄春晓",
           "completed": true,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -52945,21 +52945,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -53828,7 +53828,7 @@
           "project": "mftb",
           "assignee": "林泽斌",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -53844,21 +53844,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -53885,7 +53885,7 @@
           "project": "mftb",
           "assignee": "甄荣康",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -53901,21 +53901,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -56332,7 +56332,7 @@
           "project": "mftb",
           "assignee": "黄金凤",
           "completed": true,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -56348,21 +56348,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -56389,7 +56389,7 @@
           "project": "mftb",
           "assignee": "洪喜彬",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -56405,21 +56405,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -56446,7 +56446,7 @@
           "project": "mftb",
           "assignee": "刘志敏",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -56462,21 +56462,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -58739,7 +58739,7 @@
           "project": "mftb",
           "assignee": "刘付益",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -58755,21 +58755,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -60519,7 +60519,7 @@
           "project": "mfood",
           "assignee": "覃林方",
           "completed": false,
-          "api_count": 71,
+          "api_count": 77,
           "ui_count": 2,
           "apis": [
             {
@@ -60535,21 +60535,21 @@
               "status": "released"
             },
             {
-              "name": "提交退款",
+              "name": "停用 / 启用退款理由（status：0-停用；1-启用）",
+              "path": "/refund/reason/status",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "提交退款（平台发起）",
               "path": "/order/refund/submit",
               "method": "post",
               "status": "released"
             },
             {
-              "name": "编辑退款原因",
-              "path": "/group/store/refund-reason/edit",
+              "name": "提交退款",
+              "path": "/order/refund/submit",
               "method": "post",
-              "status": "released"
-            },
-            {
-              "name": "退款流水列表-Excel导出（异步）",
-              "path": "/takeout/order/refund/export",
-              "method": "get",
               "status": "released"
             }
           ],
@@ -61111,11 +61111,24 @@
           "project": "mfood",
           "assignee": "朱俊宇",
           "completed": false,
-          "api_count": 0,
+          "api_count": 2,
           "ui_count": 0,
-          "apis": [],
+          "apis": [
+            {
+              "name": "标记小票已打印（POS 打印完成后回调，批量且幂等）",
+              "path": "/order/print-mark",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "查询本门店已接单未完成且未打印小票的订单（供 POS 轮询补打）",
+              "path": "/order/unprinted",
+              "method": "get",
+              "status": "released"
+            }
+          ],
           "uis": [],
-          "status": "neither_ready"
+          "status": "frontend_missing"
         },
         {
           "workitem_id": "MF-22954",
@@ -61402,7 +61415,7 @@
           "project": "mfood",
           "assignee": "周昱强",
           "completed": true,
-          "api_count": 2,
+          "api_count": 4,
           "ui_count": 0,
           "apis": [
             {
@@ -61415,6 +61428,18 @@
               "name": "新增商品",
               "path": "/group/product/add",
               "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "标记小票已打印（POS 打印完成后回调，批量且幂等）",
+              "path": "/order/print-mark",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "查询本门店已接单未完成且未打印小票的订单（供 POS 轮询补打）",
+              "path": "/order/unprinted",
+              "method": "get",
               "status": "released"
             }
           ],
@@ -61526,7 +61551,7 @@
           "project": "mfood",
           "assignee": "曹晴晴",
           "completed": false,
-          "api_count": 2,
+          "api_count": 4,
           "ui_count": 0,
           "apis": [
             {
@@ -61539,6 +61564,18 @@
               "name": "新增商品",
               "path": "/group/product/add",
               "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "标记小票已打印（POS 打印完成后回调，批量且幂等）",
+              "path": "/order/print-mark",
+              "method": "post",
+              "status": "released"
+            },
+            {
+              "name": "查询本门店已接单未完成且未打印小票的订单（供 POS 轮询补打）",
+              "path": "/order/unprinted",
+              "method": "get",
               "status": "released"
             }
           ],
@@ -62295,6 +62332,19 @@
   },
   "reconciliationHistory": [
     {
+      "scan_date": "2026-09-12",
+      "summary": {
+        "verifiedCount": 329,
+        "incompleteCount": 0,
+        "shadowCount": 1304,
+        "delayCount": 132,
+        "mobileCount": 3,
+        "processCount": 106,
+        "otherCount": 180
+      },
+      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **18.6%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**106** 项产品方案/UI设计等过程节点工单、**180** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性偏低**：检测到较多影子开发（无单上线）或已关闭工单未实际部署，存在严重的信息脱节和发布断点！\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 1304 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 132 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
+    },
+    {
       "scan_date": "2026-09-11",
       "summary": {
         "verifiedCount": 328,
@@ -62475,19 +62525,6 @@
         "otherCount": 143
       },
       "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**34** 项产品方案/UI设计等过程节点工单、**143** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **影子开发 (Shadow) = 531 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 48 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
-    },
-    {
-      "scan_date": "2026-08-28",
-      "summary": {
-        "verifiedCount": 294148,
-        "incompleteCount": 6,
-        "shadowCount": 531,
-        "delayCount": 48,
-        "mobileCount": 3,
-        "processCount": 34,
-        "otherCount": 143
-      },
-      "advice": "### 🕵️‍♂️ 部署与需求核对报告\n核对已完成。系统实测功能与云效工单的匹配一致率为 **99.8%**。\n\n> 💡 **管理流审计提示**：为了精准定位“交付堵点”，本周期已将 **3** 项移动端App发布任务、**34** 项产品方案/UI设计等过程节点工单、**143** 项其他项目工单（众包、极马） 进行分流过滤，将其排除在后端页面/接口的交付滞后率考核之外。\n\n#### 1. 核心态势评估\n- **一致性水平良好**：项目实际功能发布与工单登记同步性高，信息滞后风险低。\n\n#### 2. 交付偏差细节分析\n- **冒烟失败 (Incomplete) = 6 项**：页面已上线但抛出 JS 异常或 API 接口请求失败。这通常说明前端与服务端接口契约不一致，或新功能测试不充分。\n- **影子开发 (Shadow) = 531 项**：管理后台已检测到新路由/接口，但云效中无任何关联单据。这说明研发存在脱离项目管理审计的自行开发行为。\n- **交付滞后 (Delay) = 48 项**：云效工单已标记完成，但实际环境未检测到路由。说明功能卡在发布分支、漏发、或未真正提测。\n\n#### 3. PM 纠偏行动指南\n- **行动 1 (质量治理)**：督促研发查看核对面板下方的报错详情，定位 JS 报错堆栈，并在今日内修复使其通过冒烟测试。\n- **行动 2 (流程规范)**：召集负责人对影子接口进行补单（补提需求或 Bug），归入当前迭代，确保所有发布皆可审计。\n- **行动 3 (发布确认)**：逐个向负责人核实已标记完成的工单是否漏发或发错分支，安排在下一个窗口重新发布。"
     }
   ]
 }
