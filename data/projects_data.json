@@ -1,7 +1,24 @@
 {
-  "compiledAt": "2026-09-14T03:36:18.711794+00:00",
+  "compiledAt": "2026-09-14T04:09:58.144026+00:00",
   "latest": {
     "mftb": [
+      {
+        "id": "MFTB-1783",
+        "title": "【新系統】積分抵現",
+        "status": "待处理",
+        "priority": "中",
+        "assignee": "溫浩源",
+        "creator": "溫浩源",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-14",
+        "workItemType": "产品类需求",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=f8f7ba0dbc7a081cb3cc613dd8",
+        "rowText": "【产品类需求】【新系統】積分抵現\nID: MFTB-1783 | 状态: 待处理 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-14 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Req"
+      },
       {
         "id": "MFTB-1780",
         "title": "【大係統】外賣&團購-我的評價功能（待出 UI）",
@@ -175,7 +192,7 @@
       {
         "id": "MFTB-1717",
         "title": "【新系統】會員中心-權益中心-權益詳情配置",
-        "status": "待处理",
+        "status": "开发中",
         "priority": "中",
         "assignee": "溫浩源",
         "creator": "溫浩源",
@@ -185,7 +202,7 @@
         "createDate": "2026-09-09",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=252df08672ae1a7fa00c933efe",
-        "rowText": "【产品类需求】【新系統】會員中心-權益中心-權益詳情配置\nID: MFTB-1717 | 状态: 待处理 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【新系統】會員中心-權益中心-權益詳情配置\nID: MFTB-1717 | 状态: 开发中 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3641,6 +3658,23 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1784",
+        "title": "【產品】【新系統】積分抵現",
+        "status": "需产品梳理/确认",
+        "priority": "中",
+        "assignee": "溫浩源",
+        "creator": "溫浩源",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-14",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e293212584f3bcfa98132598ae",
+        "rowText": "【任务】【產品】【新系統】積分抵現\nID: MFTB-1784 | 状态: 需产品梳理/确认 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-14 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1782",
         "title": "【mfood Android】外賣&團購-我的評價功能（待出 UI）",
         "status": "未开始",
@@ -4340,7 +4374,7 @@
       {
         "id": "MFTB-1718",
         "title": "【產品】【新系統】會員中心-權益展示配置",
-        "status": "未开始",
+        "status": "需产品梳理/确认",
         "priority": "中",
         "assignee": "溫浩源",
         "creator": "溫浩源",
@@ -4350,7 +4384,7 @@
         "createDate": "2026-09-09",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=17f7de79a26fe6ef667ef08708",
-        "rowText": "【任务】【產品】【新系統】會員中心-權益展示配置\nID: MFTB-1718 | 状态: 未开始 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
+        "rowText": "【任务】【產品】【新系統】會員中心-權益展示配置\nID: MFTB-1718 | 状态: 需产品梳理/确认 | 优先级: 中\n负责人: 溫浩源 | 提报人: 溫浩源\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-09 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -21425,7 +21459,7 @@
       {
         "id": "MFTB-1760",
         "title": "【mfood用户端】【团购】Android：购买了两份团单，一份已核销，一份已退款，无需显示二维码，订单状态应是“已完成”",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "黄春晓",
@@ -21435,7 +21469,7 @@
         "createDate": "2026-09-11",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=534f608ed28fe195eeb33b85fe",
-        "rowText": "【缺陷】【mfood用户端】【团购】Android：购买了两份团单，一份已核销，一份已退款，无需显示二维码，订单状态应是“已完成”\nID: MFTB-1760 | 状态: 待确认 | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-11 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】Android：购买了两份团单，一份已核销，一份已退款，无需显示二维码，订单状态应是“已完成”\nID: MFTB-1760 | 状态: 已修复 | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-11 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -21510,7 +21544,7 @@
       {
         "id": "MFTB-1751",
         "title": "【mfood用户端】【团购】多规格实物商品展示价格问题",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "林泽斌",
         "creator": "黄春晓",
@@ -21520,7 +21554,7 @@
         "createDate": "2026-09-11",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fa9ffadd9582ff71ac740df1fb",
-        "rowText": "【缺陷】【mfood用户端】【团购】多规格实物商品展示价格问题\nID: MFTB-1751 | 状态: 待确认 | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-11 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【mfood用户端】【团购】多规格实物商品展示价格问题\nID: MFTB-1751 | 状态: 已修复 | 优先级: 中\n负责人: 林泽斌 | 提报人: 黄春晓\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-11 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -32903,11 +32937,11 @@
       },
       {
         "date": "2026-09-14",
-        "total": 1260,
+        "total": 1262,
         "completed": 961,
         "statusCounts": {
           "已完成": 961,
-          "进行中": 299
+          "进行中": 301
         }
       }
     ],
