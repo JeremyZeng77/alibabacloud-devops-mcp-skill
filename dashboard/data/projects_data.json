@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-15T03:36:47.341409+00:00",
+  "compiledAt": "2026-09-15T04:09:13.565416+00:00",
   "latest": {
     "mftb": [
       {
@@ -3656,6 +3656,40 @@
         "rowText": "【产品类需求】【大係統】管理後臺權限管理模塊\nID: MFTB-1 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-04-01 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
+      },
+      {
+        "id": "MFTB-1810",
+        "title": "【服务端】【大係統】組合價報表",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "唐光伟",
+        "creator": "唐光伟",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-15",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=37cdd659754d6b792848a9c443",
+        "rowText": "【任务】【服务端】【大係統】組合價報表\nID: MFTB-1810 | 状态: 未开始 | 优先级: 中\n负责人: 唐光伟 | 提报人: 唐光伟\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-15 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1809",
+        "title": "【前端】【大係統】組合價報表",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-15",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=50e47eafd05354ce263905c3e6",
+        "rowText": "【任务】【前端】【大係統】組合價報表\nID: MFTB-1809 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-15 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
       },
       {
         "id": "MFTB-1806",
@@ -33371,11 +33405,11 @@
       },
       {
         "date": "2026-09-15",
-        "total": 1280,
+        "total": 1282,
         "completed": 980,
         "statusCounts": {
           "已完成": 980,
-          "进行中": 300
+          "进行中": 302
         }
       }
     ],
