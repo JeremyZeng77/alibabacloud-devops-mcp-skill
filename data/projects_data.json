@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-15T21:02:36.220716+00:00",
+  "compiledAt": "2026-09-16T00:04:06.878056+00:00",
   "latest": {
     "mftb": [
       {
@@ -33398,60 +33398,69 @@
       {
         "date": "2026-08-30",
         "total": 1129,
-        "completed": 863,
+        "completed": 862,
         "statusCounts": {
-          "已完成": 863,
-          "进行中": 266
+          "已完成": 862,
+          "进行中": 267
         }
       },
       {
         "date": "2026-08-31",
         "total": 1135,
-        "completed": 876,
+        "completed": 875,
         "statusCounts": {
-          "已完成": 876,
-          "进行中": 259
+          "已完成": 875,
+          "进行中": 260
         }
       },
       {
         "date": "2026-09-01",
         "total": 1144,
-        "completed": 885,
+        "completed": 884,
         "statusCounts": {
-          "已完成": 885,
-          "进行中": 259
+          "已完成": 884,
+          "进行中": 260
         }
       },
       {
         "date": "2026-09-02",
         "total": 1169,
-        "completed": 901,
+        "completed": 900,
         "statusCounts": {
-          "已完成": 901,
-          "进行中": 268
+          "已完成": 900,
+          "进行中": 269
         }
       },
       {
         "date": "2026-09-03",
         "total": 1185,
-        "completed": 917,
+        "completed": 916,
         "statusCounts": {
-          "已完成": 917,
-          "进行中": 268
+          "已完成": 916,
+          "进行中": 269
         }
       },
       {
         "date": "2026-09-04",
         "total": 1188,
-        "completed": 933,
+        "completed": 932,
         "statusCounts": {
-          "已完成": 933,
-          "进行中": 255
+          "已完成": 932,
+          "进行中": 256
         }
       },
       {
         "date": "2026-09-05",
         "total": 1188,
+        "completed": 932,
+        "statusCounts": {
+          "已完成": 932,
+          "进行中": 256
+        }
+      },
+      {
+        "date": "2026-09-06",
+        "total": 1188,
         "completed": 933,
         "statusCounts": {
           "已完成": 933,
@@ -33459,52 +33468,61 @@
         }
       },
       {
-        "date": "2026-09-06",
-        "total": 1188,
-        "completed": 934,
-        "statusCounts": {
-          "已完成": 934,
-          "进行中": 254
-        }
-      },
-      {
         "date": "2026-09-07",
         "total": 1192,
-        "completed": 936,
+        "completed": 935,
         "statusCounts": {
-          "已完成": 936,
-          "进行中": 256
+          "已完成": 935,
+          "进行中": 257
         }
       },
       {
         "date": "2026-09-08",
         "total": 1201,
-        "completed": 941,
+        "completed": 940,
         "statusCounts": {
-          "已完成": 941,
-          "进行中": 260
+          "已完成": 940,
+          "进行中": 261
         }
       },
       {
         "date": "2026-09-09",
         "total": 1212,
-        "completed": 948,
+        "completed": 947,
         "statusCounts": {
-          "已完成": 948,
-          "进行中": 264
+          "已完成": 947,
+          "进行中": 265
         }
       },
       {
         "date": "2026-09-10",
         "total": 1228,
-        "completed": 952,
+        "completed": 951,
         "statusCounts": {
-          "已完成": 952,
-          "进行中": 276
+          "已完成": 951,
+          "进行中": 277
         }
       },
       {
         "date": "2026-09-11",
+        "total": 1238,
+        "completed": 956,
+        "statusCounts": {
+          "已完成": 956,
+          "进行中": 282
+        }
+      },
+      {
+        "date": "2026-09-12",
+        "total": 1238,
+        "completed": 957,
+        "statusCounts": {
+          "已完成": 957,
+          "进行中": 281
+        }
+      },
+      {
+        "date": "2026-09-13",
         "total": 1238,
         "completed": 958,
         "statusCounts": {
@@ -33513,34 +33531,25 @@
         }
       },
       {
-        "date": "2026-09-12",
-        "total": 1238,
-        "completed": 959,
-        "statusCounts": {
-          "已完成": 959,
-          "进行中": 279
-        }
-      },
-      {
-        "date": "2026-09-13",
-        "total": 1238,
-        "completed": 960,
-        "statusCounts": {
-          "已完成": 960,
-          "进行中": 278
-        }
-      },
-      {
         "date": "2026-09-14",
         "total": 1278,
-        "completed": 979,
+        "completed": 976,
         "statusCounts": {
-          "已完成": 979,
-          "进行中": 299
+          "已完成": 976,
+          "进行中": 302
         }
       },
       {
         "date": "2026-09-15",
+        "total": 1287,
+        "completed": 986,
+        "statusCounts": {
+          "已完成": 986,
+          "进行中": 301
+        }
+      },
+      {
+        "date": "2026-09-16",
         "total": 1287,
         "completed": 986,
         "statusCounts": {
@@ -45636,6 +45645,15 @@
           "已完成": 38,
           "进行中": 152
         }
+      },
+      {
+        "date": "2026-09-16",
+        "total": 190,
+        "completed": 38,
+        "statusCounts": {
+          "已完成": 38,
+          "进行中": 152
+        }
       }
     ]
   },
@@ -46219,8 +46237,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 12.5,
-      "delta": 4.1
+      "average": 12.2,
+      "delta": 3.2
     },
     "mfood": {
       "average": 0.0,
