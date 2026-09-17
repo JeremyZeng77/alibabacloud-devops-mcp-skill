@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-17T04:13:00.466427+00:00",
+  "compiledAt": "2026-09-17T11:18:55.251911+00:00",
   "latest": {
     "mftb": [
       {
@@ -3692,6 +3692,40 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1834",
+        "title": "【前端】【大係統】美食外送__退款理由",
+        "status": "提交测试",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "2026-09-17",
+        "planEnd": "2026-09-18",
+        "createDate": "2026-09-17",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=fa9e71238e68acb70e5a31d8bb",
+        "rowText": "【任务】【前端】【大係統】美食外送__退款理由\nID: MFTB-1834 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-17 | 排期规划: 2026-09-17 至 2026-09-18",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1833",
+        "title": "【前端】【大係統】美食外送__退款訂單列表",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "甄荣康",
+        "creator": "甄荣康",
+        "iteration": "MFTB-v1.0.2",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4fefaa20d9b03c79895808f657",
+        "rowText": "【任务】【前端】【大係統】美食外送__退款訂單列表\nID: MFTB-1833 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1830",
         "title": "【用戶端APP】【服务端】到家營銷活動_用戶端_活动商品tab",
         "status": "未开始",
@@ -3818,12 +3852,12 @@
         "assignee": "甄荣康",
         "creator": "甄荣康",
         "iteration": "MFTB-v1.0.2",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-09-17",
+        "planEnd": "2026-09-18",
         "createDate": "2026-09-16",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c59a8d5c4838da549a9cb762fa",
-        "rowText": "【任务】【前端】【大係統】美食外送__訂單列表\nID: MFTB-1822 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-16 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大係統】美食外送__訂單列表\nID: MFTB-1822 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-16 | 排期规划: 2026-09-17 至 2026-09-18",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4493,7 +4527,7 @@
       {
         "id": "MFTB-1772",
         "title": "【商家APP】【大係統】評價功能（含管理後臺、商家 App、用戶端）",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "梁富城",
         "creator": "梁富城",
@@ -4503,7 +4537,7 @@
         "createDate": "2026-09-14",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=e8b971157796bc68d1ae124477",
-        "rowText": "【任务】【商家APP】【大係統】評價功能（含管理後臺、商家 App、用戶端）\nID: MFTB-1772 | 状态: 未开始 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: 未规划 | 创建时间: 2026-09-14 | 排期规划: 2026-09-15 至 2026-09-16",
+        "rowText": "【任务】【商家APP】【大係統】評價功能（含管理後臺、商家 App、用戶端）\nID: MFTB-1772 | 状态: 提交测试 | 优先级: 中\n负责人: 梁富城 | 提报人: 梁富城\n迭代版本: 未规划 | 创建时间: 2026-09-14 | 排期规划: 2026-09-15 至 2026-09-16",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4765,7 +4799,7 @@
       {
         "id": "MFTB-1743",
         "title": "【服务端】【新系統】會員中心-權益中心-權益詳情配置",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "卓坚",
         "creator": "卓坚",
@@ -4775,7 +4809,7 @@
         "createDate": "2026-09-10",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=23afb7d818617a1bd24ae96076",
-        "rowText": "【任务】【服务端】【新系統】會員中心-權益中心-權益詳情配置\nID: MFTB-1743 | 状态: 未开始 | 优先级: 中\n负责人: 卓坚 | 提报人: 卓坚\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-10 | 排期规划: 2026-09-14 至 2026-09-16",
+        "rowText": "【任务】【服务端】【新系統】會員中心-權益中心-權益詳情配置\nID: MFTB-1743 | 状态: 提交测试 | 优先级: 中\n负责人: 卓坚 | 提报人: 卓坚\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-10 | 排期规划: 2026-09-14 至 2026-09-16",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4969,7 +5003,7 @@
       {
         "id": "MFTB-1727",
         "title": "【前端】【極馬】專送迭代-新增專送配送時限",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "洪喜彬",
         "creator": "洪喜彬",
@@ -4979,7 +5013,7 @@
         "createDate": "2026-09-10",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=19141270c0a4e9232f472f752e",
-        "rowText": "【任务】【前端】【極馬】專送迭代-新增專送配送時限\nID: MFTB-1727 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【極馬】專送迭代-新增專送配送時限\nID: MFTB-1727 | 状态: 提交测试 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-10 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -22120,9 +22154,128 @@
         "category": "Task"
       },
       {
+        "id": "MFTB-1841",
+        "title": "【Android】购物车的口袋展示不全",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "卓天鸿",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d61b768cbbd273a6ed1302d44a",
+        "rowText": "【缺陷】【Android】购物车的口袋展示不全\nID: MFTB-1841 | 状态: 待确认 | 优先级: 中\n负责人: 卓天鸿 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1840",
+        "title": "【iOS】订单详情的展开收起没有效果",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=88e475e145c6533673634dcb07",
+        "rowText": "【缺陷】【iOS】订单详情的展开收起没有效果\nID: MFTB-1840 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1839",
+        "title": "【iOS】再来一单价格问题",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=cc3953395f6e2e02c69eb2b0f0",
+        "rowText": "【缺陷】【iOS】再来一单价格问题\nID: MFTB-1839 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1838",
+        "title": "【iOS】修改订单信息性别问题",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=9f2260aa13b92d5cf85cf6025b",
+        "rowText": "【缺陷】【iOS】修改订单信息性别问题\nID: MFTB-1838 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1837",
+        "title": "【iOS】无法切换地址，切换地址会进入编辑地址页",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c3914db4e3d53843ef620f17ec",
+        "rowText": "【缺陷】【iOS】无法切换地址，切换地址会进入编辑地址页\nID: MFTB-1837 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1836",
+        "title": "【iOS】超出配送范围的时候，购物车与提示超出提示重叠",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=21e66e53d06045c5e7c51865d9",
+        "rowText": "【缺陷】【iOS】超出配送范围的时候，购物车与提示超出提示重叠\nID: MFTB-1836 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
+        "id": "MFTB-1835",
+        "title": "【iOS】用户端未达起送价能正常跳到下单页",
+        "status": "待确认",
+        "priority": "中",
+        "assignee": "郑跃浩",
+        "creator": "贺志成",
+        "iteration": "MFTB-v1.0.1",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-17",
+        "workItemType": "缺陷",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5acc3fbcdd33a0a5b126731c6a",
+        "rowText": "【缺陷】【iOS】用户端未达起送价能正常跳到下单页\nID: MFTB-1835 | 状态: 待确认 | 优先级: 中\n负责人: 郑跃浩 | 提报人: 贺志成\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Bug"
+      },
+      {
         "id": "MFTB-1831",
         "title": "【新系统】【闪蜂商户前端】现在用的都是mfood的音源，上线前闪蜂要搞自己的音源。例：现在快没电了，闪蜂APP说mfood pos机快没电了",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "梁富城",
         "creator": "李云锋",
@@ -22132,7 +22285,7 @@
         "createDate": "2026-09-16",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=add1c5a7dd2f0988b1fe2c6374",
-        "rowText": "【缺陷】【新系统】【闪蜂商户前端】现在用的都是mfood的音源，上线前闪蜂要搞自己的音源。例：现在快没电了，闪蜂APP说mfood pos机快没电了\nID: MFTB-1831 | 状态: 待确认 | 优先级: 中\n负责人: 梁富城 | 提报人: 李云锋\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-16 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【新系统】【闪蜂商户前端】现在用的都是mfood的音源，上线前闪蜂要搞自己的音源。例：现在快没电了，闪蜂APP说mfood pos机快没电了\nID: MFTB-1831 | 状态: 已修复 | 优先级: 中\n负责人: 梁富城 | 提报人: 李云锋\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-16 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -22241,7 +22394,7 @@
       {
         "id": "MFTB-1800",
         "title": "【MFTB-团购】mfood商家版，拒绝预约单接单，点击按钮后一直加载，提示超时，但用户端返回拒绝接单成功",
-        "status": "待确认",
+        "status": "已修复",
         "priority": "中",
         "assignee": "梁富城",
         "creator": "冼嘉业",
@@ -22251,7 +22404,7 @@
         "createDate": "2026-09-14",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=42fc1d98626ec4ce4cc2612dc6",
-        "rowText": "【缺陷】【MFTB-团购】mfood商家版，拒绝预约单接单，点击按钮后一直加载，提示超时，但用户端返回拒绝接单成功\nID: MFTB-1800 | 状态: 待确认 | 优先级: 中\n负责人: 梁富城 | 提报人: 冼嘉业\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-14 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【MFTB-团购】mfood商家版，拒绝预约单接单，点击按钮后一直加载，提示超时，但用户端返回拒绝接单成功\nID: MFTB-1800 | 状态: 已修复 | 优先级: 中\n负责人: 梁富城 | 提报人: 冼嘉业\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-14 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -22886,7 +23039,7 @@
       },
       {
         "id": "MFTB-1654",
-        "title": "【大係統】【mFood安卓用户端】业务入口没有显示标题图片和角标",
+        "title": "【大係統】【mFood安卓用户端】业务入口没有显示标题图片和角标以及刷新问题",
         "status": "待确认",
         "priority": "中",
         "assignee": "徐子旺",
@@ -22897,7 +23050,7 @@
         "createDate": "2026-09-03",
         "workItemType": "缺陷",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=d1a5dfac1483c513dedec54588",
-        "rowText": "【缺陷】【大係統】【mFood安卓用户端】业务入口没有显示标题图片和角标\nID: MFTB-1654 | 状态: 待确认 | 优先级: 中\n负责人: 徐子旺 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-03 | 排期规划: - 至 -",
+        "rowText": "【缺陷】【大係統】【mFood安卓用户端】业务入口没有显示标题图片和角标以及刷新问题\nID: MFTB-1654 | 状态: 待确认 | 优先级: 中\n负责人: 徐子旺 | 提报人: 曹晴晴\n迭代版本: MFTB-v1.0.1 | 创建时间: 2026-09-03 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Bug"
       },
@@ -29041,23 +29194,6 @@
         "category": "Req"
       },
       {
-        "id": "MF-34720",
-        "title": "【舊係統】-所有前后臺还有用户端、商家 App、小程序等，全部文案“勁爆團”改為“團購”",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "覃林方",
-        "creator": "覃林方",
-        "iteration": "未规划",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-09-11",
-        "workItemType": "产品类需求",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=49949fe4b3ddba6fa9150cefae",
-        "rowText": "【产品类需求】【舊係統】-所有前后臺还有用户端、商家 App、小程序等，全部文案“勁爆團”改為“團購”\nID: MF-34720 | 状态: 待处理 | 优先级: 低\n负责人: 覃林方 | 提报人: 覃林方\n迭代版本: 未规划 | 创建时间: 2026-09-11 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Req"
-      },
-      {
         "id": "MF-34682",
         "title": "【積分抵現】優化",
         "status": "已评审（待开发）",
@@ -30722,23 +30858,6 @@
         "rowText": "【产品类需求】【POS机】新POS机兼容测试\nID: MF-24798 | 状态: 测试环境验证通过 | 优先级: 中\n负责人: 杨庆龙 | 提报人: 杨庆龙\n迭代版本: 未规划 | 创建时间: 2024-08-27 | 排期规划: - 至 -",
         "project": "mFood综合版本",
         "category": "Req"
-      },
-      {
-        "id": "MF-34727",
-        "title": "【测试】【市場部】北區夜市活動",
-        "status": "待处理",
-        "priority": "低",
-        "assignee": "曹晴晴",
-        "creator": "曹晴晴",
-        "iteration": "V7.4.0（？）",
-        "planStart": "",
-        "planEnd": "",
-        "createDate": "2026-09-14",
-        "workItemType": "測試",
-        "url": "https://devops.aliyun.com/projex/project/b213ecf2c319097885faf16704/req#openWorkitemIdentifier=4c2b852e0cccdc581e67485031",
-        "rowText": "【測試】【测试】【市場部】北區夜市活動\nID: MF-34727 | 状态: 待处理 | 优先级: 低\n负责人: 曹晴晴 | 提报人: 曹晴晴\n迭代版本: V7.4.0（？） | 创建时间: 2026-09-14 | 排期规划: - 至 -",
-        "project": "mFood综合版本",
-        "category": "Task"
       },
       {
         "id": "MF-34694",
@@ -33711,46 +33830,46 @@
       {
         "date": "2026-09-13",
         "total": 1238,
-        "completed": 957,
+        "completed": 958,
         "statusCounts": {
-          "已完成": 957,
-          "进行中": 281
+          "已完成": 958,
+          "进行中": 280
         }
       },
       {
         "date": "2026-09-14",
         "total": 1278,
-        "completed": 975,
+        "completed": 976,
         "statusCounts": {
-          "已完成": 975,
-          "进行中": 303
+          "已完成": 976,
+          "进行中": 302
         }
       },
       {
         "date": "2026-09-15",
         "total": 1287,
-        "completed": 985,
+        "completed": 986,
         "statusCounts": {
-          "已完成": 985,
-          "进行中": 302
+          "已完成": 986,
+          "进行中": 301
         }
       },
       {
         "date": "2026-09-16",
         "total": 1301,
-        "completed": 999,
+        "completed": 1002,
         "statusCounts": {
-          "已完成": 999,
-          "进行中": 302
+          "已完成": 1002,
+          "进行中": 299
         }
       },
       {
         "date": "2026-09-17",
-        "total": 1301,
-        "completed": 999,
+        "total": 1303,
+        "completed": 1003,
         "statusCounts": {
-          "已完成": 999,
-          "进行中": 302
+          "已完成": 1003,
+          "进行中": 300
         }
       }
     ],
@@ -45799,65 +45918,65 @@
       },
       {
         "date": "2026-09-11",
-        "total": 185,
+        "total": 184,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 149
+          "进行中": 148
         }
       },
       {
         "date": "2026-09-12",
-        "total": 185,
+        "total": 184,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 149
+          "进行中": 148
         }
       },
       {
         "date": "2026-09-13",
-        "total": 185,
+        "total": 184,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 149
+          "进行中": 148
         }
       },
       {
         "date": "2026-09-14",
-        "total": 186,
+        "total": 184,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 150
+          "进行中": 148
         }
       },
       {
         "date": "2026-09-15",
-        "total": 186,
+        "total": 184,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 150
+          "进行中": 148
         }
       },
       {
         "date": "2026-09-16",
-        "total": 186,
+        "total": 184,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 150
+          "进行中": 148
         }
       },
       {
         "date": "2026-09-17",
-        "total": 186,
+        "total": 184,
         "completed": 36,
         "statusCounts": {
           "已完成": 36,
-          "进行中": 150
+          "进行中": 148
         }
       }
     ]
