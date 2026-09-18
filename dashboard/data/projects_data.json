@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-09-18T00:00:45.343720+00:00",
+  "compiledAt": "2026-09-18T04:34:02.179703+00:00",
   "latest": {
     "mftb": [
       {
@@ -667,7 +667,7 @@
       },
       {
         "id": "MFTB-1546",
-        "title": "【MFTB】 集點返券",
+        "title": "【【大係統】】 集點返券",
         "status": "待处理",
         "priority": "中",
         "assignee": "周昱强",
@@ -678,7 +678,7 @@
         "createDate": "2026-08-25",
         "workItemType": "产品类需求",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=5aa09df00026dcb2570fc748c9",
-        "rowText": "【产品类需求】【MFTB】 集點返券\nID: MFTB-1546 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 未规划 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
+        "rowText": "【产品类需求】【【大係統】】 集點返券\nID: MFTB-1546 | 状态: 待处理 | 优先级: 中\n负责人: 周昱强 | 提报人: 周昱强\n迭代版本: 未规划 | 创建时间: 2026-08-25 | 排期规划: - 至 -",
         "project": "MFTB集团项目",
         "category": "Req"
       },
@@ -3692,6 +3692,57 @@
         "category": "Req"
       },
       {
+        "id": "MFTB-1844",
+        "title": "【產品】【極馬】智能合單1.0",
+        "status": "已完成",
+        "priority": "中",
+        "assignee": "龙颖之",
+        "creator": "龙颖之",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-09-16",
+        "planEnd": "2026-09-17",
+        "createDate": "2026-09-18",
+        "workItemType": "产品",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=7aea66c54c3ed82cb401e6a9c3",
+        "rowText": "【产品】【產品】【極馬】智能合單1.0\nID: MFTB-1844 | 状态: 已完成 | 优先级: 中\n负责人: 龙颖之 | 提报人: 龙颖之\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-18 | 排期规划: 2026-09-16 至 2026-09-17",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1843",
+        "title": "【前端】【極馬】智能合單1.0",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "洪喜彬",
+        "creator": "洪喜彬",
+        "iteration": "SH-v1.0.0",
+        "planStart": "",
+        "planEnd": "",
+        "createDate": "2026-09-18",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=94b66e9d273e38bec5861e05ab",
+        "rowText": "【任务】【前端】【極馬】智能合單1.0\nID: MFTB-1843 | 状态: 未开始 | 优先级: 中\n负责人: 洪喜彬 | 提报人: 洪喜彬\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-18 | 排期规划: - 至 -",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
+        "id": "MFTB-1842",
+        "title": "【服务端】【極馬】智能合單1.0",
+        "status": "未开始",
+        "priority": "中",
+        "assignee": "刘志敏",
+        "creator": "刘志敏",
+        "iteration": "SH-v1.0.0",
+        "planStart": "2026-09-18",
+        "planEnd": "2026-09-20",
+        "createDate": "2026-09-18",
+        "workItemType": "任务",
+        "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c517ed1de38648cb2caa6df5de",
+        "rowText": "【任务】【服务端】【極馬】智能合單1.0\nID: MFTB-1842 | 状态: 未开始 | 优先级: 中\n负责人: 刘志敏 | 提报人: 刘志敏\n迭代版本: SH-v1.0.0 | 创建时间: 2026-09-18 | 排期规划: 2026-09-18 至 2026-09-20",
+        "project": "MFTB集团项目",
+        "category": "Task"
+      },
+      {
         "id": "MFTB-1834",
         "title": "【前端】【大係統】美食外送__退款理由",
         "status": "提交测试",
@@ -3716,12 +3767,12 @@
         "assignee": "甄荣康",
         "creator": "甄荣康",
         "iteration": "MFTB-v1.0.2",
-        "planStart": "",
-        "planEnd": "",
+        "planStart": "2026-09-21",
+        "planEnd": "2026-09-22",
         "createDate": "2026-09-17",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=4fefaa20d9b03c79895808f657",
-        "rowText": "【任务】【前端】【大係統】美食外送__退款訂單列表\nID: MFTB-1833 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-17 | 排期规划: - 至 -",
+        "rowText": "【任务】【前端】【大係統】美食外送__退款訂單列表\nID: MFTB-1833 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-17 | 排期规划: 2026-09-21 至 2026-09-22",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -3847,7 +3898,7 @@
       {
         "id": "MFTB-1822",
         "title": "【前端】【大係統】美食外送__訂單列表",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -3857,7 +3908,7 @@
         "createDate": "2026-09-16",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c59a8d5c4838da549a9cb762fa",
-        "rowText": "【任务】【前端】【大係統】美食外送__訂單列表\nID: MFTB-1822 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-16 | 排期规划: 2026-09-17 至 2026-09-18",
+        "rowText": "【任务】【前端】【大係統】美食外送__訂單列表\nID: MFTB-1822 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-16 | 排期规划: 2026-09-17 至 2026-09-18",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -4153,17 +4204,17 @@
       {
         "id": "MFTB-1797",
         "title": "【前端】【大係統】商家营销工具——进店领券",
-        "status": "未开始",
+        "status": "开发中",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
         "iteration": "未规划",
-        "planStart": "2026-09-16",
-        "planEnd": "2026-09-18",
+        "planStart": "2026-09-21",
+        "planEnd": "2026-09-23",
         "createDate": "2026-09-14",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=c0458004e00b322eae39e00e13",
-        "rowText": "【任务】【前端】【大係統】商家营销工具——进店领券\nID: MFTB-1797 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-09-14 | 排期规划: 2026-09-16 至 2026-09-18",
+        "rowText": "【任务】【前端】【大係統】商家营销工具——进店领券\nID: MFTB-1797 | 状态: 开发中 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: 未规划 | 创建时间: 2026-09-14 | 排期规划: 2026-09-21 至 2026-09-23",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -5105,7 +5156,7 @@
       {
         "id": "MFTB-1705",
         "title": "【前端】【大係統】到家業務_商家營銷活動_買贈活動",
-        "status": "未开始",
+        "status": "提交测试",
         "priority": "中",
         "assignee": "甄荣康",
         "creator": "甄荣康",
@@ -5115,7 +5166,7 @@
         "createDate": "2026-09-09",
         "workItemType": "任务",
         "url": "https://devops.aliyun.com/projex/project/ea6df73257b27472177527f38b/req#openWorkitemIdentifier=23977cdbf97f7c3a0671b2d3f3",
-        "rowText": "【任务】【前端】【大係統】到家業務_商家營銷活動_買贈活動\nID: MFTB-1705 | 状态: 未开始 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-09 | 排期规划: 2026-09-15 至 2026-09-16",
+        "rowText": "【任务】【前端】【大係統】到家業務_商家營銷活動_買贈活動\nID: MFTB-1705 | 状态: 提交测试 | 优先级: 中\n负责人: 甄荣康 | 提报人: 甄荣康\n迭代版本: MFTB-v1.0.2 | 创建时间: 2026-09-09 | 排期规划: 2026-09-15 至 2026-09-16",
         "project": "MFTB集团项目",
         "category": "Task"
       },
@@ -33857,27 +33908,27 @@
       {
         "date": "2026-09-16",
         "total": 1301,
-        "completed": 999,
+        "completed": 1000,
         "statusCounts": {
-          "已完成": 999,
-          "进行中": 302
+          "已完成": 1000,
+          "进行中": 301
         }
       },
       {
         "date": "2026-09-17",
         "total": 1303,
-        "completed": 1003,
+        "completed": 1004,
         "statusCounts": {
-          "已完成": 1003,
-          "进行中": 300
+          "已完成": 1004,
+          "进行中": 299
         }
       },
       {
         "date": "2026-09-18",
-        "total": 1303,
-        "completed": 1003,
+        "total": 1306,
+        "completed": 1006,
         "statusCounts": {
-          "已完成": 1003,
+          "已完成": 1006,
           "进行中": 300
         }
       }
