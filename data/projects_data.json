@@ -1,5 +1,5 @@
 {
-  "compiledAt": "2026-10-15T22:59:25.985028+00:00",
+  "compiledAt": "2026-10-16T03:53:05.841854+00:00",
   "latest": {
     "mftb": [],
     "mfood": []
@@ -14407,8 +14407,8 @@
   ],
   "leadTimeKPI": {
     "mftb": {
-      "average": 19.3,
-      "delta": 6.8
+      "average": 0.0,
+      "delta": -12.7
     },
     "mfood": {
       "average": 0.0,
